@@ -1,6 +1,5 @@
-# tutorialsRepo
+# Tutorial Files
 
-# created by Jacob Menke
 
 # Menke Technologies Youtube Page
 contains the code for

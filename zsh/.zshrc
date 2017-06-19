@@ -187,7 +187,7 @@ zle .accept-line
 
 function _tutsUpdate() {
     zle kill-whole-line
-    BUFFER="bash tutorialConfigUpdater.sh"
+    BUFFER="( bash tutorialConfigUpdater.sh > ~/updaterlog.txt & )"
     zle .accept-line
 }
 

@@ -1,0 +1,41 @@
+
+bind index G imap-fetch-mail
+set charset = "utf-8"
+set record = ''
+set move = no
+
+set imap_user = "username@gmail.com"
+set imap_pass = "password"
+set smtp_url = "smtps://username@smtp.gmail.com:465/"
+set smtp_pass = "password"
+set from = "username@gmail.com"
+set realname = "realname"
+#set sendmail="/usr/bin/msmtp"
+
+set header_cache =~/.mutt/cache/headers
+set message_cachedir =~/.mutt/cache/bodies
+set certificate_file =~/.mutt/certificates
+
+set folder = "imaps://imap.gmail.com:993"
+set spoolfile = "+INBOX"
+set postponed = "+[Gmail]/Drafts"
+#set trash = "imaps://imap.gmail.com[Gmail]/Trash"
+set trash = "+[Gmail]/Trash"
+
+#======================================================#
+# Order of headers and what to show
+hdr_order Date: From: User-Agent: X-Mailer \
+To: Cc: Reply-To: Subject:
+ignore *
+unignore Date: From: User-Agent: X-Mailer \
+To: Cc: Reply-To: Subject:
+
+#======================================================#
+# which editor do you want to use?
+# vim of course!
+set editor="vim -c 'set tw=70 et' '+/^$' "
+set edit_headers # See the headers when editing
+
+
+set smtp_authenticators = 'gssapi:login'
+

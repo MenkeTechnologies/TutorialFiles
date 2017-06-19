@@ -39,7 +39,6 @@ cp -R "$HOME/.vim" "$tutorialDir/vim"
 
 cd "$tutorialDir"
 
-
 boldPrinter "Removing .git dirs....:)"
 
 while read file; do

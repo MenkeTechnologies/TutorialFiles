@@ -19,7 +19,7 @@ boldAndUnderlinedPrint "Copying shell_aliases_functions"
 cp ~/.shell_aliases_functions.sh "$tutorialDir/aliases"
 
 boldAndUnderlinedPrint "Copying shellScripts"
-cp $HOME/Documents/shellScripts/*.sh "$tutorialDir/shell"
+cp "$HOME/Documents/shellScripts/"*.sh "$tutorialDir/shell"
 
 boldAndUnderlinedPrint "Copying vis ncmpcpp mpd"
 cp -R ~/.config/vis "$tutorialDir/ncmpcpp-mpd-vis"
@@ -37,11 +37,11 @@ boldAndUnderlinedPrint "Copying vim plugins"
 
 cp -R "$HOME/.vim" "$tutorialDir/vim"
 
-cd "$tutorialDir"
+cd "$tutorialDir" || exit
 
 boldAndUnderlinedPrint "Removing .git dirs....:)"
 
-while read file; do
+while read -r file; do
     if [[ -d "$file" ]]; then
         if [[ "$file" =~ .*\.git.* ]]; then
             rm -rf "$file"

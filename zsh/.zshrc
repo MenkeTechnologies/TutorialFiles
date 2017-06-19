@@ -226,8 +226,6 @@ precmd(){
    zle -N rationalize-dot
    bindkey . rationalize-dot
 
-
-
 #}}}***********************************************************
 
 # Set Options {{{

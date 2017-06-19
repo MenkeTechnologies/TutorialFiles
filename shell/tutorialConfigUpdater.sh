@@ -3,27 +3,57 @@
 
 tutorialDir="$HOME/Documents/tutorialsRepo"
 
-printf "copying zshrc"
+prettyPrint(){
+    printf "\e[1m$1\n\e[0m"
+}
+
+prettyPrint "copying zshrcd"
 cp ~/.zshrc "$tutorialDir/zsh"
-printf "copying vimrc"
+prettyPrint "copying vimrc"
 cp ~/.vimrc "$tutorialDir/vim"
 
-printf "copying tmux.conf"
+prettyPrint "copying tmux.conf"
 cp ~/.tmux.conf "$tutorialDir/tmux"
 
-printf "copying shell_aliases_functions"
+prettyPrint "copying shell_aliases_functions"
 cp ~/.shell_aliases_functions.sh "$tutorialDir/aliases"
 
-printf "copying shellScripts"
-cp ~/Documents/shellScripts/*.sh "$tutorialDir/shell"
+prettyPrint "copying shellScripts"
+cp $HOME/Documents/shellScripts/*.sh "$tutorialDir/shell"
 
-printf "copying vis ncmpcpp mpd"
+prettyPrint "copying vis ncmpcpp mpd"
 cp -R ~/.config/vis "$tutorialDir/ncmpcpp-mpd-vis"
-printf "emptying mpd  log"
+prettyPrint "emptying mpd log"
 echo > "$tutorialDir/ncmpcpp-mpd-vis/.mpd/mpd.log"
 
-echo > /Users/jacobmenke/Documents/tutorialsRepo/ncmpcpp-mpd-vis/.mpd/mpd.log
+echo > "/Users/jacobmenke/Documents/tutorialsRepo/ncmpcpp-mpd-vis/.mpd/mpd.log"
 cp -R ~/.config/ncmpcpp "$tutorialDir/ncmpcpp-mpd-vis"
 cp -R ~/.mpd "$tutorialDir/ncmpcpp-mpd-vis"
 
-cp ~/Documents/iterm-jm-colors.itermcolors "$tutorialDir"
+cp "$HOME/Documents/iterm-jm-colors.itermcolors" "$tutorialDir"
+
+prettyPrint "copying vim plugins"
+
+#cp -R "$HOME/.vim" "$tutorialDir/vim"
+
+cd "$tutorialDir"
+
+
+prettyPrint "Removing .git dirs....:)"
+
+while read file; do
+    if [[ -d "$file" ]]; then
+        if [[ "$file" =~ .*git.* ]]; then
+            rm -rf "$file"
+        else
+            :
+        fi
+    fi
+done < <(find ./vim)
+
+git status
+git add .
+git commit -m "update"
+git push
+
+

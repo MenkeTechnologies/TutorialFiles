@@ -14,18 +14,18 @@ while true; do
 done 2>/dev/null &
 
 function disable_proxy() {
-    sudo networksetup -setsocksfirewallproxystate $INTERFACE off
+    sudo networksetup -setsocksfirewallproxystate "$INTERFACE" off
     echo "SOCKS proxy disabled."
 }
 
 trap disable_proxy INT
 
 	
-sudo networksetup -setsocksfirewallproxy $INTERFACE 127.0.0.1 9050 off
-sudo networksetup -setsocksfirewallproxystate $INTERFACE on
+sudo networksetup -setsocksfirewallproxy "$INTERFACE" 127.0.0.1 9050 off
+sudo networksetup -setsocksfirewallproxystate "$INTERFACE" on
 
 echo "SOCKS proxy 127.0.0.1:9050 enabled."
-echo "Starting Tor...d
+echo "Starting Tor...d"
 
 
 

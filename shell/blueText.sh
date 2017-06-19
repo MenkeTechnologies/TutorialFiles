@@ -5,5 +5,5 @@ RESET='\e[0m'
 
 #loop through stdin and add escape sequences at head and tail of each line
 while read input; do
-	echo -e "${BLUE}$input${RESET}"
+    echo -e "${BLUE}$input${RESET}"
 done

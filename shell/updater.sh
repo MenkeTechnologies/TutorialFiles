@@ -18,6 +18,7 @@ outdated=$(pip3 list --outdated | awk '{print $1}')
 pip3 install --upgrade pip setuptools wheel &> /dev/null
 
 #install outdated pip modules 
+#split on space
 for i in $outdated; do
 	pip3 install --upgrade "$i" #&> /dev/null
 done

@@ -3,50 +3,47 @@
 
 tutorialDir="$HOME/Documents/tutorialsRepo"
 
-boldPrinter(){
+boldAndUnderlinedPrint(){
     printf "\e[1;4m$1\n\e[0m"
 }
 
-boldPrinter "Copying zshrc"
+boldAndUnderlinedPrint "Copying zshrc"
 cp ~/.zshrc "$tutorialDir/zsh"
-boldPrinter "Copying vimrc"
+boldAndUnderlinedPrint "Copying vimrc"
 cp ~/.vimrc "$tutorialDir/vim"
 
-boldPrinter "Copying tmux.conf"
+boldAndUnderlinedPrint "Copying tmux.conf"
 cp ~/.tmux.conf "$tutorialDir/tmux"
 
-boldPrinter "Copying shell_aliases_functions"
+boldAndUnderlinedPrint "Copying shell_aliases_functions"
 cp ~/.shell_aliases_functions.sh "$tutorialDir/aliases"
 
-boldPrinter "Copying shellScripts"
+boldAndUnderlinedPrint "Copying shellScripts"
 cp $HOME/Documents/shellScripts/*.sh "$tutorialDir/shell"
 
-boldPrinter "Copying vis ncmpcpp mpd"
+boldAndUnderlinedPrint "Copying vis ncmpcpp mpd"
 cp -R ~/.config/vis "$tutorialDir/ncmpcpp-mpd-vis"
-boldPrinter "Emptying mpd log"
+boldAndUnderlinedPrint "Emptying mpd log"
 echo > "$tutorialDir/ncmpcpp-mpd-vis/.mpd/mpd.log"
-
-boldPrinter "Copying powerline configs"
-cp -R ~/.config/powerline "$tutorialDir"
 
 echo > "/Users/jacobmenke/Documents/tutorialsRepo/ncmpcpp-mpd-vis/.mpd/mpd.log"
 cp -R ~/.config/ncmpcpp "$tutorialDir/ncmpcpp-mpd-vis"
 cp -R ~/.mpd "$tutorialDir/ncmpcpp-mpd-vis"
 
-boldPrinter "Copying iterm Colors"
+boldAndUnderlinedPrint "Copying iterm Colors"
 cp "$HOME/Documents/iterm-jm-colors.itermcolors" "$tutorialDir"
 
-boldPrinter "Copying vim plugins"
+boldAndUnderlinedPrint "Copying vim plugins"
 
 cp -R "$HOME/.vim" "$tutorialDir/vim"
 
 cd "$tutorialDir"
 
-boldPrinter "Removing .git dirs....:)"
+boldAndUnderlinedPrint "Removing .git dirs....:)"
 
 while read file; do
     if [[ -d "$file" ]]; then
-        if [[ "$file" =~ .*git.* ]]; then
+        if [[ "$file" =~ .*\.git.* ]]; then
             rm -rf "$file"
         else
             :
@@ -55,7 +52,7 @@ while read file; do
 done < <(find ./vim)
 
 git status
-boldPrinter "Pushing ..."
+ "Pushing ..."
 git add .
 git commit -m "update"
 git push

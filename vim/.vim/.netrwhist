@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/Users/jacobmenke/Desktop/Node JS Training and Fundamentals'
+let g:netrw_dirhist_2='/Users/jacobmenke/Desktop'
+let g:netrw_dirhist_3='/Users/jacobmenke/Desktop/Node JS Training and Fundamentals'
+let g:netrw_dirhist_4='/Users/jacobmenke/Desktop'
+let g:netrw_dirhist_5='/Volumes/JAKESD/wcc/cps/shell scripts'
+let g:netrw_dirhist_6='/Users/jacobmenke/Desktop/tuts/test'
+let g:netrw_dirhist_7='/Users/jacobmenke/Desktop'

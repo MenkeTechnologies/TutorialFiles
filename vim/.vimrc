@@ -1,0 +1,265 @@
+"{{{                    MARK:NeoBundle
+"**************************************************************
+"NeoBundle Scripts-----------------------------
+if &compatible
+ set nocompatible               " Be iMproved
+endif
+
+
+"""" Required:
+set runtimepath+=/Users/jacobmenke/.vim/bundle/neobundle.vim/
+
+" Required:
+call neobundle#begin(expand('/Users/jacobmenke/.vim/bundle'))
+
+" Let NeoBundle manage NeoBundle
+" Required:
+NeoBundleFetch 'Shougo/neobundle.vim'
+
+"NeoBundle 'tiagofumo/vim-nerdtree-syntax-highlight'
+
+" Required:
+call neobundle#end()
+
+" Required:
+filetype plugin indent on
+
+"}}}***********************************************************
+
+set nocompatible              " be iMproved, required
+set noswapfile
+set nowritebackup
+set ruler
+set autoread
+set ignorecase
+set smartcase
+set tabstop=4
+set statusline+=%F
+set statusline+=%=
+set statusline+=Row:\%l
+set statusline+=/
+set statusline+=%L
+set statusline+=\  
+set statusline+=Col:\ %c
+set laststatus=2
+set wrapscan
+set laststatus=2
+set t_Co=256
+set backspace=2
+set encoding=utf8
+set autoindent
+se showmatch
+set showmode
+set hlsearch
+set mouse=a
+set shiftwidth=4 "indent set to four spaces
+set expandtab
+set number
+syntax on
+set grepprg=ag
+"for copying to system clipboard
+"set clipboard=unnamed
+
+set list listchars=tab:\ \ ,trail:·
+filetype off                  " required
+
+"{{{                    MARK:Vundle
+"**************************************************************
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'TerryMa/vim-multiple-cursors'
+Plugin 'luochen1990/rainbow'
+let g:rainbow_active = 1 "0 if you want to enable it later via :RainbowToggle
+
+	let g:rainbow_conf = {
+	\	'guifgs': ['royalblue3', 'darkorange3', 'seagreen3', 'firebrick'],
+	\	'ctermfgs': ['lightblue', 'lightyellow', 'lightcyan', 'lightmagenta'],
+	\	'operators': '_,_',
+	\	'parentheses': ['start=/(/ end=/)/ fold', 'start=/\[/ end=/\]/ fold', 'start=/{/ end=/}/ fold'],
+	\	'separately': {
+	\		'*': {},
+	\		'tex': {
+	\			'parentheses': ['start=/(/ end=/)/', 'start=/\[/ end=/\]/'],
+	\		},
+	\		'lisp': {
+	\			'guifgs': ['royalblue3', 'darkorange3', 'seagreen3', 'firebrick', 'darkorchid3'],
+	\		},
+	\		'vim': {
+	\			'parentheses': ['start=/(/ end=/)/', 'start=/\[/ end=/\]/', 'start=/{/ end=/}/ fold', 'start=/(/ end=/)/ containedin=vimFuncBody', 'start=/\[/ end=/\]/ containedin=vimFuncBody', 'start=/{/ end=/}/ fold containedin=vimFuncBody'],
+	\		},
+	\		'html': {
+	\			'parentheses': ['start=/\v\<((area|base|br|col|embed|hr|img|input|keygen|link|menuitem|meta|param|source|track|wbr)[ >])@!\z([-_:a-zA-Z0-9]+)(\s+[-_:a-zA-Z0-9]+(\=("[^"]*"|'."'".'[^'."'".']*'."'".'|[^ '."'".'"><=`]*))?)*\>/ end=#</\z1># fold'],
+	\		},
+	\		'css': 0,
+	\	}
+	\}
+
+" Track the engine.
+Plugin 'SirVer/ultisnips'
+Plugin 'ervandew/supertab'
+
+" Snippets are separated from the engine. Add this if you want them:
+Plugin 'honza/vim-snippets'
+
+let g:SuperTabDefaultCompletionType    = '<C-n>'
+let g:SuperTabCrMapping                = 0
+let g:UltiSnipsExpandTrigger           = '<tab>'
+let g:UltiSnipsJumpForwardTrigger      = '<tab>'
+let g:UltiSnipsJumpBackwardTrigger     = '<s-tab>'
+let g:ycm_key_list_select_completion   = ['<C-j>', '<C-n>']
+let g:ycm_key_list_previous_completion = ['<C-k>', '<C-p>']
+let g:ycm_min_num_of_chars_for_completion = 1
+
+let g:ycm_filetype_whitelist = { '*': 1 }
+let g:ycm_filetype_blacklist = { '*': 0}
+
+let g:session_autosave = 'no'
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 0
+let g:syntastic_check_on_wq = 0
+
+let g:syntastic_sh_checkers=['shellcheck']
+
+let g:session_autoload = 'no'
+
+let g:ackprg = 'ag --vimgrep'
+let g:ctrlp_arg_map = 1
+
+
+highlight BookmarkSign ctermbg=NONE ctermfg=160
+highlight BookmarkLine ctermbg=194 ctermfg=NONE
+let g:bookmark_highlight_lines = 0
+
+" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+"let g:UltiSnipsExpandTrigger="<c-j>"
+
+
+call vundle#end()            " required
+""}}}***********************************************************
+filetype plugin indent on    " required
+filetype plugin on
+
+"{{{                    MARK:Mappings
+"**************************************************************
+imap jj <Esc>
+
+map <c-j> 4j
+map <c-k> 4k
+map <c-h> 4h
+map <c-l> 4l
+nnoremap <silent> <C-D> :update<CR>
+vnoremap <silent> <C-D> :<C-C>:update<CR>
+inoremap <silent> <C-D> <C-[>:update<CR>a
+
+nnoremap <silent> <C-G> :w<CR>:Dispatch<CR>
+vnoremap <silent> <C-G> :<C-C>:w<CR>:Dispatch<CR>
+inoremap <silent> <C-G> <C-[>:w<CR>:Dispatch<CR>a
+
+" Repeat last command in the next tmux pane.
+function TmuxRepeat()
+  silent! exec "!tmux send-keys -t right C-c 'bash \"$SCRIPTS/runner.sh\"' ' \"' ".expand('%:p')." '\"' C-m"
+ redraw!
+endfunction
+
+nnoremap <silent> <C-v> :w<CR>:call TmuxRepeat()<CR>
+"vnoremap <silent> <C-V> :<C-C>:w<CR>:call TmuxRepeat()<CR>
+inoremap <silent> <C-v> <C-[>:w<CR>:call TmuxRepeat()<CR>a
+
+nnoremap <silent> <C-Y> :reg<CR>
+vnoremap <silent> <C-Y> :<C-C>:reg<CR>
+inoremap <silent> <C-Y> <C-[>:reg<CR>
+
+nnoremap <silent> <C-C> :wq!<CR>:qa!<CR>
+vnoremap <silent> <C-C> :<C-C>:wq!<CR>:qa!<CR>
+inoremap <silent> <C-C> <C-[>:wq!<CR>:qa!<CR>
+
+nnoremap <silent> <C-E> :q!<CR>
+vnoremap <silent> <C-E> :<C-C>:q!<CR>
+inoremap <silent> <C-E> <C-[>:q!<CR>
+
+inoremap <silent> <C-T> <ESC>I//<ESC>ji
+inoremap <silent> <C-B> <ESC>^xx<ESC>ji
+
+nnoremap <silent> <C-I> :SaveSession<CR>
+vnoremap <silent> <C-I> :<C-C>:SaveSession<CR>
+inoremap <silent> <C-I> <C-[>:SaveSession<CR>a
+
+nnoremap <silent> <leader>q :q!<CR>
+nnoremap <silent> <leader>w :w!<CR>
+nnoremap <silent> <leader>s :vs<CR>
+
+"au FileType qf wincmd L
+
+function Quoter()
+	set iskeyword+=/
+	set iskeyword+=$
+	set iskeyword+={
+	set iskeyword+=(
+    set iskeyword+=)
+	set iskeyword+=}
+	set iskeyword+=-
+	set iskeyword+=\
+	set iskeyword+=.
+endfunction
+
+function Reset()
+	set iskeyword&
+endfunction
+
+nnoremap <silent> <leader>" :call Quoter()<CR>lmaea"<ESC>bi"<ESC>:call Reset()<CR>`a
+nnoremap <silent> <leader>' :call Quoter()<CR>lmaea'<ESC>bi'<ESC>:call Reset()<CR>`a
+
+inoremap <silent> <C-U> <Esc>:silent !open -t %:p:h<CR>:redraw!<CR>a
+nnoremap <silent> <C-U> :silent !open -t %:p:h<CR>:redraw!<CR>
+
+nnoremap <silent> <leader>n :n<CR>
+inoremap <F3> <ESC>:%s///g<Left><Left><Left>
+nnoremap <F3> :%s///g<Left><Left><Left>
+map <F1> :NERDTreeToggle<CR>
+map <F2> :UndotreeToggle<CR>
+
+"for moving selection up and down, displacing other text 
+xmap <C-Down> :m '> + <CR> gv
+xmap <C-Up> :m '< -- <CR> gv
+
+map <silent> w <Plug>CamelCaseMotion_w
+map <silent> b <Plug>CamelCaseMotion_b
+map <silent> e <Plug>CamelCaseMotion_e
+sunmap w
+sunmap b
+sunmap e
+set pastetoggle=<C-F>
+"}}}***********************************************************
+
+function Scripter()
+	inoremap <silent> <C-T> <ESC>I#<ESC>ji
+	inoremap <silent> <C-B> <ESC>^x<ESC>ji
+endfunction
+
+autocmd BufNewFile,BufRead *.py call Scripter()
+autocmd BufNewFile,BufRead *.sh call Scripter() | let b:dispatch = 'bash %'
+autocmd BufNewFile,BufRead *.pl call Scripter()
+autocmd BufNewFile,BufRead *.rb call Scripter()
+autocmd BufReadPre,FileReadPre *.[chy] set cindent
+autocmd BufRead * setlocal foldmethod=marker
+autocmd BufRead * normal zM
+autocmd FileType java let b:dispatch = 'javac %'
+
+execute pathogen#infect()
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+set rtp+=/usr/local/lib/python2.7/site-packages/powerline/bindings/vim
+
+set path+=~/Desktop
+set path+=~/Documents/shellScripts
+
+colorscheme badwolf

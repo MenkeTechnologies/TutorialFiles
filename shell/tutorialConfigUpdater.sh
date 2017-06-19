@@ -7,21 +7,21 @@ boldPrinter(){
     printf "\e[1;4m$1\n\e[0m"
 }
 
-boldPrinter "copying zshrcd"
+boldPrinter "Copying zshrc"
 cp ~/.zshrc "$tutorialDir/zsh"
-boldPrinter "copying vimrc"
+boldPrinter "Copying vimrc"
 cp ~/.vimrc "$tutorialDir/vim"
 
-boldPrinter "copying tmux.conf"
+boldPrinter "Copying tmux.conf"
 cp ~/.tmux.conf "$tutorialDir/tmux"
 
-boldPrinter "copying shell_aliases_functions"
+boldPrinter "Copying shell_aliases_functions"
 cp ~/.shell_aliases_functions.sh "$tutorialDir/aliases"
 
-boldPrinter "copying shellScripts"
+boldPrinter "Copying shellScripts"
 cp $HOME/Documents/shellScripts/*.sh "$tutorialDir/shell"
 
-boldPrinter "copying vis ncmpcpp mpd"
+boldPrinter "Copying vis ncmpcpp mpd"
 cp -R ~/.config/vis "$tutorialDir/ncmpcpp-mpd-vis"
 boldPrinter "emptying mpd log"
 echo > "$tutorialDir/ncmpcpp-mpd-vis/.mpd/mpd.log"
@@ -30,9 +30,10 @@ echo > "/Users/jacobmenke/Documents/tutorialsRepo/ncmpcpp-mpd-vis/.mpd/mpd.log"
 cp -R ~/.config/ncmpcpp "$tutorialDir/ncmpcpp-mpd-vis"
 cp -R ~/.mpd "$tutorialDir/ncmpcpp-mpd-vis"
 
+boldPrinter "Copying iterm Colors"
 cp "$HOME/Documents/iterm-jm-colors.itermcolors" "$tutorialDir"
 
-boldPrinter "copying vim plugins"
+boldPrinter "Copying vim plugins"
 
 #cp -R "$HOME/.vim" "$tutorialDir/vim"
 

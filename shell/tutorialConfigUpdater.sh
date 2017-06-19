@@ -26,6 +26,9 @@ cp -R ~/.config/vis "$tutorialDir/ncmpcpp-mpd-vis"
 boldPrinter "Emptying mpd log"
 echo > "$tutorialDir/ncmpcpp-mpd-vis/.mpd/mpd.log"
 
+boldPrinter "Copying powerline configs"
+cp -R ~/.config/powerline "$tutorialDir"
+
 echo > "/Users/jacobmenke/Documents/tutorialsRepo/ncmpcpp-mpd-vis/.mpd/mpd.log"
 cp -R ~/.config/ncmpcpp "$tutorialDir/ncmpcpp-mpd-vis"
 cp -R ~/.mpd "$tutorialDir/ncmpcpp-mpd-vis"

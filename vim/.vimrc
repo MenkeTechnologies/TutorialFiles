@@ -153,6 +153,7 @@ filetype plugin on
 "**************************************************************
 imap jj <Esc>
 
+"faster movements, used in any modes
 map <c-j> 4j
 map <c-k> 4k
 map <c-h> 4h

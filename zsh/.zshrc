@@ -122,9 +122,10 @@ source $ZSH/oh-my-zsh.sh
 
 source $ZSH/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+#has all my aliases and functioms
 source ~/.shell_aliases_functions.sh
 
-#d
+#get rid of mercurial prompt
 hg_prompt_info(){}
 # User configuration
 

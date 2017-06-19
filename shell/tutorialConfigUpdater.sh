@@ -35,7 +35,7 @@ cp "$HOME/Documents/iterm-jm-colors.itermcolors" "$tutorialDir"
 
 boldPrinter "Copying vim plugins"
 
-#cp -R "$HOME/.vim" "$tutorialDir/vim"
+cp -R "$HOME/.vim" "$tutorialDir/vim"
 
 cd "$tutorialDir"
 

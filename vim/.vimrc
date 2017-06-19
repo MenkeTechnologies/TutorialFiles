@@ -134,7 +134,8 @@ let g:session_autoload = 'no'
 
 let g:ackprg = 'ag --vimgrep'
 let g:ctrlp_arg_map = 1
-
+"tree style file explorer
+let g:netrw_liststyle=3
 
 highlight BookmarkSign ctermbg=NONE ctermfg=160
 highlight BookmarkLine ctermbg=194 ctermfg=NONE

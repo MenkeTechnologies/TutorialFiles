@@ -3,27 +3,27 @@
 
 tutorialDir="$HOME/Documents/tutorialsRepo"
 
-prettyPrint(){
+boldPrinter(){
     printf "\e[1m$1\n\e[0m"
 }
 
-prettyPrint "copying zshrcd"
+boldPrinter "copying zshrcd"
 cp ~/.zshrc "$tutorialDir/zsh"
-prettyPrint "copying vimrc"
+boldPrinter "copying vimrc"
 cp ~/.vimrc "$tutorialDir/vim"
 
-prettyPrint "copying tmux.conf"
+boldPrinter "copying tmux.conf"
 cp ~/.tmux.conf "$tutorialDir/tmux"
 
-prettyPrint "copying shell_aliases_functions"
+boldPrinter "copying shell_aliases_functions"
 cp ~/.shell_aliases_functions.sh "$tutorialDir/aliases"
 
-prettyPrint "copying shellScripts"
+boldPrinter "copying shellScripts"
 cp $HOME/Documents/shellScripts/*.sh "$tutorialDir/shell"
 
-prettyPrint "copying vis ncmpcpp mpd"
+boldPrinter "copying vis ncmpcpp mpd"
 cp -R ~/.config/vis "$tutorialDir/ncmpcpp-mpd-vis"
-prettyPrint "emptying mpd log"
+boldPrinter "emptying mpd log"
 echo > "$tutorialDir/ncmpcpp-mpd-vis/.mpd/mpd.log"
 
 echo > "/Users/jacobmenke/Documents/tutorialsRepo/ncmpcpp-mpd-vis/.mpd/mpd.log"
@@ -32,14 +32,14 @@ cp -R ~/.mpd "$tutorialDir/ncmpcpp-mpd-vis"
 
 cp "$HOME/Documents/iterm-jm-colors.itermcolors" "$tutorialDir"
 
-prettyPrint "copying vim plugins"
+boldPrinter "copying vim plugins"
 
 #cp -R "$HOME/.vim" "$tutorialDir/vim"
 
 cd "$tutorialDir"
 
 
-prettyPrint "Removing .git dirs....:)"
+boldPrinter "Removing .git dirs....:)"
 
 while read file; do
     if [[ -d "$file" ]]; then

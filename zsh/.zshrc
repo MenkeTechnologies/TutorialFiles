@@ -200,8 +200,6 @@ bindkey '\ex' _updater
 bindkey '^S' _gitfunc
 bindkey '\ed' _tutsUpdate
 
-
-#}}}***********************************************************
 #exec 2> >(blueUpperText.sh)
 
 my-accept-line () {
@@ -226,10 +224,10 @@ precmd(){
    zle -N rationalize-dot
    bindkey . rationalize-dot
 
-   #bindkey -M menuselect '^M' .accept-line
-   #
-   #
-   #
+
+
+#}}}***********************************************************
+
 # Set Options {{{
 # ===== Basics
 setopt rcquotes # allow '' escape
@@ -329,7 +327,6 @@ alias -g nul="> /dev/null 2>&1"
 
 #allow for awesome z command
 . ~/z.sh
-
 
 #go to desktop if not root
 if [[ "$UID" != "0" ]]; then

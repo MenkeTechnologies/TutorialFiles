@@ -12,6 +12,9 @@ ZSH_THEME="pure-prompt"
 
 ZSH_THEME="powerlevel9k/powerlevel9k"
 . ~/.oh-my-zsh/custom/themes/powerlevel9k/powerlevel9k.zsh-theme
+
+#{{{                    MARK:PowerLevel9k
+#**************************************************************
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir history   ssh rbenv time vcs  root_indicator status)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(vi_mode command_execution_time  custom_batt dir_writable  background_jobs custom_pid swap)
 
@@ -69,6 +72,8 @@ POWERLEVEL9K_CUSTOM_BATT="milliamps"
 POWERLEVEL9K_CUSTOM_BATT_BACKGROUND="red"
 POWERLEVEL9K_CUSTOM_BATT_FOREGROUND="black"
 
+
+#}}}***********************************************************
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 

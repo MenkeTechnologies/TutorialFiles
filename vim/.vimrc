@@ -199,8 +199,6 @@ nnoremap <silent> <leader>q :q!<CR>
 nnoremap <silent> <leader>w :w!<CR>
 nnoremap <silent> <leader>s :vs<CR>
 
-"au FileType qf wincmd L
-
 function Quoter()
 	set iskeyword+=/
 	set iskeyword+=$

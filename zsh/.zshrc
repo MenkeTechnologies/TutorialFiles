@@ -201,6 +201,7 @@ bindkey '\ex' _updater
 bindkey '^S' _gitfunc
 bindkey '\ed' _tutsUpdate
 
+#Filter stderr through shell scripts
 #exec 2> >(blueUpperText.sh)
 
 my-accept-line () {

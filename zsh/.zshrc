@@ -158,6 +158,9 @@ bindkey -v
 bindkey -M viins '^r' history-incremental-search-backward
 bindkey -M vicmd '^r' history-incremental-search-backward
 
+#{{{                    MARK:Custom Fxns
+#**************************************************************
+
 function _sub {
     zle kill-whole-line
     BUFFER="suc"
@@ -192,6 +195,8 @@ bindkey '\ex' _updater
 bindkey '^S' _gitfunc
 bindkey '\ed' _tutsUpdate
 
+
+#}}}***********************************************************
 #exec 2> >(blueUpperText.sh)
 
 my-accept-line () {

@@ -53,6 +53,7 @@ while read file; do
 done < <(find ./vim)
 
 git status
+boldPrinter "Pushing ..."
 git add .
 git commit -m "update"
 git push

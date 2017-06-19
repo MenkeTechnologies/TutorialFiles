@@ -1,5 +1,7 @@
 #created by JACOBMENKE at Mon Jun 12 17:33:50 EDT 2017
 
+#{{{                    MARK:ENV Var
+#**************************************************************
 export CLICOLOR="YES"
 export LSCOLORS="ExFxBxDxCxegedabagacad"
 export TERM="xterm-256color"
@@ -16,7 +18,9 @@ export PATH="$PATH:/usr/local/lib/python2.7/site-packages/powerline/scripts/"
 export PATH="$PYEXECUTABLES:$SCRIPTS/save-run:/Users/jacobmenke/.local/bin:/Users/jacobmenke/perl5/bin:Library/Frameworks/Python.framework/Versions/3.5/bin:/Users/jacobmenke/Documents/shellScripts:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Library/Developer/CommandLineTools/usr/bin:/usr/local/sbin:$PATH"
 export GITHUB_ACCOUNT='MenkeTechnologies'
 export HOMEBREW_HOME_FORMULAE="/usr/local/Homebrew/Library/taps/homebrew/homebrew-core/formula"
-#**********************************************************************
+
+#}}}***********************************************************
+
 #{{{                           MARK:HOMEs                           
 #**********************************************************************
 export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home"

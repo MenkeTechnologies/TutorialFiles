@@ -4,7 +4,7 @@
 tutorialDir="$HOME/Documents/tutorialsRepo"
 
 boldPrinter(){
-    printf "\e[1m$1\n\e[0m"
+    printf "\e[1;4m$1\n\e[0m"
 }
 
 boldPrinter "copying zshrcd"

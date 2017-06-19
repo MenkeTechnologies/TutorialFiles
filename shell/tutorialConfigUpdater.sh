@@ -39,7 +39,7 @@ cp -R "$HOME/.vim" "$tutorialDir/vim"
 
 cd "$tutorialDir" || exit
 
-boldAndUnderlinedPrint "Removing .git dirs....:)"
+boldAndUnderlinedPrint "Removing .git dirs...)"
 
 while read -r file; do
     if [[ -d "$file" ]]; then
@@ -54,7 +54,7 @@ done < <(find ./vim)
 boldAndUnderlinedPrint "Status..."
 
 git status
-boldAndUnderlinedPrint "Pushing ..."
+boldAndUnderlinedPrint "Pushing..."
 git add .
 git commit -m "update"
 git push

@@ -23,7 +23,7 @@ cp $HOME/Documents/shellScripts/*.sh "$tutorialDir/shell"
 
 boldPrinter "Copying vis ncmpcpp mpd"
 cp -R ~/.config/vis "$tutorialDir/ncmpcpp-mpd-vis"
-boldPrinter "emptying mpd log"
+boldPrinter "Emptying mpd log"
 echo > "$tutorialDir/ncmpcpp-mpd-vis/.mpd/mpd.log"
 
 echo > "/Users/jacobmenke/Documents/tutorialsRepo/ncmpcpp-mpd-vis/.mpd/mpd.log"

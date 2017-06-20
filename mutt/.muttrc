@@ -1,9 +1,3 @@
-
-bind index G imap-fetch-mail
-set charset = "utf-8"
-set record = ''
-set move = no
-
 set imap_user = "username@gmail.com"
 set imap_pass = "password"
 set smtp_url = "smtps://username@smtp.gmail.com:465/"
@@ -12,14 +6,29 @@ set from = "username@gmail.com"
 set realname = "realname"
 #set sendmail="/usr/bin/msmtp"
 
+#======================================================#
+# Order of headers and what to show
+hdr_order Date: From: User-Agent: X-Mailer \
+To: Cc: Reply-To: Subject:
+ignore *
+unignore Date: From: User-Agent: X-Mailer \
+To: Cc: Reply-To: Subject:
+
+#======================================================#
+# which editor do you want to use?
+# vim of course!
+set editor="vim -c 'set tw=70 et' '+/^$' "
+set edit_headers # See the headers when editing
+set charset = "utf-8"
+set record = ''
+set move = no
+
 set header_cache =~/.mutt/cache/headers
 set message_cachedir =~/.mutt/cache/bodies
 set certificate_file =~/.mutt/certificates
-
 set folder = "imaps://imap.gmail.com:993"
 set spoolfile = "+INBOX"
 set postponed = "+[Gmail]/Drafts"
-#set trash = "imaps://imap.gmail.com[Gmail]/Trash"
 set trash = "+[Gmail]/Trash"
 
 #======================================================#
@@ -35,7 +44,123 @@ To: Cc: Reply-To: Subject:
 # vim of course!
 set editor="vim -c 'set tw=70 et' '+/^$' "
 set edit_headers # See the headers when editing
-
-
 set smtp_authenticators = 'gssapi:login'
+set record = "+[Gmail]/Sent Mail"
+set copy = no
+
+bind index G imap-fetch-mail
+
+macro index,pager I  O  "Mark as read"
+macro index,pager U  O  "Mark as unread"
+macro index,pager ga "=[Gmail]/All Mail"  "Go to all mail"
+macro index,pager gs =[Gmail]/Starred "Go to 'Starred'"
+macro index,pager gd =[Gmail]/Drafts  "Go to 'Drafts'"
+macro index,pager gl ?       "Go to 'Label'"
+macro index,pager gi =INBOX     "Go to inbox"
+macro index,pager gt "=[Gmail]/Sent Mail" "Go to 'Sent Mail'"
+macro index,pager d "=[Gmail]/Trash" "Trash"
+macro index,pager +  =[Gmail]/Important "Mark as important"
+macro index,pager !  =[Gmail]/Spam "Report spam"
+macro index,pager e  "=[All]/Gmail Mail" "Archive conversation"
+
+
+# Sidebar Patch --------------------------------------
+set sidebar_visible = yes
+set sidebar_width   = 24
+color sidebar_new color221 color233
+
+# Status Bar -----------------------------------------
+set status_chars  = " *%A"
+set status_format = "───[ Folder: %f ]───[%r%m messages%?n? (%n new)?%?d? (%d to delete)?%?t? (%t tagged)? ]───%>─%?p?( %p postponed )?───"
+
+# Header Options -------------------------------------
+ignore *                                # ignore all headers
+unignore from: to: cc: date: subject:   # show only these
+unhdr_order *                           # some distros order things by default
+hdr_order from: to: cc: date: subject:  # and in this order
+
+mailboxes +[Gmail]/Drafts \
+	+INBOX \
+	+[Gmail]/Trash \
+	"+[Gmail]/Sent Mail" \
+	+[Gmail]/Spam \
+	+[Gmail]/Important
+
+
+# Sidebar Navigation ---------------------------------
+bind index,pager j   sidebar-next
+bind index,pager k     sidebar-prev
+bind index,pager l  sidebar-open
+
+
+# Header Options -------------------------------------
+ignore *                                # ignore all headers
+unignore from: to: cc: date: subject:   # show only these
+unhdr_order *                           # some distros order things by default
+hdr_order from: to: cc: date: subject:  # and in this order
+
+
+# Pager Key Bindings ---------------------------------
+bind pager <up>  previous-line
+bind pager <down>  next-line
+bind pager gg top
+bind pager G  bottom
+
+bind pager R  group-reply
+
+# View attachments properly.
+bind attach <return> view-mailcap
+# Index Key Bindings ---------------------------------
+bind index gg       first-entry
+bind index G        last-entry
+
+bind index R        group-reply
+bind index <tab>    sync-mailbox
+bind index <space>  collapse-thread
+
+# Ctrl-R to mark all as read
+macro index \Cr "T~U<enter><tag-prefix><clear-flag>N<untag-pattern>.<enter>" "mark all messages as read"
+
+# Sync email
+macro index O "<shell-escape>offlineimap<enter>"           "run offlineimap to sync all mail"
+macro index o "<shell-escape>offlineimap -qf INBOX<enter>" "run offlineimap to sync inbox"
+
+# Saner copy/move dialogs
+macro index C "<copy-message>?<toggle-mailboxes>" "copy a message to a mailbox"
+macro index M "<save-message>?<toggle-mailboxes>" "move a message to a mailbox"
+
+
+
+# Index View Options ---------------------------------
+set date_format = "%m/%d %T"
+set index_format = "[%Z]  %D %-20.20F  %s"
+set sort = threads                         # like gmail
+set sort_aux = reverse-last-date-received  # like gmail
+set uncollapse_jump                        # don't collapse on an unread message
+set sort_re                                # thread based on regex
+set reply_regexp = "^(([Rr][Ee]?(\[[0-9]+\])?: *)?(\[[^]]+\] *)?)*"
+
+
+# Pager View Options ---------------------------------
+set pager_index_lines = 10 # number of index lines to show
+set pager_context = 3      # number of context lines to show
+set pager_stop             # don't go to next message automatically
+set menu_scroll            # scroll in menus
+set tilde                  # show tildes like in vim
+unset markers              # no ugly plus signs
+
+set quote_regexp = "^( {0,4}[>|:#%]| {0,4}[a-z0-9]+[>|]+)+"
+alternative_order text/plain text/enriched text/html
+
+
+
+set query_command = "contacts -Sf '%eTOKEN%n' '%s' | sed -e 's/TOKEN/\t/g'"
+bind editor <Tab> complete-query
+bind editor ^T    complete
+
+
+macro pager \Cu "|urlview<enter>" "call urlview to open links"
+
+
+
 

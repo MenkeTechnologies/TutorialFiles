@@ -16,7 +16,7 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 #{{{                    MARK:PowerLevel9k
 #**************************************************************
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir history   ssh rbenv time vcs  root_indicator status)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(vi_mode command_execution_time  custom_batt dir_writable  background_jobs custom_pid swap)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(vi_mode command_execution_time dir_writable  background_jobs custom_pid swap)
 
 POWERLEVEL9K_MODE='nerdfont-complete'
 ZLE_RPROMPT_INDENT=0
@@ -28,6 +28,8 @@ POWERLEVEL9K_BACKGROUND_JOBS_VERBOSE=true
 POWERLEVEL9K_COMMAND_EXECUTION_TIME_THRESHOLD=1
 POWERLEVEL9K_COMMAND_EXECUTION_TIME_PRECISION=3
 POWERLEVEL9K_TIME_BACKGROUND='green'
+POWERLEVEL9K_HISTORY_BACKGROUND='235'
+POWERLEVEL9K_HISTORY_FOREGROUND='green'
 POWERLEVEL9K_CONTEXT_FOREGROUND='white'
 POWERLEVEL9K_CONTEXT_BACKGROUND='235'
 

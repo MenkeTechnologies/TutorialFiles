@@ -1,0 +1,148 @@
+auto-save.txt                             *AutoSave* *auto-save* *vim-auto-save*
+
+================================================================================
+CONTENTS                                                      *auto-save-contents*
+
+1. Description.............................................|auto-save-description|
+2. Installation...........................................|auto-save-installation|
+3. Usage.........................................................|auto-save-usage|
+4. Options.....................................................|auto-save-options|
+    4.1. Enable on Startup...........................|auto-save-enable_on_startup|
+    4.2. Silent.................................................|auto-save-silent|
+    4.3. Events.................................................|auto-save-events|
+    4.4. Postsave Hook...................................|auto-save-postsave_hook|
+    4.5. Write to All Buffers.....................|auto-save-write_to_all_buffers|
+5. Development.............................................|auto-save-development|
+6. Contribution or Bug Report...............|auto-save-contribution_or_bug_report|
+7. License.....................................................|auto-save-license|
+
+================================================================================
+DESCRIPTION                                                *auto-save-description*
+
+AutoSave - automatically saves changes to disk without having to use `:w`
+(or any binding to it) every time a buffer has been modified or based on your
+preferred events.
+
+Inspired by the same feature in RubyMine text editor.
+
+By default AutoSave will save every time something has been changed in normal
+mode and when the user leaves insert mode. This configuration is a mix between
+"save as often as possible" and "try to avoid breaking other plugins that depend
+on filewrite-events".
+
+================================================================================
+INSTALLATION                                              *auto-save-installation*
+
+Use vundle (https://github.com/gmarik/vundle) or
+download packaged version (http://www.vim.org/scripts/script.php?script_id=4521)
+from vim.org.
+
+================================================================================
+USAGE                                                            *auto-save-usage*
+
+AutoSave is disabled by default, run `:AutoSaveToggle` to enable/disable it.
+
+================================================================================
+OPTIONS                                                        *auto-save-options*
+
+--------------------------------------------------------------------------------
+ENABLE ON STARTUP                                    *auto-save-enable_on_startup*
+
+If you want the plugin to be enabled on startup use the `g:auto_save` option.
+>
+    " .vimrc
+    let g:auto_save = 1  " enable AutoSave on Vim startup
+<
+
+--------------------------------------------------------------------------------
+SILENT                                                          *auto-save-silent*
+
+AutoSave will display on the status line on each auto-save by default:
+>
+    (AutoSave) saved at 08:40:55
+<
+
+You can silence the display with the `g:auto_save_silent` option:
+>
+    " .vimrc
+    let g:auto_save_silent = 1  " do not display the auto-save notification
+<
+
+--------------------------------------------------------------------------------
+EVENTS                                                          *auto-save-events*
+
+The events on which AutoSave will perform a save can be adjusted using the
+`g:auto_save_events` option. Using `InsertLeave` and `TextChanged` only,
+the default, will save on every change in normal mode and every time you leave insert mode.
+>
+    " .vimrc
+    let g:auto_save_events = ["InsertLeave", "TextChanged"]
+<
+
+Using `CursorHold` will additionally save every amount of milliseconds as
+defined in the `updatetime` option in normal mode. `CursorHoldI` will do the
+same thing in insert mode. `CompleteDone` will also trigger a save after every
+completion event. See the autocommands overview for a complete listing
+().
+
+Be advised to be careful with the `updatetime` option since it has shown to
+cause problems when set too small. 200 seems already to be too small to work
+with certain other plugins. Use 1000 for a more conservative setting.
+>
+    " .vimrc
+    set updatetime=200  " Dangerous!
+    let g:auto_save_events = ["CursorHold", "CursorHoldI", "CompleteDone", "InsertLeave"]
+<
+
+--------------------------------------------------------------------------------
+POSTSAVE HOOK                                            *auto-save-postsave_hook*
+
+If you need an autosave hook (such as generating tags post-save, or aborting the save earlier)
+then use `g:auto_save_postsave_hook` or `g:auto_save_presave_hook` options:
+>
+    " .vimrc
+    " This will run :TagsGenerate after each save
+    let g:auto_save_postsave_hook = 'TagsGenerate'
+    " This will run :AbortIfNotGitDirectory before each save
+    let g:auto_save_presave_hook = 'call AbortIfNotGitDirectory()'
+    " Example hook from vim-auto-save-git-hook plugin
+    function! AbortIfNotGitDirectory()
+      if ...
+        let g:auto_save_abort = 0
+      else
+        let g:auto_save_abort = 1
+      endif
+    endfunction
+<
+
+--------------------------------------------------------------------------------
+WRITE TO ALL BUFFERS                              *auto-save-write_to_all_buffers*
+
+By default only the current buffer is written (like `:w`). You can choose that
+all buffers are written on autosave using the `g:auto_save_write_all_buffers`
+option (like `:wa`).
+>
+    " .vimrc
+    let g:auto_save_write_all_buffers = 1  " write all open buffers as if you would use :wa
+<
+
+================================================================================
+DEVELOPMENT                                                *auto-save-development*
+
+The `doc/auto-save.txt` is a converted version of the `README.md`. Don't edit
+it directly. Instead install the md2vim (https://github.com/FooSoft/md2vim) and
+run the `update_doc_from_readme.sh` script.
+
+================================================================================
+CONTRIBUTION OR BUG REPORT                  *auto-save-contribution_or_bug_report*
+
+Development is made in 907th/vim-auto-save (https://github.com/907th/vim-auto-save) repo.
+Please, report any bugs and/or suggestions there. Any contrubution is welcomed!
+
+================================================================================
+LICENSE                                                        *auto-save-license*
+
+Distributed under the MIT License (see LICENSE.txt).
+
+Copyright (c) 2013-2016 Alexey Chernenkov
+

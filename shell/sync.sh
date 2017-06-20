@@ -2,12 +2,12 @@
 firstFile="$1"
 
 #exit is argument count less than 2
-if [[ $# < 2 ]];then
+if (( $# < 2 ));then
 	echo "Need two args"
 	exit 1
 fi
 
-#add blackslash if not already present to first file
+#add backslash if not already present to first file
 #to make sure the contents of file 1 are synced not the file itself
 if [[ "${firstFile: -1}" != "/" ]]; then
 	firstFile="${firstFile}/"

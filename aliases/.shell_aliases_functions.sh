@@ -130,7 +130,6 @@ alias v2="open -a 'vnc viewer';execpy enterPasswordForVNC2.py & bash $SCRIPTS/ss
 alias rr="/Users/jacobmenke/Documents/shellScripts/rsyncr.sh"
 alias mntpi="sshfs -o IdentityFile=/Users/jacobmenke/.ssh/id_rsa r:/var/www/html /Users/jacobmenke/Desktop/tuts/piweb/"
 alias mntds="sshfs -o IdentityFile=/Users/jacobmenke/.ssh/id_rsa d:/volume1/homes/JAKENAS/softwareTutorials /Users/jacobmenke/Desktop/tuts/ds/"
-
 bold=$(tput bold || tput md)
 red=$(tput setaf 1)
 #**********************************************************************
@@ -147,7 +146,6 @@ export PATH="$HOME/.rvm/bin:$PATH" # Add RVM to PATH for scripting
 
 #{{{                    MARK:Shell functions
 #**************************************************************
-
 scnew(){
     if [[ -z "$1" ]];then
         echo "no arg..."
@@ -189,7 +187,6 @@ blocksToSize(){
     local bytes=$(( input * 512 ))
     echo $bytes | humanReadable 
 }
-
 humanReadable(){
 awk 'function human(x) {
          s=" B   KiB MiB GiB TiB EiB PiB YiB ZiB"
@@ -224,7 +221,6 @@ cd(){
     clearList
 
 }
-
 q(){
     printf "\e[1m"
     /usr/local/bin/git add .
@@ -232,7 +228,6 @@ q(){
     /usr/local/bin/git push
     printf "\e[0m"
 }
-
 replacer(){
 orig="$1"
 shift
@@ -241,7 +236,6 @@ shift
 sed -i'' "s/$orig/$replace/g" $@
 
 }
-
 createGIF(){
 outFile=out.gif
 res=600x400
@@ -320,9 +314,6 @@ mp4(){
 youtube-dl -f mp4 "$1"
 }
 #}}}***********************************************************
-
-
-
 
 source "$HOME/.tokens.sh"
 

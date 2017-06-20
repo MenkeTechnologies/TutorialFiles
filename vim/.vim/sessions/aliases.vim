@@ -1,6 +1,6 @@
 " ~/.vim/sessions/aliases.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 14 June 2017 at 03:31:14.
+" Created by session.vim 2.13.1 on 20 June 2017 at 16:22:11.
 " Open this file in Vim and run :source % to restore your session.
 
 if exists('g:syntax_on') != 1 | syntax on | endif
@@ -37,18 +37,16 @@ setlocal fdm=marker
 setlocal fde=0
 setlocal fmr={{{,}}}
 setlocal fdi=#
-setlocal fdl=0
+setlocal fdl=1
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-43
-silent! normal! zo
-let s:l = 102 - ((37 * winheight(0) + 35) / 71)
+let s:l = 282 - ((35 * winheight(0) + 37) / 74)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-102
-normal! 053|
+282
+normal! 042|
 tabnext 1
 if exists('s:wipebuf')
 "   silent exe 'bwipe ' . s:wipebuf

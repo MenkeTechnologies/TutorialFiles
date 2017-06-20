@@ -119,7 +119,7 @@ let g:UltiSnipsJumpBackwardTrigger     = '<s-tab>'
 let g:ycm_key_list_select_completion   = ['<C-j>', '<C-n>']
 let g:ycm_key_list_previous_completion = ['<C-k>', '<C-p>']
 let g:ycm_min_num_of_chars_for_completion = 1
-
+"auto completion of all filetypes
 let g:ycm_filetype_whitelist = { '*': 1 }
 let g:ycm_filetype_blacklist = { '*': 0}
 
@@ -167,10 +167,10 @@ filetype plugin on
 imap jj <Esc>
 
 "faster movements, used in any modes
-map <c-j> 4j
-map <c-k> 4k
-map <c-h> 4h
-map <c-l> 4l
+noremap <c-j> 4j
+noremap <c-k> 4k
+noremap <c-h> 4h
+noremap <c-l> 4l
 nnoremap <silent> <C-D> :update<CR>
 vnoremap <silent> <C-D> :<C-C>:update<CR>
 inoremap <silent> <C-D> <C-[>:update<CR>a
@@ -218,6 +218,7 @@ nnoremap <silent> <space> za
 
 
 function Quoter()
+    "w,e,b will not see these characters as delimiters
 	set iskeyword+=/
 	set iskeyword+=$
 	set iskeyword+={
@@ -289,3 +290,10 @@ fun! SetDiffColors()
   highlight DiffText   cterm=bold ctermfg=white ctermbg=DarkRed
 endfun
 autocmd FilterWritePre * call SetDiffColors()
+
+"common mispellings
+iabbrev teh the
+iabbrev adn and
+iabbrev waht what
+iabbrev tehn then
+

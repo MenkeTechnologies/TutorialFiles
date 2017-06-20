@@ -1,6 +1,6 @@
 " ~/.vim/sessions/trc.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 20 June 2017 at 16:10:55.
+" Created by session.vim 2.13.1 on 20 June 2017 at 16:21:42.
 " Open this file in Vim and run :source % to restore your session.
 
 if exists('g:syntax_on') != 1 | syntax on | endif
@@ -41,12 +41,12 @@ setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 32 - ((30 * winheight(0) + 37) / 74)
+let s:l = 29 - ((27 * winheight(0) + 37) / 74)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-32
-normal! 019|
+29
+normal! 05|
 tabnext 1
 if exists('s:wipebuf')
 "   silent exe 'bwipe ' . s:wipebuf

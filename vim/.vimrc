@@ -275,3 +275,12 @@ set path+=~/Desktop
 set path+=~/Documents/shellScripts
 
 colorscheme badwolf
+
+"diffing colors
+fun! SetDiffColors()
+  highlight DiffAdd    cterm=bold ctermfg=white ctermbg=DarkGreen
+  highlight DiffDelete cterm=bold ctermfg=white ctermbg=DarkGrey
+  highlight DiffChange cterm=bold ctermfg=white ctermbg=DarkBlue
+  highlight DiffText   cterm=bold ctermfg=white ctermbg=DarkRed
+endfun
+autocmd FilterWritePre * call SetDiffColors()

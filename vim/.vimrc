@@ -111,6 +111,7 @@ let g:auto_save = 1  " enable AutoSave on Vim startup
 let g:auto_save_silent = 1  " do not display the auto-save notification
 let g:auto_save_events = ["InsertLeave", "TextChanged", "TextChangedI"]
 
+
 let g:SuperTabDefaultCompletionType    = '<C-n>'
 let g:SuperTabCrMapping                = 0
 let g:UltiSnipsExpandTrigger           = '<tab>'
@@ -248,6 +249,8 @@ map <F2> :UndotreeToggle<CR>
 
 
 map <silent> <leader><leader>w <Plug>(easymotion-bd-w)
+map <silent> <leader><leader>e <Plug>(easymotion-bd-e)
+"map <silent> <leader><leader>b <Plug>(easymotion-bd-b)
 
 "for moving selection up and down, displacing other text 
 xmap <C-Down> :m '> + <CR> gv

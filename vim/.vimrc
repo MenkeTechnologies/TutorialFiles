@@ -119,7 +119,7 @@ let g:UltiSnipsJumpBackwardTrigger     = '<s-tab>'
 let g:ycm_key_list_select_completion   = ['<C-j>', '<C-n>']
 let g:ycm_key_list_previous_completion = ['<C-k>', '<C-p>']
 let g:ycm_min_num_of_chars_for_completion = 1
-"auto completion of all filetypes
+
 let g:ycm_filetype_whitelist = { '*': 1 }
 let g:ycm_filetype_blacklist = { '*': 0}
 
@@ -245,6 +245,9 @@ inoremap <F3> <ESC>:%s///g<Left><Left><Left>
 nnoremap <F3> :%s///g<Left><Left><Left>
 map <F1> :NERDTreeToggle<CR>
 map <F2> :UndotreeToggle<CR>
+
+
+map <silent> <leader><leader>w <Plug>(easymotion-bd-w)
 
 "for moving selection up and down, displacing other text 
 xmap <C-Down> :m '> + <CR> gv

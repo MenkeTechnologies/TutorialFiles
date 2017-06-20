@@ -131,6 +131,8 @@ alias rr="/Users/jacobmenke/Documents/shellScripts/rsyncr.sh"
 alias mntpi="sshfs -o IdentityFile=/Users/jacobmenke/.ssh/id_rsa r:/var/www/html /Users/jacobmenke/Desktop/tuts/piweb/"
 alias mntds="sshfs -o IdentityFile=/Users/jacobmenke/.ssh/id_rsa d:/volume1/homes/JAKENAS/softwareTutorials /Users/jacobmenke/Desktop/tuts/ds/"
 
+bold=$(tput bold || tput md)
+red=$(tput setaf 1)
 #**********************************************************************
 #                           MARK:RUST                           
 #**********************************************************************
@@ -139,9 +141,12 @@ export PATH="$PATH:/Users/jacobmenke/.cargo/bin:$PATH"
 #                           MARK:RVM                           
 #**********************************************************************
 export PATH="$HOME/.rvm/bin:$PATH" # Add RVM to PATH for scripting
+#**************************************************************
+#}}}
 
 
-
+#{{{                    MARK:Shell functions
+#**************************************************************
 
 scnew(){
     if [[ -z "$1" ]];then
@@ -314,11 +319,10 @@ youtube-dl --extract-audio --audio-format mp3 "$1"
 mp4(){
 youtube-dl -f mp4 "$1"
 }
+#}}}***********************************************************
 
 
-bold=$(tput bold || tput md)
-red=$(tput setaf 1)
-export STDERRED_ESC_CODE=`echo -e "$bold$red"`
+
 
 source "$HOME/.tokens.sh"
 

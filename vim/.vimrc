@@ -279,6 +279,7 @@ autocmd BufRead * setlocal foldmethod=marker
 autocmd BufRead * normal zM
 autocmd FileType java let b:dispatch = 'javac %'
 
+"load all pathogen plugins
 execute pathogen#infect()
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 set rtp+=/usr/local/lib/python2.7/site-packages/powerline/bindings/vim
@@ -302,4 +303,5 @@ iabbrev teh the
 iabbrev adn and
 iabbrev waht what
 iabbrev tehn then
+
 

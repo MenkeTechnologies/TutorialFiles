@@ -189,6 +189,9 @@ nnoremap <silent> <C-v> :w<CR>:call TmuxRepeat()<CR>
 "vnoremap <silent> <C-V> :<C-C>:w<CR>:call TmuxRepeat()<CR>
 inoremap <silent> <C-v> <C-[>:w<CR>:call TmuxRepeat()<CR>a
 
+nnoremap <silent> <Esc>t mbgg=G`b
+inoremap <silent> <Esc>t <ESC>mbgg=G`ba
+
 nnoremap <silent> <C-Y> :reg<CR>
 vnoremap <silent> <C-Y> :<C-C>:reg<CR>
 inoremap <silent> <C-Y> <C-[>:reg<CR>

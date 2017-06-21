@@ -215,8 +215,6 @@ inoremap <silent> <C-I> <C-[>:SaveSession<CR>a
 nnoremap <silent> <leader>q :q!<CR>
 nnoremap <silent> <leader>w :w!<CR>
 nnoremap <silent> <leader>s :vs<CR>
-"nnoremap <silent> <space> za
-
 
 function Quoter()
     "w,e,b will not see these characters as delimiters
@@ -234,6 +232,11 @@ endfunction
 function Reset()
 	set iskeyword&
 endfunction
+
+augroup indentGroup
+    autocmd!
+    autocmd InsertLeave * :normal mbgg=G`b
+augroup end
 
 nnoremap <silent> <leader>" :call Quoter()<CR>lmaea"<ESC>bi"<ESC>:call Reset()<CR>`a
 nnoremap <silent> <leader>' :call Quoter()<CR>lmaea'<ESC>bi'<ESC>:call Reset()<CR>`a

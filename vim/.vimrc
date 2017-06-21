@@ -215,7 +215,7 @@ inoremap <silent> <C-I> <C-[>:SaveSession<CR>a
 nnoremap <silent> <leader>q :q!<CR>
 nnoremap <silent> <leader>w :w!<CR>
 nnoremap <silent> <leader>s :vs<CR>
-nnoremap <silent> <space> za
+"nnoremap <silent> <space> za
 
 
 function Quoter()
@@ -303,5 +303,4 @@ iabbrev teh the
 iabbrev adn and
 iabbrev waht what
 iabbrev tehn then
-
 

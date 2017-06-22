@@ -2,7 +2,7 @@
 "**************************************************************
 "NeoBundle Scripts-----------------------------
 if &compatible
- set nocompatible               " Be iMproved
+    set nocompatible               " Be iMproved
 endif
 
 
@@ -51,6 +51,7 @@ set autoindent
 se showmatch
 set showmode
 set hlsearch
+set incsearch
 set mouse=a
 set shiftwidth=4 "indent set to four spaces
 set expandtab
@@ -75,28 +76,28 @@ Plugin 'TerryMa/vim-multiple-cursors'
 Plugin 'luochen1990/rainbow'
 let g:rainbow_active = 1 "0 if you want to enable it later via :RainbowToggle
 
-	let g:rainbow_conf = {
-	\	'guifgs': ['royalblue3', 'darkorange3', 'seagreen3', 'firebrick'],
-	\	'ctermfgs': ['lightblue', 'lightyellow', 'lightcyan', 'lightmagenta'],
-	\	'operators': '_,_',
-	\	'parentheses': ['start=/(/ end=/)/ fold', 'start=/\[/ end=/\]/ fold', 'start=/{/ end=/}/ fold'],
-	\	'separately': {
-	\		'*': {},
-	\		'tex': {
-	\			'parentheses': ['start=/(/ end=/)/', 'start=/\[/ end=/\]/'],
-	\		},
-	\		'lisp': {
-	\			'guifgs': ['royalblue3', 'darkorange3', 'seagreen3', 'firebrick', 'darkorchid3'],
-	\		},
-	\		'vim': {
-	\			'parentheses': ['start=/(/ end=/)/', 'start=/\[/ end=/\]/', 'start=/{/ end=/}/ fold', 'start=/(/ end=/)/ containedin=vimFuncBody', 'start=/\[/ end=/\]/ containedin=vimFuncBody', 'start=/{/ end=/}/ fold containedin=vimFuncBody'],
-	\		},
-	\		'html': {
-	\			'parentheses': ['start=/\v\<((area|base|br|col|embed|hr|img|input|keygen|link|menuitem|meta|param|source|track|wbr)[ >])@!\z([-_:a-zA-Z0-9]+)(\s+[-_:a-zA-Z0-9]+(\=("[^"]*"|'."'".'[^'."'".']*'."'".'|[^ '."'".'"><=`]*))?)*\>/ end=#</\z1># fold'],
-	\		},
-	\		'css': 0,
-	\	}
-	\}
+let g:rainbow_conf = {
+            \	'guifgs': ['royalblue3', 'darkorange3', 'seagreen3', 'firebrick'],
+            \	'ctermfgs': ['lightblue', 'lightyellow', 'lightcyan', 'lightmagenta'],
+            \	'operators': '_,_',
+            \	'parentheses': ['start=/(/ end=/)/ fold', 'start=/\[/ end=/\]/ fold', 'start=/{/ end=/}/ fold'],
+            \	'separately': {
+            \		'*': {},
+            \		'tex': {
+            \			'parentheses': ['start=/(/ end=/)/', 'start=/\[/ end=/\]/'],
+            \		},
+            \		'lisp': {
+            \			'guifgs': ['royalblue3', 'darkorange3', 'seagreen3', 'firebrick', 'darkorchid3'],
+            \		},
+            \		'vim': {
+            \			'parentheses': ['start=/(/ end=/)/', 'start=/\[/ end=/\]/', 'start=/{/ end=/}/ fold', 'start=/(/ end=/)/ containedin=vimFuncBody', 'start=/\[/ end=/\]/ containedin=vimFuncBody', 'start=/{/ end=/}/ fold containedin=vimFuncBody'],
+            \		},
+            \		'html': {
+            \			'parentheses': ['start=/\v\<((area|base|br|col|embed|hr|img|input|keygen|link|menuitem|meta|param|source|track|wbr)[ >])@!\z([-_:a-zA-Z0-9]+)(\s+[-_:a-zA-Z0-9]+(\=("[^"]*"|'."'".'[^'."'".']*'."'".'|[^ '."'".'"><=`]*))?)*\>/ end=#</\z1># fold'],
+            \		},
+            \		'css': 0,
+            \	}
+            \}
 
 " Track the engine.
 Plugin 'SirVer/ultisnips'
@@ -182,8 +183,8 @@ inoremap <silent> <C-G> <C-[>:w<CR>:Dispatch<CR>a
 
 " Repeat last command in the next tmux pane.
 function TmuxRepeat()
-  silent! exec "!tmux send-keys -t right C-c 'bash \"$SCRIPTS/runner.sh\"' ' \"' ".expand('%:p')." '\"' C-m"
- redraw!
+    silent! exec "!tmux send-keys -t right C-c 'bash \"$SCRIPTS/runner.sh\"' ' \"' ".expand('%:p')." '\"' C-m"
+    redraw!
 endfunction
 
 nnoremap <silent> <C-v> :w<CR>:call TmuxRepeat()<CR>
@@ -215,27 +216,28 @@ inoremap <silent> <C-I> <C-[>:SaveSession<CR>a
 nnoremap <silent> <leader>q :q!<CR>
 nnoremap <silent> <leader>w :w!<CR>
 nnoremap <silent> <leader>s :vs<CR>
+nnoremap <silent> <leader>t :tabnew<CR>
 
 function Quoter()
     "w,e,b will not see these characters as delimiters
-	set iskeyword+=/
-	set iskeyword+=$
-	set iskeyword+={
-	set iskeyword+=(
+    set iskeyword+=/
+    set iskeyword+=$
+    set iskeyword+={
+    set iskeyword+=(
     set iskeyword+=)
-	set iskeyword+=}
-	set iskeyword+=-
-	set iskeyword+=\
-	set iskeyword+=.
+    set iskeyword+=}
+    set iskeyword+=-
+    set iskeyword+=\
+    set iskeyword+=.
 endfunction
 
 function Reset()
-	set iskeyword&
+    set iskeyword&
 endfunction
 
 augroup indentGroup
     autocmd!
-    autocmd InsertLeave * :normal mbgg=G`b
+    autocmd BufRead,CursorHoldI * :normal mbgg=G`bzz
 augroup end
 
 nnoremap <silent> <leader>" :call Quoter()<CR>lmaea"<ESC>bi"<ESC>:call Reset()<CR>`a
@@ -269,8 +271,8 @@ set pastetoggle=<C-F>
 "}}}***********************************************************
 
 function Scripter()
-	inoremap <silent> <C-T> <ESC>I#<ESC>ji
-	inoremap <silent> <C-B> <ESC>^x<ESC>ji
+    inoremap <silent> <C-T> <ESC>I#<ESC>ji
+    inoremap <silent> <C-B> <ESC>^x<ESC>ji
 endfunction
 
 autocmd BufNewFile,BufRead *.py call Scripter()
@@ -294,10 +296,10 @@ colorscheme badwolf
 
 "diffing colors
 fun! SetDiffColors()
-  highlight DiffAdd    cterm=bold ctermfg=white ctermbg=DarkGreen
-  highlight DiffDelete cterm=bold ctermfg=white ctermbg=DarkGrey
-  highlight DiffChange cterm=bold ctermfg=white ctermbg=DarkBlue
-  highlight DiffText   cterm=bold ctermfg=white ctermbg=DarkRed
+    highlight DiffAdd    cterm=bold ctermfg=white ctermbg=DarkGreen
+    highlight DiffDelete cterm=bold ctermfg=white ctermbg=DarkGrey
+    highlight DiffChange cterm=bold ctermfg=white ctermbg=DarkBlue
+    highlight DiffText   cterm=bold ctermfg=white ctermbg=DarkRed
 endfun
 autocmd FilterWritePre * call SetDiffColors()
 
@@ -306,4 +308,6 @@ iabbrev teh the
 iabbrev adn and
 iabbrev waht what
 iabbrev tehn then
+iabbrev retrun return
+iabbrev retunr return
 

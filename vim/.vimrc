@@ -275,6 +275,9 @@ function Scripter()
     inoremap <silent> <C-B> <ESC>^x<ESC>ji
 endfunction
 
+"{{{                    MARK:autocmd
+"**************************************************************
+
 autocmd filetype text call AutoCorrect()
 
 
@@ -287,6 +290,20 @@ autocmd BufRead * setlocal foldmethod=marker
 autocmd BufRead * normal zM
 autocmd FileType java let b:dispatch = 'javac %'
 
+"diffing colors
+fun! SetDiffColors()
+    highlight DiffAdd    cterm=bold ctermfg=white ctermbg=DarkGreen
+    highlight DiffDelete cterm=bold ctermfg=white ctermbg=DarkGrey
+    highlight DiffChange cterm=bold ctermfg=white ctermbg=DarkBlue
+    highlight DiffText   cterm=bold ctermfg=white ctermbg=DarkRed
+endfun
+
+
+autocmd FilterWritePre * call SetDiffColors()
+
+autocmd BufNewFile *.sh silent! exe "!templater.sh %:p" | :e
+
+"}}}***********************************************************
 "load all pathogen plugins
 execute pathogen#infect()
 set runtimepath^=~/.vim/bundle/ctrlp.vim
@@ -296,15 +313,6 @@ set path+=~/Desktop
 set path+=~/Documents/shellScripts
 
 colorscheme badwolf
-
-"diffing colors
-fun! SetDiffColors()
-    highlight DiffAdd    cterm=bold ctermfg=white ctermbg=DarkGreen
-    highlight DiffDelete cterm=bold ctermfg=white ctermbg=DarkGrey
-    highlight DiffChange cterm=bold ctermfg=white ctermbg=DarkBlue
-    highlight DiffText   cterm=bold ctermfg=white ctermbg=DarkRed
-endfun
-autocmd FilterWritePre * call SetDiffColors()
 
 "common mispellings
 iabbrev teh the

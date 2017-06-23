@@ -6,4 +6,4 @@ echo '#!/usr/bin/env bash' > "$fileName"
 printf '#created by JACOBMENKE at ' >> "$fileName"
 printf "%s" "$(date)" >> "$fileName"
 printf " with %s\n" "$SHELL" >> "$fileName"
-
+echo  >> "$fileName"

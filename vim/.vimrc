@@ -301,8 +301,8 @@ endfun
 
 autocmd FilterWritePre * call SetDiffColors()
 
-autocmd BufNewFile *.sh silent! exe "!templater.sh %:p" | :e
-autocmd BufNewFile * exe "normal! Go" | startinsert!
+autocmd BufNewFile *.sh silent! exe "!templater.sh %:p" | :e 
+autocmd BufNewFile * exe "normal! G" | startinsert!
 
 "}}}***********************************************************
 "load all pathogen plugins

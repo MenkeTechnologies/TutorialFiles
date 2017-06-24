@@ -3,13 +3,18 @@
 # dialog --title "MSG BOX" --infobox "Starting Updater" 40 70
 # clear screen
 clear
+
+prettyPrint(){
+	#print white text 37m on blue background 44m
+	printf "\e[37;44m"
+	printf "$1"
+	printf "\e[0m\n"
+}
 #start white text on blue background \e44:37m, -e required for escape sequences
 echo -e "\e[44;37m"
 bash "$SCRIPTS/printHeader.sh"
 
-
-
-echo "Updating Python Dependencies"
+prettyPrint "Updating Python Dependencies"
 #pip lists outdated programs and get first column with awk
 #store in outdated
 outdated=$(pip3 list --outdated | awk '{print $1}')
@@ -23,14 +28,14 @@ for i in $outdated; do
 	pip3 install --upgrade "$i" #&> /dev/null
 done
 
-echo -e "\e[44;37mUpdating Ruby Dependencies"
+prettyPrint "mUpdating Ruby Dependencies"
 rvm get stable
 gem update --system
 gem update
 gem cleanup
 rvm cleanup all
 
-echo -e "\e[44;37mUpdating Homebrew Dependencies"
+prettyPrint "Updating Homebrew Dependencies"
 brew update #&> /dev/null
 brew upgrade #&> /dev/null
 rm -rf "$(brew --cache)"
@@ -40,7 +45,7 @@ brew prune
 brew cleanup
 brew cask cleanup
 
-echo -e "\e[44;37mUpdating NPM Dependencies"
+prettyPrint "Updating NPM Dependencies"
 for package in $(npm -g outdated --parseable --depth=0 | cut -d: -f4)
 do
     npm install -g "$package"
@@ -48,7 +53,10 @@ do
 #updating npm itself
 npm i -g npm
 
-echo -e "\e[44;37mUpdating Perl Dependencies"
+prettyPrint "Updating yarn modules"
+yarn global upgrade
+
+prettyPrint "Updating Perl Dependencies"
 perlOutdated=$(cpan-outdated -p)
 
 if [[ ! -z "$perlOutdated" ]]; then
@@ -57,32 +65,33 @@ fi
 #have to run expect script to deal with sudo
 #expect $SCRIPTS/CPANupdater.tcl
 
-echo -e "\e[44;37mUpdating Pathogen Plugins"
+prettyPrint "Updating Pathogen Plugins"
 #update pathogen plugins
 for pluginRepo in ~/.vim/bundle/*; do
 	printf "%s: " "$(basename "$pluginRepo")"
 	git -C "$pluginRepo" pull
 done
 
-echo -e "\e[44;37mUpdating OhMyZsh"
+prettyPrint "Updating OhMyZsh"
 #upgrade_oh_my_zsh
 
-echo -e "\e[44;37mUpdating OhMyZsh Plugins"
+prettyPrint "Updating OhMyZsh Plugins"
 
 for zshPlugin in ~/.oh-my-zsh/custom/plugins/*; do
 	printf "%s: " "$(basename "$zshPlugin")"
 	git -C "$zshPlugin" pull
 done
 
-echo -e "\e[44;37mUpdating OhMyZsh Themes"
+prettyPrint "Updating OhMyZsh Themes"
 
 for zshPlugin in ~/.oh-my-zsh/custom/themes/*; do
 	printf "%s: " "$(basename "$zshPlugin")"
 	git -C "$zshPlugin" pull
 done
 
-echo -e "\e[44;37mUpdating Vundle Plugins"
+prettyPrint "Updating Vundle Plugins"
 vim -c VundleUpdate -c quitall
+
 
 #first argument is user@host and port number configured in .ssh/config
 updatePI(){

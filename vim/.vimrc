@@ -234,11 +234,14 @@ endfunction
 function Reset()
     set iskeyword&
 endfunction
+let blacklist=['md']
 
 augroup indentGroup
-    let blacklist = ['md']
     autocmd!
-    autocmd BufRead,CursorHoldI * if index(blacklist, &ft) < 0 | :normal mbgg=G`bzz
+    let fileType=expand('%:e')
+    if index(blacklist, fileType) < 0
+        autocmd BufRead,CursorHoldI * :normal mbgg=G`bzz
+    endif
 augroup end
 
 nnoremap <silent> <leader>" :call Quoter()<CR>lmaea"<ESC>bi"<ESC>:call Reset()<CR>`a

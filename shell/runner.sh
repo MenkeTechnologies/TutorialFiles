@@ -2,23 +2,29 @@
 #created by JACOBMENKE at Sun Jun 18 13:11:25 EDT 2017
 
 executableScriptsProcessing(){
-		# then make it executable
-		if [[ ! -x "$1" ]]; then
-				chmod 700 "$1"
-		fi
+    # then make it executable
+    if [[ ! -x "$1" ]]; then
+        chmod 700 "$1"
+    fi
 }
 
 executeTheFile(){
-		executableScriptsProcessing "$2"
-		#execute the file with the proper interpreter or compiler
-		eval "$1 $2"
-		sleep 1000
+    executableScriptsProcessing "$2"
+    #execute the file with the proper interpreter or compiler
+    eval "$1 $2"
+    sleep 1000
+}
+
+executeTheFileOneArg(){
+    executableScriptsProcessing "$2"
+    eval "$1"
+    sleep 100
 }
 
 #if no arguments then exit
 if (( $# < 1 )); then
-		printf "I need an argument ...\n" >&2
-		exit 1
+    printf "I need an argument ...\n" >&2
+    exit 1
 fi
 
 #file name is the first argument
@@ -27,19 +33,22 @@ fileToBeExecuted="$1"
 
 #check ending on file name and call executeTheFile passing in argument for file ending
 if [[ "$fileToBeExecuted" =~ .*\.sh ]]; then
-		executeTheFile bash "$fileToBeExecuted"
+    executeTheFile bash "$fileToBeExecuted"
 elif [[ "$fileToBeExecuted" =~ .*\.pl ]]; then
-		executeTheFile perl "$fileToBeExecuted"
+    executeTheFile perl "$fileToBeExecuted"
 elif [[ "$fileToBeExecuted" =~ .*\.rb ]]; then
-		executeTheFile ruby "$fileToBeExecuted"
+    executeTheFile ruby "$fileToBeExecuted"
+elif [[ "$fileToBeExecuted" =~ .*\.vim ]]; then
+    command="vim -i NONE -V1 -Nes -c 'so""$fileToBeExecuted""' -c'echo""|q!' 2>&1 | tail +4"
+    executeTheFileOneArg "$command" "$fileToBeExecuted" 
 elif [[ "$fileToBeExecuted" =~ .*\.py ]]; then
-		executeTheFile python3 "$fileToBeExecuted"
+    executeTheFile python3 "$fileToBeExecuted"
 elif [[ "$fileToBeExecuted" =~ .*\.java ]]; then  #.txt
-		:
+    :
 elif [[ "$fileToBeExecuted" =~ .*\..* ]]; then # a file ending that we do not want to process
-		echo "Don't know what the run with. File ending is not recognized!" >&2
-		exit 1
+    echo "Don't know what the run with. File ending is not recognized!" >&2
+    exit 1
 else
-		echo "Don't know what the run with! No File ending." >&2
-		exit 1
+    echo "Don't know what the run with! No File ending." >&2
+    exit 1
 fi

@@ -184,10 +184,20 @@ nnoremap <silent> <C-G> :w<CR>:Dispatch<CR>
 "vnoremap <silent> <C-G> :<C-C>:w<CR>:Dispatch<CR>
 inoremap <silent> <C-G> <C-[>:w<CR>:Dispatch<CR>a
 
+
 " Repeat last command in the next tmux pane.
 function TmuxRepeat()
-    silent! exec "!tmux send-keys -t right C-c 'bash \"$SCRIPTS/runner.sh\"' ' \"' ".expand('%:p')." '\"' C-m"
-    redraw!
+    let supportedTypes=['sh','py','rb','pl','vim']
+    let exeFileType=expand('%:e')
+    if index(supportedTypes, exeFileType) >= 0
+        silent! exec "!tmux send-keys -t right C-c 'bash \"$SCRIPTS/runner.sh\"' ' \"' ".expand('%:p')." '\"' C-m"
+        redraw!
+    else
+        silent! exec "!tmux send-keys -t right C-c up C-m"
+        redraw!
+        echom "Unknown Filetype '".exeFileType. "'. Falling Back to Prev Command!"
+    endif
+
 endfunction
 
 nnoremap <silent> <C-v> :w<CR>:call TmuxRepeat()<CR>

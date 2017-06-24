@@ -6,7 +6,7 @@ clear
 
 prettyPrint(){
 	#print white text 37m on blue background 44m
-	printf "\e[37;44m"
+	printf "\e[1;5m"
 	printf "$1"
 	printf "\n\e[0m"
 }

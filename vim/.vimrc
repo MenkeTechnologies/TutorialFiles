@@ -231,13 +231,33 @@ nnoremap <silent> <leader>w :w!<CR>
 nnoremap <silent> <leader>s :vs<CR>
 nnoremap <silent> <leader>t :tabnew<CR>
 
+fun GoToNextMarker(searchTerm, backwardsSearch)
+    let loopCounter = 0
+    if v:count == 0
+        let mycount = 1
+    else
+        let mycount = v:count
+    endif
 
-nnoremap <silent> ]] /{{{/<CR>jj
-nnoremap <silent> [[ ?{{{<CR>njj
+    while loopCounter < mycount
+        if a:backwardsSearch == 0
+            exe "/".a:searchTerm 
+        else
+            exe "?".a:searchTerm 
+            exe "?{{{"
+        endif
+        let loopCounter += 1
+    endw
+    exe ":normal jjzz"
+endf
+
+"for navigating thru fold markers set by vim
+nnoremap <silent> ]] :<C-U>call GoToNextMarker("{{{",0)<CR>
+nnoremap <silent> [[ :<C-U>call GoToNextMarker("}}}",1)<CR>
 
 function! IndentSqueeze()
     silent! exe ":normal mbgg=G"
-   silent! exe " 1,$!cat -s"
+    silent! exe " 1,$!cat -s"
     silent! exe ":normal `bzz"
     redraw!
 endfunction

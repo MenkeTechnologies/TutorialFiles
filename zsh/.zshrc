@@ -232,6 +232,7 @@ bindkey . rationalize-dot
 
 #}}}***********************************************************
 
+
 # Set Options {{{
 # ===== Basics
 setopt rcquotes # allow '' escape
@@ -331,10 +332,34 @@ alias -g nul="> /dev/null 2>&1"
 
 #allow for awesome z command
 . ~/z.sh
+#
 
+#export ZPLUG_HOME=/usr/local/opt/zplug
+#source $ZPLUG_HOME/init.zsh
+#
+#zplug "changyuheng/fz", defer:1
+#zplug "rupa/z", use:z.sh
+#
+## Install plugins if there are plugins that have not been installed
+#if ! zplug check --verbose; then
+#    printf "Install? [y/N]: "
+#    if read -q; then
+#        echo; zplug install
+#    fi
+#fi
+#
+## Then, source plugins and add commands to $PATH
+#zplug load
+#
+
+export GOPATH="$HOME/go"
+if [ -f $GOPATH/src/github.com/zquestz/s/autocomplete/s-completion.bash ]; then
+    source $GOPATH/src/github.com/zquestz/s/autocomplete/s-completion.bash
+fi
 #go to desktop if not root
 if [[ "$UID" != "0" ]]; then
     d
 else
     clearList
 fi
+

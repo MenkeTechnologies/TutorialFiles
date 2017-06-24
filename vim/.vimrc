@@ -198,7 +198,6 @@ function TmuxRepeat()
         echom "Unknown Filetype '".exeFileType. "'. Falling Back to Prev Command!"
     endif
     exe "normal! zz"
-
 endfunction
 
 nnoremap <silent> <C-v> :w<CR>:call TmuxRepeat()<CR>

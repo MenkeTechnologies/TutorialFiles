@@ -18,7 +18,7 @@ executeTheFile(){
 executeFileFirstArgIsCommand(){
     executableScriptsProcessing "$2"
     eval "$1"
-    sleep 100
+    sleep 1000
 }
 
 #if no arguments then exit

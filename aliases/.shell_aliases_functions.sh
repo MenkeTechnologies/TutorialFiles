@@ -30,6 +30,7 @@ export HOMEBREW_HOME='/usr/local/Cellar'
 export PERL_HOME='$HOMEBREW_HOME/perl/5.24.1/'
 export HOMEBREW_DBHOME='/usr/local/var'
 export HOMEBREW_DB_CONF='/usr/local/etc'
+export YARN_HOME="$HOME/.config/yarn"
 export IP="http://98.209.117.32"
 eval `perl -I ~/perl5/lib/perl5 -Mlocal::lib`
 export MANPATH=$HOME/perl5/man:$MANPATH
@@ -79,7 +80,7 @@ alias tm="python3 $PYSCRIPTS/tmux_starter.py"
 alias b="execpy blackBoard.py"
 alias m="execpy mapIt.py"
 alias a="execpy amazonSearch.py"
-alias go="execpy googleSearch.py"
+#alias go="execpy googleSearch.py"
 alias shut="execpy shutdown.py"
 alias pb="execpy bills.py"
 alias u=" execpy udemy.py"
@@ -93,7 +94,7 @@ alias u="bash $SCRIPTS/upLoadPi.sh"
 alias piweb="bash $SCRIPTS/uploadWebPi.sh"
 alias ud="bash $SCRIPTS/upLoadDS.sh"
 alias uweb="bash $SCRIPTS/uploadWebDS.sh"
-alias s="bash $SCRIPTS/sync.sh"
+alias sy="bash $SCRIPTS/sync.sh"
 alias sf="bash $SCRIPTS/directoryContentsSize.sh"
 alias sc="cd $SCRIPTS; clearList"
 alias blue="source $SCRIPTS/blueText.sh"
@@ -130,8 +131,11 @@ alias v2="open -a 'vnc viewer';execpy enterPasswordForVNC2.py & bash $SCRIPTS/ss
 alias rr="/Users/jacobmenke/Documents/shellScripts/rsyncr.sh"
 alias mntpi="sshfs -o IdentityFile=/Users/jacobmenke/.ssh/id_rsa r:/var/www/html /Users/jacobmenke/Desktop/tuts/piweb/"
 alias mntds="sshfs -o IdentityFile=/Users/jacobmenke/.ssh/id_rsa d:/volume1/homes/JAKENAS/softwareTutorials /Users/jacobmenke/Desktop/tuts/ds/"
+
 bold=$(tput bold || tput md)
 red=$(tput setaf 1)
+alias ic="idea create"
+alias il="idea list"
 #**********************************************************************
 #                           MARK:RUST                           
 #**********************************************************************
@@ -143,6 +147,7 @@ export PATH="$HOME/.rvm/bin:$PATH" # Add RVM to PATH for scripting
 #**************************************************************
 #}}}
 
+export PATH="$(yarn global bin):$PATH"
 
 #{{{                    MARK:Shell functions
 #**************************************************************
@@ -151,7 +156,7 @@ scnew(){
         echo "no arg..."
         return 1
     fi
-    
+
     bash '/Users/jacobmenke/Documents/shellScripts/createScriptButDontOpenSublime.sh' "$1"
 }
 nn(){
@@ -160,10 +165,10 @@ nn(){
         return 1
     fi
 
-title="$1"
-msg="$2"
+    title="$1"
+    msg="$2"
 
-echo "display notification \"$msg\" with title \"$title\"" | osascript 
+    echo "display notification \"$msg\" with title \"$title\"" | osascript 
 
 }
 suc(){
@@ -188,132 +193,132 @@ blocksToSize(){
     echo $bytes | humanReadable 
 }
 humanReadable(){
-awk 'function human(x) {
-         s=" B   KiB MiB GiB TiB EiB PiB YiB ZiB"
-         while (x>=1024 && length(s)>1)
-               {x/=1024; s=substr(s,5)}
-         s=substr(s,1,4)
-         xf=(s==" B  ")?"%5d   ":"%8.2f"
-         return sprintf("Your size:"xf"%s", x, s)
-      }
-      {gsub(/^[0-9]+/, human($1));print}'
-}
-f(){
-    cd "$1"
-    clear
-    ls -AlhFO
-}
-execpy(){
-    python3 $PYSCRIPTS/"$1"
+    awk 'function human(x) {
+    s=" B   KiB MiB GiB TiB EiB PiB YiB ZiB"
+    while (x>=1024 && length(s)>1)
+        {x/=1024; s=substr(s,5)}
+        s=substr(s,1,4)
+        xf=(s==" B  ")?"%5d   ":"%8.2f"
+        return sprintf("Your size:"xf"%s", x, s)
+    }
+    {gsub(/^[0-9]+/, human($1));print}'
+    }
+    f(){
+        cd "$1"
+        clear
+        ls -AlhFO
+    }
+    execpy(){
+        python3 $PYSCRIPTS/"$1"
 
-}
-search(){
-    if [[ -z $2 ]];then
-         grep -iRnC 5 "$1" *
-    else
-         grep -iRnC 5 "$1" "$2"
-    fi
+    }
+    search(){
+        if [[ -z $2 ]];then
+            grep -iRnC 5 "$1" *
+        else
+            grep -iRnC 5 "$1" "$2"
+        fi
 
-}
-cd(){
-    builtin cd "$@";
+    }
+    cd(){
+        builtin cd "$@";
 
-    clearList
+        clearList
 
-}
-q(){
-    printf "\e[1m"
-    /usr/local/bin/git add .
-    /usr/local/bin/git commit -m "$1"
-    /usr/local/bin/git push
-    printf "\e[0m"
-}
-replacer(){
-orig="$1"
-shift
-replace="$1"
-shift
-sed -i'' "s/$orig/$replace/g" $@
+    }
+    q(){
+        printf "\e[1m"
+        /usr/local/bin/git add .
+        /usr/local/bin/git commit -m "$1"
+        /usr/local/bin/git push
+        printf "\e[0m"
+    }
+    replacer(){
+        orig="$1"
+        shift
+        replace="$1"
+        shift
+        sed -i'' "s/$orig/$replace/g" $@
 
-}
-createGIF(){
-outFile=out.gif
-res=600x400
+    }
+    createGIF(){
+        outFile=out.gif
+        res=600x400
 
-if [[ -z "$1" ]]; then
-	echo "One arg need..." >&2
-	return 1
-fi
+        if [[ -z "$1" ]]; then
+            echo "One arg need..." >&2
+            return 1
+        fi
 
-if [[ ! -z "$2" ]]; then
-	res="$2"
-fi
+        if [[ ! -z "$2" ]]; then
+            res="$2"
+        fi
 
-if [[ ! -z "$3" ]];then
-	outFile="$3"	
-fi
+        if [[ ! -z "$3" ]];then
+            outFile="$3"	
+        fi
 
-ffmpeg -i "$1" -s "$res" -pix_fmt rgb24 -r 10 -f gif - | gifsicle --optimize=3 --delay=3 > "$outFile" 
-}
+        ffmpeg -i "$1" -s "$res" -pix_fmt rgb24 -r 10 -f gif - | gifsicle --optimize=3 --delay=3 > "$outFile" 
+    }
 
-hub_create(){
-	printf "\e[1m"
-	git init
-	hub create
-	echo "# `basename $(pwd)`" > README.md
-	echo "# created by Jacob Menke" >> README.md
-	git add .
-	git commit -m "first commit"
-	git push --set-upstream origin master
-	printf "\e[0m"
-	
-}
+    hub_create(){
+        printf "\e[1m"
+        git init
+        hub create
+        echo "# `basename $(pwd)`" > README.md
+        echo "# created by Jacob Menke" >> README.md
+        git add .
+        git commit -m "first commit"
+        git push --set-upstream origin master
+        printf "\e[0m"
 
-hub_delete(){
-	if [[ -z "$1" ]]; then
-		echo "need a REPO NAME" >&2
-		return 1
-	fi
-	REPO="$1"
-	out="$(curl -u menketechnologies -X "DELETE" https://api.github.com/repos/menketechnologies/"$REPO")"
+    }
 
-	printf "\e[1m"
-	if [[ -z "$out" ]]; then
-		echo "Successful deletion of $REPO"
-	else
-		echo "Error in deletion of $REPO"
-		echo "$out"
-	fi
-	printf "\e[0m"
-}
+    hub_delete(){
+        if [[ -z "$1" ]]; then
+            echo "need a REPO NAME" >&2
+            return 1
+        fi
+        REPO="$1"
+        out="$(curl -u menketechnologies -X "DELETE" https://api.github.com/repos/menketechnologies/"$REPO")"
 
-pstreeMonitor(){
- bash $SCRIPTS/myWatchNoBlink.sh 'pstree -g 2 -u jacobmenke | sed s/jacobmenke// | sed s@/.*/@@ | tail -75'
+        printf "\e[1m"
+        if [[ -z "$out" ]]; then
+            echo "Successful deletion of $REPO"
+        else
+            echo "Error in deletion of $REPO"
+            echo "$out"
+        fi
+        printf "\e[0m"
+    }
 
-}
+    pstreeMonitor(){
+        bash $SCRIPTS/myWatchNoBlink.sh 'pstree -g 2 -u jacobmenke | sed s/jacobmenke// | sed s@/.*/@@ | tail -75'
 
-return2(){
-	exec 2> /dev/tty
-}
-color2(){
-	exec 2> >(blueUpperText.sh)
-}
+    }
 
-escapeRemove(){
-while read INPUT; do
-	echo "$INPUT" | sed -e 's/\e\[.\{1,5\}m//g'
-done
+    return2(){
+        exec 2> /dev/tty
+    }
+    color2(){
+        exec 2> >(blueUpperText.sh)
+    }
 
-}
+    escapeRemove(){
+        while read INPUT; do
+            echo "$INPUT" | sed -e 's/\e\[.\{1,5\}m//g'
+        done
 
-mp3(){
-youtube-dl --extract-audio --audio-format mp3 "$1"
-}
+    }
 
-mp4(){
-youtube-dl -f mp4 "$1"
-}
-#}}}***********************************************************
+    mp3(){
+        youtube-dl --extract-audio --audio-format mp3 "$1"
+    }
 
-source "$HOME/.tokens.sh"
+    mp4(){
+        youtube-dl -f mp4 "$1"
+    }
+    #}}}***********************************************************
+
+    source "$HOME/.tokens.sh"
 

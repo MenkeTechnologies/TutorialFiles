@@ -2,14 +2,12 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
- export ZSH=/Users/jacobmenke/.oh-my-zsh
+export ZSH=/Users/jacobmenke/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="rkj-repos"
-ZSH_THEME="pure-prompt"
-
 ZSH_THEME="powerlevel9k/powerlevel9k"
 . ~/.oh-my-zsh/custom/themes/powerlevel9k/powerlevel9k.zsh-theme
 
@@ -70,8 +68,8 @@ POWERLEVEL9K_CUSTOM_TTY_BACKGROUND="blue"
 POWERLEVEL9K_CUSTOM_TTY_FOREGROUND="white"
 
 milliamps(){
-amps="$(ioreg -rc AppleSmartBattery | grep CurrentCapacity | awk '{printf "%s mAh\n", $3}')"
-echo -e "$amps \uf168"
+    amps="$(ioreg -rc AppleSmartBattery | grep CurrentCapacity | awk '{printf "%s mAh\n", $3}')"
+    echo -e "$amps \uf168"
 }
 
 POWERLEVEL9K_CUSTOM_BATT="milliamps"
@@ -141,17 +139,17 @@ hg_prompt_info(){}
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
- if [[ -n $SSH_CONNECTION ]]; then
-   export EDITOR='vim'
- else
-   export EDITOR='vim'
- fi
+if [[ -n $SSH_CONNECTION ]]; then
+    export EDITOR='vim'
+else
+    export EDITOR='vim'
+fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
 # ssh
- export SSH_KEY_PATH="~/.ssh/rsa_id"
+export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -186,9 +184,9 @@ function _updater {
 }
 
 function _gitfunc {
-q "$BUFFER"
-BUFFER=""
-zle .accept-line
+    q "$BUFFER"
+    BUFFER=""
+    zle .accept-line
 }
 
 function _tutsUpdate() {
@@ -211,26 +209,26 @@ bindkey '\ed' _tutsUpdate
 #exec 2> >(blueUpperText.sh)
 
 my-accept-line () {
-  if [[ "$BUFFER" == "bash" ]] || [[ "$BUFFER" == "ksh" ]]; then
-	  exec 2> /dev/tty
-  fi
-  zle .accept-line
+if [[ "$BUFFER" == "bash" ]] || [[ "$BUFFER" == "ksh" ]]; then
+    exec 2> /dev/tty
+fi
+zle .accept-line
 }
 #zle -N accept-line my-accept-line
 
 precmd(){
-  #exec 2> >(blueUpperText.sh)
+    #exec 2> >(blueUpperText.sh)
 }
 
- function rationalize-dot {
-     if [[ $LBUFFER = *.. ]]; then
-       LBUFFER+=/..
-     else
-       LBUFFER+=.
-     fi
-   }
-   zle -N rationalize-dot
-   bindkey . rationalize-dot
+function rationalize-dot {
+    if [[ $LBUFFER = *.. ]]; then
+        LBUFFER+=/..
+    else
+        LBUFFER+=.
+    fi
+}
+zle -N rationalize-dot
+bindkey . rationalize-dot
 
 #}}}***********************************************************
 
@@ -321,9 +319,9 @@ zstyle ':completion:*' group-name
 # 2 -- word flex completion (abc => A-big-Car)
 # 3 -- full flex completion (abc => ABraCadabra)
 zstyle ':completion:*' matcher-list '' \
-  'm:{a-z\-}={A-Z\_}' \
-  'r:[^[:alpha:]]||[[:alpha:]]=** r:|=* m:{a-z\-}={A-Z\_}' \
-  'r:|?=** m:{a-z\-}={A-Z\_}'
+    'm:{a-z\-}={A-Z\_}' \
+    'r:[^[:alpha:]]||[[:alpha:]]=** r:|=* m:{a-z\-}={A-Z\_}' \
+    'r:|?=** m:{a-z\-}={A-Z\_}'
 
 #}}}
 
@@ -336,7 +334,7 @@ alias -g nul="> /dev/null 2>&1"
 
 #go to desktop if not root
 if [[ "$UID" != "0" ]]; then
-	d
+    d
 else
-	clearList
+    clearList
 fi

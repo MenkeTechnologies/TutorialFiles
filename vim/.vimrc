@@ -239,6 +239,7 @@ let blacklist=['md']
 augroup indentGroup
     autocmd!
     let fileType=expand('%:e')
+    "if the filetype is not in blacklist then we will indent
     if index(blacklist, fileType) < 0
         autocmd BufRead,CursorHoldI * :normal mbgg=G`bzz
     endif

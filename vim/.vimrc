@@ -197,6 +197,7 @@ function TmuxRepeat()
         redraw!
         echom "Unknown Filetype '".exeFileType. "'. Falling Back to Prev Command!"
     endif
+    exe "normal! zz"
 
 endfunction
 

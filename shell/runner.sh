@@ -15,7 +15,7 @@ executeTheFile(){
     sleep 1000
 }
 
-executeTheFileOneArg(){
+executeFileFirstArgIsCommand(){
     executableScriptsProcessing "$2"
     eval "$1"
     sleep 100
@@ -40,7 +40,7 @@ elif [[ "$fileToBeExecuted" =~ .*\.rb ]]; then
     executeTheFile ruby "$fileToBeExecuted"
 elif [[ "$fileToBeExecuted" =~ .*\.vim ]]; then
     command="vim -i NONE -V1 -Nes -c 'so""$fileToBeExecuted""' -c'echo""|q!' 2>&1 | tail +4"
-    executeTheFileOneArg "$command" "$fileToBeExecuted" 
+    executeFileFirstArgIsCommand "$command" "$fileToBeExecuted" 
 elif [[ "$fileToBeExecuted" =~ .*\.py ]]; then
     executeTheFile python3 "$fileToBeExecuted"
 elif [[ "$fileToBeExecuted" =~ .*\.java ]]; then  #.txt

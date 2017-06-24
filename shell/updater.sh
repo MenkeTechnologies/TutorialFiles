@@ -5,14 +5,16 @@
 clear
 
 prettyPrint(){
+	printf "\e[1;4m"
 	#print white text 37m on blue background 44m
-	printf "\e[1;5m"
 	printf "$1"
+	#print white text 37m on blue background 44m
 	printf "\n\e[0m"
 }
 
 #start white text on blue background \e44:37m, -e required for escape sequences
-echo -e "\e[44;37m"
+	iprint white text 37m on blue background 44m
+#echo -e "\e[44;37m"
 bash "$SCRIPTS/printHeader.sh"
 
 prettyPrint "Updating Python Dependencies"

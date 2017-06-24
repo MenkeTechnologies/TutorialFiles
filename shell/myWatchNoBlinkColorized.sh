@@ -26,7 +26,6 @@ done
 
 shift $((OPTIND-1))
 
-
 if [[ -z "$1" ]]; then
     echo "need an arg" >&2
     exit 1
@@ -42,7 +41,6 @@ clear
 if [[ $boldflag == true ]]; then
     printf "\e[1m"
 fi
-
 
 watchCommand() {
     HOME=$(tput cup 0 0)

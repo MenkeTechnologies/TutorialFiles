@@ -34,7 +34,6 @@ else
 	TIME="$2"
 fi
 
-
 clear
 
 tput civis
@@ -43,7 +42,6 @@ while [[ true ]]; do
 	
 	x=$(eval "$1")
 	clear
-
 
 	if [[ $dateflag == true ]]; then
 		echo "$x"

@@ -1,9 +1,7 @@
 #!/usr/bin/env bash
 
-
 #make cursor visible and get rid of bold
 trap 'tput cnorm; printf "\e[0m"; exit' INT
-
 
 usage(){
 
@@ -14,7 +12,6 @@ usage(){
     EOM
     exit 1
 }
-
 
 optstring=bh
 while getopts $optstring opt
@@ -27,7 +24,6 @@ do
 done
 
 shift $((OPTIND-1))
-
 
 if [[ -z "$1" ]]; then
     echo "need an arg" >&2
@@ -44,7 +40,6 @@ clear
 if [[ $boldflag == true ]]; then
     printf "\e[1m"
 fi
-
 
 watchCommand() {
     HOME=$(tput cup 0 0)

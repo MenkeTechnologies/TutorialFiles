@@ -5,14 +5,12 @@ HOME_DIR=/Users/jacobmenke
 SCRIPTS_DIR=$SCRIPTS
 BACKUP_DIR=$SCRIPTS_DIR/rcBackups
 
-
 usage(){
 #here doc for printing multiline
-	cat <<\endofmessage
+	cat <<\EOM
 usage:
 	script $1=file
-Endofmessage
-	printf "\e[0m"
+EOM
 }
 
 if [[ $# < 1 ]]; then

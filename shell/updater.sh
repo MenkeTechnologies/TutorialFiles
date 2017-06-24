@@ -92,7 +92,6 @@ done
 prettyPrint "Updating Vundle Plugins"
 vim -c VundleUpdate -c quitall
 
-
 #first argument is user@host and port number configured in .ssh/config
 updatePI(){
 	#-t to force pseudoterminal allocation for interactive programs on remote host

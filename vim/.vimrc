@@ -244,7 +244,7 @@ augroup indentGroup
     let currentFileEnding=expand('%:e')
     "if the filetype is not in blacklist (index = -1) then we will indent
     if index(blacklist, currentFileEnding) < 0
-        autocmd BufRead,CursorHoldI * :normal mbgg=G`bzz
+        autocmd CursorHoldI * :normal mbgg=G`bzz
     endif
 augroup end
 
@@ -259,7 +259,7 @@ inoremap <F3> <ESC>:%s///g<Left><Left><Left>
 nnoremap <F3> :%s///g<Left><Left><Left>
 map <F1> :NERDTreeToggle<CR>
 map <F2> :UndotreeToggle<CR>
-
+map <F4> :SyntasticToggleMode<CR>
 
 map <silent> <leader><leader>w <Plug>(easymotion-bd-w)
 map <silent> <leader><leader>e <Plug>(easymotion-bd-e)

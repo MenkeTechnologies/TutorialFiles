@@ -10,6 +10,7 @@ prettyPrint(){
 	printf "$1"
 	printf "\n\e[0m"
 }
+
 #start white text on blue background \e44:37m, -e required for escape sequences
 echo -e "\e[44;37m"
 bash "$SCRIPTS/printHeader.sh"
@@ -28,7 +29,7 @@ for i in $outdated; do
 	pip3 install --upgrade "$i" #&> /dev/null
 done
 
-prettyPrint "mUpdating Ruby Dependencies"
+prettyPrint "Updating Ruby Dependencies"
 rvm get stable
 gem update --system
 gem update

@@ -236,8 +236,9 @@ function Reset()
 endfunction
 
 augroup indentGroup
+    let blacklist = ['md']
     autocmd!
-    autocmd BufRead,CursorHoldI * :normal mbgg=G`bzz
+    autocmd BufRead,CursorHoldI * if index(blacklist, &ft) < 0 | :normal mbgg=G`bzz
 augroup end
 
 nnoremap <silent> <leader>" :call Quoter()<CR>lmaea"<ESC>bi"<ESC>:call Reset()<CR>`a
@@ -279,6 +280,7 @@ endfunction
 "**************************************************************
 
 autocmd filetype text call AutoCorrect()
+autocmd filetype markdown call AutoCorrect()
 
 
 autocmd BufNewFile,BufRead *.py call Scripter()

@@ -231,6 +231,20 @@ nnoremap <silent> <leader>w :w!<CR>
 nnoremap <silent> <leader>s :vs<CR>
 nnoremap <silent> <leader>t :tabnew<CR>
 
+function! IndentSqueeze()
+    silent! exe ":normal mbgg=G"
+   silent! exe " 1,$!cat -s"
+    silent! exe ":normal `bzz"
+    redraw!
+endfunction
+
+function! Indent()
+    exe ":normal mbgg=G"
+    exe ":normal `bzz"
+endfunction
+
+nnoremap <silent> <leader>z :call IndentSqueeze()<cr>
+
 function Quoter()
     "w,e,b will not see these characters as delimiters
     set iskeyword+=/
@@ -247,14 +261,16 @@ endfunction
 function Reset()
     set iskeyword&
 endfunction
+
 let blacklist=['md']
 
 augroup indentGroup
     autocmd!
+
     let currentFileEnding=tolower(expand('%:e'))
     "if the filetype is not in blacklist (index = -1) then we will indent
     if index(blacklist, currentFileEnding) < 0
-        autocmd CursorHoldI * :normal mbgg=G`bzz
+        autocmd CursorHoldI * :call Indent()
     endif
 augroup end
 

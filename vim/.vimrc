@@ -231,7 +231,11 @@ nnoremap <silent> <leader>w :w!<CR>
 nnoremap <silent> <leader>s :vs<CR>
 nnoremap <silent> <leader>t :tabnew<CR>
 
+onoremap <silent> i# ?#<CR>jV/#<CR>kc 
+
 fun GoToNextMarker(searchTerm, backwardsSearch)
+    let oldwrap = &wrapscan
+    set nowrapscan
     let loopCounter = 0
     if v:count == 0
         let mycount = 1
@@ -241,14 +245,16 @@ fun GoToNextMarker(searchTerm, backwardsSearch)
 
     while loopCounter < mycount
         if a:backwardsSearch == 0
-            exe "/".a:searchTerm 
+            silent! exe "/".a:searchTerm 
         else
-            exe "?".a:searchTerm 
-            exe "?{{{"
+            silent! exe "?".a:searchTerm 
+            silent! exe "?{{{"
         endif
         let loopCounter += 1
     endw
     exe ":normal jjzz"
+    let &wrapscan = oldwrap
+    unlet oldwrap
 endf
 
 "for navigating thru fold markers set by vim

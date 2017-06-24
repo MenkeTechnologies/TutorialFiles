@@ -8,7 +8,7 @@ prettyPrint(){
 	#print white text 37m on blue background 44m
 	printf "\e[37;44m"
 	printf "$1"
-	printf "\e[0m\n"
+	printf "\n\e[0m"
 }
 #start white text on blue background \e44:37m, -e required for escape sequences
 echo -e "\e[44;37m"

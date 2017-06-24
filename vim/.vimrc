@@ -136,6 +136,8 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 
+let g:syntastic_mode_map = { 'mode': 'passive' }
+
 let g:syntastic_sh_checkers=['shellcheck']
 
 let g:session_autoload = 'no'
@@ -163,6 +165,7 @@ call vundle#end()            " required
 ""}}}***********************************************************
 filetype plugin indent on    " required
 filetype plugin on
+
 
 "{{{                    MARK:Mappings
 "**************************************************************
@@ -234,13 +237,13 @@ endfunction
 function Reset()
     set iskeyword&
 endfunction
-let blacklist=['md']
+let blacklist=['md', 'MD']
 
 augroup indentGroup
     autocmd!
-    let fileType=expand('%:e')
-    "if the filetype is not in blacklist then we will indent
-    if index(blacklist, fileType) < 0
+    let currentFileEnding=expand('%:e')
+    "if the filetype is not in blacklist (index = -1) then we will indent
+    if index(blacklist, currentFileEnding) < 0
         autocmd BufRead,CursorHoldI * :normal mbgg=G`bzz
     endif
 augroup end

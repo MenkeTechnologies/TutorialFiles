@@ -231,6 +231,10 @@ nnoremap <silent> <leader>w :w!<CR>
 nnoremap <silent> <leader>s :vs<CR>
 nnoremap <silent> <leader>t :tabnew<CR>
 
+
+nnoremap <silent> ]] /{{{/<CR>jj
+nnoremap <silent> [[ ?{{{<CR>njj
+
 function! IndentSqueeze()
     silent! exe ":normal mbgg=G"
    silent! exe " 1,$!cat -s"

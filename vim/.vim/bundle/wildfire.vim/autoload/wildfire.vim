@@ -34,6 +34,7 @@ fu! wildfire#Start(repeat, objects)
     cal wildfire#Fuel(a:repeat)
 endfu
 
+
 fu! wildfire#Fuel(repeat)
     for i in range(a:repeat)
         cal s:select_text_object()

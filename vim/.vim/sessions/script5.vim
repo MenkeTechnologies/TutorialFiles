@@ -1,6 +1,6 @@
 " ~/.vim/sessions/script5.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 10 June 2017 at 19:20:55.
+" Created by session.vim 2.13.1 on 24 June 2017 at 17:40:30.
 " Open this file in Vim and run :source % to restore your session.
 
 if exists('g:syntax_on') != 1 | syntax on | endif
@@ -22,7 +22,8 @@ if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
-badd +0 createTextFile.sh
+badd +3 ~/Desktop/tor.sh
+badd +1 createTextFile.sh
 argglobal
 silent! argdel *
 $argadd createTextFile.sh
@@ -41,12 +42,12 @@ setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 25 - ((24 * winheight(0) + 20) / 41)
+let s:l = 26 - ((11 * winheight(0) + 14) / 28)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-25
-normal! 024|
+26
+normal! 016|
 tabnext 1
 if exists('s:wipebuf')
 "   silent exe 'bwipe ' . s:wipebuf

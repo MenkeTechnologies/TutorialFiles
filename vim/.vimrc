@@ -257,7 +257,7 @@ fun GoToNextMarker(searchTerm, backwardsSearch)
         endif
         let loopCounter += 1
     endw
-    exe ":normal jjzz"
+    exe ":normal jj^zz"
     let &wrapscan = oldwrap
     unlet oldwrap
 endf

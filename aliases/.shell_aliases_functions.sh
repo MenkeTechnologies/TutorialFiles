@@ -182,7 +182,7 @@ db(){
 }
 clearList () {
     clear
-    ls -FlhAO
+    ls -iFlhAO
 }
 animate(){
     bash $SCRIPTS/animation.sh
@@ -205,8 +205,7 @@ humanReadable(){
     }
     f(){
         cd "$1"
-        clear
-        ls -AlhFO
+        clearList
     }
     execpy(){
         python3 $PYSCRIPTS/"$1"

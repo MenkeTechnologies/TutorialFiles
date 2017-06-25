@@ -26,6 +26,8 @@ filetype plugin indent on
 
 "}}}***********************************************************
 
+let mapleader = ','
+
 set nocompatible              " be iMproved, required
 set noswapfile
 set nowritebackup
@@ -58,6 +60,8 @@ set expandtab
 set number
 syntax on
 set grepprg=ag
+"show the leader
+set showcmd
 "for copying to system clipboard
 "set clipboard=unnamed
 
@@ -231,6 +235,7 @@ nnoremap <silent> <leader>w :w!<CR>
 nnoremap <silent> <leader>s :vs<CR>
 nnoremap <silent> <leader>t :tabnew<CR>
 
+
 onoremap <silent> i# ?#<CR>jV/#<CR>kc 
 
 fun GoToNextMarker(searchTerm, backwardsSearch)
@@ -257,10 +262,6 @@ fun GoToNextMarker(searchTerm, backwardsSearch)
     unlet oldwrap
 endf
 
-"for navigating thru fold markers set by vim
-nnoremap <silent> ]] :<C-U>call GoToNextMarker("{{{",0)<CR>
-nnoremap <silent> [[ :<C-U>call GoToNextMarker("}}}",1)<CR>
-
 function! IndentSqueeze()
     silent! exe ":normal mbgg=G"
     silent! exe " 1,$!cat -s"
@@ -274,6 +275,11 @@ function! Indent()
 endfunction
 
 nnoremap <silent> <leader>z :call IndentSqueeze()<cr>
+"for navigating thru fold markers set by vim
+inoremap <silent> <C-down> <C-[>:<C-U>call GoToNextMarker("{{{",0)<CR>i
+inoremap <silent> <C-up> <C-[>:<C-U>call GoToNextMarker("{{{",1)<CR>i
+nnoremap <silent> <C-down> :<C-U>call GoToNextMarker("{{{",0)<CR>
+nnoremap <silent> <C-up> :<C-U>call GoToNextMarker("}}}",1)<CR>
 
 function Quoter()
     "w,e,b will not see these characters as delimiters
@@ -387,4 +393,5 @@ iabbrev waht what
 iabbrev tehn then
 iabbrev retrun return
 iabbrev retunr return
+
 

@@ -1,33 +1,18 @@
 "      _               _                 _  __
-"     | |__   __ _  __| | __      _____ | |/ _|
-"     | '_ \ / _` |/ _` | \ \ /\ / / _ \| | |_
-"     | |_) | (_| | (_| |  \ V  V / (_) | |  _|
-"     |_.__/ \__,_|\__,_|   \_/\_/ \___/|_|_|
-"
-"      I am the Bad Wolf. I create myself.
+":::::::.   :::      ...    :::.,::::::.::    .   .:::  ...      :::    .-:::::'
+" ;;;'';;'  ;;;      ;;     ;;;;;;;''''';;,  ;;  ;;;'.;;;;;;;.   ;;;    ;;;'''' 
+" [[[__[[\. [[[     [['     [[[ [[cccc  '[[, [[, [[',[[     \[[, [[[    [[[,,== 
+" $$""""Y$$ $$'     $$      $$$ $$""""    Y$c$$$c$P $$$,     $$$ $$'    `$$$"`` 
+"_88o,,od8Po88oo,.__88    .d888 888oo,__   \88"888  "888,_ _,88Po88oo,.__888    
+""YUMMMP" \"""YUMMM \"YmmMMMM"" \""YUMMM   \M \M"    \YMMMMMP" \""YUMMM"MM,   
+
+"      I am the Blue Wolf. I create myself.
 "       I take the words. I scatter them in time and space.
 "        A message to lead myself here.
 "
-" A Vim colorscheme pieced together by Steve Losh.
-" Available at http://stevelosh.com/projects/badwolf/
+" A Vim colorscheme pieced together by Jacob Menke
+" jakobmenke.com
 "
-" Why? {{{
-"
-" After using Molokai for quite a long time, I started longing for
-" a replacement.
-"
-" I love Molokai's high contrast and gooey, saturated tones, but it can be
-" a little inconsistent at times.
-"
-" Also it's winter here in Rochester, so I wanted a color scheme that's a bit
-" warmer.  A little less blue and a bit more red.
-"
-" And so Bad Wolf was born.  I'm no designer, but designers have been scattering
-" beautiful colors through time and space long before I came along.  I took
-" advantage of that and reused some of my favorites to lead me to this scheme.
-"
-" }}}
-
 " Supporting code -------------------------------------------------------------
 " Preamble {{{
 
@@ -36,6 +21,7 @@ if !has("gui_running") && &t_Co != 88 && &t_Co != 256
 endif
 
 set background=dark
+set cursorline
 
 if exists("syntax_on")
     syntax reset
@@ -183,9 +169,13 @@ call s:HL('Folded', 'mediumgravel', 'bg', 'none')
 
 call s:HL('VertSplit', 'lightgravel', 'bg', 'none')
 
-call s:HL('CursorLine',   '', 'darkgravel', 'none')
-call s:HL('CursorColumn', '', 'darkgravel')
+call s:HL('CursorLine',   '', 'blackgravel', 'none')
+call s:HL('CursorColumn', '', 'taffy')
 call s:HL('ColorColumn',  '', 'darkgravel')
+
+call s:HL('CursorLineNr',   'taffy', '', 'none')
+highlight CursorLineNr ctermbg=none
+highlight NonText ctermbg=none
 
 call s:HL('TabLine', 'plain', s:tabline, 'none')
 call s:HL('TabLineFill', 'plain', s:tabline, 'none')
@@ -332,39 +322,39 @@ endif
 
 " CtrlP {{{
 
-    " the message when no match is found
-    call s:HL('CtrlPNoEntries', 'snow', 'taffy', 'bold')
+" the message when no match is found
+call s:HL('CtrlPNoEntries', 'snow', 'taffy', 'bold')
 
-    " the matched pattern
-    call s:HL('CtrlPMatch', 'orange', 'bg', 'none')
+" the matched pattern
+call s:HL('CtrlPMatch', 'orange', 'bg', 'none')
 
-    " the line prefix '>' in the match window
-    call s:HL('CtrlPLinePre', 'deepgravel', 'bg', 'none')
+" the line prefix '>' in the match window
+call s:HL('CtrlPLinePre', 'deepgravel', 'bg', 'none')
 
-    " the prompt’s base
-    call s:HL('CtrlPPrtBase', 'deepgravel', 'bg', 'none')
+" the prompt’s base
+call s:HL('CtrlPPrtBase', 'deepgravel', 'bg', 'none')
 
-    " the prompt’s text
-    call s:HL('CtrlPPrtText', 'plain', 'bg', 'none')
+" the prompt’s text
+call s:HL('CtrlPPrtText', 'plain', 'bg', 'none')
 
-    " the prompt’s cursor when moving over the text
-    call s:HL('CtrlPPrtCursor', 'coal', 'tardis', 'bold')
+" the prompt’s cursor when moving over the text
+call s:HL('CtrlPPrtCursor', 'coal', 'tardis', 'bold')
 
-    " 'prt' or 'win', also for 'regex'
-    call s:HL('CtrlPMode1', 'coal', 'tardis', 'bold')
+" 'prt' or 'win', also for 'regex'
+call s:HL('CtrlPMode1', 'coal', 'tardis', 'bold')
 
-    " 'file' or 'path', also for the local working dir
-    call s:HL('CtrlPMode2', 'coal', 'tardis', 'bold')
+" 'file' or 'path', also for the local working dir
+call s:HL('CtrlPMode2', 'coal', 'tardis', 'bold')
 
-    " the scanning status
-    call s:HL('CtrlPStats', 'coal', 'tardis', 'bold')
+" the scanning status
+call s:HL('CtrlPStats', 'coal', 'tardis', 'bold')
 
-    " TODO: CtrlP extensions.
-    " CtrlPTabExtra  : the part of each line that’s not matched against (Comment)
-    " CtrlPqfLineCol : the line and column numbers in quickfix mode (|s:HL-Search|)
-    " CtrlPUndoT     : the elapsed time in undo mode (|s:HL-Directory|)
-    " CtrlPUndoBr    : the square brackets [] in undo mode (Comment)
-    " CtrlPUndoNr    : the undo number inside [] in undo mode (String)
+" TODO: CtrlP extensions.
+" CtrlPTabExtra  : the part of each line that’s not matched against (Comment)
+" CtrlPqfLineCol : the line and column numbers in quickfix mode (|s:HL-Search|)
+" CtrlPUndoT     : the elapsed time in undo mode (|s:HL-Directory|)
+" CtrlPUndoBr    : the square brackets [] in undo mode (Comment)
+" CtrlPUndoNr    : the undo number inside [] in undo mode (String)
 
 " }}}
 " EasyMotion {{{

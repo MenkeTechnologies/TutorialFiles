@@ -5,11 +5,11 @@ trap 'tput cnorm; printf "\e[0m"; exit' INT
 
 usage(){
 
-    cat <<EOM
+cat <<EOM
     usage:
     -h  help
     -b  display bold
-    EOM
+EOM
     exit 1
 }
 

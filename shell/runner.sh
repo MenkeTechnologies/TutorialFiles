@@ -31,24 +31,50 @@ fi
 clear
 fileToBeExecuted="$1"
 
+case "$fileToBeExecuted" in
+    *.sh ) executeTheFile bash "$fileToBeExecuted"
+        ;;
+    *.pl ) executeTheFile perl"$fileToBeExecuted"
+        ;;
+    *.rb ) executeTheFile ruby"$fileToBeExecuted"
+        ;;
+    *.vim )
+        command="vim -i NONE -V1 -Nes -c 'so""$fileToBeExecuted""' -c'echo""|q!' 2>&1 | tail +4"
+        executeFileFirstArgIsCommand "$command" "$fileToBeExecuted" 
+        ;;
+    *.py ) executeTheFile python3"$fileToBeExecuted"
+        ;;
+    *.java ) executeTheFile java"$fileToBeExecuted"
+
+        ;;
+    *.*)
+        echo "Don't know what the run with. File ending is not recognized!" >&2
+        exit 1
+        ;;
+    *) 
+        echo "Don't know what the run with! No File ending." >&2
+        exit 1
+        ;;
+esac
+
 #check ending on file name and call executeTheFile passing in argument for file ending
-if [[ "$fileToBeExecuted" =~ .*\.sh ]]; then
-    executeTheFile bash "$fileToBeExecuted"
-elif [[ "$fileToBeExecuted" =~ .*\.pl ]]; then
-    executeTheFile perl "$fileToBeExecuted"
-elif [[ "$fileToBeExecuted" =~ .*\.rb ]]; then
-    executeTheFile ruby "$fileToBeExecuted"
-elif [[ "$fileToBeExecuted" =~ .*\.vim ]]; then
-    command="vim -i NONE -V1 -Nes -c 'so""$fileToBeExecuted""' -c'echo""|q!' 2>&1 | tail +4"
-    executeFileFirstArgIsCommand "$command" "$fileToBeExecuted" 
-elif [[ "$fileToBeExecuted" =~ .*\.py ]]; then
-    executeTheFile python3 "$fileToBeExecuted"
-elif [[ "$fileToBeExecuted" =~ .*\.java ]]; then  #.txt
-    :
-elif [[ "$fileToBeExecuted" =~ .*\..* ]]; then # a file ending that we do not want to process
-    echo "Don't know what the run with. File ending is not recognized!" >&2
-    exit 1
-else
-    echo "Don't know what the run with! No File ending." >&2
-    exit 1
-fi
+#if [[ "$fileToBeExecuted" =~ .*\.sh ]]; then
+#    executeTheFile bash "$fileToBeExecuted"
+#elif [[ "$fileToBeExecuted" =~ .*\.pl ]]; then
+#    executeTheFile perl "$fileToBeExecuted"
+#elif [[ "$fileToBeExecuted" =~ .*\.rb ]]; then
+#    executeTheFile ruby "$fileToBeExecuted"
+#elif [[ "$fileToBeExecuted" =~ .*\.vim ]]; then
+#    command="vim -i NONE -V1 -Nes -c 'so""$fileToBeExecuted""' -c'echo""|q!' 2>&1 | tail +4"
+#    executeFileFirstArgIsCommand "$command" "$fileToBeExecuted" 
+#elif [[ "$fileToBeExecuted" =~ .*\.py ]]; then
+#    executeTheFile python3 "$fileToBeExecuted"
+#elif [[ "$fileToBeExecuted" =~ .*\.java ]]; then  #.txt
+#    :
+#elif [[ "$fileToBeExecuted" =~ .*\..* ]]; then # a file ending that we do not want to process
+#    echo "Don't know what the run with. File ending is not recognized!" >&2
+#    exit 1
+#else
+#    echo "Don't know what the run with! No File ending." >&2
+#    exit 1
+#fi

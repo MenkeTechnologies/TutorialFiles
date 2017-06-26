@@ -253,7 +253,7 @@ fun GoToNextMarker(searchTerm, backwardsSearch)
             silent! exe "/".a:searchTerm 
         else
             silent! exe "?".a:searchTerm 
-            silent! exe "?{{{"
+            silent! exe "?".a:searchTerm
         endif
         let loopCounter += 1
     endw
@@ -279,7 +279,7 @@ nnoremap <silent> <leader>z :call IndentSqueeze()<cr>
 inoremap <silent> <C-down> <C-[>:<C-U>call GoToNextMarker("{{{",0)<CR>i
 inoremap <silent> <C-up> <C-[>:<C-U>call GoToNextMarker("{{{",1)<CR>i
 nnoremap <silent> <C-down> :<C-U>call GoToNextMarker("{{{",0)<CR>
-nnoremap <silent> <C-up> :<C-U>call GoToNextMarker("}}}",1)<CR>
+nnoremap <silent> <C-up> :<C-U>call GoToNextMarker("{{{",1)<CR>
 
 function Quoter()
     "w,e,b will not see these characters as delimiters

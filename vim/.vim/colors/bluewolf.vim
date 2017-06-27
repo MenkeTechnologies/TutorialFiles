@@ -21,20 +21,20 @@ if !has("gui_running") && &t_Co != 88 && &t_Co != 256
 endif
 
 set background=dark
-set cursorline
+"set cursorline
 
 if exists("syntax_on")
     syntax reset
 endif
 
-let colors_name = "badwolf"
+let colors_name = "bluewolf"
 
-if !exists("g:badwolf_html_link_underline") " {{{
-    let g:badwolf_html_link_underline = 1
+if !exists("g:bluewolf_html_link_underline") " {{{
+    let g:bluewolf_html_link_underline = 1
 endif " }}}
 
-if !exists("g:badwolf_css_props_highlight") " {{{
-    let g:badwolf_css_props_highlight = 0
+if !exists("g:bluewolf_css_props_highlight") " {{{
+    let g:bluewolf_css_props_highlight = 0
 endif " }}}
 
 " }}}
@@ -69,7 +69,7 @@ let s:bwc.dalespale = ['fade3e', 221]
 let s:bwc.dirtyblonde = ['f4cf86', 222]
 
 " Delicious, chewy red from Made of Code for the poppiest highlights.
-let s:bwc.taffy = ['0000ff',20]
+let s:bwc.taffy = ['0000ff',21]
 
 " Another chewy accent, but use sparingly!
 let s:bwc.saltwatertaffy = ['8cffba', 121]
@@ -134,20 +134,20 @@ endfunction
 " }}}
 " Configuration Options {{{
 
-if exists('g:badwolf_darkgutter') && g:badwolf_darkgutter
+if exists('g:bluewolf_darkgutter') && g:bluewolf_darkgutter
     let s:gutter = 'blackestgravel'
 else
     let s:gutter = 'blackgravel'
 endif
 
-if exists('g:badwolf_tabline')
-    if g:badwolf_tabline == 0
+if exists('g:bluewolf_tabline')
+    if g:bluewolf_tabline == 0
         let s:tabline = 'blackestgravel'
-    elseif  g:badwolf_tabline == 1
+    elseif  g:bluewolf_tabline == 1
         let s:tabline = 'blackgravel'
-    elseif  g:badwolf_tabline == 2
+    elseif  g:bluewolf_tabline == 2
         let s:tabline = 'darkgravel'
-    elseif  g:badwolf_tabline == 3
+    elseif  g:bluewolf_tabline == 3
         let s:tabline = 'deepgravel'
     else
         let s:tabline = 'blackestgravel'
@@ -169,14 +169,11 @@ call s:HL('Folded', 'mediumgravel', 'bg', 'none')
 
 call s:HL('VertSplit', 'lightgravel', 'bg', 'none')
 
-call s:HL('CursorLine',   '', 'blackgravel', 'none')
+call s:HL('CursorLine',   '', '', 'none')
 call s:HL('CursorColumn', '', 'taffy')
 call s:HL('ColorColumn',  '', 'darkgravel')
 
-call s:HL('CursorLineNr',   'taffy', '', 'none')
-highlight CursorLineNr ctermbg=none
-highlight NonText ctermbg=none
-
+call s:HL('CursorLineNr',   'lime', '', 'underline', 'bold')
 call s:HL('TabLine', 'plain', s:tabline, 'none')
 call s:HL('TabLineFill', 'plain', s:tabline, 'none')
 call s:HL('TabLineSel', 'coal', 'tardis', 'none')
@@ -184,7 +181,12 @@ call s:HL('TabLineSel', 'coal', 'tardis', 'none')
 call s:HL('MatchParen', 'dalespale', 'darkgravel', 'bold')
 
 call s:HL('NonText',    'deepgravel', 'bg')
-call s:HL('SpecialKey', 'deepgravel', 'bg')
+call s:HL('SpecialKey', 'lime', 'bg', '')
+
+hi MarkologyHLl ctermfg=154 ctermbg=none cterm=none
+hi MarkologyHLu ctermfg=154 ctermbg=none cterm=bold
+hi MarkologyHLo ctermfg=21 ctermbg=none cterm=bold
+
 
 call s:HL('Visual',    '',  'deepgravel')
 call s:HL('VisualNOS', '',  'deepgravel')
@@ -237,7 +239,6 @@ call s:HL('Special', 'plain')
 call s:HL('Comment',        'gravel')
 call s:HL('Todo',           'snow', 'bg', 'bold')
 call s:HL('SpecialComment', 'snow', 'bg', 'bold')
-
 " Strings are a nice, pale straw color.  Nothing too fancy.
 call s:HL('String', 'dirtyblonde')
 
@@ -435,7 +436,7 @@ call s:HL('clojureAnonArg', 'snow', '', 'bold')
 " }}}
 " CSS {{{
 
-if g:badwolf_css_props_highlight
+if g:bluewolf_css_props_highlight
     call s:HL('cssColorProp', 'dirtyblonde', '', 'none')
     call s:HL('cssBoxProp', 'dirtyblonde', '', 'none')
     call s:HL('cssTextProp', 'dirtyblonde', '', 'none')
@@ -494,7 +495,7 @@ call s:HL('htmlArg', 'coffee', '', 'none')
 
 " Stuff inside an <a> tag
 
-if g:badwolf_html_link_underline
+if g:bluewolf_html_link_underline
     call s:HL('htmlLink', 'lightgravel', '', 'underline')
 else
     call s:HL('htmlLink', 'lightgravel', '', 'none')
@@ -529,7 +530,7 @@ call s:HL('texComment', 'darkroast', '', 'none')
 call s:HL('texDelimiter', 'orange', '', 'none')
 call s:HL('texZone', 'brightgravel', '', 'none')
 
-augroup badwolf_tex
+augroup bluewolf_tex
     au!
 
     au BufRead,BufNewFile *.tex syn region texMathZoneV start="\\(" end="\\)\|%stopzone\>" keepend contains=@texMathZoneGroup
@@ -637,4 +638,6 @@ call s:HL('VimBracket', 'dress', '', 'none')
 " }}}
 
 " }}}
+
+
 

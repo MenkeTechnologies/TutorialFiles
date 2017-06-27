@@ -20,7 +20,6 @@ function disable_proxy() {
 
 trap disable_proxy INT
 
-	
 sudo networksetup -setsocksfirewallproxy "$INTERFACE" 127.0.0.1 9050 off
 sudo networksetup -setsocksfirewallproxystate "$INTERFACE" on
 

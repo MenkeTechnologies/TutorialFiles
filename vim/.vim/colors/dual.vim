@@ -99,9 +99,10 @@ hi Normal ctermbg=Black ctermfg=Gray guibg=White guifg=Black gui=none
 if v:version >= 700
   " Cursor colors {{{2
   hi Cursor ctermbg=fg ctermfg=bg cterm=NONE guibg=DarkBlue guifg=bg gui=none
-  hi CursorLine ctermbg=DarkGray cterm=NONE guibg=bg gui=underline
+  hi CursorLine ctermbg=NONE cterm=NONE guibg=bg gui=underline
   hi CursorColumn ctermbg=DarkGray cterm=NONE guibg=bg gui=underline
   " only for Win32, IME status
+  "hi SpecialKey ctermfg=Red
   if has('multi_byte_ime')
     hi CursorIM guibg=#660066 guifg=NONE gui=none
   endif
@@ -161,7 +162,9 @@ if has("extra_search")
   hi IncSearch ctermbg=Green ctermfg=bg cterm=NONE guibg=Green guifg=fg gui=none
 endif
 hi NonText ctermbg=bg ctermfg=DarkGray guibg=Gray95 guifg=DarkGray gui=none
-hi SpecialKey ctermbg=bg ctermfg=Brown guibg=bg guifg=#993333 gui=none
+hi SpecialKey ctermbg=bg ctermfg=Red guibg=bg guifg=#993333 gui=none
+
+
 
 " Window Bars, Status line & Visual mode colors {{{1
 hi StatusLine ctermbg=DarkBlue ctermfg=fg cterm=NONE guibg=#003399 guifg=bg gui=none

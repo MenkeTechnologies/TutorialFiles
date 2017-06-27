@@ -2,6 +2,7 @@
 #created by JACOBMENKE at Mon Jun 12 17:33:50 EDT 2017
 
 tutorialDir="$HOME/Documents/tutorialsRepo"
+websiteDir="$HOME/WebstormProjects/PersonalWebsite"
 
 boldAndUnderlinedPrint(){
     printf "\e[1;4m$1\n\e[0m"
@@ -52,9 +53,28 @@ while read -r file; do
 done < <(find ./vim)
 
 boldAndUnderlinedPrint "Status..."
-
 git status
 boldAndUnderlinedPrint "Pushing..."
 git add .
 git commit -m "update"
 git push
+
+
+boldAndUnderlinedPrint "Copying config files to websiteDir"
+cp ~/.vimrc "$websiteDir/downloads"
+cp ~/.vim/colors/bluewolf.vim "$websiteDir/downloads"
+cp ~/.tmux.conf"$websiteDir/downloads"
+cp ~/.shell_aliases_functions.sh "$websiteDir/downloads"
+cp ~/.zshr "$websiteDir/downloads"
+
+cd "$websiteDir" || exit
+
+boldAndUnderlinedPrint "Status..."
+git status
+boldAndUnderlinedPrint "Pushing..."
+git add .
+git commit -m "update"
+git push
+
+
+

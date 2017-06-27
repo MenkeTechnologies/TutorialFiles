@@ -25,6 +25,7 @@ addContents(){
 	chmod u+x "$file"
 }
 
+
 for file; do
 	lineCounter=1
 	found=false

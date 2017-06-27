@@ -393,5 +393,7 @@ iabbrev waht what
 iabbrev tehn then
 iabbrev retrun return
 iabbrev retunr return
+iabbrev delte delete
+iabbrev deltee delete
 
 

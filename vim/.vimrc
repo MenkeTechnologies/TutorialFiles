@@ -110,6 +110,7 @@ Plugin 'ervandew/supertab'
 " Snippets are separated from the engine. Add this if you want them:
 Plugin 'honza/vim-snippets'
 Plugin '907th/vim-auto-save'
+Plugin 'severin-lemaignan/vim-minimap'
 
 
 let g:auto_save = 1  " enable AutoSave on Vim startup
@@ -187,6 +188,10 @@ inoremap <silent> <C-D> <C-[>:update<CR>a
 nnoremap <silent> <C-G> :w<CR>:Dispatch<CR>
 "vnoremap <silent> <C-G> :<C-C>:w<CR>:Dispatch<CR>
 inoremap <silent> <C-G> <C-[>:w<CR>:Dispatch<CR>a
+
+
+vnoremap < <gv
+vnoremap > >gv
 
 
 " Repeat last command in the next tmux pane.

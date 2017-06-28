@@ -65,7 +65,7 @@ cp ~/.vimrc "$websiteDir/downloads"
 cp ~/.vim/colors/bluewolf.vim "$websiteDir/downloads"
 cp ~/.tmux.conf"$websiteDir/downloads"
 cp ~/.shell_aliases_functions.sh "$websiteDir/downloads"
-cp ~/.zshr "$websiteDir/downloads"
+cp ~/.zshrc "$websiteDir/downloads"
 
 cd "$websiteDir" || exit
 

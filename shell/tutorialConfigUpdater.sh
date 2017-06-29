@@ -68,7 +68,7 @@ git push
 boldAndUnderlinedPrint "Copying config files to websiteDir"
 cp ~/.vimrc "$websiteDir/downloads"
 cp ~/.vim/colors/bluewolf.vim "$websiteDir/downloads"
-cp ~/.tmux.conf"$websiteDir/downloads"
+cp ~/.tmux.conf "$websiteDir/downloads"
 cp ~/.shell_aliases_functions.sh "$websiteDir/downloads"
 cp ~/.zshrc "$websiteDir/downloads"
 

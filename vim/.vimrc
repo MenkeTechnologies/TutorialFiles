@@ -218,7 +218,7 @@ function TmuxRepeat()
 endfunction
 
 function TmuxRepeatGeneric()
-        silent! exec "!tmux send-keys -t right C-c 'clear' C-m up up C-m"
+        silent! exec "!tmux send-keys -t right C-c 'clear' C-m up C-m"
         redraw!
     exe "normal! zz"
 endfunction
@@ -338,14 +338,14 @@ inoremap <silent> <C-U> <Esc>:silent !open -t %:p:h<CR>:redraw!<CR>a
 nnoremap <silent> <C-U> :silent !open -t %:p:h<CR>:redraw!<CR>
 
 nnoremap <silent> <leader>n :n<CR>
-inoremap <F3> <ESC>:%s///g<Left><Left><Left>
-nnoremap <F3> :%s///g<Left><Left><Left>
+inoremap <F8> <ESC>:%s///g<Left><Left><Left>
+nnoremap <F8> :%s///g<Left><Left><Left>
 map <F1> :NERDTreeToggle<CR>
 map <F2> :UndotreeToggle<CR>
-map <F4> :SyntasticToggleMode<CR>
+map <F3> :TlistAddFiles *<CR>:TlistToggle<CR>
+map <F4> :MinimapToggle<CR>
 map <F5> :TTags<CR>
-map <F6> :TlistAddFiles *<CR>:TlistToggle<CR>
-map <F7> :MinimapToggle<CR>
+map <F6> :SyntasticToggleMode<CR>
 
 map <silent> <leader><leader>w <Plug>(easymotion-bd-w)
 map <silent> <leader><leader>e <Plug>(easymotion-bd-e)

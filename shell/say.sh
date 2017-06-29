@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+
 if [[ "$#" == 0 ]]; then
     echo "Need one argument."
     exit
@@ -19,6 +20,5 @@ for i in `say -v ? | awk '{print $1}' | sort`; do
     #the say command using each voice and saying the first argument to the script
     say -v $i "$messageToSpeak"
 done
-
 
 

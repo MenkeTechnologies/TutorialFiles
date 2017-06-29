@@ -1,6 +1,6 @@
 " ~/.vim/sessions/Scripting.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 29 June 2017 at 14:34:03.
+" Created by session.vim 2.13.1 on 29 June 2017 at 14:38:38.
 " Open this file in Vim and run :source % to restore your session.
 
 if exists('g:syntax_on') != 1 | syntax on | endif
@@ -22,10 +22,10 @@ if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
-badd +20 test.sh
+badd +26 test.sh
 badd +18 batchRename.sh
 badd +9 coolFormatter.sh
-badd +0 gitgo.sh
+badd +25 gitgo.sh
 argglobal
 silent! argdel *
 $argadd test.sh
@@ -122,7 +122,7 @@ normal! zt
 normal! 0
 wincmd w
 argglobal
-edit gitgo.sh
+edit test.sh
 setlocal fdm=marker
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -131,12 +131,12 @@ setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 22 - ((21 * winheight(0) + 34) / 68)
+let s:l = 25 - ((24 * winheight(0) + 34) / 68)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-22
-normal! 011|
+25
+normal! 0
 wincmd w
 argglobal
 enew

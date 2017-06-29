@@ -7,10 +7,112 @@ say "hello world"
 
 ls
 
+echo "my thiisne
+are cool" | say
+
+pwd
+
+
+echo "the pwd is now dogs are cool inm my ok so kiss e off realy" | say 
+
+dogs(){
+echo "dogs are cool "
+}
+xx=55
+
+echo "ehello wordl "
+
+echo "my pwd is `pwd`"
+
+say "hello world"
+
+ls
+
+echo "my dogs are cool" | say
+
+pwd
+
+echo "the pwd is now dogs are cool inm my ok so kiss e off realy" | say 
+
+dogs(){
+echo "dogs are cool "
+}
+xx=55
+
+
+echo "ehello wordl "
+
+
+echo "my pwd is `pwd`"
+
+say "hello world"
+
+ls
+
 echo "my dogs are cool" | say
 
 pwd
 
 
 echo "the pwd is now dogs are cool inm my ok so kiss e off realy" | say 
-<F4><F2>
+
+
+thiisne(){
+    
+echo "thiisne are cool "
+}
+xx=55
+
+echo "ehello wordl "
+
+
+echo "my pwd is `pwd`"
+
+say "hello world"
+
+ls
+
+
+echo "my thiisne are cool" | say
+
+pwd
+
+
+
+echo "the pwd is now thiisne are cool inm my ok so kiss e off realy" | say 
+
+
+thiisne(){
+    
+echo "thiisne are cool "
+}
+xx=55
+
+
+echo "ehello wordl "
+
+
+echo "my pwd is `pwd`"
+
+say "hello world"
+
+ls
+
+
+echo "my thiisne are cool" | say
+
+pwd
+
+
+echo "the pwd is now thiisne are cool inm my ok so kiss e off realy" | say 
+
+
+thiisne(){
+    
+echo "thiisne are cool "
+}
+xx=55
+
+echo "ehello wordl "
+
+

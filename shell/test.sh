@@ -9,4 +9,9 @@ say "hello world"
 
 ls
 
+echo "my dogs are cool" | say
+
+
+
+
 

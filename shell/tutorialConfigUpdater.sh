@@ -22,6 +22,12 @@ cp ~/.shell_aliases_functions.sh "$tutorialDir/aliases"
 boldAndUnderlinedPrint "Copying shellScripts"
 cp "$HOME/Documents/shellScripts/"*.sh "$tutorialDir/shell"
 
+boldAndUnderlinedPrint "Copying tags file"
+cp "$HOME/Documents/shellScripts/tags" "$tutorialDir/shell"
+
+boldAndUnderlinedPrint "Copying ~/.ctags" 
+cp "$HOME/.ctags" "$tutorialDir/ctags"
+
 boldAndUnderlinedPrint "Copying vis ncmpcpp mpd"
 cp -R ~/.config/vis "$tutorialDir/ncmpcpp-mpd-vis"
 boldAndUnderlinedPrint "Emptying mpd log"
@@ -59,7 +65,6 @@ git add .
 git commit -m "update"
 git push
 
-
 boldAndUnderlinedPrint "Copying config files to websiteDir"
 cp ~/.vimrc "$websiteDir/downloads"
 cp ~/.vim/colors/bluewolf.vim "$websiteDir/downloads"
@@ -75,6 +80,4 @@ boldAndUnderlinedPrint "Pushing..."
 git add .
 git commit -m "update"
 git push
-
-
 

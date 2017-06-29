@@ -1,0 +1,207 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=483
+
+Overview
+
+The "Tag Explorer" plugin provides the following features:
+
+1. Opens a vertically/horizontally split Vim window with a list of files in
+   a directory. You can list all the tags (functions, classes, structures,
+   variables, etc) defined in a file. You can jump to the location where a
+   tag is defined. You can edit a selected file. You can browse through the
+   directories.
+2. Groups the tags by their type and displays them in a foldable tree.
+3. When a tag name is selected from the explorer window, positions the cursor
+   at the definition of the tag in the source file
+4. Can display the prototype of a tag from the tag explorer window.
+5. Displays the scope of a tag.
+6. The displayed tags can be sorted either by name or by line number.
+7. Supports the following programming language files: Assembly, ASP, Awk, C,
+   C++, Cobol, Eiffel, Fortran, Java, Lisp, Make, Pascal, Perl, PHP, Python,
+   Rexx, Ruby, Scheme, Shell, Slang, Sql, TCL, Verilog, Vim and Yacc.
+8. Runs in all the platforms where the exuberant ctags utility and Vim are
+   supported (this includes MS-Windows and Unix based systems).
+9. Runs in both console/terminal and GUI versions of Vim.
+
+This plugin relies on the exuberant ctags utility to generate the tag
+listing. You can download the exuberant ctags utility from
+http://ctags.sourceforge.net. The exuberant ctags utility must be installed
+in your system to use this plugin. Exuberant ctags version 5.3 and above is
+recommended.  There is no need for you to create a tags file to use this
+plugin.
+
+Installation
+
+1. Copy the tagexplorer.vim script to the $HOME/.vim/plugin directory.
+   Refer to ':help add-plugin', ':help add-global-plugin' and ':help
+   runtimepath' for more details about Vim plugins.
+2. Set the TE_Ctags_Path variable to point to the exuberant ctags utility
+   path.
+3. If you are running a terminal/console version of Vim and the terminal
+   doesn't support changing the window width then set the TE_Adjust_Winwidth
+   variable to 0.
+4. Restart Vim.
+5. You can use the ":TagExplorer" command to open/close the tag explorer
+   window. 
+
+Usage
+
+You can open the tag explorer window using the ":TagExplorer" command.
+Invoking this command will toggle (open or close) the tag explorer window.
+You can map a key to invoke this command:
+
+              nnoremap <silent> <F8> :TagExplorer<CR>
+
+Add the above mapping to your ~/.vimrc file.
+
+You can close the tag explorer window from the tag explorer window by
+pressing 'q' or using the Vim ":q" or using one of the Vim window CTRL-W
+commands.
+
+When the tag explorer window is opened, the names of all the directories
+and files in the current directory will be displayed.
+
+When a directory name is selected by pressing the <Enter> key or by double
+clicking with the mouse, the contents of the selected directory will be
+displayed. You can go to the parent directory by selecting the ".." entry.
+
+When a file name is selected by pressing the <Enter> key or by double
+clicking with the mouse, the selected file will be opened in a window.
+
+You can display all the tags (variable, function, class, etc) defined in a
+file using the 'o' command.  The tag names will grouped by their type
+(variable, function, class, etc) and displayed as a foldable tree using the
+Vim folding support. You can collapse the tree using the 'c' command. You
+can open the tree using the 'o' command.  You can also use the mouse to
+open/close the folds. You can use the '+' and '-' keys to open and close the
+folds for a tag type.
+
+You can select a tag either by pressing the <Enter> key or by double
+clicking the tag name using the mouse.
+
+For tags with scope information (like class members, structures inside
+structures, etc), the scope information will be displayed in square brackets
+"[]" after the tagname.
+
+By default, the tag list will be sorted by the order in which the tags
+appear in the file. You can sort the tags either by name or by order by
+pressing the "s" key in the tag explorer window.
+
+You can display the prototype of a tag by pressing <Spacebar> key when
+the cursor is placed over a tag name.
+
+You can update the tags listed for a file by pressing the 'u' key in the tag
+explorer window.
+
+You can open a different directory by using the 'g' command. You will be
+prompted to enter the name of the directory. You can recall the previously
+entered directory names by pressing the Up and Down arrow keys. The last
+displayed directory name will be the first available name in the history.
+
+To get help on the keys, press the "?" key in the tag explorer window.
+
+This script relies on the Vim "filetype" detection mechanism to determine
+the type of the current file. To turn on filetype detection use
+
+              :filetype on
+
+This script will not work in 'compatible' mode.  Make sure the 'compatible'
+option is not set.
+
+Configuration
+
+By changing the following variables you can configure the behavior of this
+plugin. Set the following variables in your .vimrc file using the 'let'
+command.
+
+The plugin uses the TE_Ctags_Path variable to locate the ctags utility.  By
+default, this is set to ctags. Set this variable to point to the location of
+the ctags utility in your system:
+
+              let TE_Ctags_Path = 'd:\tools\ctags.exe'
+
+By default, the tag names will be listed in the order in which they are
+defined in the file. You can alphabetically sort the tag names by pressing
+the "s" key in the tag explorer window. You can also change the default
+order by setting the variable TE_Sort_Type to "name" or "order":
+
+              let TE_Sort_Type = "name"
+
+By default, all the file names in a directory will be displayed in the
+explorer window. If you want to display only selective filenames, you can
+set the 'TE_Include_File_Pattern' variable. If this variable is set to empty
+string, all the files in the directory will be displayed. You have to set
+this variable to a Vim regular expression pattern value. For example, to
+display only .c and .h files, set this variable to
+
+              let TE_Include_File_Pattern = '.*\.c$\|.*\.h$'
+
+You can set the 'TE_Exclude_File_Pattern' variable to skip file names
+matching a Vim regular expression pattern. For example, to skip the .o, .obj
+.bak, core and tags files, set this variable to
+
+              let TE_Exclude_File_Pattern = '.*\.o$\|.*\.obj$\|.*\.bak$' .
+                                            '\|.*\.swp$\|core\|tags'
+
+By default, all the sub-directory names in a directory will be displayed in
+the explorer window. If you want to display only selective directories, you
+can set the 'TE_Include_Dir_Pattern' variable. If this variable is set to
+empty string, all the sub-directories in the directory will be displayed.
+You have to set this variable to a Vim regular expression pattern value.
+For example, to include only those directories containing vim or unix in the
+name, use
+
+              let TE_Include_Dir_Pattern = '.*vim.*\|.*unix.*'
+
+You can set the 'TE_Exclude_Dir_Pattern' variable to skip directories
+matching a Vim regular expression pattern. By default, this variable is set
+to empty. For example, to exclude all the directories starting with obj or
+containing test, use
+
+              let TE_Exclude_Dir_Pattern = 'obj.*\|.*test.*'
+
+Be default, the tag names will be listed in a vertically split window.  If
+you prefer a horizontally split window, then set the 'TE_Use_Horiz_Window'
+variable to 1. If you are running MS-Windows version of Vim in a MS-DOS
+command window, then you should use a horizontally split window instead of a
+vertically split window.  Also, if you are using an older version of xterm
+in a Unix system that doesn't support changing the xterm window width, you
+should use a horizontally split window.
+
+              let TE_Use_Horiz_Window = 1
+
+By default, the vertically split tag explorer window will appear on the left
+hand side. If you prefer to open the window on the right hand side, you can
+set the TE_Use_Right_Window variable to one:
+
+              let TE_Use_Right_Window = 1
+
+You can also open the tag explorer window on startup using the following
+command line:
+
+              $ vim +TagExplorer
+
+The default width of the vertically split tag explorer window will be 30.
+This can be changed by modifying the TE_WinWidth variable:
+
+              let TE_WinWidth = 20
+
+Note that the value of the 'winwidth' option setting determines the minimum
+width of the current window. If you set the 'TE_WinWidth' variable to a
+value less than that of the 'winwidth' option setting, then Vim will use the
+value of the 'winwidth' option.
+
+By default, when the width of the window is less than 100 and a new tag
+explorer window is opened vertically, then the window width will be
+increased by the value set in the TE_WinWidth variable to accomodate the new
+window.  The value of this variable is used only if you are using a
+vertically split tag explorer window.  If your terminal doesn't support
+changing the window width from Vim (older version of xterm running in a Unix
+system) or if you see any weird problems in the screen due to the change in
+the window width or if you prefer not to adjust the window width then set
+the 'TE_Adjust_Winwidth' variable to 0.  CAUTION: If you are using the
+MS-Windows version of Vim in a MS-DOS command window then you must set this
+variable to 0, otherwise the system may hang due to a Vim limitation
+(explained in :help win32-problems)
+
+              let TE_Adjust_Winwidth = 0
+

@@ -78,6 +78,8 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'TerryMa/vim-multiple-cursors'
 Plugin 'luochen1990/rainbow'
+
+"Plugin 'craigemery/vim-autotag'
 let g:rainbow_active = 1 "0 if you want to enable it later via :RainbowToggle
 
 let g:rainbow_conf = {
@@ -159,14 +161,19 @@ let g:bookmark_highlight_lines = 0
 let g:slime_target = "tmux"
 let g:slime_paste_file = "$HOME/.slime_paste"
 " or maybe...
-let g:slime_paste_file = tempname()
-let g:slime_default_config = {"socket_name": split($TMUX, ",")[0], "target_pane": ":"}
+"let g:slime_paste_file = tempname()
+"let g:slime_default_config = {"socket_name": split($TMUX, ",")[0], "target_pane": ":"}
 
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
 "let g:UltiSnipsExpandTrigger="<c-j>"
 "
 let g:ycm_collect_identifiers_from_tags_files=1
 let g:ycm_collect_identifiers_from_comments_and_strings = 1
+
+
+let g:NERDTreeDisableFileExtensionHighlight = 1
+let g:NERDTreeDisableExactMatchHighlight = 1
+let g:NERDTreeDisablePatternMatchHighlight = 1
 
 
 call vundle#end()            " required
@@ -330,7 +337,9 @@ nnoremap <F3> :%s///g<Left><Left><Left>
 map <F1> :NERDTreeToggle<CR>
 map <F2> :UndotreeToggle<CR>
 map <F4> :SyntasticToggleMode<CR>
-map <F5> :TlistAddFiles *<CR> :TlistToggle<CR>
+map <F5> :TTags<CR>
+map <F6> :TlistAddFiles *<CR>:TlistToggle<CR>
+map <F7> :MinimapToggle<CR>
 
 
 map <silent> <leader><leader>w <Plug>(easymotion-bd-w)

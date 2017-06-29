@@ -101,7 +101,6 @@ displayProgress	batchRename.sh	/^displayProgress(){$/;"	f
 displayProgress	picture_finder.sh	/^displayProgress(){$/;"	f	language:Sh
 displayProgress	secureDelete.sh	/^displayProgress(){$/;"	f	language:Sh
 displayProgressIndicator	openAll.sh	/^displayProgressIndicator(){$/;"	f	language:Sh
-dogs	test.sh	/^dogs(){$/;"	f
 dontSummarizeSizes	directoryContentsSize.sh	/^dontSummarizeSizes(){$/;"	f	language:Sh
 ending	picture_finder.sh	/^	ending=${destinationFile##*.}$/;"	v	language:Sh
 executableProgram	shebangChanger.sh	/^executableProgram=$1$/;"	v	language:Sh
@@ -201,7 +200,6 @@ tail	shebangChanger.sh	/^		tail=$(cat "$file")$/;"	v	language:Sh
 tail	shebangChanger.sh	/^		tail=$(tail +$lineCounter "$file")$/;"	v	language:Sh
 temp	batchRename.sh	/^        local temp=${spinner#?}               # remove first character from $spinner$/;"	v
 temp	openAll.sh	/^	local temp=${spinner#?}               # remove first character from $spinner$/;"	v	language:Sh
-thiisne	test.sh	/^thiisne(){$/;"	f
 timeToSleep	myWatchNoBlink.sh	/^    timeToSleep=$2$/;"	v	language:Sh
 timeToSleep	myWatchNoBlink.sh	/^    timeToSleep=0.5$/;"	v	language:Sh
 timeToSleep	myWatchNoBlinkColorized.sh	/^    timeToSleep=$2$/;"	v	language:Sh
@@ -226,4 +224,3 @@ watchingFile	watchServiceFSWatchRustCompile.sh	/^	watchingFile=`basename $2`$/;"
 websiteDir	tutorialConfigUpdater.sh	/^websiteDir="$HOME\/WebstormProjects\/PersonalWebsite"$/;"	v
 x	mywatch.sh	/^    x=$(eval "$1")$/;"	v	language:Sh
 x	test.py	/^x=5$/;"	v
-xx	test.sh	/^xx=55$/;"	v

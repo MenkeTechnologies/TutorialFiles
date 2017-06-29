@@ -4,115 +4,14 @@
 echo "my pwd is `pwd`"
 
 say "hello world"
-
-ls
-
-echo "my thiisne
-are cool" | say
-
-pwd
-
-
-echo "the pwd is now dogs are cool inm my ok so kiss e off realy" | say 
-
-dogs(){
-echo "dogs are cool "
-}
-xx=55
-
-echo "ehello wordl "
-
-echo "my pwd is `pwd`"
-
-say "hello world"
-
-ls
-
-echo "my dogs are cool" | say
-
-pwd
-
-echo "the pwd is now dogs are cool inm my ok so kiss e off realy" | say 
-
-dogs(){
-echo "dogs are cool "
-}
-xx=55
-
-
-echo "ehello wordl "
-
-
-echo "my pwd is `pwd`"
-
-say "hello world"
-
-ls
-
-echo "my dogs are cool" | say
-
-pwd
-
-
-echo "the pwd is now dogs are cool inm my ok so kiss e off realy" | say 
-
-
-thiisne(){
-    
-echo "thiisne are cool "
-}
-xx=55
-
-echo "ehello wordl "
-
-
-echo "my pwd is `pwd`"
-
-say "hello world"
-
-ls
-
-
-echo "my thiisne are cool" | say
-
-pwd
-
-
-
 echo "the pwd is now thiisne are cool inm my ok so kiss e off realy" | say 
 
+echo "my email is jamenk@email.wm.edu" | say
 
-thiisne(){
-    
-echo "thiisne are cool "
-}
-xx=55
+echo "myaddres is cool"
 
 
-echo "ehello wordl "
 
+id
 
-echo "my pwd is `pwd`"
-
-say "hello world"
-
-ls
-
-
-echo "my thiisne are cool" | say
-
-pwd
-
-
-echo "the pwd is now thiisne are cool inm my ok so kiss e off realy" | say 
-
-
-thiisne(){
-    
-echo "thiisne are cool "
-}
-xx=55
-
-echo "ehello wordl "
-
-
+echo "my id is $(id)"

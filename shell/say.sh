@@ -20,5 +20,3 @@ for i in `say -v ? | awk '{print $1}' | sort`; do
     #the say command using each voice and saying the first argument to the script
     say -v $i "$messageToSpeak"
 done
-
-

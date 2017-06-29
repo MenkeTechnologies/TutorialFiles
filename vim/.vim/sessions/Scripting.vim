@@ -1,6 +1,6 @@
 " ~/.vim/sessions/Scripting.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 29 June 2017 at 15:08:58.
+" Created by session.vim 2.13.1 on 29 June 2017 at 15:18:22.
 " Open this file in Vim and run :source % to restore your session.
 
 if exists('g:syntax_on') != 1 | syntax on | endif
@@ -22,13 +22,13 @@ if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
-badd +15 test.sh
+badd +35 test.sh
 badd +18 batchRename.sh
 badd +9 coolFormatter.sh
 badd +25 gitgo.sh
 badd +34 banner.pl
 badd +39 runner.sh
-badd +18 test.py
+badd +13 test.py
 argglobal
 silent! argdel *
 $argadd test.sh
@@ -42,7 +42,10 @@ wincmd _ | wincmd |
 vsplit
 wincmd _ | wincmd |
 vsplit
-4wincmd h
+wincmd _ | wincmd |
+vsplit
+5wincmd h
+wincmd w
 wincmd w
 wincmd _ | wincmd |
 split
@@ -59,17 +62,30 @@ set nosplitbelow
 set nosplitright
 wincmd t
 set winminheight=1 winheight=1 winminwidth=1 winwidth=1
-exe 'vert 1resize ' . ((&columns * 61 + 101) / 202)
-exe '2resize ' . ((&lines * 57 + 35) / 70)
+exe 'vert 1resize ' . ((&columns * 31 + 101) / 202)
 exe 'vert 2resize ' . ((&columns * 30 + 101) / 202)
-exe '3resize ' . ((&lines * 10 + 35) / 70)
-exe 'vert 3resize ' . ((&columns * 30 + 101) / 202)
-exe '4resize ' . ((&lines * 4 + 35) / 70)
-exe 'vert 4resize ' . ((&columns * 72 + 101) / 202)
-exe '5resize ' . ((&lines * 63 + 35) / 70)
-exe 'vert 5resize ' . ((&columns * 72 + 101) / 202)
-exe 'vert 6resize ' . ((&columns * 20 + 101) / 202)
-exe 'vert 7resize ' . ((&columns * 15 + 101) / 202)
+exe '3resize ' . ((&lines * 57 + 35) / 70)
+exe 'vert 3resize ' . ((&columns * 20 + 101) / 202)
+exe '4resize ' . ((&lines * 10 + 35) / 70)
+exe 'vert 4resize ' . ((&columns * 20 + 101) / 202)
+exe '5resize ' . ((&lines * 3 + 35) / 70)
+exe 'vert 5resize ' . ((&columns * 71 + 101) / 202)
+exe '6resize ' . ((&lines * 64 + 35) / 70)
+exe 'vert 6resize ' . ((&columns * 71 + 101) / 202)
+exe 'vert 7resize ' . ((&columns * 25 + 101) / 202)
+exe 'vert 8resize ' . ((&columns * 20 + 101) / 202)
+argglobal
+enew
+" file NERD_tree_1
+setlocal fdm=manual
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=20
+setlocal nofen
+wincmd w
 argglobal
 enew
 " file __Tag_List__
@@ -127,8 +143,8 @@ setlocal fdn=20
 setlocal fen
 wincmd w
 argglobal
-edit test.py
-setlocal fdm=manual
+edit test.sh
+setlocal fdm=marker
 setlocal fde=0
 setlocal fmr={{{,}}}
 setlocal fdi=#
@@ -136,25 +152,12 @@ setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-silent! normal! zE
-let s:l = 21 - ((20 * winheight(0) + 31) / 63)
+let s:l = 57 - ((25 * winheight(0) + 32) / 64)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-21
-normal! 0
-wincmd w
-argglobal
-enew
-file vim-minimap
-setlocal fdm=manual
-setlocal fde=0
-setlocal fmr={{{,}}}
-setlocal fdi=#
-setlocal fdl=0
-setlocal fml=1
-setlocal fdn=20
-setlocal fen
+57
+normal! 072|
 wincmd w
 argglobal
 enew
@@ -168,18 +171,31 @@ setlocal fml=1
 setlocal fdn=20
 setlocal nofen
 wincmd w
-5wincmd w
-exe 'vert 1resize ' . ((&columns * 61 + 101) / 202)
-exe '2resize ' . ((&lines * 57 + 35) / 70)
+argglobal
+enew
+file vim-minimap
+setlocal fdm=marker
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+wincmd w
+6wincmd w
+exe 'vert 1resize ' . ((&columns * 31 + 101) / 202)
 exe 'vert 2resize ' . ((&columns * 30 + 101) / 202)
-exe '3resize ' . ((&lines * 10 + 35) / 70)
-exe 'vert 3resize ' . ((&columns * 30 + 101) / 202)
-exe '4resize ' . ((&lines * 4 + 35) / 70)
-exe 'vert 4resize ' . ((&columns * 72 + 101) / 202)
-exe '5resize ' . ((&lines * 63 + 35) / 70)
-exe 'vert 5resize ' . ((&columns * 72 + 101) / 202)
-exe 'vert 6resize ' . ((&columns * 20 + 101) / 202)
-exe 'vert 7resize ' . ((&columns * 15 + 101) / 202)
+exe '3resize ' . ((&lines * 57 + 35) / 70)
+exe 'vert 3resize ' . ((&columns * 20 + 101) / 202)
+exe '4resize ' . ((&lines * 10 + 35) / 70)
+exe 'vert 4resize ' . ((&columns * 20 + 101) / 202)
+exe '5resize ' . ((&lines * 3 + 35) / 70)
+exe 'vert 5resize ' . ((&columns * 71 + 101) / 202)
+exe '6resize ' . ((&lines * 64 + 35) / 70)
+exe 'vert 6resize ' . ((&columns * 71 + 101) / 202)
+exe 'vert 7resize ' . ((&columns * 25 + 101) / 202)
+exe 'vert 8resize ' . ((&columns * 20 + 101) / 202)
 tabnext 1
 if exists('s:wipebuf')
 "   silent exe 'bwipe ' . s:wipebuf
@@ -201,6 +217,18 @@ let &so = s:so_save | let &siso = s:siso_save
 tabnext 1
 let s:bufnr_save = bufnr("%")
 let s:cwd_save = getcwd()
+NERDTree ~/Documents/shellScripts
+if !getbufvar(s:bufnr_save, '&modified')
+  let s:wipebuflines = getbufline(s:bufnr_save, 1, '$')
+  if len(s:wipebuflines) <= 1 && empty(get(s:wipebuflines, 0, ''))
+    silent execute 'bwipeout' s:bufnr_save
+  endif
+endif
+execute "cd" fnameescape(s:cwd_save)
+2wincmd w
+tabnext 1
+let s:bufnr_save = bufnr("%")
+let s:cwd_save = getcwd()
 Tlist
 if !getbufvar(s:bufnr_save, '&modified')
   let s:wipebuflines = getbufline(s:bufnr_save, 1, '$')
@@ -209,8 +237,8 @@ if !getbufvar(s:bufnr_save, '&modified')
   endif
 endif
 execute "cd" fnameescape(s:cwd_save)
-1resize 68|vert 1resize 61|2resize 57|vert 2resize 30|3resize 10|vert 3resize 30|4resize 4|vert 4resize 72|5resize 63|vert 5resize 72|6resize 68|vert 6resize 20|7resize 68|vert 7resize 15|
-5wincmd w
+1resize 68|vert 1resize 31|2resize 68|vert 2resize 30|3resize 57|vert 3resize 20|4resize 10|vert 4resize 20|5resize 3|vert 5resize 71|6resize 64|vert 6resize 71|7resize 68|vert 7resize 25|8resize 68|vert 8resize 20|
+6wincmd w
 tabnext 1
 if exists('s:wipebuf')
   if empty(bufname(s:wipebuf))

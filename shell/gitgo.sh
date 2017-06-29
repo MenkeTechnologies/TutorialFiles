@@ -5,7 +5,6 @@
 # set -x
 
 #GITHUB_ACCOUNT environment variable needed for the script to create a remote repository
-
 ##########################################
 ###############  functions  ##############
 ##########################################
@@ -37,6 +36,7 @@ else
         #there is a .git directory and there is setup for remote so exit
         prettyPrint "Already initialized."
         exit 1
+
     fi
 
 fi

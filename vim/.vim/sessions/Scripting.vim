@@ -1,6 +1,6 @@
 " ~/.vim/sessions/Scripting.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 29 June 2017 at 11:00:57.
+" Created by session.vim 2.13.1 on 29 June 2017 at 12:56:20.
 " Open this file in Vim and run :source % to restore your session.
 
 if exists('g:syntax_on') != 1 | syntax on | endif
@@ -22,9 +22,16 @@ if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
-badd +30 test.sh
+badd +12 test.sh
 badd +26 gitgo.sh
 badd +6 uploadWebDS.sh
+badd +23 duplicateLineDeleter.sh
+badd +19 shebangChanger.sh
+badd +14 createScriptButDontOpenSublime.sh
+badd +10 batchRename.sh
+badd +16 backupBashConfig.sh
+badd +4 backupBashConfig.shtest.shbackupBashConfig.sh
+badd +26 animation
 argglobal
 silent! argdel *
 $argadd test.sh
@@ -42,10 +49,10 @@ vsplit
 wincmd _ | wincmd |
 vsplit
 4wincmd h
+wincmd w
 wincmd _ | wincmd |
 split
 1wincmd k
-wincmd w
 wincmd w
 wincmd w
 wincmd w
@@ -55,52 +62,19 @@ set nosplitbelow
 set nosplitright
 wincmd t
 set winminheight=1 winheight=1 winminwidth=1 winwidth=1
-exe '1resize ' . ((&lines * 49 + 35) / 70)
-exe 'vert 1resize ' . ((&columns * 30 + 94) / 189)
-exe '2resize ' . ((&lines * 10 + 35) / 70)
-exe 'vert 2resize ' . ((&columns * 30 + 94) / 189)
-exe '3resize ' . ((&lines * 60 + 35) / 70)
-exe 'vert 3resize ' . ((&columns * 40 + 94) / 189)
+exe '1resize ' . ((&lines * 60 + 35) / 70)
+exe 'vert 1resize ' . ((&columns * 40 + 94) / 189)
+exe '2resize ' . ((&lines * 31 + 35) / 70)
+exe 'vert 2resize ' . ((&columns * 35 + 94) / 189)
+exe '3resize ' . ((&lines * 28 + 35) / 70)
+exe 'vert 3resize ' . ((&columns * 35 + 94) / 189)
 exe '4resize ' . ((&lines * 60 + 35) / 70)
 exe 'vert 4resize ' . ((&columns * 25 + 94) / 189)
 exe '5resize ' . ((&lines * 60 + 35) / 70)
-exe 'vert 5resize ' . ((&columns * 70 + 94) / 189)
+exe 'vert 5resize ' . ((&columns * 65 + 94) / 189)
 exe '6resize ' . ((&lines * 60 + 35) / 70)
 exe 'vert 6resize ' . ((&columns * 20 + 94) / 189)
 exe '7resize ' . ((&lines * 7 + 35) / 70)
-argglobal
-setlocal fdm=manual
-setlocal fde=0
-setlocal fmr={{{,}}}
-setlocal fdi=#
-setlocal fdl=0
-setlocal fml=1
-setlocal fdn=20
-setlocal fen
-let s:l = 3 - ((2 * winheight(0) + 24) / 49)
-if s:l < 1 | let s:l = 1 | endif
-exe s:l
-normal! zt
-3
-normal! 02|
-wincmd w
-argglobal
-edit diffpanel_3
-setlocal fdm=marker
-setlocal fde=0
-setlocal fmr={{{,}}}
-setlocal fdi=#
-setlocal fdl=0
-setlocal fml=1
-setlocal fdn=20
-setlocal nofen
-let s:l = 1 - ((0 * winheight(0) + 5) / 10)
-if s:l < 1 | let s:l = 1 | endif
-exe s:l
-normal! zt
-1
-normal! 0
-wincmd w
 argglobal
 enew
 " file __Tag_List__
@@ -112,9 +86,45 @@ setlocal fdl=9999
 setlocal fml=0
 setlocal fdn=20
 setlocal fen
+lcd ~/Documents/shellScripts
 wincmd w
 argglobal
-edit NetrwTreeListing\ 3
+setlocal fdm=manual
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+let s:l = 3 - ((1 * winheight(0) + 15) / 31)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+3
+normal! 02|
+lcd ~/Documents/shellScripts
+wincmd w
+argglobal
+edit ~/Documents/shellScripts/diffpanel_3
+setlocal fdm=marker
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=20
+setlocal nofen
+let s:l = 1 - ((0 * winheight(0) + 14) / 28)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+1
+normal! 0
+lcd ~/Documents/shellScripts
+wincmd w
+argglobal
+edit ~/Documents/shellScripts/NetrwTreeListing\ 15
 setlocal fdm=manual
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -124,12 +134,12 @@ setlocal fml=1
 setlocal fdn=20
 setlocal fen
 silent! normal! zE
-let s:l = 8 - ((7 * winheight(0) + 30) / 60)
+let s:l = 20 - ((17 * winheight(0) + 30) / 60)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-8
-normal! 0
+20
+normal! 022|
 lcd ~/Documents/shellScripts
 wincmd w
 argglobal
@@ -142,12 +152,13 @@ setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 32 - ((29 * winheight(0) + 30) / 60)
+let s:l = 17 - ((16 * winheight(0) + 30) / 60)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-32
+17
 normal! 0
+lcd ~/Documents/shellScripts
 wincmd w
 argglobal
 enew
@@ -172,18 +183,19 @@ setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
+lcd ~/Documents/shellScripts
 wincmd w
 5wincmd w
-exe '1resize ' . ((&lines * 49 + 35) / 70)
-exe 'vert 1resize ' . ((&columns * 30 + 94) / 189)
-exe '2resize ' . ((&lines * 10 + 35) / 70)
-exe 'vert 2resize ' . ((&columns * 30 + 94) / 189)
-exe '3resize ' . ((&lines * 60 + 35) / 70)
-exe 'vert 3resize ' . ((&columns * 40 + 94) / 189)
+exe '1resize ' . ((&lines * 60 + 35) / 70)
+exe 'vert 1resize ' . ((&columns * 40 + 94) / 189)
+exe '2resize ' . ((&lines * 31 + 35) / 70)
+exe 'vert 2resize ' . ((&columns * 35 + 94) / 189)
+exe '3resize ' . ((&lines * 28 + 35) / 70)
+exe 'vert 3resize ' . ((&columns * 35 + 94) / 189)
 exe '4resize ' . ((&lines * 60 + 35) / 70)
 exe 'vert 4resize ' . ((&columns * 25 + 94) / 189)
 exe '5resize ' . ((&lines * 60 + 35) / 70)
-exe 'vert 5resize ' . ((&columns * 70 + 94) / 189)
+exe 'vert 5resize ' . ((&columns * 65 + 94) / 189)
 exe '6resize ' . ((&lines * 60 + 35) / 70)
 exe 'vert 6resize ' . ((&columns * 20 + 94) / 189)
 exe '7resize ' . ((&lines * 7 + 35) / 70)
@@ -204,7 +216,7 @@ let &so = s:so_save | let &siso = s:siso_save
 " Everything down here is generated by vim-session (not supported
 " by :mksession out of the box).
 
-3wincmd w
+1wincmd w
 tabnext 1
 let s:bufnr_save = bufnr("%")
 let s:cwd_save = getcwd()
@@ -220,7 +232,7 @@ execute "cd" fnameescape(s:cwd_save)
 tabnext 1
 let s:bufnr_save = bufnr("%")
 let s:cwd_save = getcwd()
-edit ~/Documents/shellScripts/NetrwTreeListing\ 3
+edit ~/Documents/shellScripts/NetrwTreeListing\ 15
 if !getbufvar(s:bufnr_save, '&modified')
   let s:wipebuflines = getbufline(s:bufnr_save, 1, '$')
   if len(s:wipebuflines) <= 1 && empty(get(s:wipebuflines, 0, ''))
@@ -228,7 +240,7 @@ if !getbufvar(s:bufnr_save, '&modified')
   endif
 endif
 execute "cd" fnameescape(s:cwd_save)
-1resize 49|vert 1resize 30|2resize 10|vert 2resize 30|3resize 60|vert 3resize 40|4resize 60|vert 4resize 25|5resize 60|vert 5resize 70|6resize 60|vert 6resize 20|7resize 7|vert 7resize 189|
+1resize 60|vert 1resize 40|2resize 31|vert 2resize 35|3resize 28|vert 3resize 35|4resize 60|vert 4resize 25|5resize 60|vert 5resize 65|6resize 60|vert 6resize 20|7resize 7|vert 7resize 189|
 5wincmd w
 tabnext 1
 if exists('s:wipebuf')

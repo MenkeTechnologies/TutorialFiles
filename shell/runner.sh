@@ -34,15 +34,15 @@ fileToBeExecuted="$1"
 case "$fileToBeExecuted" in
     *.sh ) executeTheFile bash "$fileToBeExecuted"
         ;;
-    *.pl ) executeTheFile perl"$fileToBeExecuted"
+    *.pl ) executeTheFile perl "$fileToBeExecuted"
         ;;
-    *.rb ) executeTheFile ruby"$fileToBeExecuted"
+    *.rb ) executeTheFile ruby "$fileToBeExecuted"
         ;;
     *.vim )
         command="vim -i NONE -V1 -Nes -c 'so""$fileToBeExecuted""' -c'echo""|q!' 2>&1 | tail +4"
         executeFileFirstArgIsCommand "$command" "$fileToBeExecuted" 
         ;;
-    *.py ) executeTheFile python3"$fileToBeExecuted"
+    *.py ) executeTheFile python3 "$fileToBeExecuted"
         ;;
     *.java ) executeTheFile java"$fileToBeExecuted"
 

@@ -76,7 +76,7 @@ clearline	batchRename.sh	/^    local clearline="\\e[K" # clear to end of line (A
 clearline	openAll.sh	/^local clearline="\\e[K" # clear to end of line (ANSI terminal)$/;"	v	language:Sh
 cols	animation	/^cols=`tput cols`$/;"	v
 cols	picture_finder.sh	/^cols=`tput cols`$/;"	v	language:Sh
-command	runner.sh	/^        command="vim -i NONE -V1 -Nes -c 'so""$fileToBeExecuted""' -c'echo""|q!' 2>&1 | tail +4"$/;"	v	language:Sh
+command	runner.sh	/^        command="vim -i NONE -V1 -Nes -c 'so""$fileToBeExecuted""' -c'echo""|q!' 2>&1 | tail +4"$/;"	v
 commandList	oldCounter.sh	/^		commandList="$i\\n$commandList"$/;"	v	language:Sh
 commandList	oldCounter.sh	/^commandList=""$/;"	v	language:Sh
 commands	oldCounter.sh	/^		commands="$f $commands"$/;"	v	language:Sh
@@ -101,20 +101,21 @@ displayProgress	batchRename.sh	/^displayProgress(){$/;"	f
 displayProgress	picture_finder.sh	/^displayProgress(){$/;"	f	language:Sh
 displayProgress	secureDelete.sh	/^displayProgress(){$/;"	f	language:Sh
 displayProgressIndicator	openAll.sh	/^displayProgressIndicator(){$/;"	f	language:Sh
+dogs	test.sh	/^dogs(){$/;"	f
 dontSummarizeSizes	directoryContentsSize.sh	/^dontSummarizeSizes(){$/;"	f	language:Sh
 ending	picture_finder.sh	/^	ending=${destinationFile##*.}$/;"	v	language:Sh
 executableProgram	shebangChanger.sh	/^executableProgram=$1$/;"	v	language:Sh
 executableScriptsProcessing	createScriptButDontOpenSublime.sh	/^executableScriptsProcessing(){$/;"	f
 executableScriptsProcessing	createTextFile.sh	/^executableScriptsProcessing(){$/;"	f	language:Sh
-executableScriptsProcessing	runner.sh	/^executableScriptsProcessing(){$/;"	f	language:Sh
-executeFileFirstArgIsCommand	runner.sh	/^executeFileFirstArgIsCommand(){$/;"	f	language:Sh
-executeTheFile	runner.sh	/^executeTheFile(){$/;"	f	language:Sh
+executableScriptsProcessing	runner.sh	/^executableScriptsProcessing(){$/;"	f
+executeFileFirstArgIsCommand	runner.sh	/^executeFileFirstArgIsCommand(){$/;"	f
+executeTheFile	runner.sh	/^executeTheFile(){$/;"	f
 file	openAll.sh	/^	file="$(echo $file | tr '[:upper:]' '[:lower:]')"$/;"	v	language:Sh
 file	secureDelete.sh	/^    file="$i"$/;"	v	language:Sh
 fileName	templater.sh	/^fileName="$1"$/;"	v	language:Sh
 fileName	watchServiceFSWatchRustCompile.sh	/^	fileName=`basename $event`$/;"	v	language:Sh
 fileString	openAll.sh	/^fileString=""$/;"	v	language:Sh
-fileToBeExecuted	runner.sh	/^fileToBeExecuted="$1"$/;"	v	language:Sh
+fileToBeExecuted	runner.sh	/^fileToBeExecuted="$1"$/;"	v
 files	backupBashConfig.sh	/^files=("$HOME_DIR\/.bashrc" "$HOME_DIR\/.bash_profile" "$HOME_DIR\/.profile" '\/etc\/bashrc' '\/etc\/profile')$/;"	v
 filesArray	openAll.sh	/^filesArray=()$/;"	v	language:Sh
 findTotal	oldCounter.sh	/^findTotal (){$/;"	f	language:Sh
@@ -155,6 +156,7 @@ optstring	gitgo.sh	/^optstring=p:hcl$/;"	v
 optstring	myWatchNoBlink.sh	/^optstring=bh$/;"	v	language:Sh
 optstring	myWatchNoBlinkColorized.sh	/^optstring=bh$/;"	v	language:Sh
 optstring	mywatch.sh	/^optstring=dh$/;"	v	language:Sh
+os	test.py	/^import os$/;"	i
 outdated	updater.sh	/^outdated=$(pip3 list --outdated | awk '{print $1}')$/;"	v	language:Sh
 output	watchServiceFSWatchRustCompile.sh	/^		output="$(rustc $2 2>&1)"$/;"	v	language:Sh
 pass_count	secureDelete.sh	/^    pass_count=1$/;"	v	language:Sh
@@ -164,6 +166,8 @@ pipe	readFIFO.sh	/^pipe=\/Users\/jacobmenke\/Desktop\/testpipe$/;"	v	language:Sh
 pipe	readFIFO.sh	/^pipe=\/tmp\/testpipe$/;"	v	language:Sh
 prettyPrint	gitgo.sh	/^prettyPrint(){$/;"	f
 prettyPrint	updater.sh	/^prettyPrint(){$/;"	f	language:Sh
+printD	banner.pl	/^sub printD{$/;"	s
+printDate	banner.pl	/^sub printDate{$/;"	s
 progress_pid	batchRename.sh	/^    progress_pid=$!$/;"	v
 progress_pid	openAll.sh	/^	progress_pid=$!$/;"	v	language:Sh
 progress_pid	picture_finder.sh	/^  progress_pid=$!$/;"	v	language:Sh
@@ -191,10 +195,12 @@ startCursor	secureDelete.sh	/^startCursor(){$/;"	f	language:Sh
 sum	listAllCommands.sh	/^sum=0$/;"	v	language:Sh
 sum	sortedArrayCounter.sh	/^sum=0$/;"	v	language:Sh
 summarizeSizes	directoryContentsSize.sh	/^summarizeSizes(){$/;"	f	language:Sh
+sys	test.py	/^import sys$/;"	i
 tail	shebangChanger.sh	/^		tail=$(cat "$file")$/;"	v	language:Sh
 tail	shebangChanger.sh	/^		tail=$(tail +$lineCounter "$file")$/;"	v	language:Sh
 temp	batchRename.sh	/^        local temp=${spinner#?}               # remove first character from $spinner$/;"	v
 temp	openAll.sh	/^	local temp=${spinner#?}               # remove first character from $spinner$/;"	v	language:Sh
+thiisne	test.sh	/^thiisne(){$/;"	f
 timeToSleep	myWatchNoBlink.sh	/^    timeToSleep=$2$/;"	v	language:Sh
 timeToSleep	myWatchNoBlink.sh	/^    timeToSleep=0.5$/;"	v	language:Sh
 timeToSleep	myWatchNoBlinkColorized.sh	/^    timeToSleep=$2$/;"	v	language:Sh
@@ -218,3 +224,4 @@ watchCommand	myWatchNoBlinkColorized.sh	/^watchCommand() {$/;"	f	language:Sh
 watchingFile	watchServiceFSWatchRustCompile.sh	/^	watchingFile=`basename $2`$/;"	v	language:Sh
 websiteDir	tutorialConfigUpdater.sh	/^websiteDir="$HOME\/WebstormProjects\/PersonalWebsite"$/;"	v
 x	mywatch.sh	/^    x=$(eval "$1")$/;"	v	language:Sh
+xx	test.sh	/^xx=55$/;"	v

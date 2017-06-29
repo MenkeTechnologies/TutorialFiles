@@ -17,7 +17,7 @@ CMD	myWatchNoBlink.sh	/^        CMD="$@"$/;"	v	language:Sh
 CMD	myWatchNoBlinkColorized.sh	/^        CMD="$@"$/;"	v	language:Sh
 COLS	myWatchNoBlink.sh	/^        COLS=$(tput cols)$/;"	v	language:Sh
 COLS	myWatchNoBlinkColorized.sh	/^        COLS=$(tput cols)$/;"	v	language:Sh
-CR	batchRename.sh	/^    local CR="\\r"$/;"	v	language:Sh
+CR	batchRename.sh	/^    local CR="\\r"$/;"	v
 CR	openAll.sh	/^local CR="\\r"$/;"	v	language:Sh
 DIR_WATCHING	watchServiceFSWatchGit.sh	/^DIR_WATCHING="$1"$/;"	v	language:Sh
 DIR_WATCHING	watchServiceFSWatchLS-ALH.sh	/^DIR_WATCHING="$1"$/;"	v	language:Sh
@@ -43,12 +43,12 @@ IFS	sortedArrayCounter.sh	/^IFS=:$/;"	v	language:Sh
 INTERFACE	tor.sh	/^INTERFACE=Wi-Fi$/;"	v	language:Sh
 IP	uploadWebPi.sh	/^IP=98.209.117.32$/;"	v	language:Sh
 OLDIFS	sortedArrayCounter.sh	/^OLDIFS="$IFS"$/;"	v	language:Sh
-ORGIN_NAME	gitgo.sh	/^    local ORGIN_NAME="$(git remote -v | awk '{print $1}' | tail -1 | tr -d ' ')"$/;"	v	language:Sh
-ORIGIN	gitgo.sh	/^    local ORIGIN="$(git remote -v | awk '{print $1}' | tail -1 | tr -d ' ')"$/;"	v	language:Sh
+ORGIN_NAME	gitgo.sh	/^    local ORGIN_NAME="$(git remote -v | awk '{print $1}' | tail -1 | tr -d ' ')"$/;"	v
+ORIGIN	gitgo.sh	/^    local ORIGIN="$(git remote -v | awk '{print $1}' | tail -1 | tr -d ' ')"$/;"	v
 PASSES	secureDelete.sh	/^PASSES=7         #  Number of file-shredding passes.$/;"	v	language:Sh
-PULL_URL	gitgo.sh	/^        local PULL_URL="$(git remote -v | awk '{print $2}' | tail -1 | tr -d ' ')"$/;"	v	language:Sh
-REPO_NAME	gitgo.sh	/^        local REPO_NAME="$(git remote -v | awk '{print $2}' | tail -1 | tr -d ' ')"$/;"	v	language:Sh
-REPO_NAME_TO_CREATE	gitgo.sh	/^        local REPO_NAME_TO_CREATE="$1"$/;"	v	language:Sh
+PULL_URL	gitgo.sh	/^        local PULL_URL="$(git remote -v | awk '{print $2}' | tail -1 | tr -d ' ')"$/;"	v
+REPO_NAME	gitgo.sh	/^        local REPO_NAME="$(git remote -v | awk '{print $2}' | tail -1 | tr -d ' ')"$/;"	v
+REPO_NAME_TO_CREATE	gitgo.sh	/^        local REPO_NAME_TO_CREATE="$1"$/;"	v
 RESET	blueText.sh	/^RESET='\\e[0m'$/;"	v	language:Sh
 RESET	blueUpperText.sh	/^RESET='\\e[0m'$/;"	v	language:Sh
 RESET	boldText.sh	/^RESET='\\e[0m'$/;"	v	language:Sh
@@ -61,7 +61,7 @@ SCRIPT_TO_RUN	watchServiceFSWatchPiDesktop.sh	/^SCRIPT_TO_RUN=$SCRIPTS\/upLoadPi
 SCRIPT_TO_RUN	watchServiceFSWatchPiWeb.sh	/^SCRIPT_TO_RUN=$SCRIPTS\/uploadWebPi.sh$/;"	v	language:Sh
 TIME	mywatch.sh	/^    TIME="$2"$/;"	v	language:Sh
 TIME	mywatch.sh	/^    TIME=1$/;"	v	language:Sh
-URL	gitgo.sh	/^    local URL="https:\/\/github.com\/$GITHUB_ACCOUNT\/$REPO_NAME_TO_CREATE"$/;"	v	language:Sh
+URL	gitgo.sh	/^    local URL="https:\/\/github.com\/$GITHUB_ACCOUNT\/$REPO_NAME_TO_CREATE"$/;"	v
 addContents	shebangChanger.sh	/^addContents(){$/;"	f	language:Sh
 arr	listAllCommands.sh	/^arr=()$/;"	v	language:Sh
 arr	picture_finder.sh	/^local arr=(  '|' '\\' '-' '\/' )$/;"	v	language:Sh
@@ -69,10 +69,10 @@ arr	secureDelete.sh	/^    local arr=(  '|' '\\' '-' '\/' )$/;"	v	language:Sh
 arr	sortedArrayCounter.sh	/^arr=()$/;"	v	language:Sh
 arrayOfPI	updater.sh	/^arrayOfPI=(r r2)$/;"	v	language:Sh
 boldAndUnderlinedPrint	tutorialConfigUpdater.sh	/^boldAndUnderlinedPrint(){$/;"	f
-chars	batchRename.sh	/^    local chars=1 # number of characters to display$/;"	v	language:Sh
+chars	batchRename.sh	/^    local chars=1 # number of characters to display$/;"	v
 chars	openAll.sh	/^local chars=1 # number of characters to display$/;"	v	language:Sh
-checkForExistence	batchRename.sh	/^checkForExistence(){$/;"	f	language:Sh
-clearline	batchRename.sh	/^    local clearline="\\e[K" # clear to end of line (ANSI terminal)$/;"	v	language:Sh
+checkForExistence	batchRename.sh	/^checkForExistence(){$/;"	f
+clearline	batchRename.sh	/^    local clearline="\\e[K" # clear to end of line (ANSI terminal)$/;"	v
 clearline	openAll.sh	/^local clearline="\\e[K" # clear to end of line (ANSI terminal)$/;"	v	language:Sh
 cols	animation	/^cols=`tput cols`$/;"	v
 cols	picture_finder.sh	/^cols=`tput cols`$/;"	v	language:Sh
@@ -81,30 +81,30 @@ commandList	oldCounter.sh	/^		commandList="$i\\n$commandList"$/;"	v	language:Sh
 commandList	oldCounter.sh	/^commandList=""$/;"	v	language:Sh
 commands	oldCounter.sh	/^		commands="$f $commands"$/;"	v	language:Sh
 commands	oldCounter.sh	/^commands=""$/;"	v	language:Sh
-commitMessage	gitgo.sh	/^    local commitMessage="$1"$/;"	v	language:Sh
-commitTheDirectory	gitgo.sh	/^commitTheDirectory(){$/;"	f	language:Sh
+commitMessage	gitgo.sh	/^    local commitMessage="$1"$/;"	v
+commitTheDirectory	gitgo.sh	/^commitTheDirectory(){$/;"	f
 compiled	watchServiceFSWatchRustCompile.sh	/^			compiled=${fileName%*.rs}$/;"	v	language:Sh
 concat	myWatchNoBlinkColorized.sh	/^	    	concat="$(java parser $LINE)"$/;"	v	language:Sh
 contents	duplicateLineDeleter.sh	/^	contents=$(cat -s "$file")$/;"	v	language:Sh
-convertFiles	batchRename.sh	/^convertFiles(){$/;"	f	language:Sh
+convertFiles	batchRename.sh	/^convertFiles(){$/;"	f
 count	animation	/^count=$topline$/;"	v
-createTheFile	createScriptButDontOpenSublime.sh	/^createTheFile(){$/;"	f	language:Sh
+createTheFile	createScriptButDontOpenSublime.sh	/^createTheFile(){$/;"	f
 createTheFile	createTextFile.sh	/^createTheFile(){$/;"	f	language:Sh
-delay	batchRename.sh	/^    local delay=.1 # time in seconds between characters$/;"	v	language:Sh
+delay	batchRename.sh	/^    local delay=.1 # time in seconds between characters$/;"	v
 delay	openAll.sh	/^local delay=.1 # time in seconds between characters$/;"	v	language:Sh
-delim	batchRename.sh	/^delim=_$/;"	v	language:Sh
+delim	batchRename.sh	/^delim=_$/;"	v
 destinationFile	picture_finder.sh	/^	destinationFile=$destinationDirectory\/${picture##*\/}$/;"	v	language:Sh
 dir	oldCounter.sh	/^	dir=`echo $PATH | cut -d: -f$i`$/;"	v	language:Sh
 dirNum	oldCounter.sh	/^dirNum=`expr $(echo $PATH | tr -cd : | wc -c) + 1`$/;"	v	language:Sh
 disable_proxy	tor.sh	/^function disable_proxy() {$/;"	f	language:Sh
-displayProgress	batchRename.sh	/^displayProgress(){$/;"	f	language:Sh
+displayProgress	batchRename.sh	/^displayProgress(){$/;"	f
 displayProgress	picture_finder.sh	/^displayProgress(){$/;"	f	language:Sh
 displayProgress	secureDelete.sh	/^displayProgress(){$/;"	f	language:Sh
 displayProgressIndicator	openAll.sh	/^displayProgressIndicator(){$/;"	f	language:Sh
 dontSummarizeSizes	directoryContentsSize.sh	/^dontSummarizeSizes(){$/;"	f	language:Sh
 ending	picture_finder.sh	/^	ending=${destinationFile##*.}$/;"	v	language:Sh
 executableProgram	shebangChanger.sh	/^executableProgram=$1$/;"	v	language:Sh
-executableScriptsProcessing	createScriptButDontOpenSublime.sh	/^executableScriptsProcessing(){$/;"	f	language:Sh
+executableScriptsProcessing	createScriptButDontOpenSublime.sh	/^executableScriptsProcessing(){$/;"	f
 executableScriptsProcessing	createTextFile.sh	/^executableScriptsProcessing(){$/;"	f	language:Sh
 executableScriptsProcessing	runner.sh	/^executableScriptsProcessing(){$/;"	f	language:Sh
 executeFileFirstArgIsCommand	runner.sh	/^executeFileFirstArgIsCommand(){$/;"	f	language:Sh
@@ -118,7 +118,7 @@ fileToBeExecuted	runner.sh	/^fileToBeExecuted="$1"$/;"	v	language:Sh
 files	backupBashConfig.sh	/^files=("$HOME_DIR\/.bashrc" "$HOME_DIR\/.bash_profile" "$HOME_DIR\/.profile" '\/etc\/bashrc' '\/etc\/profile')$/;"	v
 filesArray	openAll.sh	/^filesArray=()$/;"	v	language:Sh
 findTotal	oldCounter.sh	/^findTotal (){$/;"	f	language:Sh
-first	batchRename.sh	/^        local first=`echo ${file%%$delim*}`$/;"	v	language:Sh
+first	batchRename.sh	/^        local first=`echo ${file%%$delim*}`$/;"	v
 firstFile	sync.sh	/^	firstFile="${firstFile}\/"$/;"	v	language:Sh
 firstFile	sync.sh	/^firstFile="$1"$/;"	v	language:Sh
 flength	secureDelete.sh	/^    flength=$(ls -l "$file" | awk '{print $5}')  # Field 5 is file length.$/;"	v	language:Sh
@@ -126,32 +126,32 @@ fortuneQuote	eyes.sh	/^	fortuneQuote="$(figlet -f $1 \\"$fortuneQuote\\")"$/;"	v
 fortuneQuote	eyes.sh	/^	fortuneQuote="$(fortune)"$/;"	v	language:Sh
 found	shebangChanger.sh	/^			found=true$/;"	v	language:Sh
 found	shebangChanger.sh	/^	found=false$/;"	v	language:Sh
-getInitialCommit	gitgo.sh	/^getInitialCommit(){$/;"	f	language:Sh
-getRemoteDetails	gitgo.sh	/^getRemoteDetails(){$/;"	f	language:Sh
-gitPull	gitgo.sh	/^gitPull(){$/;"	f	language:Sh
-gitPush	gitgo.sh	/^gitPush(){$/;"	f	language:Sh
+getInitialCommit	gitgo.sh	/^getInitialCommit(){$/;"	f
+getRemoteDetails	gitgo.sh	/^getRemoteDetails(){$/;"	f
+gitPull	gitgo.sh	/^gitPull(){$/;"	f
+gitPush	gitgo.sh	/^gitPush(){$/;"	f
 host	rsyncr.sh	/^host="r"$/;"	v	language:Sh
-initializeGitDirectory	gitgo.sh	/^initializeGitDirectory(){$/;"	f	language:Sh
-killCursor	batchRename.sh	/^killCursor(){$/;"	f	language:Sh
+initializeGitDirectory	gitgo.sh	/^initializeGitDirectory(){$/;"	f
+killCursor	batchRename.sh	/^killCursor(){$/;"	f
 killCursor	openAll.sh	/^killCursor(){$/;"	f	language:Sh
 killCursor	picture_finder.sh	/^killCursor(){$/;"	f	language:Sh
 killCursor	secureDelete.sh	/^killCursor(){$/;"	f	language:Sh
-last	batchRename.sh	/^        local last=`echo ${file##*_}`$/;"	v	language:Sh
+last	batchRename.sh	/^        local last=`echo ${file##*_}`$/;"	v
 lcline	openAll.sh	/^	lcline="$(echo $line | tr '[:upper:]' '[:lower:]')"$/;"	v	language:Sh
 lineCounter	shebangChanger.sh	/^	lineCounter=1$/;"	v	language:Sh
 local	rsyncr.sh	/^local="$1"$/;"	v	language:Sh
 messageToSpeak	say.sh	/^messageToSpeak=""$/;"	v	language:Sh
-newfile	batchRename.sh	/^        local newfile=$first$number.$endFileEnding$/;"	v	language:Sh
-newfile	createScriptButDontOpenSublime.sh	/^	newfile="$newfile".txt$/;"	v	language:Sh
-newfile	createScriptButDontOpenSublime.sh	/^newfile="$1"$/;"	v	language:Sh
+newfile	batchRename.sh	/^        local newfile=$first$number.$endFileEnding$/;"	v
+newfile	createScriptButDontOpenSublime.sh	/^	newfile="$newfile".txt$/;"	v
+newfile	createScriptButDontOpenSublime.sh	/^newfile="$1"$/;"	v
 newfile	createTextFile.sh	/^    newfile="$newfile".txt$/;"	v	language:Sh
 newfile	createTextFile.sh	/^newfile="$1"$/;"	v	language:Sh
-number	batchRename.sh	/^        local number=$((10#$number))$/;"	v	language:Sh
-number	batchRename.sh	/^        local number=`echo ${last%%.*}`$/;"	v	language:Sh
-openTextEditor	createScriptButDontOpenSublime.sh	/^openTextEditor(){$/;"	f	language:Sh
+number	batchRename.sh	/^        local number=$((10#$number))$/;"	v
+number	batchRename.sh	/^        local number=`echo ${last%%.*}`$/;"	v
+openTextEditor	createScriptButDontOpenSublime.sh	/^openTextEditor(){$/;"	f
 openTextEditor	createTextFile.sh	/^openTextEditor(){$/;"	f	language:Sh
 optstring	directoryContentsSize.sh	/^optstring=shta$/;"	v	language:Sh
-optstring	gitgo.sh	/^optstring=p:hcl$/;"	v	language:Sh
+optstring	gitgo.sh	/^optstring=p:hcl$/;"	v
 optstring	myWatchNoBlink.sh	/^optstring=bh$/;"	v	language:Sh
 optstring	myWatchNoBlinkColorized.sh	/^optstring=bh$/;"	v	language:Sh
 optstring	mywatch.sh	/^optstring=dh$/;"	v	language:Sh
@@ -162,13 +162,13 @@ path	shebangChanger.sh	/^path="#!\/usr\/bin\/env $executableProgram"$/;"	v	langu
 perlOutdated	updater.sh	/^perlOutdated=$(cpan-outdated -p)$/;"	v	language:Sh
 pipe	readFIFO.sh	/^pipe=\/Users\/jacobmenke\/Desktop\/testpipe$/;"	v	language:Sh
 pipe	readFIFO.sh	/^pipe=\/tmp\/testpipe$/;"	v	language:Sh
-prettyPrint	gitgo.sh	/^prettyPrint(){$/;"	f	language:Sh
+prettyPrint	gitgo.sh	/^prettyPrint(){$/;"	f
 prettyPrint	updater.sh	/^prettyPrint(){$/;"	f	language:Sh
-progress_pid	batchRename.sh	/^    progress_pid=$!$/;"	v	language:Sh
+progress_pid	batchRename.sh	/^    progress_pid=$!$/;"	v
 progress_pid	openAll.sh	/^	progress_pid=$!$/;"	v	language:Sh
 progress_pid	picture_finder.sh	/^  progress_pid=$!$/;"	v	language:Sh
 progress_pid	secureDelete.sh	/^    progress_pid=$!$/;"	v	language:Sh
-prompt	batchRename.sh	/^    local prompt="press any key..." # user prompt$/;"	v	language:Sh
+prompt	batchRename.sh	/^    local prompt="press any key..." # user prompt$/;"	v
 prompt	openAll.sh	/^local prompt="press any key..." # user prompt$/;"	v	language:Sh
 randIndex	eyes.sh	/^	randIndex=$(jot -r 1 0 $rangePossibleIndices )$/;"	v	language:Sh
 rangePossibleIndices	eyes.sh	/^rangePossibleIndices=${#ary[*]}$/;"	v	language:Sh
@@ -180,11 +180,11 @@ rows	animation	/^rows=`tput lines`$/;"	v
 showHidden	directoryContentsSize.sh	/^showHidden(){$/;"	f	language:Sh
 sorted	sortedArrayCounter.sh	/^sorted=( $(sort -f <<<"${arr[*]}") )$/;"	v	language:Sh
 sorted	sortedArrayCounter.sh	/^sorted=($(uniq <<< "${sorted[*]}"))$/;"	v	language:Sh
-spinner	batchRename.sh	/^        spinner="$temp${spinner%"$temp"}" # and add it to the end$/;"	v	language:Sh
-spinner	batchRename.sh	/^    local spinner="\\|\/-" # spinner$/;"	v	language:Sh
+spinner	batchRename.sh	/^        spinner="$temp${spinner%"$temp"}" # and add it to the end$/;"	v
+spinner	batchRename.sh	/^    local spinner="\\|\/-" # spinner$/;"	v
 spinner	openAll.sh	/^	spinner=$temp${spinner%"$temp"} # and add it to the end$/;"	v	language:Sh
 spinner	openAll.sh	/^local spinner="\\|\/-" # spinner$/;"	v	language:Sh
-startCursor	batchRename.sh	/^startCursor(){$/;"	f	language:Sh
+startCursor	batchRename.sh	/^startCursor(){$/;"	f
 startCursor	openAll.sh	/^startCursor(){$/;"	f	language:Sh
 startCursor	picture_finder.sh	/^startCursor(){$/;"	f	language:Sh
 startCursor	secureDelete.sh	/^startCursor(){$/;"	f	language:Sh
@@ -193,7 +193,7 @@ sum	sortedArrayCounter.sh	/^sum=0$/;"	v	language:Sh
 summarizeSizes	directoryContentsSize.sh	/^summarizeSizes(){$/;"	f	language:Sh
 tail	shebangChanger.sh	/^		tail=$(cat "$file")$/;"	v	language:Sh
 tail	shebangChanger.sh	/^		tail=$(tail +$lineCounter "$file")$/;"	v	language:Sh
-temp	batchRename.sh	/^        local temp=${spinner#?}               # remove first character from $spinner$/;"	v	language:Sh
+temp	batchRename.sh	/^        local temp=${spinner#?}               # remove first character from $spinner$/;"	v
 temp	openAll.sh	/^	local temp=${spinner#?}               # remove first character from $spinner$/;"	v	language:Sh
 timeToSleep	myWatchNoBlink.sh	/^    timeToSleep=$2$/;"	v	language:Sh
 timeToSleep	myWatchNoBlink.sh	/^    timeToSleep=0.5$/;"	v	language:Sh
@@ -207,7 +207,7 @@ tutorialDir	tutorialConfigUpdater.sh	/^tutorialDir="$HOME\/Documents\/tutorialsR
 updatePI	updater.sh	/^updatePI(){$/;"	f	language:Sh
 usage	directoryContentsSize.sh	/^usage(){$/;"	f	language:Sh
 usage	duplicateLineDeleter.sh	/^usage(){$/;"	f	language:Sh
-usage	gitgo.sh	/^usage(){$/;"	f	language:Sh
+usage	gitgo.sh	/^usage(){$/;"	f
 usage	myWatchNoBlink.sh	/^usage(){$/;"	f	language:Sh
 usage	myWatchNoBlinkColorized.sh	/^usage(){$/;"	f	language:Sh
 usage	mywatch.sh	/^usage(){$/;"	f	language:Sh

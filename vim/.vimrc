@@ -175,6 +175,9 @@ let g:NERDTreeDisableFileExtensionHighlight = 1
 let g:NERDTreeDisableExactMatchHighlight = 1
 let g:NERDTreeDisablePatternMatchHighlight = 1
 
+"too slow with icons
+let g:webdevicons_enable_nerdtree=0
+
 
 call vundle#end()            " required
 ""}}}***********************************************************
@@ -252,7 +255,7 @@ nnoremap <silent> <C-I> :SaveSession<CR>
 vnoremap <silent> <C-I> :<C-C>:SaveSession<CR>
 inoremap <silent> <C-I> <C-[>:SaveSession<CR>a
 
-nnoremap <silent> <leader>q :q!<CR>
+nnoremap <silent> <leader>q :qa!<CR>
 nnoremap <silent> <leader>w :w!<CR>
 nnoremap <silent> <leader>s :vs<CR>
 nnoremap <silent> <leader>t :tabnew<CR>
@@ -345,6 +348,7 @@ map <F2> :UndotreeToggle<CR>
 map <F3> :TlistAddFiles *<CR>:TlistToggle<CR>
 map <F4> :MinimapToggle<CR>
 map <F5> :TTags<CR>
+map <F7> :LOTRToggle<CR>
 map <F6> :SyntasticToggleMode<CR>
 
 map <silent> <leader><leader>w <Plug>(easymotion-bd-w)

@@ -199,7 +199,6 @@ nnoremap <silent> <C-G> :w<CR>:Dispatch<CR>
 "vnoremap <silent> <C-G> :<C-C>:w<CR>:Dispatch<CR>
 inoremap <silent> <C-G> <C-[>:w<CR>:Dispatch<CR>a
 
-
 vnoremap < <gv
 vnoremap > >gv
 
@@ -218,12 +217,18 @@ function TmuxRepeat()
     exe "normal! zz"
 endfunction
 
+function TmuxRepeatGeneric()
+        silent! exec "!tmux send-keys -t right C-c 'clear' C-m up up C-m"
+        redraw!
+    exe "normal! zz"
+endfunction
+
 nnoremap <silent> <C-v> :w<CR>:call TmuxRepeat()<CR>
 inoremap <silent> <C-v> <C-[>:w<CR>:call TmuxRepeat()<CR>a
 
-nnoremap <silent> <C-v> :w<CR>:call TmuxRepeat()<CR>
+nnoremap <silent> <ESC>v :w<CR>:call TmuxRepeatGeneric()<CR>
 "vnoremap <silent> <C-V> :<C-C>:w<CR>:call TmuxRepeat()<CR>
-inoremap <silent> <C-v> <C-[>:w<CR>:call TmuxRepeat()<CR>a
+inoremap <silent> <ESC>v <C-[>:w<CR>:call TmuxRepeatGeneric()<CR>a
 
 nnoremap <silent> <Esc>t mbgg=G`b
 inoremap <silent> <Esc>t <ESC>mbgg=G`ba
@@ -251,7 +256,6 @@ nnoremap <silent> <leader>q :q!<CR>
 nnoremap <silent> <leader>w :w!<CR>
 nnoremap <silent> <leader>s :vs<CR>
 nnoremap <silent> <leader>t :tabnew<CR>
-
 
 onoremap <silent> i# ?#<CR>jV/#<CR>kc 
 
@@ -342,7 +346,6 @@ map <F4> :SyntasticToggleMode<CR>
 map <F5> :TTags<CR>
 map <F6> :TlistAddFiles *<CR>:TlistToggle<CR>
 map <F7> :MinimapToggle<CR>
-
 
 map <silent> <leader><leader>w <Plug>(easymotion-bd-w)
 map <silent> <leader><leader>e <Plug>(easymotion-bd-e)

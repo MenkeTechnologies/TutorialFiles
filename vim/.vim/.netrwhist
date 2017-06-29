@@ -1,11 +1,3 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =9
-let g:netrw_dirhist_1='/Users/jacobmenke/Desktop/tuts/piweb'
-let g:netrw_dirhist_2='/Users/jacobmenke/Desktop/tuts'
-let g:netrw_dirhist_3='/Users/jacobmenke/Desktop'
-let g:netrw_dirhist_4='/Users/jacobmenke'
-let g:netrw_dirhist_5='/Users/jacobmenke/Desktop'
-let g:netrw_dirhist_6='/Users/jacobmenke'
-let g:netrw_dirhist_7='/Users/jacobmenke/Desktop'
-let g:netrw_dirhist_8='/Users/jacobmenke'
-let g:netrw_dirhist_9='/Users/jacobmenke/Desktop'
+let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_1='/Users/jacobmenke/Desktop'

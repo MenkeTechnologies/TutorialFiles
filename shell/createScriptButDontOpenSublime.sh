@@ -4,8 +4,7 @@
 executableScriptsProcessing(){
 	# then make it executable
 	chmod 700 "$newfile"
-	#add header
-	echo "#created by JAKOBMENKE --> `date` " >> "$newfile"
+	#add hr	echo "#created by JAKOBMENKE --> `date` " >> "$newfile"
 	#and open file
 
 	openTextEditor

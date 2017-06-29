@@ -184,7 +184,7 @@ function _updater {
 }
 
 function _gitfunc {
-    q "$BUFFER"
+    gitCommitAndPush "$BUFFER"
     BUFFER=""
     zle .accept-line
 }

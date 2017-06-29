@@ -164,6 +164,9 @@ let g:slime_default_config = {"socket_name": split($TMUX, ",")[0], "target_pane"
 
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
 "let g:UltiSnipsExpandTrigger="<c-j>"
+"
+let g:ycm_collect_identifiers_from_tags_files=1
+let g:ycm_collect_identifiers_from_comments_and_strings = 1
 
 
 call vundle#end()            " required
@@ -327,6 +330,8 @@ nnoremap <F3> :%s///g<Left><Left><Left>
 map <F1> :NERDTreeToggle<CR>
 map <F2> :UndotreeToggle<CR>
 map <F4> :SyntasticToggleMode<CR>
+map <F5> :TlistAddFiles *<CR> :TlistToggle<CR>
+
 
 map <silent> <leader><leader>w <Plug>(easymotion-bd-w)
 map <silent> <leader><leader>e <Plug>(easymotion-bd-e)
@@ -400,5 +405,9 @@ iabbrev retrun return
 iabbrev retunr return
 iabbrev delte delete
 iabbrev deltee delete
+
+set dictionary+=/usr/share/dict/words
+set thesaurus+=/Users/jacobmenke/mthesaur.txt
+
 
 

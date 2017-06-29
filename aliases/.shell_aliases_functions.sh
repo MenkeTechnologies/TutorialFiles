@@ -225,7 +225,7 @@ humanReadable(){
         clearList
 
     }
-    q(){
+    gitCommitAndPush(){
         printf "\e[1m"
         /usr/local/bin/git add .
         /usr/local/bin/git commit -m "$1"

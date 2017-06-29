@@ -79,7 +79,7 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'TerryMa/vim-multiple-cursors'
 Plugin 'luochen1990/rainbow'
 
-"Plugin 'craigemery/vim-autotag'
+Plugin 'craigemery/vim-autotag'
 let g:rainbow_active = 1 "0 if you want to enable it later via :RainbowToggle
 
 let g:rainbow_conf = {
@@ -184,7 +184,7 @@ filetype plugin on
 
 "{{{                    MARK:Mappings
 "**************************************************************
-imap jj <Esc>
+imap jk <Esc>
 
 "faster movements, used in any modes
 noremap <c-j> 4j
@@ -203,7 +203,6 @@ inoremap <silent> <C-G> <C-[>:w<CR>:Dispatch<CR>a
 vnoremap < <gv
 vnoremap > >gv
 
-
 " Repeat last command in the next tmux pane.
 function TmuxRepeat()
     let supportedTypes=['sh','py','rb','pl','vim']
@@ -218,6 +217,9 @@ function TmuxRepeat()
     endif
     exe "normal! zz"
 endfunction
+
+nnoremap <silent> <C-v> :w<CR>:call TmuxRepeat()<CR>
+inoremap <silent> <C-v> <C-[>:w<CR>:call TmuxRepeat()<CR>a
 
 nnoremap <silent> <C-v> :w<CR>:call TmuxRepeat()<CR>
 "vnoremap <silent> <C-V> :<C-C>:w<CR>:call TmuxRepeat()<CR>
@@ -417,6 +419,4 @@ iabbrev deltee delete
 
 set dictionary+=/usr/share/dict/words
 set thesaurus+=/Users/jacobmenke/mthesaur.txt
-
-
 

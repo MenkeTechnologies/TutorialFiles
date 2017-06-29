@@ -5,7 +5,7 @@ tput civis
 
 trap 'tput cnorm; exit' INT
 while [[ true ]]; do
-clear
-screenfetch 2>/dev/null
-sleep 1000
+    clear
+    screenfetch 2>/dev/null
+    sleep 1000
 done

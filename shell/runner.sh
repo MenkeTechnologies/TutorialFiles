@@ -51,7 +51,7 @@ case "$fileToBeExecuted" in
         echo "Don't know what the run with. File ending is not recognized!" >&2
         exit 1
         ;;
-    *) 
+    *)
         echo "Don't know what the run with! No File ending." >&2
         exit 1
         ;;

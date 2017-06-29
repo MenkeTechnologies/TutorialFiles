@@ -192,6 +192,7 @@ startCursor	batchRename.sh	/^startCursor(){$/;"	f
 startCursor	openAll.sh	/^startCursor(){$/;"	f	language:Sh
 startCursor	picture_finder.sh	/^startCursor(){$/;"	f	language:Sh
 startCursor	secureDelete.sh	/^startCursor(){$/;"	f	language:Sh
+suckers	test.py	/^def suckers():$/;"	f
 sum	listAllCommands.sh	/^sum=0$/;"	v	language:Sh
 sum	sortedArrayCounter.sh	/^sum=0$/;"	v	language:Sh
 summarizeSizes	directoryContentsSize.sh	/^summarizeSizes(){$/;"	f	language:Sh
@@ -224,4 +225,5 @@ watchCommand	myWatchNoBlinkColorized.sh	/^watchCommand() {$/;"	f	language:Sh
 watchingFile	watchServiceFSWatchRustCompile.sh	/^	watchingFile=`basename $2`$/;"	v	language:Sh
 websiteDir	tutorialConfigUpdater.sh	/^websiteDir="$HOME\/WebstormProjects\/PersonalWebsite"$/;"	v
 x	mywatch.sh	/^    x=$(eval "$1")$/;"	v	language:Sh
+x	test.py	/^x=5$/;"	v
 xx	test.sh	/^xx=55$/;"	v

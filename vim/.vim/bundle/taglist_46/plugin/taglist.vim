@@ -1,9 +1,11 @@
 " File: taglist.vim
+" File: taglist.vim
 " Author: Yegappan Lakshmanan (yegappan AT yahoo DOT com)
 " Version: 4.6
 " Last Modified: Feb 26, 2013
 " Copyright: Copyright (C) 2002-2013 Yegappan Lakshmanan
 "            Permission is hereby granted to use and distribute this code,
+"
 "            with or without modifications, provided that this copyright
 "            notice is copied with it. Like anything else that's free,
 "            taglist.vim is provided *as is* and comes with no warranty of any
@@ -476,7 +478,7 @@ let s:tlist_def_php_settings =
             \ 'php;c:class;i:interface;d:constant;v:variable;f:function'
 
 " python language
-let s:tlist_def_python_settings = 'python;c:class;m:member;f:function'
+let s:tlist_def_python_settings = 'python;c:class;m:member;f:function;v:variable'
 
 " cython language
 let tlist_pyrex_settings='python;c:classe;m:memder;f:function'

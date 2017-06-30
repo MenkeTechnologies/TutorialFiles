@@ -214,15 +214,15 @@ function TmuxRepeat()
         redraw!
     else
         silent! exec "!tmux send-keys -t right C-c up C-m"
-        redraw!
         echom "Unknown Filetype '".exeFileType. "'. Falling Back to Prev Command!"
+        redraw!
     endif
     exe "normal! zz"
 endfunction
 
 function TmuxRepeatGeneric()
-        silent! exec "!tmux send-keys -t right C-c 'clear' C-m up C-m"
-        redraw!
+    silent! exec "!tmux send-keys -t right C-c 'clear' C-m up C-m"
+    redraw!
     exe "normal! zz"
 endfunction
 

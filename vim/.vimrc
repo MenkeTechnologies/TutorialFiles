@@ -380,8 +380,12 @@ set pastetoggle=<ESC>p
 "{{{                    MARK:autocmd
 "**************************************************************
 
+
+function AbbrevRemover()
+endfunction
+
 autocmd filetype text set tags+=/Users/jacobmenke/tags
-autocmd filetype * call AutoCorrect()
+autocmd filetype * call AutoCorrect() | call AbbrevRemover()
 "uncomment following if you want just want autocorrection in text and markdown files
 "autocmd filetype text call AutoCorrect()
 "autocmd filetype markdown call AutoCorrect()
@@ -429,7 +433,6 @@ iabbrev retrun return
 iabbrev retunr return
 iabbrev delte delete
 iabbrev deltee delete
-unabbreviate os
 set dictionary+=/usr/share/dict/words
 set thesaurus+=/Users/jacobmenke/mthesaur.txt
 

@@ -64,6 +64,7 @@ TIME	mywatch.sh	/^    TIME=1$/;"	v	language:Sh
 URL	gitgo.sh	/^    local URL="https:\/\/github.com\/$GITHUB_ACCOUNT\/$REPO_NAME_TO_CREATE"$/;"	v
 a	test.sh	/^a=1 b=$((2))$/;"	v
 addContents	shebangChanger.sh	/^addContents(){$/;"	f	language:Sh
+addHeader	templater.sh	/^addHeader(){$/;"	f
 arr	listAllCommands.sh	/^arr=()$/;"	v	language:Sh
 arr	picture_finder.sh	/^local arr=(  '|' '\\' '-' '\/' )$/;"	v	language:Sh
 arr	secureDelete.sh	/^    local arr=(  '|' '\\' '-' '\/' )$/;"	v	language:Sh
@@ -79,6 +80,7 @@ clearline	openAll.sh	/^local clearline="\\e[K" # clear to end of line (ANSI term
 cols	animation	/^cols=`tput cols`$/;"	v
 cols	picture_finder.sh	/^cols=`tput cols`$/;"	v	language:Sh
 command	runner.sh	/^        command="vim -i NONE -V1 -Nes -c 'so""$fileToBeExecuted""' -c'echo""|q!' 2>&1 | tail +4"$/;"	v
+command	templater.sh	/^        command="vim -i NONE -V1 -Nes -c 'so""$fileToBeExecuted""' -c'echo""|q!' 2>&1 | tail +4"$/;"	v
 commandList	oldCounter.sh	/^		commandList="$i\\n$commandList"$/;"	v	language:Sh
 commandList	oldCounter.sh	/^commandList=""$/;"	v	language:Sh
 commands	oldCounter.sh	/^		commands="$f $commands"$/;"	v	language:Sh
@@ -109,21 +111,23 @@ executableProgram	shebangChanger.sh	/^executableProgram=$1$/;"	v	language:Sh
 executableScriptsProcessing	createScriptButDontOpenSublime.sh	/^executableScriptsProcessing(){$/;"	f
 executableScriptsProcessing	createTextFile.sh	/^executableScriptsProcessing(){$/;"	f	language:Sh
 executableScriptsProcessing	runner.sh	/^executableScriptsProcessing(){$/;"	f
+executableScriptsProcessing	templater.sh	/^executableScriptsProcessing(){$/;"	f
 executeFileFirstArgIsCommand	runner.sh	/^executeFileFirstArgIsCommand(){$/;"	f
 executeTheFile	runner.sh	/^executeTheFile(){$/;"	f
+executeTheFile	templater.sh	/^executeTheFile(){$/;"	f
 file	openAll.sh	/^	file="$(echo $file | tr '[:upper:]' '[:lower:]')"$/;"	v	language:Sh
 file	secureDelete.sh	/^    file="$i"$/;"	v	language:Sh
-fileName	templater.sh	/^fileName="$1"$/;"	v
 fileName	watchServiceFSWatchRustCompile.sh	/^	fileName=`basename $event`$/;"	v	language:Sh
 fileString	openAll.sh	/^fileString=""$/;"	v	language:Sh
 fileToBeExecuted	runner.sh	/^fileToBeExecuted="$1"$/;"	v
+fileToBeExecuted	templater.sh	/^fileToBeExecuted="$1"$/;"	v
 files	backupBashConfig.sh	/^files=("$HOME_DIR\/.bashrc" "$HOME_DIR\/.bash_profile" "$HOME_DIR\/.profile" '\/etc\/bashrc' '\/etc\/profile')$/;"	v
 filesArray	openAll.sh	/^filesArray=()$/;"	v	language:Sh
 findTotal	oldCounter.sh	/^findTotal (){$/;"	f	language:Sh
 first	batchRename.sh	/^        local first=`echo ${file%%$delim*}`$/;"	v
 firstFile	sync.sh	/^	firstFile="${firstFile}\/"$/;"	v	language:Sh
 firstFile	sync.sh	/^firstFile="$1"$/;"	v	language:Sh
-firstString	templater.sh	/^firstString=$(cat<<EOM$/;"	v
+firstString	templater.sh	/^    firstString=$(cat<<EOM$/;"	v
 flength	secureDelete.sh	/^    flength=$(ls -l "$file" | awk '{print $5}')  # Field 5 is file length.$/;"	v	language:Sh
 fortuneQuote	eyes.sh	/^	fortuneQuote="$(figlet -f $1 \\"$fortuneQuote\\")"$/;"	v	language:Sh
 fortuneQuote	eyes.sh	/^	fortuneQuote="$(fortune)"$/;"	v	language:Sh

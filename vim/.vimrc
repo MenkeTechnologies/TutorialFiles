@@ -405,6 +405,8 @@ endfun
 autocmd FilterWritePre * call SetDiffColors()
 
 autocmd BufNewFile *.sh silent! exe "!templater.sh %:p" | :e 
+autocmd BufNewFile *.rb silent! exe "!templater.sh %:p" | :e 
+autocmd BufNewFile *.py silent! exe "!templater.sh %:p" | :e 
 autocmd BufNewFile * exe "normal! G" | startinsert!
 
 "}}}***********************************************************

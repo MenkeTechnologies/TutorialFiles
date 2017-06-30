@@ -40,7 +40,7 @@ IFS	listAllCommands.sh	/^IFS=:$/;"	v	language:Sh
 IFS	sortedArrayCounter.sh	/^                IFS="$OLDIFS"$/;"	v	language:Sh
 IFS	sortedArrayCounter.sh	/^IFS=$'\\n'$/;"	v	language:Sh
 IFS	sortedArrayCounter.sh	/^IFS=:$/;"	v	language:Sh
-INTERFACE	tor.sh	/^INTERFACE=Wi-Fi$/;"	v	language:Sh
+INTERFACE	tor.sh	/^INTERFACE=Wi-Fi$/;"	v
 IP	uploadWebPi.sh	/^IP=98.209.117.32$/;"	v	language:Sh
 OLDIFS	sortedArrayCounter.sh	/^OLDIFS="$IFS"$/;"	v	language:Sh
 ORGIN_NAME	gitgo.sh	/^    local ORGIN_NAME="$(git remote -v | awk '{print $1}' | tail -1 | tr -d ' ')"$/;"	v
@@ -96,7 +96,7 @@ delim	batchRename.sh	/^delim=_$/;"	v
 destinationFile	picture_finder.sh	/^	destinationFile=$destinationDirectory\/${picture##*\/}$/;"	v	language:Sh
 dir	oldCounter.sh	/^	dir=`echo $PATH | cut -d: -f$i`$/;"	v	language:Sh
 dirNum	oldCounter.sh	/^dirNum=`expr $(echo $PATH | tr -cd : | wc -c) + 1`$/;"	v	language:Sh
-disable_proxy	tor.sh	/^function disable_proxy() {$/;"	f	language:Sh
+disable_proxy	tor.sh	/^function disable_proxy() {$/;"	f
 displayProgress	batchRename.sh	/^displayProgress(){$/;"	f
 displayProgress	picture_finder.sh	/^displayProgress(){$/;"	f	language:Sh
 displayProgress	secureDelete.sh	/^displayProgress(){$/;"	f	language:Sh

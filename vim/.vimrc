@@ -207,7 +207,7 @@ vnoremap > >gv
 
 " Repeat last command in the next tmux pane.
 function TmuxRepeat()
-    let supportedTypes=['sh','py','rb','pl','vim']
+    let supportedTypes=['sh','py','rb','pl','vim', 'lisp']
     let exeFileType=expand('%:e')
     if index(supportedTypes, exeFileType) >= 0
         silent! exec "!tmux send-keys -t right C-c 'bash \"$SCRIPTS/runner.sh\"' ' \"' ".expand('%:p')." '\"' C-m"

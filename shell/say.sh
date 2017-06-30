@@ -6,6 +6,9 @@ if [[ "$#" == 0 ]]; then
     exit
 fi
 
+back
+
+
 messageToSpeak=""
 for i in "$*"; do
     messageToSpeak+="$i"

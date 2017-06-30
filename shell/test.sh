@@ -3,11 +3,12 @@
 
 echo "my pwd is `pwd`"
 
-echo "dogs are really fikking cool" 
 
-read name
 
-echo "yor name is $name"
+
+
+
+
 
 
 

@@ -324,6 +324,7 @@ endfunction
 
 let blacklist=['md']
 
+
 augroup indentGroup
     autocmd!
 
@@ -375,23 +376,14 @@ sunmap b
 sunmap e
 set pastetoggle=<C-F>
 "}}}***********************************************************
-
-function Scripter()
-    inoremap <silent> <C-T> <ESC>I#<ESC>ji
-    inoremap <silent> <C-B> <ESC>^x<ESC>ji
-endfunction
-
 "{{{                    MARK:autocmd
 "**************************************************************
 
+autocmd filetype text set tags+=/Users/jacobmenke/tags
 autocmd filetype text call AutoCorrect()
 autocmd filetype markdown call AutoCorrect()
 
 
-autocmd BufNewFile,BufRead *.py call Scripter()
-autocmd BufNewFile,BufRead *.sh call Scripter() | let b:dispatch = 'bash %'
-autocmd BufNewFile,BufRead *.pl call Scripter()
-autocmd BufNewFile,BufRead *.rb call Scripter()
 autocmd BufReadPre,FileReadPre *.[chy] set cindent
 autocmd BufRead * setlocal foldmethod=marker
 autocmd BufRead * normal zM

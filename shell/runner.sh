@@ -44,6 +44,8 @@ case "$fileToBeExecuted" in
         ;;
     *.py ) executeTheFile python3 "$fileToBeExecuted"
         ;;
+    *.lisp ) executeTheFile clisp "$fileToBeExecuted"
+        ;;
     *.java ) executeTheFile java"$fileToBeExecuted"
 
         ;;

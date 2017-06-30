@@ -221,7 +221,7 @@ function TmuxRepeat()
 endfunction
 
 function TmuxRepeatGeneric()
-    silent! exec "!tmux send-keys -t right C-c 'clear' C-m up C-m"
+    silent! exec "!tmux send-keys -t right C-c 'clear' C-m up up C-m"
     redraw!
     exe "normal! zz"
 endfunction
@@ -229,9 +229,9 @@ endfunction
 nnoremap <silent> <C-v> :w<CR>:call TmuxRepeat()<CR>
 inoremap <silent> <C-v> <C-[>:w<CR>:call TmuxRepeat()<CR>a
 
-nnoremap <silent> <ESC>v :w<CR>:call TmuxRepeatGeneric()<CR>
+nnoremap <silent> <C-F> :w<CR>:call TmuxRepeatGeneric()<CR>
 "vnoremap <silent> <C-V> :<C-C>:w<CR>:call TmuxRepeat()<CR>
-inoremap <silent> <ESC>v <C-[>:w<CR>:call TmuxRepeatGeneric()<CR>a
+inoremap <silent> <C-F> <C-[>:w<CR>:call TmuxRepeatGeneric()<CR>a
 
 nnoremap <silent> <Esc>t mbgg=G`b
 inoremap <silent> <Esc>t <ESC>mbgg=G`ba
@@ -341,6 +341,7 @@ nnoremap <silent> <leader>' :call Quoter()<CR>lmaea'<ESC>bi'<ESC>:call Reset()<C
 inoremap <silent> <C-U> <Esc>:silent !open -t %:p:h<CR>:redraw!<CR>a
 nnoremap <silent> <C-U> :silent !open -t %:p:h<CR>:redraw!<CR>
 
+
 nnoremap <silent> <leader>n :n<CR>
 inoremap <F8> <ESC>:%s///g<Left><Left><Left>
 nnoremap <F8> :%s///g<Left><Left><Left>
@@ -374,14 +375,17 @@ map <silent> e <Plug>CamelCaseMotion_e
 sunmap w
 sunmap b
 sunmap e
-set pastetoggle=<C-F>
+set pastetoggle=<ESC>p
 "}}}***********************************************************
 "{{{                    MARK:autocmd
 "**************************************************************
 
 autocmd filetype text set tags+=/Users/jacobmenke/tags
-autocmd filetype text call AutoCorrect()
-autocmd filetype markdown call AutoCorrect()
+autocmd filetype * call AutoCorrect()
+"uncomment following if you want just want autocorrection in text and markdown files
+"autocmd filetype text call AutoCorrect()
+"autocmd filetype markdown call AutoCorrect()
+
 
 
 autocmd BufReadPre,FileReadPre *.[chy] set cindent
@@ -426,4 +430,9 @@ iabbrev deltee delete
 
 set dictionary+=/usr/share/dict/words
 set thesaurus+=/Users/jacobmenke/mthesaur.txt
+
+"easier mapping for dict completion
+inoremap <silent> <C-T> <C-X><C-K>
+"easier mapping for thesaurus completion
+inoremap <silent> <ESC>t <C-X><C-T>
 

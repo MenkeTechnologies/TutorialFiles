@@ -62,6 +62,7 @@ SCRIPT_TO_RUN	watchServiceFSWatchPiWeb.sh	/^SCRIPT_TO_RUN=$SCRIPTS\/uploadWebPi.
 TIME	mywatch.sh	/^    TIME="$2"$/;"	v	language:Sh
 TIME	mywatch.sh	/^    TIME=1$/;"	v	language:Sh
 URL	gitgo.sh	/^    local URL="https:\/\/github.com\/$GITHUB_ACCOUNT\/$REPO_NAME_TO_CREATE"$/;"	v
+a	test.sh	/^a=1 b=$((2))$/;"	v
 addContents	shebangChanger.sh	/^addContents(){$/;"	f	language:Sh
 arr	listAllCommands.sh	/^arr=()$/;"	v	language:Sh
 arr	picture_finder.sh	/^local arr=(  '|' '\\' '-' '\/' )$/;"	v	language:Sh
@@ -69,6 +70,7 @@ arr	secureDelete.sh	/^    local arr=(  '|' '\\' '-' '\/' )$/;"	v	language:Sh
 arr	sortedArrayCounter.sh	/^arr=()$/;"	v	language:Sh
 arrayOfPI	updater.sh	/^arrayOfPI=(r r2)$/;"	v	language:Sh
 boldAndUnderlinedPrint	tutorialConfigUpdater.sh	/^boldAndUnderlinedPrint(){$/;"	f
+c	test.sh	/^c=$a+$b d=$(($a+$b))$/;"	v
 chars	batchRename.sh	/^    local chars=1 # number of characters to display$/;"	v
 chars	openAll.sh	/^local chars=1 # number of characters to display$/;"	v	language:Sh
 checkForExistence	batchRename.sh	/^checkForExistence(){$/;"	f
@@ -111,7 +113,7 @@ executeFileFirstArgIsCommand	runner.sh	/^executeFileFirstArgIsCommand(){$/;"	f
 executeTheFile	runner.sh	/^executeTheFile(){$/;"	f
 file	openAll.sh	/^	file="$(echo $file | tr '[:upper:]' '[:lower:]')"$/;"	v	language:Sh
 file	secureDelete.sh	/^    file="$i"$/;"	v	language:Sh
-fileName	templater.sh	/^fileName="$1"$/;"	v	language:Sh
+fileName	templater.sh	/^fileName="$1"$/;"	v
 fileName	watchServiceFSWatchRustCompile.sh	/^	fileName=`basename $event`$/;"	v	language:Sh
 fileString	openAll.sh	/^fileString=""$/;"	v	language:Sh
 fileToBeExecuted	runner.sh	/^fileToBeExecuted="$1"$/;"	v
@@ -121,6 +123,7 @@ findTotal	oldCounter.sh	/^findTotal (){$/;"	f	language:Sh
 first	batchRename.sh	/^        local first=`echo ${file%%$delim*}`$/;"	v
 firstFile	sync.sh	/^	firstFile="${firstFile}\/"$/;"	v	language:Sh
 firstFile	sync.sh	/^firstFile="$1"$/;"	v	language:Sh
+firstString	templater.sh	/^firstString=$(cat<<EOM$/;"	v
 flength	secureDelete.sh	/^    flength=$(ls -l "$file" | awk '{print $5}')  # Field 5 is file length.$/;"	v	language:Sh
 fortuneQuote	eyes.sh	/^	fortuneQuote="$(figlet -f $1 \\"$fortuneQuote\\")"$/;"	v	language:Sh
 fortuneQuote	eyes.sh	/^	fortuneQuote="$(fortune)"$/;"	v	language:Sh
@@ -181,6 +184,7 @@ revarr	secureDelete.sh	/^    local revarr=( '|' '\/' '-' '\\')$/;"	v	language:Sh
 robot	animation	/^robot="`cat << "EOF"                               $/;"	v
 rows	animation	/^rows=`tput lines`$/;"	v
 showHidden	directoryContentsSize.sh	/^showHidden(){$/;"	f	language:Sh
+show_usage	test.pl	/^sub show_usage {$/;"	s
 sorted	sortedArrayCounter.sh	/^sorted=( $(sort -f <<<"${arr[*]}") )$/;"	v	language:Sh
 sorted	sortedArrayCounter.sh	/^sorted=($(uniq <<< "${sorted[*]}"))$/;"	v	language:Sh
 spinner	batchRename.sh	/^        spinner="$temp${spinner%"$temp"}" # and add it to the end$/;"	v

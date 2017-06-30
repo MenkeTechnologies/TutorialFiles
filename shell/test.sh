@@ -3,15 +3,15 @@
 
 echo "my pwd is `pwd`"
 
-say "hello world"
-echo "the pwd is now thiisne are cool inm my ok so kiss e off realy" | say 
+echo "dogs are really fikking cool" 
 
-echo "my email is jamenk@email.wm.edu" | say
+read name
 
-echo "myaddres is cool"
-
+echo "yor name is $name"
 
 
-id
 
-echo "my id is $(id)"
+
+
+
+

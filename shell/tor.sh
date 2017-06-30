@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-<F7>#!/usr/bin/env bash
+#!/usr/bin/env bash
 #created by JAKOBMENKE --> Fri May 19 00:16:00 EDT 2017 
 INTERFACE=Wi-Fi
 

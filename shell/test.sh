@@ -11,3 +11,12 @@ echo "$a + $b = $d \t(plus sign as arithmetic addition)"
 
 echo "my id is `id`"
 
+
+echo "the pwd is `pwd`"
+
+
+
+
+
+
+

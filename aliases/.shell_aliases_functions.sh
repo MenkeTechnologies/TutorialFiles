@@ -192,6 +192,7 @@ blocksToSize(){
     local bytes=$(( input * 512 ))
     echo $bytes | humanReadable 
 }
+
 humanReadable(){
     awk 'function human(x) {
     s=" B   KiB MiB GiB TiB EiB PiB YiB ZiB"

@@ -318,6 +318,15 @@ humanReadable(){
     mp4(){
         youtube-dl -f mp4 "$1"
     }
+
+    prettyPrint(){
+        if [[ ! -z "$1" ]]; then
+            printf "\e[1m$1\e[0m\n"
+        else 
+            echo "Need one arg" >&2
+            return 1
+        fi
+    }
     #}}}***********************************************************
 
     source "$HOME/.tokens.sh"

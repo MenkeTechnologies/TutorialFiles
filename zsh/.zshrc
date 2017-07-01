@@ -179,7 +179,7 @@ function _sub {
 }
 function _updater {
     zle kill-whole-line
-    BUFFER="( cat $SCRIPTS/updater.sh | escapeRemove | bash 2>&1 | tee ~/updaterlog.txt | mutt -s \"Log from `date`\" jamenk@email.wm.edu 2>&1 &)"
+    BUFFER="( cat $SCRIPTS/updater.sh | escapeRemove | bash 2>&1 | tee $LOGFILE | mutt -s \"Log from `date`\" jamenk@email.wm.edu 2>$LOGFILE &)"
     zle .accept-line
 }
 

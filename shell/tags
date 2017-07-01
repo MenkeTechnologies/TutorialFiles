@@ -62,7 +62,7 @@ SCRIPT_TO_RUN	watchServiceFSWatchPiWeb.sh	/^SCRIPT_TO_RUN=$SCRIPTS\/uploadWebPi.
 TIME	mywatch.sh	/^    TIME="$2"$/;"	v	language:Sh
 TIME	mywatch.sh	/^    TIME=1$/;"	v	language:Sh
 URL	gitgo.sh	/^    local URL="https:\/\/github.com\/$GITHUB_ACCOUNT\/$REPO_NAME_TO_CREATE"$/;"	v
-a	test.sh	/^a=1 b=$((2))$/;"	v
+a	test.sh	/^a=1 b=$((2+5))$/;"	v
 addContents	shebangChanger.sh	/^addContents(){$/;"	f	language:Sh
 addHeader	templater.sh	/^addHeader(){$/;"	f
 arr	listAllCommands.sh	/^arr=()$/;"	v	language:Sh

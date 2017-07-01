@@ -1,6 +1,6 @@
 " ~/.vim/sessions/Scripting.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 29 June 2017 at 16:15:08.
+" Created by session.vim 2.13.1 on 01 July 2017 at 14:21:05.
 " Open this file in Vim and run :source % to restore your session.
 
 if exists('g:syntax_on') != 1 | syntax on | endif
@@ -22,6 +22,7 @@ if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
+badd +1 undotree_2
 badd +10 test.sh
 badd +18 batchRename.sh
 badd +9 coolFormatter.sh
@@ -32,40 +33,27 @@ badd +13 test.py
 badd +1 eyes.sh
 badd +1 blueText.sh
 badd +31 duplicateLineDeleter.sh
+badd +0 diffpanel_3
+badd +0 vim-minimap
 argglobal
 silent! argdel *
 $argadd test.sh
-edit undotree_2
+edit test.sh
 set splitbelow splitright
 wincmd _ | wincmd |
 vsplit
 wincmd _ | wincmd |
 vsplit
-wincmd _ | wincmd |
-vsplit
-wincmd _ | wincmd |
-vsplit
-4wincmd h
-wincmd w
-wincmd _ | wincmd |
-split
-1wincmd k
-wincmd w
-wincmd w
+2wincmd h
 wincmd w
 wincmd w
 set nosplitbelow
 set nosplitright
 wincmd t
 set winminheight=1 winheight=1 winminwidth=1 winwidth=1
-exe 'vert 1resize ' . ((&columns * 30 + 101) / 202)
-exe '2resize ' . ((&lines * 57 + 35) / 70)
-exe 'vert 2resize ' . ((&columns * 45 + 101) / 202)
-exe '3resize ' . ((&lines * 10 + 35) / 70)
-exe 'vert 3resize ' . ((&columns * 45 + 101) / 202)
-exe 'vert 4resize ' . ((&columns * 83 + 101) / 202)
-exe 'vert 5resize ' . ((&columns * 20 + 101) / 202)
-exe 'vert 6resize ' . ((&columns * 20 + 101) / 202)
+exe 'vert 1resize ' . ((&columns * 50 + 79) / 159)
+exe 'vert 2resize ' . ((&columns * 82 + 79) / 159)
+exe 'vert 3resize ' . ((&columns * 25 + 79) / 159)
 argglobal
 enew
 " file __Tag_List__
@@ -79,23 +67,6 @@ setlocal fdn=20
 setlocal fen
 wincmd w
 argglobal
-setlocal fdm=manual
-setlocal fde=0
-setlocal fmr={{{,}}}
-setlocal fdi=#
-setlocal fdl=0
-setlocal fml=1
-setlocal fdn=20
-setlocal fen
-let s:l = 3 - ((2 * winheight(0) + 28) / 57)
-if s:l < 1 | let s:l = 1 | endif
-exe s:l
-normal! zt
-3
-normal! 02|
-wincmd w
-argglobal
-edit diffpanel_3
 setlocal fdm=marker
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -103,30 +74,13 @@ setlocal fdi=#
 setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
-setlocal nofen
-let s:l = 1 - ((0 * winheight(0) + 5) / 10)
+setlocal fen
+let s:l = 35 - ((34 * winheight(0) + 35) / 71)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-1
+35
 normal! 0
-wincmd w
-argglobal
-edit test.sh
-setlocal fdm=marker
-setlocal fde=0
-setlocal fmr={{{,}}}
-setlocal fdi=#
-setlocal fdl=0
-setlocal fml=1
-setlocal fdn=20
-setlocal fen
-let s:l = 13 - ((12 * winheight(0) + 34) / 68)
-if s:l < 1 | let s:l = 1 | endif
-exe s:l
-normal! zt
-13
-normal! 04|
 wincmd w
 argglobal
 enew
@@ -140,27 +94,10 @@ setlocal fml=1
 setlocal fdn=20
 setlocal nofen
 wincmd w
-argglobal
-enew
-file vim-minimap
-setlocal fdm=marker
-setlocal fde=0
-setlocal fmr={{{,}}}
-setlocal fdi=#
-setlocal fdl=0
-setlocal fml=1
-setlocal fdn=20
-setlocal fen
-wincmd w
-4wincmd w
-exe 'vert 1resize ' . ((&columns * 30 + 101) / 202)
-exe '2resize ' . ((&lines * 57 + 35) / 70)
-exe 'vert 2resize ' . ((&columns * 45 + 101) / 202)
-exe '3resize ' . ((&lines * 10 + 35) / 70)
-exe 'vert 3resize ' . ((&columns * 45 + 101) / 202)
-exe 'vert 4resize ' . ((&columns * 83 + 101) / 202)
-exe 'vert 5resize ' . ((&columns * 20 + 101) / 202)
-exe 'vert 6resize ' . ((&columns * 20 + 101) / 202)
+2wincmd w
+exe 'vert 1resize ' . ((&columns * 50 + 79) / 159)
+exe 'vert 2resize ' . ((&columns * 82 + 79) / 159)
+exe 'vert 3resize ' . ((&columns * 25 + 79) / 159)
 tabnext 1
 if exists('s:wipebuf')
 "   silent exe 'bwipe ' . s:wipebuf
@@ -190,8 +127,8 @@ if !getbufvar(s:bufnr_save, '&modified')
   endif
 endif
 execute "cd" fnameescape(s:cwd_save)
-1resize 68|vert 1resize 30|2resize 57|vert 2resize 45|3resize 10|vert 3resize 45|4resize 68|vert 4resize 83|5resize 68|vert 5resize 20|6resize 68|vert 6resize 20|
-4wincmd w
+1resize 71|vert 1resize 50|2resize 71|vert 2resize 82|3resize 71|vert 3resize 25|
+2wincmd w
 tabnext 1
 if exists('s:wipebuf')
   if empty(bufname(s:wipebuf))

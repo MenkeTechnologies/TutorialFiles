@@ -11,7 +11,7 @@ else
     NAMES_FROM_PHONE_NUMBERS[$MEMBER1]=Member1Name
 
     if [[ -z "$3" ]]; then
-        #read from stdinput
+        #read from stdin
         if [[ -z "$2" ]]; then
             #one arg
             #pass stdin from fxn directly into mutt as body
@@ -35,16 +35,16 @@ else
                 else
                     #loop through indices which are phone numbers of associative array
                     for number in "${!NAMES_FROM_PHONE_NUMBERS[@]}" ; do
-                        #checking for name in the associative array
+                        #checking for name in the associative array based on number key
                         if [[ "$2" = ${NAMES_FROM_PHONE_NUMBERS[$number]} ]]; then
                             prettyPrint "${NAMES_FROM_PHONE_NUMBERS[$number]}..."
                             mutt -s "$1" "$number@txt.att.net" <&0 2>$LOGFILE
                             exit 0
                         fi
-                        #checking for number in associative
+                        #checking for number in keys of associative array
                         if [[ "$2" == $number ]]; then
                             prettyPrint "${NAMES_FROM_PHONE_NUMBERS[$number]}..."
-                            mutt -s "$1" "$2"@txt.att.net <&-1 2>$LOGFILE
+                            mutt -s "$1" "$2"@txt.att.net <&0 2>$LOGFILE
                             exit 0
                         fi
 
@@ -54,8 +54,10 @@ else
                     if [[ $2 =~ ^[0-9]+$ ]];then
                         if [[ "$2" == $DEFAULT_RECIPIENT ]]; then
                             prettyPrint "Texting default recipient..."
+                        else
+                            prettyPrint "Texting '$2'..."
                         fi
-                        mutt -s "$1" "$2"@txt.att.net <&-1 2>$LOGFILE
+                        mutt -s "$1" "$2"@txt.att.net <&0 2>$LOGFILE
                         exit 0
                     else 
                         prettyPrint "Couldn't find name '$2'...Need number..." >&2
@@ -82,12 +84,14 @@ else
             #third arg is phone number
             #pass text from here string as body
             for number in "${!NAMES_FROM_PHONE_NUMBERS[@]}"; do
+                #third argument is a string name
                 if [[ "$3" = ${NAMES_FROM_PHONE_NUMBERS[$number]} ]]; then
                     prettyPrint "${NAMES_FROM_PHONE_NUMBERS[$number]}..."
                     mutt -s "$1" "$number@txt.att.net" <<< "$2" 2>$LOGFILE
                     exit 0
 
                 fi
+                #third argument is a number
                 if [[ "$3" == $number ]]; then
                     prettyPrint "${NAMES_FROM_PHONE_NUMBERS[$number]}..."
                     mutt -s "$1" "$3@txt.att.net" <<< "$2" 2>$LOGFILE
@@ -98,12 +102,15 @@ else
             if [[ $3 =~ ^[0-9]+$ ]];then
                 if [[ "$3" == $DEFAULT_RECIPIENT ]]; then
                     prettyPrint "Texting default recipient..."
+                else
+                    prettyPrint "Texting $3..."
                 fi
 
                 mutt -s "$1" "$3@txt.att.net" <<< "$2" 2>$LOGFILE
                 exit 0
             else 
                 prettyPrint "Couldn't find name '$3'...Need number..." >&2
+                exit 1
             fi
 
         fi

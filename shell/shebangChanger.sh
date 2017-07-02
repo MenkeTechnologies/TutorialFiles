@@ -1,4 +1,9 @@
 #!/usr/bin/env bash
+if (( $# < 2 )); then
+	usage
+	exit
+fi
+
 
 executableProgram=$1
 path="#!/usr/bin/env $executableProgram"
@@ -13,10 +18,6 @@ endofmessage
 	printf "\e[0m"
 }
 
-if [[ $# < 2 ]]; then
-	usage
-	exit
-fi
 
 addContents(){
 	echo -e "\e[1;4m Adding shebang : $path to $file\e[0m"

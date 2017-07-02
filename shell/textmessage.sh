@@ -1,4 +1,17 @@
 #!/usr/bin/env bash
+
+prettyPrint () {
+	if [[ ! -z "$1" ]]
+	then
+		printf "\e[1m$1\e[0m\n"
+	else
+		echo "Need one arg" >&2
+		return 1
+	fi
+}
+
+
+
 if [[ -z "$1" ]]; then
     prettyPrint "need a subject" >&2
     exit 1

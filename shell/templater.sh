@@ -64,7 +64,7 @@ case "$fileToBeExecuted" in
         exit 1
         ;;
     *.*)
-        echo "Templating for this filetype is not supported" >&2
+        echo "Templating for this filetype is not supported!" >&2
         exit 1
         ;;
     *)

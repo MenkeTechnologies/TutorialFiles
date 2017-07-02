@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 	if [[ -z "$1" ]]; then
 		prettyPrint "need a subject" >&2
 		return 1
@@ -103,4 +104,3 @@
 			fi
 		fi
 	fi
-

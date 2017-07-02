@@ -16,14 +16,14 @@ executableScriptsProcessing(){
 
 addHeader(){
     #first arg is the interpreter
-    #second arg is the absolute filenam
+    #second arg is the absolute path to file
     firstString=$(cat<<EOM
 #!/usr/bin/env $1
 #{{{                    MARK:Header
 #**************************************************************
-#####   Author: JACOBMENKE
-#####   Date: `date`
-#####   Purpose: 
+#####   Author: $(whoami | tr 'a-z' 'A-Z')
+#####   Date: $(date)
+#####   Purpose: $1 script to 
 #####   Notes: 
 #}}}***********************************************************
 EOM
@@ -36,7 +36,7 @@ echo >> "$2"
 
 }
 
-executeTheFile(){
+createTemplate(){
     addHeader "$1" "$2"
     executableScriptsProcessing "$2"
 }
@@ -51,24 +51,24 @@ fi
 fileToBeExecuted="$1"
 
 case "$fileToBeExecuted" in
-    *.sh ) executeTheFile bash "$fileToBeExecuted"
+    *.sh ) createTemplate bash "$fileToBeExecuted"
         ;;
-    *.pl ) executeTheFile perl "$fileToBeExecuted"
+    *.pl ) createTemplate perl "$fileToBeExecuted"
         ;;
-    *.rb ) executeTheFile ruby "$fileToBeExecuted"
+    *.rb ) createTemplate ruby "$fileToBeExecuted"
         ;;
-    *.py ) executeTheFile python3 "$fileToBeExecuted"
+    *.py ) createTemplate python3 "$fileToBeExecuted"
         ;;
     *.vim )
-        command="vim -i NONE -V1 -Nes -c 'so""$fileToBeExecuted""' -c'echo""|q!' 2>&1 | tail +4"
-        executeFileFirstArgIsCommand "$command" "$fileToBeExecuted" 
+        echo "Vim template not supported yet." >&2
+        exit 1
         ;;
     *.*)
-        echo "Don't know what the run with. File ending is not recognized!" >&2
+        echo "Templating for this filetype is not supported" >&2
         exit 1
         ;;
     *)
-        echo "Don't know what the run with! No File ending." >&2
+        echo "Don't know how to create template without file ending!" >&2
         exit 1
         ;;
 esac

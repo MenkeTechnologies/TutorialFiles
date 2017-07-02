@@ -89,7 +89,6 @@ clearline	openAll.sh	/^local clearline="\\e[K" # clear to end of line (ANSI term
 cols	animation	/^cols=`tput cols`$/;"	v
 cols	picture_finder.sh	/^cols=`tput cols`$/;"	v	language:Sh
 command	runner.sh	/^        command="vim -i NONE -V1 -Nes -c 'so""$fileToBeExecuted""' -c'echo""|q!' 2>&1 | tail +4"$/;"	v
-command	templater.sh	/^        command="vim -i NONE -V1 -Nes -c 'so""$fileToBeExecuted""' -c'echo""|q!' 2>&1 | tail +4"$/;"	v
 commandList	oldCounter.sh	/^		commandList="$i\\n$commandList"$/;"	v	language:Sh
 commandList	oldCounter.sh	/^commandList=""$/;"	v	language:Sh
 commands	oldCounter.sh	/^		commands="$f $commands"$/;"	v	language:Sh
@@ -101,6 +100,7 @@ concat	myWatchNoBlinkColorized.sh	/^	    	concat="$(java parser $LINE)"$/;"	v	la
 contents	duplicateLineDeleter.sh	/^	contents=$(cat -s "$file")$/;"	v	language:Sh
 convertFiles	batchRename.sh	/^convertFiles(){$/;"	f
 count	animation	/^count=$topline$/;"	v
+createTemplate	templater.sh	/^createTemplate(){$/;"	f
 createTheFile	createScriptButDontOpenSublime.sh	/^createTheFile(){$/;"	f
 createTheFile	createTextFile.sh	/^createTheFile(){$/;"	f	language:Sh
 delay	batchRename.sh	/^    local delay=.1 # time in seconds between characters$/;"	v
@@ -123,7 +123,6 @@ executableScriptsProcessing	runner.sh	/^executableScriptsProcessing(){$/;"	f
 executableScriptsProcessing	templater.sh	/^executableScriptsProcessing(){$/;"	f
 executeFileFirstArgIsCommand	runner.sh	/^executeFileFirstArgIsCommand(){$/;"	f
 executeTheFile	runner.sh	/^executeTheFile(){$/;"	f
-executeTheFile	templater.sh	/^executeTheFile(){$/;"	f
 file	openAll.sh	/^	file="$(echo $file | tr '[:upper:]' '[:lower:]')"$/;"	v	language:Sh
 file	secureDelete.sh	/^    file="$i"$/;"	v	language:Sh
 fileName	watchServiceFSWatchRustCompile.sh	/^	fileName=`basename $event`$/;"	v	language:Sh

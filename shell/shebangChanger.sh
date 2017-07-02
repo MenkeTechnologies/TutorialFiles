@@ -20,7 +20,7 @@ endofmessage
 
 
 addContents(){
-	echo -e "\e[1;4m Adding shebang : $path to $file\e[0m"
+	printf "\e[1;4m Adding shebang : $path to $file\e[0m\n"
 	echo "$path" > "$file"
 	echo "$tail" >> "$file"
 	chmod u+x "$file"
@@ -35,6 +35,16 @@ for file; do
 		
 		if [[ $line =~ ^\#! ]]; then
 			found=true
+			break;	
+		fi
+
+		if [[ $line =~ ^\# ]]; then
+			found=false
+			break;	
+		fi
+
+		if [[ $line =~ ^[a-zA-Z]+ ]]; then
+			found=false
 			break;	
 		fi
 	done < $file

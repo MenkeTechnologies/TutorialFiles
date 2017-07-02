@@ -180,6 +180,7 @@ perlOutdated	updater.sh	/^perlOutdated=$(cpan-outdated -p)$/;"	v	language:Sh
 pipe	readFIFO.sh	/^pipe=\/Users\/jacobmenke\/Desktop\/testpipe$/;"	v	language:Sh
 pipe	readFIFO.sh	/^pipe=\/tmp\/testpipe$/;"	v	language:Sh
 prettyPrint	gitgo.sh	/^prettyPrint(){$/;"	f
+prettyPrint	textmessage.sh	/^prettyPrint () {$/;"	f
 prettyPrint	updater.sh	/^prettyPrint(){$/;"	f	language:Sh
 printD	banner.pl	/^sub printD{$/;"	s
 printDate	banner.pl	/^sub printDate{$/;"	s

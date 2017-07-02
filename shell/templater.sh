@@ -1,4 +1,23 @@
-#!/usr/bin/env bash
+#{{{                    MARK:Header
+#**************************************************************
+#####   Author: JACOBMENKE
+#####   Date: Fri Jun 30 15:18:40 EDT 2017
+#####   Purpose: file templates for bash, perl, python
+#####   Notes: 
+#}}}***********************************************************
+
+executableScriptsProcessing(){
+    # then make it executable
+    if [[ ! -x "$1" ]]; then
+        chmod 700 "$1"
+    fi
+}
+
+addHeader(){
+    #first arg is the interpreter
+    #second arg is the absolute filenam
+    firstString=$(cat<<EOM
+#!/usr/bin/env $1
 #{{{                    MARK:Header
 #**************************************************************
 #####   Author: JACOBMENKE

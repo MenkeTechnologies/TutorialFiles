@@ -13,10 +13,3 @@ echo "my id is `id`"
 
 
 echo "the pwd is `pwd`"
-
-
-
-
-
-
-

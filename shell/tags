@@ -140,6 +140,7 @@ firstString	templater.sh	/^    firstString=$(cat<<EOM$/;"	v
 flength	secureDelete.sh	/^    flength=$(ls -l "$file" | awk '{print $5}')  # Field 5 is file length.$/;"	v	language:Sh
 fortuneQuote	eyes.sh	/^	fortuneQuote="$(figlet -f $1 \\"$fortuneQuote\\")"$/;"	v	language:Sh
 fortuneQuote	eyes.sh	/^	fortuneQuote="$(fortune)"$/;"	v	language:Sh
+found	shebangChanger.sh	/^			found=false$/;"	v
 found	shebangChanger.sh	/^			found=true$/;"	v
 found	shebangChanger.sh	/^	found=false$/;"	v
 getInitialCommit	gitgo.sh	/^getInitialCommit(){$/;"	f

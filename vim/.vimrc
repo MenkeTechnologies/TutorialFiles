@@ -420,6 +420,7 @@ execute pathogen#infect()
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 set rtp+=/usr/local/lib/python2.7/site-packages/powerline/bindings/vim
 
+" :e will find files automatically in these locations
 set path+=~/Desktop
 set path+=~/Documents/shellScripts
 

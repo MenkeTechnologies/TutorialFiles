@@ -33,9 +33,9 @@ else
                         mutt -s "$1" "$person"@txt.att.net <&0 2>$LOGFILE
                     done
                 else
-                    #loop through indexes which are phone numbers of associative array
+                    #loop through indices which are phone numbers of associative array
                     for number in "${!NAMES_FROM_PHONE_NUMBERS[@]}" ; do
-                        #checking for string name in the associative array
+                        #checking for name in the associative array
                         if [[ "$2" = ${NAMES_FROM_PHONE_NUMBERS[$number]} ]]; then
                             prettyPrint "${NAMES_FROM_PHONE_NUMBERS[$number]}..."
                             mutt -s "$1" "$number@txt.att.net" <&0 2>$LOGFILE
@@ -44,7 +44,8 @@ else
                         #checking for number in associative
                         if [[ "$2" == $number ]]; then
                             prettyPrint "${NAMES_FROM_PHONE_NUMBERS[$number]}..."
-                            break
+                            mutt -s "$1" "$2"@txt.att.net <&-1 2>$LOGFILE
+                            exit 0
                         fi
 
                     done
@@ -54,7 +55,8 @@ else
                         if [[ "$2" == $DEFAULT_RECIPIENT ]]; then
                             prettyPrint "Texting default recipient..."
                         fi
-                        mutt -s "$1" "$2"@txt.att.net <&0 2>$LOGFILE
+                        mutt -s "$1" "$2"@txt.att.net <&-1 2>$LOGFILE
+                        exit 0
                     else 
                         prettyPrint "Couldn't find name '$2'...Need number..." >&2
                     fi
@@ -79,7 +81,6 @@ else
         else
             #third arg is phone number
             #pass text from here string as body
-
             for number in "${!NAMES_FROM_PHONE_NUMBERS[@]}"; do
                 if [[ "$3" = ${NAMES_FROM_PHONE_NUMBERS[$number]} ]]; then
                     prettyPrint "${NAMES_FROM_PHONE_NUMBERS[$number]}..."
@@ -89,7 +90,8 @@ else
                 fi
                 if [[ "$3" == $number ]]; then
                     prettyPrint "${NAMES_FROM_PHONE_NUMBERS[$number]}..."
-                    break
+                    mutt -s "$1" "$3@txt.att.net" <<< "$2" 2>$LOGFILE
+                    exit 0
                 fi
             done
             #numeric number
@@ -99,6 +101,7 @@ else
                 fi
 
                 mutt -s "$1" "$3@txt.att.net" <<< "$2" 2>$LOGFILE
+                exit 0
             else 
                 prettyPrint "Couldn't find name '$3'...Need number..." >&2
             fi

@@ -72,7 +72,7 @@ TIME	mywatch.sh	/^    TIME="$2"$/;"	v	language:Sh
 TIME	mywatch.sh	/^    TIME=1$/;"	v	language:Sh
 URL	gitgo.sh	/^    local URL="https:\/\/github.com\/$GITHUB_ACCOUNT\/$REPO_NAME_TO_CREATE"$/;"	v
 a	test.sh	/^a=1 b=$((2+5))$/;"	v
-addContents	shebangChanger.sh	/^addContents(){$/;"	f	language:Sh
+addContents	shebangChanger.sh	/^addContents(){$/;"	f
 addHeader	templater.sh	/^addHeader(){$/;"	f
 arr	listAllCommands.sh	/^arr=()$/;"	v	language:Sh
 arr	picture_finder.sh	/^local arr=(  '|' '\\' '-' '\/' )$/;"	v	language:Sh
@@ -116,7 +116,7 @@ displayProgress	secureDelete.sh	/^displayProgress(){$/;"	f	language:Sh
 displayProgressIndicator	openAll.sh	/^displayProgressIndicator(){$/;"	f	language:Sh
 dontSummarizeSizes	directoryContentsSize.sh	/^dontSummarizeSizes(){$/;"	f	language:Sh
 ending	picture_finder.sh	/^	ending=${destinationFile##*.}$/;"	v	language:Sh
-executableProgram	shebangChanger.sh	/^executableProgram=$1$/;"	v	language:Sh
+executableProgram	shebangChanger.sh	/^executableProgram=$1$/;"	v
 executableScriptsProcessing	createScriptButDontOpenSublime.sh	/^executableScriptsProcessing(){$/;"	f
 executableScriptsProcessing	createTextFile.sh	/^executableScriptsProcessing(){$/;"	f	language:Sh
 executableScriptsProcessing	runner.sh	/^executableScriptsProcessing(){$/;"	f
@@ -140,8 +140,8 @@ firstString	templater.sh	/^    firstString=$(cat<<EOM$/;"	v
 flength	secureDelete.sh	/^    flength=$(ls -l "$file" | awk '{print $5}')  # Field 5 is file length.$/;"	v	language:Sh
 fortuneQuote	eyes.sh	/^	fortuneQuote="$(figlet -f $1 \\"$fortuneQuote\\")"$/;"	v	language:Sh
 fortuneQuote	eyes.sh	/^	fortuneQuote="$(fortune)"$/;"	v	language:Sh
-found	shebangChanger.sh	/^			found=true$/;"	v	language:Sh
-found	shebangChanger.sh	/^	found=false$/;"	v	language:Sh
+found	shebangChanger.sh	/^			found=true$/;"	v
+found	shebangChanger.sh	/^	found=false$/;"	v
 getInitialCommit	gitgo.sh	/^getInitialCommit(){$/;"	f
 getRemoteDetails	gitgo.sh	/^getRemoteDetails(){$/;"	f
 gitPull	gitgo.sh	/^gitPull(){$/;"	f
@@ -154,7 +154,7 @@ killCursor	picture_finder.sh	/^killCursor(){$/;"	f	language:Sh
 killCursor	secureDelete.sh	/^killCursor(){$/;"	f	language:Sh
 last	batchRename.sh	/^        local last=`echo ${file##*_}`$/;"	v
 lcline	openAll.sh	/^	lcline="$(echo $line | tr '[:upper:]' '[:lower:]')"$/;"	v	language:Sh
-lineCounter	shebangChanger.sh	/^	lineCounter=1$/;"	v	language:Sh
+lineCounter	shebangChanger.sh	/^	lineCounter=1$/;"	v
 local	rsyncr.sh	/^local="$1"$/;"	v	language:Sh
 messageToSpeak	say.sh	/^messageToSpeak=""$/;"	v
 newfile	batchRename.sh	/^        local newfile=$first$number.$endFileEnding$/;"	v
@@ -175,7 +175,7 @@ os	test.py	/^import os$/;"	i
 outdated	updater.sh	/^outdated=$(pip3 list --outdated | awk '{print $1}')$/;"	v	language:Sh
 output	watchServiceFSWatchRustCompile.sh	/^		output="$(rustc $2 2>&1)"$/;"	v	language:Sh
 pass_count	secureDelete.sh	/^    pass_count=1$/;"	v	language:Sh
-path	shebangChanger.sh	/^path="#!\/usr\/bin\/env $executableProgram"$/;"	v	language:Sh
+path	shebangChanger.sh	/^path="#!\/usr\/bin\/env $executableProgram"$/;"	v
 perlOutdated	updater.sh	/^perlOutdated=$(cpan-outdated -p)$/;"	v	language:Sh
 pipe	readFIFO.sh	/^pipe=\/Users\/jacobmenke\/Desktop\/testpipe$/;"	v	language:Sh
 pipe	readFIFO.sh	/^pipe=\/tmp\/testpipe$/;"	v	language:Sh
@@ -213,8 +213,8 @@ sum	listAllCommands.sh	/^sum=0$/;"	v	language:Sh
 sum	sortedArrayCounter.sh	/^sum=0$/;"	v	language:Sh
 summarizeSizes	directoryContentsSize.sh	/^summarizeSizes(){$/;"	f	language:Sh
 sys	test.py	/^import sys$/;"	i
-tail	shebangChanger.sh	/^		tail=$(cat "$file")$/;"	v	language:Sh
-tail	shebangChanger.sh	/^		tail=$(tail +$lineCounter "$file")$/;"	v	language:Sh
+tail	shebangChanger.sh	/^		tail=$(cat "$file")$/;"	v
+tail	shebangChanger.sh	/^		tail=$(tail +$lineCounter "$file")$/;"	v
 temp	batchRename.sh	/^        local temp=${spinner#?}               # remove first character from $spinner$/;"	v
 temp	openAll.sh	/^	local temp=${spinner#?}               # remove first character from $spinner$/;"	v	language:Sh
 timeToSleep	myWatchNoBlink.sh	/^    timeToSleep=$2$/;"	v	language:Sh
@@ -233,7 +233,7 @@ usage	gitgo.sh	/^usage(){$/;"	f
 usage	myWatchNoBlink.sh	/^usage(){$/;"	f	language:Sh
 usage	myWatchNoBlinkColorized.sh	/^usage(){$/;"	f	language:Sh
 usage	mywatch.sh	/^usage(){$/;"	f	language:Sh
-usage	shebangChanger.sh	/^usage(){$/;"	f	language:Sh
+usage	shebangChanger.sh	/^usage(){$/;"	f
 view	eyes.sh	/^	view=${ary[$randIndex]}$/;"	v	language:Sh
 watchCommand	myWatchNoBlink.sh	/^watchCommand() {$/;"	f	language:Sh
 watchCommand	myWatchNoBlinkColorized.sh	/^watchCommand() {$/;"	f	language:Sh

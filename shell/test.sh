@@ -3,6 +3,8 @@
 
 echo "my pwd is `pwd`"
 
+echo "the number of args is $#"
+
 a=1 b=$((2+5))
 c=$a+$b d=$(($a+$b))
 echo "$a + $b = $c \t(plus sign as string literal)"

@@ -28,9 +28,16 @@ while true; do
     randIndex=$(($RANDOM % $rangePossibleIndices))
     font=${ary[$randIndex]}
     output="$(echo $TEXT_TO_DISPLAY | figlet -f $font)"
-    echo "$(basename $font)" | $FILTER
-    clear
-    echo "$output" | "$FILTER"
+
+    if [[ ! -z "$FILTER" ]]; then
+        echo "$(basename $font)" | $FILTER
+        clear
+        echo "$output" | "$FILTER"
+    else
+        echo "$(basename $font)"
+        clear
+        echo "$output"
+    fi
     sleep 30 
 done
 

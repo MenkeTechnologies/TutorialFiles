@@ -25,12 +25,12 @@ export HOMEBREW_HOME_FORMULAE="/usr/local/Homebrew/Library/taps/homebrew/homebre
 export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home"
 export GROOVY_HOME="/usr/local/Cellar/groovy/2.4.11"
 export SCALA_HOME="/usr/local/Cellar/scala/2.12.2"
-export NODE_PATH='/usr/local/lib/node_modules'
 export HOMEBREW_HOME='/usr/local/Cellar'
 export PERL_HOME='$HOMEBREW_HOME/perl/5.24.1/'
 export HOMEBREW_DBHOME='/usr/local/var'
 export HOMEBREW_DB_CONF='/usr/local/etc'
 export YARN_HOME="$HOME/.config/yarn"
+export NODE_PATH="/usr/local/lib/node_modules:$YARN_HOME/global/node_modules"
 export IP="http://98.209.117.32"
 eval `perl -I ~/perl5/lib/perl5 -Mlocal::lib`
 export MANPATH=$HOME/perl5/man:$MANPATH

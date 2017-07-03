@@ -8,8 +8,8 @@
 #}}}***********************************************************
 
 FIGLET_DIR=/usr/local/Cellar/figlet/2.2.5/share/figlet/fonts
-TEXT_TO_DISPLAY="$1"
-FILTER="$2"
+TEXT_TO_DISPLAY="Menke Technologies"
+FILTER="$1"
 
 #set -x
 

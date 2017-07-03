@@ -9,6 +9,7 @@
 
 FIGLET_DIR=/usr/local/Cellar/figlet/2.2.5/share/figlet/fonts
 TEXT_TO_DISPLAY="$1"
+FILTER="$2"
 
 #set -x
 
@@ -27,9 +28,10 @@ while true; do
     randIndex=$(($RANDOM % $rangePossibleIndices))
     font=${ary[$randIndex]}
     output="$(echo $TEXT_TO_DISPLAY | figlet -f $font)"
+    echo "$(basename $font)" | $FILTER
     clear
-    echo "$output" | lolcat
-    sleep 60 
+    echo "$output" | "$FILTER"
+    sleep 30 
 done
 
 

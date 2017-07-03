@@ -38,6 +38,7 @@ E_NOT_FOUND	secureDelete.sh	/^E_NOT_FOUND=71$/;"	v	language:Sh
 FAMILY_NUMBERS	.tokens.sh	/^		FAMILY_NUMBERS=($DAD $JOSH $JESSICA $CAROLYN)$/;"	v
 FAMILY_PHONE_NUMBERS	textmessage.sh	/^    FAMILY_PHONE_NUMBERS=($MEMBER1)$/;"	v
 FIGLET_DIR	figletRandomFont.sh	/^FIGLET_DIR=\/usr\/local\/Cellar\/figlet\/2.2.5\/share\/figlet\/fonts$/;"	v
+FILTER	figletRandomFont.sh	/^FILTER="$2"$/;"	v
 HOME	myWatchNoBlink.sh	/^    HOME=$(tput cup 0 0)$/;"	v	language:Sh
 HOME	myWatchNoBlinkColorized.sh	/^    HOME=$(tput cup 0 0)$/;"	v	language:Sh
 HOME_DIR	backupBashConfig.sh	/^HOME_DIR=\/Users\/jacobmenke$/;"	v

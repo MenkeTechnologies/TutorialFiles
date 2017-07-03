@@ -143,8 +143,8 @@ firstString	createTextFile.sh	/^    firstString=$(cat<<EOM$/;"	v
 firstString	templater.sh	/^    firstString=$(cat<<EOM$/;"	v
 flength	secureDelete.sh	/^    flength=$(ls -l "$file" | awk '{print $5}')  # Field 5 is file length.$/;"	v	language:Sh
 font	figletRandomFont.sh	/^    font=${ary[$randIndex]}$/;"	v
-fortuneQuote	eyes.sh	/^	fortuneQuote="$(figlet -f $1 \\"$fortuneQuote\\")"$/;"	v	language:Sh
-fortuneQuote	eyes.sh	/^	fortuneQuote="$(fortune)"$/;"	v	language:Sh
+fortuneQuote	eyes.sh	/^        fortuneQuote="$(figlet -f $1 \\"$fortuneQuote\\")"$/;"	v
+fortuneQuote	eyes.sh	/^    fortuneQuote="$(fortune)"$/;"	v
 found	shebangChanger.sh	/^			found=false$/;"	v
 found	shebangChanger.sh	/^			found=true$/;"	v
 found	shebangChanger.sh	/^	found=false$/;"	v
@@ -197,9 +197,9 @@ progress_pid	picture_finder.sh	/^  progress_pid=$!$/;"	v	language:Sh
 progress_pid	secureDelete.sh	/^    progress_pid=$!$/;"	v	language:Sh
 prompt	batchRename.sh	/^    local prompt="press any key..." # user prompt$/;"	v
 prompt	openAll.sh	/^local prompt="press any key..." # user prompt$/;"	v	language:Sh
-randIndex	eyes.sh	/^	randIndex=$(jot -r 1 0 $rangePossibleIndices )$/;"	v	language:Sh
+randIndex	eyes.sh	/^    randIndex=$(($RANDOM % $rangePossibleIndices))$/;"	v
 randIndex	figletRandomFont.sh	/^    randIndex=$(($RANDOM % $rangePossibleIndices))$/;"	v
-rangePossibleIndices	eyes.sh	/^rangePossibleIndices=${#ary[*]}$/;"	v	language:Sh
+rangePossibleIndices	eyes.sh	/^rangePossibleIndices=${#ary[*]}$/;"	v
 rangePossibleIndices	figletRandomFont.sh	/^rangePossibleIndices=${#ary[*]}$/;"	v
 remote	rsyncr.sh	/^remote="$2"$/;"	v	language:Sh
 revarr	picture_finder.sh	/^local revarr=( '|' '\/' '-' '\\')$/;"	v	language:Sh
@@ -244,7 +244,7 @@ usage	myWatchNoBlink.sh	/^usage(){$/;"	f	language:Sh
 usage	myWatchNoBlinkColorized.sh	/^usage(){$/;"	f	language:Sh
 usage	mywatch.sh	/^usage(){$/;"	f	language:Sh
 usage	shebangChanger.sh	/^usage(){$/;"	f
-view	eyes.sh	/^	view=${ary[$randIndex]}$/;"	v	language:Sh
+view	eyes.sh	/^    view=${ary[$randIndex]}$/;"	v
 watchCommand	myWatchNoBlink.sh	/^watchCommand() {$/;"	f	language:Sh
 watchCommand	myWatchNoBlinkColorized.sh	/^watchCommand() {$/;"	f	language:Sh
 watchingFile	watchServiceFSWatchRustCompile.sh	/^	watchingFile=`basename $2`$/;"	v	language:Sh

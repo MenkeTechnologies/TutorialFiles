@@ -6,20 +6,25 @@ trap 'fortuneQuote=$(fortune)' 3
 declare -a ary
 
 for file in $(cowsay -l); do
-	ary+=( $file )	 	
+    ary+=( $file )	 	
 done
 rangePossibleIndices=${#ary[*]}
 
-let rangePossibleIndices--
-
 while true; do
-	tput civis
-	fortuneQuote="$(fortune)"
-	fortuneQuote="$(figlet -f $1 \"$fortuneQuote\")"
-	clear
-	randIndex=$(jot -r 1 0 $rangePossibleIndices )
-	view=${ary[$randIndex]}
+    tput civis
+    fortuneQuote="$(fortune)"
+    if [[ ! -z "$1" ]]; then
+        fortuneQuote="$(figlet -f $1 \"$fortuneQuote\")"
+    fi
+    clear
+    randIndex=$(($RANDOM % $rangePossibleIndices))
+    view=${ary[$randIndex]}
 
-	echo "$fortuneQuote" | cowsay -f $view -n | lolcat
-	sleep 60 
+    if [[ ! -z "$2" ]]; then
+        echo "$fortuneQuote" | cowsay -f $view -n | "$2"
+    else
+        echo "$fortuneQuote" | cowsay -f $view -n | lolcat
+    fi
+
+    sleep 60 
 done

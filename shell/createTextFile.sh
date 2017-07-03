@@ -1,3 +1,4 @@
+
 #!/usr/bin/env bash
 #created by JAKOBMENKE --> Fri Jan 20 16:24:16 EST 2017
 
@@ -5,8 +6,6 @@ executableScriptsProcessing(){
     # then make it executable
     chmod 700 "$newfile"
     #add header that can be extracted with grep ^#:
-    echo "#: created by JAKOBMENKE --> $(date) " >> "$newfile"
-    #and open file
 
     openTextEditor
 
@@ -18,16 +17,41 @@ openTextEditor(){
     python3 /Users/jacobmenke/PycharmProjects/textEditorTwoColumns.py
 }
 
+
+addHeader(){
+    #first arg is the interpreter
+    #second arg is the absolute path to file
+    firstString=$(cat<<EOM
+#!/usr/bin/env $1
+#{{{                    MARK:Header
+#**************************************************************
+#####   Author: $(whoami | tr 'a-z' 'A-Z')
+#####   Date: $(date)
+#####   Purpose: $1 script to
+#####   Notes:
+#}}}***********************************************************
+EOM
+)
+
+echo "$firstString" > "$2"
+echo >> "$2"
+
+executableScriptsProcessing
+
+}
+
+
+
 createTheFile(){
     #create newfile
     touch "$newfile"
 
     #echo shebang line into newfile
     case "$1" in
-        .sh ) echo "#!/usr/local/bin/bash" > "$newfile" ;;
-        .pl ) echo "#!/usr/local/bin/perl" > "$newfile" ;;
-        .rb ) echo "#!/Users/jacobmenke/.rvm/rubies/ruby-2.3.3/bin/ruby" > "$newfile" ;;
-        .py ) echo "#!/Library/Frameworks/Python.framework/Versions/3.5/bin/python3" > "$newfile" ;;
+        .sh ) addHeader bash "$newfile" ;;
+        .pl ) addHeader perl "$newfile" ;;
+        .rb ) addHeader ruby "$newfile" ;;
+        .py ) addHeader python "$newfile" ;;
         #if .txt or some other file ending then just open the file, no processing
         #exit so do not call executableScriptsProcessing
         * 	) open -t "$newfile"; exit;;

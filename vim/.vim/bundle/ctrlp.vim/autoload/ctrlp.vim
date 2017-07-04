@@ -1201,7 +1201,7 @@ fu! s:AcceptSelection(action)
 			let type = exttype == 'dict' ? exttype : 'list'
 		en
 	en
-	let actargs = type == 'dict' ? [{ 'action': md, 'line': line, 'icr': icr }]
+	let actargs = type == 'dict' ? [{ 'action': md, 'line': line, 'icr': icr, 'input': str}]
 		\ : [md, line]
 	cal call(actfunc, actargs)
 endf
@@ -1878,6 +1878,11 @@ fu! s:highlight(pat, grp)
 		en
 
 		cal matchadd('CtrlPLinePre', '^>')
+	elseif !empty(a:pat) && s:regexp &&
+				\ exists('g:ctrlp_regex_always_higlight') &&
+				\ g:ctrlp_regex_always_higlight
+		let pat = substitute(a:pat, '\\\@<!\^', '^> \\zs', 'g')
+		cal matchadd(a:grp, ( s:martcs == '' ? '\c' : '\C').pat)
 	en
 endf
 
@@ -2499,7 +2504,9 @@ endf
 fu! s:getextvar(key)
 	if s:itemtype >= len(s:coretypes) && len(g:ctrlp_ext_vars) > 0
 		let vars = g:ctrlp_ext_vars[s:itemtype - len(s:coretypes)]
-		retu has_key(vars, a:key) ? vars[a:key] : -1
+		if has_key(vars, a:key)
+			retu vars[a:key]
+		en
 	en
 	retu get(g:, 'ctrlp_' . s:matchtype . '_' . a:key, -1)
 endf

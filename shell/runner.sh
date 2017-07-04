@@ -46,6 +46,8 @@ case "$fileToBeExecuted" in
         ;;
     *.lisp ) executeTheFile clisp "$fileToBeExecuted"
         ;;
+    *.hs ) executeFileFirstArgIsCommand "ghc -e ':script $fileToBeExecuted'" "$fileToBeExecuted"
+        ;;
     *.java ) executeTheFile java"$fileToBeExecuted"
 
         ;;

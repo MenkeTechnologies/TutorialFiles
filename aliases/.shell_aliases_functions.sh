@@ -317,7 +317,7 @@ humanReadable(){
     }
 
     mp4(){
-        youtube-dl -f mp4 "$1"
+        youtube-dl --no-playlist -f mp4 "$1"
     }
 
     prettyPrint(){

@@ -18,14 +18,14 @@ addHeader(){
     #first arg is the interpreter
     #second arg is the absolute path to file
     firstString=$(cat<<EOM
-    #!/usr/bin/env $1
-    #{{{                    MARK:Header
-    #**************************************************************
-    #####   Author: $(whoami | tr 'a-z' 'A-Z')
-    #####   Date: $(date)
-    #####   Purpose: $1 script to 
-    #####   Notes: 
-    #}}}***********************************************************
+#!/usr/bin/env $1
+#{{{                    MARK:Header
+#**************************************************************
+#####   Author: $(whoami | tr 'a-z' 'A-Z')
+#####   Date: $(date)
+#####   Purpose: $1 script to 
+#####   Notes: 
+#}}}***********************************************************
 EOM
 )
 

@@ -132,6 +132,9 @@ let g:ycm_min_num_of_chars_for_completion = 1
 let g:ycm_filetype_whitelist = { '*': 1 }
 let g:ycm_filetype_blacklist = { '*': 0}
 
+let g:ycm_server_keep_logfiles = 1
+let g:ycm_server_log_level = 'debug'
+
 let g:session_autosave = 'no'
 
 set statusline+=%#warningmsg#

@@ -302,7 +302,7 @@ humanReadable(){
         exec 2> /dev/tty
     }
     color2(){
-        exec 2> >(blueUpperText.sh)
+        exec 2> >(redText.sh)
     }
 
     escapeRemove(){
@@ -327,6 +327,10 @@ humanReadable(){
             echo "Need one arg" >&2
             return 1
         fi
+    }
+
+    tac(){
+    sed '1!G;h;$!d' "$@"
     }
     #}}}***********************************************************
 

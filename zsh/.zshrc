@@ -206,7 +206,7 @@ bindkey '^S' _gitfunc
 bindkey '\ed' _tutsUpdate
 
 #Filter stderr through shell scripts
-#exec 2> >(blueUpperText.sh)
+exec 2> >(redText.sh)
 
 my-accept-line () {
 if [[ "$BUFFER" == "bash" ]] || [[ "$BUFFER" == "ksh" ]]; then

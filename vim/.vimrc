@@ -134,6 +134,7 @@ let g:ycm_filetype_blacklist = { '*': 0}
 
 let g:ycm_server_keep_logfiles = 1
 let g:ycm_server_log_level = 'debug'
+let g:ycm_complete_in_comments=1
 
 let g:session_autosave = 'no'
 

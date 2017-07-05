@@ -38,6 +38,7 @@ export HISTSIZE=50000
 export EDITOR='vim'
 export HISTTIMEFORMAT=' %F %T _ '
 export BLUE="\e[37;44m"
+export RED="\e[31m"
 export RESET="\e[0m"
 export TUTORIAL_FILES="/Users/jacobmenke/Documents/tutorialsRepo"
 export LOGFILE="$HOME/updaterlog.txt"

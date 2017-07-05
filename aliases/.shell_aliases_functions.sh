@@ -20,7 +20,7 @@ export HOMEBREW_HOME_FORMULAE="/usr/local/Homebrew/Library/taps/homebrew/homebre
 
 #}}}***********************************************************
 
-#{{{                           MARK:HOMEs                           
+#{{{                           MARK:HOMES
 #**********************************************************************
 export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home"
 export GROOVY_HOME="/usr/local/Cellar/groovy/2.4.11"

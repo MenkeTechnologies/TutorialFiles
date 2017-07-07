@@ -183,6 +183,7 @@ optstring	gitgo.sh	/^optstring=p:hcl$/;"	v
 optstring	myWatchNoBlink.sh	/^optstring=bh$/;"	v	language:Sh
 optstring	myWatchNoBlinkColorized.sh	/^optstring=bh$/;"	v	language:Sh
 optstring	mywatch.sh	/^optstring=dh$/;"	v	language:Sh
+os	customTerminalInstaller/install.sh	/^os=`uname -s`$/;"	v
 os	test.py	/^import os$/;"	i
 outdated	updater.sh	/^outdated=$(pip3 list --outdated | awk '{print $1}')$/;"	v	language:Sh
 output	figletRandomFont.sh	/^    output="$(echo $TEXT_TO_DISPLAY | figlet -f $font)"$/;"	v
@@ -193,6 +194,7 @@ path	shebangChanger.sh	/^path="#!\/usr\/bin\/env $executableProgram"$/;"	v
 perlOutdated	updater.sh	/^perlOutdated=$(cpan-outdated -p)$/;"	v	language:Sh
 pipe	readFIFO.sh	/^pipe=\/Users\/jacobmenke\/Desktop\/testpipe$/;"	v	language:Sh
 pipe	readFIFO.sh	/^pipe=\/tmp\/testpipe$/;"	v	language:Sh
+powerline_dir	customTerminalInstaller/install.sh	/^powerline_dir="$(pip show powerline-status | grep Location | awk '{print $2}')"$/;"	v
 prettyPrint	gitgo.sh	/^prettyPrint(){$/;"	f
 prettyPrint	textmessage.sh	/^prettyPrint () {$/;"	f
 prettyPrint	updater.sh	/^prettyPrint(){$/;"	f	language:Sh
@@ -240,11 +242,13 @@ timeToSleep	myWatchNoBlink.sh	/^    timeToSleep=$2$/;"	v	language:Sh
 timeToSleep	myWatchNoBlink.sh	/^    timeToSleep=0.5$/;"	v	language:Sh
 timeToSleep	myWatchNoBlinkColorized.sh	/^    timeToSleep=$2$/;"	v	language:Sh
 timeToSleep	myWatchNoBlinkColorized.sh	/^    timeToSleep=0.5$/;"	v	language:Sh
+tmuxPowerlineDir	customTerminalInstaller/install.sh	/^tmuxPowerlineDir=$HOME\/.config\/powerline\/themes\/tmux$/;"	v
 topline	animation	/^topline=0$/;"	v
 total	oldCounter.sh	/^total=0$/;"	v	language:Sh
 total	oldCounter.sh	/^total=`expr $(ls -F $1 | grep ".*[*@]" | wc -l) + $total`$/;"	v	language:Sh
 transferFile	transfer.sh	/^transferFile="$1"$/;"	v	language:Sh
 tutorialDir	tutorialConfigUpdater.sh	/^tutorialDir="$HOME\/Documents\/tutorialsRepo"$/;"	v
+update	customTerminalInstaller/install.sh	/^update (){$/;"	f
 updatePI	updater.sh	/^updatePI(){$/;"	f	language:Sh
 usage	directoryContentsSize.sh	/^usage(){$/;"	f	language:Sh
 usage	duplicateLineDeleter.sh	/^usage(){$/;"	f	language:Sh

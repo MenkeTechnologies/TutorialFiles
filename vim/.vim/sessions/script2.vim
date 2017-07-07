@@ -1,6 +1,6 @@
 " ~/.vim/sessions/script2.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 12 June 2017 at 23:23:58.
+" Created by session.vim 2.13.1 on 06 July 2017 at 23:19:16.
 " Open this file in Vim and run :source % to restore your session.
 
 if exists('g:syntax_on') != 1 | syntax on | endif
@@ -23,7 +23,7 @@ if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
 endif
 set shortmess=aoO
 badd +11 secureDelete.sh
-badd +0 updater.sh
+badd +1 updater.sh
 argglobal
 silent! argdel *
 $argadd secureDelete.sh
@@ -47,7 +47,7 @@ if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
 71
-normal! 04|
+normal! 0
 tabnext 1
 if exists('s:wipebuf')
 "   silent exe 'bwipe ' . s:wipebuf

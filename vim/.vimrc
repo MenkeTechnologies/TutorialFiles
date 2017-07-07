@@ -7,10 +7,10 @@ endif
 
 
 """" Required:
-set runtimepath+=/Users/jacobmenke/.vim/bundle/neobundle.vim/
+set runtimepath+=~/.vim/bundle/neobundle.vim/
 
 " Required:
-call neobundle#begin(expand('/Users/jacobmenke/.vim/bundle'))
+call neobundle#begin(expand('~/.vim/bundle'))
 
 " Let NeoBundle manage NeoBundle
 " Required:
@@ -388,7 +388,7 @@ set pastetoggle=<ESC>p
 function AbbrevRemover()
 endfunction
 
-autocmd filetype text set tags+=/Users/jacobmenke/tags
+autocmd filetype text set tags+=~/tags
 autocmd filetype * call AutoCorrect() | call AbbrevRemover()
 "uncomment following if you want just want autocorrection in text and markdown files
 "autocmd filetype text call AutoCorrect()
@@ -440,7 +440,7 @@ iabbrev retunr return
 iabbrev delte delete
 iabbrev deltee delete
 set dictionary+=/usr/share/dict/words
-set thesaurus+=/Users/jacobmenke/mthesaur.txt
+set thesaurus+=~/mthesaur.txt
 
 "easier mapping for dict completion
 inoremap <silent> <C-T> <C-X><C-K>

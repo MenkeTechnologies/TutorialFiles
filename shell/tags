@@ -151,9 +151,9 @@ font	figletRandomFont.sh	/^    font=${ary[$randIndex]}$/;"	v
 font	menkeTechRandoFont.sh	/^    font=${ary[$randIndex]}$/;"	v
 fortuneQuote	eyes.sh	/^        fortuneQuote="$(figlet -f $1 \\"$fortuneQuote\\")"$/;"	v
 fortuneQuote	eyes.sh	/^    fortuneQuote="$(fortune)"$/;"	v
-found	shebangChanger.sh	/^			found=false$/;"	v
-found	shebangChanger.sh	/^			found=true$/;"	v
-found	shebangChanger.sh	/^	found=false$/;"	v
+found	shebangChanger.sh	/^            found=false$/;"	v
+found	shebangChanger.sh	/^            found=true$/;"	v
+found	shebangChanger.sh	/^    found=false$/;"	v
 getInitialCommit	gitgo.sh	/^getInitialCommit(){$/;"	f
 getRemoteDetails	gitgo.sh	/^getRemoteDetails(){$/;"	f
 gitPull	gitgo.sh	/^gitPull(){$/;"	f
@@ -166,7 +166,7 @@ killCursor	picture_finder.sh	/^killCursor(){$/;"	f	language:Sh
 killCursor	secureDelete.sh	/^killCursor(){$/;"	f	language:Sh
 last	batchRename.sh	/^        local last=`echo ${file##*_}`$/;"	v
 lcline	openAll.sh	/^	lcline="$(echo $line | tr '[:upper:]' '[:lower:]')"$/;"	v	language:Sh
-lineCounter	shebangChanger.sh	/^	lineCounter=1$/;"	v
+lineCounter	shebangChanger.sh	/^    lineCounter=1$/;"	v
 local	rsyncr.sh	/^local="$1"$/;"	v	language:Sh
 messageToSpeak	say.sh	/^messageToSpeak=""$/;"	v
 newfile	batchRename.sh	/^        local newfile=$first$number.$endFileEnding$/;"	v
@@ -232,8 +232,8 @@ sum	listAllCommands.sh	/^sum=0$/;"	v	language:Sh
 sum	sortedArrayCounter.sh	/^sum=0$/;"	v	language:Sh
 summarizeSizes	directoryContentsSize.sh	/^summarizeSizes(){$/;"	f	language:Sh
 sys	test.py	/^import sys$/;"	i
-tail	shebangChanger.sh	/^		tail=$(cat "$file")$/;"	v
-tail	shebangChanger.sh	/^		tail=$(tail +$lineCounter "$file")$/;"	v
+tail	shebangChanger.sh	/^        tail=$(cat "$file")$/;"	v
+tail	shebangChanger.sh	/^        tail=$(tail +$lineCounter "$file")$/;"	v
 temp	batchRename.sh	/^        local temp=${spinner#?}               # remove first character from $spinner$/;"	v
 temp	openAll.sh	/^	local temp=${spinner#?}               # remove first character from $spinner$/;"	v	language:Sh
 timeToSleep	myWatchNoBlink.sh	/^    timeToSleep=$2$/;"	v	language:Sh

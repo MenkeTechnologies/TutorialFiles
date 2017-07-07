@@ -31,7 +31,6 @@ export HOMEBREW_DBHOME='/usr/local/var'
 export HOMEBREW_DB_CONF='/usr/local/etc'
 export YARN_HOME="$HOME/.config/yarn"
 export NODE_PATH="/usr/local/lib/node_modules:$YARN_HOME/global/node_modules"
-export IP="http://98.209.117.32"
 eval `perl -I ~/perl5/lib/perl5 -Mlocal::lib`
 export MANPATH=$HOME/perl5/man:$MANPATH
 export HISTSIZE=50000

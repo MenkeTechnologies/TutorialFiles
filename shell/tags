@@ -61,6 +61,7 @@ ORIGIN	gitgo.sh	/^    local ORIGIN="$(git remote -v | awk '{print $1}' | tail -1
 PASSES	secureDelete.sh	/^PASSES=7         #  Number of file-shredding passes.$/;"	v	language:Sh
 PULL_URL	gitgo.sh	/^        local PULL_URL="$(git remote -v | awk '{print $2}' | tail -1 | tr -d ' ')"$/;"	v
 RED	redText.sh	/^RED='\\e[31;1m'$/;"	v
+REPO	customTerminalInstaller/.shell_aliases_functions.sh	/^        REPO="$1"$/;"	v
 REPO_NAME	gitgo.sh	/^        local REPO_NAME="$(git remote -v | awk '{print $2}' | tail -1 | tr -d ' ')"$/;"	v
 REPO_NAME_TO_CREATE	gitgo.sh	/^        local REPO_NAME_TO_CREATE="$1"$/;"	v
 RESET	blueText.sh	/^RESET='\\e[0m'$/;"	v	language:Sh
@@ -83,18 +84,25 @@ a	test.sh	/^a=1 b=$((2+5))$/;"	v
 addContents	shebangChanger.sh	/^addContents(){$/;"	f
 addHeader	createTextFile.sh	/^addHeader(){$/;"	f
 addHeader	templater.sh	/^addHeader(){$/;"	f
+animate	customTerminalInstaller/.shell_aliases_functions.sh	/^animate(){$/;"	f
 arr	listAllCommands.sh	/^arr=()$/;"	v	language:Sh
 arr	picture_finder.sh	/^local arr=(  '|' '\\' '-' '\/' )$/;"	v	language:Sh
 arr	secureDelete.sh	/^    local arr=(  '|' '\\' '-' '\/' )$/;"	v	language:Sh
 arr	sortedArrayCounter.sh	/^arr=()$/;"	v	language:Sh
 arrayOfPI	updater.sh	/^arrayOfPI=(r r2)$/;"	v	language:Sh
+blocksToSize	customTerminalInstaller/.shell_aliases_functions.sh	/^blocksToSize(){$/;"	f
+bold	customTerminalInstaller/.shell_aliases_functions.sh	/^bold=$(tput bold || tput md)$/;"	v
 boldAndUnderlinedPrint	tutorialConfigUpdater.sh	/^boldAndUnderlinedPrint(){$/;"	f
+bytes	customTerminalInstaller/.shell_aliases_functions.sh	/^    local bytes=$(( input * 512 ))$/;"	v
 c	test.sh	/^c=$a+$b d=$(($a+$b))$/;"	v
+cd	customTerminalInstaller/.shell_aliases_functions.sh	/^    cd(){$/;"	f
 chars	batchRename.sh	/^    local chars=1 # number of characters to display$/;"	v
 chars	openAll.sh	/^local chars=1 # number of characters to display$/;"	v	language:Sh
 checkForExistence	batchRename.sh	/^checkForExistence(){$/;"	f
+clearList	customTerminalInstaller/.shell_aliases_functions.sh	/^clearList () {$/;"	f
 clearline	batchRename.sh	/^    local clearline="\\e[K" # clear to end of line (ANSI terminal)$/;"	v
 clearline	openAll.sh	/^local clearline="\\e[K" # clear to end of line (ANSI terminal)$/;"	v	language:Sh
+color2	customTerminalInstaller/.shell_aliases_functions.sh	/^    color2(){$/;"	f
 cols	animation	/^cols=`tput cols`$/;"	v
 cols	picture_finder.sh	/^cols=`tput cols`$/;"	v	language:Sh
 command	runner.sh	/^        command="vim -i NONE -V1 -Nes -c 'so""$fileToBeExecuted""' -c'echo""|q!' 2>&1 | tail +4"$/;"	v
@@ -109,12 +117,15 @@ concat	myWatchNoBlinkColorized.sh	/^	    	concat="$(java parser $LINE)"$/;"	v	la
 contents	duplicateLineDeleter.sh	/^	contents=$(cat -s "$file")$/;"	v	language:Sh
 convertFiles	batchRename.sh	/^convertFiles(){$/;"	f
 count	animation	/^count=$topline$/;"	v
+createGIF	customTerminalInstaller/.shell_aliases_functions.sh	/^    createGIF(){$/;"	f
 createTemplate	templater.sh	/^createTemplate(){$/;"	f
 createTheFile	createScriptButDontOpenSublime.sh	/^createTheFile(){$/;"	f
 createTheFile	createTextFile.sh	/^createTheFile(){$/;"	f
+db	customTerminalInstaller/.shell_aliases_functions.sh	/^db(){$/;"	f
 delay	batchRename.sh	/^    local delay=.1 # time in seconds between characters$/;"	v
 delay	openAll.sh	/^local delay=.1 # time in seconds between characters$/;"	v	language:Sh
 delim	batchRename.sh	/^delim=_$/;"	v
+dependencies_ary	customTerminalInstaller/install.sh	/^dependencies_ary=(vim tmux git wget lolcat cmatrix htop cmake glances bpython python-dev colortail screenfetch libpcap-dev ncurses-dev iftop htop figlet silversearcher-ag zsh)$/;"	v
 destinationFile	picture_finder.sh	/^	destinationFile=$destinationDirectory\/${picture##*\/}$/;"	v	language:Sh
 dir	oldCounter.sh	/^	dir=`echo $PATH | cut -d: -f$i`$/;"	v	language:Sh
 dirNum	oldCounter.sh	/^dirNum=`expr $(echo $PATH | tr -cd : | wc -c) + 1`$/;"	v	language:Sh
@@ -125,6 +136,8 @@ displayProgress	secureDelete.sh	/^displayProgress(){$/;"	f	language:Sh
 displayProgressIndicator	openAll.sh	/^displayProgressIndicator(){$/;"	f	language:Sh
 dontSummarizeSizes	directoryContentsSize.sh	/^dontSummarizeSizes(){$/;"	f	language:Sh
 ending	picture_finder.sh	/^	ending=${destinationFile##*.}$/;"	v	language:Sh
+escapeRemove	customTerminalInstaller/.shell_aliases_functions.sh	/^    escapeRemove(){$/;"	f
+execpy	customTerminalInstaller/.shell_aliases_functions.sh	/^    execpy(){$/;"	f
 executableProgram	shebangChanger.sh	/^executableProgram=$1$/;"	v
 executableScriptsProcessing	createScriptButDontOpenSublime.sh	/^executableScriptsProcessing(){$/;"	f
 executableScriptsProcessing	createTextFile.sh	/^executableScriptsProcessing(){$/;"	f
@@ -132,6 +145,7 @@ executableScriptsProcessing	runner.sh	/^executableScriptsProcessing(){$/;"	f
 executableScriptsProcessing	templater.sh	/^executableScriptsProcessing(){$/;"	f
 executeFileFirstArgIsCommand	runner.sh	/^executeFileFirstArgIsCommand(){$/;"	f
 executeTheFile	runner.sh	/^executeTheFile(){$/;"	f
+f	customTerminalInstaller/.shell_aliases_functions.sh	/^    f(){$/;"	f
 file	openAll.sh	/^	file="$(echo $file | tr '[:upper:]' '[:lower:]')"$/;"	v	language:Sh
 file	secureDelete.sh	/^    file="$i"$/;"	v	language:Sh
 fileName	watchServiceFSWatchRustCompile.sh	/^	fileName=`basename $event`$/;"	v	language:Sh
@@ -156,10 +170,15 @@ found	shebangChanger.sh	/^            found=true$/;"	v
 found	shebangChanger.sh	/^    found=false$/;"	v
 getInitialCommit	gitgo.sh	/^getInitialCommit(){$/;"	f
 getRemoteDetails	gitgo.sh	/^getRemoteDetails(){$/;"	f
+gitCommitAndPush	customTerminalInstaller/.shell_aliases_functions.sh	/^    gitCommitAndPush(){$/;"	f
 gitPull	gitgo.sh	/^gitPull(){$/;"	f
 gitPush	gitgo.sh	/^gitPush(){$/;"	f
 host	rsyncr.sh	/^host="r"$/;"	v	language:Sh
+hub_create	customTerminalInstaller/.shell_aliases_functions.sh	/^    hub_create(){$/;"	f
+hub_delete	customTerminalInstaller/.shell_aliases_functions.sh	/^    hub_delete(){$/;"	f
+humanReadable	customTerminalInstaller/.shell_aliases_functions.sh	/^humanReadable(){$/;"	f
 initializeGitDirectory	gitgo.sh	/^initializeGitDirectory(){$/;"	f
+installPathogenVimPlugin	customTerminalInstaller/install.sh	/^installPathogenVimPlugin(){$/;"	f
 killCursor	batchRename.sh	/^killCursor(){$/;"	f
 killCursor	openAll.sh	/^killCursor(){$/;"	f	language:Sh
 killCursor	picture_finder.sh	/^killCursor(){$/;"	f	language:Sh
@@ -169,11 +188,15 @@ lcline	openAll.sh	/^	lcline="$(echo $line | tr '[:upper:]' '[:lower:]')"$/;"	v	l
 lineCounter	shebangChanger.sh	/^    lineCounter=1$/;"	v
 local	rsyncr.sh	/^local="$1"$/;"	v	language:Sh
 messageToSpeak	say.sh	/^messageToSpeak=""$/;"	v
+mp3	customTerminalInstaller/.shell_aliases_functions.sh	/^    mp3(){$/;"	f
+mp4	customTerminalInstaller/.shell_aliases_functions.sh	/^    mp4(){$/;"	f
+msg	customTerminalInstaller/.shell_aliases_functions.sh	/^    msg="$2"$/;"	v
 newfile	batchRename.sh	/^        local newfile=$first$number.$endFileEnding$/;"	v
 newfile	createScriptButDontOpenSublime.sh	/^	newfile="$newfile".txt$/;"	v
 newfile	createScriptButDontOpenSublime.sh	/^newfile="$1"$/;"	v
 newfile	createTextFile.sh	/^    newfile="$newfile".txt$/;"	v
 newfile	createTextFile.sh	/^newfile="$1"$/;"	v
+nn	customTerminalInstaller/.shell_aliases_functions.sh	/^nn(){$/;"	f
 number	batchRename.sh	/^        local number=$((10#$number))$/;"	v
 number	batchRename.sh	/^        local number=`echo ${last%%.*}`$/;"	v
 openTextEditor	createScriptButDontOpenSublime.sh	/^openTextEditor(){$/;"	f
@@ -183,8 +206,12 @@ optstring	gitgo.sh	/^optstring=p:hcl$/;"	v
 optstring	myWatchNoBlink.sh	/^optstring=bh$/;"	v	language:Sh
 optstring	myWatchNoBlinkColorized.sh	/^optstring=bh$/;"	v	language:Sh
 optstring	mywatch.sh	/^optstring=dh$/;"	v	language:Sh
+orig	customTerminalInstaller/.shell_aliases_functions.sh	/^        orig="$1"$/;"	v
 os	customTerminalInstaller/install.sh	/^os=`uname -s`$/;"	v
 os	test.py	/^import os$/;"	i
+out	customTerminalInstaller/.shell_aliases_functions.sh	/^        out="$(curl -u menketechnologies -X "DELETE" https:\/\/api.github.com\/repos\/menketechnologies\/"$REPO")"$/;"	v
+outFile	customTerminalInstaller/.shell_aliases_functions.sh	/^            outFile="$3"	$/;"	v
+outFile	customTerminalInstaller/.shell_aliases_functions.sh	/^        outFile=out.gif$/;"	v
 outdated	updater.sh	/^outdated=$(pip3 list --outdated | awk '{print $1}')$/;"	v	language:Sh
 output	figletRandomFont.sh	/^    output="$(echo $TEXT_TO_DISPLAY | figlet -f $font)"$/;"	v
 output	menkeTechRandoFont.sh	/^    output="$(echo $TEXT_TO_DISPLAY | figlet -f $font)"$/;"	v
@@ -195,6 +222,7 @@ perlOutdated	updater.sh	/^perlOutdated=$(cpan-outdated -p)$/;"	v	language:Sh
 pipe	readFIFO.sh	/^pipe=\/Users\/jacobmenke\/Desktop\/testpipe$/;"	v	language:Sh
 pipe	readFIFO.sh	/^pipe=\/tmp\/testpipe$/;"	v	language:Sh
 powerline_dir	customTerminalInstaller/install.sh	/^powerline_dir="$(pip show powerline-status | grep Location | awk '{print $2}')"$/;"	v
+prettyPrint	customTerminalInstaller/.shell_aliases_functions.sh	/^    prettyPrint(){$/;"	f
 prettyPrint	gitgo.sh	/^prettyPrint(){$/;"	f
 prettyPrint	textmessage.sh	/^prettyPrint () {$/;"	f
 prettyPrint	updater.sh	/^prettyPrint(){$/;"	f	language:Sh
@@ -206,17 +234,28 @@ progress_pid	picture_finder.sh	/^  progress_pid=$!$/;"	v	language:Sh
 progress_pid	secureDelete.sh	/^    progress_pid=$!$/;"	v	language:Sh
 prompt	batchRename.sh	/^    local prompt="press any key..." # user prompt$/;"	v
 prompt	openAll.sh	/^local prompt="press any key..." # user prompt$/;"	v	language:Sh
+pstreeMonitor	customTerminalInstaller/.shell_aliases_functions.sh	/^    pstreeMonitor(){$/;"	f
 randIndex	eyes.sh	/^    randIndex=$(($RANDOM % $rangePossibleIndices))$/;"	v
 randIndex	figletRandomFont.sh	/^    randIndex=$(($RANDOM % $rangePossibleIndices))$/;"	v
 randIndex	menkeTechRandoFont.sh	/^    randIndex=$(($RANDOM % $rangePossibleIndices))$/;"	v
 rangePossibleIndices	eyes.sh	/^rangePossibleIndices=${#ary[*]}$/;"	v
 rangePossibleIndices	figletRandomFont.sh	/^rangePossibleIndices=${#ary[*]}$/;"	v
 rangePossibleIndices	menkeTechRandoFont.sh	/^rangePossibleIndices=${#ary[*]}$/;"	v
+red	customTerminalInstaller/.shell_aliases_functions.sh	/^red=$(tput setaf 1)$/;"	v
 remote	rsyncr.sh	/^remote="$2"$/;"	v	language:Sh
+replace	customTerminalInstaller/.shell_aliases_functions.sh	/^        replace="$1"$/;"	v
+replacer	customTerminalInstaller/.shell_aliases_functions.sh	/^    replacer(){$/;"	f
+res	customTerminalInstaller/.shell_aliases_functions.sh	/^            res="$2"$/;"	v
+res	customTerminalInstaller/.shell_aliases_functions.sh	/^        res=600x400$/;"	v
+return2	customTerminalInstaller/.shell_aliases_functions.sh	/^    return2(){$/;"	f
 revarr	picture_finder.sh	/^local revarr=( '|' '\/' '-' '\\')$/;"	v	language:Sh
 revarr	secureDelete.sh	/^    local revarr=( '|' '\/' '-' '\\')$/;"	v	language:Sh
 robot	animation	/^robot="`cat << "EOF"                               $/;"	v
 rows	animation	/^rows=`tput lines`$/;"	v
+s	customTerminalInstaller/.shell_aliases_functions.sh	/^        s=substr(s,1,4)$/;"	v
+s	customTerminalInstaller/.shell_aliases_functions.sh	/^    s=" B   KiB MiB GiB TiB EiB PiB YiB ZiB"$/;"	v
+scnew	customTerminalInstaller/.shell_aliases_functions.sh	/^scnew(){$/;"	f
+search	customTerminalInstaller/.shell_aliases_functions.sh	/^    search(){$/;"	f
 showHidden	directoryContentsSize.sh	/^showHidden(){$/;"	f	language:Sh
 show_usage	test.pl	/^sub show_usage {$/;"	s
 sorted	sortedArrayCounter.sh	/^sorted=( $(sort -f <<<"${arr[*]}") )$/;"	v	language:Sh
@@ -229,11 +268,13 @@ startCursor	batchRename.sh	/^startCursor(){$/;"	f
 startCursor	openAll.sh	/^startCursor(){$/;"	f	language:Sh
 startCursor	picture_finder.sh	/^startCursor(){$/;"	f	language:Sh
 startCursor	secureDelete.sh	/^startCursor(){$/;"	f	language:Sh
+suc	customTerminalInstaller/.shell_aliases_functions.sh	/^suc(){$/;"	f
 suckers	test.py	/^def suckers():$/;"	f
 sum	listAllCommands.sh	/^sum=0$/;"	v	language:Sh
 sum	sortedArrayCounter.sh	/^sum=0$/;"	v	language:Sh
 summarizeSizes	directoryContentsSize.sh	/^summarizeSizes(){$/;"	f	language:Sh
 sys	test.py	/^import sys$/;"	i
+tac	customTerminalInstaller/.shell_aliases_functions.sh	/^    tac(){$/;"	f
 tail	shebangChanger.sh	/^        tail=$(cat "$file")$/;"	v
 tail	shebangChanger.sh	/^        tail=$(tail +$lineCounter "$file")$/;"	v
 temp	batchRename.sh	/^        local temp=${spinner#?}               # remove first character from $spinner$/;"	v
@@ -242,6 +283,7 @@ timeToSleep	myWatchNoBlink.sh	/^    timeToSleep=$2$/;"	v	language:Sh
 timeToSleep	myWatchNoBlink.sh	/^    timeToSleep=0.5$/;"	v	language:Sh
 timeToSleep	myWatchNoBlinkColorized.sh	/^    timeToSleep=$2$/;"	v	language:Sh
 timeToSleep	myWatchNoBlinkColorized.sh	/^    timeToSleep=0.5$/;"	v	language:Sh
+title	customTerminalInstaller/.shell_aliases_functions.sh	/^    title="$1"$/;"	v
 tmuxPowerlineDir	customTerminalInstaller/install.sh	/^tmuxPowerlineDir=$HOME\/.config\/powerline\/themes\/tmux$/;"	v
 topline	animation	/^topline=0$/;"	v
 total	oldCounter.sh	/^total=0$/;"	v	language:Sh
@@ -258,9 +300,11 @@ usage	myWatchNoBlinkColorized.sh	/^usage(){$/;"	f	language:Sh
 usage	mywatch.sh	/^usage(){$/;"	f	language:Sh
 usage	shebangChanger.sh	/^usage(){$/;"	f
 view	eyes.sh	/^    view=${ary[$randIndex]}$/;"	v
+vimPlugins	customTerminalInstaller/install.sh	/^vimPlugins=(VundleVim\/Vundle.vim.git https:\/\/github.com\/mileszs\/ack.vim.git https:\/\/github.com\/bkad\/CamelCaseMotion.git https:\/\/github.com\/sjl\/clam.vim.git https:\/\/github.com\/kien\/ctrlp.vim.git https:\/\/github.com\/Raimondi\/delimitMate https:\/\/github.com\/othree\/html5.vim.git https:\/\/github.com\/Shougo\/neobundle.vim.git https:\/\/github.com\/scrooloose\/nerdcommenter.git https:\/\/github.com\/scrooloose\/nerdtree https:\/\/github.com\/luochen1990\/rainbow https:\/\/github.com\/ervandew\/supertab https:\/\/github.com\/vim-syntastic\/syntastic https:\/\/github.com\/tomtom\/tlib_vim https:\/\/github.com\/vim-scripts\/ttags https:\/\/github.com\/SirVer\/ultisnips https:\/\/github.com\/mbbill\/undotree https:\/\/github.com\/tsukkee\/unite-tag https:\/\/github.com\/haya14busa\/vim-asterisk https:\/\/github.com\/vim-scripts\/vim-auto-save https:\/\/github.com\/panozzaj\/vim-autocorrect https:\/\/github.com\/craigemery\/vim-autotag https:\/\/github.com\/MattesGroeger\/vim-bookmarks https:\/\/github.com\/ryanoasis\/vim-devicons https:\/\/github.com\/tpope\/vim-dispatch )$/;"	v
 watchCommand	myWatchNoBlink.sh	/^watchCommand() {$/;"	f	language:Sh
 watchCommand	myWatchNoBlinkColorized.sh	/^watchCommand() {$/;"	f	language:Sh
 watchingFile	watchServiceFSWatchRustCompile.sh	/^	watchingFile=`basename $2`$/;"	v	language:Sh
 websiteDir	tutorialConfigUpdater.sh	/^websiteDir="$HOME\/WebstormProjects\/PersonalWebsite"$/;"	v
 x	mywatch.sh	/^    x=$(eval "$1")$/;"	v	language:Sh
 x	test.py	/^x=5$/;"	v
+xf	customTerminalInstaller/.shell_aliases_functions.sh	/^        xf=(s==" B  ")?"%5d   ":"%8.2f"$/;"	v

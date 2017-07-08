@@ -162,7 +162,7 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 ZSH_AUTOSUGGEST_STRATEGY=match_prev_cmd
 
-source '$HOME/.oh-my-zsh/lib/key-bindings.zsh'
+source "$HOME/.oh-my-zsh/lib/key-bindings.zsh"
 
 bindkey -v
 bindkey -M viins '^r' history-incremental-search-backward

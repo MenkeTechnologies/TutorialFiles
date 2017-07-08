@@ -14,7 +14,7 @@ for file; do
         if [[ $? == 0 ]]; then
             user="$(echo $line | awk -F'/' '{print $4}')"
             repo="$(echo $line | awk -F'/' '{print $5}' | awk '{print $1}')"
-            echo "$user/${repo%%.*}"
+            echo "$user/${repo%%.git*}"
         fi
     }
 fi

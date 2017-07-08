@@ -187,6 +187,7 @@ killCursor	picture_finder.sh	/^killCursor(){$/;"	f	language:Sh
 killCursor	secureDelete.sh	/^killCursor(){$/;"	f	language:Sh
 last	batchRename.sh	/^        local last=`echo ${file##*_}`$/;"	v
 lcline	openAll.sh	/^	lcline="$(echo $line | tr '[:upper:]' '[:lower:]')"$/;"	v	language:Sh
+line	gitRemoteRepoInformation.sh	/^        line="$(git remote -v 2>\/dev\/null)"$/;"	v
 lineCounter	shebangChanger.sh	/^    lineCounter=1$/;"	v
 local	rsyncr.sh	/^local="$1"$/;"	v	language:Sh
 messageToSpeak	say.sh	/^messageToSpeak=""$/;"	v
@@ -247,6 +248,7 @@ red	customTerminalInstaller/.shell_aliases_functions.sh	/^red=$(tput setaf 1)$/;
 remote	rsyncr.sh	/^remote="$2"$/;"	v	language:Sh
 replace	customTerminalInstaller/.shell_aliases_functions.sh	/^        replace="$1"$/;"	v
 replacer	customTerminalInstaller/.shell_aliases_functions.sh	/^    replacer(){$/;"	f
+repo	gitRemoteRepoInformation.sh	/^            repo="$(echo $line | awk -F'\/' '{print $5}')"$/;"	v
 res	customTerminalInstaller/.shell_aliases_functions.sh	/^            res="$2"$/;"	v
 res	customTerminalInstaller/.shell_aliases_functions.sh	/^        res=600x400$/;"	v
 return2	customTerminalInstaller/.shell_aliases_functions.sh	/^    return2(){$/;"	f
@@ -301,6 +303,7 @@ usage	myWatchNoBlink.sh	/^usage(){$/;"	f	language:Sh
 usage	myWatchNoBlinkColorized.sh	/^usage(){$/;"	f	language:Sh
 usage	mywatch.sh	/^usage(){$/;"	f	language:Sh
 usage	shebangChanger.sh	/^usage(){$/;"	f
+user	gitRemoteRepoInformation.sh	/^            user="$(echo $line | awk -F'\/' '{print $4}')"$/;"	v
 view	eyes.sh	/^    view=${ary[$randIndex]}$/;"	v
 watchCommand	myWatchNoBlink.sh	/^watchCommand() {$/;"	f	language:Sh
 watchCommand	myWatchNoBlinkColorized.sh	/^watchCommand() {$/;"	f	language:Sh

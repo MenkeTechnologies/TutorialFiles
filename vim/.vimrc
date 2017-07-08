@@ -7,19 +7,19 @@ endif
 
 
 """" Required:
-set runtimepath+=~/.vim/bundle/neobundle.vim/
+"set runtimepath+=~/.vim/bundle/neobundle.vim/
 
 " Required:
-call neobundle#begin(expand('~/.vim/bundle'))
+"call neobundle#begin(expand('~/.vim/bundle'))
 
 " Let NeoBundle manage NeoBundle
 " Required:
-NeoBundleFetch 'Shougo/neobundle.vim'
+"NeoBundleFetch 'Shougo/neobundle.vim'
 
 "NeoBundle 'tiagofumo/vim-nerdtree-syntax-highlight'
 
 " Required:
-call neobundle#end()
+"call neobundle#end()
 
 " Required:
 filetype plugin indent on
@@ -45,7 +45,6 @@ set statusline+=\
 set statusline+=Col:\ %c
 set laststatus=2
 set wrapscan
-set laststatus=2
 set t_Co=256
 set backspace=2
 set encoding=utf8

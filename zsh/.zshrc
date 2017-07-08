@@ -331,7 +331,7 @@ alias -g L='|less'
 alias -g nul="> /dev/null 2>&1"
 
 #allow for awesome z command
-. ~/z.sh
+source "$HOME/z.sh"
 #
 
 #export ZPLUG_HOME=/usr/local/opt/zplug

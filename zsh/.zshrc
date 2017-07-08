@@ -12,6 +12,9 @@ ZSH_THEME="rkj-repos"
 #if this is a mac
 if [[ "$(uname)" == "Darwin" ]]; then
     source "$HOME/.powerlevel9kconfig.sh"
+else
+    RPROMPT="%{%B%}`tty` `echo $$`"
+
 fi
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -286,6 +289,7 @@ source "$HOME/z.sh"
 ## Then, source plugins and add commands to $PATH
 #zplug load
 #
+
 
 export GOPATH="$HOME/go"
 if [ -f $GOPATH/src/github.com/zquestz/s/autocomplete/s-completion.bash ]; then

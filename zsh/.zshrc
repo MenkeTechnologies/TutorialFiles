@@ -9,8 +9,9 @@ export ZSH=$HOME/.oh-my-zsh
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="rkj-repos"
 
+#if this is a mac
 if [[ "$(uname)" == "Darwin" ]]; then
-source "$HOME/.powerlevel9kconfig.sh"
+    source "$HOME/.powerlevel9kconfig.sh"
 fi
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"

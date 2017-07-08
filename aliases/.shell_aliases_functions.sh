@@ -23,23 +23,25 @@ export HOMEBREW_HOME_FORMULAE="/usr/local/Homebrew/Library/taps/homebrew/homebre
 #{{{                           MARK:HOMES
 #**********************************************************************
 export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home"
-export GROOVY_HOME="/usr/local/Cellar/groovy/2.4.11"
-export SCALA_HOME="/usr/local/Cellar/scala/2.12.2"
-export HOMEBREW_HOME='/usr/local/Cellar'
-export PERL_HOME='$HOMEBREW_HOME/perl/5.24.1/'
-export HOMEBREW_DBHOME='/usr/local/var'
-export HOMEBREW_DB_CONF='/usr/local/etc'
+if [[ "$(uname)" == Darwin ]]; then
+    export GROOVY_HOME="/usr/local/Cellar/groovy/2.4.11"
+    export SCALA_HOME="/usr/local/Cellar/scala/2.12.2"
+    export HOMEBREW_HOME='/usr/local/Cellar'
+    export PERL_HOME='$HOMEBREW_HOME/perl/5.24.1/'
+    export HOMEBREW_DBHOME='/usr/local/var'
+    export HOMEBREW_DB_CONF='/usr/local/etc'
+    eval `perl -I ~/perl5/lib/perl5 -Mlocal::lib`
+    export MANPATH=$HOME/perl5/man:$MANPATH
+    export TUTORIAL_FILES="$HOME/Documents/tutorialsRepo"
+fi
 export YARN_HOME="$HOME/.config/yarn"
 export NODE_PATH="/usr/local/lib/node_modules:$YARN_HOME/global/node_modules"
-eval `perl -I ~/perl5/lib/perl5 -Mlocal::lib`
-export MANPATH=$HOME/perl5/man:$MANPATH
 export HISTSIZE=50000
 export EDITOR='vim'
 export HISTTIMEFORMAT=' %F %T _ '
 export BLUE="\e[37;44m"
 export RED="\e[31m"
 export RESET="\e[0m"
-export TUTORIAL_FILES="$HOME/Documents/tutorialsRepo"
 export LOGFILE="$HOME/updaterlog.txt"
 #}}}
 
@@ -62,11 +64,14 @@ alias grep="grep --color=auto"
 alias egrep="egrep --color=always"
 alias tree='tree -afC'
 #Darwin specific aliases
-alias spd="du -csh {.[^.]*,..?*} * 2> /dev/null | gsort -h"
-alias cpu="top -o cpu"
-alias mem="top -o mem"
-alias tip="top -o +command"
-alias nd="defaults write com.apple.dock autohide-delay -float 100 && defaults write com.apple.dock tilesize -int 1 && killall Dock"
+if [[ "$(uname)" == "Darwin" ]]; then
+    #statements
+    alias spd="du -csh {.[^.]*,..?*} * 2> /dev/null | gsort -h"
+    alias cpu="top -o cpu"
+    alias mem="top -o mem"
+    alias tip="top -o +command"
+    alias nd="defaults write com.apple.dock autohide-delay -float 100 && defaults write com.apple.dock tilesize -int 1 && killall Dock"
+fi
 alias cf2="sed 's/.*/_\U\l&_/' | boldText.sh | blue"
 alias pkill="pkill -iIl"
 alias tclsh="rlwrap tclsh"

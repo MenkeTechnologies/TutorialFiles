@@ -4,6 +4,14 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
+--enable-gui	customTerminalInstaller/install.sh	/^            --enable-gui=gtk2 --enable-cscope --prefix=\/usr$/;"	v
+--enable-luainterp	customTerminalInstaller/install.sh	/^            --enable-luainterp=yes \\$/;"	v
+--enable-perlinterp	customTerminalInstaller/install.sh	/^            --enable-perlinterp=yes \\$/;"	v
+--enable-python3interp	customTerminalInstaller/install.sh	/^            --enable-python3interp=yes \\$/;"	v
+--enable-pythoninterp	customTerminalInstaller/install.sh	/^            --enable-pythoninterp=yes \\$/;"	v
+--enable-rubyinterp	customTerminalInstaller/install.sh	/^            --enable-rubyinterp=yes \\$/;"	v
+--with-python-config-dir	customTerminalInstaller/install.sh	/^            --with-python-config-dir=\/usr\/lib\/python2.7\/config \\$/;"	v
+--with-python3-config-dir	customTerminalInstaller/install.sh	/^            --with-python3-config-dir=\/usr\/lib\/python3.5\/config \\$/;"	v
 ADDRESS	uploadWebDS.sh	/^ADDRESS="jacobmenke@98.209.117.32:\/var\/services\/web"$/;"	v	language:Sh
 ADDRESS	uploadWebPi.sh	/^ADDRESS="pi@$IP:\/var\/www\/html"$/;"	v	language:Sh
 BACKUP_DIR	backupBashConfig.sh	/^BACKUP_DIR="$SCRIPTS_DIR\/rcBackups"$/;"	v

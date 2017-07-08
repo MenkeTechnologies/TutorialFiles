@@ -181,7 +181,11 @@ db(){
 }
 clearList () {
     clear
-    ls -iFlhAO
+    if [[ "$(uname)" == "Darwin" ]]; then
+        ls -iFlhAO
+    else
+        ls -iFlhA
+    fi
 }
 animate(){
     bash $SCRIPTS/animation.sh

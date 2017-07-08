@@ -180,7 +180,7 @@ humanReadable	customTerminalInstaller/.shell_aliases_functions.sh	/^humanReadabl
 initializeGitDirectory	gitgo.sh	/^initializeGitDirectory(){$/;"	f
 installOhMyZshPlugin	customTerminalInstaller/zsh.sh	/^installOhMyZshPlugin(){$/;"	f
 installOhMyZshPlugin	customTerminalInstaller/zsh_plugins_install.sh	/^installOhMyZshPlugin(){$/;"	f
-installPathogenVimPlugin	customTerminalInstaller/install.sh	/^installPathogenVimPlugin(){$/;"	f
+installVimPlugin	customTerminalInstaller/vim_plugins_install.sh	/^installVimPlugin(){$/;"	f
 killCursor	batchRename.sh	/^killCursor(){$/;"	f
 killCursor	openAll.sh	/^killCursor(){$/;"	f	language:Sh
 killCursor	picture_finder.sh	/^killCursor(){$/;"	f	language:Sh
@@ -302,7 +302,6 @@ usage	myWatchNoBlinkColorized.sh	/^usage(){$/;"	f	language:Sh
 usage	mywatch.sh	/^usage(){$/;"	f	language:Sh
 usage	shebangChanger.sh	/^usage(){$/;"	f
 view	eyes.sh	/^    view=${ary[$randIndex]}$/;"	v
-vimPlugins	customTerminalInstaller/install.sh	/^vimPlugins=(VundleVim\/Vundle.vim.git https:\/\/github.com\/mileszs\/ack.vim.git https:\/\/github.com\/bkad\/CamelCaseMotion.git https:\/\/github.com\/sjl\/clam.vim.git https:\/\/github.com\/kien\/ctrlp.vim.git https:\/\/github.com\/Raimondi\/delimitMate https:\/\/github.com\/othree\/html5.vim.git https:\/\/github.com\/Shougo\/neobundle.vim.git https:\/\/github.com\/scrooloose\/nerdcommenter.git https:\/\/github.com\/scrooloose\/nerdtree https:\/\/github.com\/luochen1990\/rainbow https:\/\/github.com\/ervandew\/supertab https:\/\/github.com\/vim-syntastic\/syntastic https:\/\/github.com\/tomtom\/tlib_vim https:\/\/github.com\/vim-scripts\/ttags https:\/\/github.com\/SirVer\/ultisnips https:\/\/github.com\/mbbill\/undotree https:\/\/github.com\/tsukkee\/unite-tag https:\/\/github.com\/haya14busa\/vim-asterisk https:\/\/github.com\/vim-scripts\/vim-auto-save https:\/\/github.com\/panozzaj\/vim-autocorrect https:\/\/github.com\/craigemery\/vim-autotag https:\/\/github.com\/MattesGroeger\/vim-bookmarks https:\/\/github.com\/ryanoasis\/vim-devicons https:\/\/github.com\/tpope\/vim-dispatch )$/;"	v
 watchCommand	myWatchNoBlink.sh	/^watchCommand() {$/;"	f	language:Sh
 watchCommand	myWatchNoBlinkColorized.sh	/^watchCommand() {$/;"	f	language:Sh
 watchingFile	watchServiceFSWatchRustCompile.sh	/^	watchingFile=`basename $2`$/;"	v	language:Sh

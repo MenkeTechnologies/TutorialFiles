@@ -178,6 +178,8 @@ hub_create	customTerminalInstaller/.shell_aliases_functions.sh	/^    hub_create(
 hub_delete	customTerminalInstaller/.shell_aliases_functions.sh	/^    hub_delete(){$/;"	f
 humanReadable	customTerminalInstaller/.shell_aliases_functions.sh	/^humanReadable(){$/;"	f
 initializeGitDirectory	gitgo.sh	/^initializeGitDirectory(){$/;"	f
+installOhMyZshPlugin	customTerminalInstaller/zsh.sh	/^installOhMyZshPlugin(){$/;"	f
+installOhMyZshPlugin	customTerminalInstaller/zsh_plugins_install.sh	/^installOhMyZshPlugin(){$/;"	f
 installPathogenVimPlugin	customTerminalInstaller/install.sh	/^installPathogenVimPlugin(){$/;"	f
 killCursor	batchRename.sh	/^killCursor(){$/;"	f
 killCursor	openAll.sh	/^killCursor(){$/;"	f	language:Sh

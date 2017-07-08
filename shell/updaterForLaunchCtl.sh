@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-bash /Users/jacobmenke/Documents/shellScripts/updater.sh > /Users/jacobmenke/updaterlog.txt 2>&1
+bash $HOME/Documents/shellScripts/updater.sh > $HOME/updaterlog.txt 2>&1

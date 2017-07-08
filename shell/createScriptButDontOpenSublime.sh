@@ -15,7 +15,7 @@ openTextEditor(){
 	# open -t "$newfile"
 	subl "$newfile"
 	#run python3 script with pyautogi commands for keyboard shortcuts
-	python3 /Users/jacobmenke/PycharmProjects/textEditorTwoColumns.py
+	python3 $HOME/PycharmProjects/textEditorTwoColumns.py
 }
 
 createTheFile(){

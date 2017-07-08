@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #created by JAKOBMENKE --> Sun Jan 22 22:10:48 EST 2017 
 
-HOME_DIR=/Users/jacobmenke
+HOME_DIR=$HOME
 SCRIPTS_DIR="$SCRIPTS"
 BACKUP_DIR="$SCRIPTS_DIR/rcBackups"
 

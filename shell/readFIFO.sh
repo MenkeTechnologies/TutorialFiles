@@ -2,7 +2,7 @@
 #created by JAKOBMENKE --> Sat May 13 17:54:21 EDT 2017 
 
 pipe=/tmp/testpipe
-pipe=/Users/jacobmenke/Desktop/testpipe
+pipe=$HOME/Desktop/testpipe
 trap "rm -f $pipe" EXIT
 
 if [[ ! -p $pipe ]]; then

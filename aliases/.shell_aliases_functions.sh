@@ -119,7 +119,6 @@ alias watchGit='bash $SCRIPTS/watchServiceFSWatchGit.sh'
 alias watchPiWeb='bash $SCRIPTS/watchServiceFSWatchPiWeb.sh'
 alias vi=vim
 alias v=vim
-alias git=hub
 alias cl=clear
 alias mkdir='mkdir -pv'
 #**********************************************************************

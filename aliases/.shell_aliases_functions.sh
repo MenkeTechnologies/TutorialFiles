@@ -22,8 +22,8 @@ export HOMEBREW_HOME_FORMULAE="/usr/local/Homebrew/Library/taps/homebrew/homebre
 
 #{{{                           MARK:HOMES
 #**********************************************************************
-export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home"
 if [[ "$(uname)" == Darwin ]]; then
+    export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home"
     export GROOVY_HOME="/usr/local/Cellar/groovy/2.4.11"
     export SCALA_HOME="/usr/local/Cellar/scala/2.12.2"
     export HOMEBREW_HOME='/usr/local/Cellar'
@@ -71,6 +71,10 @@ if [[ "$(uname)" == "Darwin" ]]; then
     alias mem="top -o mem"
     alias tip="top -o +command"
     alias nd="defaults write com.apple.dock autohide-delay -float 100 && defaults write com.apple.dock tilesize -int 1 && killall Dock"
+    alias back="nohup /System/Library/Frameworks/ScreenSaver.framework/Resources/ScreenSaverEngine.app/Contents/MacOS/ScreenSaverEngine -background > /dev/null &"
+    alias n="open /Volumes/homes/JAKENAS/softwareTutorials; exit"
+    alias c="cd /Volumes/JAKESD/wcc/cps; clearList"
+    alias emu="open /Volumes/JAKESD/EMU"
 fi
 alias cf2="sed 's/.*/_\U\l&_/' | boldText.sh | blue"
 alias pkill="pkill -iIl"
@@ -86,7 +90,6 @@ alias tm="python3 $PYSCRIPTS/tmux_starter.py"
 alias b="execpy blackBoard.py"
 alias m="execpy mapIt.py"
 alias a="execpy amazonSearch.py"
-#alias go="execpy googleSearch.py"
 alias shut="execpy shutdown.py"
 alias pb="execpy bills.py"
 alias u=" execpy udemy.py"
@@ -104,19 +107,14 @@ alias sy="bash $SCRIPTS/sync.sh"
 alias sf="bash $SCRIPTS/directoryContentsSize.sh"
 alias sc="cd $SCRIPTS; clearList"
 alias blue="source $SCRIPTS/blueText.sh"
-alias n="open /Volumes/homes/JAKENAS/softwareTutorials; exit"
 alias dl="cd $HOME/Downloads; clearList; open ."
-alias c="cd /Volumes/JAKESD/wcc/cps; clearList"
 alias o="open ."
 alias jobs="jobs -l"
-#alias who="who -uHTba | sed '$ d'"
-alias back="nohup /System/Library/Frameworks/ScreenSaver.framework/Resources/ScreenSaverEngine.app/Contents/MacOS/ScreenSaverEngine -background > /dev/null &"
 alias 8="bash updater.sh"
 alias sd="clear;ssh d "
 alias sftpd="sftp d:/homes/JAKENAS/music"
 alias sr="clear;ssh r"
 alias sr2="clear;ssh r2"
-alias emu="open /Volumes/JAKESD/EMU"
 alias sdroot="clear;ssh -p 7777 root@$IP"
 alias gitgo='$SCRIPTS/gitgo.sh'
 alias watchGit='bash $SCRIPTS/watchServiceFSWatchGit.sh'

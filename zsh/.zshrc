@@ -13,7 +13,7 @@ ZSH_THEME="rkj-repos"
 if [[ "$(uname)" == "Darwin" ]]; then
     source "$HOME/.powerlevel9kconfig.sh"
 else
-    RPROMPT="%{%B%}`tty` `echo $$`"
+    export RPROMPT="%{%B%}`tty` `echo $$`"
 
 fi
 # Uncomment the following line to use case-sensitive completion.

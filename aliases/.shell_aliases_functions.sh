@@ -295,7 +295,7 @@ humanReadable(){
     }
 
     pstreeMonitor(){
-        bash $SCRIPTS/myWatchNoBlink.sh 'pstree -g 2 -u jacobmenke | sed s/jacobmenke// | sed s@/.*/@@ | tail -75'
+        bash $SCRIPTS/myWatchNoBlink.sh "pstree -g 2 -u $USER | sed s/$USER// | sed s@/.*/@@ | tail -75"
 
     }
     return2(){
@@ -324,7 +324,7 @@ humanReadable(){
         fi
     }
     tac(){
-    sed '1!G;h;$!d' "$@"
+        sed '1!G;h;$!d' "$@"
     }
     #}}}***********************************************************
 

@@ -386,17 +386,11 @@ set pastetoggle=<ESC>p
 "{{{                    MARK:autocmd
 "**************************************************************
 
-
-function AbbrevRemover()
-endfunction
-
 autocmd filetype text set tags+=~/tags
-autocmd filetype * call AutoCorrect() | call AbbrevRemover()
+autocmd filetype * call AutoCorrect()
 "uncomment following if you want just want autocorrection in text and markdown files
 "autocmd filetype text call AutoCorrect()
 "autocmd filetype markdown call AutoCorrect()
-
-
 
 autocmd BufReadPre,FileReadPre *.[chy] set cindent
 autocmd BufRead * setlocal foldmethod=marker

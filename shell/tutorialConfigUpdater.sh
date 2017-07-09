@@ -20,7 +20,8 @@ boldAndUnderlinedPrint "Copying shell_aliases_functions"
 cp ~/.shell_aliases_functions.sh "$tutorialDir/aliases"
 
 boldAndUnderlinedPrint "Copying shellScripts"
-rm -rf "$tutorialDir"/shell/*.sh
+#clear out old scripts, dbl quotes escape asterisk
+rm -f "$tutorialDir/shell/"*.sh
 cp "$HOME/Documents/shellScripts/"*.sh "$tutorialDir/shell"
 
 boldAndUnderlinedPrint "Copying tags file"

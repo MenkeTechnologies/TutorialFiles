@@ -212,7 +212,6 @@ humanReadable(){
     }
     f(){
         cd "$1"
-        clearList
     }
     execpy(){
         python3 $PYSCRIPTS/"$1"

@@ -149,7 +149,10 @@ export PATH="$HOME/.rvm/bin:$PATH" # Add RVM to PATH for scripting
 #**************************************************************
 #}}}
 
-export PATH="$(yarn global bin):$PATH"
+which yarn
+if [[ $? == 0 ]]; then
+    export PATH="$(yarn global bin):$PATH"
+fi
 
 #{{{                    MARK:Shell functions
 #**************************************************************

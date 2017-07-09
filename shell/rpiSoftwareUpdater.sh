@@ -15,7 +15,7 @@ prettyPrint(){
 
 prettyPrint "Updating Pathogen Plugins"
 #update pathogen plugins
-for pluginRepo in ~/.vim/bundle/*; do
+for pluginRepo in $HOME/.vim/bundle/*; do
 	printf "%s: " "$(basename "$pluginRepo")"
 	git -C "$pluginRepo" pull
 done
@@ -25,14 +25,14 @@ prettyPrint "Updating OhMyZsh"
 
 prettyPrint "Updating OhMyZsh Plugins"
 
-for zshPlugin in ~/.oh-my-zsh/custom/plugins/*; do
+for zshPlugin in $HOME/.oh-my-zsh/custom/plugins/*; do
 	printf "%s: " "$(basename "$zshPlugin")"
 	git -C "$zshPlugin" pull
 done
 
 prettyPrint "Updating OhMyZsh Themes"
 
-for zshPlugin in ~/.oh-my-zsh/custom/themes/*; do
+for zshPlugin in $HOME/.oh-my-zsh/custom/themes/*; do
 	printf "%s: " "$(basename "$zshPlugin")"
 	git -C "$zshPlugin" pull
 done

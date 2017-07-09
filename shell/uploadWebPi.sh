@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-IP=98.209.117.32
+IP=$IP
 ADDRESS="pi@$IP:/var/www/html"
 
 echo -e "${BLUE}Uploading $* to $ADDRESS"

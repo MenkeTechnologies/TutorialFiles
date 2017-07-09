@@ -134,7 +134,7 @@ db	customTerminalInstaller/.shell_aliases_functions.sh	/^db(){$/;"	f
 delay	batchRename.sh	/^    local delay=.1 # time in seconds between characters$/;"	v
 delay	openAll.sh	/^local delay=.1 # time in seconds between characters$/;"	v	language:Sh
 delim	batchRename.sh	/^delim=_$/;"	v
-dependencies_ary	customTerminalInstaller/install.sh	/^dependencies_ary=(vim tmux git wget lolcat cmatrix htop cmake glances bpython python-dev colortail screenfetch \\$/;"	v
+dependencies_ary	customTerminalInstaller/install.sh	/^dependencies_ary=(vim tmux git wget lolcat cowsaonoboui2-dev \\$/;"	v
 destinationFile	picture_finder.sh	/^	destinationFile=$destinationDirectory\/${picture##*\/}$/;"	v	language:Sh
 dir	oldCounter.sh	/^	dir=`echo $PATH | cut -d: -f$i`$/;"	v	language:Sh
 dirNum	oldCounter.sh	/^dirNum=`expr $(echo $PATH | tr -cd : | wc -c) + 1`$/;"	v	language:Sh
@@ -232,8 +232,8 @@ output	watchServiceFSWatchRustCompile.sh	/^		output="$(rustc $2 2>&1)"$/;"	v	lan
 pass_count	secureDelete.sh	/^    pass_count=1$/;"	v	language:Sh
 path	shebangChanger.sh	/^path="#!\/usr\/bin\/env $executableProgram"$/;"	v
 perlOutdated	updater.sh	/^perlOutdated=$(cpan-outdated -p)$/;"	v
-pipe	readFIFO.sh	/^pipe=\/Users\/jacobmenke\/Desktop\/testpipe$/;"	v	language:Sh
-pipe	readFIFO.sh	/^pipe=\/tmp\/testpipe$/;"	v	language:Sh
+pipe	readFIFO.sh	/^pipe=$HOME\/Desktop\/testpipe$/;"	v
+pipe	readFIFO.sh	/^pipe=\/tmp\/testpipe$/;"	v
 powerline_dir	customTerminalInstaller/install.sh	/^powerline_dir="$(pip show powerline-status | grep Location | awk '{print $2}')"$/;"	v
 prettyPrint	customTerminalInstaller/.shell_aliases_functions.sh	/^    prettyPrint(){$/;"	f
 prettyPrint	gitgo.sh	/^prettyPrint(){$/;"	f

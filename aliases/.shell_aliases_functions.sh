@@ -9,15 +9,19 @@ export SCRIPTS="$HOME/Documents/shellScripts"
 export PYEXECUTABLES="$HOME/Documents/pythonScripts"
 export PYSCRIPTS="$HOME/PycharmProjects"
 export D="$HOME/Desktop"
-export WCC="/Volumes/JAKESD/wcc/cps"
 # Setting PATH for Python 3.5
 # The orginal version is saved in .profile.pysave
 unset PATH
 export PATH="$PATH:/usr/local/lib/python2.7/site-packages/powerline/scripts/"
 export PATH="$PYEXECUTABLES:$SCRIPTS/save-run:$HOME/.local/bin:$HOME/perl5/bin:Library/Frameworks/Python.framework/Versions/3.5/bin:$HOME/Documents/shellScripts:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Library/Developer/CommandLineTools/usr/bin:/usr/local/sbin:$PATH"
 export GITHUB_ACCOUNT='MenkeTechnologies'
-export HOMEBREW_HOME_FORMULAE="/usr/local/Homebrew/Library/taps/homebrew/homebrew-core/formula"
 
+if [[ "$(uname)" == Darwin ]]; then
+	export WCC="/Volumes/JAKESD/wcc/cps"
+    export HOMEBREW_HOME_FORMULAE="/usr/local/Homebrew/Library/taps/homebrew/homebrew-core/formula"
+else
+    export PATH="$PATH:/usr/games"
+fi
 #}}}***********************************************************
 
 #{{{                           MARK:HOMES

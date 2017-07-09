@@ -77,6 +77,7 @@ if [[ "$(uname)" == "Darwin" ]]; then
     alias emu="open /Volumes/JAKESD/EMU"
     alias pkill="pkill -iIl"
 else
+    #Linux
     alias apt="sudo apt-get install"
 fi
 alias cf2="sed 's/.*/_\U\l&_/' | boldText.sh | blue"

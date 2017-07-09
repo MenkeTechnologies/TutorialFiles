@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-ADDRESS="jacobmenke@98.209.117.32:/var/services/web"
+ADDRESS="jacobmenke@$IP:/var/services/web"
 
 echo -e "\033[44m\033[37mUploading $* to $ADDRESS"
 for i in "$@"; do

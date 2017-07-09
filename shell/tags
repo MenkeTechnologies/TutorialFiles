@@ -4,14 +4,6 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
---enable-gui	customTerminalInstaller/install.sh	/^            --enable-gui=gtk2 --enable-cscope --prefix=\/usr$/;"	v
---enable-luainterp	customTerminalInstaller/install.sh	/^            --enable-luainterp=yes \\$/;"	v
---enable-perlinterp	customTerminalInstaller/install.sh	/^            --enable-perlinterp=yes \\$/;"	v
---enable-python3interp	customTerminalInstaller/install.sh	/^            --enable-python3interp=yes \\$/;"	v
---enable-pythoninterp	customTerminalInstaller/install.sh	/^            --enable-pythoninterp=yes \\$/;"	v
---enable-rubyinterp	customTerminalInstaller/install.sh	/^            --enable-rubyinterp=yes \\$/;"	v
---with-python-config-dir	customTerminalInstaller/install.sh	/^            --with-python-config-dir=\/usr\/lib\/python2.7\/config \\$/;"	v
---with-python3-config-dir	customTerminalInstaller/install.sh	/^            --with-python3-config-dir=\/usr\/lib\/python3.5\/config \\$/;"	v
 ADDRESS	uploadWebDS.sh	/^ADDRESS="jacobmenke@98.209.117.32:\/var\/services\/web"$/;"	v	language:Sh
 ADDRESS	uploadWebPi.sh	/^ADDRESS="pi@$IP:\/var\/www\/html"$/;"	v	language:Sh
 BACKUP_DIR	backupBashConfig.sh	/^BACKUP_DIR="$SCRIPTS_DIR\/rcBackups"$/;"	v
@@ -137,7 +129,7 @@ db	customTerminalInstaller/.shell_aliases_functions.sh	/^db(){$/;"	f
 delay	batchRename.sh	/^    local delay=.1 # time in seconds between characters$/;"	v
 delay	openAll.sh	/^local delay=.1 # time in seconds between characters$/;"	v	language:Sh
 delim	batchRename.sh	/^delim=_$/;"	v
-dependencies_ary	customTerminalInstaller/install.sh	/^dependencies_ary=(vim tmux git wget lolcat cowsay cmatrix htop cmake glances bpython python-dev colortail screenfetch \\$/;"	v
+dependencies_ary	customTerminalInstaller/install.sh	/^dependencies_ary=(vim tmux git wget lolcat cowsay cmatrix htop cmake glances bpython python-dev \\$/;"	v
 destinationFile	picture_finder.sh	/^	destinationFile=$destinationDirectory\/${picture##*\/}$/;"	v	language:Sh
 dir	oldCounter.sh	/^	dir=`echo $PATH | cut -d: -f$i`$/;"	v	language:Sh
 dirNum	oldCounter.sh	/^dirNum=`expr $(echo $PATH | tr -cd : | wc -c) + 1`$/;"	v	language:Sh
@@ -306,7 +298,6 @@ timeToSleep	myWatchNoBlink.sh	/^    timeToSleep=0.5$/;"	v	language:Sh
 timeToSleep	myWatchNoBlinkColorized.sh	/^    timeToSleep=$2$/;"	v	language:Sh
 timeToSleep	myWatchNoBlinkColorized.sh	/^    timeToSleep=0.5$/;"	v	language:Sh
 title	customTerminalInstaller/.shell_aliases_functions.sh	/^    title="$1"$/;"	v
-tmuxPowerlineDir	customTerminalInstaller/install.sh	/^tmuxPowerlineDir=$HOME\/.config\/powerline\/themes\/tmux$/;"	v
 topline	animation	/^topline=0$/;"	v
 total	oldCounter.sh	/^total=0$/;"	v	language:Sh
 total	oldCounter.sh	/^total=`expr $(ls -F $1 | grep ".*[*@]" | wc -l) + $total`$/;"	v	language:Sh

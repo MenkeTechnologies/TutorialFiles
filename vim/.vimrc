@@ -400,7 +400,7 @@ autocmd filetype * call AutoCorrect() | call AbbrevRemover()
 
 autocmd BufReadPre,FileReadPre *.[chy] set cindent
 autocmd BufRead * setlocal foldmethod=marker
-"autocmd BufRead * normal zM
+autocmd BufRead * normal zR
 autocmd FileType java let b:dispatch = 'javac %'
 
 "diffing colors

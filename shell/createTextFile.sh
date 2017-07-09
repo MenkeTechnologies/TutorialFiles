@@ -1,4 +1,3 @@
-
 #!/usr/bin/env bash
 #created by JAKOBMENKE --> Fri Jan 20 16:24:16 EST 2017
 

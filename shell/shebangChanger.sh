@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-___           ___           ___           ___           ___     
 #     /\  \         /\__\         /\  \         /|  |         /\__\    
 #    |::\  \       /:/ _/_        \:\  \       |:|  |        /:/ _/_   
 #    |:|:\  \     /:/ /\__\        \:\  \      |:|  |       /:/ /\__\  
@@ -47,7 +46,7 @@ usage(){
     cat <<\endofmessage
     usage:
     script $1=executableProgram $*=files
-    endofmessage
+endofmessage
     printf "\e[0m"
 }
 

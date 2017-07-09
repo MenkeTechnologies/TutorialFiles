@@ -37,3 +37,6 @@ for zshPlugin in ~/.oh-my-zsh/custom/themes/*; do
 	git -C "$zshPlugin" pull
 done
 
+prettyPrint "Updating Vundle Plugins"
+vim -c VundleUpdate -c quitall
+

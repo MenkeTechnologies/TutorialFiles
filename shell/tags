@@ -237,6 +237,7 @@ pipe	readFIFO.sh	/^pipe=\/tmp\/testpipe$/;"	v	language:Sh
 powerline_dir	customTerminalInstaller/install.sh	/^powerline_dir="$(pip show powerline-status | grep Location | awk '{print $2}')"$/;"	v
 prettyPrint	customTerminalInstaller/.shell_aliases_functions.sh	/^    prettyPrint(){$/;"	f
 prettyPrint	gitgo.sh	/^prettyPrint(){$/;"	f
+prettyPrint	rpiSoftwareUpdater.sh	/^prettyPrint(){$/;"	f
 prettyPrint	textmessage.sh	/^prettyPrint () {$/;"	f
 prettyPrint	updater.sh	/^prettyPrint(){$/;"	f
 printD	banner.pl	/^sub printD{$/;"	s

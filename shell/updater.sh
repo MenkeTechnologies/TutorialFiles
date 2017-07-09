@@ -100,8 +100,8 @@ updatePI(){
     yes | sudo apt-get dist-upgrade
     yes | sudo apt-get autoremove
     yes | sudo apt-get upgrade
-    bash $HOME/Documents/shellScripts/rpiSoftwareUpdater.sh
     EOM
+    cat $SCRIPTS/rpiSoftwareUpdater.sh | ssh -t "$1"
 }
 
 arrayOfPI=(r r2)

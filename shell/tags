@@ -137,7 +137,7 @@ db	customTerminalInstaller/.shell_aliases_functions.sh	/^db(){$/;"	f
 delay	batchRename.sh	/^    local delay=.1 # time in seconds between characters$/;"	v
 delay	openAll.sh	/^local delay=.1 # time in seconds between characters$/;"	v	language:Sh
 delim	batchRename.sh	/^delim=_$/;"	v
-dependencies_ary	customTerminalInstaller/install.sh	/^dependencies_ary=(vim tmux git wget lolcat cowsaonoboui2-dev \\$/;"	v
+dependencies_ary	customTerminalInstaller/install.sh	/^dependencies_ary=(vim tmux git wget lolcat cowsay cmatrix htop cmake glances bpython python-dev colortail screenfetch \\$/;"	v
 destinationFile	picture_finder.sh	/^	destinationFile=$destinationDirectory\/${picture##*\/}$/;"	v	language:Sh
 dir	oldCounter.sh	/^	dir=`echo $PATH | cut -d: -f$i`$/;"	v	language:Sh
 dirNum	oldCounter.sh	/^dirNum=`expr $(echo $PATH | tr -cd : | wc -c) + 1`$/;"	v	language:Sh

@@ -31,7 +31,7 @@ let mapleader = ','
 set nocompatible              " be iMproved, required
 
 "for YouCompleteMe doc window to open at bottom
-set splitbelow
+set splitright
 set noswapfile
 set nowritebackup
 set ruler

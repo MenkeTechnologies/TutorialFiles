@@ -39,4 +39,3 @@ done
 
 prettyPrint "Updating Vundle Plugins"
 vim -c VundleUpdate -c quitall
-

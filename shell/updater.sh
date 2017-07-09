@@ -101,6 +101,7 @@ updatePI(){
     yes | sudo apt-get autoremove
     yes | sudo apt-get upgrade
     EOM
+    #here we will update the Pi's own software and vim plugins (not included in apt-get)
     cat $SCRIPTS/rpiSoftwareUpdater.sh | ssh -t "$1"
 }
 

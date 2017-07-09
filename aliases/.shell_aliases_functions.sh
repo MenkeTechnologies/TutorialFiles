@@ -76,6 +76,8 @@ if [[ "$(uname)" == "Darwin" ]]; then
     alias c="cd /Volumes/JAKESD/wcc/cps; clearList"
     alias emu="open /Volumes/JAKESD/EMU"
     alias pkill="pkill -iIl"
+else
+    alias apt="sudo apt-get install"
 fi
 alias cf2="sed 's/.*/_\U\l&_/' | boldText.sh | blue"
 alias tclsh="rlwrap tclsh"

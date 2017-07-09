@@ -54,6 +54,7 @@ export LOGFILE="$HOME/updaterlog.txt"
 #portable aliases
 alias ll="clearList"
 alias la="clearList"
+alias wh="which"
 alias l="ls -AFlhO"
 alias r="cd .."
 alias t="cd /"

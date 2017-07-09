@@ -7,6 +7,12 @@
 #####   Notes: 
 #}}}***********************************************************
 
+prettyPrint(){
+	printf "\e[1;4m"
+	printf "$1"
+	printf "\n\e[0m"
+}
+
 prettyPrint "Updating Pathogen Plugins"
 #update pathogen plugins
 for pluginRepo in ~/.vim/bundle/*; do

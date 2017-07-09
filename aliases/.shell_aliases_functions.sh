@@ -75,9 +75,9 @@ if [[ "$(uname)" == "Darwin" ]]; then
     alias n="open /Volumes/homes/JAKENAS/softwareTutorials; exit"
     alias c="cd /Volumes/JAKESD/wcc/cps; clearList"
     alias emu="open /Volumes/JAKESD/EMU"
+    alias pkill="pkill -iIl"
 fi
 alias cf2="sed 's/.*/_\U\l&_/' | boldText.sh | blue"
-alias pkill="pkill -iIl"
 alias tclsh="rlwrap tclsh"
 alias p="vim -S ~/.vim/sessions/aliases.vim + ~/.shell_aliases_functions.sh; source ~/.shell_aliases_functions.sh; bash $SCRIPTS/backupBashConfig.sh 2> /dev/null"
 alias zs="vim -S ~/.vim/sessions/zshrc.vim + ~/.zshrc; source ~/.zshrc"

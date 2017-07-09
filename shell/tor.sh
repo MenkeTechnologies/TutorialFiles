@@ -24,9 +24,6 @@ sudo networksetup -setsocksfirewallproxy "$INTERFACE" 127.0.0.1 9050 off
 sudo networksetup -setsocksfirewallproxystate "$INTERFACE" on
 
 echo "SOCKS proxy 127.0.0.1:9050 enabled."
-echo "Starting Tor...d"
+echo "Starting Tor..."
 tor
 
-
-
-displayProgress

@@ -91,7 +91,6 @@ TEXT_TO_DISPLAY	menkeTechRandoFont.sh	/^TEXT_TO_DISPLAY="Menke Technologies"$/;"
 TIME	mywatch.sh	/^    TIME="$2"$/;"	v	language:Sh
 TIME	mywatch.sh	/^    TIME=1$/;"	v	language:Sh
 URL	gitgo.sh	/^    local URL="https:\/\/github.com\/$GITHUB_ACCOUNT\/$REPO_NAME_TO_CREATE"$/;"	v
-a	test.sh	/^a=1 b=$((2+5))$/;"	v
 addContents	shebangChanger.sh	/^addContents(){$/;"	f
 addHeader	createTextFile.sh	/^addHeader(){$/;"	f
 addHeader	templater.sh	/^addHeader(){$/;"	f
@@ -105,7 +104,6 @@ blocksToSize	customTerminalInstaller/.shell_aliases_functions.sh	/^blocksToSize(
 bold	customTerminalInstaller/.shell_aliases_functions.sh	/^bold=$(tput bold || tput md)$/;"	v
 boldAndUnderlinedPrint	tutorialConfigUpdater.sh	/^boldAndUnderlinedPrint(){$/;"	f
 bytes	customTerminalInstaller/.shell_aliases_functions.sh	/^    local bytes=$(( input * 512 ))$/;"	v
-c	test.sh	/^c=$a+$b d=$(($a+$b))$/;"	v
 cd	customTerminalInstaller/.shell_aliases_functions.sh	/^    cd(){$/;"	f
 chars	batchRename.sh	/^    local chars=1 # number of characters to display$/;"	v
 chars	openAll.sh	/^local chars=1 # number of characters to display$/;"	v	language:Sh

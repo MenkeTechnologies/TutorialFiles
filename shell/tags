@@ -100,7 +100,7 @@ arr	listAllCommands.sh	/^arr=()$/;"	v	language:Sh
 arr	picture_finder.sh	/^local arr=(  '|' '\\' '-' '\/' )$/;"	v	language:Sh
 arr	secureDelete.sh	/^    local arr=(  '|' '\\' '-' '\/' )$/;"	v	language:Sh
 arr	sortedArrayCounter.sh	/^arr=()$/;"	v	language:Sh
-arrayOfPI	updater.sh	/^arrayOfPI=(r r2)$/;"	v	language:Sh
+arrayOfPI	updater.sh	/^arrayOfPI=(r r2)$/;"	v
 blocksToSize	customTerminalInstaller/.shell_aliases_functions.sh	/^blocksToSize(){$/;"	f
 bold	customTerminalInstaller/.shell_aliases_functions.sh	/^bold=$(tput bold || tput md)$/;"	v
 boldAndUnderlinedPrint	tutorialConfigUpdater.sh	/^boldAndUnderlinedPrint(){$/;"	f
@@ -227,20 +227,20 @@ os	test.py	/^import os$/;"	i
 out	customTerminalInstaller/.shell_aliases_functions.sh	/^        out="$(curl -u menketechnologies -X "DELETE" https:\/\/api.github.com\/repos\/menketechnologies\/"$REPO")"$/;"	v
 outFile	customTerminalInstaller/.shell_aliases_functions.sh	/^            outFile="$3"	$/;"	v
 outFile	customTerminalInstaller/.shell_aliases_functions.sh	/^        outFile=out.gif$/;"	v
-outdated	updater.sh	/^outdated=$(pip3 list --outdated | awk '{print $1}')$/;"	v	language:Sh
+outdated	updater.sh	/^outdated=$(pip3 list --outdated | awk '{print $1}')$/;"	v
 output	figletRandomFont.sh	/^    output="$(echo $TEXT_TO_DISPLAY | figlet -f $font)"$/;"	v
 output	menkeTechRandoFont.sh	/^    output="$(echo $TEXT_TO_DISPLAY | figlet -f $font)"$/;"	v
 output	watchServiceFSWatchRustCompile.sh	/^		output="$(rustc $2 2>&1)"$/;"	v	language:Sh
 pass_count	secureDelete.sh	/^    pass_count=1$/;"	v	language:Sh
 path	shebangChanger.sh	/^path="#!\/usr\/bin\/env $executableProgram"$/;"	v
-perlOutdated	updater.sh	/^perlOutdated=$(cpan-outdated -p)$/;"	v	language:Sh
+perlOutdated	updater.sh	/^perlOutdated=$(cpan-outdated -p)$/;"	v
 pipe	readFIFO.sh	/^pipe=\/Users\/jacobmenke\/Desktop\/testpipe$/;"	v	language:Sh
 pipe	readFIFO.sh	/^pipe=\/tmp\/testpipe$/;"	v	language:Sh
 powerline_dir	customTerminalInstaller/install.sh	/^powerline_dir="$(pip show powerline-status | grep Location | awk '{print $2}')"$/;"	v
 prettyPrint	customTerminalInstaller/.shell_aliases_functions.sh	/^    prettyPrint(){$/;"	f
 prettyPrint	gitgo.sh	/^prettyPrint(){$/;"	f
 prettyPrint	textmessage.sh	/^prettyPrint () {$/;"	f
-prettyPrint	updater.sh	/^prettyPrint(){$/;"	f	language:Sh
+prettyPrint	updater.sh	/^prettyPrint(){$/;"	f
 printD	banner.pl	/^sub printD{$/;"	s
 printDate	banner.pl	/^sub printDate{$/;"	s
 progress_pid	batchRename.sh	/^    progress_pid=$!$/;"	v
@@ -307,7 +307,7 @@ total	oldCounter.sh	/^total=`expr $(ls -F $1 | grep ".*[*@]" | wc -l) + $total`$
 transferFile	transfer.sh	/^transferFile="$1"$/;"	v	language:Sh
 tutorialDir	tutorialConfigUpdater.sh	/^tutorialDir="$HOME\/Documents\/tutorialsRepo"$/;"	v
 update	customTerminalInstaller/install.sh	/^update (){$/;"	f
-updatePI	updater.sh	/^updatePI(){$/;"	f	language:Sh
+updatePI	updater.sh	/^updatePI(){$/;"	f
 usage	directoryContentsSize.sh	/^usage(){$/;"	f	language:Sh
 usage	duplicateLineDeleter.sh	/^usage(){$/;"	f	language:Sh
 usage	gitgo.sh	/^usage(){$/;"	f

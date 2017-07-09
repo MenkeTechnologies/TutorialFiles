@@ -89,9 +89,6 @@ for zshPlugin in ~/.oh-my-zsh/custom/themes/*; do
 	git -C "$zshPlugin" pull
 done
 
-prettyPrint "Updating Vundle Plugins"
-vim -c VundleUpdate -c quitall
-
 #first argument is user@host and port number configured in .ssh/config
 updatePI(){
 	#-t to force pseudoterminal allocation for interactive programs on remote host
@@ -107,6 +104,9 @@ arrayOfPI=(r r2)
 for pi in "${arrayOfPI[@]}"; do
 	updatePI "$pi"
 done
+
+prettyPrint "Updating Vundle Plugins"
+vim -c VundleUpdate -c quitall
 
 #decolorize prompt
 echo -e "Done\e[0m"

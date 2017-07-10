@@ -1,6 +1,13 @@
 #!/usr/bin/env bash
+#{{{                    MARK:Header
+#**************************************************************
+#####   Author: JACOBMENKE
+#####   Date: Mon Jul 10 19:18:41 EDT 2017
+#####   Purpose: bash script to watch output of an command with color
+#####   Notes: 
+#}}}***********************************************************
 
-set -x
+#set -x
 
 #make cursor visible and get rid of bold
 trap 'tput cnorm; printf "\e[0m"; exit' INT

@@ -76,6 +76,7 @@ RESET	coolFormatter.sh	/^RESET='\\e[0m'$/;"	v	language:Sh
 RESET	redText.sh	/^RESET='\\e[0m'$/;"	v
 ROWS	myWatchNoBlink.sh	/^        ROWS=$(tput lines)$/;"	v	language:Sh
 ROWS	myWatchNoBlinkColorized.sh	/^        ROWS=$(tput lines)$/;"	v	language:Sh
+SCRIPTS	tutorialConfigUpdater.sh	/^SCRIPTS="$HOME\/Documents\/shellScripts"$/;"	v
 SCRIPTS_DIR	backupBashConfig.sh	/^SCRIPTS_DIR="$SCRIPTS"$/;"	v
 SCRIPTS_DIR	duplicateLineDeleter.sh	/^SCRIPTS_DIR=$SCRIPTS$/;"	v	language:Sh
 SCRIPT_TO_RUN	watchServiceFSWatchPiDesktop.sh	/^SCRIPT_TO_RUN=$SCRIPTS\/upLoadPi.sh$/;"	v	language:Sh
@@ -187,6 +188,7 @@ installGitHubPlugin	customTerminalInstaller/tmux_plugins_install.sh	/^installGit
 installOhMyZshPlugin	customTerminalInstaller/zsh.sh	/^installOhMyZshPlugin(){$/;"	f
 installOhMyZshPlugin	customTerminalInstaller/zsh_plugins_install.sh	/^installOhMyZshPlugin(){$/;"	f
 installVimPlugin	customTerminalInstaller/vim_plugins_install.sh	/^installVimPlugin(){$/;"	f
+installerDir	tutorialConfigUpdater.sh	/^installerDir="$HOME\/Documents\/shellScripts\/customTerminalInstaller"$/;"	v
 killCursor	batchRename.sh	/^killCursor(){$/;"	f
 killCursor	openAll.sh	/^killCursor(){$/;"	f	language:Sh
 killCursor	picture_finder.sh	/^killCursor(){$/;"	f	language:Sh

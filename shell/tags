@@ -5,7 +5,7 @@
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
 ADDRESS	uploadWebDS.sh	/^ADDRESS="jacobmenke@$IP:\/var\/services\/web"$/;"	v
-ADDRESS	uploadWebPi.sh	/^ADDRESS="pi@$IP:\/var\/www\/html"$/;"	v	language:Sh
+ADDRESS	uploadWebPi.sh	/^ADDRESS="pi@$IP:\/var\/www\/html"$/;"	v
 BACKUP_DIR	backupBashConfig.sh	/^BACKUP_DIR="$SCRIPTS_DIR\/rcBackups"$/;"	v
 BACKUP_DIR	duplicateLineDeleter.sh	/^BACKUP_DIR=$SCRIPTS_DIR\/rcBackups$/;"	v
 BLOCKSIZE	secureDelete.sh	/^BLOCKSIZE=1      #  I\/O with \/dev\/urandom requires unit block size,$/;"	v
@@ -54,7 +54,7 @@ IFS	sortedArrayCounter.sh	/^IFS=:$/;"	v
 INSTALLER_DIR	customTerminalInstaller/install.sh	/^INSTALLER_DIR="$(pwd -P)"$/;"	v
 INSTALLER_DIR	customTerminalInstaller/tmux_plugins_install.sh	/^INSTALLER_DIR="$(pwd)"$/;"	v
 INSTALLER_DIR	customTerminalInstaller/vim_plugins_install.sh	/^INSTALLER_DIR="$(pwd)"$/;"	v
-IP	uploadWebPi.sh	/^IP=98.209.117.32$/;"	v	language:Sh
+IP	uploadWebPi.sh	/^IP=$IP$/;"	v
 JACOB	.tokens.sh	/^		JACOB="9047039159"$/;"	v
 JESSICA	.tokens.sh	/^		JESSICA="9046992045"$/;"	v
 JOSH	.tokens.sh	/^		JOSH="9046351659"$/;"	v

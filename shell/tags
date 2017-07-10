@@ -139,7 +139,7 @@ displayProgress	batchRename.sh	/^displayProgress(){$/;"	f
 displayProgress	picture_finder.sh	/^displayProgress(){$/;"	f
 displayProgress	secureDelete.sh	/^displayProgress(){$/;"	f	language:Sh
 displayProgressIndicator	openAll.sh	/^displayProgressIndicator(){$/;"	f	language:Sh
-dontSummarizeSizes	directoryContentsSize.sh	/^dontSummarizeSizes(){$/;"	f	language:Sh
+dontSummarizeSizes	directoryContentsSize.sh	/^dontSummarizeSizes(){$/;"	f
 ending	picture_finder.sh	/^	ending=${destinationFile##*.}$/;"	v
 escapeRemove	customTerminalInstaller/.shell_aliases_functions.sh	/^    escapeRemove(){$/;"	f
 execpy	customTerminalInstaller/.shell_aliases_functions.sh	/^    execpy(){$/;"	f
@@ -212,7 +212,7 @@ number	batchRename.sh	/^        local number=$((10#$number))$/;"	v
 number	batchRename.sh	/^        local number=`echo ${last%%.*}`$/;"	v
 openTextEditor	createScriptButDontOpenSublime.sh	/^openTextEditor(){$/;"	f
 openTextEditor	createTextFile.sh	/^openTextEditor(){$/;"	f
-optstring	directoryContentsSize.sh	/^optstring=shta$/;"	v	language:Sh
+optstring	directoryContentsSize.sh	/^optstring=shta$/;"	v
 optstring	gitgo.sh	/^optstring=p:hcl$/;"	v
 optstring	myWatchNoBlink.sh	/^optstring=bh$/;"	v	language:Sh
 optstring	myWatchNoBlinkColorized.sh	/^optstring=bh$/;"	v	language:Sh
@@ -272,7 +272,7 @@ s	customTerminalInstaller/.shell_aliases_functions.sh	/^        s=substr(s,1,4)$
 s	customTerminalInstaller/.shell_aliases_functions.sh	/^    s=" B   KiB MiB GiB TiB EiB PiB YiB ZiB"$/;"	v
 scnew	customTerminalInstaller/.shell_aliases_functions.sh	/^scnew(){$/;"	f
 search	customTerminalInstaller/.shell_aliases_functions.sh	/^    search(){$/;"	f
-showHidden	directoryContentsSize.sh	/^showHidden(){$/;"	f	language:Sh
+showHidden	directoryContentsSize.sh	/^showHidden(){$/;"	f
 show_usage	test.pl	/^sub show_usage {$/;"	s
 sorted	sortedArrayCounter.sh	/^sorted=( $(sort -f <<<"${arr[*]}") )$/;"	v	language:Sh
 sorted	sortedArrayCounter.sh	/^sorted=($(uniq <<< "${sorted[*]}"))$/;"	v	language:Sh
@@ -288,7 +288,7 @@ suc	customTerminalInstaller/.shell_aliases_functions.sh	/^suc(){$/;"	f
 suckers	test.py	/^def suckers():$/;"	f
 sum	listAllCommands.sh	/^sum=0$/;"	v	language:Sh
 sum	sortedArrayCounter.sh	/^sum=0$/;"	v	language:Sh
-summarizeSizes	directoryContentsSize.sh	/^summarizeSizes(){$/;"	f	language:Sh
+summarizeSizes	directoryContentsSize.sh	/^summarizeSizes(){$/;"	f
 sys	test.py	/^import sys$/;"	i
 tac	customTerminalInstaller/.shell_aliases_functions.sh	/^    tac(){$/;"	f
 tail	shebangChanger.sh	/^        tail=$(cat "$file")$/;"	v
@@ -307,7 +307,7 @@ transferFile	transfer.sh	/^transferFile="$1"$/;"	v	language:Sh
 tutorialDir	tutorialConfigUpdater.sh	/^tutorialDir="$HOME\/Documents\/tutorialsRepo"$/;"	v
 update	customTerminalInstaller/install.sh	/^update (){$/;"	f
 updatePI	updater.sh	/^updatePI(){$/;"	f
-usage	directoryContentsSize.sh	/^usage(){$/;"	f	language:Sh
+usage	directoryContentsSize.sh	/^usage(){$/;"	f
 usage	duplicateLineDeleter.sh	/^usage(){$/;"	f	language:Sh
 usage	gitgo.sh	/^usage(){$/;"	f
 usage	myWatchNoBlink.sh	/^usage(){$/;"	f	language:Sh

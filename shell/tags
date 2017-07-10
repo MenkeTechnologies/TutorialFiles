@@ -48,9 +48,9 @@ HOME	myWatchNoBlinkColorized.sh	/^    HOME=$(tput cup 0 0)$/;"	v
 HOME_DIR	backupBashConfig.sh	/^HOME_DIR=$HOME$/;"	v
 HOME_DIR	duplicateLineDeleter.sh	/^HOME_DIR=$HOME$/;"	v
 IFS	listAllCommands.sh	/^IFS=:$/;"	v
-IFS	sortedArrayCounter.sh	/^                IFS="$OLDIFS"$/;"	v	language:Sh
-IFS	sortedArrayCounter.sh	/^IFS=$'\\n'$/;"	v	language:Sh
-IFS	sortedArrayCounter.sh	/^IFS=:$/;"	v	language:Sh
+IFS	sortedArrayCounter.sh	/^        IFS="$OLDIFS"$/;"	v
+IFS	sortedArrayCounter.sh	/^IFS=$'\\n'$/;"	v
+IFS	sortedArrayCounter.sh	/^IFS=:$/;"	v
 INSTALLER_DIR	customTerminalInstaller/install.sh	/^INSTALLER_DIR="$(pwd -P)"$/;"	v
 INSTALLER_DIR	customTerminalInstaller/tmux_plugins_install.sh	/^INSTALLER_DIR="$(pwd)"$/;"	v
 INSTALLER_DIR	customTerminalInstaller/vim_plugins_install.sh	/^INSTALLER_DIR="$(pwd)"$/;"	v
@@ -59,7 +59,7 @@ JACOB	.tokens.sh	/^		JACOB="9047039159"$/;"	v
 JESSICA	.tokens.sh	/^		JESSICA="9046992045"$/;"	v
 JOSH	.tokens.sh	/^		JOSH="9046351659"$/;"	v
 MEMBER1	textmessage.sh	/^    MEMBER1=5551113333$/;"	v
-OLDIFS	sortedArrayCounter.sh	/^OLDIFS="$IFS"$/;"	v	language:Sh
+OLDIFS	sortedArrayCounter.sh	/^OLDIFS="$IFS"$/;"	v
 ORGIN_NAME	gitgo.sh	/^    local ORGIN_NAME="$(git remote -v | awk '{print $1}' | tail -1 | tr -d ' ')"$/;"	v
 ORIGIN	gitgo.sh	/^    local ORIGIN="$(git remote -v | awk '{print $1}' | tail -1 | tr -d ' ')"$/;"	v
 OS_TYPE	customTerminalInstaller/install.sh	/^OS_TYPE="$(uname -s)"$/;"	v
@@ -94,7 +94,7 @@ animate	customTerminalInstaller/.shell_aliases_functions.sh	/^animate(){$/;"	f
 arr	listAllCommands.sh	/^arr=()$/;"	v
 arr	picture_finder.sh	/^local arr=(  '|' '\\' '-' '\/' )$/;"	v
 arr	secureDelete.sh	/^    local arr=(  '|' '\\' '-' '\/' )$/;"	v
-arr	sortedArrayCounter.sh	/^arr=()$/;"	v	language:Sh
+arr	sortedArrayCounter.sh	/^arr=()$/;"	v
 arrayOfPI	updater.sh	/^arrayOfPI=(r r2)$/;"	v
 blocksToSize	customTerminalInstaller/.shell_aliases_functions.sh	/^blocksToSize(){$/;"	f
 bold	customTerminalInstaller/.shell_aliases_functions.sh	/^bold=$(tput bold || tput md)$/;"	v
@@ -274,8 +274,8 @@ scnew	customTerminalInstaller/.shell_aliases_functions.sh	/^scnew(){$/;"	f
 search	customTerminalInstaller/.shell_aliases_functions.sh	/^    search(){$/;"	f
 showHidden	directoryContentsSize.sh	/^showHidden(){$/;"	f
 show_usage	test.pl	/^sub show_usage {$/;"	s
-sorted	sortedArrayCounter.sh	/^sorted=( $(sort -f <<<"${arr[*]}") )$/;"	v	language:Sh
-sorted	sortedArrayCounter.sh	/^sorted=($(uniq <<< "${sorted[*]}"))$/;"	v	language:Sh
+sorted	sortedArrayCounter.sh	/^sorted=( $(sort -f <<<"${arr[*]}") )$/;"	v
+sorted	sortedArrayCounter.sh	/^sorted=($(uniq <<< "${sorted[*]}"))$/;"	v
 spinner	batchRename.sh	/^        spinner="$temp${spinner%"$temp"}" # and add it to the end$/;"	v
 spinner	batchRename.sh	/^    local spinner="\\|\/-" # spinner$/;"	v
 spinner	openAll.sh	/^	spinner=$temp${spinner%"$temp"} # and add it to the end$/;"	v
@@ -287,7 +287,7 @@ startCursor	secureDelete.sh	/^startCursor(){$/;"	f
 suc	customTerminalInstaller/.shell_aliases_functions.sh	/^suc(){$/;"	f
 suckers	test.py	/^def suckers():$/;"	f
 sum	listAllCommands.sh	/^sum=0$/;"	v
-sum	sortedArrayCounter.sh	/^sum=0$/;"	v	language:Sh
+sum	sortedArrayCounter.sh	/^sum=0$/;"	v
 summarizeSizes	directoryContentsSize.sh	/^summarizeSizes(){$/;"	f
 sys	test.py	/^import sys$/;"	i
 tac	customTerminalInstaller/.shell_aliases_functions.sh	/^    tac(){$/;"	f

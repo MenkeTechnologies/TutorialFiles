@@ -54,7 +54,6 @@ IFS	sortedArrayCounter.sh	/^IFS=:$/;"	v	language:Sh
 INSTALLER_DIR	customTerminalInstaller/install.sh	/^INSTALLER_DIR="$(pwd -P)"$/;"	v
 INSTALLER_DIR	customTerminalInstaller/tmux_plugins_install.sh	/^INSTALLER_DIR="$(pwd)"$/;"	v
 INSTALLER_DIR	customTerminalInstaller/vim_plugins_install.sh	/^INSTALLER_DIR="$(pwd)"$/;"	v
-INTERFACE	tor.sh	/^INTERFACE=Wi-Fi$/;"	v
 IP	uploadWebPi.sh	/^IP=98.209.117.32$/;"	v	language:Sh
 JACOB	.tokens.sh	/^		JACOB="9047039159"$/;"	v
 JESSICA	.tokens.sh	/^		JESSICA="9046992045"$/;"	v
@@ -236,6 +235,7 @@ prettyPrint	customTerminalInstaller/.shell_aliases_functions.sh	/^    prettyPrin
 prettyPrint	gitgo.sh	/^prettyPrint(){$/;"	f
 prettyPrint	rpiSoftwareUpdater.sh	/^prettyPrint(){$/;"	f
 prettyPrint	textmessage.sh	/^prettyPrint () {$/;"	f
+prettyPrint	tor.sh	/^prettyPrint (){$/;"	f
 prettyPrint	updater.sh	/^prettyPrint(){$/;"	f
 printD	banner.pl	/^sub printD{$/;"	s
 printDate	banner.pl	/^sub printDate{$/;"	s

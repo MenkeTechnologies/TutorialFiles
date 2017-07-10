@@ -1,4 +1,11 @@
-#!/usr/bin/env bash
+#!/usr/bin/env bash 
+#{{{                    MARK:Header
+#**************************************************************
+#####   Author: JACOBMENKE
+#####   Date: Mon Jul 10 12:03:02 EDT 2017
+#####   Purpose: bash  script to facilitate text messaging from command line 
+#####   Notes: high complexity
+#}}}***********************************************************
 
 prettyPrint () {
 	if [[ ! -z "$1" ]]

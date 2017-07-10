@@ -87,6 +87,10 @@ git push
 boldAndUnderlinedPrint "Copying scripts to custom Installer Repo"
 rm $SCRIPTS/customTerminalInstaller/scripts/*.sh 
 cp $SCRIPTS/*.sh $SCRIPTS/customTerminalInstaller/scripts 
+cp ~/.vimrc "$SCRIPTS/customTerminalInstaller"
+cp ~/.tmux.conf "$SCRIPTS/customTerminalInstaller"
+cp ~/.shell_aliases_functions.sh "$SCRIPTS/customTerminalInstaller"
+cp ~/.zshrc "$SCRIPTS_DIR/customTerminalInstaller"
 boldAndUnderlinedPrint "Status"
 git status
 boldAndUnderlinedPrint "Pushing..."

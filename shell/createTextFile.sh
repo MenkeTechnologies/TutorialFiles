@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
-#created by JAKOBMENKE --> Fri Jan 20 16:24:16 EST 2017
+#{{{                    MARK:Header
+#**************************************************************
+#####   Author: JACOBMENKE
+#####   Date: Mon Jul 10 12:14:31 EDT 2017
+#####   Purpose: bash script to create new script and edit it with SublimeText 
+#####   Notes: 
+#}}}***********************************************************
 
 executableScriptsProcessing(){
     # then make it executable

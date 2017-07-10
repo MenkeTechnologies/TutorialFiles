@@ -60,7 +60,7 @@ while read -r file; do
         fi
     fi
 done < <(find ./vim)
-
+boldAndUnderlinedPrint "Updating Tutorial Files Repo"
 boldAndUnderlinedPrint "Status..."
 git status
 boldAndUnderlinedPrint "Pushing..."
@@ -87,7 +87,9 @@ git push
 boldAndUnderlinedPrint "Copying scripts to custom Installer Repo"
 rm $SCRIPTS/customTerminalInstaller/scripts/*.sh 
 cp $SCRIPTS/*.sh $SCRIPTS/customTerminalInstaller/scripts 
-
+boldAndUnderlinedPrint "Status"
+git status
+boldAndUnderlinedPrint "Pushing..."
 git add .
 git commit -m "update"
 git push

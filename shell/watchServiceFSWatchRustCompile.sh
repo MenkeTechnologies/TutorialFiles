@@ -1,6 +1,11 @@
 #!/usr/bin/env bash
-#created by JAKOBMENKE --> Sat Jan 14 18:12:20 EST 2017 
-
+#{{{                    MARK:Header
+#**************************************************************
+#####   Author: JACOBMENKE
+#####   Date: Mon Jul 10 19:35:57 EDT 2017
+#####   Purpose: bash script to compile rust file on file change
+#####   Notes: 
+#}}}***********************************************************
 #example usage = bash "$SCRIPTS/watchServiceFSWatchRustCompile.sh" . "untitled.rs"
 DIR_WATCHING="$1"
 while read -d "" event; do

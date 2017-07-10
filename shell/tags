@@ -26,7 +26,7 @@ DIR_WATCHING	watchServiceFSWatchGit.sh	/^DIR_WATCHING="$1"$/;"	v
 DIR_WATCHING	watchServiceFSWatchLS-ALH.sh	/^DIR_WATCHING="$1"$/;"	v
 DIR_WATCHING	watchServiceFSWatchPiDesktop.sh	/^DIR_WATCHING="$1"$/;"	v
 DIR_WATCHING	watchServiceFSWatchPiWeb.sh	/^DIR_WATCHING="$1"$/;"	v
-DIR_WATCHING	watchServiceFSWatchRustCompile.sh	/^DIR_WATCHING="$1"$/;"	v	language:Sh
+DIR_WATCHING	watchServiceFSWatchRustCompile.sh	/^DIR_WATCHING="$1"$/;"	v
 ECHO	oldCounter.sh	/^                        ECHO="true"$/;"	v
 ED	myWatchNoBlink.sh	/^    ED=$(tput ed)$/;"	v
 ED	myWatchNoBlinkColorized.sh	/^    ED=$(tput ed)$/;"	v
@@ -117,7 +117,7 @@ commands	oldCounter.sh	/^		commands="$f $commands"$/;"	v
 commands	oldCounter.sh	/^commands=""$/;"	v
 commitMessage	gitgo.sh	/^    local commitMessage="$1"$/;"	v
 commitTheDirectory	gitgo.sh	/^commitTheDirectory(){$/;"	f
-compiled	watchServiceFSWatchRustCompile.sh	/^			compiled=${fileName%*.rs}$/;"	v	language:Sh
+compiled	watchServiceFSWatchRustCompile.sh	/^			compiled=${fileName%*.rs}$/;"	v
 concat	myWatchNoBlinkColorized.sh	/^	    	concat="$(java parser $LINE)"$/;"	v
 contents	duplicateLineDeleter.sh	/^	contents=$(cat -s "$file")$/;"	v
 convertFiles	batchRename.sh	/^convertFiles(){$/;"	f
@@ -153,7 +153,7 @@ executeTheFile	runner.sh	/^executeTheFile(){$/;"	f
 f	customTerminalInstaller/.shell_aliases_functions.sh	/^    f(){$/;"	f
 file	openAll.sh	/^	file="$(echo $file | tr '[:upper:]' '[:lower:]')"$/;"	v
 file	secureDelete.sh	/^    file="$i"$/;"	v
-fileName	watchServiceFSWatchRustCompile.sh	/^	fileName=`basename $event`$/;"	v	language:Sh
+fileName	watchServiceFSWatchRustCompile.sh	/^	fileName=`basename $event`$/;"	v
 fileString	openAll.sh	/^fileString=""$/;"	v
 fileToBeExecuted	runner.sh	/^fileToBeExecuted="$1"$/;"	v
 fileToBeExecuted	templater.sh	/^fileToBeExecuted="$1"$/;"	v
@@ -226,7 +226,7 @@ outdated	updater.sh	/^outdated=$(pip3 list --outdated | awk '{print $1}')$/;"	v
 output	figletRandomFont.sh	/^    output="$(echo $TEXT_TO_DISPLAY | figlet -f $font)"$/;"	v
 output	figletRandomFontOnce.sh	/^output="$(echo $TEXT_TO_DISPLAY | figlet -f $font)"$/;"	v
 output	menkeTechRandoFont.sh	/^    output="$(echo $TEXT_TO_DISPLAY | figlet -f $font)"$/;"	v
-output	watchServiceFSWatchRustCompile.sh	/^		output="$(rustc $2 2>&1)"$/;"	v	language:Sh
+output	watchServiceFSWatchRustCompile.sh	/^		output="$(rustc $2 2>&1)"$/;"	v
 pass_count	secureDelete.sh	/^    pass_count=1$/;"	v
 path	shebangChanger.sh	/^path="#!\/usr\/bin\/env $executableProgram"$/;"	v
 perlOutdated	updater.sh	/^perlOutdated=$(cpan-outdated -p)$/;"	v
@@ -318,7 +318,7 @@ user	gitRemoteRepoInformation.sh	/^            user="$(echo $line | awk -F'\/' '
 view	eyes.sh	/^    view=${ary[$randIndex]}$/;"	v
 watchCommand	myWatchNoBlink.sh	/^watchCommand() {$/;"	f
 watchCommand	myWatchNoBlinkColorized.sh	/^watchCommand() {$/;"	f
-watchingFile	watchServiceFSWatchRustCompile.sh	/^	watchingFile=`basename $2`$/;"	v	language:Sh
+watchingFile	watchServiceFSWatchRustCompile.sh	/^	watchingFile=`basename $2`$/;"	v
 websiteDir	tutorialConfigUpdater.sh	/^websiteDir="$HOME\/WebstormProjects\/PersonalWebsite"$/;"	v
 x	mywatch.sh	/^    x=$(eval "$1")$/;"	v
 x	test.py	/^x=5$/;"	v

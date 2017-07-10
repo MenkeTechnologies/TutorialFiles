@@ -14,9 +14,9 @@ BLUE	blueUpperText.sh	/^BLUE='\\e[37;44m'$/;"	v
 BLUE	boldText.sh	/^BLUE='\\e[37;44m'$/;"	v
 BLUE	coolFormatter.sh	/^BLUE='\\e[37;44m'$/;"	v
 CAROLYN	.tokens.sh	/^		CAROLYN="9046991975"$/;"	v
-CMD	myWatchNoBlink.sh	/^        CMD="$@"$/;"	v	language:Sh
+CMD	myWatchNoBlink.sh	/^        CMD="$@"$/;"	v
 CMD	myWatchNoBlinkColorized.sh	/^        CMD="$@"$/;"	v	language:Sh
-COLS	myWatchNoBlink.sh	/^        COLS=$(tput cols)$/;"	v	language:Sh
+COLS	myWatchNoBlink.sh	/^        COLS=$(tput cols)$/;"	v
 COLS	myWatchNoBlinkColorized.sh	/^        COLS=$(tput cols)$/;"	v	language:Sh
 CR	batchRename.sh	/^    local CR="\\r"$/;"	v
 CR	openAll.sh	/^local CR="\\r"$/;"	v	language:Sh
@@ -28,9 +28,9 @@ DIR_WATCHING	watchServiceFSWatchPiDesktop.sh	/^DIR_WATCHING="$1"$/;"	v	language:
 DIR_WATCHING	watchServiceFSWatchPiWeb.sh	/^DIR_WATCHING="$1"$/;"	v	language:Sh
 DIR_WATCHING	watchServiceFSWatchRustCompile.sh	/^DIR_WATCHING="$1"$/;"	v	language:Sh
 ECHO	oldCounter.sh	/^                        ECHO="true"$/;"	v	language:Sh
-ED	myWatchNoBlink.sh	/^    ED=$(tput ed)$/;"	v	language:Sh
+ED	myWatchNoBlink.sh	/^    ED=$(tput ed)$/;"	v
 ED	myWatchNoBlinkColorized.sh	/^    ED=$(tput ed)$/;"	v	language:Sh
-EL	myWatchNoBlink.sh	/^    EL=$(tput el)$/;"	v	language:Sh
+EL	myWatchNoBlink.sh	/^    EL=$(tput el)$/;"	v
 EL	myWatchNoBlinkColorized.sh	/^    EL=$(tput el)$/;"	v	language:Sh
 E_BADARGS	secureDelete.sh	/^E_BADARGS=70     #  Various error exit codes.$/;"	v	language:Sh
 E_CHANGED_MIND	secureDelete.sh	/^E_CHANGED_MIND=72$/;"	v	language:Sh
@@ -43,7 +43,7 @@ FIGLET_DIR	menkeTechRandoFont.sh	/^FIGLET_DIR=\/usr\/local\/Cellar\/figlet\/2.2.
 FILTER	figletRandomFont.sh	/^FILTER="$2"$/;"	v
 FILTER	figletRandomFontOnce.sh	/^FILTER="$2"$/;"	v
 FILTER	menkeTechRandoFont.sh	/^FILTER="$1"$/;"	v
-HOME	myWatchNoBlink.sh	/^    HOME=$(tput cup 0 0)$/;"	v	language:Sh
+HOME	myWatchNoBlink.sh	/^    HOME=$(tput cup 0 0)$/;"	v
 HOME	myWatchNoBlinkColorized.sh	/^    HOME=$(tput cup 0 0)$/;"	v	language:Sh
 HOME_DIR	backupBashConfig.sh	/^HOME_DIR=$HOME$/;"	v
 HOME_DIR	duplicateLineDeleter.sh	/^HOME_DIR=$HOME$/;"	v
@@ -74,7 +74,7 @@ RESET	blueUpperText.sh	/^RESET='\\e[0m'$/;"	v
 RESET	boldText.sh	/^RESET='\\e[0m'$/;"	v
 RESET	coolFormatter.sh	/^RESET='\\e[0m'$/;"	v
 RESET	redText.sh	/^RESET='\\e[0m'$/;"	v
-ROWS	myWatchNoBlink.sh	/^        ROWS=$(tput lines)$/;"	v	language:Sh
+ROWS	myWatchNoBlink.sh	/^        ROWS=$(tput lines)$/;"	v
 ROWS	myWatchNoBlinkColorized.sh	/^        ROWS=$(tput lines)$/;"	v	language:Sh
 SCRIPTS	tutorialConfigUpdater.sh	/^SCRIPTS="$HOME\/Documents\/shellScripts"$/;"	v
 SCRIPTS_DIR	backupBashConfig.sh	/^SCRIPTS_DIR="$SCRIPTS"$/;"	v
@@ -214,7 +214,7 @@ openTextEditor	createScriptButDontOpenSublime.sh	/^openTextEditor(){$/;"	f
 openTextEditor	createTextFile.sh	/^openTextEditor(){$/;"	f
 optstring	directoryContentsSize.sh	/^optstring=shta$/;"	v
 optstring	gitgo.sh	/^optstring=p:hcl$/;"	v
-optstring	myWatchNoBlink.sh	/^optstring=bh$/;"	v	language:Sh
+optstring	myWatchNoBlink.sh	/^optstring=bh$/;"	v
 optstring	myWatchNoBlinkColorized.sh	/^optstring=bh$/;"	v	language:Sh
 optstring	mywatch.sh	/^optstring=dh$/;"	v	language:Sh
 orig	customTerminalInstaller/.shell_aliases_functions.sh	/^        orig="$1"$/;"	v
@@ -295,8 +295,8 @@ tail	shebangChanger.sh	/^        tail=$(cat "$file")$/;"	v
 tail	shebangChanger.sh	/^        tail=$(tail +$lineCounter "$file")$/;"	v
 temp	batchRename.sh	/^        local temp=${spinner#?}               # remove first character from $spinner$/;"	v
 temp	openAll.sh	/^	local temp=${spinner#?}               # remove first character from $spinner$/;"	v	language:Sh
-timeToSleep	myWatchNoBlink.sh	/^    timeToSleep=$2$/;"	v	language:Sh
-timeToSleep	myWatchNoBlink.sh	/^    timeToSleep=0.5$/;"	v	language:Sh
+timeToSleep	myWatchNoBlink.sh	/^    timeToSleep=$2$/;"	v
+timeToSleep	myWatchNoBlink.sh	/^    timeToSleep=0.5$/;"	v
 timeToSleep	myWatchNoBlinkColorized.sh	/^    timeToSleep=$2$/;"	v	language:Sh
 timeToSleep	myWatchNoBlinkColorized.sh	/^    timeToSleep=0.5$/;"	v	language:Sh
 title	customTerminalInstaller/.shell_aliases_functions.sh	/^    title="$1"$/;"	v
@@ -310,13 +310,13 @@ updatePI	updater.sh	/^updatePI(){$/;"	f
 usage	directoryContentsSize.sh	/^usage(){$/;"	f
 usage	duplicateLineDeleter.sh	/^usage(){$/;"	f
 usage	gitgo.sh	/^usage(){$/;"	f
-usage	myWatchNoBlink.sh	/^usage(){$/;"	f	language:Sh
+usage	myWatchNoBlink.sh	/^usage(){$/;"	f
 usage	myWatchNoBlinkColorized.sh	/^usage(){$/;"	f	language:Sh
 usage	mywatch.sh	/^usage(){$/;"	f	language:Sh
 usage	shebangChanger.sh	/^usage(){$/;"	f
 user	gitRemoteRepoInformation.sh	/^            user="$(echo $line | awk -F'\/' '{print $4}')"$/;"	v
 view	eyes.sh	/^    view=${ary[$randIndex]}$/;"	v
-watchCommand	myWatchNoBlink.sh	/^watchCommand() {$/;"	f	language:Sh
+watchCommand	myWatchNoBlink.sh	/^watchCommand() {$/;"	f
 watchCommand	myWatchNoBlinkColorized.sh	/^watchCommand() {$/;"	f	language:Sh
 watchingFile	watchServiceFSWatchRustCompile.sh	/^	watchingFile=`basename $2`$/;"	v	language:Sh
 websiteDir	tutorialConfigUpdater.sh	/^websiteDir="$HOME\/WebstormProjects\/PersonalWebsite"$/;"	v

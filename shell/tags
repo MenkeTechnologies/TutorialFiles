@@ -84,8 +84,8 @@ SCRIPT_TO_RUN	watchServiceFSWatchPiWeb.sh	/^SCRIPT_TO_RUN=$SCRIPTS\/uploadWebPi.
 TEXT_TO_DISPLAY	figletRandomFont.sh	/^TEXT_TO_DISPLAY="$1"$/;"	v
 TEXT_TO_DISPLAY	figletRandomFontOnce.sh	/^TEXT_TO_DISPLAY="$1"$/;"	v
 TEXT_TO_DISPLAY	menkeTechRandoFont.sh	/^TEXT_TO_DISPLAY="Menke Technologies"$/;"	v
-TIME	mywatch.sh	/^    TIME="$2"$/;"	v	language:Sh
-TIME	mywatch.sh	/^    TIME=1$/;"	v	language:Sh
+TIME	mywatch.sh	/^    TIME="$2"$/;"	v
+TIME	mywatch.sh	/^    TIME=1$/;"	v
 URL	gitgo.sh	/^    local URL="https:\/\/github.com\/$GITHUB_ACCOUNT\/$REPO_NAME_TO_CREATE"$/;"	v
 addContents	shebangChanger.sh	/^addContents(){$/;"	f
 addHeader	createTextFile.sh	/^addHeader(){$/;"	f
@@ -216,7 +216,7 @@ optstring	directoryContentsSize.sh	/^optstring=shta$/;"	v
 optstring	gitgo.sh	/^optstring=p:hcl$/;"	v
 optstring	myWatchNoBlink.sh	/^optstring=bh$/;"	v
 optstring	myWatchNoBlinkColorized.sh	/^optstring=bh$/;"	v
-optstring	mywatch.sh	/^optstring=dh$/;"	v	language:Sh
+optstring	mywatch.sh	/^optstring=dh$/;"	v
 orig	customTerminalInstaller/.shell_aliases_functions.sh	/^        orig="$1"$/;"	v
 os	test.py	/^import os$/;"	i
 out	customTerminalInstaller/.shell_aliases_functions.sh	/^        out="$(curl -u menketechnologies -X "DELETE" https:\/\/api.github.com\/repos\/menketechnologies\/"$REPO")"$/;"	v
@@ -312,7 +312,7 @@ usage	duplicateLineDeleter.sh	/^usage(){$/;"	f
 usage	gitgo.sh	/^usage(){$/;"	f
 usage	myWatchNoBlink.sh	/^usage(){$/;"	f
 usage	myWatchNoBlinkColorized.sh	/^usage(){$/;"	f
-usage	mywatch.sh	/^usage(){$/;"	f	language:Sh
+usage	mywatch.sh	/^usage(){$/;"	f
 usage	shebangChanger.sh	/^usage(){$/;"	f
 user	gitRemoteRepoInformation.sh	/^            user="$(echo $line | awk -F'\/' '{print $4}')"$/;"	v
 view	eyes.sh	/^    view=${ary[$randIndex]}$/;"	v
@@ -320,6 +320,6 @@ watchCommand	myWatchNoBlink.sh	/^watchCommand() {$/;"	f
 watchCommand	myWatchNoBlinkColorized.sh	/^watchCommand() {$/;"	f
 watchingFile	watchServiceFSWatchRustCompile.sh	/^	watchingFile=`basename $2`$/;"	v	language:Sh
 websiteDir	tutorialConfigUpdater.sh	/^websiteDir="$HOME\/WebstormProjects\/PersonalWebsite"$/;"	v
-x	mywatch.sh	/^    x=$(eval "$1")$/;"	v	language:Sh
+x	mywatch.sh	/^    x=$(eval "$1")$/;"	v
 x	test.py	/^x=5$/;"	v
 xf	customTerminalInstaller/.shell_aliases_functions.sh	/^        xf=(s==" B  ")?"%5d   ":"%8.2f"$/;"	v

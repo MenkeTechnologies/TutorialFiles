@@ -78,6 +78,8 @@ cp $HOME/.tmux.conf "$websiteDir/downloads"
 cp $HOME/.shell_aliases_functions.sh "$websiteDir/downloads"
 cp $HOME/.zshrc "$websiteDir/downloads"
 
+cp $SCRIPTS/*.sh "$websiteDir/downloads/scripts"
+
 cd "$websiteDir" || exit 1
 
 boldAndUnderlinedPrint "Status..."

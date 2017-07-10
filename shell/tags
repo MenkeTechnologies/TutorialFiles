@@ -47,7 +47,7 @@ HOME	myWatchNoBlink.sh	/^    HOME=$(tput cup 0 0)$/;"	v	language:Sh
 HOME	myWatchNoBlinkColorized.sh	/^    HOME=$(tput cup 0 0)$/;"	v	language:Sh
 HOME_DIR	backupBashConfig.sh	/^HOME_DIR=$HOME$/;"	v
 HOME_DIR	duplicateLineDeleter.sh	/^HOME_DIR=$HOME$/;"	v
-IFS	listAllCommands.sh	/^IFS=:$/;"	v	language:Sh
+IFS	listAllCommands.sh	/^IFS=:$/;"	v
 IFS	sortedArrayCounter.sh	/^                IFS="$OLDIFS"$/;"	v	language:Sh
 IFS	sortedArrayCounter.sh	/^IFS=$'\\n'$/;"	v	language:Sh
 IFS	sortedArrayCounter.sh	/^IFS=:$/;"	v	language:Sh
@@ -91,7 +91,7 @@ addContents	shebangChanger.sh	/^addContents(){$/;"	f
 addHeader	createTextFile.sh	/^addHeader(){$/;"	f
 addHeader	templater.sh	/^addHeader(){$/;"	f
 animate	customTerminalInstaller/.shell_aliases_functions.sh	/^animate(){$/;"	f
-arr	listAllCommands.sh	/^arr=()$/;"	v	language:Sh
+arr	listAllCommands.sh	/^arr=()$/;"	v
 arr	picture_finder.sh	/^local arr=(  '|' '\\' '-' '\/' )$/;"	v
 arr	secureDelete.sh	/^    local arr=(  '|' '\\' '-' '\/' )$/;"	v	language:Sh
 arr	sortedArrayCounter.sh	/^arr=()$/;"	v	language:Sh
@@ -286,7 +286,7 @@ startCursor	picture_finder.sh	/^startCursor(){$/;"	f
 startCursor	secureDelete.sh	/^startCursor(){$/;"	f	language:Sh
 suc	customTerminalInstaller/.shell_aliases_functions.sh	/^suc(){$/;"	f
 suckers	test.py	/^def suckers():$/;"	f
-sum	listAllCommands.sh	/^sum=0$/;"	v	language:Sh
+sum	listAllCommands.sh	/^sum=0$/;"	v
 sum	sortedArrayCounter.sh	/^sum=0$/;"	v	language:Sh
 summarizeSizes	directoryContentsSize.sh	/^summarizeSizes(){$/;"	f
 sys	test.py	/^import sys$/;"	i

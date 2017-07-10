@@ -1,4 +1,13 @@
 #!/usr/bin/env bash
+#{{{                    MARK:Header
+#**************************************************************
+#####   Author: JACOBMENKE
+#####   Date: Mon Jul 10 12:18:45 EDT 2017
+#####   Purpose: bash script to add abs path to system clipboard on Mac
+#####   Notes: 
+#}}}***********************************************************
+
+
 #if this is absoulute path dont get the PWD
 if [[ "$1" =~ ^[/~]+.*$ ]]; then
     #printf using no newline and single quotes

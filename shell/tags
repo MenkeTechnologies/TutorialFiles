@@ -19,7 +19,7 @@ CMD	myWatchNoBlinkColorized.sh	/^        CMD="$@"$/;"	v
 COLS	myWatchNoBlink.sh	/^        COLS=$(tput cols)$/;"	v
 COLS	myWatchNoBlinkColorized.sh	/^        COLS=$(tput cols)$/;"	v
 CR	batchRename.sh	/^    local CR="\\r"$/;"	v
-CR	openAll.sh	/^local CR="\\r"$/;"	v	language:Sh
+CR	openAll.sh	/^local CR="\\r"$/;"	v
 DAD	.tokens.sh	/^		DAD="9046352769"$/;"	v
 DEFAULT_RECIPENT	textmessage.sh	/^    DEFAULT_RECIPENT=555111333$/;"	v
 DIR_WATCHING	watchServiceFSWatchGit.sh	/^DIR_WATCHING="$1"$/;"	v	language:Sh
@@ -102,11 +102,11 @@ boldAndUnderlinedPrint	tutorialConfigUpdater.sh	/^boldAndUnderlinedPrint(){$/;"	
 bytes	customTerminalInstaller/.shell_aliases_functions.sh	/^    local bytes=$(( input * 512 ))$/;"	v
 cd	customTerminalInstaller/.shell_aliases_functions.sh	/^    cd(){$/;"	f
 chars	batchRename.sh	/^    local chars=1 # number of characters to display$/;"	v
-chars	openAll.sh	/^local chars=1 # number of characters to display$/;"	v	language:Sh
+chars	openAll.sh	/^local chars=1 # number of characters to display$/;"	v
 checkForExistence	batchRename.sh	/^checkForExistence(){$/;"	f
 clearList	customTerminalInstaller/.shell_aliases_functions.sh	/^clearList () {$/;"	f
 clearline	batchRename.sh	/^    local clearline="\\e[K" # clear to end of line (ANSI terminal)$/;"	v
-clearline	openAll.sh	/^local clearline="\\e[K" # clear to end of line (ANSI terminal)$/;"	v	language:Sh
+clearline	openAll.sh	/^local clearline="\\e[K" # clear to end of line (ANSI terminal)$/;"	v
 color2	customTerminalInstaller/.shell_aliases_functions.sh	/^    color2(){$/;"	f
 cols	animation	/^cols=`tput cols`$/;"	v
 cols	picture_finder.sh	/^cols=`tput cols`$/;"	v
@@ -128,7 +128,7 @@ createTheFile	createScriptButDontOpenSublime.sh	/^createTheFile(){$/;"	f
 createTheFile	createTextFile.sh	/^createTheFile(){$/;"	f
 db	customTerminalInstaller/.shell_aliases_functions.sh	/^db(){$/;"	f
 delay	batchRename.sh	/^    local delay=.1 # time in seconds between characters$/;"	v
-delay	openAll.sh	/^local delay=.1 # time in seconds between characters$/;"	v	language:Sh
+delay	openAll.sh	/^local delay=.1 # time in seconds between characters$/;"	v
 delim	batchRename.sh	/^delim=_$/;"	v
 dependencies_ary	customTerminalInstaller/install.sh	/^dependencies_ary=(vim tmux git wget lolcat cowsay cmatrix htop cmake glances bpython python-dev \\$/;"	v
 destinationFile	picture_finder.sh	/^	destinationFile=$destinationDirectory\/${picture##*\/}$/;"	v
@@ -138,7 +138,7 @@ disable_proxy	tor.sh	/^function disable_proxy() {$/;"	f
 displayProgress	batchRename.sh	/^displayProgress(){$/;"	f
 displayProgress	picture_finder.sh	/^displayProgress(){$/;"	f
 displayProgress	secureDelete.sh	/^displayProgress(){$/;"	f	language:Sh
-displayProgressIndicator	openAll.sh	/^displayProgressIndicator(){$/;"	f	language:Sh
+displayProgressIndicator	openAll.sh	/^displayProgressIndicator(){$/;"	f
 dontSummarizeSizes	directoryContentsSize.sh	/^dontSummarizeSizes(){$/;"	f
 ending	picture_finder.sh	/^	ending=${destinationFile##*.}$/;"	v
 escapeRemove	customTerminalInstaller/.shell_aliases_functions.sh	/^    escapeRemove(){$/;"	f
@@ -151,14 +151,14 @@ executableScriptsProcessing	templater.sh	/^executableScriptsProcessing(){$/;"	f
 executeFileFirstArgIsCommand	runner.sh	/^executeFileFirstArgIsCommand(){$/;"	f
 executeTheFile	runner.sh	/^executeTheFile(){$/;"	f
 f	customTerminalInstaller/.shell_aliases_functions.sh	/^    f(){$/;"	f
-file	openAll.sh	/^	file="$(echo $file | tr '[:upper:]' '[:lower:]')"$/;"	v	language:Sh
+file	openAll.sh	/^	file="$(echo $file | tr '[:upper:]' '[:lower:]')"$/;"	v
 file	secureDelete.sh	/^    file="$i"$/;"	v	language:Sh
 fileName	watchServiceFSWatchRustCompile.sh	/^	fileName=`basename $event`$/;"	v	language:Sh
-fileString	openAll.sh	/^fileString=""$/;"	v	language:Sh
+fileString	openAll.sh	/^fileString=""$/;"	v
 fileToBeExecuted	runner.sh	/^fileToBeExecuted="$1"$/;"	v
 fileToBeExecuted	templater.sh	/^fileToBeExecuted="$1"$/;"	v
 files	backupBashConfig.sh	/^files=("$HOME_DIR\/.bashrc" "$HOME_DIR\/.bash_profile" "$HOME_DIR\/.profile" '\/etc\/bashrc' '\/etc\/profile')$/;"	v
-filesArray	openAll.sh	/^filesArray=()$/;"	v	language:Sh
+filesArray	openAll.sh	/^filesArray=()$/;"	v
 findTotal	oldCounter.sh	/^findTotal (){$/;"	f
 first	batchRename.sh	/^        local first=`echo ${file%%$delim*}`$/;"	v
 firstFile	sync.sh	/^	firstFile="${firstFile}\/"$/;"	v	language:Sh
@@ -190,11 +190,11 @@ installOhMyZshPlugin	customTerminalInstaller/zsh_plugins_install.sh	/^installOhM
 installVimPlugin	customTerminalInstaller/vim_plugins_install.sh	/^installVimPlugin(){$/;"	f
 installerDir	tutorialConfigUpdater.sh	/^installerDir="$HOME\/Documents\/shellScripts\/customTerminalInstaller"$/;"	v
 killCursor	batchRename.sh	/^killCursor(){$/;"	f
-killCursor	openAll.sh	/^killCursor(){$/;"	f	language:Sh
+killCursor	openAll.sh	/^killCursor(){$/;"	f
 killCursor	picture_finder.sh	/^killCursor(){$/;"	f
 killCursor	secureDelete.sh	/^killCursor(){$/;"	f	language:Sh
 last	batchRename.sh	/^        local last=`echo ${file##*_}`$/;"	v
-lcline	openAll.sh	/^	lcline="$(echo $line | tr '[:upper:]' '[:lower:]')"$/;"	v	language:Sh
+lcline	openAll.sh	/^	lcline="$(echo $line | tr '[:upper:]' '[:lower:]')"$/;"	v
 line	gitRemoteRepoInformation.sh	/^        line="$(git remote -v 2>\/dev\/null)"$/;"	v
 lineCounter	shebangChanger.sh	/^    lineCounter=1$/;"	v
 local	rsyncr.sh	/^local="$1"$/;"	v	language:Sh
@@ -242,11 +242,11 @@ prettyPrint	updater.sh	/^prettyPrint(){$/;"	f
 printD	banner.pl	/^sub printD{$/;"	s
 printDate	banner.pl	/^sub printDate{$/;"	s
 progress_pid	batchRename.sh	/^    progress_pid=$!$/;"	v
-progress_pid	openAll.sh	/^	progress_pid=$!$/;"	v	language:Sh
+progress_pid	openAll.sh	/^	progress_pid=$!$/;"	v
 progress_pid	picture_finder.sh	/^  progress_pid=$!$/;"	v
 progress_pid	secureDelete.sh	/^    progress_pid=$!$/;"	v	language:Sh
 prompt	batchRename.sh	/^    local prompt="press any key..." # user prompt$/;"	v
-prompt	openAll.sh	/^local prompt="press any key..." # user prompt$/;"	v	language:Sh
+prompt	openAll.sh	/^local prompt="press any key..." # user prompt$/;"	v
 pstreeMonitor	customTerminalInstaller/.shell_aliases_functions.sh	/^    pstreeMonitor(){$/;"	f
 randIndex	eyes.sh	/^    randIndex=$(($RANDOM % $rangePossibleIndices))$/;"	v
 randIndex	figletRandomFont.sh	/^    randIndex=$(($RANDOM % $rangePossibleIndices))$/;"	v
@@ -278,10 +278,10 @@ sorted	sortedArrayCounter.sh	/^sorted=( $(sort -f <<<"${arr[*]}") )$/;"	v	langua
 sorted	sortedArrayCounter.sh	/^sorted=($(uniq <<< "${sorted[*]}"))$/;"	v	language:Sh
 spinner	batchRename.sh	/^        spinner="$temp${spinner%"$temp"}" # and add it to the end$/;"	v
 spinner	batchRename.sh	/^    local spinner="\\|\/-" # spinner$/;"	v
-spinner	openAll.sh	/^	spinner=$temp${spinner%"$temp"} # and add it to the end$/;"	v	language:Sh
-spinner	openAll.sh	/^local spinner="\\|\/-" # spinner$/;"	v	language:Sh
+spinner	openAll.sh	/^	spinner=$temp${spinner%"$temp"} # and add it to the end$/;"	v
+spinner	openAll.sh	/^local spinner="\\|\/-" # spinner$/;"	v
 startCursor	batchRename.sh	/^startCursor(){$/;"	f
-startCursor	openAll.sh	/^startCursor(){$/;"	f	language:Sh
+startCursor	openAll.sh	/^startCursor(){$/;"	f
 startCursor	picture_finder.sh	/^startCursor(){$/;"	f
 startCursor	secureDelete.sh	/^startCursor(){$/;"	f	language:Sh
 suc	customTerminalInstaller/.shell_aliases_functions.sh	/^suc(){$/;"	f
@@ -294,7 +294,7 @@ tac	customTerminalInstaller/.shell_aliases_functions.sh	/^    tac(){$/;"	f
 tail	shebangChanger.sh	/^        tail=$(cat "$file")$/;"	v
 tail	shebangChanger.sh	/^        tail=$(tail +$lineCounter "$file")$/;"	v
 temp	batchRename.sh	/^        local temp=${spinner#?}               # remove first character from $spinner$/;"	v
-temp	openAll.sh	/^	local temp=${spinner#?}               # remove first character from $spinner$/;"	v	language:Sh
+temp	openAll.sh	/^	local temp=${spinner#?}               # remove first character from $spinner$/;"	v
 timeToSleep	myWatchNoBlink.sh	/^    timeToSleep=$2$/;"	v
 timeToSleep	myWatchNoBlink.sh	/^    timeToSleep=0.5$/;"	v
 timeToSleep	myWatchNoBlinkColorized.sh	/^    timeToSleep=$2$/;"	v

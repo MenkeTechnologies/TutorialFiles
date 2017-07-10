@@ -161,8 +161,8 @@ files	backupBashConfig.sh	/^files=("$HOME_DIR\/.bashrc" "$HOME_DIR\/.bash_profil
 filesArray	openAll.sh	/^filesArray=()$/;"	v
 findTotal	oldCounter.sh	/^findTotal (){$/;"	f
 first	batchRename.sh	/^        local first=`echo ${file%%$delim*}`$/;"	v
-firstFile	sync.sh	/^	firstFile="${firstFile}\/"$/;"	v	language:Sh
-firstFile	sync.sh	/^firstFile="$1"$/;"	v	language:Sh
+firstFile	sync.sh	/^    firstFile="${firstFile}\/"$/;"	v
+firstFile	sync.sh	/^firstFile="$1"$/;"	v
 firstString	createTextFile.sh	/^    firstString=$(cat<<EOM$/;"	v
 firstString	templater.sh	/^    firstString=$(cat<<EOM$/;"	v
 flength	secureDelete.sh	/^    flength=$(ls -l "$file" | awk '{print $5}')  # Field 5 is file length.$/;"	v

@@ -303,7 +303,7 @@ title	customTerminalInstaller/.shell_aliases_functions.sh	/^    title="$1"$/;"	v
 topline	animation	/^topline=0$/;"	v
 total	oldCounter.sh	/^total=0$/;"	v
 total	oldCounter.sh	/^total=`expr $(ls -F $1 | grep ".*[*@]" | wc -l) + $total`$/;"	v
-transferFile	transfer.sh	/^transferFile="$1"$/;"	v	language:Sh
+transferFile	transfer.sh	/^transferFile="$1"$/;"	v
 tutorialDir	tutorialConfigUpdater.sh	/^tutorialDir="$HOME\/Documents\/tutorialsRepo"$/;"	v
 update	customTerminalInstaller/install.sh	/^update (){$/;"	f
 updatePI	updater.sh	/^updatePI(){$/;"	f

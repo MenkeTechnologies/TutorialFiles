@@ -7,4 +7,9 @@
 #####   Notes: 
 #}}}***********************************************************
 
-rm -rf "$HOME"/.Trash/*
+if [[ "$(uname)" == "Darwin" ]]; then
+    rm -rf "$HOME"/.Trash/*
+else
+    #works for RPi
+    rm -rf $HOME/.local/share/Trash/files/*
+fi

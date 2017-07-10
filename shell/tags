@@ -27,7 +27,7 @@ DIR_WATCHING	watchServiceFSWatchLS-ALH.sh	/^DIR_WATCHING="$1"$/;"	v	language:Sh
 DIR_WATCHING	watchServiceFSWatchPiDesktop.sh	/^DIR_WATCHING="$1"$/;"	v	language:Sh
 DIR_WATCHING	watchServiceFSWatchPiWeb.sh	/^DIR_WATCHING="$1"$/;"	v	language:Sh
 DIR_WATCHING	watchServiceFSWatchRustCompile.sh	/^DIR_WATCHING="$1"$/;"	v	language:Sh
-ECHO	oldCounter.sh	/^                        ECHO="true"$/;"	v	language:Sh
+ECHO	oldCounter.sh	/^                        ECHO="true"$/;"	v
 ED	myWatchNoBlink.sh	/^    ED=$(tput ed)$/;"	v
 ED	myWatchNoBlinkColorized.sh	/^    ED=$(tput ed)$/;"	v
 EL	myWatchNoBlink.sh	/^    EL=$(tput el)$/;"	v
@@ -111,10 +111,10 @@ color2	customTerminalInstaller/.shell_aliases_functions.sh	/^    color2(){$/;"	f
 cols	animation	/^cols=`tput cols`$/;"	v
 cols	picture_finder.sh	/^cols=`tput cols`$/;"	v
 command	runner.sh	/^        command="vim -i NONE -V1 -Nes -c 'so""$fileToBeExecuted""' -c'echo""|q!' 2>&1 | tail +4"$/;"	v
-commandList	oldCounter.sh	/^		commandList="$i\\n$commandList"$/;"	v	language:Sh
-commandList	oldCounter.sh	/^commandList=""$/;"	v	language:Sh
-commands	oldCounter.sh	/^		commands="$f $commands"$/;"	v	language:Sh
-commands	oldCounter.sh	/^commands=""$/;"	v	language:Sh
+commandList	oldCounter.sh	/^		commandList="$i\\n$commandList"$/;"	v
+commandList	oldCounter.sh	/^commandList=""$/;"	v
+commands	oldCounter.sh	/^		commands="$f $commands"$/;"	v
+commands	oldCounter.sh	/^commands=""$/;"	v
 commitMessage	gitgo.sh	/^    local commitMessage="$1"$/;"	v
 commitTheDirectory	gitgo.sh	/^commitTheDirectory(){$/;"	f
 compiled	watchServiceFSWatchRustCompile.sh	/^			compiled=${fileName%*.rs}$/;"	v	language:Sh
@@ -132,8 +132,8 @@ delay	openAll.sh	/^local delay=.1 # time in seconds between characters$/;"	v	lan
 delim	batchRename.sh	/^delim=_$/;"	v
 dependencies_ary	customTerminalInstaller/install.sh	/^dependencies_ary=(vim tmux git wget lolcat cowsay cmatrix htop cmake glances bpython python-dev \\$/;"	v
 destinationFile	picture_finder.sh	/^	destinationFile=$destinationDirectory\/${picture##*\/}$/;"	v
-dir	oldCounter.sh	/^	dir=`echo $PATH | cut -d: -f$i`$/;"	v	language:Sh
-dirNum	oldCounter.sh	/^dirNum=`expr $(echo $PATH | tr -cd : | wc -c) + 1`$/;"	v	language:Sh
+dir	oldCounter.sh	/^	dir=`echo $PATH | cut -d: -f$i`$/;"	v
+dirNum	oldCounter.sh	/^dirNum=`expr $(echo $PATH | tr -cd : | wc -c) + 1`$/;"	v
 disable_proxy	tor.sh	/^function disable_proxy() {$/;"	f
 displayProgress	batchRename.sh	/^displayProgress(){$/;"	f
 displayProgress	picture_finder.sh	/^displayProgress(){$/;"	f
@@ -159,7 +159,7 @@ fileToBeExecuted	runner.sh	/^fileToBeExecuted="$1"$/;"	v
 fileToBeExecuted	templater.sh	/^fileToBeExecuted="$1"$/;"	v
 files	backupBashConfig.sh	/^files=("$HOME_DIR\/.bashrc" "$HOME_DIR\/.bash_profile" "$HOME_DIR\/.profile" '\/etc\/bashrc' '\/etc\/profile')$/;"	v
 filesArray	openAll.sh	/^filesArray=()$/;"	v	language:Sh
-findTotal	oldCounter.sh	/^findTotal (){$/;"	f	language:Sh
+findTotal	oldCounter.sh	/^findTotal (){$/;"	f
 first	batchRename.sh	/^        local first=`echo ${file%%$delim*}`$/;"	v
 firstFile	sync.sh	/^	firstFile="${firstFile}\/"$/;"	v	language:Sh
 firstFile	sync.sh	/^firstFile="$1"$/;"	v	language:Sh
@@ -301,8 +301,8 @@ timeToSleep	myWatchNoBlinkColorized.sh	/^    timeToSleep=$2$/;"	v
 timeToSleep	myWatchNoBlinkColorized.sh	/^    timeToSleep=0.5$/;"	v
 title	customTerminalInstaller/.shell_aliases_functions.sh	/^    title="$1"$/;"	v
 topline	animation	/^topline=0$/;"	v
-total	oldCounter.sh	/^total=0$/;"	v	language:Sh
-total	oldCounter.sh	/^total=`expr $(ls -F $1 | grep ".*[*@]" | wc -l) + $total`$/;"	v	language:Sh
+total	oldCounter.sh	/^total=0$/;"	v
+total	oldCounter.sh	/^total=`expr $(ls -F $1 | grep ".*[*@]" | wc -l) + $total`$/;"	v
 transferFile	transfer.sh	/^transferFile="$1"$/;"	v	language:Sh
 tutorialDir	tutorialConfigUpdater.sh	/^tutorialDir="$HOME\/Documents\/tutorialsRepo"$/;"	v
 update	customTerminalInstaller/install.sh	/^update (){$/;"	f

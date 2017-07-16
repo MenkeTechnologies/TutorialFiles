@@ -123,7 +123,7 @@ commitTheDirectory	gitgo.sh	/^commitTheDirectory(){$/;"	f
 compiled	watchServiceFSWatchRustCompile.sh	/^			compiled=${fileName%*.rs}$/;"	v
 concat	myWatchNoBlinkColorized.sh	/^	    	concat="$(java parser $LINE)"$/;"	v
 contents	duplicateLineDeleter.sh	/^	contents=$(cat -s "$file")$/;"	v
-contents	indenterAndDuplicateLineDeleter.sh	/^	contents=$(cat -s "$file")$/;"	v
+contents	indenterAndDuplicateLineDeleter.sh	/^    contents=$(cat -s "$file")$/;"	v
 convertFiles	batchRename.sh	/^convertFiles(){$/;"	f
 count	animation	/^count=$topline$/;"	v
 createGIF	customTerminalInstaller/.shell_aliases_functions.sh	/^    createGIF(){$/;"	f

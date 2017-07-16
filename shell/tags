@@ -8,6 +8,7 @@ ADDRESS	uploadWebDS.sh	/^ADDRESS="jacobmenke@$IP:\/var\/services\/web"$/;"	v
 ADDRESS	uploadWebPi.sh	/^ADDRESS="pi@$IP:\/var\/www\/html"$/;"	v
 BACKUP_DIR	backupBashConfig.sh	/^BACKUP_DIR="$SCRIPTS_DIR\/rcBackups"$/;"	v
 BACKUP_DIR	duplicateLineDeleter.sh	/^BACKUP_DIR=$SCRIPTS_DIR\/rcBackups$/;"	v
+BACKUP_DIR	indenterAndDuplicateLineDeleter.sh	/^BACKUP_DIR=$SCRIPTS_DIR\/rcBackups$/;"	v
 BLOCKSIZE	secureDelete.sh	/^BLOCKSIZE=1      #  I\/O with \/dev\/urandom requires unit block size,$/;"	v
 BLUE	blueText.sh	/^BLUE='\\e[37;44m'$/;"	v
 BLUE	blueUpperText.sh	/^BLUE='\\e[37;44m'$/;"	v
@@ -47,6 +48,7 @@ HOME	myWatchNoBlink.sh	/^    HOME=$(tput cup 0 0)$/;"	v
 HOME	myWatchNoBlinkColorized.sh	/^    HOME=$(tput cup 0 0)$/;"	v
 HOME_DIR	backupBashConfig.sh	/^HOME_DIR=$HOME$/;"	v
 HOME_DIR	duplicateLineDeleter.sh	/^HOME_DIR=$HOME$/;"	v
+HOME_DIR	indenterAndDuplicateLineDeleter.sh	/^HOME_DIR=$HOME$/;"	v
 IFS	listAllCommands.sh	/^IFS=:$/;"	v
 IFS	sortedArrayCounter.sh	/^        IFS="$OLDIFS"$/;"	v
 IFS	sortedArrayCounter.sh	/^IFS=$'\\n'$/;"	v
@@ -79,6 +81,7 @@ ROWS	myWatchNoBlinkColorized.sh	/^        ROWS=$(tput lines)$/;"	v
 SCRIPTS	tutorialConfigUpdater.sh	/^SCRIPTS="$HOME\/Documents\/shellScripts"$/;"	v
 SCRIPTS_DIR	backupBashConfig.sh	/^SCRIPTS_DIR="$SCRIPTS"$/;"	v
 SCRIPTS_DIR	duplicateLineDeleter.sh	/^SCRIPTS_DIR=$SCRIPTS$/;"	v
+SCRIPTS_DIR	indenterAndDuplicateLineDeleter.sh	/^SCRIPTS_DIR=$SCRIPTS$/;"	v
 SCRIPT_TO_RUN	watchServiceFSWatchPiDesktop.sh	/^SCRIPT_TO_RUN=$SCRIPTS\/upLoadPi.sh$/;"	v
 SCRIPT_TO_RUN	watchServiceFSWatchPiWeb.sh	/^SCRIPT_TO_RUN=$SCRIPTS\/uploadWebPi.sh$/;"	v
 TEXT_TO_DISPLAY	figletRandomFont.sh	/^TEXT_TO_DISPLAY="$1"$/;"	v
@@ -120,6 +123,7 @@ commitTheDirectory	gitgo.sh	/^commitTheDirectory(){$/;"	f
 compiled	watchServiceFSWatchRustCompile.sh	/^			compiled=${fileName%*.rs}$/;"	v
 concat	myWatchNoBlinkColorized.sh	/^	    	concat="$(java parser $LINE)"$/;"	v
 contents	duplicateLineDeleter.sh	/^	contents=$(cat -s "$file")$/;"	v
+contents	indenterAndDuplicateLineDeleter.sh	/^	contents=$(cat -s "$file")$/;"	v
 convertFiles	batchRename.sh	/^convertFiles(){$/;"	f
 count	animation	/^count=$topline$/;"	v
 createGIF	customTerminalInstaller/.shell_aliases_functions.sh	/^    createGIF(){$/;"	f
@@ -310,6 +314,7 @@ updatePI	updater.sh	/^updatePI(){$/;"	f
 usage	directoryContentsSize.sh	/^usage(){$/;"	f
 usage	duplicateLineDeleter.sh	/^usage(){$/;"	f
 usage	gitgo.sh	/^usage(){$/;"	f
+usage	indenterAndDuplicateLineDeleter.sh	/^usage(){$/;"	f
 usage	myWatchNoBlink.sh	/^usage(){$/;"	f
 usage	myWatchNoBlinkColorized.sh	/^usage(){$/;"	f
 usage	mywatch.sh	/^usage(){$/;"	f

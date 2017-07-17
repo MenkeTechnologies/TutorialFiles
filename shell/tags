@@ -79,7 +79,7 @@ RESET	coolFormatter.sh	/^RESET='\\e[0m'$/;"	v
 RESET	redText.sh	/^RESET='\\e[0m'$/;"	v
 ROWS	myWatchNoBlink.sh	/^        ROWS=$(tput lines)$/;"	v
 ROWS	myWatchNoBlinkColorized.sh	/^        ROWS=$(tput lines)$/;"	v
-SCRIPTS	tutorialConfigUpdater.sh	/^SCRIPTS="$HOME\/Documents\/shellScripts"$/;"	v
+SCRIPTS	macOnly/tutorialConfigUpdater.sh	/^SCRIPTS="$HOME\/Documents\/shellScripts"$/;"	v
 SCRIPTS_DIR	backupBashConfig.sh	/^SCRIPTS_DIR="$SCRIPTS"$/;"	v
 SCRIPTS_DIR	duplicateLineDeleter.sh	/^SCRIPTS_DIR=$SCRIPTS$/;"	v
 SCRIPTS_DIR	indenterAndDuplicateLineDeleter.sh	/^SCRIPTS_DIR=$SCRIPTS$/;"	v
@@ -102,7 +102,7 @@ arr	sortedArrayCounter.sh	/^arr=()$/;"	v
 arrayOfPI	updater.sh	/^arrayOfPI=(r r2)$/;"	v
 blocksToSize	customTerminalInstaller/.shell_aliases_functions.sh	/^blocksToSize(){$/;"	f
 bold	customTerminalInstaller/.shell_aliases_functions.sh	/^bold=$(tput bold || tput md)$/;"	v
-boldAndUnderlinedPrint	tutorialConfigUpdater.sh	/^boldAndUnderlinedPrint(){$/;"	f
+boldAndUnderlinedPrint	macOnly/tutorialConfigUpdater.sh	/^boldAndUnderlinedPrint(){$/;"	f
 bytes	customTerminalInstaller/.shell_aliases_functions.sh	/^    local bytes=$(( input * 512 ))$/;"	v
 cd	customTerminalInstaller/.shell_aliases_functions.sh	/^    cd(){$/;"	f
 chars	batchRename.sh	/^    local chars=1 # number of characters to display$/;"	v
@@ -198,7 +198,7 @@ installGitHubPlugin	customTerminalInstaller/tmux_plugins_install.sh	/^installGit
 installOhMyZshPlugin	customTerminalInstaller/zsh.sh	/^installOhMyZshPlugin(){$/;"	f
 installOhMyZshPlugin	customTerminalInstaller/zsh_plugins_install.sh	/^installOhMyZshPlugin(){$/;"	f
 installVimPlugin	customTerminalInstaller/vim_plugins_install.sh	/^installVimPlugin(){$/;"	f
-installerDir	tutorialConfigUpdater.sh	/^installerDir="$HOME\/Documents\/shellScripts\/customTerminalInstaller"$/;"	v
+installerDir	macOnly/tutorialConfigUpdater.sh	/^installerDir="$HOME\/Documents\/shellScripts\/customTerminalInstaller"$/;"	v
 killCursor	batchRename.sh	/^killCursor(){$/;"	f
 killCursor	openAll.sh	/^killCursor(){$/;"	f
 killCursor	picture_finder.sh	/^killCursor(){$/;"	f
@@ -315,7 +315,7 @@ topline	animation	/^topline=0$/;"	v
 total	oldCounter.sh	/^total=0$/;"	v
 total	oldCounter.sh	/^total=`expr $(ls -F $1 | grep ".*[*@]" | wc -l) + $total`$/;"	v
 transferFile	transfer.sh	/^transferFile="$1"$/;"	v
-tutorialDir	tutorialConfigUpdater.sh	/^tutorialDir="$HOME\/Documents\/tutorialsRepo"$/;"	v
+tutorialDir	macOnly/tutorialConfigUpdater.sh	/^tutorialDir="$HOME\/Documents\/tutorialsRepo"$/;"	v
 update	customTerminalInstaller/install.sh	/^update (){$/;"	f
 updatePI	updater.sh	/^updatePI(){$/;"	f
 usage	directoryContentsSize.sh	/^usage(){$/;"	f
@@ -331,7 +331,7 @@ view	eyes.sh	/^    view=${ary[$randIndex]}$/;"	v
 watchCommand	myWatchNoBlink.sh	/^watchCommand() {$/;"	f
 watchCommand	myWatchNoBlinkColorized.sh	/^watchCommand() {$/;"	f
 watchingFile	watchServiceFSWatchRustCompile.sh	/^	watchingFile=`basename $2`$/;"	v
-websiteDir	tutorialConfigUpdater.sh	/^websiteDir="$HOME\/WebstormProjects\/PersonalWebsite"$/;"	v
+websiteDir	macOnly/tutorialConfigUpdater.sh	/^websiteDir="$HOME\/WebstormProjects\/PersonalWebsite"$/;"	v
 x	mywatch.sh	/^    x=$(eval "$1")$/;"	v
 x	test.py	/^x=5$/;"	v
 xf	customTerminalInstaller/.shell_aliases_functions.sh	/^        xf=(s==" B  ")?"%5d   ":"%8.2f"$/;"	v

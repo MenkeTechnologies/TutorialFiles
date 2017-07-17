@@ -2,16 +2,17 @@
 #{{{                    MARK:Header
 #**************************************************************
 #####   Author: JACOBMENKE
-#####   Date: Sun Jul 16 16:04:37 EDT 2017
+#####   Date: Mon Jul 17 13:30:47 EDT 2017
 #####   Purpose: bash script to monitor log files in color
-#####   Notes: requires globstar option
+#####   Notes: 
 #}}}***********************************************************
 
 shopt -s globstar
 
-if [[ `uname` = Darwin ]]; then
+if [[ $(uname) == Darwin ]]; then
     colortail -k $HOME/.colortailconf -f /var/log/**/*.log /var/log/**/*.out 
 else
     colortail -k /home/pi/.colortailconf -f /var/log/**/*.log /var/log/{dmesg,wtmp,debug,lastlog,messages} /var/log/**/*.err
 fi
+
 

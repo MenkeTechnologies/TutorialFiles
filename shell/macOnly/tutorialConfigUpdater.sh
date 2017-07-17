@@ -58,7 +58,7 @@ cp "$HOME/Documents/iterm-jm-colors.itermcolors" "$tutorialDir"
 
 boldAndUnderlinedPrint "Copying vim plugins"
 
-cp -R "$HOME/.vim" "$tutorialDir/vim"
+sudo cp -R "$HOME/.vim" "$tutorialDir/vim"
 
 cd "$tutorialDir" || exit 1
 

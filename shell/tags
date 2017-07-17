@@ -154,6 +154,7 @@ executableScriptsProcessing	runner.sh	/^executableScriptsProcessing(){$/;"	f
 executableScriptsProcessing	templater.sh	/^executableScriptsProcessing(){$/;"	f
 executeFileFirstArgIsCommand	runner.sh	/^executeFileFirstArgIsCommand(){$/;"	f
 executeTheFile	runner.sh	/^executeTheFile(){$/;"	f
+exists	updater.sh	/^exists(){$/;"	f
 f	customTerminalInstaller/.shell_aliases_functions.sh	/^    f(){$/;"	f
 file	openAll.sh	/^	file="$(echo $file | tr '[:upper:]' '[:lower:]')"$/;"	v
 file	secureDelete.sh	/^    file="$i"$/;"	v

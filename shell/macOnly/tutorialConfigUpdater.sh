@@ -32,8 +32,8 @@ cp $HOME/.rpitokens.sh "$tutorialDir/aliases"
 
 boldAndUnderlinedPrint "Copying shellScripts"
 #clear out old scripts, dbl quotes escape asterisk
-rm -f "$tutorialDir/shell/*"
-cp -R "$HOME/Documents/shellScripts/"* "$tutorialDir/shell"
+rm -rf "$tutorialDir/shell/*"
+cp -R "$SCRIPTS"/*.sh "$SCRIPTS"/macOnly "$tutorialDir/shell"
 
 boldAndUnderlinedPrint "Copying tags file"
 cp "$HOME/Documents/shellScripts/tags" "$tutorialDir/shell"
@@ -88,7 +88,7 @@ cp $HOME/.zshrc "$websiteDir/downloads"
 
 boldAndUnderlinedPrint "Copying scripts to $websiteDir"
 rm -rf $websiteDir/downloads/scripts/*
-cp -R $SCRIPTS/* "$websiteDir/downloads/scripts"
+cp -R $SCRIPTS/*.sh "$SCRIPTS"/macOnly $websiteDir/downloads/scripts"
 
 cd "$websiteDir/downloads" || exit 1
 tar cvfz MenkeTechnologiesShellScripts.tgz scripts
@@ -103,7 +103,7 @@ git push
 
 boldAndUnderlinedPrint "Copying scripts to custom Installer Repo"
 rm -rf $SCRIPTS/customTerminalInstaller/scripts/*
-cp -R $SCRIPTS/* "$installerDir/scripts"
+cp -R "$SCRIPTS"/*.sh "$SCRIPTS"/macOnly "$installerDir/scripts"
 cp $HOME/.vimrc "$installerDir"
 cp $HOME/.tmux.conf "$installerDir"
 cp $HOME/.tmux.conf.rpi "$installerDir"

@@ -300,7 +300,7 @@ summarizeSizes	directoryContentsSize.sh	/^summarizeSizes(){$/;"	f
 sys	test.py	/^import sys$/;"	i
 tac	customTerminalInstaller/.shell_aliases_functions.sh	/^    tac(){$/;"	f
 tail	shebangChanger.sh	/^        tail=$(cat "$file")$/;"	v
-tail	shebangChanger.sh	/^        tail=$(tail +$lineCounter "$file")$/;"	v
+tail	shebangChanger.sh	/^        tail=$(sed -n "$lineCounter,$"p "$file")$/;"	v
 temp	batchRename.sh	/^        local temp=${spinner#?}               # remove first character from $spinner$/;"	v
 temp	openAll.sh	/^	local temp=${spinner#?}               # remove first character from $spinner$/;"	v
 timeToSleep	myWatchNoBlink.sh	/^    timeToSleep=$2$/;"	v

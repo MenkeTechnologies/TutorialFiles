@@ -1,0 +1,253 @@
+#echo .bashrc
+#cat ~/bannerString.txt
+#sleep 0.2
+
+if [[ -f /etc/bashrc  ]]; then
+    . /etc/bashrc
+fi
+if [[ $- == *i* ]];then
+
+    if [ -f $(brew --prefix)/etc/bash_completion ]; then
+    . $(brew --prefix)/etc/bash_completion
+    fi
+fi
+#**********************************************************************
+#                           MARK:NVM                            
+#**********************************************************************
+. $(brew --prefix nvm)/nvm.sh
+#**********************************************************************
+#                           MARK:ENVIRONMENT VARIABLES
+#**********************************************************************
+export CLICOLOR="YES"
+export LSCOLORS="ExFxBxDxCxegedabagacad"
+export TERM="xterm-256color"
+export SCRIPTS="/Users/jacobmenke/Documents/shellScripts"
+export PYSCRIPTS="/Users/jacobmenke/PycharmProjects"
+export D="/Users/jacobmenke/Desktop"
+export WCC="/Volumes/JAKESD/wcc/cps"
+# Setting PATH for Python 3.5
+# The orginal version is saved in .profile.pysave
+unset PATH
+export PATH="$SCRIPTS/save-run:/Users/jacobmenke/perl5/bin:Library/Frameworks/Python.framework/Versions/3.5/bin:/Users/jacobmenke/Documents/shellScripts:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Library/Developer/CommandLineTools/usr/bin$PATH"
+#**********************************************************************
+#                           MARK:HOMEs                           
+#**********************************************************************
+export HOMEBREW_GITHUB_API_TOKEN=519b78d13c6b655a45b3c2b97286938211cb9698
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home"
+export GROOVY_HOME="/usr/local/Cellar/groovy/2.4.11"
+export SCALA_HOME="/usr/local/Cellar/scala/2.12.2"
+export NODE_HOME='/usr/local/lib/node_modules'
+export PERL_HOME='/usr/local/Cellar/perl/5.24.1/'
+export IP="http://98.209.117.32"
+eval `perl -I ~/perl5/lib/perl5 -Mlocal::lib`
+export MANPATH=$HOME/perl5/man:$MANPATH
+export HISTSIZE=50000
+export PS1=$'\[\e[1m\]\u@\h\[\e[35;0m\e[1;35m\] \d \T\[\e[0m\]\u2630\u2666\u2630\u2666\[\e[1;35m\]:\[\e[34m\]\w \[\e[0m\]\n\\$?=>$? \!\[\e[1;35m\]\u2630\u2666\[\e[0m\] '
+export PS2=$'\[\e[37;44m\]\u2630\u2666\u2630\u2666-JAKOB-\u2630\u2666\u2630\u2630___\[\e[0m\]'
+export PS4=$'+ \[\e[37;44m\]LINE_$LINENO:\[\e[0m\] '
+export HISTTIMEFORMAT=' %F %T _ '
+export BLUE="\e[37;44m"
+export RESET="\e[0m"
+export GITHUB_ACCOUNT='MenkeTechnologies'
+#**********************************************************************
+#                           MARK:FUNCTIONS
+#**********************************************************************
+scnew(){
+    if [[ -z "$1" ]];then
+        echo "no arg..."
+        return 1
+    fi
+    
+    bash '/Users/jacobmenke/Documents/shellScripts/createScriptButDontOpenSublime.sh' "$1"
+}
+nn(){
+    if [[ -z "$1" ]];then
+        echo "Title is \$1 and message is \$2..."
+        return 1
+    fi
+
+title="$1"
+msg="$2"
+
+echo "display notification \"$msg\" with title \"$title\"" | osascript 
+
+}
+suc(){
+    subl $SCRIPTS
+    f $SCRIPTS
+    python3 /Users/jacobmenke/PycharmProjects/textEditorTwoColumns.py
+}
+db(){
+    #open -a Firefox $IP:8080/db
+    ( python3 $PYSCRIPTS/logIntoMyDB.py & )
+}
+clearList () {
+    clear
+    ls -FlhAO
+}
+animate(){
+    bash $SCRIPTS/animation.sh
+}
+blocksToSize(){
+    read input
+    local bytes=$(( input * 512 ))
+    echo $bytes | humanReadable 
+}
+
+humanReadable(){
+awk 'function human(x) {
+         s=" B   KiB MiB GiB TiB EiB PiB YiB ZiB"
+         while (x>=1024 && length(s)>1)
+               {x/=1024; s=substr(s,5)}
+         s=substr(s,1,4)
+         xf=(s==" B  ")?"%5d   ":"%8.2f"
+         return sprintf("Your size:"xf"%s", x, s)
+      }
+      {gsub(/^[0-9]+/, human($1));print}'
+}
+f(){
+    cd "$1"
+    clear
+    ls -AlhFO
+}
+execpy(){
+    python3 $PYSCRIPTS/"$1"
+
+}
+search(){
+    if [[ -z $2 ]];then
+         grep -iRn "$1" *
+    else
+         grep -iRn "$1" "$2"
+    fi
+
+}
+cd(){
+    builtin cd "$@";
+
+    clearList
+}
+gm(){
+	git add .
+	git commit -m "$1"
+	git push
+}
+
+GIT_PROMPT_ONLY_IN_REPO=1
+#**********************************************************************
+#                           MARK:ALIASES
+#**********************************************************************
+#portable aliases
+alias ll="clearList"
+alias la="clearList"
+alias l="ls -AFlhO"
+alias r="cd ..;clearList"
+alias t="cd /;clearList"
+alias d="cd ~/Desktop; clearList"
+alias vrc="vi ~/.vimrc"
+alias deleteTab="sed -e '/^[ tab]*$/d'"
+shopt -s cdspell
+shopt -s expand_aliases
+set -o vi
+shopt -s globstar
+shopt -s autocd
+alias b="bash"
+alias upper='tr '\''a-z'\'' '\''A-Z'\'''
+#over alias es
+alias grep="grep --color=auto"
+alias egrep="egrep --color=always"
+alias tree='tree -afC'
+#Darwin specific aliases
+alias spd="du -csh {.[^.]*,..?*} * 2> /dev/null | gsort -h"
+alias cpu="top -o cpu"
+alias mem="top -o mem"
+alias tip="top -o +command"
+alias nd="defaults write com.apple.dock autohide-delay -float 100 && defaults write com.apple.dock tilesize -int 1 && killall Dock"
+alias coolformater="sed -e 's/[^[:blank:]]/_&_/g' -e 's/[[:blank:]]/\/\/\/\/\//g'"
+alias pkill="pkill -iIl"
+alias tclsh="rlwrap tclsh"
+alias p="vi +1000 ~/.bashrc; source ~/.bashrc; bash $SCRIPTS/backupBashConfig.sh 2> /dev/null"
+alias logs="tail -f /var/log/*.log | lolcat"
+alias matr="cmatrix -C blue -abs"
+alias tm="python3 $PYSCRIPTS/tmux_starter.py"
+#**********************************************************************
+#                           MARK:PYTHON SCRIPTS
+#**********************************************************************
+alias b="execpy blackBoard.py"
+alias m="execpy mapIt.py"
+alias a="execpy amazonSearch.py"
+alias g="execpy googleSearch.py"
+alias shut="execpy shutdown.py"
+alias pb="execpy bills.py"
+alias u=" execpy udemy.py"
+alias i="ipconfig getifaddr en0"
+#**********************************************************************
+#                           MARK:SHELL SCRIPTS
+#**********************************************************************
+alias ct="bash $SCRIPTS/createTextFile.sh"
+alias u="bash $SCRIPTS/upLoadPi.sh"
+alias piweb="bash $SCRIPTS/uploadWebPi.sh"
+alias ud="bash $SCRIPTS/upLoadDS.sh"
+alias uweb="bash $SCRIPTS/uploadWebDS.sh"
+alias s="bash $SCRIPTS/sync.sh"
+alias sf="bash $SCRIPTS/directoryContentsSize.sh"
+alias sc="cd $SCRIPTS; clearList"
+alias blue="source $SCRIPTS/blueText.sh"
+alias n="open /Volumes/homes/JAKENAS/softwareTutorials; exit"
+alias dl="cd /Users/jacobmenke/Downloads; clearList; open ."
+alias c="cd /Volumes/JAKESD/wcc/cps; clearList"
+alias o="open ."
+alias jobs="jobs -l"
+#alias who="who -uHTba | sed '$ d'"
+alias ts="cd /Users/jacobmenke/.Trash; clearList"
+alias back="nohup /System/Library/Frameworks/ScreenSaver.framework/Resources/ScreenSaverEngine.app/Contents/MacOS/ScreenSaverEngine -background > /dev/null &"
+alias 8="bash updater.sh"
+alias sd="clear;ssh d "
+alias sftpd="sftp d:/homes/JAKENAS/music"
+alias sr="clear;ssh r"
+alias sr2="clear;ssh r2"
+alias emu="open /Volumes/JAKESD/EMU"
+alias sdroot="clear;ssh -p 7777 root@98.209.117.32"
+alias gc="$SCRIPTS/gitgo.sh"
+alias watchGit="bash $SCRIPTS/watchServiceFSWatchGit.sh"
+alias watchPiWeb="bash $SCRIPTS/watchServiceFSWatchPiWeb.sh"
+#**********************************************************************
+#                           MARK:REMOTE SHELLS SCRIPTS
+#**********************************************************************
+alias glt="ssh d -t 'sh /var/services/homes/JAKENAS/scripts/downloadTitlesLocal.sh'"
+alias grt="ssh d -tt 'sh /var/services/homes/JAKENAS/scripts/downloadTitlesRemote.sh'"
+alias v="open -a 'vnc viewer';execpy enterPasswordForVNC.py & bash $SCRIPTS/sshTunnelVnc.sh" 
+alias v2="open -a 'vnc viewer';execpy enterPasswordForVNC2.py & bash $SCRIPTS/sshTunnelVnc2.sh"
+alias rr="/Users/jacobmenke/Documents/shellScripts/rsyncr.sh"
+alias mntpi="sshfs -o IdentityFile=/Users/jacobmenke/.ssh/id_rsa r:/var/www/html /Users/jacobmenke/Desktop/tuts/piweb/"
+alias mntds="sshfs -o IdentityFile=/Users/jacobmenke/.ssh/id_rsa d:/volume1/homes/JAKENAS/softwareTutorials /Users/jacobmenke/Desktop/tuts/ds/"
+#**********************************************************************
+#                           MARK:RUST                           
+#**********************************************************************
+export PATH="$PATH:/Users/jacobmenke/.cargo/bin:$PATH"
+#**********************************************************************
+#                           MARK:RVM                           
+#**********************************************************************
+export PATH="$HOME/.rvm/bin:$PATH" # Add RVM to PATH for scripting
+
+
+#**********************************************************************
+#                           MARK:Git Prompt                           
+#**********************************************************************
+#if [ -f "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh" ]; then
+#          __GIT_PROMPT_DIR=$(brew --prefix)/opt/bash-git-prompt/share
+#          source "$(brew --prefix)/opt/bash-git-prompt/share/gitprompt.sh"
+#fi
+
+
+powerline-daemon -q
+POWERLINE_BASH_CONTINUATION=1
+POWERLINE_BASH_SELECT=1
+source /usr/local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh
+
+
+
+source /Users/jacobmenke/.shell_aliases_functions.sh
+
+
+

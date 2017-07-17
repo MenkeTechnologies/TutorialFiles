@@ -1,0 +1,11 @@
+#echo .profile
+
+export UMASK=000
+# Setting PATH for Python 3.5
+# The orginal version is saved in .profile.pysave
+
+#source ~/.bashrc
+#cd $D && clearList
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+

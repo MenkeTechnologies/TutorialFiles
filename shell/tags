@@ -56,6 +56,7 @@ IFS	sortedArrayCounter.sh	/^IFS=:$/;"	v
 INSTALLER_DIR	customTerminalInstaller/install.sh	/^INSTALLER_DIR="$(pwd -P)"$/;"	v
 INSTALLER_DIR	customTerminalInstaller/tmux_plugins_install.sh	/^INSTALLER_DIR="$(pwd)"$/;"	v
 INSTALLER_DIR	customTerminalInstaller/vim_plugins_install.sh	/^INSTALLER_DIR="$(pwd)"$/;"	v
+INTERFACE	macOnly/tor.sh	/^INTERFACE=Wi-Fi$/;"	v
 IP	uploadWebPi.sh	/^IP=$IP$/;"	v
 JACOB	.tokens.sh	/^		JACOB="9047039159"$/;"	v
 JESSICA	.tokens.sh	/^		JESSICA="9046992045"$/;"	v
@@ -138,6 +139,7 @@ dependencies_ary	customTerminalInstaller/install.sh	/^dependencies_ary=(vim tmux
 destinationFile	picture_finder.sh	/^	destinationFile=$destinationDirectory\/${picture##*\/}$/;"	v
 dir	oldCounter.sh	/^	dir=`echo $PATH | cut -d: -f$i`$/;"	v
 dirNum	oldCounter.sh	/^dirNum=`expr $(echo $PATH | tr -cd : | wc -c) + 1`$/;"	v
+disable_proxy	macOnly/tor.sh	/^function disable_proxy() {$/;"	f
 disable_proxy	tor.sh	/^function disable_proxy() {$/;"	f
 displayProgress	batchRename.sh	/^displayProgress(){$/;"	f
 displayProgress	picture_finder.sh	/^displayProgress(){$/;"	f
@@ -243,6 +245,7 @@ pipe	readFIFO.sh	/^pipe=\/tmp\/testpipe$/;"	v
 powerline_dir	customTerminalInstaller/install.sh	/^powerline_dir="$(pip show powerline-status | grep Location | awk '{print $2}')"$/;"	v
 prettyPrint	customTerminalInstaller/.shell_aliases_functions.sh	/^    prettyPrint(){$/;"	f
 prettyPrint	gitgo.sh	/^prettyPrint(){$/;"	f
+prettyPrint	macOnly/tor.sh	/^prettyPrint (){$/;"	f
 prettyPrint	rpiSoftwareUpdater.sh	/^prettyPrint(){$/;"	f
 prettyPrint	textmessage.sh	/^prettyPrint () {$/;"	f
 prettyPrint	tor.sh	/^prettyPrint (){$/;"	f

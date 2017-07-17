@@ -186,6 +186,7 @@ gitCommitAndPush	customTerminalInstaller/.shell_aliases_functions.sh	/^    gitCo
 gitPull	gitgo.sh	/^gitPull(){$/;"	f
 gitPush	gitgo.sh	/^gitPush(){$/;"	f
 host	rsyncr.sh	/^host="r"$/;"	v
+htopDIR	customTerminalInstaller/install.sh	/^htopDIR="$HOME\/.config\/htop"$/;"	v
 hub_create	customTerminalInstaller/.shell_aliases_functions.sh	/^    hub_create(){$/;"	f
 hub_delete	customTerminalInstaller/.shell_aliases_functions.sh	/^    hub_delete(){$/;"	f
 humanReadable	customTerminalInstaller/.shell_aliases_functions.sh	/^humanReadable(){$/;"	f

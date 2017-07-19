@@ -1,4 +1,4 @@
-# SCRIPT SUMMARY
+# Scripts Summary
 
 archetypeShower.sh #####   Purpose: bash script to show screenfetch 
 
@@ -86,7 +86,7 @@ runner.sh #####   Purpose: bash script to help exec of script from vim
 
 secureDelete.sh #####   Purpose: bash script to securely delete a file with no hope of recovery
 
-shebangChanger.sh # /::::|_\:\__\ /:/_/:/ /\__\ /::::::::\__\ /\ |:|__|____ /:/_/:/ /\__\
+shebangChanger.sh #####   Purpose: bash script to change the shebang line
 
 sortedArrayCounter.sh #####   Purpose: bash script to see sorted commands in PATH 
 
@@ -100,7 +100,6 @@ sync.sh #####   Purpose: bash script to sync two directories
 
 templater.sh #####   Purpose: file templates for bash, perl, python
 
-test.sh 
 
 textmessage.sh #####   Purpose: bash  script to facilitate text messaging from command line 
 

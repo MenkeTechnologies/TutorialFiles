@@ -120,6 +120,8 @@ commandList	oldCounter.sh	/^commandList=""$/;"	v
 commands	oldCounter.sh	/^		commands="$f $commands"$/;"	v
 commands	oldCounter.sh	/^commands=""$/;"	v
 commitMessage	gitgo.sh	/^    local commitMessage="$1"$/;"	v
+commitMessage	macOnly/tutorialConfigUpdater.sh	/^    commitMessage="$1"$/;"	v
+commitMessage	macOnly/tutorialConfigUpdater.sh	/^    commitMessage="update"$/;"	v
 commitTheDirectory	gitgo.sh	/^commitTheDirectory(){$/;"	f
 compiled	watchServiceFSWatchRustCompile.sh	/^			compiled=${fileName%*.rs}$/;"	v
 concat	myWatchNoBlinkColorized.sh	/^	    	concat="$(java parser $LINE)"$/;"	v

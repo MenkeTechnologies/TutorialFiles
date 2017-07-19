@@ -137,6 +137,9 @@ watchtree1Color.sh #####   Purpose: bash script to show tree of processes
 
 watchtree2.sh #####   Purpose: bash script to monitor tree of processes
 
+# Mac Only
+
+
 figletRandomFont.sh #####   Purpose: bash script to display random figlet fonts
 
 figletRandomFontOnce.sh #####   Purpose: bash script to display random figlet fonts

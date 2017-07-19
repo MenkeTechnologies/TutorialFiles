@@ -1,4 +1,4 @@
-# Scripts Summary
+# Mac and Linux Scripts
 
 archetypeShower.sh #####   Purpose: bash script to show screenfetch 
 

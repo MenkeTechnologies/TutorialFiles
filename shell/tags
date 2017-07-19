@@ -263,7 +263,7 @@ progress_pid	secureDelete.sh	/^    progress_pid=$!$/;"	v
 prompt	batchRename.sh	/^    local prompt="press any key..." # user prompt$/;"	v
 prompt	openAll.sh	/^local prompt="press any key..." # user prompt$/;"	v
 pstreeMonitor	customTerminalInstaller/.shell_aliases_functions.sh	/^    pstreeMonitor(){$/;"	f
-purpose	headerSummarizer.sh	/^    purpose=$(sed -n 6p $file)"$/;"	v
+purpose	headerSummarizer.sh	/^    purpose="$(sed -n 6p $file)"$/;"	v
 randIndex	eyes.sh	/^    randIndex=$(($RANDOM % $rangePossibleIndices))$/;"	v
 randIndex	figletRandomFont.sh	/^    randIndex=$(($RANDOM % $rangePossibleIndices))$/;"	v
 randIndex	figletRandomFontOnce.sh	/^randIndex=$(($RANDOM % $rangePossibleIndices))$/;"	v

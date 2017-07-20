@@ -48,7 +48,7 @@ README="$tutorialDir/shell/README.md"
 echo "# Mac and Linux Scripts" > "$README"
 bash "$SCRIPTS/headerSummarizer.sh" "$SCRIPTS/"*.sh >> "$README" 
 echo "# Mac Only Scripts" >> "$README"
-bash "$SCRIPTS/headerSummarizer.sh" "$SCRIPTS/"macOnly/*.sh >> "README"
+bash "$SCRIPTS/headerSummarizer.sh" "$SCRIPTS/"macOnly/*.sh >> "$README"
 
 boldAndUnderlinedPrint "Copying tags file"
 cp "$HOME/Documents/shellScripts/tags" "$tutorialDir/shell"

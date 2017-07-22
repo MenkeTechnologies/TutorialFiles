@@ -293,6 +293,8 @@ showHidden	directoryContentsSize.sh	/^showHidden(){$/;"	f
 show_usage	test.pl	/^sub show_usage {$/;"	s
 sorted	sortedArrayCounter.sh	/^sorted=( $(sort -f <<<"${arr[*]}") )$/;"	v
 sorted	sortedArrayCounter.sh	/^sorted=($(uniq <<< "${sorted[*]}"))$/;"	v
+sortedCommand	directoryContentsSize.sh	/^sortedCommand=$sortedCommand$/;"	v
+sortedCommand	directoryContentsSize.sh	/^sortedCommand=sort$/;"	v
 spinner	batchRename.sh	/^        spinner="$temp${spinner%"$temp"}" # and add it to the end$/;"	v
 spinner	batchRename.sh	/^    local spinner="\\|\/-" # spinner$/;"	v
 spinner	openAll.sh	/^	spinner=$temp${spinner%"$temp"} # and add it to the end$/;"	v

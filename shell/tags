@@ -311,6 +311,7 @@ tac	customTerminalInstaller/.shell_aliases_functions.sh	/^    tac(){$/;"	f
 tail	shebangChanger.sh	/^        tail=$(cat "$file")$/;"	v
 tail	shebangChanger.sh	/^        tail=$(sed -n "$lineCounter,$"p "$file")$/;"	v
 tailVersion	colorLogger.sh	/^    tailVersion=tail$/;"	v
+tailVersion	colorLogger.sh	/^  tailVersion="tail"$/;"	v
 tailVersion	colorLogger.sh	/^tailVersion="colortail -k $HOME\/.colortailconf"$/;"	v
 temp	batchRename.sh	/^        local temp=${spinner#?}               # remove first character from $spinner$/;"	v
 temp	openAll.sh	/^	local temp=${spinner#?}               # remove first character from $spinner$/;"	v

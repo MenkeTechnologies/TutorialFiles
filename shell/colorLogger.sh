@@ -17,9 +17,10 @@ type colortail 1>/dev/null 2>&1 || {
 }
 
 if [[ $(uname) == Darwin ]]; then
+  tailVersion="tail"
   $tailVersion -f /var/log/**/*.log /var/log/**/*.out /var/log/DiagnosticMessages \
         /var/log/asl /var/log/cups/* "$HOME"/Library/Logs/**/*.log "$HOME"/Library/Logs/**/*.out \
-        /Library/Logs/**/*.log 
+        /Library/Logs/**/*.log | ccze
 else
     #linux
     distroName=$(lsb_release -a | head -1 | awk '{print $3}')

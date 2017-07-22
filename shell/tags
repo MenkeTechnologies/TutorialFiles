@@ -247,6 +247,7 @@ path	shebangChanger.sh	/^path="#!\/usr\/bin\/env $executableProgram"$/;"	v
 perlOutdated	updater.sh	/^perlOutdated=$(cpan-outdated -p)$/;"	v
 pipe	readFIFO.sh	/^pipe=$HOME\/Desktop\/testpipe$/;"	v
 pipe	readFIFO.sh	/^pipe=\/tmp\/testpipe$/;"	v
+pipeVersion	colorLogger.sh	/^    pipeVersion=" | ccze"$/;"	v
 powerline_dir	customTerminalInstaller/install.sh	/^powerline_dir="$(pip show powerline-status | grep Location | awk '{print $2}')"$/;"	v
 prettyPrint	customTerminalInstaller/.shell_aliases_functions.sh	/^    prettyPrint(){$/;"	f
 prettyPrint	gitgo.sh	/^prettyPrint(){$/;"	f
@@ -310,9 +311,7 @@ sys	test.py	/^import sys$/;"	i
 tac	customTerminalInstaller/.shell_aliases_functions.sh	/^    tac(){$/;"	f
 tail	shebangChanger.sh	/^        tail=$(cat "$file")$/;"	v
 tail	shebangChanger.sh	/^        tail=$(sed -n "$lineCounter,$"p "$file")$/;"	v
-tailVersion	colorLogger.sh	/^    tailVersion=tail$/;"	v
-tailVersion	colorLogger.sh	/^  tailVersion="tail"$/;"	v
-tailVersion	colorLogger.sh	/^tailVersion="colortail -k $HOME\/.colortailconf"$/;"	v
+tailVersion	colorLogger.sh	/^tailVersion=tail$/;"	v
 temp	batchRename.sh	/^        local temp=${spinner#?}               # remove first character from $spinner$/;"	v
 temp	openAll.sh	/^	local temp=${spinner#?}               # remove first character from $spinner$/;"	v
 timeToSleep	myWatchNoBlink.sh	/^    timeToSleep=$2$/;"	v

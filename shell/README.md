@@ -25,6 +25,8 @@ createTextFile.sh #####   Purpose: bash script to create new script and edit it 
 
 directoryContentsSize.sh #####   Purpose: bash script to list files and folders in pwd and optionally sort by size
 
+dsDownloader.sh #####   Purpose: bash  script to download from RPi to local host
+
 duplicateLineDeleter.sh #####   Purpose: bash script to remove lines with no contents (squeeze)
 
 eyes.sh #####   Purpose: bash script to show cowsay eyes

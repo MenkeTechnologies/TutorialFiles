@@ -1,6 +1,6 @@
 " ~/.vim/sessions/vrc.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 23 June 2017 at 22:20:01.
+" Created by session.vim 2.13.1 on 22 July 2017 at 21:06:47.
 " Open this file in Vim and run :source % to restore your session.
 
 if exists('g:syntax_on') != 1 | syntax on | endif
@@ -10,7 +10,7 @@ if exists('g:did_indent_on') != 1 | filetype indent on | endif
 if &background != 'light'
 	set background=light
 endif
-if !exists('g:colors_name') || g:colors_name != 'lettuce' | colorscheme lettuce | endif
+if !exists('g:colors_name') || g:colors_name != 'sky' | colorscheme sky | endif
 call setqflist([])
 let SessionLoad = 1
 if &cp | set nocp | endif
@@ -22,7 +22,7 @@ if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
-badd +1 ~/.vimrc
+badd +0 ~/.vimrc
 badd +1 modena.css
 argglobal
 silent! argdel *
@@ -42,18 +42,16 @@ setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-67
+72
 silent! normal! zo
-170
+193
 silent! normal! zo
-295
-silent! normal! zo
-let s:l = 197 - ((11 * winheight(0) + 35) / 71)
+let s:l = 193 - ((27 * winheight(0) + 31) / 63)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-197
-normal! 09|
+193
+normal! 05|
 tabnext 1
 if exists('s:wipebuf')
 "   silent exe 'bwipe ' . s:wipebuf

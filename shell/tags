@@ -212,6 +212,8 @@ lcline	openAll.sh	/^	lcline="$(echo $line | tr '[:upper:]' '[:lower:]')"$/;"	v
 line	gitRemoteRepoInformation.sh	/^        line="$(git remote -v 2>\/dev\/null)"$/;"	v
 lineCounter	shebangChanger.sh	/^    lineCounter=1$/;"	v
 local	rsyncr.sh	/^local="$1"$/;"	v
+master	dsDownloader.sh	/^master="jacobmenke"$/;"	v
+master	rpiDownloader.sh	/^master="jacobmenke"$/;"	v
 messageToSpeak	say.sh	/^messageToSpeak=""$/;"	v
 mp3	customTerminalInstaller/.shell_aliases_functions.sh	/^    mp3(){$/;"	f
 mp4	customTerminalInstaller/.shell_aliases_functions.sh	/^    mp4(){$/;"	f
@@ -241,8 +243,8 @@ output	figletRandomFont.sh	/^    output="$(echo $TEXT_TO_DISPLAY | figlet -f $fo
 output	figletRandomFontOnce.sh	/^output="$(echo $TEXT_TO_DISPLAY | figlet -f $font)"$/;"	v
 output	menkeTechRandoFont.sh	/^    output="$(echo $TEXT_TO_DISPLAY | figlet -f $font)"$/;"	v
 output	watchServiceFSWatchRustCompile.sh	/^		output="$(rustc $2 2>&1)"$/;"	v
-outputDir	dsDownloader.sh	/^outputDir=Desktop$/;"	v
-outputDir	rpiDownloader.sh	/^outputDir=Desktop$/;"	v
+outputDir	dsDownloader.sh	/^outputDir="Desktop"$/;"	v
+outputDir	rpiDownloader.sh	/^outputDir="Desktop"$/;"	v
 pass_count	secureDelete.sh	/^    pass_count=1$/;"	v
 path	shebangChanger.sh	/^path="#!\/usr\/bin\/env $executableProgram"$/;"	v
 perlOutdated	updater.sh	/^perlOutdated=$(cpan-outdated -p)$/;"	v

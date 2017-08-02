@@ -151,6 +151,8 @@ distroName	clearTrash.sh	/^    distroName=$(lsb_release -a | head -1 | awk '{pri
 distroName	colorLogger.sh	/^    distroName=$(lsb_release -a | head -1 | awk '{print $3}')$/;"	v
 distroName	customTerminalInstaller/install.sh	/^    distroName=$(lsb_release -a | head -1 | awk '{print $3}')$/;"	v
 dontSummarizeSizes	directoryContentsSize.sh	/^dontSummarizeSizes(){$/;"	f
+enclosing_dir	rpiSoftwareUpdater.sh	/^    enclosing_dir="$1"$/;"	v
+enclosing_dir	updater.sh	/^    enclosing_dir="$1"$/;"	v
 ending	picture_finder.sh	/^	ending=${destinationFile##*.}$/;"	v
 escapeRemove	customTerminalInstaller/.shell_aliases_functions.sh	/^    escapeRemove(){$/;"	f
 execpy	customTerminalInstaller/.shell_aliases_functions.sh	/^    execpy(){$/;"	f
@@ -192,6 +194,8 @@ getRemoteDetails	gitgo.sh	/^getRemoteDetails(){$/;"	f
 gitCommitAndPush	customTerminalInstaller/.shell_aliases_functions.sh	/^    gitCommitAndPush(){$/;"	f
 gitPull	gitgo.sh	/^gitPull(){$/;"	f
 gitPush	gitgo.sh	/^gitPush(){$/;"	f
+gitRepoUpdater	rpiSoftwareUpdater.sh	/^gitRepoUpdater(){$/;"	f
+gitRepoUpdater	updater.sh	/^gitRepoUpdater(){$/;"	f
 host	rsyncr.sh	/^host="r"$/;"	v
 htopDIR	customTerminalInstaller/install.sh	/^htopDIR="$HOME\/.config\/htop"$/;"	v
 hub_create	customTerminalInstaller/.shell_aliases_functions.sh	/^    hub_create(){$/;"	f

@@ -2329,7 +2329,7 @@ let g:ycm_key_list_stop_completion = ['<C-y>']
 ### The `g:ycm_key_invoke_completion` option
 
 This option controls the key mapping used to invoke the completion menu for
-semantic completion. By default, semantic completion is trigged automatically
+semantic completion. By default, semantic completion is triggered automatically
 after typing `.`, `->` and `::` in insert mode (if semantic completion support
 has been compiled in). This key mapping can be used to trigger semantic
 completion anywhere. Useful for searching for top-level functions and classes.
@@ -3063,7 +3063,7 @@ This software is licensed under the [GPL v3 license][gpl].
 [vim]: http://www.vim.org/
 [syntastic]: https://github.com/scrooloose/syntastic
 [lightline]: https://github.com/itchyny/lightline.vim
-[flags_example]: https://github.com/Valloric/ycmd/blob/master/cpp/ycm/.ycm_extra_conf.py
+[flags_example]: https://raw.githubusercontent.com/Valloric/ycmd/6463774035e61a660ad9150a592b8829eb37fd10/cpp/ycm/.ycm_extra_conf.py
 [compdb]: http://clang.llvm.org/docs/JSONCompilationDatabase.html
 [subsequence]: https://en.wikipedia.org/wiki/Subsequence
 [listtoggle]: https://github.com/Valloric/ListToggle

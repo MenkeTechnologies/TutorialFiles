@@ -2,8 +2,8 @@ sw_volume: 86
 audio_device_state:1:CoreAudio
 audio_device_state:1:my_fifo
 state: play
-current: 0
-time: 9.009000
+current: 4
+time: 3.967000
 random: 0
 repeat: 1
 single: 0
@@ -2892,4 +2892,6 @@ playlist_begin
 2877:Digitalism - Apollo-Gize (Fred Falke Remix)-_ykDET9kLJI.mp3
 2878:Digitalism - Apollo-Gize (Fred Falke Remix)-_ykDET9kLJI.mp3
 2879:Kris Menace feat. Fred Falke - Fairlight-mNgVSqrSNWE.mp3
+2880:Digitalism - Apollo-Gize (Fred Falke Remix)-_ykDET9kLJI.mp3
+2881:Kris Menace feat. Fred Falke - Fairlight-mNgVSqrSNWE.mp3
 playlist_end

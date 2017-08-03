@@ -1,5 +1,4 @@
 ncmpcpp_directory = ~/.config/ncmpcpp
-lyrics_directory = ~/Music          # lyrics saved in music dir, see store_lyrics_in_song_dir
 mpd_music_dir = ~/Music
 
 visualizer_fifo_path = /tmp/mpd.fifo

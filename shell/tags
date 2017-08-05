@@ -84,6 +84,7 @@ RESET	redText.sh	/^RESET='\\e[0m'$/;"	v
 ROWS	myWatchNoBlink.sh	/^        ROWS=$(tput lines)$/;"	v
 ROWS	myWatchNoBlinkColorized.sh	/^        ROWS=$(tput lines)$/;"	v
 SCRIPTS	macOnly/tutorialConfigUpdater.sh	/^SCRIPTS="$HOME\/Documents\/shellScripts"$/;"	v
+SCRIPTS	printHeader.sh	/^    SCRIPTS="$HOME\/Documents\/shellScripts"$/;"	v
 SCRIPTS	updater.sh	/^    SCRIPTS=\/Users\/jacobmenke\/Documents\/shellScripts$/;"	v
 SCRIPTS	updaterEmail.sh	/^SCRIPTS=\/Users\/jacobmenke\/Documents\/shellScripts$/;"	v
 SCRIPTS_DIR	backupBashConfig.sh	/^SCRIPTS_DIR="$SCRIPTS"$/;"	v

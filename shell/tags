@@ -146,7 +146,11 @@ delay	openAll.sh	/^local delay=.1 # time in seconds between characters$/;"	v
 delim	batchRename.sh	/^delim=_$/;"	v
 dependencies_ary	customTerminalInstaller/install.sh	/^dependencies_ary=(vim tmux git wget lolcat cowsay cmatrix htop cmake glances bpython python-dev \\$/;"	v
 destinationFile	picture_finder.sh	/^	destinationFile=$destinationDirectory\/${picture##*\/}$/;"	v
+dir	localInstaller.sh	/^        dir="${1%.tar.gz}"$/;"	v
+dir	localInstaller.sh	/^        dir="${1%.tgz}"$/;"	v
 dir	oldCounter.sh	/^	dir=`echo $PATH | cut -d: -f$i`$/;"	v
+dir	tgzLocalInstaller.sh	/^        dir="${1%.tar.gz}"$/;"	v
+dir	tgzLocalInstaller.sh	/^        dir="${1%.tgz}"$/;"	v
 dirNum	oldCounter.sh	/^dirNum=`expr $(echo $PATH | tr -cd : | wc -c) + 1`$/;"	v
 disable_proxy	macOnly/tor.sh	/^function disable_proxy() {$/;"	f
 disable_proxy	tor.sh	/^function disable_proxy() {$/;"	f
@@ -209,6 +213,8 @@ hub_create	customTerminalInstaller/.shell_aliases_functions.sh	/^    hub_create(
 hub_delete	customTerminalInstaller/.shell_aliases_functions.sh	/^    hub_delete(){$/;"	f
 humanReadable	customTerminalInstaller/.shell_aliases_functions.sh	/^humanReadable(){$/;"	f
 initializeGitDirectory	gitgo.sh	/^initializeGitDirectory(){$/;"	f
+install	localInstaller.sh	/^install(){$/;"	f
+install	tgzLocalInstaller.sh	/^install(){$/;"	f
 installGitHubPlugin	customTerminalInstaller/tmux_plugins_install.sh	/^installGitHubPlugin(){$/;"	f
 installOhMyZshPlugin	customTerminalInstaller/zsh.sh	/^installOhMyZshPlugin(){$/;"	f
 installOhMyZshPlugin	customTerminalInstaller/zsh_plugins_install.sh	/^installOhMyZshPlugin(){$/;"	f

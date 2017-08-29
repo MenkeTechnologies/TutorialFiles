@@ -1,11 +1,11 @@
-sw_volume: 88
+sw_volume: 86
 audio_device_state:1:CoreAudio
 audio_device_state:1:my_fifo
 state: pause
-current: 2872
-time: 19.969000
+current: 2878
+time: 206.565000
 random: 0
-repeat: 0
+repeat: 1
 single: 0
 consume: 0
 crossfade: 5
@@ -2896,5 +2896,4 @@ playlist_begin
 2881:Kris Menace feat. Fred Falke - Fairlight-mNgVSqrSNWE.mp3
 2882:Digitalism - Apollo-Gize (Fred Falke Remix)-_ykDET9kLJI.mp3
 2883:♫ Amazing Uplifting Trance Mix l May 2017 (Vol. 62)  ♫-sbf1q0igfks.mp3
-2884:Ableton/User Library/Samples/Imported/NBT1 Downlifter 04.wav
 playlist_end

@@ -14,6 +14,7 @@ export SCRIPTS="$HOME/Documents/shellScripts"
 export PYEXECUTABLES="$HOME/Documents/pythonScripts"
 export PYSCRIPTS="$HOME/PycharmProjects/fromShell"
 export D="$HOME/Desktop"
+export DL="$HOME/Downloads"
 # Setting PATH for Python 3.5
 # The orginal version is saved in .profile.pysave
 export PATH="$PATH:$HOME/go/bin:/usr/local/lib/python2.7/site-packages/powerline/scripts/"

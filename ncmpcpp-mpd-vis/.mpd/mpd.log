@@ -11955,3 +11955,119 @@ Aug 03 14:31 : player: played "Traktor/Samples/Synergy -Hello Strings (Danilo Er
 Aug 03 14:31 : player: played "Traktor/Samples/Kris Menace feat. Fred Falke-Fairlight (Full Original) (314.8s - 315.8s).wav"
 Aug 03 14:31 : ffmpeg/mp3: Could not update timestamps for skipped samples.
 Aug 03 14:31 : player: played "Traktor/Samples/Damage 2013-06-29 17-51-03.wav"
+Sep 03 23:16 : config: inotify: auto_update was disabled. enable during compilation phase
+Sep 03 23:16 : config: option 'enabled' on line 29 was not recognized
+Sep 03 23:16 : client: [0] opened from 127.0.0.1:50535
+Sep 03 23:16 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Sep 03 23:16 : client: [1] opened from 127.0.0.1:50544
+Sep 03 23:25 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Sep 03 23:25 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Sep 03 23:25 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Sep 04 00:52 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Sep 04 00:52 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Sep 04 00:52 : player: played "♫ Amazing Uplifting Trance Mix l May 2017 (Vol. 62)  ♫-sbf1q0igfks.mp3"
+Sep 04 12:25 : player: played "Ableton/User Library/Samples/Imported/Bass_C2_Niche_osf-1.wav"
+Sep 04 12:25 : player: played "Ableton/User Library/Samples/Imported/Bass_C2_Niche_osf-1.wav"
+Sep 04 12:25 : player: played "Ableton/User Library/Samples/Imported/ATE Closed Hat - 018.wav"
+Sep 04 12:25 : player: played "Ableton/User Library/Samples/Imported/ATE Closed Hat - 018.wav"
+Sep 04 12:25 : player: played "Ableton/User Library/Samples/Imported/DTD CYMBALS-36.wav"
+Sep 04 12:25 : player: played "Ableton/User Library/Samples/Imported/DTD CYMBALS-32.wav"
+Sep 04 12:25 : player: played "Ableton/User Library/Samples/Imported/DTD CYMBALS-32.wav"
+Sep 04 12:25 : player: played "Ableton/User Library/Samples/Imported/DTD CYMBALS-3.wav"
+Sep 04 12:25 : player: played "Ableton/User Library/Samples/Imported/DTD KICK-108.wav"
+Sep 04 12:25 : player: played "Ableton/User Library/Samples/Imported/DTD KICK-108.wav"
+Sep 04 12:25 : player: played "Ableton/User Library/Samples/Imported/DTD KICK-115.wav"
+Sep 04 12:25 : player: played "Ableton/User Library/Samples/Imported/nd_snare_boomy.wav"
+Sep 04 12:25 : player: played "Ableton/User Library/Samples/Imported/nd_snare_boomy.wav"
+Sep 04 12:25 : player: played "Ableton/User Library/Samples/Imported/nd_snare_basic707.wav"
+Sep 04 12:25 : ffmpeg: Unsupported libavcodec SampleFormat value: u8        8  (0)
+Sep 04 12:25 : exception: Failed to decode Ableton/User Library/Samples/Imported/next_level.wav
+Sep 04 12:25 : player: played "Ableton/User Library/Samples/Imported/nd_bs120_armani1_Gm.aiff"
+Sep 04 12:25 : player: played "Ableton/User Library/Samples/Imported/next_level.wav"
+Sep 04 12:25 : player: played "Ableton/User Library/Samples/Imported/Noise Click.wav"
+Sep 04 12:25 : player: played "Ableton/User Library/Samples/Imported/Pedal_Hihat_Niche_osf.wav"
+Sep 04 12:26 : player: played "Ableton/User Library/Samples/Imported/PFX 01.wav"
+Sep 04 12:26 : player: played "Ableton/User Library/Samples/Imported/Porters kick.wav"
+Sep 04 12:26 : player: played "Ableton/User Library/Samples/Imported/reverb crach wo SC.wav"
+Sep 04 12:26 : player: played "Ableton/User Library/Samples/Imported/SClap 02.wav"
+Sep 04 12:26 : player: played "Ableton/User Library/Samples/Imported/SH-09 Note   10 Classic Bass  C.wav"
+Sep 04 12:26 : player: played "Ableton/User Library/Samples/Imported/SLSE Atmosphere - 058 - C#.wav"
+Sep 04 12:26 : player: played "Ableton/User Library/Samples/Processed/Consolidate/01lft120_UFX_8 bars_high-1.wav"
+Sep 04 12:26 : player: played "Ableton/User Library/Samples/Processed/Consolidate/Alex Fisher -  White Sunshine (Right Mix).wav"
+Sep 04 12:26 : player: played "Ableton/User Library/Samples/Processed/Consolidate/Alex Fisher -  White Sunshine (Right Mix).wav"
+Sep 04 12:26 : player: played "Ableton/User Library/Samples/Processed/Consolidate/Alex Fisher -  White Sunshine (Right Mix).wav"
+Sep 04 12:27 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Sep 04 17:18 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Sep 04 17:18 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Sep 04 17:18 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Sep 04 17:18 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Sep 04 17:18 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Sep 04 17:18 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Sep 04 17:18 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Sep 04 17:18 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Sep 04 17:18 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Sep 04 17:18 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Sep 04 17:18 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Sep 04 17:18 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Sep 04 17:18 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Sep 04 17:18 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Sep 04 17:18 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Sep 04 17:18 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Sep 04 17:18 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Sep 04 17:18 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Sep 04 17:18 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Sep 04 17:18 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Sep 04 17:18 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Sep 04 17:18 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Sep 04 17:18 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Sep 04 17:18 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Sep 04 17:18 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Sep 04 17:18 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Sep 04 17:18 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Sep 04 17:18 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Sep 04 17:18 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Sep 04 17:18 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Sep 04 17:18 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Sep 04 17:18 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Sep 04 17:18 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Sep 04 17:18 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Sep 04 17:18 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Sep 04 17:18 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Sep 04 17:18 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Sep 04 17:18 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Sep 04 17:18 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Sep 04 17:18 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Sep 04 17:18 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Sep 04 17:18 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Sep 04 17:18 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Sep 04 17:18 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Sep 04 17:18 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Sep 04 17:18 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Sep 04 17:18 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Sep 04 17:18 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Sep 04 17:18 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Sep 04 17:18 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Sep 04 17:18 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Sep 04 17:18 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Sep 04 17:18 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Sep 04 17:18 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Sep 04 17:18 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Sep 04 17:18 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Sep 04 17:18 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Sep 04 17:18 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Sep 04 17:18 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Sep 04 17:18 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Sep 04 17:18 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Sep 04 17:18 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Sep 04 17:18 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Sep 04 17:18 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Sep 04 17:18 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Sep 04 17:18 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Sep 04 17:18 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Sep 04 17:18 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Sep 04 17:18 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Sep 04 17:18 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Sep 04 17:18 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Sep 04 17:18 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Sep 04 17:18 : update: added /Yoji Tech Dance Mix 3-bwZBumna5D8.mp3
+Sep 04 17:18 : ffmpeg/mp3: Could not update timestamps for skipped samples.

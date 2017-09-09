@@ -1,9 +1,8 @@
 sw_volume: 78
 audio_device_state:1:CoreAudio
 audio_device_state:1:my_fifo
-state: pause
-current: 2888
-time: 954.074000
+state: stop
+current: 192
 random: 0
 repeat: 1
 single: 0
@@ -2901,4 +2900,15 @@ playlist_begin
 2886:♫ Amazing Uplifting Trance Mix l May 2017 (Vol. 62)  ♫-sbf1q0igfks.mp3
 2887:Yoji Tech Dance Mix 3-bwZBumna5D8.mp3
 2888:Yoji Tech Dance Mix 3-bwZBumna5D8.mp3
+2889:Yoji Tech Dance Mix 3-bwZBumna5D8.mp3
+2890:Yoji Tech Dance Mix 3-bwZBumna5D8.mp3
+2891:Ableton/User Library/Samples/Imported/Open Hat 1.wav
+2892:Yoji Tech Dance Mix 3-bwZBumna5D8.mp3
+2893:Yoji Tech Dance Mix 3-bwZBumna5D8.mp3
+2894:Kris Menace feat. Fred Falke - Fairlight-mNgVSqrSNWE.mp3
+2895:Yoji Tech Dance Mix 3-bwZBumna5D8.mp3
+2896:Yoji Tech Dance Mix 3-bwZBumna5D8.mp3
+2897:Yoji Tech Dance Mix 3-bwZBumna5D8.mp3
+2898:Kris Menace feat. Fred Falke - Fairlight-mNgVSqrSNWE.mp3
+2899:Kris Menace feat. Fred Falke - Fairlight-mNgVSqrSNWE.mp3
 playlist_end

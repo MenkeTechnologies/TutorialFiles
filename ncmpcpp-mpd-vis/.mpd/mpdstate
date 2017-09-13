@@ -1,8 +1,9 @@
 sw_volume: 78
 audio_device_state:1:CoreAudio
 audio_device_state:1:my_fifo
-state: stop
-current: 192
+state: pause
+current: 4
+time: 1826.346000
 random: 0
 repeat: 1
 single: 0
@@ -2911,4 +2912,6 @@ playlist_begin
 2897:Yoji Tech Dance Mix 3-bwZBumna5D8.mp3
 2898:Kris Menace feat. Fred Falke - Fairlight-mNgVSqrSNWE.mp3
 2899:Kris Menace feat. Fred Falke - Fairlight-mNgVSqrSNWE.mp3
+2900:Yoji Tech Dance Mix 3-bwZBumna5D8.mp3
+2901:Yoji Tech Dance Mix 3-bwZBumna5D8.mp3
 playlist_end

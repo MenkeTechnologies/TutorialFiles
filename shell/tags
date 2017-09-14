@@ -136,6 +136,7 @@ contents	duplicateLineDeleter.sh	/^	contents=$(cat -s "$file")$/;"	v
 contents	indenterAndDuplicateLineDeleter.sh	/^    contents=$(cat -s "$file")$/;"	v
 convertFiles	batchRename.sh	/^convertFiles(){$/;"	f
 count	animation	/^count=$topline$/;"	v
+counter	filenameLengthCounters.sh	/^counter=0$/;"	v
 createGIF	customTerminalInstaller/.shell_aliases_functions.sh	/^    createGIF(){$/;"	f
 createTemplate	templater.sh	/^createTemplate(){$/;"	f
 createTheFile	createScriptButDontOpenSublime.sh	/^createTheFile(){$/;"	f
@@ -182,7 +183,7 @@ fileName	watchServiceFSWatchRustCompile.sh	/^	fileName=`basename $event`$/;"	v
 fileString	openAll.sh	/^fileString=""$/;"	v
 fileToBeExecuted	runner.sh	/^fileToBeExecuted="$1"$/;"	v
 fileToBeExecuted	templater.sh	/^fileToBeExecuted="$1"$/;"	v
-file_name	filenameLengthCounters.sh	/^    file_name="$(basename "$file")"$/;"	v
+file_name	filenameLengthCounters.sh	/^        file_name="$(basename "$file")"$/;"	v
 files	backupBashConfig.sh	/^files=("$HOME_DIR\/.bashrc" "$HOME_DIR\/.bash_profile" "$HOME_DIR\/.profile" '\/etc\/bashrc' '\/etc\/profile')$/;"	v
 filesArray	openAll.sh	/^filesArray=()$/;"	v
 findTotal	oldCounter.sh	/^findTotal (){$/;"	f
@@ -224,7 +225,7 @@ killCursor	picture_finder.sh	/^killCursor(){$/;"	f
 killCursor	secureDelete.sh	/^killCursor(){$/;"	f
 last	batchRename.sh	/^        local last=`echo ${file##*_}`$/;"	v
 lcline	openAll.sh	/^	lcline="$(echo $line | tr '[:upper:]' '[:lower:]')"$/;"	v
-length	filenameLengthCounters.sh	/^    length="$(echo $file_name | wc -c | tr -d ' ')"$/;"	v
+length	filenameLengthCounters.sh	/^        length="$(echo $file_name | wc -c | tr -d ' ')"$/;"	v
 line	gitRemoteRepoInformation.sh	/^        line="$(git remote -v 2>\/dev\/null)"$/;"	v
 lineCounter	shebangChanger.sh	/^    lineCounter=1$/;"	v
 master	dsDownloader.sh	/^master="jacobmenke"$/;"	v

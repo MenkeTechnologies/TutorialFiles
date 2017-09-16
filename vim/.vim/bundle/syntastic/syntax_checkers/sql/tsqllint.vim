@@ -1,7 +1,7 @@
 "============================================================================
-"File:        plutil.vim
+"File:        tsqllint.vim
 "Description: Syntax checking plugin for syntastic
-"Maintainer:  LCD 47 <lcd047 at gmail dot com>
+"Maintainer:  Daniel Walker <dwalker@fifo99.com>
 "License:     This program is free software. It comes without any warranty,
 "             to the extent permitted by applicable law. You can redistribute
 "             it and/or modify it under the terms of the Do What The Fuck You
@@ -10,31 +10,32 @@
 "
 "============================================================================
 
-if exists('g:loaded_syntastic_xml_plutil_checker')
+if exists('g:loaded_syntastic_sql_tsqllint_checker')
     finish
 endif
-let g:loaded_syntastic_xml_plutil_checker = 1
+
+let g:loaded_syntastic_sql_tsqllint_checker = 1
+
+if exists('g:syntastic_sql_tsqllint_sort')
+    let g:syntastic_sql_tsqllint_sort = 1
+endif
 
 let s:save_cpo = &cpo
 set cpo&vim
 
-function! SyntaxCheckers_xml_plutil_GetLocList() dict
-    let makeprg = self.makeprgBuild({
-        \ 'args_before': '-lint -s',
-        \ 'fname_before': '--' })
+function! SyntaxCheckers_sql_tsqllint_GetLocList() dict
+    let makeprg = self.makeprgBuild({})
 
-    let errorformat =
-        \ '%E%f: %m at line %l'
+    let errorformat = '%f(%l\,%c): %m'
 
     return SyntasticMake({
         \ 'makeprg': makeprg,
-        \ 'errorformat': errorformat,
-        \ 'returns': [0, 1] })
+        \ 'errorformat': errorformat })
 endfunction
 
 call g:SyntasticRegistry.CreateAndRegisterChecker({
-    \ 'filetype': 'xml',
-    \ 'name': 'plutil'})
+    \ 'filetype': 'sql',
+    \ 'name': 'tsqllint'})
 
 let &cpo = s:save_cpo
 unlet s:save_cpo

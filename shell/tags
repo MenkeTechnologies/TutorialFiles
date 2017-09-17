@@ -159,8 +159,6 @@ displayProgressIndicator	openAll.sh	/^displayProgressIndicator(){$/;"	f
 distroName	clearTrash.sh	/^    distroName=$(lsb_release -a | head -1 | awk '{print $3}')$/;"	v
 distroName	colorLogger.sh	/^    distroName=$(lsb_release -a | head -1 | awk '{print $3}')$/;"	v
 distroName	customTerminalInstaller/install.sh	/^    distroName=$(lsb_release -a | head -1 | awk '{print $3}')$/;"	v
-done	fsWatchLongRunning.sh	/^    done=true$/;"	v
-done	fsWatchLongRunning.sh	/^done=false$/;"	v
 dontSummarizeSizes	directoryContentsSize.sh	/^dontSummarizeSizes(){$/;"	f
 enclosing_dir	rpiSoftwareUpdater.sh	/^    enclosing_dir="$1"$/;"	v
 enclosing_dir	updater.sh	/^    enclosing_dir="$1"$/;"	v
@@ -195,6 +193,8 @@ firstFile	sync.sh	/^    firstFile="${firstFile}\/"$/;"	v
 firstFile	sync.sh	/^firstFile="$1"$/;"	v
 firstString	createTextFile.sh	/^    firstString=$(cat<<EOM$/;"	v
 firstString	templater.sh	/^    firstString=$(cat<<EOM$/;"	v
+first_iteration	fsWatchLongRunning.sh	/^        first_iteration=false$/;"	v
+first_iteration	fsWatchLongRunning.sh	/^first_iteration=true$/;"	v
 flength	secureDelete.sh	/^    flength=$(ls -l "$file" | awk '{print $5}')  # Field 5 is file length.$/;"	v
 font	figletRandomFont.sh	/^    font=${ary[$randIndex]}$/;"	v
 font	figletRandomFontOnce.sh	/^font=${ary[$randIndex]}$/;"	v
@@ -267,7 +267,8 @@ outputDir	rpiDownloader.sh	/^outputDir="Desktop"$/;"	v
 pass_count	secureDelete.sh	/^    pass_count=1$/;"	v
 path	shebangChanger.sh	/^path="#!\/usr\/bin\/env $executableProgram"$/;"	v
 perlOutdated	updater.sh	/^perlOutdated=$(cpan-outdated -p)$/;"	v
-pid	fsWatchLongRunning.sh	/^    pid=$!$/;"	v
+pid	fsWatchLongRunning.sh	/^            pid=$!$/;"	v
+pid	fsWatchLongRunning.sh	/^        pid=$!$/;"	v
 pipe	readFIFO.sh	/^pipe=$HOME\/Desktop\/testpipe$/;"	v
 pipe	readFIFO.sh	/^pipe=\/tmp\/testpipe$/;"	v
 powerline_dir	customTerminalInstaller/install.sh	/^powerline_dir="$(pip show powerline-status | grep Location | awk '{print $2}')"$/;"	v

@@ -13180,3 +13180,13 @@ Sep 17 03:06 : player: played "Traktor/Samples/Synergy -Hello Strings (Danilo Er
 Sep 17 03:06 : player: played "Traktor/Samples/Kris Menace feat. Fred Falke-Fairlight (Full Original) (314.8s - 315.8s).wav"
 Sep 17 03:06 : ffmpeg/mp3: Could not update timestamps for skipped samples.
 Sep 17 03:06 : player: played "Traktor/Samples/Damage 2013-06-29 17-51-03.wav"
+Sep 19 01:35 : client: [2] opened from 127.0.0.1:57734
+Sep 19 01:35 : client: [3] opened from 127.0.0.1:57739
+Sep 19 01:35 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Sep 19 01:36 : client: [4] opened from 127.0.0.1:57822
+Sep 19 01:36 : client: [4] closed
+Sep 19 01:36 : client: [5] opened from 127.0.0.1:57886
+Sep 19 02:32 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Sep 19 02:32 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Sep 19 02:32 : player: played "Yoji Tech Dance Mix 3-bwZBumna5D8.mp3"
+Sep 19 02:37 : ffmpeg/mp3: Could not update timestamps for skipped samples.

@@ -365,6 +365,7 @@ view	eyes.sh	/^    view=${ary[$randIndex]}$/;"	v
 watchCommand	myWatchNoBlink.sh	/^watchCommand() {$/;"	f
 watchCommand	myWatchNoBlinkColorized.sh	/^watchCommand() {$/;"	f
 watchingFile	watchServiceFSWatchRustCompile.sh	/^	watchingFile=`basename $2`$/;"	v
+weHaveCCZE	colorLogger.sh	/^    weHaveCCZE=no$/;"	v
 weHaveCCZE	colorLogger.sh	/^weHaveCCZE=no$/;"	v
 weHaveCCZE	colorLogger.sh	/^weHaveCCZE=yes$/;"	v
 websiteDir	macOnly/tutorialConfigUpdater.sh	/^websiteDir="$HOME\/WebstormProjects\/PersonalWebsite"$/;"	v

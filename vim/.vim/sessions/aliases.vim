@@ -1,6 +1,6 @@
 " ~/.vim/sessions/aliases.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 22 July 2017 at 21:07:00.
+" Created by session.vim 2.13.1 on 26 September 2017 at 00:39:18.
 " Open this file in Vim and run :source % to restore your session.
 
 if exists('g:syntax_on') != 1 | syntax on | endif
@@ -10,7 +10,7 @@ if exists('g:did_indent_on') != 1 | filetype indent on | endif
 if &background != 'dark'
 	set background=dark
 endif
-if !exists('g:colors_name') || g:colors_name != 'smyck' | colorscheme smyck | endif
+if !exists('g:colors_name') || g:colors_name != 'darkblack' | colorscheme darkblack | endif
 call setqflist([])
 let SessionLoad = 1
 if &cp | set nocp | endif
@@ -41,13 +41,11 @@ setlocal fdl=1
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-53
-silent! normal! zo
-let s:l = 119 - ((15 * winheight(0) + 31) / 63)
+let s:l = 384 - ((18 * winheight(0) + 34) / 68)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-119
+384
 normal! 0
 tabnext 1
 if exists('s:wipebuf')

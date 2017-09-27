@@ -13641,3 +13641,69 @@ Sep 23 00:55 : player: played "Traktor/Samples/Kris Menace feat. Fred Falke-Fair
 Sep 23 00:55 : ffmpeg/mp3: Could not update timestamps for skipped samples.
 Sep 23 00:55 : player: played "Traktor/Samples/Damage 2013-06-29 17-51-03.wav"
 Sep 23 01:23 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Sep 23 02:18 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Sep 23 02:18 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Sep 23 02:19 : player: played "Yoji Tech Dance Mix 3-bwZBumna5D8.mp3"
+Sep 23 23:34 : config: inotify: auto_update was disabled. enable during compilation phase
+Sep 23 23:34 : config: option 'enabled' on line 29 was not recognized
+Sep 23 23:34 : client: [0] opened from 127.0.0.1:64721
+Sep 23 23:34 : client: [1] opened from 127.0.0.1:64729
+Sep 23 23:34 : client: [2] opened from 127.0.0.1:64734
+Sep 23 23:34 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Sep 24 00:32 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Sep 24 00:32 : player: played "Yoji Tech Dance Mix 3-bwZBumna5D8.mp3"
+Sep 24 00:32 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Sep 24 00:32 : player: played "Ableton/User Library/Samples/Imported/Open Hat 1.wav"
+Sep 24 01:33 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Sep 24 01:33 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Sep 24 01:34 : player: played "Yoji Tech Dance Mix 3-bwZBumna5D8.mp3"
+Sep 24 02:35 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Sep 24 02:35 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Sep 24 02:35 : player: played "Yoji Tech Dance Mix 3-bwZBumna5D8.mp3"
+Sep 24 02:44 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Sep 24 02:44 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Sep 24 02:44 : player: played "Kris Menace feat. Fred Falke - Fairlight-mNgVSqrSNWE.mp3"
+Sep 24 03:45 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Sep 24 03:45 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Sep 24 03:45 : player: played "Yoji Tech Dance Mix 3-bwZBumna5D8.mp3"
+Sep 24 14:04 : player: played "Yoji Tech Dance Mix 3-bwZBumna5D8.mp3"
+Sep 24 14:04 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Sep 24 15:06 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Sep 24 15:06 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Sep 24 15:06 : player: played "Yoji Tech Dance Mix 3-bwZBumna5D8.mp3"
+Sep 24 18:11 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Sep 24 18:11 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Sep 24 18:12 : player: played "Yoji Tech Dance Mix 3-bwZBumna5D8.mp3"
+Sep 24 18:20 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Sep 24 18:20 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Sep 24 18:21 : player: played "Kris Menace feat. Fred Falke - Fairlight-mNgVSqrSNWE.mp3"
+Sep 24 18:29 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Sep 24 18:29 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Sep 24 18:30 : player: played "Kris Menace feat. Fred Falke - Fairlight-mNgVSqrSNWE.mp3"
+Sep 24 19:31 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Sep 24 19:31 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Sep 24 19:31 : player: played "Yoji Tech Dance Mix 3-bwZBumna5D8.mp3"
+Sep 24 20:32 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Sep 24 20:32 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Sep 24 20:32 : player: played "Yoji Tech Dance Mix 3-bwZBumna5D8.mp3"
+Sep 24 21:57 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Sep 24 21:57 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Sep 24 21:58 : player: played "Yoji Tech Dance Mix 3-bwZBumna5D8.mp3"
+Sep 24 22:07 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Sep 24 22:07 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Sep 24 22:07 : player: played "Kris Menace feat. Fred Falke - Fairlight-mNgVSqrSNWE.mp3"
+Sep 24 22:16 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Sep 24 22:16 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Sep 24 22:16 : player: played "Kris Menace feat. Fred Falke - Fairlight-mNgVSqrSNWE.mp3"
+Sep 24 22:22 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Sep 24 22:22 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Sep 24 22:22 : player: played "Digitalism - Apollo-Gize (Fred Falke Remix)-_ykDET9kLJI.mp3"
+Sep 25 15:21 : player: played "Yoji Tech Dance Mix 3-bwZBumna5D8.mp3"
+Sep 25 23:33 : config: inotify: auto_update was disabled. enable during compilation phase
+Sep 25 23:33 : config: option 'enabled' on line 29 was not recognized
+Sep 25 23:33 : client: [0] opened from 127.0.0.1:63683
+Sep 25 23:34 : client: [1] opened from 127.0.0.1:63696
+Sep 25 23:34 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Sep 25 23:34 : client: [2] opened from 127.0.0.1:63705
+Sep 25 23:34 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Sep 26 00:31 : player: played "Yoji Tech Dance Mix 3-bwZBumna5D8.mp3"

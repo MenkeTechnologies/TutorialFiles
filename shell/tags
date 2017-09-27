@@ -5,7 +5,6 @@
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
 ADDRESS	uploadWebDS.sh	/^ADDRESS="jacobmenke@$IP:\/var\/services\/web"$/;"	v
-ADDRESS	uploadWebPi.sh	/^ADDRESS="pi@$IP:\/var\/www\/html"$/;"	v
 BACKUP_DIR	backupBashConfig.sh	/^BACKUP_DIR="$SCRIPTS_DIR\/rcBackups"$/;"	v
 BACKUP_DIR	duplicateLineDeleter.sh	/^BACKUP_DIR=$SCRIPTS_DIR\/rcBackups$/;"	v
 BACKUP_DIR	indenterAndDuplicateLineDeleter.sh	/^BACKUP_DIR=$SCRIPTS_DIR\/rcBackups$/;"	v
@@ -61,7 +60,6 @@ INSTALLER_DIR	customTerminalInstaller/install.sh	/^INSTALLER_DIR="$(pwd -P)"$/;"
 INSTALLER_DIR	customTerminalInstaller/tmux_plugins_install.sh	/^INSTALLER_DIR="$(pwd)"$/;"	v
 INSTALLER_DIR	customTerminalInstaller/vim_plugins_install.sh	/^INSTALLER_DIR="$(pwd)"$/;"	v
 INTERFACE	macOnly/tor.sh	/^INTERFACE=Wi-Fi$/;"	v
-IP	uploadWebPi.sh	/^IP=$IP$/;"	v
 JACOB	.tokens.sh	/^		JACOB="9047039159"$/;"	v
 JESSICA	.tokens.sh	/^		JESSICA="9046992045"$/;"	v
 JOSH	.tokens.sh	/^		JOSH="9046351659"$/;"	v
@@ -102,6 +100,7 @@ URL	gitgo.sh	/^    local URL="https:\/\/github.com\/$GITHUB_ACCOUNT\/$REPO_NAME_
 addContents	shebangChanger.sh	/^addContents(){$/;"	f
 addHeader	createTextFile.sh	/^addHeader(){$/;"	f
 addHeader	templater.sh	/^addHeader(){$/;"	f
+address	uploadWebPi.sh	/^address="pi@$ip:\/var\/www\/html"$/;"	v
 animate	customTerminalInstaller/.shell_aliases_functions.sh	/^animate(){$/;"	f
 arr	listAllCommands.sh	/^arr=()$/;"	v
 arr	picture_finder.sh	/^local arr=(  '|' '\\' '-' '\/' )$/;"	v
@@ -222,6 +221,7 @@ installOhMyZshPlugin	customTerminalInstaller/zsh.sh	/^installOhMyZshPlugin(){$/;
 installOhMyZshPlugin	customTerminalInstaller/zsh_plugins_install.sh	/^installOhMyZshPlugin(){$/;"	f
 installVimPlugin	customTerminalInstaller/vim_plugins_install.sh	/^installVimPlugin(){$/;"	f
 installerDir	macOnly/tutorialConfigUpdater.sh	/^installerDir="$HOME\/Documents\/shellScripts\/customTerminalInstaller"$/;"	v
+ip	uploadWebPi.sh	/^ip=$IP$/;"	v
 killCursor	batchRename.sh	/^killCursor(){$/;"	f
 killCursor	openAll.sh	/^killCursor(){$/;"	f
 killCursor	picture_finder.sh	/^killCursor(){$/;"	f

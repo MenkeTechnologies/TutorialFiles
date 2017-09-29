@@ -13707,3 +13707,8 @@ Sep 25 23:34 : ffmpeg/mp3: Could not update timestamps for skipped samples.
 Sep 25 23:34 : client: [2] opened from 127.0.0.1:63705
 Sep 25 23:34 : ffmpeg/mp3: Could not update timestamps for skipped samples.
 Sep 26 00:31 : player: played "Yoji Tech Dance Mix 3-bwZBumna5D8.mp3"
+Sep 28 23:54 : config: inotify: auto_update was disabled. enable during compilation phase
+Sep 28 23:54 : config: option 'enabled' on line 29 was not recognized
+Sep 28 23:54 : client: [0] opened from 127.0.0.1:61669
+Sep 28 23:54 : client: [1] opened from 127.0.0.1:61679
+Sep 28 23:54 : ffmpeg/mp3: Could not update timestamps for skipped samples.

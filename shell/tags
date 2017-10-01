@@ -67,10 +67,9 @@ LOGFILE	updaterEmail.sh	/^LOGFILE=\/Users\/jacobmenke\/updaterlog.txt$/;"	v
 MEMBER1	textmessage.sh	/^    MEMBER1=5551113333$/;"	v
 OLDIFS	sortedArrayCounter.sh	/^OLDIFS="$IFS"$/;"	v
 ORGIN_NAME	gitgo.sh	/^    local ORGIN_NAME="$(git remote -v | awk '{print $1}' | tail -1 | tr -d ' ')"$/;"	v
-ORIGIN	gitgo.sh	/^    local ORIGIN="$(git remote -v | awk '{print $1}' | tail -1 | tr -d ' ')"$/;"	v
 OS_TYPE	customTerminalInstaller/install.sh	/^OS_TYPE="$(uname -s)"$/;"	v
 PASSES	secureDelete.sh	/^PASSES=7         #  Number of file-shredding passes.$/;"	v
-PULL_URL	gitgo.sh	/^        local PULL_URL="$(git remote -v | awk '{print $2}' | tail -1 | tr -d ' ')"$/;"	v
+PULL_URL	gitgo.sh	/^        local PULL_URL="$(git remote -v | \\$/;"	v
 RED	redText.sh	/^RED='\\e[31;1m'$/;"	v
 REPO	customTerminalInstaller/.shell_aliases_functions.sh	/^        REPO="$1"$/;"	v
 REPO_NAME	gitgo.sh	/^        local REPO_NAME="$(git remote -v | awk '{print $2}' | tail -1 | tr -d ' ')"$/;"	v
@@ -149,6 +148,8 @@ dependencies_ary	customTerminalInstaller/install.sh	/^dependencies_ary=(vim tmux
 destinationFile	picture_finder.sh	/^	destinationFile=$destinationDirectory\/${picture##*\/}$/;"	v
 dir	oldCounter.sh	/^	dir=`echo $PATH | cut -d: -f$i`$/;"	v
 dirNum	oldCounter.sh	/^dirNum=`expr $(echo $PATH | tr -cd : | wc -c) + 1`$/;"	v
+directory_name	tgzLocalInstaller.sh	/^        directory_name="${tarbellDirectory%.tar.gz}"$/;"	v
+directory_name	tgzLocalInstaller.sh	/^        directory_name="${tarbellDirectory%.tgz}"$/;"	v
 disable_proxy	macOnly/tor.sh	/^function disable_proxy() {$/;"	f
 disable_proxy	tor.sh	/^function disable_proxy() {$/;"	f
 displayProgress	batchRename.sh	/^displayProgress(){$/;"	f
@@ -216,6 +217,7 @@ hub_create	customTerminalInstaller/.shell_aliases_functions.sh	/^    hub_create(
 hub_delete	customTerminalInstaller/.shell_aliases_functions.sh	/^    hub_delete(){$/;"	f
 humanReadable	customTerminalInstaller/.shell_aliases_functions.sh	/^humanReadable(){$/;"	f
 initializeGitDirectory	gitgo.sh	/^initializeGitDirectory(){$/;"	f
+install	tgzLocalInstaller.sh	/^install(){$/;"	f
 installGitHubPlugin	customTerminalInstaller/tmux_plugins_install.sh	/^installGitHubPlugin(){$/;"	f
 installOhMyZshPlugin	customTerminalInstaller/zsh.sh	/^installOhMyZshPlugin(){$/;"	f
 installOhMyZshPlugin	customTerminalInstaller/zsh_plugins_install.sh	/^installOhMyZshPlugin(){$/;"	f
@@ -253,6 +255,7 @@ optstring	myWatchNoBlink.sh	/^optstring=bh$/;"	v
 optstring	myWatchNoBlinkColorized.sh	/^optstring=bh$/;"	v
 optstring	mywatch.sh	/^optstring=dh$/;"	v
 orig	customTerminalInstaller/.shell_aliases_functions.sh	/^        orig="$1"$/;"	v
+origin	gitgo.sh	/^    local origin="$(git remote -v | awk '{print $1}' | tail -1 | tr -d ' ')"$/;"	v
 os	test.py	/^import os$/;"	i
 out	customTerminalInstaller/.shell_aliases_functions.sh	/^        out="$(curl -u menketechnologies -X "DELETE" https:\/\/api.github.com\/repos\/menketechnologies\/"$REPO")"$/;"	v
 outFile	customTerminalInstaller/.shell_aliases_functions.sh	/^            outFile="$3"	$/;"	v
@@ -338,6 +341,7 @@ tac	customTerminalInstaller/.shell_aliases_functions.sh	/^    tac(){$/;"	f
 tail	shebangChanger.sh	/^        tail=$(cat "$file")$/;"	v
 tail	shebangChanger.sh	/^        tail=$(sed -n "$lineCounter,$"p "$file")$/;"	v
 tailVersion	colorLogger.sh	/^tailVersion=tail$/;"	v
+tarbellDirectory	tgzLocalInstaller.sh	/^tarbellDirectory="$1"$/;"	v
 temp	batchRename.sh	/^        local temp=${spinner#?}               # remove first character from $spinner$/;"	v
 temp	openAll.sh	/^	local temp=${spinner#?}               # remove first character from $spinner$/;"	v
 timeToSleep	myWatchNoBlink.sh	/^    timeToSleep=$2$/;"	v
@@ -371,4 +375,5 @@ weHaveCCZE	colorLogger.sh	/^weHaveCCZE=yes$/;"	v
 websiteDir	macOnly/tutorialConfigUpdater.sh	/^websiteDir="$HOME\/WebstormProjects\/PersonalWebsite"$/;"	v
 x	mywatch.sh	/^    x=$(eval "$1")$/;"	v
 x	test.py	/^x=5$/;"	v
+x	test.sh	/^x=55$/;"	v
 xf	customTerminalInstaller/.shell_aliases_functions.sh	/^        xf=(s==" B  ")?"%5d   ":"%8.2f"$/;"	v

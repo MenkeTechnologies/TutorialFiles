@@ -13712,3 +13712,19 @@ Sep 28 23:54 : config: option 'enabled' on line 29 was not recognized
 Sep 28 23:54 : client: [0] opened from 127.0.0.1:61669
 Sep 28 23:54 : client: [1] opened from 127.0.0.1:61679
 Sep 28 23:54 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Sep 29 12:32 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Sep 29 12:32 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Sep 29 12:32 : player: played "Yoji Tech Dance Mix 3-bwZBumna5D8.mp3"
+Oct 01 02:51 : client: [2] opened from 127.0.0.1:56739
+Oct 01 02:52 : client: [2] closed
+Oct 01 03:02 : client: [0] closed
+Oct 01 03:02 : client: [1] closed
+Oct 01 03:20 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Oct 01 03:20 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Oct 01 03:21 : player: played "Yoji Tech Dance Mix 3-bwZBumna5D8.mp3"
+Oct 01 03:28 : client: [3] opened from 127.0.0.1:60917
+Oct 01 03:28 : client: [4] opened from 127.0.0.1:60946
+Oct 01 03:28 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Oct 01 03:28 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Oct 01 03:28 : client: [5] opened from 127.0.0.1:60985
+Oct 01 03:28 : client: [5] closed

@@ -1,16 +1,16 @@
 " ~/.vim/sessions/zshrc.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 26 September 2017 at 00:40:59.
+" Created by session.vim 2.13.1 on 03 October 2017 at 03:28:34.
 " Open this file in Vim and run :source % to restore your session.
 
 if exists('g:syntax_on') != 1 | syntax on | endif
 if exists('g:did_load_filetypes') != 1 | filetype on | endif
 if exists('g:did_load_ftplugin') != 1 | filetype plugin on | endif
 if exists('g:did_indent_on') != 1 | filetype indent on | endif
-if &background != 'light'
-	set background=light
+if &background != 'dark'
+	set background=dark
 endif
-if !exists('g:colors_name') || g:colors_name != 'genericdc' | colorscheme genericdc | endif
+if !exists('g:colors_name') || g:colors_name != 'smyck' | colorscheme smyck | endif
 call setqflist([])
 let SessionLoad = 1
 if &cp | set nocp | endif
@@ -41,15 +41,15 @@ setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-116
+109
 silent! normal! zo
-273
+266
 silent! normal! zo
-let s:l = 1 - ((0 * winheight(0) + 34) / 68)
+let s:l = 377 - ((53 * winheight(0) + 31) / 63)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-1
+377
 normal! 0
 tabnext 1
 if exists('s:wipebuf')

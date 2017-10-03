@@ -260,8 +260,8 @@ os	test.py	/^import os$/;"	i
 out	customTerminalInstaller/.shell_aliases_functions.sh	/^        out="$(curl -u menketechnologies -X "DELETE" https:\/\/api.github.com\/repos\/menketechnologies\/"$REPO")"$/;"	v
 outFile	customTerminalInstaller/.shell_aliases_functions.sh	/^            outFile="$3"	$/;"	v
 outFile	customTerminalInstaller/.shell_aliases_functions.sh	/^        outFile=out.gif$/;"	v
-outdated	updater.sh	/^outdated=$(pip list --outdated | awk '{print $1}')$/;"	v
-outdated	updater.sh	/^outdated=$(pip3 list --outdated | awk '{print $1}')$/;"	v
+outdated	updater.sh	/^    outdated=$(pip list --outdated | awk '{print $1}')$/;"	v
+outdated	updater.sh	/^    outdated=$(pip3 list --outdated | awk '{print $1}')$/;"	v
 output	figletRandomFont.sh	/^    output="$(echo $TEXT_TO_DISPLAY | figlet -f $font)"$/;"	v
 output	figletRandomFontOnce.sh	/^output="$(echo $TEXT_TO_DISPLAY | figlet -f $font)"$/;"	v
 output	menkeTechRandoFont.sh	/^    output="$(echo $TEXT_TO_DISPLAY | figlet -f $font)"$/;"	v

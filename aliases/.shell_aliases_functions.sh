@@ -21,20 +21,18 @@ export PATH="$PYEXECUTABLES:$SCRIPTS/save-run:$HOME/.local/bin:$HOME/perl5/bin:L
 export TERMINAL_APP="Terminal.app"
 export GITHUB_ACCOUNT='MenkeTechnologies'
 
-if [[ "$(uname)" == Darwin ]]; then
+[[ "$(uname)" == Darwin ]] && {
     export WCC="/Volumes/JAKESD/wcc/cps"
     export HOMEBREW_HOME_FORMULAE="/usr/local/Homebrew/Library/taps/homebrew/homebrew-core/formula"
     export PATH="$SCRIPTS/macOnly:$HOME/.tokenScripts:$HOME/.platformio/penv/bin:$PATH"
-else
-    export PATH="$PATH:/usr/games"
-fi
+} || export PATH="$PATH:/usr/games"
 
     exists yarn && export PATH="$(yarn global bin):$PATH"
 #}}}***********************************************************
 
 #{{{                           MARK:HOMES
 #**********************************************************************
-if [[ "$(uname)" == Darwin ]]; then
+[[ "$(uname)" == Darwin ]] && {
     export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_141.jdk/Contents/Home"
     export HOMEBREW_HOME='/usr/local/Cellar'
     export GROOVY_HOME="$HOMEBREW_HOME/groovy/2.4.11"
@@ -45,7 +43,7 @@ if [[ "$(uname)" == Darwin ]]; then
     eval `perl -I ~/perl5/lib/perl5 -Mlocal::lib`
     export MANPATH=$HOME/perl5/man:$MANPATH
     export TUTORIAL_FILES="$HOME/Documents/tutorialsRepo"
-fi
+}
 export YARN_HOME="$HOME/.config/yarn"
 export NODE_PATH="/usr/local/lib/node_modules:$YARN_HOME/global/node_modules"
 export HISTSIZE=50000

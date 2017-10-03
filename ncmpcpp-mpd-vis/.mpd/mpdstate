@@ -2,8 +2,8 @@ sw_volume: 56
 audio_device_state:1:CoreAudio
 audio_device_state:1:my_fifo
 state: play
-current: 2916
-time: 2251.008000
+current: 2912
+time: 1426.965000
 random: 0
 repeat: 0
 single: 0

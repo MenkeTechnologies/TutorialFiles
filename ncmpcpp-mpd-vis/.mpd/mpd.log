@@ -13949,3 +13949,15 @@ Oct 02 19:18 : client: [5] opened from 127.0.0.1:51475
 Oct 02 20:14 : ffmpeg/mp3: Could not update timestamps for discarded samples.
 Oct 02 20:14 : ffmpeg/mp3: Could not update timestamps for skipped samples.
 Oct 02 20:14 : player: played "Yoji Tech Dance Mix 3-bwZBumna5D8.mp3"
+Oct 04 10:57 : config: inotify: auto_update was disabled. enable during compilation phase
+Oct 04 10:57 : config: option 'enabled' on line 29 was not recognized
+Oct 04 10:57 : client: [0] opened from 127.0.0.1:49293
+Oct 04 10:57 : client: [1] opened from 127.0.0.1:49312
+Oct 04 10:57 : client: [2] opened from 127.0.0.1:49323
+Oct 04 10:57 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Oct 04 11:03 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Oct 04 11:03 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Oct 04 11:03 : player: played "Digitalism - Apollo-Gize (Fred Falke Remix)-_ykDET9kLJI.mp3"
+Oct 04 11:12 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Oct 04 11:12 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Oct 04 11:12 : player: played "Kris Menace feat. Fred Falke - Fairlight-mNgVSqrSNWE.mp3"

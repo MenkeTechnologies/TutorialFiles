@@ -4,7 +4,6 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-ADDRESS	uploadWebDS.sh	/^ADDRESS="jacobmenke@$IP:\/var\/services\/web"$/;"	v
 BACKUP_DIR	backupBashConfig.sh	/^BACKUP_DIR="$SCRIPTS_DIR\/rcBackups"$/;"	v
 BACKUP_DIR	duplicateLineDeleter.sh	/^BACKUP_DIR=$SCRIPTS_DIR\/rcBackups$/;"	v
 BACKUP_DIR	indenterAndDuplicateLineDeleter.sh	/^BACKUP_DIR=$SCRIPTS_DIR\/rcBackups$/;"	v
@@ -99,6 +98,7 @@ URL	gitgo.sh	/^    local URL="https:\/\/github.com\/$GITHUB_ACCOUNT\/$REPO_NAME_
 addContents	shebangChanger.sh	/^addContents(){$/;"	f
 addHeader	createTextFile.sh	/^addHeader(){$/;"	f
 addHeader	templater.sh	/^addHeader(){$/;"	f
+address	uploadWebDS.sh	/^address="jacobmenke@$IP:\/var\/services\/web"$/;"	v
 address	uploadWebPi.sh	/^address="pi@$ip:\/var\/www\/html"$/;"	v
 animate	customTerminalInstaller/.shell_aliases_functions.sh	/^animate(){$/;"	f
 arr	listAllCommands.sh	/^arr=()$/;"	v
@@ -260,7 +260,7 @@ os	test.py	/^import os$/;"	i
 out	customTerminalInstaller/.shell_aliases_functions.sh	/^        out="$(curl -u menketechnologies -X "DELETE" https:\/\/api.github.com\/repos\/menketechnologies\/"$REPO")"$/;"	v
 outFile	customTerminalInstaller/.shell_aliases_functions.sh	/^            outFile="$3"	$/;"	v
 outFile	customTerminalInstaller/.shell_aliases_functions.sh	/^        outFile=out.gif$/;"	v
-outdated	updater.sh	/^    outdated=$(pip list --outdated | awk '{print $1}')$/;"	v
+outdated	updater.sh	/^    outdated=$(pip2 list --outdated | awk '{print $1}')$/;"	v
 outdated	updater.sh	/^    outdated=$(pip3 list --outdated | awk '{print $1}')$/;"	v
 outdated	updater.sh	/^    outdated=$(pip3.5 list --outdated | awk '{print $1}')$/;"	v
 output	figletRandomFont.sh	/^    output="$(echo $TEXT_TO_DISPLAY | figlet -f $font)"$/;"	v

@@ -43,6 +43,7 @@ exists yarn && export PATH="$(yarn global bin):$PATH"
     export MANPATH=$HOME/perl5/man:$MANPATH
     export TUTORIAL_FILES="$HOME/Documents/tutorialsRepo"
     export PIP3_HOME="/usr/local/lib/python3.6/site-packages"
+    export PIP_HOME="/usr/local/lib/python2.7/site-packages"
 }
 export YARN_HOME="$HOME/.config/yarn"
 export NODE_PATH="/usr/local/lib/node_modules:$YARN_HOME/global/node_modules"
@@ -213,7 +214,7 @@ suc(){
     python3 $PYSCRIPTS/textEditorTwoColumns.py
 }
 db(){
-    ( python3 $PYSCRIPTS/logIntoMyDB.py & )
+    python3 $PYSCRIPTS/logIntoMyDB.py
 }
 clearList () {
 

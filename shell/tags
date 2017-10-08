@@ -271,7 +271,7 @@ orig	customTerminalInstaller/.shell_aliases_functions.sh	/^        orig="$1"$/;"
 origin	gitgo.sh	/^    local origin="$(git remote -v | awk '{print $1}' | tail -1 | tr -d ' ')"$/;"	v
 os	test.py	/^import os$/;"	i
 out	customTerminalInstaller/.shell_aliases_functions.sh	/^        out="$(curl -u menketechnologies -X "DELETE" https:\/\/api.github.com\/repos\/menketechnologies\/"$REPO")"$/;"	v
-out	inotifyWatchLogAndEmailIfNAS.sh	/^    out=$(tail -5 "$file" | grep "nas")$/;"	v
+out	inotifyWatchLogAndEmailIfNAS.sh	/^    out=$(tail -1 "$file" | grep "nas")$/;"	v
 out	watchLogAndEmailIfNAS.sh	/^    out=$(tail -5 "$file" | grep "nas")$/;"	v
 outFile	customTerminalInstaller/.shell_aliases_functions.sh	/^            outFile="$3"	$/;"	v
 outFile	customTerminalInstaller/.shell_aliases_functions.sh	/^        outFile=out.gif$/;"	v

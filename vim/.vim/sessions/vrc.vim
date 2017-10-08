@@ -1,16 +1,16 @@
 " ~/.vim/sessions/vrc.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 03 October 2017 at 03:28:16.
+" Created by session.vim 2.13.1 on 08 October 2017 at 14:02:10.
 " Open this file in Vim and run :source % to restore your session.
 
 if exists('g:syntax_on') != 1 | syntax on | endif
 if exists('g:did_load_filetypes') != 1 | filetype on | endif
 if exists('g:did_load_ftplugin') != 1 | filetype plugin on | endif
 if exists('g:did_indent_on') != 1 | filetype indent on | endif
-if &background != 'light'
-	set background=light
+if &background != 'dark'
+	set background=dark
 endif
-if !exists('g:colors_name') || g:colors_name != 'Dev_Delight' | colorscheme Dev_Delight | endif
+if !exists('g:colors_name') || g:colors_name != 'marklar' | colorscheme marklar | endif
 call setqflist([])
 let SessionLoad = 1
 if &cp | set nocp | endif
@@ -42,12 +42,12 @@ setlocal fdl=5
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 29 - ((25 * winheight(0) + 31) / 63)
+let s:l = 237 - ((25 * winheight(0) + 30) / 60)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-29
-normal! 0
+237
+normal! 020|
 tabnext 1
 if exists('s:wipebuf')
 "   silent exe 'bwipe ' . s:wipebuf

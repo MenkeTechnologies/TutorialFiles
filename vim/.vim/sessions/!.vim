@@ -1,6 +1,6 @@
-" ~/.vim/sessions/zshrc.vim:
+" ~/.vim/sessions/!.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 08 October 2017 at 14:02:21.
+" Created by session.vim 2.13.1 on 08 October 2017 at 13:59:06.
 " Open this file in Vim and run :source % to restore your session.
 
 if exists('g:syntax_on') != 1 | syntax on | endif
@@ -10,7 +10,7 @@ if exists('g:did_indent_on') != 1 | filetype indent on | endif
 if &background != 'dark'
 	set background=dark
 endif
-if !exists('g:colors_name') || g:colors_name != 'impact' | colorscheme impact | endif
+if !exists('g:colors_name') || g:colors_name != 'clue' | colorscheme clue | endif
 call setqflist([])
 let SessionLoad = 1
 if &cp | set nocp | endif
@@ -22,11 +22,11 @@ if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
-badd +0 ~/.zshrc
+badd +0 ~/.shell_aliases_functions.sh
 argglobal
 silent! argdel *
-$argadd ~/.zshrc
-edit ~/.zshrc
+$argadd ~/.shell_aliases_functions.sh
+edit ~/.shell_aliases_functions.sh
 set splitbelow splitright
 set nosplitbelow
 set nosplitright
@@ -37,20 +37,16 @@ setlocal fdm=marker
 setlocal fde=0
 setlocal fmr={{{,}}}
 setlocal fdi=#
-setlocal fdl=0
+setlocal fdl=1
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-109
-silent! normal! zo
-234
-silent! normal! zo
-let s:l = 381 - ((34 * winheight(0) + 30) / 60)
+let s:l = 364 - ((28 * winheight(0) + 30) / 60)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-381
-normal! 010|
+364
+normal! 025|
 tabnext 1
 if exists('s:wipebuf')
 "   silent exe 'bwipe ' . s:wipebuf

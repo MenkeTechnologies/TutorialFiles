@@ -1,6 +1,6 @@
 " ~/.vim/sessions/zshrc.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 08 October 2017 at 14:57:19.
+" Created by session.vim 2.13.1 on 08 October 2017 at 22:15:04.
 " Open this file in Vim and run :source % to restore your session.
 
 if exists('g:syntax_on') != 1 | syntax on | endif
@@ -37,20 +37,16 @@ setlocal fdm=marker
 setlocal fde=0
 setlocal fmr={{{,}}}
 setlocal fdi=#
-setlocal fdl=0
+setlocal fdl=1
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-109
-silent! normal! zo
-234
-silent! normal! zo
-let s:l = 377 - ((30 * winheight(0) + 30) / 60)
+let s:l = 145 - ((35 * winheight(0) + 30) / 60)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-377
-normal! 034|
+145
+normal! 024|
 tabnext 1
 if exists('s:wipebuf')
 "   silent exe 'bwipe ' . s:wipebuf

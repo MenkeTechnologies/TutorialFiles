@@ -13997,3 +13997,9 @@ Oct 07 01:08 : ffmpeg/mp3: Could not update timestamps for skipped samples.
 Oct 07 01:08 : ffmpeg/mp3: Could not update timestamps for skipped samples.
 Oct 07 01:11 : client: [9] closed
 Oct 08 03:47 : player: played "Digitalism - Apollo-Gize (Fred Falke Remix)-_ykDET9kLJI.mp3"
+Oct 09 03:02 : config: inotify: auto_update was disabled. enable during compilation phase
+Oct 09 03:02 : config: option 'enabled' on line 29 was not recognized
+Oct 09 03:02 : client: [0] opened from 127.0.0.1:51881
+Oct 09 03:02 : client: [1] opened from 127.0.0.1:51888
+Oct 09 03:02 : client: [2] opened from 127.0.0.1:51898
+Oct 09 03:02 : ffmpeg/mp3: Could not update timestamps for skipped samples.

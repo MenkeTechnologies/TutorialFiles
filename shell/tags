@@ -16,6 +16,7 @@ COLS	myWatchNoBlinkColorized.sh	/^        COLS=$(tput cols)$/;"	v
 CR	batchRename.sh	/^    local CR="\\r"$/;"	v
 CR	openAll.sh	/^local CR="\\r"$/;"	v
 DAD	.tokens.sh	/^		DAD="9046352769"$/;"	v
+DIR	macOnly/rsyncr.sh	/^localDIR="$1"$/;"	v
 DIR	rsyncr.sh	/^localDIR="$1"$/;"	v
 DIR_WATCHING	fsWatchLongRunning.sh	/^DIR_WATCHING="$1"$/;"	v
 DIR_WATCHING	watchServiceFSWatchGit.sh	/^DIR_WATCHING="$1"$/;"	v
@@ -220,6 +221,7 @@ gitRepoUpdater	updater.sh	/^gitRepoUpdater(){$/;"	f
 headerSTRING	templater.sh	/^    headerSTRING=$(cat<<EOM$/;"	v
 home_dir	duplicateLineDeleter.sh	/^home_dir=$HOME$/;"	v
 home_dir	indenterAndDuplicateLineDeleter.sh	/^home_dir=$HOME$/;"	v
+host	macOnly/rsyncr.sh	/^host="r"$/;"	v
 host	rsyncr.sh	/^host="r"$/;"	v
 htopDIR	customTerminalInstaller/install.sh	/^htopDIR="$HOME\/.config\/htop"$/;"	v
 hub_create	customTerminalInstaller/.shell_aliases_functions.sh	/^    hub_create(){$/;"	f
@@ -327,6 +329,7 @@ rangePossibleIndices	macOnly/figletRandomFontOnce.sh	/^rangePossibleIndices=${#a
 rangePossibleIndices	macOnly/menkeTechRandomFont.sh	/^rangePossibleIndices=${#ary[*]}$/;"	v
 rangePossibleIndices	menkeTechRandoFont.sh	/^rangePossibleIndices=${#ary[*]}$/;"	v
 red	customTerminalInstaller/.shell_aliases_functions.sh	/^red=$(tput setaf 1)$/;"	v
+remoteDIR	macOnly/rsyncr.sh	/^remoteDIR="$2"$/;"	v
 remoteDIR	rsyncr.sh	/^remoteDIR="$2"$/;"	v
 replace	customTerminalInstaller/.shell_aliases_functions.sh	/^        replace="$1"$/;"	v
 replacer	customTerminalInstaller/.shell_aliases_functions.sh	/^    replacer(){$/;"	f

@@ -361,6 +361,7 @@ startCursor	batchRename.sh	/^startCursor(){$/;"	f
 startCursor	openAll.sh	/^startCursor(){$/;"	f
 startCursor	picture_finder.sh	/^startCursor(){$/;"	f
 startCursor	secureDelete.sh	/^startCursor(){$/;"	f
+string	openAll.sh	/^    string=""$/;"	v
 suc	customTerminalInstaller/.shell_aliases_functions.sh	/^suc(){$/;"	f
 suckers	test.py	/^def suckers():$/;"	f
 sum	listAllCommands.sh	/^sum=0$/;"	v

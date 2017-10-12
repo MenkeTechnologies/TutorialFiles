@@ -14033,3 +14033,6 @@ Oct 11 23:52 : ffmpeg/mp3: Could not update timestamps for skipped samples.
 Oct 12 03:43 : client: [3] opened from 127.0.0.1:58561
 Oct 12 03:43 : ffmpeg/mp3: Could not update timestamps for skipped samples.
 Oct 12 03:43 : client: [3] closed
+Oct 12 04:14 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Oct 12 04:14 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Oct 12 04:15 : player: played "Yoji Tech Dance Mix 3-bwZBumna5D8.mp3"

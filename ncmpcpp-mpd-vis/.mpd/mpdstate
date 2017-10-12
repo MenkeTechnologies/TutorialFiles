@@ -1,9 +1,9 @@
 sw_volume: 64
 audio_device_state:1:CoreAudio
 audio_device_state:1:my_fifo
-state: play
-current: 2915
-time: 480.676000
+state: pause
+current: 2907
+time: 3139.564000
 random: 0
 repeat: 0
 single: 0
@@ -2826,107 +2826,106 @@ playlist_begin
 2811:Cubase Projects/loopz - ReWire.aif
 2812:Cubase Projects/loopzmusic - ReWire.aif
 2813:Cubase Projects/newchordtrack1 - Output.aif
-2814:Cubase Projects/pitchdown - Output.aif
-2815:Cubase Projects/rvb - FX.aif
-2816:Cubase Projects/rvs rvb - Output.aif
-2817:Cubase Projects/Untitled-01/Audio/Bluezone-THDP-loop-1015-136.wav
-2818:Cubase Projects/Untitled-01/Audio/VEC4 Trance Kicks 78.wav
-2819:Cubase Projects/Untitled-02/Audio/00_mix_loop-140-xx-RAI-Loops003.wav
-2820:Cubase Projects/Untitled-02/Audio/delay - Output.aif
-2821:Cubase Projects/Untitled-02/Audio/distortloop - Output.aif
-2822:Cubase Projects/Untitled-02/Audio/newchordtrack.wav
-2823:Cubase Projects/Untitled-02/Audio/VEC4 Clubby Kicks 089.wav
-2824:Cubase Projects/Untitled-02/Audio/VEC4 Loops 001.wav
-2825:Cubase Projects/Untitled-02/Audio/VEC4 Loops 002.wav
-2826:Cubase Projects/Untitled-02/Audio/VEC4 Loops 003.wav
-2827:Cubase Projects/Untitled-02/Audio/VEC4 Loops 025.wav
-2828:Cubase Projects/Untitled-02/Audio/VEC4 Vocals 43.wav
-2829:Cubase Projects/Untitled-02/Edits/newchordtrack - Output-02.wav
-2830:Cubase Projects/Untitled-02/Edits/newchordtrack - Output.wav
-2831:Cubase Projects/Untitled-02/Edits/rvs rvb - Output.aif
-2832:Cubase Projects/Untitled-02/Edits/VEC4 Clubby Kicks 089-01.wav
-2833:Cubase Projects/Untitled-02/Edits/VEC4 Clubby Kicks 089.wav
-2834:Cubase Projects/Untitled-13/Audio/pitchdown - Output.aif
-2835:Cubase Projects/Untitled-13/Audio/rvb - FX.aif
-2836:Cubase Projects/Untitled-13/Audio/VEC4 Claps 025.wav
-2837:Cubase Projects/Untitled-13/Audio/VEC4 Clubby Kicks 021.wav
-2838:Cubase Projects/Untitled-13/Audio/VEC4 Electro Kicks 03.wav
-2839:Cubase Projects/Untitled-13/Audio/VEC4 Fills 004.wav
-2840:Cubase Projects/Untitled-13/Audio/VEC4 Fills 018.wav
-2841:Cubase Projects/Untitled-13/Audio/VEC4 Open HH 004.wav
-2842:Cubase Projects/Untitled-13/Audio/VEC4 Reverse Cym 02.wav
-2843:Cubase Projects/Untitled-13/Edits/pitchdown - Output-01.aif
-2844:Cubase Projects/Untitled-13/Edits/pitchdown - Output.aif
-2845:Cubase Projects/Untitled-13/Edits/rvb - FX-01.aif
-2846:Cubase Projects/Untitled-13/Edits/rvb - FX.aif
-2847:Cubase Projects/Untitled-13/Edits/VEC4 Reverse Cym 02-01.wav
-2848:Cubase Projects/Untitled-13/Edits/VEC4 Reverse Cym 02.wav
-2849:Cubase Projects/Untitled-15/Audio/VEC4 Electro Kicks 01.wav
-2850:Cubase Projects/Untitled-15/Audio/VEC4 Loops 002.wav
-2851:Cubase Projects/Untitled-15/Audio/VEC4 Loops 144.wav
-2852:Cubase Projects/Untitled-21/Audio/Bluezone-TTP-loop-1021-142.wav
-2853:Cubase Projects/Untitled-22/Audio/Bluezone-TTP-loop-1021-142.wav
-2854:Cubase Projects/Untitled-28/Audio/Bluezone-TTP-loop-1021-142.wav
-2855:Cubase Projects/Untitled-28/Audio/Bluezone-TTP-loop-2005-142.wav
-2856:Cubase Projects/Untitled-28/Audio/VEC4 Vocals 59.wav
-2857:Cubase Projects/Untitled-41/Audio/Bluezone-TTP-loop-1021-142.wav
-2858:Cubase Projects/Untitled-41/Audio/VEC4 Vocals 01.wav
-2859:Cubase Projects/Untitled-43/Audio/Bluezone-Hard-Techno-Sensation-Demo.wav
-2860:Cubase Projects/Untitled-45/Audio/Bluezone-HTS-loop-047-143.wav
-2861:Cubase Projects/Untitled-45/Audio/Bluezone-THDP-loop-3027-136.wav
-2862:Cubase Projects/Untitled-45/Audio/loopz - ReWire.aif
-2863:Cubase Projects/Untitled-45/Audio/loopzmusic - ReWire.aif
-2864:Cubase Projects/Untitled-45/Audio/VEC4 Claps 002.wav
-2865:Cubase Projects/Untitled-45/Audio/VEC4 Open HH 001.wav
-2866:Cubase Projects/Untitled-45/Audio/VEC4 Special Sounds 020 138BPM E.wav
-2867:Cubase Projects/Untitled-45/Audio/VEC4 Trance Kicks 03.wav
-2868:Cubase Projects/Untitled-46/Audio/ASΩΩΩΩ - Output.aif
-2869:Cubase Projects/Untitled-46/Audio/VEC4 Claps 003.wav
-2870:Cubase Projects/Untitled-46/Audio/VEC4 Closed HH 001.wav
-2871:Cubase Projects/Untitled-46/Audio/VEC4 Trance Kicks 07.wav
-2872:Kris Menace feat. Fred Falke - Fairlight-mNgVSqrSNWE.mp3
-2873:Digitalism - Apollo-Gize (Fred Falke Remix)-_ykDET9kLJI.mp3
-2874:Ableton/User Library/Samples/Imported/14sfx128 UT_at the beach_f_1.wav
+2814:Cubase Projects/rvb - FX.aif
+2815:Cubase Projects/rvs rvb - Output.aif
+2816:Cubase Projects/Untitled-01/Audio/Bluezone-THDP-loop-1015-136.wav
+2817:Cubase Projects/Untitled-01/Audio/VEC4 Trance Kicks 78.wav
+2818:Cubase Projects/Untitled-02/Audio/00_mix_loop-140-xx-RAI-Loops003.wav
+2819:Cubase Projects/Untitled-02/Audio/delay - Output.aif
+2820:Cubase Projects/Untitled-02/Audio/distortloop - Output.aif
+2821:Cubase Projects/Untitled-02/Audio/newchordtrack.wav
+2822:Cubase Projects/Untitled-02/Audio/VEC4 Clubby Kicks 089.wav
+2823:Cubase Projects/Untitled-02/Audio/VEC4 Loops 001.wav
+2824:Cubase Projects/Untitled-02/Audio/VEC4 Loops 002.wav
+2825:Cubase Projects/Untitled-02/Audio/VEC4 Loops 003.wav
+2826:Cubase Projects/Untitled-02/Audio/VEC4 Loops 025.wav
+2827:Cubase Projects/Untitled-02/Audio/VEC4 Vocals 43.wav
+2828:Cubase Projects/Untitled-02/Edits/newchordtrack - Output-02.wav
+2829:Cubase Projects/Untitled-02/Edits/newchordtrack - Output.wav
+2830:Cubase Projects/Untitled-02/Edits/rvs rvb - Output.aif
+2831:Cubase Projects/Untitled-02/Edits/VEC4 Clubby Kicks 089-01.wav
+2832:Cubase Projects/Untitled-02/Edits/VEC4 Clubby Kicks 089.wav
+2833:Cubase Projects/Untitled-13/Audio/pitchdown - Output.aif
+2834:Cubase Projects/Untitled-13/Audio/rvb - FX.aif
+2835:Cubase Projects/Untitled-13/Audio/VEC4 Claps 025.wav
+2836:Cubase Projects/Untitled-13/Audio/VEC4 Clubby Kicks 021.wav
+2837:Cubase Projects/Untitled-13/Audio/VEC4 Electro Kicks 03.wav
+2838:Cubase Projects/Untitled-13/Audio/VEC4 Fills 004.wav
+2839:Cubase Projects/Untitled-13/Audio/VEC4 Fills 018.wav
+2840:Cubase Projects/Untitled-13/Audio/VEC4 Open HH 004.wav
+2841:Cubase Projects/Untitled-13/Audio/VEC4 Reverse Cym 02.wav
+2842:Cubase Projects/Untitled-13/Edits/pitchdown - Output-01.aif
+2843:Cubase Projects/Untitled-13/Edits/pitchdown - Output.aif
+2844:Cubase Projects/Untitled-13/Edits/rvb - FX-01.aif
+2845:Cubase Projects/Untitled-13/Edits/rvb - FX.aif
+2846:Cubase Projects/Untitled-13/Edits/VEC4 Reverse Cym 02-01.wav
+2847:Cubase Projects/Untitled-13/Edits/VEC4 Reverse Cym 02.wav
+2848:Cubase Projects/Untitled-15/Audio/VEC4 Electro Kicks 01.wav
+2849:Cubase Projects/Untitled-15/Audio/VEC4 Loops 002.wav
+2850:Cubase Projects/Untitled-15/Audio/VEC4 Loops 144.wav
+2851:Cubase Projects/Untitled-21/Audio/Bluezone-TTP-loop-1021-142.wav
+2852:Cubase Projects/Untitled-22/Audio/Bluezone-TTP-loop-1021-142.wav
+2853:Cubase Projects/Untitled-28/Audio/Bluezone-TTP-loop-1021-142.wav
+2854:Cubase Projects/Untitled-28/Audio/Bluezone-TTP-loop-2005-142.wav
+2855:Cubase Projects/Untitled-28/Audio/VEC4 Vocals 59.wav
+2856:Cubase Projects/Untitled-41/Audio/Bluezone-TTP-loop-1021-142.wav
+2857:Cubase Projects/Untitled-41/Audio/VEC4 Vocals 01.wav
+2858:Cubase Projects/Untitled-43/Audio/Bluezone-Hard-Techno-Sensation-Demo.wav
+2859:Cubase Projects/Untitled-45/Audio/Bluezone-HTS-loop-047-143.wav
+2860:Cubase Projects/Untitled-45/Audio/Bluezone-THDP-loop-3027-136.wav
+2861:Cubase Projects/Untitled-45/Audio/loopz - ReWire.aif
+2862:Cubase Projects/Untitled-45/Audio/loopzmusic - ReWire.aif
+2863:Cubase Projects/Untitled-45/Audio/VEC4 Claps 002.wav
+2864:Cubase Projects/Untitled-45/Audio/VEC4 Open HH 001.wav
+2865:Cubase Projects/Untitled-45/Audio/VEC4 Special Sounds 020 138BPM E.wav
+2866:Cubase Projects/Untitled-45/Audio/VEC4 Trance Kicks 03.wav
+2867:Cubase Projects/Untitled-46/Audio/ASΩΩΩΩ - Output.aif
+2868:Cubase Projects/Untitled-46/Audio/VEC4 Claps 003.wav
+2869:Cubase Projects/Untitled-46/Audio/VEC4 Closed HH 001.wav
+2870:Cubase Projects/Untitled-46/Audio/VEC4 Trance Kicks 07.wav
+2871:Kris Menace feat. Fred Falke - Fairlight-mNgVSqrSNWE.mp3
+2872:Digitalism - Apollo-Gize (Fred Falke Remix)-_ykDET9kLJI.mp3
+2873:Ableton/User Library/Samples/Imported/14sfx128 UT_at the beach_f_1.wav
+2874:Kris Menace feat. Fred Falke - Fairlight-mNgVSqrSNWE.mp3
 2875:Kris Menace feat. Fred Falke - Fairlight-mNgVSqrSNWE.mp3
-2876:Kris Menace feat. Fred Falke - Fairlight-mNgVSqrSNWE.mp3
+2876:Digitalism - Apollo-Gize (Fred Falke Remix)-_ykDET9kLJI.mp3
 2877:Digitalism - Apollo-Gize (Fred Falke Remix)-_ykDET9kLJI.mp3
-2878:Digitalism - Apollo-Gize (Fred Falke Remix)-_ykDET9kLJI.mp3
-2879:Kris Menace feat. Fred Falke - Fairlight-mNgVSqrSNWE.mp3
-2880:Digitalism - Apollo-Gize (Fred Falke Remix)-_ykDET9kLJI.mp3
-2881:Kris Menace feat. Fred Falke - Fairlight-mNgVSqrSNWE.mp3
-2882:Digitalism - Apollo-Gize (Fred Falke Remix)-_ykDET9kLJI.mp3
-2883:♫ Amazing Uplifting Trance Mix l May 2017 (Vol. 62)  ♫-sbf1q0igfks.mp3
-2884:Digitalism - Apollo-Gize (Fred Falke Remix)-_ykDET9kLJI.mp3
+2878:Kris Menace feat. Fred Falke - Fairlight-mNgVSqrSNWE.mp3
+2879:Digitalism - Apollo-Gize (Fred Falke Remix)-_ykDET9kLJI.mp3
+2880:Kris Menace feat. Fred Falke - Fairlight-mNgVSqrSNWE.mp3
+2881:Digitalism - Apollo-Gize (Fred Falke Remix)-_ykDET9kLJI.mp3
+2882:♫ Amazing Uplifting Trance Mix l May 2017 (Vol. 62)  ♫-sbf1q0igfks.mp3
+2883:Digitalism - Apollo-Gize (Fred Falke Remix)-_ykDET9kLJI.mp3
+2884:♫ Amazing Uplifting Trance Mix l May 2017 (Vol. 62)  ♫-sbf1q0igfks.mp3
 2885:♫ Amazing Uplifting Trance Mix l May 2017 (Vol. 62)  ♫-sbf1q0igfks.mp3
-2886:♫ Amazing Uplifting Trance Mix l May 2017 (Vol. 62)  ♫-sbf1q0igfks.mp3
+2886:Yoji Tech Dance Mix 3-bwZBumna5D8.mp3
 2887:Yoji Tech Dance Mix 3-bwZBumna5D8.mp3
 2888:Yoji Tech Dance Mix 3-bwZBumna5D8.mp3
 2889:Yoji Tech Dance Mix 3-bwZBumna5D8.mp3
-2890:Yoji Tech Dance Mix 3-bwZBumna5D8.mp3
-2891:Ableton/User Library/Samples/Imported/Open Hat 1.wav
+2890:Ableton/User Library/Samples/Imported/Open Hat 1.wav
+2891:Yoji Tech Dance Mix 3-bwZBumna5D8.mp3
 2892:Yoji Tech Dance Mix 3-bwZBumna5D8.mp3
-2893:Yoji Tech Dance Mix 3-bwZBumna5D8.mp3
-2894:Kris Menace feat. Fred Falke - Fairlight-mNgVSqrSNWE.mp3
+2893:Kris Menace feat. Fred Falke - Fairlight-mNgVSqrSNWE.mp3
+2894:Yoji Tech Dance Mix 3-bwZBumna5D8.mp3
 2895:Yoji Tech Dance Mix 3-bwZBumna5D8.mp3
 2896:Yoji Tech Dance Mix 3-bwZBumna5D8.mp3
-2897:Yoji Tech Dance Mix 3-bwZBumna5D8.mp3
+2897:Kris Menace feat. Fred Falke - Fairlight-mNgVSqrSNWE.mp3
 2898:Kris Menace feat. Fred Falke - Fairlight-mNgVSqrSNWE.mp3
-2899:Kris Menace feat. Fred Falke - Fairlight-mNgVSqrSNWE.mp3
+2899:Yoji Tech Dance Mix 3-bwZBumna5D8.mp3
 2900:Yoji Tech Dance Mix 3-bwZBumna5D8.mp3
 2901:Yoji Tech Dance Mix 3-bwZBumna5D8.mp3
-2902:Yoji Tech Dance Mix 3-bwZBumna5D8.mp3
+2902:Kris Menace feat. Fred Falke - Fairlight-mNgVSqrSNWE.mp3
 2903:Kris Menace feat. Fred Falke - Fairlight-mNgVSqrSNWE.mp3
-2904:Kris Menace feat. Fred Falke - Fairlight-mNgVSqrSNWE.mp3
-2905:Digitalism - Apollo-Gize (Fred Falke Remix)-_ykDET9kLJI.mp3
-2906:Yoji Tech Dance Mix 3-bwZBumna5D8.mp3
-2907:Kris Menace feat. Fred Falke - Fairlight-mNgVSqrSNWE.mp3
+2904:Digitalism - Apollo-Gize (Fred Falke Remix)-_ykDET9kLJI.mp3
+2905:Yoji Tech Dance Mix 3-bwZBumna5D8.mp3
+2906:Kris Menace feat. Fred Falke - Fairlight-mNgVSqrSNWE.mp3
+2907:Yoji Tech Dance Mix 3-bwZBumna5D8.mp3
 2908:Yoji Tech Dance Mix 3-bwZBumna5D8.mp3
 2909:Yoji Tech Dance Mix 3-bwZBumna5D8.mp3
 2910:Yoji Tech Dance Mix 3-bwZBumna5D8.mp3
 2911:Yoji Tech Dance Mix 3-bwZBumna5D8.mp3
 2912:Yoji Tech Dance Mix 3-bwZBumna5D8.mp3
-2913:Yoji Tech Dance Mix 3-bwZBumna5D8.mp3
-2914:Digitalism - Apollo-Gize (Fred Falke Remix)-_ykDET9kLJI.mp3
-2915:Kris Menace feat. Fred Falke - Fairlight-mNgVSqrSNWE.mp3
-2916:Yoji Tech Dance Mix 3-bwZBumna5D8.mp3
+2913:Digitalism - Apollo-Gize (Fred Falke Remix)-_ykDET9kLJI.mp3
+2914:Kris Menace feat. Fred Falke - Fairlight-mNgVSqrSNWE.mp3
+2915:Yoji Tech Dance Mix 3-bwZBumna5D8.mp3
 playlist_end

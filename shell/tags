@@ -64,6 +64,7 @@ OS_TYPE	customTerminalInstaller/install.sh	/^OS_TYPE="$(uname -s)"$/;"	v
 PULL_URL	gitgo.sh	/^        local PULL_URL="$(git remote -v | \\$/;"	v
 RED	redText.sh	/^RED='\\e[31;1m'$/;"	v
 REPO	customTerminalInstaller/.shell_aliases_functions.sh	/^        REPO="$1"$/;"	v
+REPO	macOnly/.shell_aliases_functions.sh	/^    REPO="$1"$/;"	v
 REPO_NAME	gitgo.sh	/^        local REPO_NAME="$(git remote -v | awk '{print $2}' | tail -1 | tr -d ' ')"$/;"	v
 REPO_NAME_TO_CREATE	gitgo.sh	/^        local REPO_NAME_TO_CREATE="$1"$/;"	v
 RESET	blueText.sh	/^RESET='\\e[0m'$/;"	v
@@ -94,26 +95,34 @@ addHeader	templater.sh	/^addHeader(){$/;"	f
 address	uploadWebDS.sh	/^address="jacobmenke@$IP:\/var\/services\/web"$/;"	v
 address	uploadWebPi.sh	/^address="pi@$ip:\/var\/www\/html"$/;"	v
 animate	customTerminalInstaller/.shell_aliases_functions.sh	/^animate(){$/;"	f
+animate	macOnly/.shell_aliases_functions.sh	/^animate(){$/;"	f
 arr	listAllCommands.sh	/^arr=()$/;"	v
 arr	picture_finder.sh	/^local arr=(  '|' '\\' '-' '\/' )$/;"	v
 arr	secureDelete.sh	/^    local arr=(  '|' '\\' '-' '\/' )$/;"	v
 arr	sortedArrayCounter.sh	/^arr=()$/;"	v
 arrayOfPI	updater.sh	/^arrayOfPI=(r r2)$/;"	v
+backup	macOnly/.shell_aliases_functions.sh	/^backup(){$/;"	f
 backup_dir	duplicateLineDeleter.sh	/^backup_dir=$scripts_dir\/rcBackups$/;"	v
 backup_dir	indenterAndDuplicateLineDeleter.sh	/^backup_dir=$scripts_dir\/rcBackups$/;"	v
 blocksToSize	customTerminalInstaller/.shell_aliases_functions.sh	/^blocksToSize(){$/;"	f
+blocksToSize	macOnly/.shell_aliases_functions.sh	/^blocksToSize(){$/;"	f
 blocksize	secureDelete.sh	/^blocksize=1      #  I\/O with \/dev\/urandom requires unit block size,$/;"	v
 bold	customTerminalInstaller/.shell_aliases_functions.sh	/^bold=$(tput bold || tput md)$/;"	v
+bold	macOnly/.shell_aliases_functions.sh	/^	bold=$(tput bold || tput md)$/;"	v
 boldAndUnderlinedPrint	macOnly/tutorialConfigUpdater.sh	/^boldAndUnderlinedPrint(){$/;"	f
 bytes	customTerminalInstaller/.shell_aliases_functions.sh	/^    local bytes=$(( input * 512 ))$/;"	v
+bytes	macOnly/.shell_aliases_functions.sh	/^    local bytes=$(( input * 512 ))$/;"	v
 cd	customTerminalInstaller/.shell_aliases_functions.sh	/^    cd(){$/;"	f
+cd	macOnly/.shell_aliases_functions.sh	/^cd(){$/;"	f
 chars	batchRename.sh	/^    local chars=1 # number of characters to display$/;"	v
 chars	openAll.sh	/^local chars=1 # number of characters to display$/;"	v
 checkForExistence	batchRename.sh	/^checkForExistence(){$/;"	f
 clearList	customTerminalInstaller/.shell_aliases_functions.sh	/^clearList () {$/;"	f
+clearList	macOnly/.shell_aliases_functions.sh	/^clearList () {$/;"	f
 clearline	batchRename.sh	/^    local clearline="\\e[K" # clear to end of line (ANSI terminal)$/;"	v
 clearline	openAll.sh	/^local clearline="\\e[K" # clear to end of line (ANSI terminal)$/;"	v
 color2	customTerminalInstaller/.shell_aliases_functions.sh	/^    color2(){$/;"	f
+color2	macOnly/.shell_aliases_functions.sh	/^color2(){$/;"	f
 cols	animation	/^cols=`tput cols`$/;"	v
 cols	picture_finder.sh	/^cols=`tput cols`$/;"	v
 command	runner.sh	/^        command="vim -i NONE -V1 -Nes -c 'so""$fileToBeExecuted""' -c'echo""|q!' 2>&1 | tail +4"$/;"	v
@@ -133,18 +142,22 @@ convertFiles	batchRename.sh	/^convertFiles(){$/;"	f
 count	animation	/^count=$topline$/;"	v
 counter	filenameLengthCounters.sh	/^counter=0$/;"	v
 createGIF	customTerminalInstaller/.shell_aliases_functions.sh	/^    createGIF(){$/;"	f
+createGIF	macOnly/.shell_aliases_functions.sh	/^createGIF(){$/;"	f
 createTemplate	templater.sh	/^createTemplate(){$/;"	f
 createTheFile	createScriptButDontOpenSublime.sh	/^createTheFile(){$/;"	f
 createTheFile	createTextFile.sh	/^createTheFile(){$/;"	f
 db	customTerminalInstaller/.shell_aliases_functions.sh	/^db(){$/;"	f
+db	macOnly/.shell_aliases_functions.sh	/^db(){$/;"	f
 default_recipent	textmessage.sh	/^    default_recipent=555111333$/;"	v
 delay	batchRename.sh	/^    local delay=.1 # time in seconds between characters$/;"	v
 delay	openAll.sh	/^local delay=.1 # time in seconds between characters$/;"	v
 delim	batchRename.sh	/^delim=_$/;"	v
 dependencies_ary	customTerminalInstaller/install.sh	/^dependencies_ary=(vim tmux git wget lolcat cowsay cmatrix htop cmake glances bpython python-dev \\$/;"	v
 destinationFile	picture_finder.sh	/^	destinationFile=$destinationDirectory\/${picture##*\/}$/;"	v
+dir	macOnly/.shell_aliases_functions.sh	/^dir="$1"$/;"	v
 dir	oldCounter.sh	/^	dir=`echo $PATH | cut -d: -f$i`$/;"	v
 dirNum	oldCounter.sh	/^dirNum=`expr $(echo $PATH | tr -cd : | wc -c) + 1`$/;"	v
+dir_name	macOnly/.shell_aliases_functions.sh	/^    dir_name=${git_name%.*}$/;"	v
 dir_to_search	openAll.sh	/^	dir_to_search="$2"$/;"	v
 dir_to_search	openAll.sh	/^dir_to_search="$(pwd)"$/;"	v
 directory_name	tgzLocalInstaller.sh	/^        directory_name="${tarbellDirectory%.tar.gz}"$/;"	v
@@ -158,6 +171,7 @@ displayProgressIndicator	openAll.sh	/^displayProgressIndicator(){$/;"	f
 distroName	clearTrash.sh	/^    distroName=$(lsb_release -a | head -1 | awk '{print $3}')$/;"	v
 distroName	colorLogger.sh	/^    distroName=$(lsb_release -a | head -1 | awk '{print $3}')$/;"	v
 distroName	customTerminalInstaller/install.sh	/^    distroName=$(lsb_release -a | head -1 | awk '{print $3}')$/;"	v
+distroName	macOnly/.shell_aliases_functions.sh	/^    distroName=$(lsb_release -a | head -1 | awk '{print $3}')$/;"	v
 dontSummarizeSizes	directoryContentsSize.sh	/^dontSummarizeSizes(){$/;"	f
 e_badargs	secureDelete.sh	/^e_badargs=70     #  Various error exit codes.$/;"	v
 e_changed_mind	secureDelete.sh	/^e_changed_mind=72$/;"	v
@@ -169,7 +183,9 @@ encrypt_program	encrypt.sh	/^encrypt_program=ccrypt$/;"	v
 encrypt_program	encryptstuff.sh	/^encrypt_program=ccrypt$/;"	v
 ending	picture_finder.sh	/^	ending=${destinationFile##*.}$/;"	v
 escapeRemove	customTerminalInstaller/.shell_aliases_functions.sh	/^    escapeRemove(){$/;"	f
+escapeRemove	macOnly/.shell_aliases_functions.sh	/^escapeRemove(){$/;"	f
 execpy	customTerminalInstaller/.shell_aliases_functions.sh	/^    execpy(){$/;"	f
+execpy	macOnly/.shell_aliases_functions.sh	/^execpy(){$/;"	f
 executableProgram	shebangChanger.sh	/^executableProgram=$1$/;"	v
 executableScriptsProcessing	createScriptButDontOpenSublime.sh	/^executableScriptsProcessing(){$/;"	f
 executableScriptsProcessing	createTextFile.sh	/^executableScriptsProcessing(){$/;"	f
@@ -178,8 +194,10 @@ executableScriptsProcessing	templater.sh	/^executableScriptsProcessing(){$/;"	f
 executeFileFirstArgIsCommand	runner.sh	/^executeFileFirstArgIsCommand(){$/;"	f
 executeTheFile	runner.sh	/^executeTheFile(){$/;"	f
 exists	customTerminalInstaller/install.sh	/^exists(){$/;"	f
+exists	macOnly/.shell_aliases_functions.sh	/^exists(){$/;"	f
 exists	updater.sh	/^exists(){$/;"	f
 f	customTerminalInstaller/.shell_aliases_functions.sh	/^    f(){$/;"	f
+f	macOnly/.shell_aliases_functions.sh	/^f(){$/;"	f
 family_phone_numbers	textmessage.sh	/^    family_phone_numbers=($member_1)$/;"	v
 file	inotifyWatchLogAndEmailIfNAS.sh	/^file="$1"$/;"	v
 file	openAll.sh	/^	file="$(echo $file | tr '[:upper:]' '[:lower:]')"$/;"	v
@@ -211,13 +229,17 @@ fortuneQuote	eyes.sh	/^    fortuneQuote="$(fortune)"$/;"	v
 found	shebangChanger.sh	/^            found=false$/;"	v
 found	shebangChanger.sh	/^            found=true$/;"	v
 found	shebangChanger.sh	/^    found=false$/;"	v
+gcl	macOnly/.shell_aliases_functions.sh	/^gcl() {$/;"	f
 getInitialCommit	gitgo.sh	/^getInitialCommit(){$/;"	f
 getRemoteDetails	gitgo.sh	/^getRemoteDetails(){$/;"	f
+getrc	macOnly/.shell_aliases_functions.sh	/^getrc(){$/;"	f
 gitCommitAndPush	customTerminalInstaller/.shell_aliases_functions.sh	/^    gitCommitAndPush(){$/;"	f
+gitCommitAndPush	macOnly/.shell_aliases_functions.sh	/^gitCommitAndPush(){$/;"	f
 gitPull	gitgo.sh	/^gitPull(){$/;"	f
 gitPush	gitgo.sh	/^gitPush(){$/;"	f
 gitRepoUpdater	rpiSoftwareUpdater.sh	/^gitRepoUpdater(){$/;"	f
 gitRepoUpdater	updater.sh	/^gitRepoUpdater(){$/;"	f
+git_name	macOnly/.shell_aliases_functions.sh	/^    git_name="${1##*\/}"$/;"	v
 headerSTRING	templater.sh	/^    headerSTRING=$(cat<<EOM$/;"	v
 home_dir	duplicateLineDeleter.sh	/^home_dir=$HOME$/;"	v
 home_dir	indenterAndDuplicateLineDeleter.sh	/^home_dir=$HOME$/;"	v
@@ -225,8 +247,11 @@ host	macOnly/rsyncr.sh	/^host="r"$/;"	v
 host	rsyncr.sh	/^host="r"$/;"	v
 htopDIR	customTerminalInstaller/install.sh	/^htopDIR="$HOME\/.config\/htop"$/;"	v
 hub_create	customTerminalInstaller/.shell_aliases_functions.sh	/^    hub_create(){$/;"	f
+hub_create	macOnly/.shell_aliases_functions.sh	/^hub_create(){$/;"	f
 hub_delete	customTerminalInstaller/.shell_aliases_functions.sh	/^    hub_delete(){$/;"	f
+hub_delete	macOnly/.shell_aliases_functions.sh	/^hub_delete(){$/;"	f
 humanReadable	customTerminalInstaller/.shell_aliases_functions.sh	/^humanReadable(){$/;"	f
+humanReadable	macOnly/.shell_aliases_functions.sh	/^humanReadable(){$/;"	f
 initializeGitDirectory	gitgo.sh	/^initializeGitDirectory(){$/;"	f
 install	tgzLocalInstaller.sh	/^install(){$/;"	f
 installGitHubPlugin	customTerminalInstaller/tmux_plugins_install.sh	/^installGitHubPlugin(){$/;"	f
@@ -240,18 +265,29 @@ killCursor	openAll.sh	/^killCursor(){$/;"	f
 killCursor	picture_finder.sh	/^killCursor(){$/;"	f
 killCursor	secureDelete.sh	/^killCursor(){$/;"	f
 last	batchRename.sh	/^        local last=`echo ${file##*_}`$/;"	v
+last_fields	macOnly/.shell_aliases_functions.sh	/^                last_fields="$(echo $locale | cut -d' ' -f3-10)"$/;"	v
 lcline	openAll.sh	/^	lcline="$(echo $line | tr '[:upper:]' '[:lower:]')"$/;"	v
 length	filenameLengthCounters.sh	/^        length="$(echo $file_name | wc -c | tr -d ' ')"$/;"	v
+lib_command	macOnly/.shell_aliases_functions.sh	/^lib_command="ldd -v"$/;"	v
+lib_command	macOnly/.shell_aliases_functions.sh	/^lib_command="otool -L"$/;"	v
 line	gitRemoteRepoInformation.sh	/^        line="$(git remote -v 2>\/dev\/null)"$/;"	v
 lineCounter	shebangChanger.sh	/^    lineCounter=1$/;"	v
+listNoClear	macOnly/.shell_aliases_functions.sh	/^listNoClear () {$/;"	f
+ls_command	macOnly/.shell_aliases_functions.sh	/^        ls_command="grc -c \/usr\/local\/share\/grc\/conf.gls gls -iFlhA --color=always"$/;"	v
+ls_command	macOnly/.shell_aliases_functions.sh	/^        ls_command="grc -c \/usr\/share\/grc\/conf.gls ls -iFlhA --color=always"$/;"	v
+ls_command	macOnly/.shell_aliases_functions.sh	/^    ls_command="ls -iFhlA"$/;"	v
+ls_command	macOnly/.shell_aliases_functions.sh	/^    ls_command="ls -iFlhAO"$/;"	v
 master	dsDownloader.sh	/^master="jacobmenke"$/;"	v
 master	rpiDownloader.sh	/^master="jacobmenke"$/;"	v
 member_1	textmessage.sh	/^    member_1=5551113333$/;"	v
 messageToSpeak	macOnly/say.sh	/^messageToSpeak=""$/;"	v
 messageToSpeak	say.sh	/^messageToSpeak=""$/;"	v
 mp3	customTerminalInstaller/.shell_aliases_functions.sh	/^    mp3(){$/;"	f
+mp3	macOnly/.shell_aliases_functions.sh	/^mp3(){$/;"	f
 mp4	customTerminalInstaller/.shell_aliases_functions.sh	/^    mp4(){$/;"	f
+mp4	macOnly/.shell_aliases_functions.sh	/^mp4(){$/;"	f
 msg	customTerminalInstaller/.shell_aliases_functions.sh	/^    msg="$2"$/;"	v
+msg	macOnly/.shell_aliases_functions.sh	/^    msg="$2"$/;"	v
 my_backup_dir	backupBashConfig.sh	/^my_backup_dir="$my_scripts_dir\/rcBackups"$/;"	v
 my_home_dir	backupBashConfig.sh	/^my_home_dir=$HOME$/;"	v
 my_scripts_dir	backupBashConfig.sh	/^my_scripts_dir="$SCRIPTS"$/;"	v
@@ -260,7 +296,9 @@ newfile	createScriptButDontOpenSublime.sh	/^	newfile="$newfile".txt$/;"	v
 newfile	createScriptButDontOpenSublime.sh	/^newfile="$1"$/;"	v
 newfile	createTextFile.sh	/^    newfile="$newfile".txt$/;"	v
 newfile	createTextFile.sh	/^newfile="$1"$/;"	v
+newfile	macOnly/.shell_aliases_functions.sh	/^    newfile="$1".$(date +%Y%m%d.%H.%M.bak)$/;"	v
 nn	customTerminalInstaller/.shell_aliases_functions.sh	/^nn(){$/;"	f
+nn	macOnly/.shell_aliases_functions.sh	/^nn(){$/;"	f
 number	batchRename.sh	/^        local number=$((10#$number))$/;"	v
 number	batchRename.sh	/^        local number=`echo ${last%%.*}`$/;"	v
 openTextEditor	createScriptButDontOpenSublime.sh	/^openTextEditor(){$/;"	f
@@ -271,13 +309,16 @@ optstring	myWatchNoBlink.sh	/^optstring=bh$/;"	v
 optstring	myWatchNoBlinkColorized.sh	/^optstring=bh$/;"	v
 optstring	mywatch.sh	/^optstring=dh$/;"	v
 orig	customTerminalInstaller/.shell_aliases_functions.sh	/^        orig="$1"$/;"	v
+orig	macOnly/.shell_aliases_functions.sh	/^    orig="$1"$/;"	v
 origin	gitgo.sh	/^    local origin="$(git remote -v | awk '{print $1}' | tail -1 | tr -d ' ')"$/;"	v
 os	test.py	/^import os$/;"	i
 out	customTerminalInstaller/.shell_aliases_functions.sh	/^        out="$(curl -u menketechnologies -X "DELETE" https:\/\/api.github.com\/repos\/menketechnologies\/"$REPO")"$/;"	v
 out	inotifyWatchLogAndEmailIfNAS.sh	/^    out=$(tail -1 "$file" | grep "nas")$/;"	v
+out	macOnly/.shell_aliases_functions.sh	/^    out="$(curl -u menketechnologies -X "DELETE" https:\/\/api.github.com\/repos\/menketechnologies\/"$REPO")"$/;"	v
 out	watchLogAndEmailIfNAS.sh	/^    out=$(tail -5 "$file" | grep "nas")$/;"	v
 outFile	customTerminalInstaller/.shell_aliases_functions.sh	/^            outFile="$3"	$/;"	v
 outFile	customTerminalInstaller/.shell_aliases_functions.sh	/^        outFile=out.gif$/;"	v
+outFile	macOnly/.shell_aliases_functions.sh	/^    outFile=out.gif$/;"	v
 outdated	updater.sh	/^    outdated=$(pip2 list --outdated | awk '{print $1}')$/;"	v
 outdated	updater.sh	/^    outdated=$(pip3 list --outdated | awk '{print $1}')$/;"	v
 output	figletRandomFont.sh	/^    output="$(echo $TEXT_TO_DISPLAY | figlet -f $font)"$/;"	v
@@ -295,11 +336,13 @@ path	shebangChanger.sh	/^path="#!\/usr\/bin\/env $executableProgram"$/;"	v
 perlOutdated	updater.sh	/^    perlOutdated=$(cpan-outdated -p)$/;"	v
 pid	fsWatchLongRunning.sh	/^            pid=$!$/;"	v
 pid	fsWatchLongRunning.sh	/^        pid=$!$/;"	v
+pion	macOnly/.shell_aliases_functions.sh	/^pion (){$/;"	f
 pipe	readFIFO.sh	/^pipe=$HOME\/Desktop\/testpipe$/;"	v
 pipe	readFIFO.sh	/^pipe=\/tmp\/testpipe$/;"	v
 powerline_dir	customTerminalInstaller/install.sh	/^powerline_dir="$(pip show powerline-status | grep Location | awk '{print $2}')"$/;"	v
 prettyPrint	customTerminalInstaller/.shell_aliases_functions.sh	/^    prettyPrint(){$/;"	f
 prettyPrint	gitgo.sh	/^prettyPrint(){$/;"	f
+prettyPrint	macOnly/.shell_aliases_functions.sh	/^prettyPrint(){$/;"	f
 prettyPrint	macOnly/tor.sh	/^prettyPrint (){$/;"	f
 prettyPrint	rpiSoftwareUpdater.sh	/^prettyPrint(){$/;"	f
 prettyPrint	textmessage.sh	/^prettyPrint () {$/;"	f
@@ -314,6 +357,7 @@ progress_pid	secureDelete.sh	/^    progress_pid=$!$/;"	v
 prompt	batchRename.sh	/^    local prompt="press any key..." # user prompt$/;"	v
 prompt	openAll.sh	/^local prompt="press any key..." # user prompt$/;"	v
 pstreeMonitor	customTerminalInstaller/.shell_aliases_functions.sh	/^    pstreeMonitor(){$/;"	f
+pstreeMonitor	macOnly/.shell_aliases_functions.sh	/^pstreeMonitor(){$/;"	f
 purpose	headerSummarizer.sh	/^    purpose="$(sed -n 6p $file)"$/;"	v
 randIndex	eyes.sh	/^    randIndex=$(($RANDOM % $rangePossibleIndices))$/;"	v
 randIndex	figletRandomFont.sh	/^    randIndex=$(($RANDOM % $rangePossibleIndices))$/;"	v
@@ -330,24 +374,33 @@ rangePossibleIndices	macOnly/figletRandomFontOnce.sh	/^rangePossibleIndices=${#a
 rangePossibleIndices	macOnly/menkeTechRandomFont.sh	/^rangePossibleIndices=${#ary[*]}$/;"	v
 rangePossibleIndices	menkeTechRandoFont.sh	/^rangePossibleIndices=${#ary[*]}$/;"	v
 red	customTerminalInstaller/.shell_aliases_functions.sh	/^red=$(tput setaf 1)$/;"	v
+red	macOnly/.shell_aliases_functions.sh	/^	red=$(tput setaf 1)$/;"	v
 remoteDIR	macOnly/rsyncr.sh	/^remoteDIR="$2"$/;"	v
 remoteDIR	rsyncr.sh	/^remoteDIR="$2"$/;"	v
 replace	customTerminalInstaller/.shell_aliases_functions.sh	/^        replace="$1"$/;"	v
+replace	macOnly/.shell_aliases_functions.sh	/^    replace="$1"$/;"	v
 replacer	customTerminalInstaller/.shell_aliases_functions.sh	/^    replacer(){$/;"	f
+replacer	macOnly/.shell_aliases_functions.sh	/^replacer(){$/;"	f
 repo	gitRemoteRepoInformation.sh	/^            repo="$(echo $line | awk -F'\/' '{print $5}' | awk '{print $1}')"$/;"	v
 res	customTerminalInstaller/.shell_aliases_functions.sh	/^            res="$2"$/;"	v
 res	customTerminalInstaller/.shell_aliases_functions.sh	/^        res=600x400$/;"	v
+res	macOnly/.shell_aliases_functions.sh	/^    res=600x400$/;"	v
 return2	customTerminalInstaller/.shell_aliases_functions.sh	/^    return2(){$/;"	f
+return2	macOnly/.shell_aliases_functions.sh	/^return2(){$/;"	f
 revarr	picture_finder.sh	/^local revarr=( '|' '\/' '-' '\\')$/;"	v
 revarr	secureDelete.sh	/^    local revarr=( '|' '\/' '-' '\\')$/;"	v
 robot	animation	/^robot="`cat << "EOF"                               $/;"	v
 rows	animation	/^rows=`tput lines`$/;"	v
 s	customTerminalInstaller/.shell_aliases_functions.sh	/^        s=substr(s,1,4)$/;"	v
 s	customTerminalInstaller/.shell_aliases_functions.sh	/^    s=" B   KiB MiB GiB TiB EiB PiB YiB ZiB"$/;"	v
+s	macOnly/.shell_aliases_functions.sh	/^        s=substr(s,1,4)$/;"	v
+s	macOnly/.shell_aliases_functions.sh	/^    s=" B   KiB MiB GiB TiB EiB PiB YiB ZiB"$/;"	v
 scnew	customTerminalInstaller/.shell_aliases_functions.sh	/^scnew(){$/;"	f
+scnew	macOnly/.shell_aliases_functions.sh	/^scnew(){$/;"	f
 scripts_dir	duplicateLineDeleter.sh	/^scripts_dir=$SCRIPTS$/;"	v
 scripts_dir	indenterAndDuplicateLineDeleter.sh	/^scripts_dir=$SCRIPTS$/;"	v
 search	customTerminalInstaller/.shell_aliases_functions.sh	/^    search(){$/;"	f
+search	macOnly/.shell_aliases_functions.sh	/^search(){$/;"	f
 showHidden	directoryContentsSize.sh	/^showHidden(){$/;"	f
 show_usage	test.pl	/^sub show_usage {$/;"	s
 sorted	sortedArrayCounter.sh	/^sorted=( $(sort -f <<<"${arr[*]}") )$/;"	v
@@ -364,12 +417,14 @@ startCursor	picture_finder.sh	/^startCursor(){$/;"	f
 startCursor	secureDelete.sh	/^startCursor(){$/;"	f
 string	openAll.sh	/^    string=""$/;"	v
 suc	customTerminalInstaller/.shell_aliases_functions.sh	/^suc(){$/;"	f
+suc	macOnly/.shell_aliases_functions.sh	/^suc(){$/;"	f
 suckers	test.py	/^def suckers():$/;"	f
 sum	listAllCommands.sh	/^sum=0$/;"	v
 sum	sortedArrayCounter.sh	/^sum=0$/;"	v
 summarizeSizes	directoryContentsSize.sh	/^summarizeSizes(){$/;"	f
 sys	test.py	/^import sys$/;"	i
 tac	customTerminalInstaller/.shell_aliases_functions.sh	/^    tac(){$/;"	f
+tac	macOnly/.shell_aliases_functions.sh	/^tac(){$/;"	f
 tail	shebangChanger.sh	/^        tail=$(cat "$file")$/;"	v
 tail	shebangChanger.sh	/^        tail=$(sed -n "$lineCounter,$"p "$file")$/;"	v
 tailVersion	colorLogger.sh	/^tailVersion=tail$/;"	v
@@ -381,6 +436,7 @@ timeToSleep	myWatchNoBlink.sh	/^    timeToSleep=0.5$/;"	v
 timeToSleep	myWatchNoBlinkColorized.sh	/^    timeToSleep=$2$/;"	v
 timeToSleep	myWatchNoBlinkColorized.sh	/^    timeToSleep=0.5$/;"	v
 title	customTerminalInstaller/.shell_aliases_functions.sh	/^    title="$1"$/;"	v
+title	macOnly/.shell_aliases_functions.sh	/^    title="$1"$/;"	v
 topline	animation	/^topline=0$/;"	v
 total	oldCounter.sh	/^total=0$/;"	v
 total	oldCounter.sh	/^total=`expr $(ls -F $1 | grep ".*[*@]" | wc -l) + $total`$/;"	v
@@ -408,3 +464,4 @@ websiteDir	macOnly/tutorialConfigUpdater.sh	/^websiteDir="$HOME\/WebstormProject
 x	mywatch.sh	/^    x=$(eval "$1")$/;"	v
 x	test.py	/^x=5$/;"	v
 xf	customTerminalInstaller/.shell_aliases_functions.sh	/^        xf=(s==" B  ")?"%5d   ":"%8.2f"$/;"	v
+xf	macOnly/.shell_aliases_functions.sh	/^        xf=(s==" B  ")?"%5d   ":"%8.2f"$/;"	v

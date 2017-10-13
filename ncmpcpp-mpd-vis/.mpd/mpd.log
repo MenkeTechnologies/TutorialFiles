@@ -14048,3 +14048,8 @@ Oct 12 07:32 : player: played "Yoji Tech Dance Mix 3-bwZBumna5D8.mp3"
 Oct 12 08:33 : ffmpeg/mp3: Could not update timestamps for discarded samples.
 Oct 12 08:33 : ffmpeg/mp3: Could not update timestamps for skipped samples.
 Oct 12 08:34 : player: played "Yoji Tech Dance Mix 3-bwZBumna5D8.mp3"
+Oct 13 05:51 : player: played "Cubase Projects/pitchdown - Output.aif"
+Oct 13 05:51 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Oct 13 06:35 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Oct 13 06:35 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Oct 13 06:35 : player: played "Yoji Tech Dance Mix 3-bwZBumna5D8.mp3"

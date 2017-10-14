@@ -1,11 +1,11 @@
 sw_volume: 64
 audio_device_state:1:CoreAudio
 audio_device_state:1:my_fifo
-state: play
-current: 2915
-time: 2656.384000
+state: pause
+current: 2912
+time: 2958.357000
 random: 0
-repeat: 0
+repeat: 1
 single: 0
 consume: 0
 crossfade: 5
@@ -2928,4 +2928,35 @@ playlist_begin
 2913:Digitalism - Apollo-Gize (Fred Falke Remix)-_ykDET9kLJI.mp3
 2914:Kris Menace feat. Fred Falke - Fairlight-mNgVSqrSNWE.mp3
 2915:Yoji Tech Dance Mix 3-bwZBumna5D8.mp3
+2916:Ableton/User Library/Samples/Imported/ATE Construction Kit - 001 - 138 BPM - Basslines.wav
+2917:Ableton/User Library/Samples/Imported/ATE FX One Shot - 038.wav
+2918:Ableton/User Library/Samples/Imported/ATE FX One Shot - 043.wav
+2919:Ableton/User Library/Samples/Imported/ATE Percussion - 101.wav
+2920:Ableton/User Library/Samples/Imported/ATE Percussion - 102.wav
+2921:Ableton/User Library/Samples/Imported/ATE Percussion - 103.wav
+2922:Ableton/User Library/Samples/Imported/ATE Percussion - 104.wav
+2923:Ableton/User Library/Samples/Imported/ATE Percussion - 105.wav
+2924:Ableton/User Library/Samples/Imported/ATE Percussion - 106.wav
+2925:Ableton/User Library/Samples/Imported/ATE Percussion - 107.wav
+2926:Ableton/User Library/Samples/Imported/ATE Percussion - 108.wav
+2927:Ableton/User Library/Samples/Imported/ATE Percussion - 109.wav
+2928:Ableton/User Library/Samples/Imported/ATE Percussion - 110.wav
+2929:Ableton/User Library/Samples/Imported/ATE Percussion - 111.wav
+2930:Ableton/User Library/Samples/Imported/ATE Percussion - 112.wav
+2931:Ableton/User Library/Samples/Imported/ATE Percussion - 113.wav
+2932:Ableton/User Library/Samples/Imported/ATE Percussion - 114.wav
+2933:Ableton/User Library/Samples/Imported/ATE Percussion - 115.wav
+2934:Ableton/User Library/Samples/Imported/ATE Percussion - 116.wav
+2935:Ableton/User Library/Samples/Imported/ATE Percussion - 117.wav
+2936:Ableton/User Library/Samples/Imported/ATE Percussion - 118.wav
+2937:Ableton/User Library/Samples/Imported/ATE Percussion - 119.wav
+2938:Ableton/User Library/Samples/Imported/ATE Percussion - 120.wav
+2939:Ableton/User Library/Samples/Imported/ATE Percussion - 121.wav
+2940:Ableton/User Library/Samples/Imported/ATE Percussion - 122.wav
+2941:Ableton/User Library/Samples/Imported/ATE Percussion - 123.wav
+2942:Ableton/User Library/Samples/Imported/ATE Percussion - 124.wav
+2943:Ableton/User Library/Samples/Imported/ATE Percussion - 125.wav
+2944:Ableton/User Library/Samples/Imported/ATE Percussion - 126.wav
+2945:Ableton/User Library/Samples/Imported/ATE Percussion - 127.wav
+2946:Ableton/User Library/Samples/Imported/ATE Percussion - 128.wav
 playlist_end

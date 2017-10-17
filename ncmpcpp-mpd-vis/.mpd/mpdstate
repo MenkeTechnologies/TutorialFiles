@@ -2,8 +2,8 @@ sw_volume: 64
 audio_device_state:1:CoreAudio
 audio_device_state:1:my_fifo
 state: pause
-current: 2912
-time: 2958.357000
+current: 2914
+time: 766.101000
 random: 0
 repeat: 1
 single: 0
@@ -2028,935 +2028,934 @@ playlist_begin
 2013:Ableton/User Library/Samples/Imported/Snare 095.wav
 2014:Ableton/User Library/Samples/Imported/Snare 097.wav
 2015:Ableton/User Library/Samples/Imported/Snare 102.wav
-2016:Ableton/User Library/Samples/Imported/Snare 3-1.wav
-2017:Ableton/User Library/Samples/Imported/Snare 3.wav
-2018:Ableton/User Library/Samples/Imported/Snare 6.wav
-2019:Ableton/User Library/Samples/Imported/Snare Drum.wav
-2020:Ableton/User Library/Samples/Imported/Snare Fill 2.wav
-2021:Ableton/User Library/Samples/Imported/Snare fill2.wav
-2022:Ableton/User Library/Samples/Imported/Snare HipHop 3 V2.wav
-2023:Ableton/User Library/Samples/Imported/Snare_1.wav
-2024:Ableton/User Library/Samples/Imported/Snare_Impact.wav
-2025:Ableton/User Library/Samples/Imported/Snare_Niche_DH.wav
-2026:Ableton/User Library/Samples/Imported/Snare_Niche_io.wav
-2027:Ableton/User Library/Samples/Imported/Snare_Niche_rr.wav
-2028:Ableton/User Library/Samples/Imported/Snare-1.wav
-2029:Ableton/User Library/Samples/Imported/Snare-2.wav
-2030:Ableton/User Library/Samples/Imported/Snare-3.wav
-2031:Ableton/User Library/Samples/Imported/Snare-4.wav
-2032:Ableton/User Library/Samples/Imported/Snare-5.wav
-2033:Ableton/User Library/Samples/Imported/Snare-6.wav
-2034:Ableton/User Library/Samples/Imported/Snare-7.wav
-2035:Ableton/User Library/Samples/Imported/Snare-909-Tune10-c.aif
-2036:Ableton/User Library/Samples/Imported/Snare-909-Tune10-s.aif
-2037:Ableton/User Library/Samples/Imported/Snare.wav
-2038:Ableton/User Library/Samples/Imported/snare1.wav
-2039:Ableton/User Library/Samples/Imported/SNARE5.wav
-2040:Ableton/User Library/Samples/Imported/SnareRim DubTao.wav
-2041:Ableton/User Library/Samples/Imported/Snares 016.wav
-2042:Ableton/User Library/Samples/Imported/Snares 14.wav
-2043:Ableton/User Library/Samples/Imported/Snares 18.wav
-2044:Ableton/User Library/Samples/Imported/Snares 19.wav
-2045:Ableton/User Library/Samples/Imported/Snares 3.wav
-2046:Ableton/User Library/Samples/Imported/Snares 9.wav
-2047:Ableton/User Library/Samples/Imported/Snares.aif
-2048:Ableton/User Library/Samples/Imported/SOR CR1 Acid 033 D.wav
-2049:Ableton/User Library/Samples/Imported/SOR CR1 Bass 009 A.wav
-2050:Ableton/User Library/Samples/Imported/SOR CR1 Claps 002.wav
-2051:Ableton/User Library/Samples/Imported/SOR CR1 Claps 053.wav
-2052:Ableton/User Library/Samples/Imported/SOR CR1 Electro Stuff 001.wav
-2053:Ableton/User Library/Samples/Imported/SOR CR1 Electro Stuff 002.wav
-2054:Ableton/User Library/Samples/Imported/SOR CR1 Electro Stuff 025.wav
-2055:Ableton/User Library/Samples/Imported/SOR CR1 Electro Stuff 026.wav
-2056:Ableton/User Library/Samples/Imported/SOR CR1 Electro Stuff 027.wav
-2057:Ableton/User Library/Samples/Imported/SOR CR1 Electro Stuff 028.wav
-2058:Ableton/User Library/Samples/Imported/SOR CR1 Electro Stuff 029.wav
-2059:Ableton/User Library/Samples/Imported/SOR CR1 Electro Stuff 030.wav
-2060:Ableton/User Library/Samples/Imported/SOR CR1 Electro Stuff 031.wav
-2061:Ableton/User Library/Samples/Imported/SOR CR1 Electro Stuff 032.wav
-2062:Ableton/User Library/Samples/Imported/SOR CR1 Electro Stuff 033.wav
-2063:Ableton/User Library/Samples/Imported/SOR CR1 Electro Stuff 034.wav
-2064:Ableton/User Library/Samples/Imported/SOR CR1 Electro Stuff 035.wav
-2065:Ableton/User Library/Samples/Imported/SOR CR1 Electro Stuff 036.wav
-2066:Ableton/User Library/Samples/Imported/SOR CR1 Electro Stuff 037.wav
-2067:Ableton/User Library/Samples/Imported/SOR CR1 Electro Stuff 039.wav
-2068:Ableton/User Library/Samples/Imported/SOR CR1 Electro Stuff 040.wav
-2069:Ableton/User Library/Samples/Imported/SOR CR1 Electro Stuff 127.wav
-2070:Ableton/User Library/Samples/Imported/SOR CR1 SFX Hardstyle 037.wav
-2071:Ableton/User Library/Samples/Imported/SOR CR1 Sounds 002 A.wav
-2072:Ableton/User Library/Samples/Imported/SOR CR1 Sounds 039 C#.wav
-2073:Ableton/User Library/Samples/Imported/SOR CR1 Toms and Perc 007.wav
-2074:Ableton/User Library/Samples/Imported/SOR CR1 Toms and Perc 035.wav
-2075:Ableton/User Library/Samples/Imported/SPK_C_AnalogueHorn.wav
-2076:Ableton/User Library/Samples/Imported/SPK_G_AnalogueHorn.wav
-2077:Ableton/User Library/Samples/Imported/SPKT_127_C_Boulders03.wav
-2078:Ableton/User Library/Samples/Imported/SPKT_Clap09.wav
-2079:Ableton/User Library/Samples/Imported/SPKT_Clap12.wav
-2080:Ableton/User Library/Samples/Imported/SPKT_Clap14.wav
-2081:Ableton/User Library/Samples/Imported/SPKT_Hat25.wav
-2082:Ableton/User Library/Samples/Imported/Stoneface&TerminalRonski Speed with Stoneface & Terminal -  Drowning Sunlight (Vocal Mix).mp3
-2083:Ableton/User Library/Samples/Imported/STRING2.wav
-2084:Ableton/User Library/Samples/Imported/sub fx-1.wav
-2085:Ableton/User Library/Samples/Imported/Sub FX.wav
-2086:Ableton/User Library/Samples/Imported/SUB KICK.wav
-2087:Ableton/User Library/Samples/Imported/SuperSnare.wav
-2088:Ableton/User Library/Samples/Imported/SWEEP 2.wav
-2089:Ableton/User Library/Samples/Imported/Sweep Down.wav
-2090:Ableton/User Library/Samples/Imported/Sweep Up-1.wav
-2091:Ableton/User Library/Samples/Imported/Sweep Up.wav
-2092:Ableton/User Library/Samples/Imported/sweep1.wav
-2093:Ableton/User Library/Samples/Imported/SYNPC_Kick_002.wav
-2094:Ableton/User Library/Samples/Imported/SYNPC_Kick_093.wav
-2095:Ableton/User Library/Samples/Imported/SYNPC_Loop_001.wav
-2096:Ableton/User Library/Samples/Imported/SYNPC_Loop_002.wav
-2097:Ableton/User Library/Samples/Imported/SYNPC_Loop_087.wav
-2098:Ableton/User Library/Samples/Imported/SYNPC_Loop_140.wav
-2099:Ableton/User Library/Samples/Imported/SYNPC_Loop_316.wav
-2100:Ableton/User Library/Samples/Imported/SYNPC_Perc_028.wav
-2101:Ableton/User Library/Samples/Imported/SYNPC_SFX_089.wav
-2102:Ableton/User Library/Samples/Imported/SYNPC2_Clap_001.wav
-2103:Ableton/User Library/Samples/Imported/SYNPC2_Clap_002.wav
-2104:Ableton/User Library/Samples/Imported/SYNPC2_Clap_003.wav
-2105:Ableton/User Library/Samples/Imported/SYNPC2_Clap_004.wav
-2106:Ableton/User Library/Samples/Imported/SYNPC2_Clap_005.wav
-2107:Ableton/User Library/Samples/Imported/SYNPC2_Clap_006.wav
-2108:Ableton/User Library/Samples/Imported/SYNPC2_Clap_007.wav
-2109:Ableton/User Library/Samples/Imported/SYNPC2_Clap_008.wav
-2110:Ableton/User Library/Samples/Imported/SYNPC2_Clap_009.wav
-2111:Ableton/User Library/Samples/Imported/SYNPC2_Clap_010.wav
-2112:Ableton/User Library/Samples/Imported/SYNPC2_Clap_011.wav
-2113:Ableton/User Library/Samples/Imported/SYNPC2_Clap_012.wav
-2114:Ableton/User Library/Samples/Imported/SYNPC2_Clap_013.wav
-2115:Ableton/User Library/Samples/Imported/SYNPC2_Clap_014.wav
-2116:Ableton/User Library/Samples/Imported/SYNPC2_Clap_015.wav
-2117:Ableton/User Library/Samples/Imported/SYNPC2_Clap_016.wav
-2118:Ableton/User Library/Samples/Imported/SYNPC2_Clap_017.wav
-2119:Ableton/User Library/Samples/Imported/SYNPC2_Clap_018.wav
-2120:Ableton/User Library/Samples/Imported/SYNPC2_Clap_019.wav
-2121:Ableton/User Library/Samples/Imported/SYNPC2_Clap_020.wav
-2122:Ableton/User Library/Samples/Imported/SYNPC2_Clap_021.wav
-2123:Ableton/User Library/Samples/Imported/SYNPC2_Clap_022.wav
-2124:Ableton/User Library/Samples/Imported/SYNPC2_Clap_023.wav
-2125:Ableton/User Library/Samples/Imported/SYNPC2_Clap_024.wav
-2126:Ableton/User Library/Samples/Imported/SYNPC2_Clap_025.wav
-2127:Ableton/User Library/Samples/Imported/SYNPC2_Clap_026.wav
-2128:Ableton/User Library/Samples/Imported/SYNPC2_Clap_027.wav
-2129:Ableton/User Library/Samples/Imported/SYNPC2_Clap_028.wav
-2130:Ableton/User Library/Samples/Imported/SYNPC2_Clap_029.wav
-2131:Ableton/User Library/Samples/Imported/SYNPC2_Clap_030.wav
-2132:Ableton/User Library/Samples/Imported/SYNPC2_Clap_031.wav
-2133:Ableton/User Library/Samples/Imported/SYNPC2_Clap_032.wav
-2134:Ableton/User Library/Samples/Imported/SYNPC2_Clap_033.wav
-2135:Ableton/User Library/Samples/Imported/SYNPC2_Clap_034.wav
-2136:Ableton/User Library/Samples/Imported/SYNPC2_Clap_035.wav
-2137:Ableton/User Library/Samples/Imported/SYNPC2_Clap_036.wav
-2138:Ableton/User Library/Samples/Imported/SYNPC2_Clap_037.wav
-2139:Ableton/User Library/Samples/Imported/SYNPC2_Clap_038.wav
-2140:Ableton/User Library/Samples/Imported/SYNPC2_Clap_039.wav
-2141:Ableton/User Library/Samples/Imported/SYNPC2_Clap_040.wav
-2142:Ableton/User Library/Samples/Imported/SYNPC2_Clap_041.wav
-2143:Ableton/User Library/Samples/Imported/SYNPC2_Clap_042.wav
-2144:Ableton/User Library/Samples/Imported/SYNPC2_Clap_043.wav
-2145:Ableton/User Library/Samples/Imported/SYNPC2_Clap_044.wav
-2146:Ableton/User Library/Samples/Imported/SYNPC2_Clap_045.wav
-2147:Ableton/User Library/Samples/Imported/SYNPC2_Clap_046.wav
-2148:Ableton/User Library/Samples/Imported/SYNPC2_Clap_047.wav
-2149:Ableton/User Library/Samples/Imported/SYNPC2_Clap_048.wav
-2150:Ableton/User Library/Samples/Imported/SYNPC2_Clap_049.wav
-2151:Ableton/User Library/Samples/Imported/SYNPC2_Clap_050.wav
-2152:Ableton/User Library/Samples/Imported/SYNPC2_Clap_051.wav
-2153:Ableton/User Library/Samples/Imported/SYNPC2_Clap_052.wav
-2154:Ableton/User Library/Samples/Imported/SYNPC2_Clap_053.wav
-2155:Ableton/User Library/Samples/Imported/SYNPC2_Clap_054.wav
-2156:Ableton/User Library/Samples/Imported/SYNPC2_Clap_055.wav
-2157:Ableton/User Library/Samples/Imported/SYNPC2_Clap_056.wav
-2158:Ableton/User Library/Samples/Imported/SYNPC2_Clap_057.wav
-2159:Ableton/User Library/Samples/Imported/SYNPC2_Clap_058.wav
-2160:Ableton/User Library/Samples/Imported/SYNPC2_Clap_059.wav
-2161:Ableton/User Library/Samples/Imported/SYNPC2_Clap_060.wav
-2162:Ableton/User Library/Samples/Imported/SYNPC2_Clap_061.wav
-2163:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Long_01.wav
-2164:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Long_03.wav
-2165:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Long_05.wav
-2166:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Long_30.wav
-2167:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Long_37.wav
-2168:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_001.wav
-2169:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_002.wav
-2170:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_003.wav
-2171:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_004.wav
-2172:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_005.wav
-2173:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_006.wav
-2174:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_007.wav
-2175:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_008.wav
-2176:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_009.wav
-2177:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_010.wav
-2178:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_011.wav
-2179:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_012.wav
-2180:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_013.wav
-2181:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_014.wav
-2182:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_015.wav
-2183:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_016.wav
-2184:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_017.wav
-2185:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_018.wav
-2186:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_019.wav
-2187:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_020.wav
-2188:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_021.wav
-2189:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_022.wav
-2190:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_023.wav
-2191:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_024.wav
-2192:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_025.wav
-2193:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_026.wav
-2194:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_027.wav
-2195:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_028.wav
-2196:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_029.wav
-2197:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_030.wav
-2198:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_031.wav
-2199:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_032.wav
-2200:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_033.wav
-2201:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_034.wav
-2202:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_035.wav
-2203:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_036.wav
-2204:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_037.wav
-2205:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_038.wav
-2206:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_039.wav
-2207:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_040.wav
-2208:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_041.wav
-2209:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_042.wav
-2210:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_043.wav
-2211:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_044.wav
-2212:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_045.wav
-2213:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_046.wav
-2214:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_047.wav
-2215:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_048.wav
-2216:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_049.wav
-2217:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_050.wav
-2218:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_051.wav
-2219:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_052.wav
-2220:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_053.wav
-2221:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_054.wav
-2222:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_055.wav
-2223:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_056.wav
-2224:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_057.wav
-2225:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_058.wav
-2226:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_059.wav
-2227:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_060.wav
-2228:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_061.wav
-2229:Ableton/User Library/Samples/Imported/Tambourine Shot.wav
-2230:Ableton/User Library/Samples/Imported/Tambourine Shot2.wav
-2231:Ableton/User Library/Samples/Imported/TCE3 01 Crash 138 BPM Wet_1.wav
-2232:Ableton/User Library/Samples/Imported/TCE3 03 Reverse Stab 2 138 BPM F_1.wav
-2233:Ableton/User Library/Samples/Imported/TCE3 10 Reverse Crash 138 BPM Wet_1.wav
-2234:Ableton/User Library/Samples/Imported/TE1 01 Kick Loop 138 BPM.wav
-2235:Ableton/User Library/Samples/Imported/TE4_Kit_04_Kick_138.wav
-2236:Ableton/User Library/Samples/Imported/Tidy1 - OHH 04.wav
-2237:Ableton/User Library/Samples/Imported/Tom 1.wav
-2238:Ableton/User Library/Samples/Imported/Tom 2.wav
-2239:Ableton/User Library/Samples/Imported/Tom 3.wav
-2240:Ableton/User Library/Samples/Imported/Tom 4.wav
-2241:Ableton/User Library/Samples/Imported/Tom-909-Hi.aif
-2242:Ableton/User Library/Samples/Imported/Tom-909-Low.aif
-2243:Ableton/User Library/Samples/Imported/Tom-909-Mid.aif
-2244:Ableton/User Library/Samples/Imported/TopLoop_Rides_142_PL.wav
-2245:Ableton/User Library/Samples/Imported/TOX_129_Straight_Dope_OHats.wav
-2246:Ableton/User Library/Samples/Imported/Triabl shot.wav
-2247:Ableton/User Library/Samples/Imported/TT_Tom_Part_01.wav
-2248:Ableton/User Library/Samples/Imported/TT_Tom_Part_07.wav
-2249:Ableton/User Library/Samples/Imported/TT_Tom_Part_16.wav
-2250:Ableton/User Library/Samples/Imported/TT_Wave_Pad_05.wav
-2251:Ableton/User Library/Samples/Imported/tth_fx_lowdrop.wav
-2252:Ableton/User Library/Samples/Imported/ueberschall weighty kick.wav
-2253:Ableton/User Library/Samples/Imported/ufx3_impact_abyss.wav
-2254:Ableton/User Library/Samples/Imported/ufx3_impact_buyitout.wav
-2255:Ableton/User Library/Samples/Imported/ufx3_impact_circuitblast.wav
-2256:Ableton/User Library/Samples/Imported/Untitled 2.m4a
-2257:Ableton/User Library/Samples/Imported/UP Clap 13-1.wav
-2258:Ableton/User Library/Samples/Imported/Uplifter 1-1.wav
-2259:Ableton/User Library/Samples/Imported/Uplifter 1.wav
-2260:Ableton/User Library/Samples/Imported/Uplifter 4.wav
-2261:Ableton/User Library/Samples/Imported/UTLEV1 Drum Loop - 030 - 123 BPM - Stripped Loop.wav
-2262:Ableton/User Library/Samples/Imported/VDE3 128 BPM Big Oneshot FX Snare.wav
-2263:Ableton/User Library/Samples/Imported/VDE3 130 BPM Sunrise Oneshot Kick Root G.wav
-2264:Ableton/User Library/Samples/Imported/VDUB1 Downlifter 24.wav
-2265:Ableton/User Library/Samples/Imported/VDUB1 Kick 008.wav
-2266:Ableton/User Library/Samples/Imported/VDUB1 Oneshot Phrase 15 C.wav
-2267:Ableton/User Library/Samples/Imported/VDX1 Cascade Kit 144BPM Roll Snare 01.wav
-2268:Ableton/User Library/Samples/Imported/VDX1 Cascade Kit 144BPM Roll Snare 02.wav
-2269:Ableton/User Library/Samples/Imported/VDX1 Discotoxic Kit 144BPM Roll Snare 01.wav
-2270:Ableton/User Library/Samples/Imported/VDX1 Discotoxic Kit 144BPM Roll Snare 02.wav
-2271:Ableton/User Library/Samples/Imported/VDX1 Dr. Rude Kit 140BPM Roll Snare.wav
-2272:Ableton/User Library/Samples/Imported/VDX1 Hold Me Kit 139BPM SnareRoller.wav
-2273:Ableton/User Library/Samples/Imported/VDX1 Introduction Kit 144BPM Roll Snare.wav
-2274:Ableton/User Library/Samples/Imported/VDX1 Master Robin Kit 143BPM Roll Snare.wav
-2275:Ableton/User Library/Samples/Imported/VDX1 Master Robin Kit 143BPM Snare.wav
-2276:Ableton/User Library/Samples/Imported/VDX1 Pimpy Kit 144BPM Roll Snare 01.wav
-2277:Ableton/User Library/Samples/Imported/VDX1 Pimpy Kit 144BPM Roll Snare 02.wav
-2278:Ableton/User Library/Samples/Imported/VDX1 T-Mo Kit 144BPM Roll Snare.wav
-2279:Ableton/User Library/Samples/Imported/VDX1 Tune Kit 144BPM Roll Snare 01.wav
-2280:Ableton/User Library/Samples/Imported/VDX1 Tune Kit 144BPM Roll Snare 02.wav
-2281:Ableton/User Library/Samples/Imported/VDX1 Tune Kit 144BPM Roll Snare 03.wav
-2282:Ableton/User Library/Samples/Imported/VEC1 Clap 011.wav
-2283:Ableton/User Library/Samples/Imported/VEC2 Bassdrums Hard 039.wav
-2284:Ableton/User Library/Samples/Imported/VEC2 Claps 083.wav
-2285:Ableton/User Library/Samples/Imported/VEC2 Loops 013.wav
-2286:Ableton/User Library/Samples/Imported/VEC2 Loops 035.wav
-2287:Ableton/User Library/Samples/Imported/VEC3 Bassdrums Trance 06.wav
-2288:Ableton/User Library/Samples/Imported/VEC3 Bassdrums Trance 75.wav
-2289:Ableton/User Library/Samples/Imported/VEC3 Claps 023.wav
-2290:Ableton/User Library/Samples/Imported/VEC3 Claps 082.wav
-2291:Ableton/User Library/Samples/Imported/VEC3 Cymbals HH Open 090.wav
-2292:Ableton/User Library/Samples/Imported/VEC4 Clubby Kicks 048.wav
-2293:Ableton/User Library/Samples/Imported/VEC4 Loops 009.wav
-2294:Ableton/User Library/Samples/Imported/VEC4 Sub Kicks 11.wav
-2295:Ableton/User Library/Samples/Imported/VEC4 Trance Kicks 03.wav
-2296:Ableton/User Library/Samples/Imported/VEC4 Trance Kicks 68.wav
-2297:Ableton/User Library/Samples/Imported/VEE2 Percussion 012.wav
-2298:Ableton/User Library/Samples/Imported/VEE3 Downlifter 01.wav
-2299:Ableton/User Library/Samples/Imported/VEE3 Snare 73.wav
-2300:Ableton/User Library/Samples/Imported/VEH2 Percussion - 086.wav
-2301:Ableton/User Library/Samples/Imported/VEH2 Snares - 001.wav
-2302:Ableton/User Library/Samples/Imported/VES1 FX Boom 006.wav
-2303:Ableton/User Library/Samples/Imported/VES1 Snare 072.wav
-2304:Ableton/User Library/Samples/Imported/VFH2 128BPM Glorious Kit 2.wav
-2305:Ableton/User Library/Samples/Imported/VFH2 Various Mini Kits 127BPM 2.wav
-2306:Ableton/User Library/Samples/Imported/VFX1 Hits & Explode 27.wav
-2307:Ableton/User Library/Samples/Imported/VFX2 Sub 13.wav
-2308:Ableton/User Library/Samples/Imported/VFX2 Sweeps Long 14.wav
-2309:Ableton/User Library/Samples/Imported/VFX2 Sweeps Long 38.wav
-2310:Ableton/User Library/Samples/Imported/VFX2 Sweeps Short 18.wav
-2311:Ableton/User Library/Samples/Imported/VMH1 Claps & Snares 020.wav
-2312:Ableton/User Library/Samples/Imported/VMH1 FX Sounds 023.wav
-2313:Ableton/User Library/Samples/Imported/VMH1 FX Sounds 094.wav
-2314:Ableton/User Library/Samples/Imported/VMH1 Open Hats 110.wav
-2315:Ableton/User Library/Samples/Imported/Voc_Niche_ae.wav
-2316:Ableton/User Library/Samples/Imported/VoxFx_01_G#_Niche_fo.wav
-2317:Ableton/User Library/Samples/Imported/VoxFx_02_G#_Niche_fo.wav
-2318:Ableton/User Library/Samples/Imported/VS - Reverse - 20 D.wav
-2319:Ableton/User Library/Samples/Imported/VTDS2 Song Kit 01 Male Running In Cirlces Mix.wav
-2320:Ableton/User Library/Samples/Imported/VTDS3 Claps and Snares 071.wav
-2321:Ableton/User Library/Samples/Imported/VTS1 Jericho Kit 132BPM Kick FX.wav
-2322:Ableton/User Library/Samples/Imported/VVE2 Vocal Loops 140BPM 145.wav
-2323:Ableton/User Library/Samples/Imported/Wasp Sting 17-C.wav
-2324:Ableton/User Library/Samples/Imported/XF_HatSlice3.aif
-2325:Ableton/User Library/Samples/Imported/XF_Loop_215.wav
-2326:Ableton/User Library/Samples/Imported/Yamaha pad D1.wav
-2327:Ableton/User Library/Samples/Imported/Tiddey - Copacabana Dream.mp3
-2328:Ableton/User Library/Samples/Imported/05. Brute (Original Mix).mp3
-2329:Ableton/User Library/Samples/Imported/Geck-E - Soul Train.mp3
-2330:Ableton/User Library/Samples/Imported/808OHH3_Tape.wav
-2331:Ableton/User Library/Samples/Imported/909OHH_D3V2_X.wav
-2332:Ableton/User Library/Samples/Imported/909Ride_T11V2_Orig.wav
-2333:Ableton/User Library/Samples/Imported/909Ride_T6V1_X.wav
-2334:Ableton/User Library/Samples/Imported/Clap FX.wav
-2335:Ableton/User Library/Samples/Imported/UP Clap 13.wav
-2336:Ableton/User Library/Samples/Imported/UP Closed Hat 10.wav
-2337:Ableton/User Library/Samples/Imported/UP Drum Loop 042.wav
-2338:Ableton/User Library/Samples/Imported/UP Snare 08.wav
-2339:Ableton/User Library/Samples/Imported/UP Snare 13.wav
-2340:Ableton/User Library/Samples/Imported/UP Snare 54.wav
-2341:Ableton/User Library/Samples/Imported/Arpeggio (Wet)/S_000_060_c3_.aif
-2342:Ableton/User Library/Samples/Imported/Arpeggio (Wet)/S_000_061_c#3_.aif
-2343:Ableton/User Library/Samples/Imported/Arpeggio (Wet)/S_000_062_d3_.aif
-2344:Ableton/User Library/Samples/Imported/Arpeggio (Wet)/S_000_063_d#3_.aif
-2345:Ableton/User Library/Samples/Imported/Arpeggio (Wet)/S_000_064_e3_.aif
-2346:Ableton/User Library/Samples/Imported/Arpeggio (Wet)/S_000_065_f3_.aif
-2347:Ableton/User Library/Samples/Imported/Arpeggio (Wet)/S_000_066_f#3_.aif
-2348:Ableton/User Library/Samples/Imported/Arpeggio (Wet)/S_000_067_g3_.aif
-2349:Ableton/User Library/Samples/Imported/Arpeggio (Wet)/S_000_068_g#3_.aif
-2350:Ableton/User Library/Samples/Imported/Arpeggio (Wet)/S_000_069_a3_.aif
-2351:Ableton/User Library/Samples/Imported/Arpeggio (Wet)/S_000_070_a#3_.aif
-2352:Ableton/User Library/Samples/Imported/Arpeggio (Wet)/S_000_071_h3_.aif
-2353:Ableton/User Library/Samples/Imported/Arpeggio (Wet)/S_000_072_c4_.aif
-2354:Ableton/User Library/Samples/Imported/Arpeggio (Wet)/S_000_073_c#4_.aif
-2355:Ableton/User Library/Samples/Imported/Arpeggio (Wet)/S_000_074_d4_.aif
-2356:Ableton/User Library/Samples/Imported/Arpeggio (Wet)/S_000_075_d#4_.aif
-2357:Ableton/User Library/Samples/Imported/Arpeggio (Wet)/S_000_076_e4_.aif
-2358:Ableton/User Library/Samples/Imported/Arpeggio (Wet)/S_000_077_f4_.aif
-2359:Ableton/User Library/Samples/Imported/Arpeggio (Wet)/S_000_078_f#4_.aif
-2360:Ableton/User Library/Samples/Imported/Arpeggio (Wet)/S_000_079_g4_.aif
-2361:Ableton/User Library/Samples/Imported/Arpeggio (Wet)/S_000_080_g#4_.aif
-2362:Ableton/User Library/Samples/Imported/Arpeggio (Wet)/S_000_081_a4_.aif
-2363:Ableton/User Library/Samples/Imported/Arpeggio (Wet)/S_000_082_a#4_.aif
-2364:Ableton/User Library/Samples/Imported/Arpeggio (Wet)/S_000_083_h4_.aif
-2365:Ableton/User Library/Samples/Imported/Arpeggio (Wet)/S_000_084_c5_.aif
-2366:Ableton/User Library/Samples/Imported/Arpeggio (Wet)/S_000_085_c#5_.aif
-2367:Ableton/User Library/Samples/Imported/Arpeggio (Wet)/S_000_086_d5_.aif
-2368:Ableton/User Library/Samples/Imported/Arpeggio (Wet)/S_000_087_d#5_.aif
-2369:Ableton/User Library/Samples/Imported/Arpeggio (Wet)/S_000_088_e5_.aif
-2370:Ableton/User Library/Samples/Imported/Arpeggio (Wet)/S_000_089_f5_.aif
-2371:Ableton/User Library/Samples/Imported/Arpeggio (Wet)/S_000_090_f#5_.aif
-2372:Ableton/User Library/Samples/Imported/Arpeggio (Wet)/S_000_091_g5_.aif
-2373:Ableton/User Library/Samples/Imported/Arpeggio (Wet)/S_000_092_g#5_.aif
-2374:Ableton/User Library/Samples/Imported/Arpeggio (Wet)/S_000_093_a5_.aif
-2375:Ableton/User Library/Samples/Imported/Arpeggio (Wet)/S_000_094_a#5_.aif
-2376:Ableton/User Library/Samples/Imported/Arpeggio (Wet)/S_000_095_h5_.aif
-2377:Ableton/User Library/Samples/Imported/Pluck Synth (Dry)/S_000_060_c3_.aif
-2378:Ableton/User Library/Samples/Imported/Pluck Synth (Dry)/S_000_061_c#3_.aif
-2379:Ableton/User Library/Samples/Imported/Pluck Synth (Dry)/S_000_062_d3_.aif
-2380:Ableton/User Library/Samples/Imported/Pluck Synth (Dry)/S_000_063_d#3_.aif
-2381:Ableton/User Library/Samples/Imported/Pluck Synth (Dry)/S_000_064_e3_.aif
-2382:Ableton/User Library/Samples/Imported/Pluck Synth (Dry)/S_000_065_f3_.aif
-2383:Ableton/User Library/Samples/Imported/Pluck Synth (Dry)/S_000_066_f#3_.aif
-2384:Ableton/User Library/Samples/Imported/Pluck Synth (Dry)/S_000_067_g3_.aif
-2385:Ableton/User Library/Samples/Imported/Pluck Synth (Dry)/S_000_068_g#3_.aif
-2386:Ableton/User Library/Samples/Imported/Pluck Synth (Dry)/S_000_069_a3_.aif
-2387:Ableton/User Library/Samples/Imported/Pluck Synth (Dry)/S_000_070_a#3_.aif
-2388:Ableton/User Library/Samples/Imported/Pluck Synth (Dry)/S_000_071_h3_.aif
-2389:Ableton/User Library/Samples/Imported/Pluck Synth (Dry)/S_000_072_c4_.aif
-2390:Ableton/User Library/Samples/Imported/Pluck Synth (Dry)/S_000_073_c#4_.aif
-2391:Ableton/User Library/Samples/Imported/Pluck Synth (Dry)/S_000_074_d4_.aif
-2392:Ableton/User Library/Samples/Imported/Pluck Synth (Dry)/S_000_075_d#4_.aif
-2393:Ableton/User Library/Samples/Imported/Pluck Synth (Dry)/S_000_076_e4_.aif
-2394:Ableton/User Library/Samples/Imported/Pluck Synth (Dry)/S_000_077_f4_.aif
-2395:Ableton/User Library/Samples/Imported/Pluck Synth (Dry)/S_000_078_f#4_.aif
-2396:Ableton/User Library/Samples/Imported/Pluck Synth (Dry)/S_000_079_g4_.aif
-2397:Ableton/User Library/Samples/Imported/Pluck Synth (Dry)/S_000_080_g#4_.aif
-2398:Ableton/User Library/Samples/Imported/Pluck Synth (Dry)/S_000_081_a4_.aif
-2399:Ableton/User Library/Samples/Imported/Pluck Synth (Dry)/S_000_082_a#4_.aif
-2400:Ableton/User Library/Samples/Imported/Pluck Synth (Dry)/S_000_083_h4_.aif
-2401:Ableton/User Library/Samples/Imported/Pluck Synth (Dry)/S_000_084_c5_.aif
-2402:Ableton/User Library/Samples/Imported/Pluck Synth (Dry)/S_000_085_c#5_.aif
-2403:Ableton/User Library/Samples/Imported/Pluck Synth (Dry)/S_000_086_d5_.aif
-2404:Ableton/User Library/Samples/Imported/Pluck Synth (Dry)/S_000_087_d#5_.aif
-2405:Ableton/User Library/Samples/Imported/Pluck Synth (Dry)/S_000_088_e5_.aif
-2406:Ableton/User Library/Samples/Imported/Pluck Synth (Dry)/S_000_089_f5_.aif
-2407:Ableton/User Library/Samples/Imported/Pluck Synth (Dry)/S_000_090_f#5_.aif
-2408:Ableton/User Library/Samples/Imported/Pluck Synth (Dry)/S_000_091_g5_.aif
-2409:Ableton/User Library/Samples/Imported/Pluck Synth (Dry)/S_000_092_g#5_.aif
-2410:Ableton/User Library/Samples/Imported/Pluck Synth (Dry)/S_000_093_a5_.aif
-2411:Ableton/User Library/Samples/Imported/Pluck Synth (Dry)/S_000_094_a#5_.aif
-2412:Ableton/User Library/Samples/Imported/Pluck Synth (Dry)/S_000_095_h5_.aif
-2413:Ableton/User Library/Samples/Imported/Pluck Synth (Wet)/S_000_060_c3_.aif
-2414:Ableton/User Library/Samples/Imported/Pluck Synth (Wet)/S_000_061_c#3_.aif
-2415:Ableton/User Library/Samples/Imported/Pluck Synth (Wet)/S_000_062_d3_.aif
-2416:Ableton/User Library/Samples/Imported/Pluck Synth (Wet)/S_000_063_d#3_.aif
-2417:Ableton/User Library/Samples/Imported/Pluck Synth (Wet)/S_000_064_e3_.aif
-2418:Ableton/User Library/Samples/Imported/Pluck Synth (Wet)/S_000_065_f3_.aif
-2419:Ableton/User Library/Samples/Imported/Pluck Synth (Wet)/S_000_066_f#3_.aif
-2420:Ableton/User Library/Samples/Imported/Pluck Synth (Wet)/S_000_067_g3_.aif
-2421:Ableton/User Library/Samples/Imported/Pluck Synth (Wet)/S_000_068_g#3_.aif
-2422:Ableton/User Library/Samples/Imported/Pluck Synth (Wet)/S_000_069_a3_.aif
-2423:Ableton/User Library/Samples/Imported/Pluck Synth (Wet)/S_000_070_a#3_.aif
-2424:Ableton/User Library/Samples/Imported/Pluck Synth (Wet)/S_000_071_h3_.aif
-2425:Ableton/User Library/Samples/Imported/Pluck Synth (Wet)/S_000_072_c4_.aif
-2426:Ableton/User Library/Samples/Imported/Pluck Synth (Wet)/S_000_073_c#4_.aif
-2427:Ableton/User Library/Samples/Imported/Pluck Synth (Wet)/S_000_074_d4_.aif
-2428:Ableton/User Library/Samples/Imported/Pluck Synth (Wet)/S_000_075_d#4_.aif
-2429:Ableton/User Library/Samples/Imported/Pluck Synth (Wet)/S_000_076_e4_.aif
-2430:Ableton/User Library/Samples/Imported/Pluck Synth (Wet)/S_000_077_f4_.aif
-2431:Ableton/User Library/Samples/Imported/Pluck Synth (Wet)/S_000_078_f#4_.aif
-2432:Ableton/User Library/Samples/Imported/Pluck Synth (Wet)/S_000_079_g4_.aif
-2433:Ableton/User Library/Samples/Imported/Pluck Synth (Wet)/S_000_080_g#4_.aif
-2434:Ableton/User Library/Samples/Imported/Pluck Synth (Wet)/S_000_081_a4_.aif
-2435:Ableton/User Library/Samples/Imported/Pluck Synth (Wet)/S_000_082_a#4_.aif
-2436:Ableton/User Library/Samples/Imported/Pluck Synth (Wet)/S_000_083_h4_.aif
-2437:Ableton/User Library/Samples/Imported/Pluck Synth (Wet)/S_000_084_c5_.aif
-2438:Ableton/User Library/Samples/Imported/Pluck Synth (Wet)/S_000_085_c#5_.aif
-2439:Ableton/User Library/Samples/Imported/Pluck Synth (Wet)/S_000_086_d5_.aif
-2440:Ableton/User Library/Samples/Imported/Pluck Synth (Wet)/S_000_087_d#5_.aif
-2441:Ableton/User Library/Samples/Imported/Pluck Synth (Wet)/S_000_088_e5_.aif
-2442:Ableton/User Library/Samples/Imported/Pluck Synth (Wet)/S_000_089_f5_.aif
-2443:Ableton/User Library/Samples/Imported/Pluck Synth (Wet)/S_000_090_f#5_.aif
-2444:Ableton/User Library/Samples/Imported/Pluck Synth (Wet)/S_000_091_g5_.aif
-2445:Ableton/User Library/Samples/Imported/Pluck Synth (Wet)/S_000_092_g#5_.aif
-2446:Ableton/User Library/Samples/Imported/Pluck Synth (Wet)/S_000_093_a5_.aif
-2447:Ableton/User Library/Samples/Imported/Pluck Synth (Wet)/S_000_094_a#5_.aif
-2448:Ableton/User Library/Samples/Imported/Pluck Synth (Wet)/S_000_095_h5_.aif
-2449:Ableton/User Library/Samples/Processed/Consolidate/-1.wav
-2450:Ableton/User Library/Samples/Processed/Consolidate/01lft120_UFX_8 bars_high-1.wav
-2451:Ableton/User Library/Samples/Processed/Consolidate/08_SNARE_03.aif
-2452:Ableton/User Library/Samples/Processed/Consolidate/1 11-Audio-1.wav
-2453:Ableton/User Library/Samples/Processed/Consolidate/1 11-Audio-2.wav
-2454:Ableton/User Library/Samples/Processed/Consolidate/1 11-Audio.wav
-2455:Ableton/User Library/Samples/Processed/Consolidate/1 12-Audio-1.wav
-2456:Ableton/User Library/Samples/Processed/Consolidate/1 12-Audio.wav
-2457:Ableton/User Library/Samples/Processed/Consolidate/1 13-Audio.aif
-2458:Ableton/User Library/Samples/Processed/Consolidate/1 2-Audio-1.wav
-2459:Ableton/User Library/Samples/Processed/Consolidate/1 3-Audio-1.aif
-2460:Ableton/User Library/Samples/Processed/Consolidate/1 32-Audio-1-1.aif
-2461:Ableton/User Library/Samples/Processed/Consolidate/1 32-Audio-1.aif
-2462:Ableton/User Library/Samples/Processed/Consolidate/1 6-Audio-1.aif
-2463:Ableton/User Library/Samples/Processed/Consolidate/1 6-Audio.aif
-2464:Ableton/User Library/Samples/Processed/Consolidate/1 8-Audio-1-1.aif
-2465:Ableton/User Library/Samples/Processed/Consolidate/1 8-Audio-1.aif
-2466:Ableton/User Library/Samples/Processed/Consolidate/1.aif
-2467:Ableton/User Library/Samples/Processed/Consolidate/175_Drum_Loop_3.wav
-2468:Ableton/User Library/Samples/Processed/Consolidate/2 11-Audio.aif
-2469:Ableton/User Library/Samples/Processed/Consolidate/3 11-Audio-1-1.aif
-2470:Ableton/User Library/Samples/Processed/Consolidate/3 11-Audio.aif
-2471:Ableton/User Library/Samples/Processed/Consolidate/4 7-Audio-1-1-1-2.wav
-2472:Ableton/User Library/Samples/Processed/Consolidate/808 sub.aif
-2473:Ableton/User Library/Samples/Processed/Consolidate/ABFX012.aif
-2474:Ableton/User Library/Samples/Processed/Consolidate/Abletunes Hey.aif
-2475:Ableton/User Library/Samples/Processed/Consolidate/AbletunesSax.aif
-2476:Ableton/User Library/Samples/Processed/Consolidate/AcousticTom.aif
-2477:Ableton/User Library/Samples/Processed/Consolidate/ahh_002.aif
-2478:Ableton/User Library/Samples/Processed/Consolidate/Alex Fisher -  White Sunshine (Right Mix).wav
-2479:Ableton/User Library/Samples/Processed/Consolidate/ATE Crash Cymbal - 001-1.aif
-2480:Ableton/User Library/Samples/Processed/Consolidate/ATE FX Loop - 006 - 134 BPM - A#m.aif
-2481:Ableton/User Library/Samples/Processed/Consolidate/ATE Percussion FX - 001.aif
-2482:Ableton/User Library/Samples/Processed/Consolidate/Atmos-2.aif
-2483:Ableton/User Library/Samples/Processed/Consolidate/BaseDrum.aif
-2484:Ableton/User Library/Samples/Processed/Consolidate/BIO_140_Drums_05_Full-2.wav
-2485:Ableton/User Library/Samples/Processed/Consolidate/BIO_140_Drums_05_KickSnare.wav
-2486:Ableton/User Library/Samples/Processed/Consolidate/Boom.wav
-2487:Ableton/User Library/Samples/Processed/Consolidate/Boom1.wav
-2488:Ableton/User Library/Samples/Processed/Consolidate/BOOM2.wav
-2489:Ableton/User Library/Samples/Processed/Consolidate/Brand new Kick.wav
-2490:Ableton/User Library/Samples/Processed/Consolidate/clap (var).wav
-2491:Ableton/User Library/Samples/Processed/Consolidate/Clap 32.aif
-2492:Ableton/User Library/Samples/Processed/Consolidate/Clap 33.aif
-2493:Ableton/User Library/Samples/Processed/Consolidate/Clap-1.aif
-2494:Ableton/User Library/Samples/Processed/Consolidate/Clap-1.wav
-2495:Ableton/User Library/Samples/Processed/Consolidate/CLAP-2.wav
-2496:Ableton/User Library/Samples/Processed/Consolidate/CLAP-3.wav
-2497:Ableton/User Library/Samples/Processed/Consolidate/Clap-4.wav
-2498:Ableton/User Library/Samples/Processed/Consolidate/CLAP-FAT.wav
-2499:Ableton/User Library/Samples/Processed/Consolidate/CLAP-FX.wav
-2500:Ableton/User Library/Samples/Processed/Consolidate/Clap.aif
-2501:Ableton/User Library/Samples/Processed/Consolidate/clap.wav
-2502:Ableton/User Library/Samples/Processed/Consolidate/ClapRev.aif
-2503:Ableton/User Library/Samples/Processed/Consolidate/Claps 01.wav
-2504:Ableton/User Library/Samples/Processed/Consolidate/CompClap1.aif
-2505:Ableton/User Library/Samples/Processed/Consolidate/Crash.aif
-2506:Ableton/User Library/Samples/Processed/Consolidate/crunk_001.aif
-2507:Ableton/User Library/Samples/Processed/Consolidate/CS4.aif
-2508:Ableton/User Library/Samples/Processed/Consolidate/Cymbal Ride_bip.aif
-2509:Ableton/User Library/Samples/Processed/Consolidate/Dialup Kick-2.wav
-2510:Ableton/User Library/Samples/Processed/Consolidate/DRM02-Kick.aif
-2511:Ableton/User Library/Samples/Processed/Consolidate/DRM02-Snare.aif
-2512:Ableton/User Library/Samples/Processed/Consolidate/Ehey.aif
-2513:Ableton/User Library/Samples/Processed/Consolidate/Elevation -  Blinding Truth (Original Mix).wav
-2514:Ableton/User Library/Samples/Processed/Consolidate/EpikClap (Freeze).aif
-2515:Ableton/User Library/Samples/Processed/Consolidate/Fill Ins.aif
-2516:Ableton/User Library/Samples/Processed/Consolidate/FillSnare.aif
-2517:Ableton/User Library/Samples/Processed/Consolidate/flanger up.wav
-2518:Ableton/User Library/Samples/Processed/Consolidate/FX Downlifter.wav
-2519:Ableton/User Library/Samples/Processed/Consolidate/FX Play Me Everytime.wav
-2520:Ableton/User Library/Samples/Processed/Consolidate/FX-Dr1.aif
-2521:Ableton/User Library/Samples/Processed/Consolidate/FX.wav
-2522:Ableton/User Library/Samples/Processed/Consolidate/FX4.wav
-2523:Ableton/User Library/Samples/Processed/Consolidate/Fx6.wav
-2524:Ableton/User Library/Samples/Processed/Consolidate/FX7.wav
-2525:Ableton/User Library/Samples/Processed/Consolidate/Hall Kick.aif
-2526:Ableton/User Library/Samples/Processed/Consolidate/HH Loop 1.wav
-2527:Ableton/User Library/Samples/Processed/Consolidate/Impact 1.wav
-2528:Ableton/User Library/Samples/Processed/Consolidate/J Khobb - Summer Eyes.aif
-2529:Ableton/User Library/Samples/Processed/Consolidate/Kick-1-1.wav
-2530:Ableton/User Library/Samples/Processed/Consolidate/Kick-1.wav
-2531:Ableton/User Library/Samples/Processed/Consolidate/Kick-2.wav
-2532:Ableton/User Library/Samples/Processed/Consolidate/Kick-3.wav
-2533:Ableton/User Library/Samples/Processed/Consolidate/KICK-4.wav
-2534:Ableton/User Library/Samples/Processed/Consolidate/KICK-5.wav
-2535:Ableton/User Library/Samples/Processed/Consolidate/Kick.wav
-2536:Ableton/User Library/Samples/Processed/Consolidate/LaidbackLuke-WereForever-VoxLead.wav
-2537:Ableton/User Library/Samples/Processed/Consolidate/Lev_Impact_Godzilla-1.wav
-2538:Ableton/User Library/Samples/Processed/Consolidate/Lev_Impact_Godzilla.wav
-2539:Ableton/User Library/Samples/Processed/Consolidate/loops08-1.wav
-2540:Ableton/User Library/Samples/Processed/Consolidate/Mark Sherry Vs James Allen -  Mindset (Original Mix).aif
-2541:Ableton/User Library/Samples/Processed/Consolidate/Mental Asylum Clap.wav
-2542:Ableton/User Library/Samples/Processed/Consolidate/noise rev.wav
-2543:Ableton/User Library/Samples/Processed/Consolidate/NOISE_UP-1.wav
-2544:Ableton/User Library/Samples/Processed/Consolidate/Open Hats.wav
-2545:Ableton/User Library/Samples/Processed/Consolidate/PAF_Vocal_Snip_16.wav
-2546:Ableton/User Library/Samples/Processed/Consolidate/Percs 1.wav
-2547:Ableton/User Library/Samples/Processed/Consolidate/Percu Samba 1.wav
-2548:Ableton/User Library/Samples/Processed/Consolidate/Percu Samba 2.wav
-2549:Ableton/User Library/Samples/Processed/Consolidate/porter sweep down 16.wav
-2550:Ableton/User Library/Samples/Processed/Consolidate/rev clap .wav
-2551:Ableton/User Library/Samples/Processed/Consolidate/Reverse Snare.wav
-2552:Ableton/User Library/Samples/Processed/Consolidate/RhodesChord.aif
-2553:Ableton/User Library/Samples/Processed/Consolidate/Shaker 1.wav
-2554:Ableton/User Library/Samples/Processed/Consolidate/Shaker 2.wav
-2555:Ableton/User Library/Samples/Processed/Consolidate/SNAAR.aif
-2556:Ableton/User Library/Samples/Processed/Consolidate/Snap-1.wav
-2557:Ableton/User Library/Samples/Processed/Consolidate/Snar 31.aif
-2558:Ableton/User Library/Samples/Processed/Consolidate/snare fill.wav
-2559:Ableton/User Library/Samples/Processed/Consolidate/Snare-1.aif
-2560:Ableton/User Library/Samples/Processed/Consolidate/Snare.aif
-2561:Ableton/User Library/Samples/Processed/Consolidate/Snare.wav
-2562:Ableton/User Library/Samples/Processed/Consolidate/SnareImpact.wav
-2563:Ableton/User Library/Samples/Processed/Consolidate/Snares 14-1.wav
-2564:Ableton/User Library/Samples/Processed/Consolidate/SOR MTR1 HHOpen 050.wav
-2565:Ableton/User Library/Samples/Processed/Consolidate/Starter.aif
-2566:Ableton/User Library/Samples/Processed/Consolidate/Stoneface&TerminalRonski Speed with Stoneface & Terminal -  Drowning Sunlight (Vocal Mix) Kick Clap-1-1-1-1.aif
-2567:Ableton/User Library/Samples/Processed/Consolidate/Stoneface&TerminalRonski Speed with Stoneface & Terminal -  Drowning Sunlight (Vocal Mix) Kick Loop-1.aif
-2568:Ableton/User Library/Samples/Processed/Consolidate/SYNTH 10-2.wav
-2569:Ableton/User Library/Samples/Processed/Consolidate/SYNTH 7-1.wav
-2570:Ableton/User Library/Samples/Processed/Consolidate/synth rev.wav
-2571:Ableton/User Library/Samples/Processed/Consolidate/synth_loop8 moleon stabs.wav
-2572:Ableton/User Library/Samples/Processed/Consolidate/Tek-Ne Featuring Catherine -  Taurine (Dub).wav
-2573:Ableton/User Library/Samples/Processed/Consolidate/Tiddey - Copacabana Dream-1-1.aif
-2574:Ableton/User Library/Samples/Processed/Consolidate/Tiddey - Copacabana Dream-1.aif
-2575:Ableton/User Library/Samples/Processed/Consolidate/TOM_Rock_Percussion.aif
-2576:Ableton/User Library/Samples/Processed/Consolidate/TomFill-3.wav
-2577:Ableton/User Library/Samples/Processed/Consolidate/Transition Clap.aif
-2578:Ableton/User Library/Samples/Processed/Consolidate/TT_MixedPercLoop4_126-2.aif
-2579:Ableton/User Library/Samples/Processed/Consolidate/Up Fx-1.wav
-2580:Ableton/User Library/Samples/Processed/Consolidate/Verb Kick-2.aif
-2581:Ableton/User Library/Samples/Processed/Consolidate/WH_ImpactSnareDouble.wav
-2582:Ableton/User Library/Samples/Processed/Consolidate/Whoa!.aif
-2583:Ableton/User Library/Samples/Processed/Consolidate/XF_clapC03.wav
-2584:Ableton/User Library/Samples/Processed/Consolidate/yo_001.aif
-2585:Ableton/User Library/Samples/Processed/Crop/0001 4-Audio-1.aif
-2586:Ableton/User Library/Samples/Processed/Crop/0001 4-Audio.aif
-2587:Ableton/User Library/Samples/Processed/Crop/02 The Getaway (Polarstate Remix)-1.wav
-2588:Ableton/User Library/Samples/Processed/Crop/1 6-Audio.wav
-2589:Ableton/User Library/Samples/Processed/Crop/1 DRM_Beats-2.aif
-2590:Ableton/User Library/Samples/Processed/Crop/1 Resample.wav
-2591:Ableton/User Library/Samples/Processed/Crop/2 6-Audio-2.aif
-2592:Ableton/User Library/Samples/Processed/Crop/2 8-Audio.wav
-2593:Ableton/User Library/Samples/Processed/Crop/2 9-Audio.wav
-2594:Ableton/User Library/Samples/Processed/Crop/3 6-Audio.aif
-2595:Ableton/User Library/Samples/Processed/Crop/3 Hahah evil.aif
-2596:Ableton/User Library/Samples/Processed/Crop/3 Resample-1.wav
-2597:Ableton/User Library/Samples/Processed/Crop/3 Resample.wav
-2598:Ableton/User Library/Samples/Processed/Crop/3rd Moon -  Monsun-1.wav
-2599:Ableton/User Library/Samples/Processed/Crop/3rd Moon -  Monsun-2.wav
-2600:Ableton/User Library/Samples/Processed/Crop/3rd Moon -  Monsun.wav
-2601:Ableton/User Library/Samples/Processed/Crop/3rd Moon Kick.wav
-2602:Ableton/User Library/Samples/Processed/Crop/4 6-Audio-1-1.aif
-2603:Ableton/User Library/Samples/Processed/Crop/4 6-Audio-1-2.aif
-2604:Ableton/User Library/Samples/Processed/Crop/4 6-Audio.aif
-2605:Ableton/User Library/Samples/Processed/Crop/4 Resample-1.wav
-2606:Ableton/User Library/Samples/Processed/Crop/4 Resample-2.wav
-2607:Ableton/User Library/Samples/Processed/Crop/4 Resample.wav
-2608:Ableton/User Library/Samples/Processed/Crop/5176827_Nature_of_Reality_Original_Mix-1.wav
-2609:Ableton/User Library/Samples/Processed/Crop/5176827_Nature_of_Reality_Original_Mix-3.wav
-2610:Ableton/User Library/Samples/Processed/Crop/5176827_Nature_of_Reality_Original_Mix.wav
-2611:Ableton/User Library/Samples/Processed/Crop/5457602_V12_Original_Mix (Freeze)-4.wav
-2612:Ableton/User Library/Samples/Processed/Crop/5457602_V12_Original_Mix-1.wav
-2613:Ableton/User Library/Samples/Processed/Crop/6 6-Audio.aif
-2614:Ableton/User Library/Samples/Processed/Crop/7 6-Audio.aif
-2615:Ableton/User Library/Samples/Processed/Crop/8 Resample.wav
-2616:Ableton/User Library/Samples/Processed/Crop/Adymus -  Kaleidoscope Eyes (Original Mix)-3.wav
-2617:Ableton/User Library/Samples/Processed/Crop/Alexey Omen -  Halls Creek (Tucandeo Remix).wav
-2618:Ableton/User Library/Samples/Processed/Crop/arcalis bass.wav
-2619:Ableton/User Library/Samples/Processed/Crop/ATE Drum Loop - 204 - 136 BPM - Stripped Variant A.wav
-2620:Ableton/User Library/Samples/Processed/Crop/Avenger -  Music Box.wav
-2621:Ableton/User Library/Samples/Processed/Crop/Axel Karakasis - Back Down (Original Mix).wav
-2622:Ableton/User Library/Samples/Processed/Crop/Bryan Kearney - Punchline (Original Mix)-1.wav
-2623:Ableton/User Library/Samples/Processed/Crop/Bryan Kearney - Punchline (Original Mix).wav
-2624:Ableton/User Library/Samples/Processed/Crop/Drop_Snare.wav
-2625:Ableton/User Library/Samples/Processed/Crop/Drum Loop 1-1.wav
-2626:Ableton/User Library/Samples/Processed/Crop/Elevation -  Blinding Truth (Original Mix).wav
-2627:Ableton/User Library/Samples/Processed/Crop/elevation loop.wav
-2628:Ableton/User Library/Samples/Processed/Crop/Fei Fei -  Semi-Automatic (Original Mix).wav
-2629:Ableton/User Library/Samples/Processed/Crop/Freeze Ride Cymbal-1.wav
-2630:Ableton/User Library/Samples/Processed/Crop/Geck-E - Soul Train dist acid.wav
-2631:Ableton/User Library/Samples/Processed/Crop/Geck-E - Soul Train-1.wav
-2632:Ableton/User Library/Samples/Processed/Crop/Geck-E - Soul Train-2.wav
-2633:Ableton/User Library/Samples/Processed/Crop/Geck-E - Soul Train-3.wav
-2634:Ableton/User Library/Samples/Processed/Crop/Geck-E - Soul Train-4.wav
-2635:Ableton/User Library/Samples/Processed/Crop/Geck-E - Soul Train.wav
-2636:Ableton/User Library/Samples/Processed/Crop/J Khobb - Summer Eyes.wav
-2637:Ableton/User Library/Samples/Processed/Crop/Kick_SD03-1.wav
-2638:Ableton/User Library/Samples/Processed/Crop/Kick.wav
-2639:Ableton/User Library/Samples/Processed/Crop/Lens - Dusk Till Dawn (Stalker Remix)-1.wav
-2640:Ableton/User Library/Samples/Processed/Crop/Lens - Dusk Till Dawn (Stalker Remix).wav
-2641:Ableton/User Library/Samples/Processed/Crop/Mark Sherry Vs James Allen -  Mindset (Original Mix) clap pre.wav
-2642:Ableton/User Library/Samples/Processed/Crop/Mark Sherry vs. Dr Willis -  Celsius 39 (Original Mix)-3.wav
-2643:Ableton/User Library/Samples/Processed/Crop/Mark Sherry vs. Dr Willis -  Celsius 39 (Original Mix)-4.wav
-2644:Ableton/User Library/Samples/Processed/Crop/Mark Sherry vs. Dr Willis -  Celsius 39 (Original Mix)-7.wav
-2645:Ableton/User Library/Samples/Processed/Crop/MBG2_140_DRUM_LOOP_03_KICK_SNARE.wav
-2646:Ableton/User Library/Samples/Processed/Crop/Minimal Techno Demo.wav
-2647:Ableton/User Library/Samples/Processed/Crop/Rvs Rvb from vox.aif
-2648:Ableton/User Library/Samples/Processed/Crop/Sine drop fx trance.wav
-2649:Ableton/User Library/Samples/Processed/Crop/Sonic Division -  Painting the Silence (Sonic Division & Spyschool Mix) clap.wav
-2650:Ableton/User Library/Samples/Processed/Crop/stock.wav
-2651:Ableton/User Library/Samples/Processed/Crop/Stoneface&TerminalRonski Speed with Stoneface & Terminal -  Drowning Sunlight (Vocal Mix) Kick Clap-2.wav
-2652:Ableton/User Library/Samples/Processed/Crop/Stoneface&TerminalRonski Speed with Stoneface & Terminal -  Drowning Sunlight (Vocal Mix) Kick Loop-1.wav
-2653:Ableton/User Library/Samples/Processed/Crop/Stoneface&TerminalRonski Speed with Stoneface & Terminal -  Drowning Sunlight (Vocal Mix) Kick Loop.wav
-2654:Ableton/User Library/Samples/Processed/Crop/Stoneface&TerminalRonski Speed with Stoneface & Terminal -  Drowning Sunlight (Vocal Mix).wav
-2655:Ableton/User Library/Samples/Processed/Crop/Tiddey - Copacabana Dream Drums-1.wav
-2656:Ableton/User Library/Samples/Processed/Crop/Tiddey - Copacabana Dream Drums-2.wav
-2657:Ableton/User Library/Samples/Processed/Crop/Tiddey - Copacabana Dream Drums.wav
-2658:Ableton/User Library/Samples/Processed/Crop/ueberschall squeeze clap.wav
-2659:Ableton/User Library/Samples/Processed/Crop/Veselin Tasev - Sant Rafel De Sa Creu (Original Eivissa Mix).wav
-2660:Ableton/User Library/Samples/Processed/Freeze/Freeze 1-Audio-1.wav
-2661:Ableton/User Library/Samples/Processed/Freeze/Freeze 2-Audio.wav
-2662:Ableton/User Library/Samples/Processed/Freeze/Freeze 5-Audio-1-1.wav
-2663:Ableton/User Library/Samples/Processed/Freeze/Freeze 5-Audio-1.wav
-2664:Ableton/User Library/Samples/Processed/Freeze/Freeze 5-Audio.wav
-2665:Ableton/User Library/Samples/Processed/Freeze/Freeze 5-Spire.wav
-2666:Ableton/User Library/Samples/Processed/Freeze/Freeze 6-Audio-1.wav
-2667:Ableton/User Library/Samples/Processed/Freeze/Freeze 6-Play.wav
-2668:Ableton/User Library/Samples/Processed/Freeze/Freeze 8-Audio.wav
-2669:Ableton/User Library/Samples/Processed/Freeze/Freeze 9-Audio.wav
-2670:Ableton/User Library/Samples/Processed/Freeze/Freeze Fx.wav
-2671:Ableton/User Library/Samples/Processed/Freeze/Freeze MISC Lo-Fi Noise.wav
-2672:Ableton/User Library/Samples/Processed/Freeze/Freeze Ride Cymbal.wav
-2673:Ableton/User Library/Samples/Processed/Reverse/0001 6-Audio R.aif
-2674:Ableton/User Library/Samples/Processed/Reverse/0001 9-Audio.aif
-2675:Ableton/User Library/Samples/Processed/Reverse/0002 6-Audio R.aif
-2676:Ableton/User Library/Samples/Processed/Reverse/0002 7-Audio.aif
-2677:Ableton/User Library/Samples/Processed/Reverse/0002 reverse crash R.aif
-2678:Ableton/User Library/Samples/Processed/Reverse/0004 Rvs Synth R.aif
-2679:Ableton/User Library/Samples/Processed/Reverse/0005 Loop R.aif
-2680:Ableton/User Library/Samples/Processed/Reverse/0005 Rvs Mega Lead 8 bars Gmin R.aif
-2681:Ableton/User Library/Samples/Processed/Reverse/00DB_Crash_3 R.wav
-2682:Ableton/User Library/Samples/Processed/Reverse/1 32-Audio R.wav
-2683:Ableton/User Library/Samples/Processed/Reverse/42_sweep_down_effect-xxx-xx-RAI-OneshotsFX048 R R-1.wav
-2684:Ableton/User Library/Samples/Processed/Reverse/ATE Snare Roll - 046 R.wav
-2685:Ableton/User Library/Samples/Processed/Reverse/Clap 011 R.wav
-2686:Ableton/User Library/Samples/Processed/Reverse/CLAP-FAT R.wav
-2687:Ableton/User Library/Samples/Processed/Reverse/Crash 021 R.wav
-2688:Ableton/User Library/Samples/Processed/Reverse/crash_002 R-1.aif
-2689:Ableton/User Library/Samples/Processed/Reverse/Freeze 17-Audio R-1.wav
-2690:Ableton/User Library/Samples/Processed/Reverse/impact 03 R.aif
-2691:Ableton/User Library/Samples/Processed/Reverse/Kit 07 R.wav
-2692:Ableton/User Library/Samples/Processed/Reverse/MUFX1 EXPL 045-1 R.wav
-2693:Ableton/User Library/Samples/Processed/Reverse/Noise down R.wav
-2694:Ableton/User Library/Samples/Processed/Reverse/RevBass R-2.aif
-2695:Ableton/User Library/Samples/Processed/Reverse/Reverse Crash.wav
-2696:Ableton/User Library/Samples/Processed/Reverse/S FX 01 R.wav
-2697:Ableton/User Library/Samples/Processed/Reverse/S FX 02 R.wav
-2698:Ableton/User Library/Samples/Processed/Reverse/SYNPC_SFX_054 R.wav
-2699:Ableton/User Library/Samples/Processed/Reverse/tonal rev.wav
-2700:Ableton/User Library/Samples/Processed/Reverse/VDX1 Hold Me Kit 139BPM SnareRoller R.wav
-2701:Ableton/User Library/Samples/Processed/Reverse/VFX2 Sweeps Long 03 R.wav
-2702:Ableton/User Library/Samples/Processed/Reverse/VFX2 Sweeps Long 07 R.wav
-2703:Ableton/User Library/Samples/Processed/Reverse/VFX2 Sweeps Long 14 R.wav
-2704:Ableton/User Library/Samples/Processed/Reverse/VFX2 Sweeps Long 20 R.wav
-2705:Ableton/User Library/Samples/Recorded/0001 10-Audio-1.aif
-2706:Ableton/User Library/Samples/Recorded/0001 10-Audio-2.aif
-2707:Ableton/User Library/Samples/Recorded/0001 10-Audio.aif
-2708:Ableton/User Library/Samples/Recorded/0001 11-Audio.wav
-2709:Ableton/User Library/Samples/Recorded/0001 12-Audio-1.wav
-2710:Ableton/User Library/Samples/Recorded/0001 19-Audio.aif
-2711:Ableton/User Library/Samples/Recorded/0001 20-Audio-2.wav
-2712:Ableton/User Library/Samples/Recorded/0001 20-Audio.aif
-2713:Ableton/User Library/Samples/Recorded/0001 22-Audio.aif
-2714:Ableton/User Library/Samples/Recorded/0001 24-Audio.aif
-2715:Ableton/User Library/Samples/Recorded/0001 26-Audio-1.wav
-2716:Ableton/User Library/Samples/Recorded/0001 26-Audio.wav
-2717:Ableton/User Library/Samples/Recorded/0001 27-Audio.aif
-2718:Ableton/User Library/Samples/Recorded/0001 3-Audio.aif
-2719:Ableton/User Library/Samples/Recorded/0001 31-Audio.aif
-2720:Ableton/User Library/Samples/Recorded/0001 32-Audio-1.aif
-2721:Ableton/User Library/Samples/Recorded/0001 35-Audio.aif
-2722:Ableton/User Library/Samples/Recorded/0001 4-Audio-1.aif
-2723:Ableton/User Library/Samples/Recorded/0001 4-Audio.aif
-2724:Ableton/User Library/Samples/Recorded/0001 5-Audio-1.aif
-2725:Ableton/User Library/Samples/Recorded/0001 5-Audio-2.aif
-2726:Ableton/User Library/Samples/Recorded/0001 5-Audio-3.aif
-2727:Ableton/User Library/Samples/Recorded/0001 5-Audio-4.aif
-2728:Ableton/User Library/Samples/Recorded/0001 5-Audio.aif
-2729:Ableton/User Library/Samples/Recorded/0001 5-Audio.wav
-2730:Ableton/User Library/Samples/Recorded/0001 56-Audio-1.wav
-2731:Ableton/User Library/Samples/Recorded/0001 6-Audio-1-1.aif
-2732:Ableton/User Library/Samples/Recorded/0001 6-Audio-1-2.aif
-2733:Ableton/User Library/Samples/Recorded/0001 6-Audio-1.aif
-2734:Ableton/User Library/Samples/Recorded/0001 6-Audio-2.aif
-2735:Ableton/User Library/Samples/Recorded/0001 6-Audio-3.aif
-2736:Ableton/User Library/Samples/Recorded/0001 6-Audio.aif
-2737:Ableton/User Library/Samples/Recorded/0001 6-Audio.wav
-2738:Ableton/User Library/Samples/Recorded/0001 7-Audio-1-1.aif
-2739:Ableton/User Library/Samples/Recorded/0001 7-Audio-1-2.aif
-2740:Ableton/User Library/Samples/Recorded/0001 7-Audio-1-3.aif
-2741:Ableton/User Library/Samples/Recorded/0001 7-Audio-1-4.aif
-2742:Ableton/User Library/Samples/Recorded/0001 7-Audio-1-5.aif
-2743:Ableton/User Library/Samples/Recorded/0001 7-Audio-1.aif
-2744:Ableton/User Library/Samples/Recorded/0001 7-Audio-2.aif
-2745:Ableton/User Library/Samples/Recorded/0001 7-Audio-3.aif
-2746:Ableton/User Library/Samples/Recorded/0001 7-Audio-4.aif
-2747:Ableton/User Library/Samples/Recorded/0001 7-Audio.aif
-2748:Ableton/User Library/Samples/Recorded/0001 8-Audio-1.aif
-2749:Ableton/User Library/Samples/Recorded/0001 8-Audio-2.aif
-2750:Ableton/User Library/Samples/Recorded/0001 8-Audio.aif
-2751:Ableton/User Library/Samples/Recorded/0001 8-Audio.wav
-2752:Ableton/User Library/Samples/Recorded/0001 9-Audio-1-1.wav
-2753:Ableton/User Library/Samples/Recorded/0001 9-Audio-1.wav
-2754:Ableton/User Library/Samples/Recorded/0001 9-Audio.wav
-2755:Ableton/User Library/Samples/Recorded/0001 Resample-1-1.wav
-2756:Ableton/User Library/Samples/Recorded/0001 Resample-1-2.wav
-2757:Ableton/User Library/Samples/Recorded/0001 Resample-1.wav
-2758:Ableton/User Library/Samples/Recorded/0001 Resample-2.wav
-2759:Ableton/User Library/Samples/Recorded/0001 Resample.wav
-2760:Ableton/User Library/Samples/Recorded/0001 vocals-3.aif
-2761:Ableton/User Library/Samples/Recorded/0002 11-Audio.aif
-2762:Ableton/User Library/Samples/Recorded/0002 20-Audio.wav
-2763:Ableton/User Library/Samples/Recorded/0002 23-Audio.aif
-2764:Ableton/User Library/Samples/Recorded/0002 24-Audio-1.wav
-2765:Ableton/User Library/Samples/Recorded/0002 3-Audio.aif
-2766:Ableton/User Library/Samples/Recorded/0002 4-Audio.aif
-2767:Ableton/User Library/Samples/Recorded/0002 6-Audio-1.aif
-2768:Ableton/User Library/Samples/Recorded/0002 6-Audio-3.aif
-2769:Ableton/User Library/Samples/Recorded/0002 6-Audio.aif
-2770:Ableton/User Library/Samples/Recorded/0002 66-Audio.wav
-2771:Ableton/User Library/Samples/Recorded/0002 7-Audio.wav
-2772:Ableton/User Library/Samples/Recorded/0002 8-Audio-1.aif
-2773:Ableton/User Library/Samples/Recorded/0002 8-Audio.wav
-2774:Ableton/User Library/Samples/Recorded/0002 Flanger Talks.aif
-2775:Ableton/User Library/Samples/Recorded/0002 Resample-1.wav
-2776:Ableton/User Library/Samples/Recorded/0002 Resample-2.wav
-2777:Ableton/User Library/Samples/Recorded/0002 Resample-3.wav
-2778:Ableton/User Library/Samples/Recorded/0002 Resample.wav
-2779:Ableton/User Library/Samples/Recorded/0002 reverse crash.aif
-2780:Ableton/User Library/Samples/Recorded/0003 10-Audio.aif
-2781:Ableton/User Library/Samples/Recorded/0003 11-Audio.aif
-2782:Ableton/User Library/Samples/Recorded/0003 13-Audio-1.wav
-2783:Ableton/User Library/Samples/Recorded/0003 20-Audio.wav
-2784:Ableton/User Library/Samples/Recorded/0003 3-Audio.aif
-2785:Ableton/User Library/Samples/Recorded/0003 4-Audio.aif
-2786:Ableton/User Library/Samples/Recorded/0003 5-Audio.aif
-2787:Ableton/User Library/Samples/Recorded/0003 Resample-1.wav
-2788:Ableton/User Library/Samples/Recorded/0003 Resample.wav
-2789:Ableton/User Library/Samples/Recorded/0004 10-Audio.aif
-2790:Ableton/User Library/Samples/Recorded/0004 13-Audio-1.wav
-2791:Ableton/User Library/Samples/Recorded/0004 16 noise down.aif
-2792:Ableton/User Library/Samples/Recorded/0004 20-Audio.wav
-2793:Ableton/User Library/Samples/Recorded/0004 9-Audio.wav
-2794:Ableton/User Library/Samples/Recorded/0005 10-Audio.aif
-2795:Ableton/User Library/Samples/Recorded/0005 16 noise down.aif
-2796:Ableton/User Library/Samples/Recorded/0005 20-Audio.wav
-2797:Ableton/User Library/Samples/Recorded/0005 9-Audio-1.aif
-2798:Ableton/User Library/Samples/Recorded/0005 vocal main-1.wav
-2799:Ableton/User Library/Samples/Recorded/0007 10-Audio.aif
-2800:Ableton/User Library/Samples/Recorded/0007 5-Audio.aif
-2801:Ableton/User Library/Samples/Recorded/0007 Resample.wav
-2802:Ableton/User Library/Samples/Recorded/0010 33-Audio.wav
-2803:Ableton/User Library/Samples/Recorded/0011 7-Audio.aif
-2804:Ableton/User Library/Samples/Recorded/0012 5-Audio.aif
-2805:Ableton/User Library/Samples/Recorded/Looper0001 E-Looper.aif
-2806:Ableton/User Library/Vengeance Electroshock 2/VES2 FX/VES2 FX Impact/VES2 FX Impact 65.wav
-2807:Ableton/User Library/Waveforms/Spectral/Spectral 21.wav
-2808:Cubase Projects/ASΩΩΩΩ - ReWire.aif
-2809:Cubase Projects/delay - Output.aif
-2810:Cubase Projects/distortloop - Output.aif
-2811:Cubase Projects/loopz - ReWire.aif
-2812:Cubase Projects/loopzmusic - ReWire.aif
-2813:Cubase Projects/newchordtrack1 - Output.aif
-2814:Cubase Projects/rvb - FX.aif
-2815:Cubase Projects/rvs rvb - Output.aif
-2816:Cubase Projects/Untitled-01/Audio/Bluezone-THDP-loop-1015-136.wav
-2817:Cubase Projects/Untitled-01/Audio/VEC4 Trance Kicks 78.wav
-2818:Cubase Projects/Untitled-02/Audio/00_mix_loop-140-xx-RAI-Loops003.wav
-2819:Cubase Projects/Untitled-02/Audio/delay - Output.aif
-2820:Cubase Projects/Untitled-02/Audio/distortloop - Output.aif
-2821:Cubase Projects/Untitled-02/Audio/newchordtrack.wav
-2822:Cubase Projects/Untitled-02/Audio/VEC4 Clubby Kicks 089.wav
-2823:Cubase Projects/Untitled-02/Audio/VEC4 Loops 001.wav
-2824:Cubase Projects/Untitled-02/Audio/VEC4 Loops 002.wav
-2825:Cubase Projects/Untitled-02/Audio/VEC4 Loops 003.wav
-2826:Cubase Projects/Untitled-02/Audio/VEC4 Loops 025.wav
-2827:Cubase Projects/Untitled-02/Audio/VEC4 Vocals 43.wav
-2828:Cubase Projects/Untitled-02/Edits/newchordtrack - Output-02.wav
-2829:Cubase Projects/Untitled-02/Edits/newchordtrack - Output.wav
-2830:Cubase Projects/Untitled-02/Edits/rvs rvb - Output.aif
-2831:Cubase Projects/Untitled-02/Edits/VEC4 Clubby Kicks 089-01.wav
-2832:Cubase Projects/Untitled-02/Edits/VEC4 Clubby Kicks 089.wav
-2833:Cubase Projects/Untitled-13/Audio/pitchdown - Output.aif
-2834:Cubase Projects/Untitled-13/Audio/rvb - FX.aif
-2835:Cubase Projects/Untitled-13/Audio/VEC4 Claps 025.wav
-2836:Cubase Projects/Untitled-13/Audio/VEC4 Clubby Kicks 021.wav
-2837:Cubase Projects/Untitled-13/Audio/VEC4 Electro Kicks 03.wav
-2838:Cubase Projects/Untitled-13/Audio/VEC4 Fills 004.wav
-2839:Cubase Projects/Untitled-13/Audio/VEC4 Fills 018.wav
-2840:Cubase Projects/Untitled-13/Audio/VEC4 Open HH 004.wav
-2841:Cubase Projects/Untitled-13/Audio/VEC4 Reverse Cym 02.wav
-2842:Cubase Projects/Untitled-13/Edits/pitchdown - Output-01.aif
-2843:Cubase Projects/Untitled-13/Edits/pitchdown - Output.aif
-2844:Cubase Projects/Untitled-13/Edits/rvb - FX-01.aif
-2845:Cubase Projects/Untitled-13/Edits/rvb - FX.aif
-2846:Cubase Projects/Untitled-13/Edits/VEC4 Reverse Cym 02-01.wav
-2847:Cubase Projects/Untitled-13/Edits/VEC4 Reverse Cym 02.wav
-2848:Cubase Projects/Untitled-15/Audio/VEC4 Electro Kicks 01.wav
-2849:Cubase Projects/Untitled-15/Audio/VEC4 Loops 002.wav
-2850:Cubase Projects/Untitled-15/Audio/VEC4 Loops 144.wav
-2851:Cubase Projects/Untitled-21/Audio/Bluezone-TTP-loop-1021-142.wav
-2852:Cubase Projects/Untitled-22/Audio/Bluezone-TTP-loop-1021-142.wav
-2853:Cubase Projects/Untitled-28/Audio/Bluezone-TTP-loop-1021-142.wav
-2854:Cubase Projects/Untitled-28/Audio/Bluezone-TTP-loop-2005-142.wav
-2855:Cubase Projects/Untitled-28/Audio/VEC4 Vocals 59.wav
-2856:Cubase Projects/Untitled-41/Audio/Bluezone-TTP-loop-1021-142.wav
-2857:Cubase Projects/Untitled-41/Audio/VEC4 Vocals 01.wav
-2858:Cubase Projects/Untitled-43/Audio/Bluezone-Hard-Techno-Sensation-Demo.wav
-2859:Cubase Projects/Untitled-45/Audio/Bluezone-HTS-loop-047-143.wav
-2860:Cubase Projects/Untitled-45/Audio/Bluezone-THDP-loop-3027-136.wav
-2861:Cubase Projects/Untitled-45/Audio/loopz - ReWire.aif
-2862:Cubase Projects/Untitled-45/Audio/loopzmusic - ReWire.aif
-2863:Cubase Projects/Untitled-45/Audio/VEC4 Claps 002.wav
-2864:Cubase Projects/Untitled-45/Audio/VEC4 Open HH 001.wav
-2865:Cubase Projects/Untitled-45/Audio/VEC4 Special Sounds 020 138BPM E.wav
-2866:Cubase Projects/Untitled-45/Audio/VEC4 Trance Kicks 03.wav
-2867:Cubase Projects/Untitled-46/Audio/ASΩΩΩΩ - Output.aif
-2868:Cubase Projects/Untitled-46/Audio/VEC4 Claps 003.wav
-2869:Cubase Projects/Untitled-46/Audio/VEC4 Closed HH 001.wav
-2870:Cubase Projects/Untitled-46/Audio/VEC4 Trance Kicks 07.wav
-2871:Kris Menace feat. Fred Falke - Fairlight-mNgVSqrSNWE.mp3
-2872:Digitalism - Apollo-Gize (Fred Falke Remix)-_ykDET9kLJI.mp3
-2873:Ableton/User Library/Samples/Imported/14sfx128 UT_at the beach_f_1.wav
+2016:Ableton/User Library/Samples/Imported/Snare 3.wav
+2017:Ableton/User Library/Samples/Imported/Snare 6.wav
+2018:Ableton/User Library/Samples/Imported/Snare Drum.wav
+2019:Ableton/User Library/Samples/Imported/Snare Fill 2.wav
+2020:Ableton/User Library/Samples/Imported/Snare fill2.wav
+2021:Ableton/User Library/Samples/Imported/Snare HipHop 3 V2.wav
+2022:Ableton/User Library/Samples/Imported/Snare_1.wav
+2023:Ableton/User Library/Samples/Imported/Snare_Impact.wav
+2024:Ableton/User Library/Samples/Imported/Snare_Niche_DH.wav
+2025:Ableton/User Library/Samples/Imported/Snare_Niche_io.wav
+2026:Ableton/User Library/Samples/Imported/Snare_Niche_rr.wav
+2027:Ableton/User Library/Samples/Imported/Snare-1.wav
+2028:Ableton/User Library/Samples/Imported/Snare-2.wav
+2029:Ableton/User Library/Samples/Imported/Snare-3.wav
+2030:Ableton/User Library/Samples/Imported/Snare-4.wav
+2031:Ableton/User Library/Samples/Imported/Snare-5.wav
+2032:Ableton/User Library/Samples/Imported/Snare-6.wav
+2033:Ableton/User Library/Samples/Imported/Snare-7.wav
+2034:Ableton/User Library/Samples/Imported/Snare-909-Tune10-c.aif
+2035:Ableton/User Library/Samples/Imported/Snare-909-Tune10-s.aif
+2036:Ableton/User Library/Samples/Imported/Snare.wav
+2037:Ableton/User Library/Samples/Imported/snare1.wav
+2038:Ableton/User Library/Samples/Imported/SNARE5.wav
+2039:Ableton/User Library/Samples/Imported/SnareRim DubTao.wav
+2040:Ableton/User Library/Samples/Imported/Snares 016.wav
+2041:Ableton/User Library/Samples/Imported/Snares 14.wav
+2042:Ableton/User Library/Samples/Imported/Snares 18.wav
+2043:Ableton/User Library/Samples/Imported/Snares 19.wav
+2044:Ableton/User Library/Samples/Imported/Snares 3.wav
+2045:Ableton/User Library/Samples/Imported/Snares 9.wav
+2046:Ableton/User Library/Samples/Imported/Snares.aif
+2047:Ableton/User Library/Samples/Imported/SOR CR1 Acid 033 D.wav
+2048:Ableton/User Library/Samples/Imported/SOR CR1 Bass 009 A.wav
+2049:Ableton/User Library/Samples/Imported/SOR CR1 Claps 002.wav
+2050:Ableton/User Library/Samples/Imported/SOR CR1 Claps 053.wav
+2051:Ableton/User Library/Samples/Imported/SOR CR1 Electro Stuff 001.wav
+2052:Ableton/User Library/Samples/Imported/SOR CR1 Electro Stuff 002.wav
+2053:Ableton/User Library/Samples/Imported/SOR CR1 Electro Stuff 025.wav
+2054:Ableton/User Library/Samples/Imported/SOR CR1 Electro Stuff 026.wav
+2055:Ableton/User Library/Samples/Imported/SOR CR1 Electro Stuff 027.wav
+2056:Ableton/User Library/Samples/Imported/SOR CR1 Electro Stuff 028.wav
+2057:Ableton/User Library/Samples/Imported/SOR CR1 Electro Stuff 029.wav
+2058:Ableton/User Library/Samples/Imported/SOR CR1 Electro Stuff 030.wav
+2059:Ableton/User Library/Samples/Imported/SOR CR1 Electro Stuff 031.wav
+2060:Ableton/User Library/Samples/Imported/SOR CR1 Electro Stuff 032.wav
+2061:Ableton/User Library/Samples/Imported/SOR CR1 Electro Stuff 033.wav
+2062:Ableton/User Library/Samples/Imported/SOR CR1 Electro Stuff 034.wav
+2063:Ableton/User Library/Samples/Imported/SOR CR1 Electro Stuff 035.wav
+2064:Ableton/User Library/Samples/Imported/SOR CR1 Electro Stuff 036.wav
+2065:Ableton/User Library/Samples/Imported/SOR CR1 Electro Stuff 037.wav
+2066:Ableton/User Library/Samples/Imported/SOR CR1 Electro Stuff 039.wav
+2067:Ableton/User Library/Samples/Imported/SOR CR1 Electro Stuff 040.wav
+2068:Ableton/User Library/Samples/Imported/SOR CR1 Electro Stuff 127.wav
+2069:Ableton/User Library/Samples/Imported/SOR CR1 SFX Hardstyle 037.wav
+2070:Ableton/User Library/Samples/Imported/SOR CR1 Sounds 002 A.wav
+2071:Ableton/User Library/Samples/Imported/SOR CR1 Sounds 039 C#.wav
+2072:Ableton/User Library/Samples/Imported/SOR CR1 Toms and Perc 007.wav
+2073:Ableton/User Library/Samples/Imported/SOR CR1 Toms and Perc 035.wav
+2074:Ableton/User Library/Samples/Imported/SPK_C_AnalogueHorn.wav
+2075:Ableton/User Library/Samples/Imported/SPK_G_AnalogueHorn.wav
+2076:Ableton/User Library/Samples/Imported/SPKT_127_C_Boulders03.wav
+2077:Ableton/User Library/Samples/Imported/SPKT_Clap09.wav
+2078:Ableton/User Library/Samples/Imported/SPKT_Clap12.wav
+2079:Ableton/User Library/Samples/Imported/SPKT_Clap14.wav
+2080:Ableton/User Library/Samples/Imported/SPKT_Hat25.wav
+2081:Ableton/User Library/Samples/Imported/Stoneface&TerminalRonski Speed with Stoneface & Terminal -  Drowning Sunlight (Vocal Mix).mp3
+2082:Ableton/User Library/Samples/Imported/STRING2.wav
+2083:Ableton/User Library/Samples/Imported/sub fx-1.wav
+2084:Ableton/User Library/Samples/Imported/Sub FX.wav
+2085:Ableton/User Library/Samples/Imported/SUB KICK.wav
+2086:Ableton/User Library/Samples/Imported/SuperSnare.wav
+2087:Ableton/User Library/Samples/Imported/SWEEP 2.wav
+2088:Ableton/User Library/Samples/Imported/Sweep Down.wav
+2089:Ableton/User Library/Samples/Imported/Sweep Up-1.wav
+2090:Ableton/User Library/Samples/Imported/Sweep Up.wav
+2091:Ableton/User Library/Samples/Imported/sweep1.wav
+2092:Ableton/User Library/Samples/Imported/SYNPC_Kick_002.wav
+2093:Ableton/User Library/Samples/Imported/SYNPC_Kick_093.wav
+2094:Ableton/User Library/Samples/Imported/SYNPC_Loop_001.wav
+2095:Ableton/User Library/Samples/Imported/SYNPC_Loop_002.wav
+2096:Ableton/User Library/Samples/Imported/SYNPC_Loop_087.wav
+2097:Ableton/User Library/Samples/Imported/SYNPC_Loop_140.wav
+2098:Ableton/User Library/Samples/Imported/SYNPC_Loop_316.wav
+2099:Ableton/User Library/Samples/Imported/SYNPC_Perc_028.wav
+2100:Ableton/User Library/Samples/Imported/SYNPC_SFX_089.wav
+2101:Ableton/User Library/Samples/Imported/SYNPC2_Clap_001.wav
+2102:Ableton/User Library/Samples/Imported/SYNPC2_Clap_002.wav
+2103:Ableton/User Library/Samples/Imported/SYNPC2_Clap_003.wav
+2104:Ableton/User Library/Samples/Imported/SYNPC2_Clap_004.wav
+2105:Ableton/User Library/Samples/Imported/SYNPC2_Clap_005.wav
+2106:Ableton/User Library/Samples/Imported/SYNPC2_Clap_006.wav
+2107:Ableton/User Library/Samples/Imported/SYNPC2_Clap_007.wav
+2108:Ableton/User Library/Samples/Imported/SYNPC2_Clap_008.wav
+2109:Ableton/User Library/Samples/Imported/SYNPC2_Clap_009.wav
+2110:Ableton/User Library/Samples/Imported/SYNPC2_Clap_010.wav
+2111:Ableton/User Library/Samples/Imported/SYNPC2_Clap_011.wav
+2112:Ableton/User Library/Samples/Imported/SYNPC2_Clap_012.wav
+2113:Ableton/User Library/Samples/Imported/SYNPC2_Clap_013.wav
+2114:Ableton/User Library/Samples/Imported/SYNPC2_Clap_014.wav
+2115:Ableton/User Library/Samples/Imported/SYNPC2_Clap_015.wav
+2116:Ableton/User Library/Samples/Imported/SYNPC2_Clap_016.wav
+2117:Ableton/User Library/Samples/Imported/SYNPC2_Clap_017.wav
+2118:Ableton/User Library/Samples/Imported/SYNPC2_Clap_018.wav
+2119:Ableton/User Library/Samples/Imported/SYNPC2_Clap_019.wav
+2120:Ableton/User Library/Samples/Imported/SYNPC2_Clap_020.wav
+2121:Ableton/User Library/Samples/Imported/SYNPC2_Clap_021.wav
+2122:Ableton/User Library/Samples/Imported/SYNPC2_Clap_022.wav
+2123:Ableton/User Library/Samples/Imported/SYNPC2_Clap_023.wav
+2124:Ableton/User Library/Samples/Imported/SYNPC2_Clap_024.wav
+2125:Ableton/User Library/Samples/Imported/SYNPC2_Clap_025.wav
+2126:Ableton/User Library/Samples/Imported/SYNPC2_Clap_026.wav
+2127:Ableton/User Library/Samples/Imported/SYNPC2_Clap_027.wav
+2128:Ableton/User Library/Samples/Imported/SYNPC2_Clap_028.wav
+2129:Ableton/User Library/Samples/Imported/SYNPC2_Clap_029.wav
+2130:Ableton/User Library/Samples/Imported/SYNPC2_Clap_030.wav
+2131:Ableton/User Library/Samples/Imported/SYNPC2_Clap_031.wav
+2132:Ableton/User Library/Samples/Imported/SYNPC2_Clap_032.wav
+2133:Ableton/User Library/Samples/Imported/SYNPC2_Clap_033.wav
+2134:Ableton/User Library/Samples/Imported/SYNPC2_Clap_034.wav
+2135:Ableton/User Library/Samples/Imported/SYNPC2_Clap_035.wav
+2136:Ableton/User Library/Samples/Imported/SYNPC2_Clap_036.wav
+2137:Ableton/User Library/Samples/Imported/SYNPC2_Clap_037.wav
+2138:Ableton/User Library/Samples/Imported/SYNPC2_Clap_038.wav
+2139:Ableton/User Library/Samples/Imported/SYNPC2_Clap_039.wav
+2140:Ableton/User Library/Samples/Imported/SYNPC2_Clap_040.wav
+2141:Ableton/User Library/Samples/Imported/SYNPC2_Clap_041.wav
+2142:Ableton/User Library/Samples/Imported/SYNPC2_Clap_042.wav
+2143:Ableton/User Library/Samples/Imported/SYNPC2_Clap_043.wav
+2144:Ableton/User Library/Samples/Imported/SYNPC2_Clap_044.wav
+2145:Ableton/User Library/Samples/Imported/SYNPC2_Clap_045.wav
+2146:Ableton/User Library/Samples/Imported/SYNPC2_Clap_046.wav
+2147:Ableton/User Library/Samples/Imported/SYNPC2_Clap_047.wav
+2148:Ableton/User Library/Samples/Imported/SYNPC2_Clap_048.wav
+2149:Ableton/User Library/Samples/Imported/SYNPC2_Clap_049.wav
+2150:Ableton/User Library/Samples/Imported/SYNPC2_Clap_050.wav
+2151:Ableton/User Library/Samples/Imported/SYNPC2_Clap_051.wav
+2152:Ableton/User Library/Samples/Imported/SYNPC2_Clap_052.wav
+2153:Ableton/User Library/Samples/Imported/SYNPC2_Clap_053.wav
+2154:Ableton/User Library/Samples/Imported/SYNPC2_Clap_054.wav
+2155:Ableton/User Library/Samples/Imported/SYNPC2_Clap_055.wav
+2156:Ableton/User Library/Samples/Imported/SYNPC2_Clap_056.wav
+2157:Ableton/User Library/Samples/Imported/SYNPC2_Clap_057.wav
+2158:Ableton/User Library/Samples/Imported/SYNPC2_Clap_058.wav
+2159:Ableton/User Library/Samples/Imported/SYNPC2_Clap_059.wav
+2160:Ableton/User Library/Samples/Imported/SYNPC2_Clap_060.wav
+2161:Ableton/User Library/Samples/Imported/SYNPC2_Clap_061.wav
+2162:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Long_01.wav
+2163:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Long_03.wav
+2164:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Long_05.wav
+2165:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Long_30.wav
+2166:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Long_37.wav
+2167:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_001.wav
+2168:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_002.wav
+2169:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_003.wav
+2170:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_004.wav
+2171:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_005.wav
+2172:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_006.wav
+2173:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_007.wav
+2174:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_008.wav
+2175:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_009.wav
+2176:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_010.wav
+2177:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_011.wav
+2178:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_012.wav
+2179:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_013.wav
+2180:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_014.wav
+2181:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_015.wav
+2182:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_016.wav
+2183:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_017.wav
+2184:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_018.wav
+2185:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_019.wav
+2186:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_020.wav
+2187:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_021.wav
+2188:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_022.wav
+2189:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_023.wav
+2190:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_024.wav
+2191:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_025.wav
+2192:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_026.wav
+2193:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_027.wav
+2194:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_028.wav
+2195:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_029.wav
+2196:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_030.wav
+2197:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_031.wav
+2198:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_032.wav
+2199:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_033.wav
+2200:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_034.wav
+2201:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_035.wav
+2202:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_036.wav
+2203:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_037.wav
+2204:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_038.wav
+2205:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_039.wav
+2206:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_040.wav
+2207:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_041.wav
+2208:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_042.wav
+2209:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_043.wav
+2210:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_044.wav
+2211:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_045.wav
+2212:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_046.wav
+2213:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_047.wav
+2214:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_048.wav
+2215:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_049.wav
+2216:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_050.wav
+2217:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_051.wav
+2218:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_052.wav
+2219:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_053.wav
+2220:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_054.wav
+2221:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_055.wav
+2222:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_056.wav
+2223:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_057.wav
+2224:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_058.wav
+2225:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_059.wav
+2226:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_060.wav
+2227:Ableton/User Library/Samples/Imported/SYNPC2_Hat_Short_061.wav
+2228:Ableton/User Library/Samples/Imported/Tambourine Shot.wav
+2229:Ableton/User Library/Samples/Imported/Tambourine Shot2.wav
+2230:Ableton/User Library/Samples/Imported/TCE3 01 Crash 138 BPM Wet_1.wav
+2231:Ableton/User Library/Samples/Imported/TCE3 03 Reverse Stab 2 138 BPM F_1.wav
+2232:Ableton/User Library/Samples/Imported/TCE3 10 Reverse Crash 138 BPM Wet_1.wav
+2233:Ableton/User Library/Samples/Imported/TE1 01 Kick Loop 138 BPM.wav
+2234:Ableton/User Library/Samples/Imported/TE4_Kit_04_Kick_138.wav
+2235:Ableton/User Library/Samples/Imported/Tidy1 - OHH 04.wav
+2236:Ableton/User Library/Samples/Imported/Tom 1.wav
+2237:Ableton/User Library/Samples/Imported/Tom 2.wav
+2238:Ableton/User Library/Samples/Imported/Tom 3.wav
+2239:Ableton/User Library/Samples/Imported/Tom 4.wav
+2240:Ableton/User Library/Samples/Imported/Tom-909-Hi.aif
+2241:Ableton/User Library/Samples/Imported/Tom-909-Low.aif
+2242:Ableton/User Library/Samples/Imported/Tom-909-Mid.aif
+2243:Ableton/User Library/Samples/Imported/TopLoop_Rides_142_PL.wav
+2244:Ableton/User Library/Samples/Imported/TOX_129_Straight_Dope_OHats.wav
+2245:Ableton/User Library/Samples/Imported/Triabl shot.wav
+2246:Ableton/User Library/Samples/Imported/TT_Tom_Part_01.wav
+2247:Ableton/User Library/Samples/Imported/TT_Tom_Part_07.wav
+2248:Ableton/User Library/Samples/Imported/TT_Tom_Part_16.wav
+2249:Ableton/User Library/Samples/Imported/TT_Wave_Pad_05.wav
+2250:Ableton/User Library/Samples/Imported/tth_fx_lowdrop.wav
+2251:Ableton/User Library/Samples/Imported/ueberschall weighty kick.wav
+2252:Ableton/User Library/Samples/Imported/ufx3_impact_abyss.wav
+2253:Ableton/User Library/Samples/Imported/ufx3_impact_buyitout.wav
+2254:Ableton/User Library/Samples/Imported/ufx3_impact_circuitblast.wav
+2255:Ableton/User Library/Samples/Imported/Untitled 2.m4a
+2256:Ableton/User Library/Samples/Imported/UP Clap 13-1.wav
+2257:Ableton/User Library/Samples/Imported/Uplifter 1-1.wav
+2258:Ableton/User Library/Samples/Imported/Uplifter 1.wav
+2259:Ableton/User Library/Samples/Imported/Uplifter 4.wav
+2260:Ableton/User Library/Samples/Imported/UTLEV1 Drum Loop - 030 - 123 BPM - Stripped Loop.wav
+2261:Ableton/User Library/Samples/Imported/VDE3 128 BPM Big Oneshot FX Snare.wav
+2262:Ableton/User Library/Samples/Imported/VDE3 130 BPM Sunrise Oneshot Kick Root G.wav
+2263:Ableton/User Library/Samples/Imported/VDUB1 Downlifter 24.wav
+2264:Ableton/User Library/Samples/Imported/VDUB1 Kick 008.wav
+2265:Ableton/User Library/Samples/Imported/VDUB1 Oneshot Phrase 15 C.wav
+2266:Ableton/User Library/Samples/Imported/VDX1 Cascade Kit 144BPM Roll Snare 01.wav
+2267:Ableton/User Library/Samples/Imported/VDX1 Cascade Kit 144BPM Roll Snare 02.wav
+2268:Ableton/User Library/Samples/Imported/VDX1 Discotoxic Kit 144BPM Roll Snare 01.wav
+2269:Ableton/User Library/Samples/Imported/VDX1 Discotoxic Kit 144BPM Roll Snare 02.wav
+2270:Ableton/User Library/Samples/Imported/VDX1 Dr. Rude Kit 140BPM Roll Snare.wav
+2271:Ableton/User Library/Samples/Imported/VDX1 Hold Me Kit 139BPM SnareRoller.wav
+2272:Ableton/User Library/Samples/Imported/VDX1 Introduction Kit 144BPM Roll Snare.wav
+2273:Ableton/User Library/Samples/Imported/VDX1 Master Robin Kit 143BPM Roll Snare.wav
+2274:Ableton/User Library/Samples/Imported/VDX1 Master Robin Kit 143BPM Snare.wav
+2275:Ableton/User Library/Samples/Imported/VDX1 Pimpy Kit 144BPM Roll Snare 01.wav
+2276:Ableton/User Library/Samples/Imported/VDX1 Pimpy Kit 144BPM Roll Snare 02.wav
+2277:Ableton/User Library/Samples/Imported/VDX1 T-Mo Kit 144BPM Roll Snare.wav
+2278:Ableton/User Library/Samples/Imported/VDX1 Tune Kit 144BPM Roll Snare 01.wav
+2279:Ableton/User Library/Samples/Imported/VDX1 Tune Kit 144BPM Roll Snare 02.wav
+2280:Ableton/User Library/Samples/Imported/VDX1 Tune Kit 144BPM Roll Snare 03.wav
+2281:Ableton/User Library/Samples/Imported/VEC1 Clap 011.wav
+2282:Ableton/User Library/Samples/Imported/VEC2 Bassdrums Hard 039.wav
+2283:Ableton/User Library/Samples/Imported/VEC2 Claps 083.wav
+2284:Ableton/User Library/Samples/Imported/VEC2 Loops 013.wav
+2285:Ableton/User Library/Samples/Imported/VEC2 Loops 035.wav
+2286:Ableton/User Library/Samples/Imported/VEC3 Bassdrums Trance 06.wav
+2287:Ableton/User Library/Samples/Imported/VEC3 Bassdrums Trance 75.wav
+2288:Ableton/User Library/Samples/Imported/VEC3 Claps 023.wav
+2289:Ableton/User Library/Samples/Imported/VEC3 Claps 082.wav
+2290:Ableton/User Library/Samples/Imported/VEC3 Cymbals HH Open 090.wav
+2291:Ableton/User Library/Samples/Imported/VEC4 Clubby Kicks 048.wav
+2292:Ableton/User Library/Samples/Imported/VEC4 Loops 009.wav
+2293:Ableton/User Library/Samples/Imported/VEC4 Sub Kicks 11.wav
+2294:Ableton/User Library/Samples/Imported/VEC4 Trance Kicks 03.wav
+2295:Ableton/User Library/Samples/Imported/VEC4 Trance Kicks 68.wav
+2296:Ableton/User Library/Samples/Imported/VEE2 Percussion 012.wav
+2297:Ableton/User Library/Samples/Imported/VEE3 Downlifter 01.wav
+2298:Ableton/User Library/Samples/Imported/VEE3 Snare 73.wav
+2299:Ableton/User Library/Samples/Imported/VEH2 Percussion - 086.wav
+2300:Ableton/User Library/Samples/Imported/VEH2 Snares - 001.wav
+2301:Ableton/User Library/Samples/Imported/VES1 FX Boom 006.wav
+2302:Ableton/User Library/Samples/Imported/VES1 Snare 072.wav
+2303:Ableton/User Library/Samples/Imported/VFH2 128BPM Glorious Kit 2.wav
+2304:Ableton/User Library/Samples/Imported/VFH2 Various Mini Kits 127BPM 2.wav
+2305:Ableton/User Library/Samples/Imported/VFX1 Hits & Explode 27.wav
+2306:Ableton/User Library/Samples/Imported/VFX2 Sub 13.wav
+2307:Ableton/User Library/Samples/Imported/VFX2 Sweeps Long 14.wav
+2308:Ableton/User Library/Samples/Imported/VFX2 Sweeps Long 38.wav
+2309:Ableton/User Library/Samples/Imported/VFX2 Sweeps Short 18.wav
+2310:Ableton/User Library/Samples/Imported/VMH1 Claps & Snares 020.wav
+2311:Ableton/User Library/Samples/Imported/VMH1 FX Sounds 023.wav
+2312:Ableton/User Library/Samples/Imported/VMH1 FX Sounds 094.wav
+2313:Ableton/User Library/Samples/Imported/VMH1 Open Hats 110.wav
+2314:Ableton/User Library/Samples/Imported/Voc_Niche_ae.wav
+2315:Ableton/User Library/Samples/Imported/VoxFx_01_G#_Niche_fo.wav
+2316:Ableton/User Library/Samples/Imported/VoxFx_02_G#_Niche_fo.wav
+2317:Ableton/User Library/Samples/Imported/VS - Reverse - 20 D.wav
+2318:Ableton/User Library/Samples/Imported/VTDS2 Song Kit 01 Male Running In Cirlces Mix.wav
+2319:Ableton/User Library/Samples/Imported/VTDS3 Claps and Snares 071.wav
+2320:Ableton/User Library/Samples/Imported/VTS1 Jericho Kit 132BPM Kick FX.wav
+2321:Ableton/User Library/Samples/Imported/VVE2 Vocal Loops 140BPM 145.wav
+2322:Ableton/User Library/Samples/Imported/Wasp Sting 17-C.wav
+2323:Ableton/User Library/Samples/Imported/XF_HatSlice3.aif
+2324:Ableton/User Library/Samples/Imported/XF_Loop_215.wav
+2325:Ableton/User Library/Samples/Imported/Yamaha pad D1.wav
+2326:Ableton/User Library/Samples/Imported/Tiddey - Copacabana Dream.mp3
+2327:Ableton/User Library/Samples/Imported/05. Brute (Original Mix).mp3
+2328:Ableton/User Library/Samples/Imported/Geck-E - Soul Train.mp3
+2329:Ableton/User Library/Samples/Imported/808OHH3_Tape.wav
+2330:Ableton/User Library/Samples/Imported/909OHH_D3V2_X.wav
+2331:Ableton/User Library/Samples/Imported/909Ride_T11V2_Orig.wav
+2332:Ableton/User Library/Samples/Imported/909Ride_T6V1_X.wav
+2333:Ableton/User Library/Samples/Imported/Clap FX.wav
+2334:Ableton/User Library/Samples/Imported/UP Clap 13.wav
+2335:Ableton/User Library/Samples/Imported/UP Closed Hat 10.wav
+2336:Ableton/User Library/Samples/Imported/UP Drum Loop 042.wav
+2337:Ableton/User Library/Samples/Imported/UP Snare 08.wav
+2338:Ableton/User Library/Samples/Imported/UP Snare 13.wav
+2339:Ableton/User Library/Samples/Imported/UP Snare 54.wav
+2340:Ableton/User Library/Samples/Imported/Arpeggio (Wet)/S_000_060_c3_.aif
+2341:Ableton/User Library/Samples/Imported/Arpeggio (Wet)/S_000_061_c#3_.aif
+2342:Ableton/User Library/Samples/Imported/Arpeggio (Wet)/S_000_062_d3_.aif
+2343:Ableton/User Library/Samples/Imported/Arpeggio (Wet)/S_000_063_d#3_.aif
+2344:Ableton/User Library/Samples/Imported/Arpeggio (Wet)/S_000_064_e3_.aif
+2345:Ableton/User Library/Samples/Imported/Arpeggio (Wet)/S_000_065_f3_.aif
+2346:Ableton/User Library/Samples/Imported/Arpeggio (Wet)/S_000_066_f#3_.aif
+2347:Ableton/User Library/Samples/Imported/Arpeggio (Wet)/S_000_067_g3_.aif
+2348:Ableton/User Library/Samples/Imported/Arpeggio (Wet)/S_000_068_g#3_.aif
+2349:Ableton/User Library/Samples/Imported/Arpeggio (Wet)/S_000_069_a3_.aif
+2350:Ableton/User Library/Samples/Imported/Arpeggio (Wet)/S_000_070_a#3_.aif
+2351:Ableton/User Library/Samples/Imported/Arpeggio (Wet)/S_000_071_h3_.aif
+2352:Ableton/User Library/Samples/Imported/Arpeggio (Wet)/S_000_072_c4_.aif
+2353:Ableton/User Library/Samples/Imported/Arpeggio (Wet)/S_000_073_c#4_.aif
+2354:Ableton/User Library/Samples/Imported/Arpeggio (Wet)/S_000_074_d4_.aif
+2355:Ableton/User Library/Samples/Imported/Arpeggio (Wet)/S_000_075_d#4_.aif
+2356:Ableton/User Library/Samples/Imported/Arpeggio (Wet)/S_000_076_e4_.aif
+2357:Ableton/User Library/Samples/Imported/Arpeggio (Wet)/S_000_077_f4_.aif
+2358:Ableton/User Library/Samples/Imported/Arpeggio (Wet)/S_000_078_f#4_.aif
+2359:Ableton/User Library/Samples/Imported/Arpeggio (Wet)/S_000_079_g4_.aif
+2360:Ableton/User Library/Samples/Imported/Arpeggio (Wet)/S_000_080_g#4_.aif
+2361:Ableton/User Library/Samples/Imported/Arpeggio (Wet)/S_000_081_a4_.aif
+2362:Ableton/User Library/Samples/Imported/Arpeggio (Wet)/S_000_082_a#4_.aif
+2363:Ableton/User Library/Samples/Imported/Arpeggio (Wet)/S_000_083_h4_.aif
+2364:Ableton/User Library/Samples/Imported/Arpeggio (Wet)/S_000_084_c5_.aif
+2365:Ableton/User Library/Samples/Imported/Arpeggio (Wet)/S_000_085_c#5_.aif
+2366:Ableton/User Library/Samples/Imported/Arpeggio (Wet)/S_000_086_d5_.aif
+2367:Ableton/User Library/Samples/Imported/Arpeggio (Wet)/S_000_087_d#5_.aif
+2368:Ableton/User Library/Samples/Imported/Arpeggio (Wet)/S_000_088_e5_.aif
+2369:Ableton/User Library/Samples/Imported/Arpeggio (Wet)/S_000_089_f5_.aif
+2370:Ableton/User Library/Samples/Imported/Arpeggio (Wet)/S_000_090_f#5_.aif
+2371:Ableton/User Library/Samples/Imported/Arpeggio (Wet)/S_000_091_g5_.aif
+2372:Ableton/User Library/Samples/Imported/Arpeggio (Wet)/S_000_092_g#5_.aif
+2373:Ableton/User Library/Samples/Imported/Arpeggio (Wet)/S_000_093_a5_.aif
+2374:Ableton/User Library/Samples/Imported/Arpeggio (Wet)/S_000_094_a#5_.aif
+2375:Ableton/User Library/Samples/Imported/Arpeggio (Wet)/S_000_095_h5_.aif
+2376:Ableton/User Library/Samples/Imported/Pluck Synth (Dry)/S_000_060_c3_.aif
+2377:Ableton/User Library/Samples/Imported/Pluck Synth (Dry)/S_000_061_c#3_.aif
+2378:Ableton/User Library/Samples/Imported/Pluck Synth (Dry)/S_000_062_d3_.aif
+2379:Ableton/User Library/Samples/Imported/Pluck Synth (Dry)/S_000_063_d#3_.aif
+2380:Ableton/User Library/Samples/Imported/Pluck Synth (Dry)/S_000_064_e3_.aif
+2381:Ableton/User Library/Samples/Imported/Pluck Synth (Dry)/S_000_065_f3_.aif
+2382:Ableton/User Library/Samples/Imported/Pluck Synth (Dry)/S_000_066_f#3_.aif
+2383:Ableton/User Library/Samples/Imported/Pluck Synth (Dry)/S_000_067_g3_.aif
+2384:Ableton/User Library/Samples/Imported/Pluck Synth (Dry)/S_000_068_g#3_.aif
+2385:Ableton/User Library/Samples/Imported/Pluck Synth (Dry)/S_000_069_a3_.aif
+2386:Ableton/User Library/Samples/Imported/Pluck Synth (Dry)/S_000_070_a#3_.aif
+2387:Ableton/User Library/Samples/Imported/Pluck Synth (Dry)/S_000_071_h3_.aif
+2388:Ableton/User Library/Samples/Imported/Pluck Synth (Dry)/S_000_072_c4_.aif
+2389:Ableton/User Library/Samples/Imported/Pluck Synth (Dry)/S_000_073_c#4_.aif
+2390:Ableton/User Library/Samples/Imported/Pluck Synth (Dry)/S_000_074_d4_.aif
+2391:Ableton/User Library/Samples/Imported/Pluck Synth (Dry)/S_000_075_d#4_.aif
+2392:Ableton/User Library/Samples/Imported/Pluck Synth (Dry)/S_000_076_e4_.aif
+2393:Ableton/User Library/Samples/Imported/Pluck Synth (Dry)/S_000_077_f4_.aif
+2394:Ableton/User Library/Samples/Imported/Pluck Synth (Dry)/S_000_078_f#4_.aif
+2395:Ableton/User Library/Samples/Imported/Pluck Synth (Dry)/S_000_079_g4_.aif
+2396:Ableton/User Library/Samples/Imported/Pluck Synth (Dry)/S_000_080_g#4_.aif
+2397:Ableton/User Library/Samples/Imported/Pluck Synth (Dry)/S_000_081_a4_.aif
+2398:Ableton/User Library/Samples/Imported/Pluck Synth (Dry)/S_000_082_a#4_.aif
+2399:Ableton/User Library/Samples/Imported/Pluck Synth (Dry)/S_000_083_h4_.aif
+2400:Ableton/User Library/Samples/Imported/Pluck Synth (Dry)/S_000_084_c5_.aif
+2401:Ableton/User Library/Samples/Imported/Pluck Synth (Dry)/S_000_085_c#5_.aif
+2402:Ableton/User Library/Samples/Imported/Pluck Synth (Dry)/S_000_086_d5_.aif
+2403:Ableton/User Library/Samples/Imported/Pluck Synth (Dry)/S_000_087_d#5_.aif
+2404:Ableton/User Library/Samples/Imported/Pluck Synth (Dry)/S_000_088_e5_.aif
+2405:Ableton/User Library/Samples/Imported/Pluck Synth (Dry)/S_000_089_f5_.aif
+2406:Ableton/User Library/Samples/Imported/Pluck Synth (Dry)/S_000_090_f#5_.aif
+2407:Ableton/User Library/Samples/Imported/Pluck Synth (Dry)/S_000_091_g5_.aif
+2408:Ableton/User Library/Samples/Imported/Pluck Synth (Dry)/S_000_092_g#5_.aif
+2409:Ableton/User Library/Samples/Imported/Pluck Synth (Dry)/S_000_093_a5_.aif
+2410:Ableton/User Library/Samples/Imported/Pluck Synth (Dry)/S_000_094_a#5_.aif
+2411:Ableton/User Library/Samples/Imported/Pluck Synth (Dry)/S_000_095_h5_.aif
+2412:Ableton/User Library/Samples/Imported/Pluck Synth (Wet)/S_000_060_c3_.aif
+2413:Ableton/User Library/Samples/Imported/Pluck Synth (Wet)/S_000_061_c#3_.aif
+2414:Ableton/User Library/Samples/Imported/Pluck Synth (Wet)/S_000_062_d3_.aif
+2415:Ableton/User Library/Samples/Imported/Pluck Synth (Wet)/S_000_063_d#3_.aif
+2416:Ableton/User Library/Samples/Imported/Pluck Synth (Wet)/S_000_064_e3_.aif
+2417:Ableton/User Library/Samples/Imported/Pluck Synth (Wet)/S_000_065_f3_.aif
+2418:Ableton/User Library/Samples/Imported/Pluck Synth (Wet)/S_000_066_f#3_.aif
+2419:Ableton/User Library/Samples/Imported/Pluck Synth (Wet)/S_000_067_g3_.aif
+2420:Ableton/User Library/Samples/Imported/Pluck Synth (Wet)/S_000_068_g#3_.aif
+2421:Ableton/User Library/Samples/Imported/Pluck Synth (Wet)/S_000_069_a3_.aif
+2422:Ableton/User Library/Samples/Imported/Pluck Synth (Wet)/S_000_070_a#3_.aif
+2423:Ableton/User Library/Samples/Imported/Pluck Synth (Wet)/S_000_071_h3_.aif
+2424:Ableton/User Library/Samples/Imported/Pluck Synth (Wet)/S_000_072_c4_.aif
+2425:Ableton/User Library/Samples/Imported/Pluck Synth (Wet)/S_000_073_c#4_.aif
+2426:Ableton/User Library/Samples/Imported/Pluck Synth (Wet)/S_000_074_d4_.aif
+2427:Ableton/User Library/Samples/Imported/Pluck Synth (Wet)/S_000_075_d#4_.aif
+2428:Ableton/User Library/Samples/Imported/Pluck Synth (Wet)/S_000_076_e4_.aif
+2429:Ableton/User Library/Samples/Imported/Pluck Synth (Wet)/S_000_077_f4_.aif
+2430:Ableton/User Library/Samples/Imported/Pluck Synth (Wet)/S_000_078_f#4_.aif
+2431:Ableton/User Library/Samples/Imported/Pluck Synth (Wet)/S_000_079_g4_.aif
+2432:Ableton/User Library/Samples/Imported/Pluck Synth (Wet)/S_000_080_g#4_.aif
+2433:Ableton/User Library/Samples/Imported/Pluck Synth (Wet)/S_000_081_a4_.aif
+2434:Ableton/User Library/Samples/Imported/Pluck Synth (Wet)/S_000_082_a#4_.aif
+2435:Ableton/User Library/Samples/Imported/Pluck Synth (Wet)/S_000_083_h4_.aif
+2436:Ableton/User Library/Samples/Imported/Pluck Synth (Wet)/S_000_084_c5_.aif
+2437:Ableton/User Library/Samples/Imported/Pluck Synth (Wet)/S_000_085_c#5_.aif
+2438:Ableton/User Library/Samples/Imported/Pluck Synth (Wet)/S_000_086_d5_.aif
+2439:Ableton/User Library/Samples/Imported/Pluck Synth (Wet)/S_000_087_d#5_.aif
+2440:Ableton/User Library/Samples/Imported/Pluck Synth (Wet)/S_000_088_e5_.aif
+2441:Ableton/User Library/Samples/Imported/Pluck Synth (Wet)/S_000_089_f5_.aif
+2442:Ableton/User Library/Samples/Imported/Pluck Synth (Wet)/S_000_090_f#5_.aif
+2443:Ableton/User Library/Samples/Imported/Pluck Synth (Wet)/S_000_091_g5_.aif
+2444:Ableton/User Library/Samples/Imported/Pluck Synth (Wet)/S_000_092_g#5_.aif
+2445:Ableton/User Library/Samples/Imported/Pluck Synth (Wet)/S_000_093_a5_.aif
+2446:Ableton/User Library/Samples/Imported/Pluck Synth (Wet)/S_000_094_a#5_.aif
+2447:Ableton/User Library/Samples/Imported/Pluck Synth (Wet)/S_000_095_h5_.aif
+2448:Ableton/User Library/Samples/Processed/Consolidate/-1.wav
+2449:Ableton/User Library/Samples/Processed/Consolidate/01lft120_UFX_8 bars_high-1.wav
+2450:Ableton/User Library/Samples/Processed/Consolidate/08_SNARE_03.aif
+2451:Ableton/User Library/Samples/Processed/Consolidate/1 11-Audio-1.wav
+2452:Ableton/User Library/Samples/Processed/Consolidate/1 11-Audio-2.wav
+2453:Ableton/User Library/Samples/Processed/Consolidate/1 11-Audio.wav
+2454:Ableton/User Library/Samples/Processed/Consolidate/1 12-Audio-1.wav
+2455:Ableton/User Library/Samples/Processed/Consolidate/1 12-Audio.wav
+2456:Ableton/User Library/Samples/Processed/Consolidate/1 13-Audio.aif
+2457:Ableton/User Library/Samples/Processed/Consolidate/1 2-Audio-1.wav
+2458:Ableton/User Library/Samples/Processed/Consolidate/1 3-Audio-1.aif
+2459:Ableton/User Library/Samples/Processed/Consolidate/1 32-Audio-1-1.aif
+2460:Ableton/User Library/Samples/Processed/Consolidate/1 32-Audio-1.aif
+2461:Ableton/User Library/Samples/Processed/Consolidate/1 6-Audio-1.aif
+2462:Ableton/User Library/Samples/Processed/Consolidate/1 6-Audio.aif
+2463:Ableton/User Library/Samples/Processed/Consolidate/1 8-Audio-1-1.aif
+2464:Ableton/User Library/Samples/Processed/Consolidate/1 8-Audio-1.aif
+2465:Ableton/User Library/Samples/Processed/Consolidate/1.aif
+2466:Ableton/User Library/Samples/Processed/Consolidate/175_Drum_Loop_3.wav
+2467:Ableton/User Library/Samples/Processed/Consolidate/2 11-Audio.aif
+2468:Ableton/User Library/Samples/Processed/Consolidate/3 11-Audio-1-1.aif
+2469:Ableton/User Library/Samples/Processed/Consolidate/3 11-Audio.aif
+2470:Ableton/User Library/Samples/Processed/Consolidate/4 7-Audio-1-1-1-2.wav
+2471:Ableton/User Library/Samples/Processed/Consolidate/808 sub.aif
+2472:Ableton/User Library/Samples/Processed/Consolidate/ABFX012.aif
+2473:Ableton/User Library/Samples/Processed/Consolidate/Abletunes Hey.aif
+2474:Ableton/User Library/Samples/Processed/Consolidate/AbletunesSax.aif
+2475:Ableton/User Library/Samples/Processed/Consolidate/AcousticTom.aif
+2476:Ableton/User Library/Samples/Processed/Consolidate/ahh_002.aif
+2477:Ableton/User Library/Samples/Processed/Consolidate/Alex Fisher -  White Sunshine (Right Mix).wav
+2478:Ableton/User Library/Samples/Processed/Consolidate/ATE Crash Cymbal - 001-1.aif
+2479:Ableton/User Library/Samples/Processed/Consolidate/ATE FX Loop - 006 - 134 BPM - A#m.aif
+2480:Ableton/User Library/Samples/Processed/Consolidate/ATE Percussion FX - 001.aif
+2481:Ableton/User Library/Samples/Processed/Consolidate/Atmos-2.aif
+2482:Ableton/User Library/Samples/Processed/Consolidate/BaseDrum.aif
+2483:Ableton/User Library/Samples/Processed/Consolidate/BIO_140_Drums_05_Full-2.wav
+2484:Ableton/User Library/Samples/Processed/Consolidate/BIO_140_Drums_05_KickSnare.wav
+2485:Ableton/User Library/Samples/Processed/Consolidate/Boom.wav
+2486:Ableton/User Library/Samples/Processed/Consolidate/Boom1.wav
+2487:Ableton/User Library/Samples/Processed/Consolidate/BOOM2.wav
+2488:Ableton/User Library/Samples/Processed/Consolidate/Brand new Kick.wav
+2489:Ableton/User Library/Samples/Processed/Consolidate/clap (var).wav
+2490:Ableton/User Library/Samples/Processed/Consolidate/Clap 32.aif
+2491:Ableton/User Library/Samples/Processed/Consolidate/Clap 33.aif
+2492:Ableton/User Library/Samples/Processed/Consolidate/Clap-1.aif
+2493:Ableton/User Library/Samples/Processed/Consolidate/Clap-1.wav
+2494:Ableton/User Library/Samples/Processed/Consolidate/CLAP-2.wav
+2495:Ableton/User Library/Samples/Processed/Consolidate/CLAP-3.wav
+2496:Ableton/User Library/Samples/Processed/Consolidate/Clap-4.wav
+2497:Ableton/User Library/Samples/Processed/Consolidate/CLAP-FAT.wav
+2498:Ableton/User Library/Samples/Processed/Consolidate/CLAP-FX.wav
+2499:Ableton/User Library/Samples/Processed/Consolidate/Clap.aif
+2500:Ableton/User Library/Samples/Processed/Consolidate/clap.wav
+2501:Ableton/User Library/Samples/Processed/Consolidate/ClapRev.aif
+2502:Ableton/User Library/Samples/Processed/Consolidate/Claps 01.wav
+2503:Ableton/User Library/Samples/Processed/Consolidate/CompClap1.aif
+2504:Ableton/User Library/Samples/Processed/Consolidate/Crash.aif
+2505:Ableton/User Library/Samples/Processed/Consolidate/crunk_001.aif
+2506:Ableton/User Library/Samples/Processed/Consolidate/CS4.aif
+2507:Ableton/User Library/Samples/Processed/Consolidate/Cymbal Ride_bip.aif
+2508:Ableton/User Library/Samples/Processed/Consolidate/Dialup Kick-2.wav
+2509:Ableton/User Library/Samples/Processed/Consolidate/DRM02-Kick.aif
+2510:Ableton/User Library/Samples/Processed/Consolidate/DRM02-Snare.aif
+2511:Ableton/User Library/Samples/Processed/Consolidate/Ehey.aif
+2512:Ableton/User Library/Samples/Processed/Consolidate/Elevation -  Blinding Truth (Original Mix).wav
+2513:Ableton/User Library/Samples/Processed/Consolidate/EpikClap (Freeze).aif
+2514:Ableton/User Library/Samples/Processed/Consolidate/Fill Ins.aif
+2515:Ableton/User Library/Samples/Processed/Consolidate/FillSnare.aif
+2516:Ableton/User Library/Samples/Processed/Consolidate/flanger up.wav
+2517:Ableton/User Library/Samples/Processed/Consolidate/FX Downlifter.wav
+2518:Ableton/User Library/Samples/Processed/Consolidate/FX Play Me Everytime.wav
+2519:Ableton/User Library/Samples/Processed/Consolidate/FX-Dr1.aif
+2520:Ableton/User Library/Samples/Processed/Consolidate/FX.wav
+2521:Ableton/User Library/Samples/Processed/Consolidate/FX4.wav
+2522:Ableton/User Library/Samples/Processed/Consolidate/Fx6.wav
+2523:Ableton/User Library/Samples/Processed/Consolidate/FX7.wav
+2524:Ableton/User Library/Samples/Processed/Consolidate/Hall Kick.aif
+2525:Ableton/User Library/Samples/Processed/Consolidate/HH Loop 1.wav
+2526:Ableton/User Library/Samples/Processed/Consolidate/Impact 1.wav
+2527:Ableton/User Library/Samples/Processed/Consolidate/J Khobb - Summer Eyes.aif
+2528:Ableton/User Library/Samples/Processed/Consolidate/Kick-1-1.wav
+2529:Ableton/User Library/Samples/Processed/Consolidate/Kick-1.wav
+2530:Ableton/User Library/Samples/Processed/Consolidate/Kick-2.wav
+2531:Ableton/User Library/Samples/Processed/Consolidate/Kick-3.wav
+2532:Ableton/User Library/Samples/Processed/Consolidate/KICK-4.wav
+2533:Ableton/User Library/Samples/Processed/Consolidate/KICK-5.wav
+2534:Ableton/User Library/Samples/Processed/Consolidate/Kick.wav
+2535:Ableton/User Library/Samples/Processed/Consolidate/LaidbackLuke-WereForever-VoxLead.wav
+2536:Ableton/User Library/Samples/Processed/Consolidate/Lev_Impact_Godzilla-1.wav
+2537:Ableton/User Library/Samples/Processed/Consolidate/Lev_Impact_Godzilla.wav
+2538:Ableton/User Library/Samples/Processed/Consolidate/loops08-1.wav
+2539:Ableton/User Library/Samples/Processed/Consolidate/Mark Sherry Vs James Allen -  Mindset (Original Mix).aif
+2540:Ableton/User Library/Samples/Processed/Consolidate/Mental Asylum Clap.wav
+2541:Ableton/User Library/Samples/Processed/Consolidate/noise rev.wav
+2542:Ableton/User Library/Samples/Processed/Consolidate/NOISE_UP-1.wav
+2543:Ableton/User Library/Samples/Processed/Consolidate/Open Hats.wav
+2544:Ableton/User Library/Samples/Processed/Consolidate/PAF_Vocal_Snip_16.wav
+2545:Ableton/User Library/Samples/Processed/Consolidate/Percs 1.wav
+2546:Ableton/User Library/Samples/Processed/Consolidate/Percu Samba 1.wav
+2547:Ableton/User Library/Samples/Processed/Consolidate/Percu Samba 2.wav
+2548:Ableton/User Library/Samples/Processed/Consolidate/porter sweep down 16.wav
+2549:Ableton/User Library/Samples/Processed/Consolidate/rev clap .wav
+2550:Ableton/User Library/Samples/Processed/Consolidate/Reverse Snare.wav
+2551:Ableton/User Library/Samples/Processed/Consolidate/RhodesChord.aif
+2552:Ableton/User Library/Samples/Processed/Consolidate/Shaker 1.wav
+2553:Ableton/User Library/Samples/Processed/Consolidate/Shaker 2.wav
+2554:Ableton/User Library/Samples/Processed/Consolidate/SNAAR.aif
+2555:Ableton/User Library/Samples/Processed/Consolidate/Snap-1.wav
+2556:Ableton/User Library/Samples/Processed/Consolidate/Snar 31.aif
+2557:Ableton/User Library/Samples/Processed/Consolidate/snare fill.wav
+2558:Ableton/User Library/Samples/Processed/Consolidate/Snare-1.aif
+2559:Ableton/User Library/Samples/Processed/Consolidate/Snare.aif
+2560:Ableton/User Library/Samples/Processed/Consolidate/Snare.wav
+2561:Ableton/User Library/Samples/Processed/Consolidate/SnareImpact.wav
+2562:Ableton/User Library/Samples/Processed/Consolidate/Snares 14-1.wav
+2563:Ableton/User Library/Samples/Processed/Consolidate/SOR MTR1 HHOpen 050.wav
+2564:Ableton/User Library/Samples/Processed/Consolidate/Starter.aif
+2565:Ableton/User Library/Samples/Processed/Consolidate/Stoneface&TerminalRonski Speed with Stoneface & Terminal -  Drowning Sunlight (Vocal Mix) Kick Clap-1-1-1-1.aif
+2566:Ableton/User Library/Samples/Processed/Consolidate/Stoneface&TerminalRonski Speed with Stoneface & Terminal -  Drowning Sunlight (Vocal Mix) Kick Loop-1.aif
+2567:Ableton/User Library/Samples/Processed/Consolidate/SYNTH 10-2.wav
+2568:Ableton/User Library/Samples/Processed/Consolidate/SYNTH 7-1.wav
+2569:Ableton/User Library/Samples/Processed/Consolidate/synth rev.wav
+2570:Ableton/User Library/Samples/Processed/Consolidate/synth_loop8 moleon stabs.wav
+2571:Ableton/User Library/Samples/Processed/Consolidate/Tek-Ne Featuring Catherine -  Taurine (Dub).wav
+2572:Ableton/User Library/Samples/Processed/Consolidate/Tiddey - Copacabana Dream-1-1.aif
+2573:Ableton/User Library/Samples/Processed/Consolidate/Tiddey - Copacabana Dream-1.aif
+2574:Ableton/User Library/Samples/Processed/Consolidate/TOM_Rock_Percussion.aif
+2575:Ableton/User Library/Samples/Processed/Consolidate/TomFill-3.wav
+2576:Ableton/User Library/Samples/Processed/Consolidate/Transition Clap.aif
+2577:Ableton/User Library/Samples/Processed/Consolidate/TT_MixedPercLoop4_126-2.aif
+2578:Ableton/User Library/Samples/Processed/Consolidate/Up Fx-1.wav
+2579:Ableton/User Library/Samples/Processed/Consolidate/Verb Kick-2.aif
+2580:Ableton/User Library/Samples/Processed/Consolidate/WH_ImpactSnareDouble.wav
+2581:Ableton/User Library/Samples/Processed/Consolidate/Whoa!.aif
+2582:Ableton/User Library/Samples/Processed/Consolidate/XF_clapC03.wav
+2583:Ableton/User Library/Samples/Processed/Consolidate/yo_001.aif
+2584:Ableton/User Library/Samples/Processed/Crop/0001 4-Audio-1.aif
+2585:Ableton/User Library/Samples/Processed/Crop/0001 4-Audio.aif
+2586:Ableton/User Library/Samples/Processed/Crop/02 The Getaway (Polarstate Remix)-1.wav
+2587:Ableton/User Library/Samples/Processed/Crop/1 6-Audio.wav
+2588:Ableton/User Library/Samples/Processed/Crop/1 DRM_Beats-2.aif
+2589:Ableton/User Library/Samples/Processed/Crop/1 Resample.wav
+2590:Ableton/User Library/Samples/Processed/Crop/2 6-Audio-2.aif
+2591:Ableton/User Library/Samples/Processed/Crop/2 8-Audio.wav
+2592:Ableton/User Library/Samples/Processed/Crop/2 9-Audio.wav
+2593:Ableton/User Library/Samples/Processed/Crop/3 6-Audio.aif
+2594:Ableton/User Library/Samples/Processed/Crop/3 Hahah evil.aif
+2595:Ableton/User Library/Samples/Processed/Crop/3 Resample-1.wav
+2596:Ableton/User Library/Samples/Processed/Crop/3 Resample.wav
+2597:Ableton/User Library/Samples/Processed/Crop/3rd Moon -  Monsun-1.wav
+2598:Ableton/User Library/Samples/Processed/Crop/3rd Moon -  Monsun-2.wav
+2599:Ableton/User Library/Samples/Processed/Crop/3rd Moon -  Monsun.wav
+2600:Ableton/User Library/Samples/Processed/Crop/3rd Moon Kick.wav
+2601:Ableton/User Library/Samples/Processed/Crop/4 6-Audio-1-1.aif
+2602:Ableton/User Library/Samples/Processed/Crop/4 6-Audio-1-2.aif
+2603:Ableton/User Library/Samples/Processed/Crop/4 6-Audio.aif
+2604:Ableton/User Library/Samples/Processed/Crop/4 Resample-1.wav
+2605:Ableton/User Library/Samples/Processed/Crop/4 Resample-2.wav
+2606:Ableton/User Library/Samples/Processed/Crop/4 Resample.wav
+2607:Ableton/User Library/Samples/Processed/Crop/5176827_Nature_of_Reality_Original_Mix-1.wav
+2608:Ableton/User Library/Samples/Processed/Crop/5176827_Nature_of_Reality_Original_Mix-3.wav
+2609:Ableton/User Library/Samples/Processed/Crop/5176827_Nature_of_Reality_Original_Mix.wav
+2610:Ableton/User Library/Samples/Processed/Crop/5457602_V12_Original_Mix (Freeze)-4.wav
+2611:Ableton/User Library/Samples/Processed/Crop/5457602_V12_Original_Mix-1.wav
+2612:Ableton/User Library/Samples/Processed/Crop/6 6-Audio.aif
+2613:Ableton/User Library/Samples/Processed/Crop/7 6-Audio.aif
+2614:Ableton/User Library/Samples/Processed/Crop/8 Resample.wav
+2615:Ableton/User Library/Samples/Processed/Crop/Adymus -  Kaleidoscope Eyes (Original Mix)-3.wav
+2616:Ableton/User Library/Samples/Processed/Crop/Alexey Omen -  Halls Creek (Tucandeo Remix).wav
+2617:Ableton/User Library/Samples/Processed/Crop/arcalis bass.wav
+2618:Ableton/User Library/Samples/Processed/Crop/ATE Drum Loop - 204 - 136 BPM - Stripped Variant A.wav
+2619:Ableton/User Library/Samples/Processed/Crop/Avenger -  Music Box.wav
+2620:Ableton/User Library/Samples/Processed/Crop/Axel Karakasis - Back Down (Original Mix).wav
+2621:Ableton/User Library/Samples/Processed/Crop/Bryan Kearney - Punchline (Original Mix)-1.wav
+2622:Ableton/User Library/Samples/Processed/Crop/Bryan Kearney - Punchline (Original Mix).wav
+2623:Ableton/User Library/Samples/Processed/Crop/Drop_Snare.wav
+2624:Ableton/User Library/Samples/Processed/Crop/Drum Loop 1-1.wav
+2625:Ableton/User Library/Samples/Processed/Crop/Elevation -  Blinding Truth (Original Mix).wav
+2626:Ableton/User Library/Samples/Processed/Crop/elevation loop.wav
+2627:Ableton/User Library/Samples/Processed/Crop/Fei Fei -  Semi-Automatic (Original Mix).wav
+2628:Ableton/User Library/Samples/Processed/Crop/Freeze Ride Cymbal-1.wav
+2629:Ableton/User Library/Samples/Processed/Crop/Geck-E - Soul Train dist acid.wav
+2630:Ableton/User Library/Samples/Processed/Crop/Geck-E - Soul Train-1.wav
+2631:Ableton/User Library/Samples/Processed/Crop/Geck-E - Soul Train-2.wav
+2632:Ableton/User Library/Samples/Processed/Crop/Geck-E - Soul Train-3.wav
+2633:Ableton/User Library/Samples/Processed/Crop/Geck-E - Soul Train-4.wav
+2634:Ableton/User Library/Samples/Processed/Crop/Geck-E - Soul Train.wav
+2635:Ableton/User Library/Samples/Processed/Crop/J Khobb - Summer Eyes.wav
+2636:Ableton/User Library/Samples/Processed/Crop/Kick_SD03-1.wav
+2637:Ableton/User Library/Samples/Processed/Crop/Kick.wav
+2638:Ableton/User Library/Samples/Processed/Crop/Lens - Dusk Till Dawn (Stalker Remix)-1.wav
+2639:Ableton/User Library/Samples/Processed/Crop/Lens - Dusk Till Dawn (Stalker Remix).wav
+2640:Ableton/User Library/Samples/Processed/Crop/Mark Sherry Vs James Allen -  Mindset (Original Mix) clap pre.wav
+2641:Ableton/User Library/Samples/Processed/Crop/Mark Sherry vs. Dr Willis -  Celsius 39 (Original Mix)-3.wav
+2642:Ableton/User Library/Samples/Processed/Crop/Mark Sherry vs. Dr Willis -  Celsius 39 (Original Mix)-4.wav
+2643:Ableton/User Library/Samples/Processed/Crop/Mark Sherry vs. Dr Willis -  Celsius 39 (Original Mix)-7.wav
+2644:Ableton/User Library/Samples/Processed/Crop/MBG2_140_DRUM_LOOP_03_KICK_SNARE.wav
+2645:Ableton/User Library/Samples/Processed/Crop/Minimal Techno Demo.wav
+2646:Ableton/User Library/Samples/Processed/Crop/Rvs Rvb from vox.aif
+2647:Ableton/User Library/Samples/Processed/Crop/Sine drop fx trance.wav
+2648:Ableton/User Library/Samples/Processed/Crop/Sonic Division -  Painting the Silence (Sonic Division & Spyschool Mix) clap.wav
+2649:Ableton/User Library/Samples/Processed/Crop/stock.wav
+2650:Ableton/User Library/Samples/Processed/Crop/Stoneface&TerminalRonski Speed with Stoneface & Terminal -  Drowning Sunlight (Vocal Mix) Kick Clap-2.wav
+2651:Ableton/User Library/Samples/Processed/Crop/Stoneface&TerminalRonski Speed with Stoneface & Terminal -  Drowning Sunlight (Vocal Mix) Kick Loop-1.wav
+2652:Ableton/User Library/Samples/Processed/Crop/Stoneface&TerminalRonski Speed with Stoneface & Terminal -  Drowning Sunlight (Vocal Mix) Kick Loop.wav
+2653:Ableton/User Library/Samples/Processed/Crop/Stoneface&TerminalRonski Speed with Stoneface & Terminal -  Drowning Sunlight (Vocal Mix).wav
+2654:Ableton/User Library/Samples/Processed/Crop/Tiddey - Copacabana Dream Drums-1.wav
+2655:Ableton/User Library/Samples/Processed/Crop/Tiddey - Copacabana Dream Drums-2.wav
+2656:Ableton/User Library/Samples/Processed/Crop/Tiddey - Copacabana Dream Drums.wav
+2657:Ableton/User Library/Samples/Processed/Crop/ueberschall squeeze clap.wav
+2658:Ableton/User Library/Samples/Processed/Crop/Veselin Tasev - Sant Rafel De Sa Creu (Original Eivissa Mix).wav
+2659:Ableton/User Library/Samples/Processed/Freeze/Freeze 1-Audio-1.wav
+2660:Ableton/User Library/Samples/Processed/Freeze/Freeze 2-Audio.wav
+2661:Ableton/User Library/Samples/Processed/Freeze/Freeze 5-Audio-1-1.wav
+2662:Ableton/User Library/Samples/Processed/Freeze/Freeze 5-Audio-1.wav
+2663:Ableton/User Library/Samples/Processed/Freeze/Freeze 5-Audio.wav
+2664:Ableton/User Library/Samples/Processed/Freeze/Freeze 5-Spire.wav
+2665:Ableton/User Library/Samples/Processed/Freeze/Freeze 6-Audio-1.wav
+2666:Ableton/User Library/Samples/Processed/Freeze/Freeze 6-Play.wav
+2667:Ableton/User Library/Samples/Processed/Freeze/Freeze 8-Audio.wav
+2668:Ableton/User Library/Samples/Processed/Freeze/Freeze 9-Audio.wav
+2669:Ableton/User Library/Samples/Processed/Freeze/Freeze Fx.wav
+2670:Ableton/User Library/Samples/Processed/Freeze/Freeze MISC Lo-Fi Noise.wav
+2671:Ableton/User Library/Samples/Processed/Freeze/Freeze Ride Cymbal.wav
+2672:Ableton/User Library/Samples/Processed/Reverse/0001 6-Audio R.aif
+2673:Ableton/User Library/Samples/Processed/Reverse/0001 9-Audio.aif
+2674:Ableton/User Library/Samples/Processed/Reverse/0002 6-Audio R.aif
+2675:Ableton/User Library/Samples/Processed/Reverse/0002 7-Audio.aif
+2676:Ableton/User Library/Samples/Processed/Reverse/0002 reverse crash R.aif
+2677:Ableton/User Library/Samples/Processed/Reverse/0004 Rvs Synth R.aif
+2678:Ableton/User Library/Samples/Processed/Reverse/0005 Loop R.aif
+2679:Ableton/User Library/Samples/Processed/Reverse/0005 Rvs Mega Lead 8 bars Gmin R.aif
+2680:Ableton/User Library/Samples/Processed/Reverse/00DB_Crash_3 R.wav
+2681:Ableton/User Library/Samples/Processed/Reverse/1 32-Audio R.wav
+2682:Ableton/User Library/Samples/Processed/Reverse/42_sweep_down_effect-xxx-xx-RAI-OneshotsFX048 R R-1.wav
+2683:Ableton/User Library/Samples/Processed/Reverse/ATE Snare Roll - 046 R.wav
+2684:Ableton/User Library/Samples/Processed/Reverse/Clap 011 R.wav
+2685:Ableton/User Library/Samples/Processed/Reverse/CLAP-FAT R.wav
+2686:Ableton/User Library/Samples/Processed/Reverse/Crash 021 R.wav
+2687:Ableton/User Library/Samples/Processed/Reverse/crash_002 R-1.aif
+2688:Ableton/User Library/Samples/Processed/Reverse/Freeze 17-Audio R-1.wav
+2689:Ableton/User Library/Samples/Processed/Reverse/impact 03 R.aif
+2690:Ableton/User Library/Samples/Processed/Reverse/Kit 07 R.wav
+2691:Ableton/User Library/Samples/Processed/Reverse/MUFX1 EXPL 045-1 R.wav
+2692:Ableton/User Library/Samples/Processed/Reverse/Noise down R.wav
+2693:Ableton/User Library/Samples/Processed/Reverse/RevBass R-2.aif
+2694:Ableton/User Library/Samples/Processed/Reverse/Reverse Crash.wav
+2695:Ableton/User Library/Samples/Processed/Reverse/S FX 01 R.wav
+2696:Ableton/User Library/Samples/Processed/Reverse/S FX 02 R.wav
+2697:Ableton/User Library/Samples/Processed/Reverse/SYNPC_SFX_054 R.wav
+2698:Ableton/User Library/Samples/Processed/Reverse/tonal rev.wav
+2699:Ableton/User Library/Samples/Processed/Reverse/VDX1 Hold Me Kit 139BPM SnareRoller R.wav
+2700:Ableton/User Library/Samples/Processed/Reverse/VFX2 Sweeps Long 03 R.wav
+2701:Ableton/User Library/Samples/Processed/Reverse/VFX2 Sweeps Long 07 R.wav
+2702:Ableton/User Library/Samples/Processed/Reverse/VFX2 Sweeps Long 14 R.wav
+2703:Ableton/User Library/Samples/Processed/Reverse/VFX2 Sweeps Long 20 R.wav
+2704:Ableton/User Library/Samples/Recorded/0001 10-Audio-1.aif
+2705:Ableton/User Library/Samples/Recorded/0001 10-Audio-2.aif
+2706:Ableton/User Library/Samples/Recorded/0001 10-Audio.aif
+2707:Ableton/User Library/Samples/Recorded/0001 11-Audio.wav
+2708:Ableton/User Library/Samples/Recorded/0001 12-Audio-1.wav
+2709:Ableton/User Library/Samples/Recorded/0001 19-Audio.aif
+2710:Ableton/User Library/Samples/Recorded/0001 20-Audio-2.wav
+2711:Ableton/User Library/Samples/Recorded/0001 20-Audio.aif
+2712:Ableton/User Library/Samples/Recorded/0001 22-Audio.aif
+2713:Ableton/User Library/Samples/Recorded/0001 24-Audio.aif
+2714:Ableton/User Library/Samples/Recorded/0001 26-Audio-1.wav
+2715:Ableton/User Library/Samples/Recorded/0001 26-Audio.wav
+2716:Ableton/User Library/Samples/Recorded/0001 27-Audio.aif
+2717:Ableton/User Library/Samples/Recorded/0001 3-Audio.aif
+2718:Ableton/User Library/Samples/Recorded/0001 31-Audio.aif
+2719:Ableton/User Library/Samples/Recorded/0001 32-Audio-1.aif
+2720:Ableton/User Library/Samples/Recorded/0001 35-Audio.aif
+2721:Ableton/User Library/Samples/Recorded/0001 4-Audio-1.aif
+2722:Ableton/User Library/Samples/Recorded/0001 4-Audio.aif
+2723:Ableton/User Library/Samples/Recorded/0001 5-Audio-1.aif
+2724:Ableton/User Library/Samples/Recorded/0001 5-Audio-2.aif
+2725:Ableton/User Library/Samples/Recorded/0001 5-Audio-3.aif
+2726:Ableton/User Library/Samples/Recorded/0001 5-Audio-4.aif
+2727:Ableton/User Library/Samples/Recorded/0001 5-Audio.aif
+2728:Ableton/User Library/Samples/Recorded/0001 5-Audio.wav
+2729:Ableton/User Library/Samples/Recorded/0001 56-Audio-1.wav
+2730:Ableton/User Library/Samples/Recorded/0001 6-Audio-1-1.aif
+2731:Ableton/User Library/Samples/Recorded/0001 6-Audio-1-2.aif
+2732:Ableton/User Library/Samples/Recorded/0001 6-Audio-1.aif
+2733:Ableton/User Library/Samples/Recorded/0001 6-Audio-2.aif
+2734:Ableton/User Library/Samples/Recorded/0001 6-Audio-3.aif
+2735:Ableton/User Library/Samples/Recorded/0001 6-Audio.aif
+2736:Ableton/User Library/Samples/Recorded/0001 6-Audio.wav
+2737:Ableton/User Library/Samples/Recorded/0001 7-Audio-1-1.aif
+2738:Ableton/User Library/Samples/Recorded/0001 7-Audio-1-2.aif
+2739:Ableton/User Library/Samples/Recorded/0001 7-Audio-1-3.aif
+2740:Ableton/User Library/Samples/Recorded/0001 7-Audio-1-4.aif
+2741:Ableton/User Library/Samples/Recorded/0001 7-Audio-1-5.aif
+2742:Ableton/User Library/Samples/Recorded/0001 7-Audio-1.aif
+2743:Ableton/User Library/Samples/Recorded/0001 7-Audio-2.aif
+2744:Ableton/User Library/Samples/Recorded/0001 7-Audio-3.aif
+2745:Ableton/User Library/Samples/Recorded/0001 7-Audio-4.aif
+2746:Ableton/User Library/Samples/Recorded/0001 7-Audio.aif
+2747:Ableton/User Library/Samples/Recorded/0001 8-Audio-1.aif
+2748:Ableton/User Library/Samples/Recorded/0001 8-Audio-2.aif
+2749:Ableton/User Library/Samples/Recorded/0001 8-Audio.aif
+2750:Ableton/User Library/Samples/Recorded/0001 8-Audio.wav
+2751:Ableton/User Library/Samples/Recorded/0001 9-Audio-1-1.wav
+2752:Ableton/User Library/Samples/Recorded/0001 9-Audio-1.wav
+2753:Ableton/User Library/Samples/Recorded/0001 9-Audio.wav
+2754:Ableton/User Library/Samples/Recorded/0001 Resample-1-1.wav
+2755:Ableton/User Library/Samples/Recorded/0001 Resample-1-2.wav
+2756:Ableton/User Library/Samples/Recorded/0001 Resample-1.wav
+2757:Ableton/User Library/Samples/Recorded/0001 Resample-2.wav
+2758:Ableton/User Library/Samples/Recorded/0001 Resample.wav
+2759:Ableton/User Library/Samples/Recorded/0001 vocals-3.aif
+2760:Ableton/User Library/Samples/Recorded/0002 11-Audio.aif
+2761:Ableton/User Library/Samples/Recorded/0002 20-Audio.wav
+2762:Ableton/User Library/Samples/Recorded/0002 23-Audio.aif
+2763:Ableton/User Library/Samples/Recorded/0002 24-Audio-1.wav
+2764:Ableton/User Library/Samples/Recorded/0002 3-Audio.aif
+2765:Ableton/User Library/Samples/Recorded/0002 4-Audio.aif
+2766:Ableton/User Library/Samples/Recorded/0002 6-Audio-1.aif
+2767:Ableton/User Library/Samples/Recorded/0002 6-Audio-3.aif
+2768:Ableton/User Library/Samples/Recorded/0002 6-Audio.aif
+2769:Ableton/User Library/Samples/Recorded/0002 66-Audio.wav
+2770:Ableton/User Library/Samples/Recorded/0002 7-Audio.wav
+2771:Ableton/User Library/Samples/Recorded/0002 8-Audio-1.aif
+2772:Ableton/User Library/Samples/Recorded/0002 8-Audio.wav
+2773:Ableton/User Library/Samples/Recorded/0002 Flanger Talks.aif
+2774:Ableton/User Library/Samples/Recorded/0002 Resample-1.wav
+2775:Ableton/User Library/Samples/Recorded/0002 Resample-2.wav
+2776:Ableton/User Library/Samples/Recorded/0002 Resample-3.wav
+2777:Ableton/User Library/Samples/Recorded/0002 Resample.wav
+2778:Ableton/User Library/Samples/Recorded/0002 reverse crash.aif
+2779:Ableton/User Library/Samples/Recorded/0003 10-Audio.aif
+2780:Ableton/User Library/Samples/Recorded/0003 11-Audio.aif
+2781:Ableton/User Library/Samples/Recorded/0003 13-Audio-1.wav
+2782:Ableton/User Library/Samples/Recorded/0003 20-Audio.wav
+2783:Ableton/User Library/Samples/Recorded/0003 3-Audio.aif
+2784:Ableton/User Library/Samples/Recorded/0003 4-Audio.aif
+2785:Ableton/User Library/Samples/Recorded/0003 5-Audio.aif
+2786:Ableton/User Library/Samples/Recorded/0003 Resample-1.wav
+2787:Ableton/User Library/Samples/Recorded/0003 Resample.wav
+2788:Ableton/User Library/Samples/Recorded/0004 10-Audio.aif
+2789:Ableton/User Library/Samples/Recorded/0004 13-Audio-1.wav
+2790:Ableton/User Library/Samples/Recorded/0004 16 noise down.aif
+2791:Ableton/User Library/Samples/Recorded/0004 20-Audio.wav
+2792:Ableton/User Library/Samples/Recorded/0004 9-Audio.wav
+2793:Ableton/User Library/Samples/Recorded/0005 10-Audio.aif
+2794:Ableton/User Library/Samples/Recorded/0005 16 noise down.aif
+2795:Ableton/User Library/Samples/Recorded/0005 20-Audio.wav
+2796:Ableton/User Library/Samples/Recorded/0005 9-Audio-1.aif
+2797:Ableton/User Library/Samples/Recorded/0005 vocal main-1.wav
+2798:Ableton/User Library/Samples/Recorded/0007 10-Audio.aif
+2799:Ableton/User Library/Samples/Recorded/0007 5-Audio.aif
+2800:Ableton/User Library/Samples/Recorded/0007 Resample.wav
+2801:Ableton/User Library/Samples/Recorded/0010 33-Audio.wav
+2802:Ableton/User Library/Samples/Recorded/0011 7-Audio.aif
+2803:Ableton/User Library/Samples/Recorded/0012 5-Audio.aif
+2804:Ableton/User Library/Samples/Recorded/Looper0001 E-Looper.aif
+2805:Ableton/User Library/Vengeance Electroshock 2/VES2 FX/VES2 FX Impact/VES2 FX Impact 65.wav
+2806:Ableton/User Library/Waveforms/Spectral/Spectral 21.wav
+2807:Cubase Projects/ASΩΩΩΩ - ReWire.aif
+2808:Cubase Projects/delay - Output.aif
+2809:Cubase Projects/distortloop - Output.aif
+2810:Cubase Projects/loopz - ReWire.aif
+2811:Cubase Projects/loopzmusic - ReWire.aif
+2812:Cubase Projects/newchordtrack1 - Output.aif
+2813:Cubase Projects/rvb - FX.aif
+2814:Cubase Projects/rvs rvb - Output.aif
+2815:Cubase Projects/Untitled-01/Audio/Bluezone-THDP-loop-1015-136.wav
+2816:Cubase Projects/Untitled-01/Audio/VEC4 Trance Kicks 78.wav
+2817:Cubase Projects/Untitled-02/Audio/00_mix_loop-140-xx-RAI-Loops003.wav
+2818:Cubase Projects/Untitled-02/Audio/delay - Output.aif
+2819:Cubase Projects/Untitled-02/Audio/distortloop - Output.aif
+2820:Cubase Projects/Untitled-02/Audio/newchordtrack.wav
+2821:Cubase Projects/Untitled-02/Audio/VEC4 Clubby Kicks 089.wav
+2822:Cubase Projects/Untitled-02/Audio/VEC4 Loops 001.wav
+2823:Cubase Projects/Untitled-02/Audio/VEC4 Loops 002.wav
+2824:Cubase Projects/Untitled-02/Audio/VEC4 Loops 003.wav
+2825:Cubase Projects/Untitled-02/Audio/VEC4 Loops 025.wav
+2826:Cubase Projects/Untitled-02/Audio/VEC4 Vocals 43.wav
+2827:Cubase Projects/Untitled-02/Edits/newchordtrack - Output-02.wav
+2828:Cubase Projects/Untitled-02/Edits/newchordtrack - Output.wav
+2829:Cubase Projects/Untitled-02/Edits/rvs rvb - Output.aif
+2830:Cubase Projects/Untitled-02/Edits/VEC4 Clubby Kicks 089-01.wav
+2831:Cubase Projects/Untitled-02/Edits/VEC4 Clubby Kicks 089.wav
+2832:Cubase Projects/Untitled-13/Audio/pitchdown - Output.aif
+2833:Cubase Projects/Untitled-13/Audio/rvb - FX.aif
+2834:Cubase Projects/Untitled-13/Audio/VEC4 Claps 025.wav
+2835:Cubase Projects/Untitled-13/Audio/VEC4 Clubby Kicks 021.wav
+2836:Cubase Projects/Untitled-13/Audio/VEC4 Electro Kicks 03.wav
+2837:Cubase Projects/Untitled-13/Audio/VEC4 Fills 004.wav
+2838:Cubase Projects/Untitled-13/Audio/VEC4 Fills 018.wav
+2839:Cubase Projects/Untitled-13/Audio/VEC4 Open HH 004.wav
+2840:Cubase Projects/Untitled-13/Audio/VEC4 Reverse Cym 02.wav
+2841:Cubase Projects/Untitled-13/Edits/pitchdown - Output-01.aif
+2842:Cubase Projects/Untitled-13/Edits/pitchdown - Output.aif
+2843:Cubase Projects/Untitled-13/Edits/rvb - FX-01.aif
+2844:Cubase Projects/Untitled-13/Edits/rvb - FX.aif
+2845:Cubase Projects/Untitled-13/Edits/VEC4 Reverse Cym 02-01.wav
+2846:Cubase Projects/Untitled-13/Edits/VEC4 Reverse Cym 02.wav
+2847:Cubase Projects/Untitled-15/Audio/VEC4 Electro Kicks 01.wav
+2848:Cubase Projects/Untitled-15/Audio/VEC4 Loops 002.wav
+2849:Cubase Projects/Untitled-15/Audio/VEC4 Loops 144.wav
+2850:Cubase Projects/Untitled-21/Audio/Bluezone-TTP-loop-1021-142.wav
+2851:Cubase Projects/Untitled-22/Audio/Bluezone-TTP-loop-1021-142.wav
+2852:Cubase Projects/Untitled-28/Audio/Bluezone-TTP-loop-1021-142.wav
+2853:Cubase Projects/Untitled-28/Audio/Bluezone-TTP-loop-2005-142.wav
+2854:Cubase Projects/Untitled-28/Audio/VEC4 Vocals 59.wav
+2855:Cubase Projects/Untitled-41/Audio/Bluezone-TTP-loop-1021-142.wav
+2856:Cubase Projects/Untitled-41/Audio/VEC4 Vocals 01.wav
+2857:Cubase Projects/Untitled-43/Audio/Bluezone-Hard-Techno-Sensation-Demo.wav
+2858:Cubase Projects/Untitled-45/Audio/Bluezone-HTS-loop-047-143.wav
+2859:Cubase Projects/Untitled-45/Audio/Bluezone-THDP-loop-3027-136.wav
+2860:Cubase Projects/Untitled-45/Audio/loopz - ReWire.aif
+2861:Cubase Projects/Untitled-45/Audio/loopzmusic - ReWire.aif
+2862:Cubase Projects/Untitled-45/Audio/VEC4 Claps 002.wav
+2863:Cubase Projects/Untitled-45/Audio/VEC4 Open HH 001.wav
+2864:Cubase Projects/Untitled-45/Audio/VEC4 Special Sounds 020 138BPM E.wav
+2865:Cubase Projects/Untitled-45/Audio/VEC4 Trance Kicks 03.wav
+2866:Cubase Projects/Untitled-46/Audio/ASΩΩΩΩ - Output.aif
+2867:Cubase Projects/Untitled-46/Audio/VEC4 Claps 003.wav
+2868:Cubase Projects/Untitled-46/Audio/VEC4 Closed HH 001.wav
+2869:Cubase Projects/Untitled-46/Audio/VEC4 Trance Kicks 07.wav
+2870:Kris Menace feat. Fred Falke - Fairlight-mNgVSqrSNWE.mp3
+2871:Digitalism - Apollo-Gize (Fred Falke Remix)-_ykDET9kLJI.mp3
+2872:Ableton/User Library/Samples/Imported/14sfx128 UT_at the beach_f_1.wav
+2873:Kris Menace feat. Fred Falke - Fairlight-mNgVSqrSNWE.mp3
 2874:Kris Menace feat. Fred Falke - Fairlight-mNgVSqrSNWE.mp3
-2875:Kris Menace feat. Fred Falke - Fairlight-mNgVSqrSNWE.mp3
+2875:Digitalism - Apollo-Gize (Fred Falke Remix)-_ykDET9kLJI.mp3
 2876:Digitalism - Apollo-Gize (Fred Falke Remix)-_ykDET9kLJI.mp3
-2877:Digitalism - Apollo-Gize (Fred Falke Remix)-_ykDET9kLJI.mp3
-2878:Kris Menace feat. Fred Falke - Fairlight-mNgVSqrSNWE.mp3
-2879:Digitalism - Apollo-Gize (Fred Falke Remix)-_ykDET9kLJI.mp3
-2880:Kris Menace feat. Fred Falke - Fairlight-mNgVSqrSNWE.mp3
-2881:Digitalism - Apollo-Gize (Fred Falke Remix)-_ykDET9kLJI.mp3
-2882:♫ Amazing Uplifting Trance Mix l May 2017 (Vol. 62)  ♫-sbf1q0igfks.mp3
-2883:Digitalism - Apollo-Gize (Fred Falke Remix)-_ykDET9kLJI.mp3
+2877:Kris Menace feat. Fred Falke - Fairlight-mNgVSqrSNWE.mp3
+2878:Digitalism - Apollo-Gize (Fred Falke Remix)-_ykDET9kLJI.mp3
+2879:Kris Menace feat. Fred Falke - Fairlight-mNgVSqrSNWE.mp3
+2880:Digitalism - Apollo-Gize (Fred Falke Remix)-_ykDET9kLJI.mp3
+2881:♫ Amazing Uplifting Trance Mix l May 2017 (Vol. 62)  ♫-sbf1q0igfks.mp3
+2882:Digitalism - Apollo-Gize (Fred Falke Remix)-_ykDET9kLJI.mp3
+2883:♫ Amazing Uplifting Trance Mix l May 2017 (Vol. 62)  ♫-sbf1q0igfks.mp3
 2884:♫ Amazing Uplifting Trance Mix l May 2017 (Vol. 62)  ♫-sbf1q0igfks.mp3
-2885:♫ Amazing Uplifting Trance Mix l May 2017 (Vol. 62)  ♫-sbf1q0igfks.mp3
+2885:Yoji Tech Dance Mix 3-bwZBumna5D8.mp3
 2886:Yoji Tech Dance Mix 3-bwZBumna5D8.mp3
 2887:Yoji Tech Dance Mix 3-bwZBumna5D8.mp3
 2888:Yoji Tech Dance Mix 3-bwZBumna5D8.mp3
-2889:Yoji Tech Dance Mix 3-bwZBumna5D8.mp3
-2890:Ableton/User Library/Samples/Imported/Open Hat 1.wav
+2889:Ableton/User Library/Samples/Imported/Open Hat 1.wav
+2890:Yoji Tech Dance Mix 3-bwZBumna5D8.mp3
 2891:Yoji Tech Dance Mix 3-bwZBumna5D8.mp3
-2892:Yoji Tech Dance Mix 3-bwZBumna5D8.mp3
-2893:Kris Menace feat. Fred Falke - Fairlight-mNgVSqrSNWE.mp3
+2892:Kris Menace feat. Fred Falke - Fairlight-mNgVSqrSNWE.mp3
+2893:Yoji Tech Dance Mix 3-bwZBumna5D8.mp3
 2894:Yoji Tech Dance Mix 3-bwZBumna5D8.mp3
 2895:Yoji Tech Dance Mix 3-bwZBumna5D8.mp3
-2896:Yoji Tech Dance Mix 3-bwZBumna5D8.mp3
+2896:Kris Menace feat. Fred Falke - Fairlight-mNgVSqrSNWE.mp3
 2897:Kris Menace feat. Fred Falke - Fairlight-mNgVSqrSNWE.mp3
-2898:Kris Menace feat. Fred Falke - Fairlight-mNgVSqrSNWE.mp3
+2898:Yoji Tech Dance Mix 3-bwZBumna5D8.mp3
 2899:Yoji Tech Dance Mix 3-bwZBumna5D8.mp3
 2900:Yoji Tech Dance Mix 3-bwZBumna5D8.mp3
-2901:Yoji Tech Dance Mix 3-bwZBumna5D8.mp3
+2901:Kris Menace feat. Fred Falke - Fairlight-mNgVSqrSNWE.mp3
 2902:Kris Menace feat. Fred Falke - Fairlight-mNgVSqrSNWE.mp3
-2903:Kris Menace feat. Fred Falke - Fairlight-mNgVSqrSNWE.mp3
-2904:Digitalism - Apollo-Gize (Fred Falke Remix)-_ykDET9kLJI.mp3
-2905:Yoji Tech Dance Mix 3-bwZBumna5D8.mp3
-2906:Kris Menace feat. Fred Falke - Fairlight-mNgVSqrSNWE.mp3
+2903:Digitalism - Apollo-Gize (Fred Falke Remix)-_ykDET9kLJI.mp3
+2904:Yoji Tech Dance Mix 3-bwZBumna5D8.mp3
+2905:Kris Menace feat. Fred Falke - Fairlight-mNgVSqrSNWE.mp3
+2906:Yoji Tech Dance Mix 3-bwZBumna5D8.mp3
 2907:Yoji Tech Dance Mix 3-bwZBumna5D8.mp3
 2908:Yoji Tech Dance Mix 3-bwZBumna5D8.mp3
 2909:Yoji Tech Dance Mix 3-bwZBumna5D8.mp3
 2910:Yoji Tech Dance Mix 3-bwZBumna5D8.mp3
 2911:Yoji Tech Dance Mix 3-bwZBumna5D8.mp3
-2912:Yoji Tech Dance Mix 3-bwZBumna5D8.mp3
-2913:Digitalism - Apollo-Gize (Fred Falke Remix)-_ykDET9kLJI.mp3
-2914:Kris Menace feat. Fred Falke - Fairlight-mNgVSqrSNWE.mp3
-2915:Yoji Tech Dance Mix 3-bwZBumna5D8.mp3
-2916:Ableton/User Library/Samples/Imported/ATE Construction Kit - 001 - 138 BPM - Basslines.wav
-2917:Ableton/User Library/Samples/Imported/ATE FX One Shot - 038.wav
-2918:Ableton/User Library/Samples/Imported/ATE FX One Shot - 043.wav
-2919:Ableton/User Library/Samples/Imported/ATE Percussion - 101.wav
-2920:Ableton/User Library/Samples/Imported/ATE Percussion - 102.wav
-2921:Ableton/User Library/Samples/Imported/ATE Percussion - 103.wav
-2922:Ableton/User Library/Samples/Imported/ATE Percussion - 104.wav
-2923:Ableton/User Library/Samples/Imported/ATE Percussion - 105.wav
-2924:Ableton/User Library/Samples/Imported/ATE Percussion - 106.wav
-2925:Ableton/User Library/Samples/Imported/ATE Percussion - 107.wav
-2926:Ableton/User Library/Samples/Imported/ATE Percussion - 108.wav
-2927:Ableton/User Library/Samples/Imported/ATE Percussion - 109.wav
-2928:Ableton/User Library/Samples/Imported/ATE Percussion - 110.wav
-2929:Ableton/User Library/Samples/Imported/ATE Percussion - 111.wav
-2930:Ableton/User Library/Samples/Imported/ATE Percussion - 112.wav
-2931:Ableton/User Library/Samples/Imported/ATE Percussion - 113.wav
-2932:Ableton/User Library/Samples/Imported/ATE Percussion - 114.wav
-2933:Ableton/User Library/Samples/Imported/ATE Percussion - 115.wav
-2934:Ableton/User Library/Samples/Imported/ATE Percussion - 116.wav
-2935:Ableton/User Library/Samples/Imported/ATE Percussion - 117.wav
-2936:Ableton/User Library/Samples/Imported/ATE Percussion - 118.wav
-2937:Ableton/User Library/Samples/Imported/ATE Percussion - 119.wav
-2938:Ableton/User Library/Samples/Imported/ATE Percussion - 120.wav
-2939:Ableton/User Library/Samples/Imported/ATE Percussion - 121.wav
-2940:Ableton/User Library/Samples/Imported/ATE Percussion - 122.wav
-2941:Ableton/User Library/Samples/Imported/ATE Percussion - 123.wav
-2942:Ableton/User Library/Samples/Imported/ATE Percussion - 124.wav
-2943:Ableton/User Library/Samples/Imported/ATE Percussion - 125.wav
-2944:Ableton/User Library/Samples/Imported/ATE Percussion - 126.wav
-2945:Ableton/User Library/Samples/Imported/ATE Percussion - 127.wav
-2946:Ableton/User Library/Samples/Imported/ATE Percussion - 128.wav
+2912:Digitalism - Apollo-Gize (Fred Falke Remix)-_ykDET9kLJI.mp3
+2913:Kris Menace feat. Fred Falke - Fairlight-mNgVSqrSNWE.mp3
+2914:Yoji Tech Dance Mix 3-bwZBumna5D8.mp3
+2915:Ableton/User Library/Samples/Imported/ATE Construction Kit - 001 - 138 BPM - Basslines.wav
+2916:Ableton/User Library/Samples/Imported/ATE FX One Shot - 038.wav
+2917:Ableton/User Library/Samples/Imported/ATE FX One Shot - 043.wav
+2918:Ableton/User Library/Samples/Imported/ATE Percussion - 101.wav
+2919:Ableton/User Library/Samples/Imported/ATE Percussion - 102.wav
+2920:Ableton/User Library/Samples/Imported/ATE Percussion - 103.wav
+2921:Ableton/User Library/Samples/Imported/ATE Percussion - 104.wav
+2922:Ableton/User Library/Samples/Imported/ATE Percussion - 105.wav
+2923:Ableton/User Library/Samples/Imported/ATE Percussion - 106.wav
+2924:Ableton/User Library/Samples/Imported/ATE Percussion - 107.wav
+2925:Ableton/User Library/Samples/Imported/ATE Percussion - 108.wav
+2926:Ableton/User Library/Samples/Imported/ATE Percussion - 109.wav
+2927:Ableton/User Library/Samples/Imported/ATE Percussion - 110.wav
+2928:Ableton/User Library/Samples/Imported/ATE Percussion - 111.wav
+2929:Ableton/User Library/Samples/Imported/ATE Percussion - 112.wav
+2930:Ableton/User Library/Samples/Imported/ATE Percussion - 113.wav
+2931:Ableton/User Library/Samples/Imported/ATE Percussion - 114.wav
+2932:Ableton/User Library/Samples/Imported/ATE Percussion - 115.wav
+2933:Ableton/User Library/Samples/Imported/ATE Percussion - 116.wav
+2934:Ableton/User Library/Samples/Imported/ATE Percussion - 117.wav
+2935:Ableton/User Library/Samples/Imported/ATE Percussion - 118.wav
+2936:Ableton/User Library/Samples/Imported/ATE Percussion - 119.wav
+2937:Ableton/User Library/Samples/Imported/ATE Percussion - 120.wav
+2938:Ableton/User Library/Samples/Imported/ATE Percussion - 121.wav
+2939:Ableton/User Library/Samples/Imported/ATE Percussion - 122.wav
+2940:Ableton/User Library/Samples/Imported/ATE Percussion - 123.wav
+2941:Ableton/User Library/Samples/Imported/ATE Percussion - 124.wav
+2942:Ableton/User Library/Samples/Imported/ATE Percussion - 125.wav
+2943:Ableton/User Library/Samples/Imported/ATE Percussion - 126.wav
+2944:Ableton/User Library/Samples/Imported/ATE Percussion - 127.wav
+2945:Ableton/User Library/Samples/Imported/ATE Percussion - 128.wav
 playlist_end

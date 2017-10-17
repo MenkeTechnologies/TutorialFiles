@@ -94,6 +94,8 @@ addHeader	createTextFile.sh	/^addHeader(){$/;"	f
 addHeader	templater.sh	/^addHeader(){$/;"	f
 address	uploadWebDS.sh	/^address="jacobmenke@$IP:\/var\/services\/web"$/;"	v
 address	uploadWebPi.sh	/^address="pi@$ip:\/var\/www\/html"$/;"	v
+amPm	test.sh	/^    amPm="PM"$/;"	v
+amPm	test.sh	/^amPm="AM"$/;"	v
 animate	customTerminalInstaller/.shell_aliases_functions.sh	/^animate(){$/;"	f
 animate	macOnly/.shell_aliases_functions.sh	/^animate(){$/;"	f
 arr	listAllCommands.sh	/^arr=()$/;"	v
@@ -245,6 +247,8 @@ home_dir	duplicateLineDeleter.sh	/^home_dir=$HOME$/;"	v
 home_dir	indenterAndDuplicateLineDeleter.sh	/^home_dir=$HOME$/;"	v
 host	macOnly/rsyncr.sh	/^host="r"$/;"	v
 host	rsyncr.sh	/^host="r"$/;"	v
+hour	test.sh	/^    hour=$((hour - 12))$/;"	v
+hour	test.sh	/^hour=$(date | tr -s ' ' | cut -d ' ' -f4 | cut -d ':' -f1)$/;"	v
 htopDIR	customTerminalInstaller/install.sh	/^htopDIR="$HOME\/.config\/htop"$/;"	v
 hub_create	customTerminalInstaller/.shell_aliases_functions.sh	/^    hub_create(){$/;"	f
 hub_create	macOnly/.shell_aliases_functions.sh	/^hub_create(){$/;"	f
@@ -282,6 +286,7 @@ master	rpiDownloader.sh	/^master="jacobmenke"$/;"	v
 member_1	textmessage.sh	/^    member_1=5551113333$/;"	v
 messageToSpeak	macOnly/say.sh	/^messageToSpeak=""$/;"	v
 messageToSpeak	say.sh	/^messageToSpeak=""$/;"	v
+minute	test.sh	/^minute=$(date | tr -s ' ' | cut -d ' ' -f4 | cut -d ':' -f2)$/;"	v
 mp3	customTerminalInstaller/.shell_aliases_functions.sh	/^    mp3(){$/;"	f
 mp3	macOnly/.shell_aliases_functions.sh	/^mp3(){$/;"	f
 mp4	customTerminalInstaller/.shell_aliases_functions.sh	/^    mp4(){$/;"	f

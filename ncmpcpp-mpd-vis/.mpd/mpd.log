@@ -14066,3 +14066,17 @@ Oct 13 08:37 : client: [1] closed
 Oct 13 08:53 : ffmpeg/mp3: Could not update timestamps for discarded samples.
 Oct 13 08:53 : player: played "Yoji Tech Dance Mix 3-bwZBumna5D8.mp3"
 Oct 13 16:36 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Oct 15 18:19 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Oct 15 18:19 : client: [4] opened from 127.0.0.1:56873
+Oct 15 20:17 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Oct 15 20:17 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Oct 15 20:17 : player: played "Yoji Tech Dance Mix 3-bwZBumna5D8.mp3"
+Oct 16 00:34 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Oct 16 00:34 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Oct 16 00:35 : player: played "Yoji Tech Dance Mix 3-bwZBumna5D8.mp3"
+Oct 16 00:41 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Oct 16 00:41 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Oct 16 00:41 : player: played "Digitalism - Apollo-Gize (Fred Falke Remix)-_ykDET9kLJI.mp3"
+Oct 16 00:50 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Oct 16 00:50 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Oct 16 00:50 : player: played "Kris Menace feat. Fred Falke - Fairlight-mNgVSqrSNWE.mp3"

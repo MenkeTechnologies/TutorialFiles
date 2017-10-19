@@ -333,7 +333,7 @@ outputDir	rpiDownloader.sh	/^outputDir="Desktop"$/;"	v
 pass_count	secureDelete.sh	/^    pass_count=1$/;"	v
 passes	secureDelete.sh	/^passes=7         #  Number of file-shredding passes.$/;"	v
 path	shebangChanger.sh	/^path="#!\/usr\/bin\/env $executableProgram"$/;"	v
-perlOutdated	updater.sh	/^    perlOutdated=$(cpan-outdated -p)$/;"	v
+perlOutdated	updater.sh	/^    perlOutdated=$(cpan-outdated -p -L "$PERL5LIB")$/;"	v
 pid	fsWatchLongRunning.sh	/^            pid=$!$/;"	v
 pid	fsWatchLongRunning.sh	/^        pid=$!$/;"	v
 pion	macOnly/.shell_aliases_functions.sh	/^pion (){$/;"	f

@@ -1,13 +1,15 @@
+#!/usr/bin/env bash
+#{{{                    MARK:Header
+#**************************************************************
+#####   Author: JACOBMENKE
+#####   Date: Wed Oct 18 18:50:38 EDT 2017
+#####   Purpose: bash script to 
+#####   Notes: 
+#}}}***********************************************************
 
-echo "my first ag is $0"
-echo "my second ag is $1"
+exec >&2
+ls
+id
+pwd
 
-echo "my args are $*"
-
-echo the dogs
-
-
-read name
-
-
-say "$name"
+exec 2> >(blueText.sh)

@@ -14081,3 +14081,9 @@ Oct 16 00:50 : ffmpeg/mp3: Could not update timestamps for discarded samples.
 Oct 16 00:50 : ffmpeg/mp3: Could not update timestamps for skipped samples.
 Oct 16 00:50 : player: played "Kris Menace feat. Fred Falke - Fairlight-mNgVSqrSNWE.mp3"
 Oct 17 22:54 : player: played "Yoji Tech Dance Mix 3-bwZBumna5D8.mp3"
+Oct 20 02:19 : config: inotify: auto_update was disabled. enable during compilation phase
+Oct 20 02:19 : config: option 'enabled' on line 29 was not recognized
+Oct 20 02:19 : client: [0] opened from 127.0.0.1:57214
+Oct 20 02:19 : client: [1] opened from 127.0.0.1:57220
+Oct 20 02:20 : client: [2] opened from 127.0.0.1:57241
+Oct 20 02:20 : ffmpeg/mp3: Could not update timestamps for skipped samples.

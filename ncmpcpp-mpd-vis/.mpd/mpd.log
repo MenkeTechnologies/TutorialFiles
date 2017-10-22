@@ -14142,3 +14142,11 @@ Oct 20 03:37 : client: [6] closed
 Oct 20 03:37 : client: [7] opened from 127.0.0.1:64578
 Oct 20 03:37 : client: [7] closed
 Oct 20 22:26 : player: played "♫ Amazing Uplifting Trance Mix l May 2017 (Vol. 62)  ♫-sbf1q0igfks.mp3"
+Oct 21 20:18 : config: inotify: auto_update was disabled. enable during compilation phase
+Oct 21 20:18 : config: option 'enabled' on line 29 was not recognized
+Oct 21 20:18 : client: [0] opened from 127.0.0.1:65478
+Oct 21 20:18 : client: [1] opened from 127.0.0.1:65480
+Oct 21 20:19 : client: [2] opened from 127.0.0.1:49153
+Oct 21 20:19 : player: played "Ableton/User Library/Samples/Imported/ATE Closed Hat - 022.wav"
+Oct 21 20:19 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Oct 21 20:19 : ffmpeg/mp3: Could not update timestamps for skipped samples.

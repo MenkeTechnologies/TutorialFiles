@@ -252,6 +252,7 @@ hub_delete	customTerminalInstaller/.shell_aliases_functions.sh	/^    hub_delete(
 hub_delete	macOnly/.shell_aliases_functions.sh	/^hub_delete(){$/;"	f
 humanReadable	customTerminalInstaller/.shell_aliases_functions.sh	/^humanReadable(){$/;"	f
 humanReadable	macOnly/.shell_aliases_functions.sh	/^humanReadable(){$/;"	f
+if	test.sh	/^if (){$/;"	f
 initializeGitDirectory	gitgo.sh	/^initializeGitDirectory(){$/;"	f
 install	tgzLocalInstaller.sh	/^install(){$/;"	f
 installGitHubPlugin	customTerminalInstaller/tmux_plugins_install.sh	/^installGitHubPlugin(){$/;"	f
@@ -311,7 +312,6 @@ optstring	mywatch.sh	/^optstring=dh$/;"	v
 orig	customTerminalInstaller/.shell_aliases_functions.sh	/^        orig="$1"$/;"	v
 orig	macOnly/.shell_aliases_functions.sh	/^    orig="$1"$/;"	v
 origin	gitgo.sh	/^    local origin="$(git remote -v | awk '{print $1}' | tail -1 | tr -d ' ')"$/;"	v
-os	test.py	/^import os$/;"	i
 out	customTerminalInstaller/.shell_aliases_functions.sh	/^        out="$(curl -u menketechnologies -X "DELETE" https:\/\/api.github.com\/repos\/menketechnologies\/"$REPO")"$/;"	v
 out	inotifyWatchLogAndEmailIfNAS.sh	/^    out=$(tail -1 "$file" | grep "nas")$/;"	v
 out	macOnly/.shell_aliases_functions.sh	/^    out="$(curl -u menketechnologies -X "DELETE" https:\/\/api.github.com\/repos\/menketechnologies\/"$REPO")"$/;"	v
@@ -418,11 +418,9 @@ startCursor	secureDelete.sh	/^startCursor(){$/;"	f
 string	openAll.sh	/^    string=""$/;"	v
 suc	customTerminalInstaller/.shell_aliases_functions.sh	/^suc(){$/;"	f
 suc	macOnly/.shell_aliases_functions.sh	/^suc(){$/;"	f
-suckers	test.py	/^def suckers():$/;"	f
 sum	listAllCommands.sh	/^sum=0$/;"	v
 sum	sortedArrayCounter.sh	/^sum=0$/;"	v
 summarizeSizes	directoryContentsSize.sh	/^summarizeSizes(){$/;"	f
-sys	test.py	/^import sys$/;"	i
 tac	customTerminalInstaller/.shell_aliases_functions.sh	/^    tac(){$/;"	f
 tac	macOnly/.shell_aliases_functions.sh	/^tac(){$/;"	f
 tail	shebangChanger.sh	/^        tail=$(cat "$file")$/;"	v
@@ -437,6 +435,7 @@ timeToSleep	myWatchNoBlinkColorized.sh	/^    timeToSleep=$2$/;"	v
 timeToSleep	myWatchNoBlinkColorized.sh	/^    timeToSleep=0.5$/;"	v
 title	customTerminalInstaller/.shell_aliases_functions.sh	/^    title="$1"$/;"	v
 title	macOnly/.shell_aliases_functions.sh	/^    title="$1"$/;"	v
+tom	test.sh	/^tom=1245214124125125$/;"	v
 topline	animation	/^topline=0$/;"	v
 total	oldCounter.sh	/^total=0$/;"	v
 total	oldCounter.sh	/^total=`expr $(ls -F $1 | grep ".*[*@]" | wc -l) + $total`$/;"	v
@@ -463,6 +462,7 @@ weHaveCCZE	colorLogger.sh	/^weHaveCCZE=no$/;"	v
 weHaveCCZE	colorLogger.sh	/^weHaveCCZE=yes$/;"	v
 websiteDir	macOnly/tutorialConfigUpdater.sh	/^websiteDir="$HOME\/WebstormProjects\/PersonalWebsite"$/;"	v
 x	mywatch.sh	/^    x=$(eval "$1")$/;"	v
-x	test.py	/^x=5$/;"	v
+x	test.sh	/^x=$(${tom} + 5235)$/;"	v
+x	test.sh	/^x=5$/;"	v
 xf	customTerminalInstaller/.shell_aliases_functions.sh	/^        xf=(s==" B  ")?"%5d   ":"%8.2f"$/;"	v
 xf	macOnly/.shell_aliases_functions.sh	/^        xf=(s==" B  ")?"%5d   ":"%8.2f"$/;"	v

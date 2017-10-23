@@ -14150,3 +14150,151 @@ Oct 21 20:19 : client: [2] opened from 127.0.0.1:49153
 Oct 21 20:19 : player: played "Ableton/User Library/Samples/Imported/ATE Closed Hat - 022.wav"
 Oct 21 20:19 : ffmpeg/mp3: Could not update timestamps for skipped samples.
 Oct 21 20:19 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Oct 21 21:40 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Oct 21 21:40 : player: played "♫ Amazing Uplifting Trance Mix l May 2017 (Vol. 62)  ♫-sbf1q0igfks.mp3"
+Oct 21 21:40 : player: played "Ableton/User Library/Samples/Imported/bass_loop10.wav"
+Oct 21 21:40 : player: played "Ableton/User Library/Samples/Imported/Bass_Hit_A2_Niche_lm.wav"
+Oct 21 21:40 : player: played "Ableton/User Library/Samples/Imported/Bass_Hit_A2_Niche_lm.wav"
+Oct 21 21:41 : player: played "Ableton/User Library/Samples/Imported/Bass_F#3_Niche_osf-1.wav"
+Oct 21 21:41 : player: played "Ableton/User Library/Samples/Imported/Bass_D#3_Niche_osf-1.wav"
+Oct 21 21:41 : player: played "Ableton/User Library/Samples/Imported/ATE Closed Hat - 022.wav"
+Oct 21 21:41 : player: played "Ableton/User Library/Samples/Imported/Bass_C2_Niche_osf-1.wav"
+Oct 21 21:41 : player: played "Ableton/User Library/Samples/Imported/Bass_C2_Niche_osf-1.wav"
+Oct 21 21:41 : player: played "Ableton/User Library/Samples/Imported/ATE Closed Hat - 018.wav"
+Oct 21 21:41 : player: played "Ableton/User Library/Samples/Imported/ATE Closed Hat - 018.wav"
+Oct 21 21:41 : player: played "Ableton/User Library/Samples/Imported/DTD CYMBALS-36.wav"
+Oct 21 21:41 : player: played "Ableton/User Library/Samples/Imported/DTD CYMBALS-32.wav"
+Oct 21 21:41 : player: played "Ableton/User Library/Samples/Imported/DTD CYMBALS-32.wav"
+Oct 21 21:41 : player: played "Ableton/User Library/Samples/Imported/DTD CYMBALS-3.wav"
+Oct 21 21:41 : player: played "Ableton/User Library/Samples/Imported/DTD KICK-108.wav"
+Oct 21 21:41 : player: played "Ableton/User Library/Samples/Imported/DTD KICK-108.wav"
+Oct 21 21:41 : player: played "Ableton/User Library/Samples/Imported/DTD KICK-115.wav"
+Oct 21 21:41 : player: played "Ableton/User Library/Samples/Imported/nd_snare_boomy.wav"
+Oct 21 21:41 : player: played "Ableton/User Library/Samples/Imported/nd_snare_boomy.wav"
+Oct 21 21:41 : player: played "Ableton/User Library/Samples/Imported/nd_snare_basic707.wav"
+Oct 21 21:41 : ffmpeg: Unsupported libavcodec SampleFormat value: u8        8  (0)
+Oct 21 21:41 : exception: Failed to decode Ableton/User Library/Samples/Imported/next_level.wav
+Oct 21 21:41 : player: played "Ableton/User Library/Samples/Imported/nd_bs120_armani1_Gm.aiff"
+Oct 21 21:41 : player: played "Ableton/User Library/Samples/Imported/next_level.wav"
+Oct 21 21:41 : player: played "Ableton/User Library/Samples/Imported/Noise Click.wav"
+Oct 21 21:41 : player: played "Ableton/User Library/Samples/Imported/Pedal_Hihat_Niche_osf.wav"
+Oct 21 21:41 : player: played "Ableton/User Library/Samples/Imported/PFX 01.wav"
+Oct 21 21:41 : player: played "Ableton/User Library/Samples/Imported/Porters kick.wav"
+Oct 21 21:41 : player: played "Ableton/User Library/Samples/Imported/reverb crach wo SC.wav"
+Oct 21 21:41 : player: played "Ableton/User Library/Samples/Imported/SClap 02.wav"
+Oct 21 21:41 : player: played "Ableton/User Library/Samples/Imported/SH-09 Note   10 Classic Bass  C.wav"
+Oct 21 21:42 : player: played "Ableton/User Library/Samples/Imported/SLSE Atmosphere - 058 - C#.wav"
+Oct 21 21:42 : player: played "Ableton/User Library/Samples/Processed/Consolidate/01lft120_UFX_8 bars_high-1.wav"
+Oct 21 21:42 : player: played "Ableton/User Library/Samples/Processed/Consolidate/Alex Fisher -  White Sunshine (Right Mix).wav"
+Oct 21 21:42 : player: played "Ableton/User Library/Samples/Processed/Consolidate/Alex Fisher -  White Sunshine (Right Mix).wav"
+Oct 21 21:42 : player: played "Ableton/User Library/Samples/Processed/Consolidate/Alex Fisher -  White Sunshine (Right Mix).wav"
+Oct 21 21:42 : player: played "Ableton/User Library/Samples/Processed/Consolidate/ATE Crash Cymbal - 001-1.aif"
+Oct 21 21:42 : player: played "Ableton/User Library/Samples/Processed/Consolidate/ATE FX Loop - 006 - 134 BPM - A#m.aif"
+Oct 21 21:43 : player: played "Ableton/User Library/Samples/Processed/Consolidate/ATE Percussion FX - 001.aif"
+Oct 21 21:43 : player: played "Ableton/User Library/Samples/Processed/Consolidate/Atmos-2.aif"
+Oct 21 21:43 : player: played "Ableton/User Library/Samples/Processed/Consolidate/Boom.wav"
+Oct 21 21:43 : player: played "Ableton/User Library/Samples/Processed/Consolidate/Boom1.wav"
+Oct 21 21:43 : player: played "Ableton/User Library/Samples/Processed/Consolidate/BOOM2.wav"
+Oct 21 21:43 : player: played "Ableton/User Library/Samples/Processed/Consolidate/Brand new Kick.wav"
+Oct 21 21:43 : player: played "Ableton/User Library/Samples/Processed/Consolidate/clap (var).wav"
+Oct 21 21:43 : player: played "Ableton/User Library/Samples/Processed/Crop/Mark Sherry vs. Dr Willis -  Celsius 39 (Original Mix)-7.wav"
+Oct 21 21:43 : player: played "Ableton/User Library/Samples/Processed/Crop/Mark Sherry vs. Dr Willis -  Celsius 39 (Original Mix)-7.wav"
+Oct 21 21:43 : player: played "Ableton/User Library/Samples/Processed/Crop/Mark Sherry vs. Dr Willis -  Celsius 39 (Original Mix)-4.wav"
+Oct 21 21:43 : player: played "Ableton/User Library/Samples/Processed/Crop/Mark Sherry vs. Dr Willis -  Celsius 39 (Original Mix)-3.wav"
+Oct 21 21:43 : player: played "Ableton/User Library/Samples/Processed/Crop/Mark Sherry Vs James Allen -  Mindset (Original Mix) clap pre.wav"
+Oct 21 21:44 : player: played "Ableton/User Library/Samples/Processed/Crop/Lens - Dusk Till Dawn (Stalker Remix).wav"
+Oct 21 21:44 : player: played "Ableton/User Library/Samples/Processed/Crop/J Khobb - Summer Eyes.wav"
+Oct 21 21:44 : player: played "Ableton/User Library/Samples/Processed/Crop/J Khobb - Summer Eyes.wav"
+Oct 21 21:44 : player: played "Ableton/User Library/Samples/Processed/Crop/Geck-E - Soul Train-4.wav"
+Oct 21 21:44 : player: played "Ableton/User Library/Samples/Processed/Crop/Geck-E - Soul Train-3.wav"
+Oct 21 21:44 : player: played "Ableton/User Library/Samples/Processed/Crop/Geck-E - Soul Train-2.wav"
+Oct 21 21:44 : player: played "Ableton/User Library/Samples/Processed/Crop/Geck-E - Soul Train-1.wav"
+Oct 21 21:44 : player: played "Ableton/User Library/Samples/Processed/Crop/Geck-E - Soul Train-1.wav"
+Oct 21 21:44 : player: played "Ableton/User Library/Samples/Processed/Crop/Geck-E - Soul Train-1.wav"
+Oct 21 21:44 : player: played "Ableton/User Library/Samples/Processed/Crop/Geck-E - Soul Train-1.wav"
+Oct 21 21:44 : player: played "Ableton/User Library/Samples/Processed/Crop/Geck-E - Soul Train-1.wav"
+Oct 21 21:44 : player: played "Ableton/User Library/Samples/Processed/Crop/Geck-E - Soul Train-1.wav"
+Oct 21 21:44 : player: played "Ableton/User Library/Samples/Processed/Crop/Geck-E - Soul Train dist acid.wav"
+Oct 21 21:44 : player: played "Ableton/User Library/Samples/Processed/Crop/Geck-E - Soul Train dist acid.wav"
+Oct 21 21:44 : player: played "Ableton/User Library/Samples/Processed/Crop/Fei Fei -  Semi-Automatic (Original Mix).wav"
+Oct 21 21:44 : player: played "Ableton/User Library/Samples/Processed/Crop/Elevation -  Blinding Truth (Original Mix).wav"
+Oct 21 21:44 : player: played "Ableton/User Library/Samples/Processed/Crop/Elevation -  Blinding Truth (Original Mix).wav"
+Oct 21 21:44 : player: played "Ableton/User Library/Samples/Processed/Crop/Bryan Kearney - Punchline (Original Mix).wav"
+Oct 21 21:44 : player: played "Ableton/User Library/Samples/Processed/Crop/Bryan Kearney - Punchline (Original Mix)-1.wav"
+Oct 21 21:44 : player: played "Ableton/User Library/Samples/Processed/Crop/Axel Karakasis - Back Down (Original Mix).wav"
+Oct 21 21:44 : player: played "Ableton/User Library/Samples/Processed/Crop/Avenger -  Music Box.wav"
+Oct 21 21:44 : player: played "Ableton/User Library/Samples/Processed/Crop/Adymus -  Kaleidoscope Eyes (Original Mix)-3.wav"
+Oct 21 21:44 : player: played "Ableton/User Library/Samples/Processed/Crop/Adymus -  Kaleidoscope Eyes (Original Mix)-3.wav"
+Oct 21 21:45 : player: played "Ableton/User Library/Samples/Processed/Crop/Adymus -  Kaleidoscope Eyes (Original Mix)-3.wav"
+Oct 21 21:45 : player: played "Ableton/User Library/Samples/Processed/Crop/Alexey Omen -  Halls Creek (Tucandeo Remix).wav"
+Oct 21 21:45 : player: played "Ableton/User Library/Samples/Processed/Crop/5176827_Nature_of_Reality_Original_Mix.wav"
+Oct 21 21:45 : player: played "Ableton/User Library/Samples/Processed/Crop/5176827_Nature_of_Reality_Original_Mix-3.wav"
+Oct 21 21:45 : player: played "Ableton/User Library/Samples/Processed/Crop/5176827_Nature_of_Reality_Original_Mix-1.wav"
+Oct 21 21:45 : player: played "Ableton/User Library/Samples/Processed/Crop/5176827_Nature_of_Reality_Original_Mix-3.wav"
+Oct 21 21:45 : player: played "Ableton/User Library/Samples/Processed/Crop/5176827_Nature_of_Reality_Original_Mix-3.wav"
+Oct 21 21:45 : player: played "Ableton/User Library/Samples/Processed/Crop/3rd Moon Kick.wav"
+Oct 21 21:45 : player: played "Ableton/User Library/Samples/Processed/Crop/3rd Moon -  Monsun.wav"
+Oct 21 21:45 : player: played "Ableton/User Library/Samples/Processed/Crop/3rd Moon -  Monsun-1.wav"
+Oct 21 21:45 : player: played "Ableton/User Library/Samples/Processed/Crop/3rd Moon -  Monsun-1.wav"
+Oct 21 21:45 : player: played "Ableton/User Library/Samples/Processed/Crop/3rd Moon -  Monsun-1.wav"
+Oct 21 21:45 : player: played "Ableton/User Library/Samples/Processed/Crop/3rd Moon -  Monsun-1.wav"
+Oct 21 21:45 : player: played "Ableton/User Library/Samples/Processed/Crop/3rd Moon -  Monsun-1.wav"
+Oct 21 21:45 : player: played "Ableton/User Library/Samples/Processed/Crop/3rd Moon -  Monsun-1.wav"
+Oct 21 21:45 : player: played "Ableton/User Library/Samples/Processed/Crop/3rd Moon -  Monsun-1.wav"
+Oct 21 21:45 : player: played "Ableton/User Library/Samples/Processed/Crop/3 Resample.wav"
+Oct 21 21:45 : player: played "Ableton/User Library/Samples/Processed/Crop/3 Resample-1.wav"
+Oct 21 21:45 : player: played "Ableton/User Library/Samples/Processed/Crop/3 Hahah evil.aif"
+Oct 21 21:45 : player: played "Ableton/User Library/Samples/Processed/Crop/3 6-Audio.aif"
+Oct 21 21:46 : player: played "Ableton/User Library/Samples/Processed/Crop/3 6-Audio.aif"
+Oct 21 21:46 : player: played "Ableton/User Library/Samples/Processed/Crop/3 6-Audio.aif"
+Oct 21 21:46 : player: played "Ableton/User Library/Samples/Processed/Crop/2 9-Audio.wav"
+Oct 21 21:46 : player: played "Ableton/User Library/Samples/Processed/Crop/2 8-Audio.wav"
+Oct 21 21:46 : player: played "Ableton/User Library/Samples/Processed/Crop/2 6-Audio-2.aif"
+Oct 21 21:46 : player: played "Ableton/User Library/Samples/Processed/Crop/1 Resample.wav"
+Oct 21 21:46 : player: played "Ableton/User Library/Samples/Processed/Crop/2 6-Audio-2.aif"
+Oct 21 21:46 : player: played "Ableton/User Library/Samples/Processed/Crop/1 6-Audio.wav"
+Oct 21 21:46 : player: played "Ableton/User Library/Samples/Processed/Crop/02 The Getaway (Polarstate Remix)-1.wav"
+Oct 21 21:46 : player: played "Ableton/User Library/Samples/Processed/Crop/0001 4-Audio.aif"
+Oct 21 21:46 : player: played "Ableton/User Library/Samples/Processed/Crop/0001 4-Audio-1.aif"
+Oct 21 21:47 : player: played "Ableton/User Library/Samples/Processed/Crop/1 6-Audio.wav"
+Oct 21 21:47 : player: played "Ableton/User Library/Samples/Processed/Consolidate/XF_clapC03.wav"
+Oct 21 21:47 : player: played "Ableton/User Library/Samples/Processed/Consolidate/Whoa!.aif"
+Oct 21 21:47 : player: played "Ableton/User Library/Samples/Processed/Consolidate/WH_ImpactSnareDouble.wav"
+Oct 21 21:47 : player: played "Ableton/User Library/Samples/Processed/Consolidate/WH_ImpactSnareDouble.wav"
+Oct 21 21:47 : player: played "Ableton/User Library/Samples/Processed/Consolidate/Whoa!.aif"
+Oct 21 21:52 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Oct 21 22:11 : client: [1] closed
+Oct 21 22:11 : client: [3] opened from 127.0.0.1:59642
+Oct 21 22:31 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Oct 21 22:31 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Oct 21 22:32 : player: played "Yoji Tech Dance Mix 3-bwZBumna5D8.mp3"
+Oct 22 17:49 : config: inotify: auto_update was disabled. enable during compilation phase
+Oct 22 17:49 : config: option 'enabled' on line 29 was not recognized
+Oct 22 17:49 : client: [0] opened from 127.0.0.1:54437
+Oct 22 17:49 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Oct 22 20:28 : config: inotify: auto_update was disabled. enable during compilation phase
+Oct 22 20:28 : config: option 'enabled' on line 29 was not recognized
+Oct 22 20:28 : client: [0] opened from 127.0.0.1:55711
+Oct 22 20:28 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Oct 22 21:27 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Oct 22 21:28 : player: played "Yoji Tech Dance Mix 3-bwZBumna5D8.mp3"
+Oct 22 21:28 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Oct 22 21:28 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Oct 22 21:36 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Oct 22 21:36 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Oct 22 21:36 : player: played "Kris Menace feat. Fred Falke - Fairlight-mNgVSqrSNWE.mp3"
+Oct 22 22:36 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Oct 22 22:36 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Oct 22 22:36 : player: played "Yoji Tech Dance Mix 3-bwZBumna5D8.mp3"
+Oct 22 23:36 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Oct 22 23:36 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Oct 22 23:36 : player: played "Yoji Tech Dance Mix 3-bwZBumna5D8.mp3"
+Oct 23 00:36 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Oct 23 00:36 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Oct 23 00:36 : player: played "Yoji Tech Dance Mix 3-bwZBumna5D8.mp3"
+Oct 23 00:45 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Oct 23 00:45 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Oct 23 00:45 : player: played "Kris Menace feat. Fred Falke - Fairlight-mNgVSqrSNWE.mp3"
+Oct 23 00:54 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Oct 23 00:54 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Oct 23 00:54 : player: played "Kris Menace feat. Fred Falke - Fairlight-mNgVSqrSNWE.mp3"

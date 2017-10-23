@@ -252,7 +252,6 @@ hub_delete	customTerminalInstaller/.shell_aliases_functions.sh	/^    hub_delete(
 hub_delete	macOnly/.shell_aliases_functions.sh	/^hub_delete(){$/;"	f
 humanReadable	customTerminalInstaller/.shell_aliases_functions.sh	/^humanReadable(){$/;"	f
 humanReadable	macOnly/.shell_aliases_functions.sh	/^humanReadable(){$/;"	f
-if	test.sh	/^if (){$/;"	f
 initializeGitDirectory	gitgo.sh	/^initializeGitDirectory(){$/;"	f
 install	tgzLocalInstaller.sh	/^install(){$/;"	f
 installGitHubPlugin	customTerminalInstaller/tmux_plugins_install.sh	/^installGitHubPlugin(){$/;"	f
@@ -289,6 +288,7 @@ mp4	customTerminalInstaller/.shell_aliases_functions.sh	/^    mp4(){$/;"	f
 mp4	macOnly/.shell_aliases_functions.sh	/^mp4(){$/;"	f
 msg	customTerminalInstaller/.shell_aliases_functions.sh	/^    msg="$2"$/;"	v
 msg	macOnly/.shell_aliases_functions.sh	/^    msg="$2"$/;"	v
+myPrettyPrint	gitgo.sh	/^myPrettyPrint(){$/;"	f
 my_backup_dir	backupBashConfig.sh	/^my_backup_dir="$my_scripts_dir\/rcBackups"$/;"	v
 my_home_dir	backupBashConfig.sh	/^my_home_dir=$HOME$/;"	v
 my_scripts_dir	backupBashConfig.sh	/^my_scripts_dir="$SCRIPTS"$/;"	v
@@ -341,7 +341,6 @@ pipe	readFIFO.sh	/^pipe=$HOME\/Desktop\/testpipe$/;"	v
 pipe	readFIFO.sh	/^pipe=\/tmp\/testpipe$/;"	v
 powerline_dir	customTerminalInstaller/install.sh	/^powerline_dir="$(pip show powerline-status | grep Location | awk '{print $2}')"$/;"	v
 prettyPrint	customTerminalInstaller/.shell_aliases_functions.sh	/^    prettyPrint(){$/;"	f
-prettyPrint	gitgo.sh	/^prettyPrint(){$/;"	f
 prettyPrint	macOnly/.shell_aliases_functions.sh	/^prettyPrint(){$/;"	f
 prettyPrint	macOnly/tor.sh	/^prettyPrint (){$/;"	f
 prettyPrint	rpiSoftwareUpdater.sh	/^prettyPrint(){$/;"	f
@@ -435,7 +434,6 @@ timeToSleep	myWatchNoBlinkColorized.sh	/^    timeToSleep=$2$/;"	v
 timeToSleep	myWatchNoBlinkColorized.sh	/^    timeToSleep=0.5$/;"	v
 title	customTerminalInstaller/.shell_aliases_functions.sh	/^    title="$1"$/;"	v
 title	macOnly/.shell_aliases_functions.sh	/^    title="$1"$/;"	v
-tom	test.sh	/^tom=1245214124125125$/;"	v
 topline	animation	/^topline=0$/;"	v
 total	oldCounter.sh	/^total=0$/;"	v
 total	oldCounter.sh	/^total=`expr $(ls -F $1 | grep ".*[*@]" | wc -l) + $total`$/;"	v
@@ -462,7 +460,7 @@ weHaveCCZE	colorLogger.sh	/^weHaveCCZE=no$/;"	v
 weHaveCCZE	colorLogger.sh	/^weHaveCCZE=yes$/;"	v
 websiteDir	macOnly/tutorialConfigUpdater.sh	/^websiteDir="$HOME\/WebstormProjects\/PersonalWebsite"$/;"	v
 x	mywatch.sh	/^    x=$(eval "$1")$/;"	v
-x	test.sh	/^x=$(${tom} + 5235)$/;"	v
 x	test.sh	/^x=5$/;"	v
+x	test.sh	/^x=50$/;"	v
 xf	customTerminalInstaller/.shell_aliases_functions.sh	/^        xf=(s==" B  ")?"%5d   ":"%8.2f"$/;"	v
 xf	macOnly/.shell_aliases_functions.sh	/^        xf=(s==" B  ")?"%5d   ":"%8.2f"$/;"	v

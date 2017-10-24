@@ -14303,3 +14303,6 @@ Oct 23 22:26 : config: option 'enabled' on line 29 was not recognized
 Oct 23 22:26 : client: [0] opened from 127.0.0.1:56611
 Oct 23 22:26 : ffmpeg/mp3: Could not update timestamps for skipped samples.
 Oct 23 22:27 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Oct 23 23:37 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Oct 23 23:37 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Oct 23 23:37 : player: played "♫ Amazing Uplifting Trance Mix l May 2017 (Vol. 62)  ♫-sbf1q0igfks.mp3"

@@ -14307,3 +14307,12 @@ Oct 23 23:37 : ffmpeg/mp3: Could not update timestamps for discarded samples.
 Oct 23 23:37 : ffmpeg/mp3: Could not update timestamps for skipped samples.
 Oct 23 23:37 : player: played "♫ Amazing Uplifting Trance Mix l May 2017 (Vol. 62)  ♫-sbf1q0igfks.mp3"
 Oct 25 05:46 : player: played "Yoji Tech Dance Mix 3-bwZBumna5D8.mp3"
+Oct 27 16:11 : config: inotify: auto_update was disabled. enable during compilation phase
+Oct 27 16:11 : config: option 'enabled' on line 29 was not recognized
+Oct 27 16:11 : client: [0] opened from 127.0.0.1:61936
+Oct 27 16:11 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Oct 27 16:11 : player: played "Ableton/User Library/Samples/Imported/Open Hat 1.wav"
+Oct 27 17:04 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Oct 27 17:04 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Oct 27 17:05 : player: played "Yoji Tech Dance Mix 3-bwZBumna5D8.mp3"
+Oct 27 17:22 : ffmpeg/mp3: Could not update timestamps for skipped samples.

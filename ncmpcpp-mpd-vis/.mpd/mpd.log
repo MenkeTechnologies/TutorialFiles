@@ -14316,3 +14316,9 @@ Oct 27 17:04 : ffmpeg/mp3: Could not update timestamps for discarded samples.
 Oct 27 17:04 : ffmpeg/mp3: Could not update timestamps for skipped samples.
 Oct 27 17:05 : player: played "Yoji Tech Dance Mix 3-bwZBumna5D8.mp3"
 Oct 27 17:22 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Oct 27 18:21 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Oct 27 18:22 : player: played "Yoji Tech Dance Mix 3-bwZBumna5D8.mp3"
+Oct 27 18:22 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Oct 27 18:22 : player: played "Ableton/User Library/Samples/Imported/Open Hat 1.wav"
+Oct 27 19:21 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Oct 27 19:21 : ffmpeg/mp3: Could not update timestamps for skipped samples.

@@ -1,8 +1,10 @@
 " ~/.vim/sessions/trc.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 08 October 2017 at 22:15:03.
+" Created by session.vim 2.13.1 on 26 October 2017 at 06:58:42.
 " Open this file in Vim and run :source % to restore your session.
 
+set guioptions=egmrL
+silent! set guifont=
 if exists('g:syntax_on') != 1 | syntax on | endif
 if exists('g:did_load_filetypes') != 1 | filetype on | endif
 if exists('g:did_load_ftplugin') != 1 | filetype plugin on | endif
@@ -10,7 +12,7 @@ if exists('g:did_indent_on') != 1 | filetype indent on | endif
 if &background != 'dark'
 	set background=dark
 endif
-if !exists('g:colors_name') || g:colors_name != 'forneus' | colorscheme forneus | endif
+if !exists('g:colors_name') || g:colors_name != 'd8g_01' | colorscheme d8g_01 | endif
 call setqflist([])
 let SessionLoad = 1
 if &cp | set nocp | endif
@@ -41,12 +43,12 @@ setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 68 - ((45 * winheight(0) + 30) / 60)
+let s:l = 48 - ((47 * winheight(0) + 33) / 66)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-68
-normal! 019|
+48
+normal! 09|
 tabnext 1
 if exists('s:wipebuf')
 "   silent exe 'bwipe ' . s:wipebuf

@@ -1,8 +1,10 @@
 " ~/.vim/sessions/aliases.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 10 October 2017 at 15:55:04.
+" Created by session.vim 2.13.1 on 26 October 2017 at 06:58:43.
 " Open this file in Vim and run :source % to restore your session.
 
+set guioptions=egmrL
+silent! set guifont=
 if exists('g:syntax_on') != 1 | syntax on | endif
 if exists('g:did_load_filetypes') != 1 | filetype on | endif
 if exists('g:did_load_ftplugin') != 1 | filetype plugin on | endif
@@ -41,12 +43,14 @@ setlocal fdl=1
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 403 - ((32 * winheight(0) + 34) / 69)
+63
+silent! normal! zo
+let s:l = 103 - ((47 * winheight(0) + 33) / 66)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-403
-normal! 0
+103
+normal! 0135|
 tabnext 1
 if exists('s:wipebuf')
 "   silent exe 'bwipe ' . s:wipebuf

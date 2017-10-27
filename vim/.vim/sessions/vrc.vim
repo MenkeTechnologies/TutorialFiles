@@ -1,16 +1,18 @@
 " ~/.vim/sessions/vrc.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 09 October 2017 at 17:09:22.
+" Created by session.vim 2.13.1 on 26 October 2017 at 06:58:45.
 " Open this file in Vim and run :source % to restore your session.
 
+set guioptions=egmrL
+silent! set guifont=
 if exists('g:syntax_on') != 1 | syntax on | endif
 if exists('g:did_load_filetypes') != 1 | filetype on | endif
 if exists('g:did_load_ftplugin') != 1 | filetype plugin on | endif
 if exists('g:did_indent_on') != 1 | filetype indent on | endif
-if &background != 'dark'
-	set background=dark
+if &background != 'light'
+	set background=light
 endif
-if !exists('g:colors_name') || g:colors_name != 'clue' | colorscheme clue | endif
+if !exists('g:colors_name') || g:colors_name != 'zenesque' | colorscheme zenesque | endif
 call setqflist([])
 let SessionLoad = 1
 if &cp | set nocp | endif
@@ -44,18 +46,16 @@ setlocal fdn=20
 setlocal fen
 197
 silent! normal! zo
-316
-silent! normal! zo
 317
 silent! normal! zo
 318
 silent! normal! zo
-let s:l = 75 - ((56 * winheight(0) + 34) / 69)
+let s:l = 422 - ((23 * winheight(0) + 33) / 66)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-75
-normal! 063|
+422
+normal! 0
 tabnext 1
 if exists('s:wipebuf')
 "   silent exe 'bwipe ' . s:wipebuf

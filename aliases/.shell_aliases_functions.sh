@@ -208,6 +208,14 @@ export PATH="$HOME/.rvm/bin:$PATH" # Add RVM to PATH for scripting
 
 #{{{                    MARK:Shell functions
 #**************************************************************
+to(){
+    for file;do
+        dirname="$(dirname $file)"
+        [[ "$dirname" != . ]] && mkdir -p "$dirname"
+        touch "$file"
+    done
+}
+
 scnew(){
     [[ -z "$1" ]] && echo "no arg..." >&2 && return 1
 
@@ -262,8 +270,9 @@ clearList () {
             exists $command &&  {
             #exe matching
             while read locale;do
-                last_fields="$(echo $locale | cut -d' ' -f3-10)"
-                [[ -f "$last_fields" ]] && { 
+                last_fields="$(echo $locale \
+                    | cut -d' ' -f3-10)"
+                [[ -f "$last_fields" ]] && {
                     prettyPrint "$last_fields" && \
                     eval "$ls_command" $last_fields && \
                     prettyPrint "FILE TYPE:" && \

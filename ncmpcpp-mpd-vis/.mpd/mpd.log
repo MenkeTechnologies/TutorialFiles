@@ -14354,3 +14354,314 @@ Oct 29 02:34 : player: played "Yoji Tech Dance Mix 3-bwZBumna5D8.mp3"
 Oct 29 03:33 : ffmpeg/mp3: Could not update timestamps for discarded samples.
 Oct 29 03:33 : ffmpeg/mp3: Could not update timestamps for skipped samples.
 Oct 29 03:33 : player: played "Yoji Tech Dance Mix 3-bwZBumna5D8.mp3"
+Oct 30 01:20 : config: inotify: auto_update was disabled. enable during compilation phase
+Oct 30 01:20 : config: option 'enabled' on line 29 was not recognized
+Oct 30 01:20 : client: [0] opened from 127.0.0.1:59880
+Oct 30 01:21 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Oct 30 02:14 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Oct 30 02:14 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Oct 30 02:15 : player: played "Yoji Tech Dance Mix 3-bwZBumna5D8.mp3"
+Oct 30 02:34 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Oct 30 02:36 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Oct 30 02:36 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Oct 30 02:36 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Oct 30 02:36 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Oct 30 02:36 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Oct 30 02:36 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Oct 30 02:36 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Oct 30 02:36 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Oct 30 02:36 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Oct 30 02:36 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Oct 30 02:36 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Oct 30 02:36 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Oct 30 02:36 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Oct 30 02:36 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Oct 30 02:36 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Oct 30 02:36 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Oct 30 02:36 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Oct 30 02:36 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Oct 30 02:36 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Oct 30 02:36 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Oct 30 02:36 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Oct 30 02:36 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Oct 30 02:36 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Oct 30 02:36 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Oct 30 02:36 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Oct 30 02:36 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Oct 30 02:36 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Oct 30 02:36 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Oct 30 02:36 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Oct 30 02:36 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Oct 30 02:36 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Oct 30 02:36 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Oct 30 02:36 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Oct 30 02:36 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Oct 30 02:36 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Oct 30 02:36 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Oct 30 02:36 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Oct 30 02:36 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Oct 30 02:36 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Oct 30 02:36 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Oct 30 02:36 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Oct 30 02:36 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Oct 30 02:36 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Oct 30 02:36 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Oct 30 02:36 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Oct 30 02:36 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Oct 30 02:36 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Oct 30 02:36 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Oct 30 02:36 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Oct 30 02:36 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Oct 30 02:36 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Oct 30 02:36 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Oct 30 02:36 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Oct 30 02:36 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Oct 30 02:36 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Oct 30 02:36 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Oct 30 02:36 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Oct 30 02:36 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Oct 30 02:36 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Oct 30 02:36 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Oct 30 02:36 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Oct 30 02:36 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Oct 30 02:36 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Oct 30 02:36 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Oct 30 02:36 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Oct 30 02:36 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Oct 30 02:36 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Oct 30 02:36 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Oct 30 02:36 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Oct 30 02:36 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Oct 30 02:36 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Oct 30 02:36 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Oct 30 02:36 : ffmpeg/mp3: Estimating duration from bitrate, this may be inaccurate
+Oct 30 02:36 : update: added /♫ Best Uplifting Trance Mix - All Time Favourites #1 ♫-iXAbte4QXKs.mp3
+Oct 30 02:36 : update: added /♫ Best Uplifting Trance Mix - All Time Favourites #1 ♫-iXAbte4QXKs.webm
+Oct 30 02:36 : client: [0] closed
+Oct 30 02:52 : client: [1] opened from 127.0.0.1:50146
+Oct 30 02:52 : update: removing ♫ Best Uplifting Trance Mix - All Time Favourites #1 ♫-iXAbte4QXKs.mp3
+Oct 30 02:52 : update: removing ♫ Best Uplifting Trance Mix - All Time Favourites #1 ♫-iXAbte4QXKs.webm
+Oct 30 02:52 : update: added /Best Of Pure • Emotional • Melodic • Euphoric • Uplifting Trance Mix-fugFmO7cGJ8.mp3
+Oct 30 02:52 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Oct 30 02:52 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Oct 30 02:52 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Oct 30 02:52 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Oct 30 02:52 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Oct 30 02:52 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Oct 30 02:52 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Oct 30 02:52 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Oct 30 02:52 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Oct 30 02:52 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Oct 30 02:52 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Oct 30 02:52 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Oct 30 02:52 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Oct 30 02:52 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Oct 30 02:52 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Oct 30 02:52 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Oct 30 02:52 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Oct 30 02:52 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Oct 30 02:52 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Oct 30 02:52 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Oct 30 02:52 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Oct 30 02:52 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Oct 30 02:52 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Oct 30 02:52 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Oct 30 02:52 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Oct 30 02:52 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Oct 30 02:52 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Oct 30 02:52 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Oct 30 02:52 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Oct 30 02:52 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Oct 30 02:52 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Oct 30 02:52 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Oct 30 02:52 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Oct 30 02:52 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Oct 30 02:52 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Oct 30 02:52 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Oct 30 02:52 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Oct 30 02:52 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Oct 30 02:52 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Oct 30 02:52 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Oct 30 02:52 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Oct 30 02:52 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Oct 30 02:52 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Oct 30 02:52 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Oct 30 02:52 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Oct 30 02:52 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Oct 30 02:52 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Oct 30 02:52 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Oct 30 02:52 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Oct 30 02:52 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Oct 30 02:52 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Oct 30 02:52 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Oct 30 02:52 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Oct 30 02:52 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Oct 30 02:52 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Oct 30 02:52 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Oct 30 02:52 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Oct 30 02:52 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Oct 30 02:52 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Oct 30 02:52 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Oct 30 02:52 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Oct 30 02:52 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Oct 30 02:52 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Oct 30 02:52 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Oct 30 02:52 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Oct 30 02:52 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Oct 30 02:52 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Oct 30 02:52 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Oct 30 02:52 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Oct 30 02:52 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Oct 30 02:52 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Oct 30 02:52 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Oct 30 02:52 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Oct 30 02:52 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Oct 30 02:52 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Oct 30 02:52 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Oct 30 02:52 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Oct 30 02:52 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Oct 30 02:52 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Oct 30 02:52 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Oct 30 02:52 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Oct 30 02:52 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Oct 30 02:52 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Oct 30 02:52 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Oct 30 02:52 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Oct 30 02:52 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Oct 30 02:52 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Oct 30 02:52 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Oct 30 02:52 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Oct 30 02:52 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Oct 30 02:52 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Oct 30 02:52 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Oct 30 02:52 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Oct 30 02:52 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Oct 30 02:52 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Oct 30 02:52 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Oct 30 02:52 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Oct 30 02:52 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Oct 30 02:52 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Oct 30 02:52 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Oct 30 02:52 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Oct 30 02:52 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Oct 30 02:52 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Oct 30 02:52 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Oct 30 02:52 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Oct 30 02:52 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Oct 30 02:52 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Oct 30 02:52 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Oct 30 02:52 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Oct 30 02:52 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Oct 30 02:52 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Oct 30 02:52 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Oct 30 02:52 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Oct 30 02:52 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Oct 30 02:52 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Oct 30 02:52 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Oct 30 02:52 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Oct 30 02:52 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Oct 30 02:52 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Oct 30 02:52 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Oct 30 02:52 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Oct 30 02:52 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Oct 30 02:52 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Oct 30 02:52 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Oct 30 02:52 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Oct 30 02:52 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Oct 30 02:52 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Oct 30 02:52 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Oct 30 02:52 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Oct 30 02:52 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Oct 30 02:52 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Oct 30 02:52 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Oct 30 02:52 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Oct 30 02:52 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Oct 30 02:52 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Oct 30 02:52 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Oct 30 02:52 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Oct 30 02:52 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Oct 30 02:52 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Oct 30 02:52 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Oct 30 02:52 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Oct 30 02:52 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Oct 30 02:52 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Oct 30 02:52 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Oct 30 02:53 : client: [1] closed
+Oct 30 02:53 : client: [2] opened from 127.0.0.1:50176
+Oct 30 02:53 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Oct 30 03:06 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Oct 30 03:06 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Oct 30 03:06 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Oct 30 03:06 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Oct 30 03:06 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Oct 30 03:06 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Oct 30 03:06 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Oct 30 03:06 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Oct 30 03:06 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Oct 30 03:06 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Oct 30 03:06 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Oct 30 03:06 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Oct 30 03:06 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Oct 30 03:06 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Oct 30 03:06 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Oct 30 03:06 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Oct 30 03:06 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Oct 30 03:06 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Oct 30 03:06 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Oct 30 03:06 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Oct 30 03:06 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Oct 30 03:06 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Oct 30 03:06 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Oct 30 03:06 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Oct 30 03:06 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Oct 30 03:06 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Oct 30 03:06 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Oct 30 03:06 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Oct 30 03:06 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Oct 30 03:06 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Oct 30 03:06 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Oct 30 03:06 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Oct 30 03:06 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Oct 30 03:06 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Oct 30 03:06 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Oct 30 03:06 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Oct 30 03:06 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Oct 30 03:06 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Oct 30 03:06 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Oct 30 03:06 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Oct 30 03:06 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Oct 30 03:06 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Oct 30 03:06 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Oct 30 03:06 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Oct 30 03:06 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Oct 30 03:06 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Oct 30 03:06 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Oct 30 03:06 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Oct 30 03:06 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Oct 30 03:06 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Oct 30 03:06 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Oct 30 03:06 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Oct 30 03:06 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Oct 30 03:06 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Oct 30 03:06 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Oct 30 03:06 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Oct 30 03:06 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Oct 30 03:06 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Oct 30 03:06 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Oct 30 03:06 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Oct 30 03:06 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Oct 30 03:06 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Oct 30 03:06 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Oct 30 03:06 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Oct 30 03:06 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Oct 30 03:06 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Oct 30 03:06 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Oct 30 03:06 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Oct 30 03:06 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Oct 30 03:06 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Oct 30 03:06 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Oct 30 03:06 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Oct 30 03:06 : update: added /♫ Best Uplifting Trance Mix - All Time Favourites #1 ♫-iXAbte4QXKs.mp3
+Oct 30 03:06 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Oct 30 03:06 : client: [3] opened from 127.0.0.1:51330
+Oct 30 03:07 : client: [3] closed

@@ -14665,3 +14665,8 @@ Oct 30 03:06 : update: added /♫ Best Uplifting Trance Mix - All Time Favourite
 Oct 30 03:06 : ffmpeg/mp3: Could not update timestamps for skipped samples.
 Oct 30 03:06 : client: [3] opened from 127.0.0.1:51330
 Oct 30 03:07 : client: [3] closed
+Nov 01 22:14 : config: inotify: auto_update was disabled. enable during compilation phase
+Nov 01 22:14 : config: option 'enabled' on line 29 was not recognized
+Nov 01 22:14 : client: [0] opened from 127.0.0.1:64880
+Nov 01 22:14 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Nov 01 23:35 : ffmpeg/mp3: Could not update timestamps for skipped samples.

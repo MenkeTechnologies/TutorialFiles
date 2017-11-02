@@ -76,7 +76,6 @@ ROWS	myWatchNoBlink.sh	/^        ROWS=$(tput lines)$/;"	v
 ROWS	myWatchNoBlinkColorized.sh	/^        ROWS=$(tput lines)$/;"	v
 SCRIPTS	macOnly/tutorialConfigUpdater.sh	/^SCRIPTS="$HOME\/Documents\/shellScripts"$/;"	v
 SCRIPTS	printHeader.sh	/^    SCRIPTS="$HOME\/Documents\/shellScripts"$/;"	v
-SCRIPTS	updater.sh	/^    SCRIPTS="$HOME\/Documents\/shellScripts"$/;"	v
 SCRIPTS	updaterEmail.sh	/^SCRIPTS=\/Users\/jacobmenke\/Documents\/shellScripts$/;"	v
 SCRIPT_TO_RUN	watchServiceFSWatchPiDesktop.sh	/^SCRIPT_TO_RUN=$SCRIPTS\/upLoadPi.sh$/;"	v
 SCRIPT_TO_RUN	watchServiceFSWatchPiWeb.sh	/^SCRIPT_TO_RUN=$SCRIPTS\/uploadWebPi.sh$/;"	v

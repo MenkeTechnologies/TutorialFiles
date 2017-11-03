@@ -14679,3 +14679,42 @@ Nov 02 01:04 : ffmpeg/mp3: Could not update timestamps for skipped samples.
 Nov 02 01:04 : player: played "Ableton/User Library/90s hit.wav"
 Nov 02 01:07 : ffmpeg/mp3: Could not update timestamps for skipped samples.
 Nov 02 01:08 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Nov 02 17:27 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Nov 02 18:58 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Nov 02 18:58 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Nov 02 18:58 : player: played "Best Of Pure • Emotional • Melodic • Euphoric • Uplifting Trance Mix-fugFmO7cGJ8.mp3"
+Nov 02 20:35 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Nov 02 20:35 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Nov 02 20:35 : player: played "♫ Best Uplifting Trance Mix - All Time Favourites #1 ♫-iXAbte4QXKs.mp3"
+Nov 02 20:41 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Nov 02 20:41 : player: played "Digitalism - Apollo-Gize (Fred Falke Remix)-_ykDET9kLJI.mp3"
+Nov 02 20:41 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Nov 02 20:42 : player: played "Ableton/User Library/90s hit.wav"
+Nov 02 20:47 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Nov 02 20:47 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Nov 02 20:48 : player: played "Digitalism - Apollo-Gize (Fred Falke Remix)-_ykDET9kLJI.mp3"
+Nov 02 20:54 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Nov 02 20:54 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Nov 02 20:54 : player: played "Digitalism - Apollo-Gize (Fred Falke Remix)-_ykDET9kLJI.mp3"
+Nov 02 22:54 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Nov 02 22:54 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Nov 02 22:54 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Nov 02 22:54 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Nov 02 22:54 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Nov 02 22:54 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Nov 02 22:56 : exception: Bad song index
+Nov 02 22:56 : client: [0] closed
+Nov 02 22:56 : client: [1] opened from 127.0.0.1:59375
+Nov 02 23:02 : client: [2] opened from 127.0.0.1:59978
+Nov 02 23:02 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Nov 02 23:02 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Nov 02 23:02 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Nov 02 23:02 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Nov 02 23:02 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Nov 02 23:02 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Nov 02 23:02 : client: [3] opened from 127.0.0.1:60032
+Nov 02 23:02 : client: [3] closed
+Nov 02 23:03 : client: [4] opened from 127.0.0.1:60045
+Nov 03 00:22 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Nov 03 00:22 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Nov 03 00:23 : player: played "♫ Best Uplifting Trance Mix - All Time Favourites #1 ♫-iXAbte4QXKs.mp3"

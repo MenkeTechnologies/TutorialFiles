@@ -91,6 +91,7 @@ TEXT_TO_DISPLAY	menkeTechRandoFont.sh	/^TEXT_TO_DISPLAY="Menke Technologies"$/;"
 TIME	mywatch.sh	/^    TIME="$2"$/;"	v
 TIME	mywatch.sh	/^    TIME=1$/;"	v
 URL	gitgo.sh	/^    local URL="https:\/\/github.com\/$GITHUB_ACCOUNT\/$REPO_NAME_TO_CREATE"$/;"	v
+__ScriptVersion	macOnly/splitStdoutByRegex.sh	/^__ScriptVersion=1.0.0$/;"	v
 addContents	shebangChanger.sh	/^addContents(){$/;"	f
 addHeader	createTextFile.sh	/^addHeader(){$/;"	f
 addHeader	templater.sh	/^addHeader(){$/;"	f
@@ -454,6 +455,7 @@ usage	directoryContentsSize.sh	/^usage(){$/;"	f
 usage	duplicateLineDeleter.sh	/^usage(){$/;"	f
 usage	gitgo.sh	/^usage(){$/;"	f
 usage	indenterAndDuplicateLineDeleter.sh	/^usage(){$/;"	f
+usage	macOnly/splitStdoutByRegex.sh	/^function usage ()$/;"	f
 usage	myWatchNoBlink.sh	/^usage(){$/;"	f
 usage	myWatchNoBlinkColorized.sh	/^usage(){$/;"	f
 usage	mywatch.sh	/^usage(){$/;"	f

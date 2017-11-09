@@ -91,6 +91,7 @@ TEXT_TO_DISPLAY	menkeTechRandoFont.sh	/^TEXT_TO_DISPLAY="Menke Technologies"$/;"
 TIME	mywatch.sh	/^    TIME="$2"$/;"	v
 TIME	mywatch.sh	/^    TIME=1$/;"	v
 URL	gitgo.sh	/^    local URL="https:\/\/github.com\/$GITHUB_ACCOUNT\/$REPO_NAME_TO_CREATE"$/;"	v
+__ScriptVersion	macOnly/splitReg.sh	/^__ScriptVersion=1.0.0$/;"	v
 __ScriptVersion	macOnly/splitStdoutByRegex.sh	/^__ScriptVersion=1.0.0$/;"	v
 addContents	shebangChanger.sh	/^addContents(){$/;"	f
 addHeader	createTextFile.sh	/^addHeader(){$/;"	f
@@ -155,6 +156,7 @@ default_recipent	textmessage.sh	/^    default_recipent=555111333$/;"	v
 delay	batchRename.sh	/^    local delay=.1 # time in seconds between characters$/;"	v
 delay	openAll.sh	/^local delay=.1 # time in seconds between characters$/;"	v
 delim	batchRename.sh	/^delim=_$/;"	v
+delim	macOnly/splitReg.sh	/^delim=$(echo "$output" | grep -n -- "$regex" | tail -1 | cut -d: -f1)$/;"	v
 delim	macOnly/splitStdOut.sh	/^delim=$(echo "$output" | grep -n -- "$regex" | cut -d: -f1)$/;"	v
 delim	macOnly/splitStdoutByRegex.sh	/^delim=$(echo "$output" | grep -n -- "$regex" | cut -d: -f1)$/;"	v
 dependencies_ary	customTerminalInstaller/install.sh	/^dependencies_ary=(vim tmux git wget lolcat cowsay cmatrix htop cmake glances bpython python-dev \\$/;"	v
@@ -205,6 +207,7 @@ f	customTerminalInstaller/.shell_aliases_functions.sh	/^    f(){$/;"	f
 f	macOnly/.shell_aliases_functions.sh	/^f(){$/;"	f
 family_phone_numbers	textmessage.sh	/^    family_phone_numbers=($member_1)$/;"	v
 file	inotifyWatchLogAndEmailIfNAS.sh	/^file="$1"$/;"	v
+file	macOnly/splitReg.sh	/^file=\/tmp\/temp$\$$/;"	v
 file	macOnly/splitStdOut.sh	/^file=\/tmp\/temp$\$$/;"	v
 file	macOnly/splitStdoutByRegex.sh	/^file=\/tmp\/temp$\$$/;"	v
 file	openAll.sh	/^	file="$(echo $file | tr '[:upper:]' '[:lower:]')"$/;"	v
@@ -217,6 +220,7 @@ fileToBeExecuted	templater.sh	/^fileToBeExecuted="$1"$/;"	v
 file_name	filenameLengthCounters.sh	/^        file_name="$(basename "$file")"$/;"	v
 files	backupBashConfig.sh	/^files=("$my_home_dir\/.bashrc" "$my_home_dir\/.bash_profile" "$my_home_dir\/.profile" '\/etc\/bashrc' '\/etc\/profile')$/;"	v
 filesArray	openAll.sh	/^filesArray=()$/;"	v
+filter	macOnly/splitReg.sh	/^filter="$2"$/;"	v
 filter	macOnly/splitStdoutByRegex.sh	/^filter="$2"$/;"	v
 findTotal	oldCounter.sh	/^findTotal (){$/;"	f
 first	batchRename.sh	/^        local first=`echo ${file%%$delim*}`$/;"	v
@@ -309,6 +313,7 @@ nn	customTerminalInstaller/.shell_aliases_functions.sh	/^nn(){$/;"	f
 nn	macOnly/.shell_aliases_functions.sh	/^nn(){$/;"	f
 number	batchRename.sh	/^        local number=$((10#$number))$/;"	v
 number	batchRename.sh	/^        local number=`echo ${last%%.*}`$/;"	v
+o	macOnly/combo.sh	/^o="$(cat)"$/;"	v
 openTextEditor	createScriptButDontOpenSublime.sh	/^openTextEditor(){$/;"	f
 openTextEditor	createTextFile.sh	/^openTextEditor(){$/;"	f
 optstring	directoryContentsSize.sh	/^optstring=shta$/;"	v
@@ -333,6 +338,7 @@ output	figletRandomFontOnce.sh	/^output="$(echo $TEXT_TO_DISPLAY | figlet -f $fo
 output	macOnly/figletRandomFont.sh	/^    output="$(echo $TEXT_TO_DISPLAY | figlet -f $font)"$/;"	v
 output	macOnly/figletRandomFontOnce.sh	/^output="$(echo $TEXT_TO_DISPLAY | figlet -f $font)"$/;"	v
 output	macOnly/menkeTechRandomFont.sh	/^    output="$(echo $TEXT_TO_DISPLAY | figlet -f $font)"$/;"	v
+output	macOnly/splitReg.sh	/^output=`cat \/tmp\/temp$$` $/;"	v
 output	macOnly/splitStdOut.sh	/^output=`cat \/tmp\/temp$$` $/;"	v
 output	macOnly/splitStdoutByRegex.sh	/^output=`cat \/tmp\/temp$$` $/;"	v
 output	menkeTechRandoFont.sh	/^    output="$(echo $TEXT_TO_DISPLAY | figlet -f $font)"$/;"	v
@@ -382,6 +388,7 @@ rangePossibleIndices	macOnly/menkeTechRandomFont.sh	/^rangePossibleIndices=${#ar
 rangePossibleIndices	menkeTechRandoFont.sh	/^rangePossibleIndices=${#ary[*]}$/;"	v
 red	customTerminalInstaller/.shell_aliases_functions.sh	/^red=$(tput setaf 1)$/;"	v
 red	macOnly/.shell_aliases_functions.sh	/^	red=$(tput setaf 1)$/;"	v
+regex	macOnly/splitReg.sh	/^regex="$1"$/;"	v
 regex	macOnly/splitStdOut.sh	/^regex="$1"$/;"	v
 regex	macOnly/splitStdoutByRegex.sh	/^regex="$1"$/;"	v
 remoteDIR	macOnly/rsyncr.sh	/^remoteDIR="$2"$/;"	v
@@ -455,6 +462,7 @@ usage	directoryContentsSize.sh	/^usage(){$/;"	f
 usage	duplicateLineDeleter.sh	/^usage(){$/;"	f
 usage	gitgo.sh	/^usage(){$/;"	f
 usage	indenterAndDuplicateLineDeleter.sh	/^usage(){$/;"	f
+usage	macOnly/splitReg.sh	/^function usage ()$/;"	f
 usage	macOnly/splitStdoutByRegex.sh	/^function usage ()$/;"	f
 usage	myWatchNoBlink.sh	/^usage(){$/;"	f
 usage	myWatchNoBlinkColorized.sh	/^usage(){$/;"	f
@@ -470,6 +478,8 @@ weHaveCCZE	colorLogger.sh	/^    weHaveCCZE=no$/;"	v
 weHaveCCZE	colorLogger.sh	/^    weHaveCCZE=yes$/;"	v
 weHaveCCZE	colorLogger.sh	/^weHaveCCZE=no$/;"	v
 websiteDir	macOnly/tutorialConfigUpdater.sh	/^websiteDir="$HOME\/WebstormProjects\/PersonalWebsite"$/;"	v
+x	macOnly/combo.sh	/^    x="$(python -c 'print("trina"*5)')"$/;"	v
+x	macOnly/combo.sh	/^    x=$(date | cut -c1-10)$/;"	v
 x	mywatch.sh	/^    x=$(eval "$1")$/;"	v
 x	test.sh	/^x=5$/;"	v
 x	test.sh	/^x=50$/;"	v

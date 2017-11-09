@@ -216,6 +216,7 @@ fileToBeExecuted	templater.sh	/^fileToBeExecuted="$1"$/;"	v
 file_name	filenameLengthCounters.sh	/^        file_name="$(basename "$file")"$/;"	v
 files	backupBashConfig.sh	/^files=("$my_home_dir\/.bashrc" "$my_home_dir\/.bash_profile" "$my_home_dir\/.profile" '\/etc\/bashrc' '\/etc\/profile')$/;"	v
 filesArray	openAll.sh	/^filesArray=()$/;"	v
+filter	macOnly/splitStdoutByRegex.sh	/^filter="$2"$/;"	v
 findTotal	oldCounter.sh	/^findTotal (){$/;"	f
 first	batchRename.sh	/^        local first=`echo ${file%%$delim*}`$/;"	v
 firstFile	sync.sh	/^    firstFile="${firstFile}\/"$/;"	v

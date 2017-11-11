@@ -386,6 +386,8 @@ randIndex	macOnly/figletRandomFontOnce.sh	/^randIndex=$(($RANDOM % $rangePossibl
 randIndex	macOnly/menkeTechRandomFont.sh	/^    randIndex=$(($RANDOM % $rangePossibleIndices))$/;"	v
 randIndex	macOnly/randomCow.sh	/^randIndex=$(($RANDOM % $rangePossibleIndices))$/;"	v
 randIndex	menkeTechRandoFont.sh	/^    randIndex=$(($RANDOM % $rangePossibleIndices))$/;"	v
+randomCowsayCowScript	macOnly/combo.sh	/^randomCowsayCowScript="$SCRIPTS\/macOnly\/randomCow.sh" $/;"	v
+randomFigletFontScript	macOnly/combo.sh	/^randomFigletFontScript="$SCRIPTS\/macOnly\/figletRandomFontOnce.sh"$/;"	v
 rangePossibleIndices	eyes.sh	/^rangePossibleIndices=${#ary[*]}$/;"	v
 rangePossibleIndices	figletRandomFont.sh	/^rangePossibleIndices=${#ary[*]}$/;"	v
 rangePossibleIndices	figletRandomFontOnce.sh	/^rangePossibleIndices=${#ary[*]}$/;"	v
@@ -479,6 +481,7 @@ usage	shebangChanger.sh	/^usage(){$/;"	f
 user	gitRemoteRepoInformation.sh	/^            user="$(echo $line | awk -F'\/' '{print $4}')"$/;"	v
 view	eyes.sh	/^    view=${ary[$randIndex]}$/;"	v
 w	updater.sh	/^    w=80$/;"	v
+w	uploadWebPi.sh	/^w=80$/;"	v
 watchCommand	myWatchNoBlink.sh	/^watchCommand() {$/;"	f
 watchCommand	myWatchNoBlinkColorized.sh	/^watchCommand() {$/;"	f
 watchingFile	watchServiceFSWatchRustCompile.sh	/^	watchingFile=`basename $2`$/;"	v

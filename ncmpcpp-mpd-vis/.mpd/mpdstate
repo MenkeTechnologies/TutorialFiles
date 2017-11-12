@@ -1,7 +1,9 @@
-sw_volume: 46
+sw_volume: 38
 audio_device_state:1:CoreAudio
 audio_device_state:1:my_fifo
-state: stop
+state: play
+current: 1
+time: 2049.025000
 random: 0
 repeat: 0
 single: 0
@@ -13,4 +15,5 @@ playlist_begin
 0:Best Of Pure • Emotional • Melodic • Euphoric • Uplifting Trance Mix-fugFmO7cGJ8.mp3
 1:♫ Best Uplifting Trance Mix - All Time Favourites #1 ♫-iXAbte4QXKs.mp3
 2:♫ Amazing Uplifting Trance Mix l May 2017 (Vol. 62)  ♫-sbf1q0igfks.mp3
+3:Ableton/User Library/Samples/Recorded/0001 12-Audio-1.wav
 playlist_end

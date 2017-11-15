@@ -89,7 +89,6 @@ TEXT_TO_DISPLAY	macOnly/figletRandomFont.sh	/^TEXT_TO_DISPLAY="$1"$/;"	v
 TEXT_TO_DISPLAY	macOnly/figletRandomFontOnce.sh	/^TEXT_TO_DISPLAY="$1"$/;"	v
 TEXT_TO_DISPLAY	macOnly/figletRotater.sh	/^TEXT_TO_DISPLAY="$1"$/;"	v
 TEXT_TO_DISPLAY	macOnly/menkeTechRandomFont.sh	/^TEXT_TO_DISPLAY="Menke Technologies"$/;"	v
-TEXT_TO_DISPLAY	macOnly/randomCow.sh	/^TEXT_TO_DISPLAY="$1"$/;"	v
 TEXT_TO_DISPLAY	menkeTechRandoFont.sh	/^TEXT_TO_DISPLAY="Menke Technologies"$/;"	v
 TIME	mywatch.sh	/^    TIME="$2"$/;"	v
 TIME	mywatch.sh	/^    TIME=1$/;"	v
@@ -132,6 +131,7 @@ color2	customTerminalInstaller/.shell_aliases_functions.sh	/^    color2(){$/;"	f
 color2	macOnly/.shell_aliases_functions.sh	/^color2(){$/;"	f
 cols	animation	/^cols=`tput cols`$/;"	v
 cols	picture_finder.sh	/^cols=`tput cols`$/;"	v
+command	macOnly/commandToColors.sh	/^command="$@"$/;"	v
 command	runner.sh	/^        command="vim -i NONE -V1 -Nes -c 'so""$fileToBeExecuted""' -c'echo""|q!' 2>&1 | tail +4"$/;"	v
 commandList	oldCounter.sh	/^		commandList="$i\\n$commandList"$/;"	v
 commandList	oldCounter.sh	/^commandList=""$/;"	v

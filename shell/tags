@@ -332,6 +332,7 @@ origin	gitgo.sh	/^    local origin="$(git remote -v | awk '{print $1}' | tail -1
 out	customTerminalInstaller/.shell_aliases_functions.sh	/^        out="$(curl -u menketechnologies -X "DELETE" https:\/\/api.github.com\/repos\/menketechnologies\/"$REPO")"$/;"	v
 out	inotifyWatchLogAndEmailIfNAS.sh	/^    out=$(tail -1 "$file" | grep "nas")$/;"	v
 out	macOnly/.shell_aliases_functions.sh	/^    out="$(curl -u menketechnologies -X "DELETE" https:\/\/api.github.com\/repos\/menketechnologies\/"$REPO")"$/;"	v
+out	macOnly/commandToColors.sh	/^out="$(eval $command)"$/;"	v
 out	watchLogAndEmailIfNAS.sh	/^    out=$(tail -5 "$file" | grep "nas")$/;"	v
 outFile	customTerminalInstaller/.shell_aliases_functions.sh	/^            outFile="$3"	$/;"	v
 outFile	customTerminalInstaller/.shell_aliases_functions.sh	/^        outFile=out.gif$/;"	v

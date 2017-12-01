@@ -15013,3 +15013,8 @@ Nov 30 16:24 : client: [9] opened from 127.0.0.1:58568
 Nov 30 17:42 : ffmpeg/mp3: Could not update timestamps for discarded samples.
 Nov 30 17:42 : ffmpeg/mp3: Could not update timestamps for skipped samples.
 Nov 30 17:42 : player: played "Best Of Pure • Emotional • Melodic • Euphoric • Uplifting Trance Mix-fugFmO7cGJ8.mp3"
+Nov 30 23:50 : client: [10] opened from 127.0.0.1:49614
+Nov 30 23:50 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Nov 30 23:50 : client: [11] opened from 127.0.0.1:49616
+Nov 30 23:50 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Nov 30 23:59 : client: [9] closed

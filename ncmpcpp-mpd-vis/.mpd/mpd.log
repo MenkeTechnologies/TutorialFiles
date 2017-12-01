@@ -14925,3 +14925,91 @@ Nov 19 23:59 : player: played "♫ Best Uplifting Trance Mix - All Time Favourit
 Nov 20 17:36 : config: inotify: auto_update was disabled. enable during compilation phase
 Nov 20 17:36 : config: option 'enabled' on line 29 was not recognized
 Nov 20 17:36 : client: [0] opened from 127.0.0.1:52337
+Nov 20 18:25 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Nov 20 18:25 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Nov 20 18:26 : player: played "♫ Best Uplifting Trance Mix - All Time Favourites #1 ♫-iXAbte4QXKs.mp3"
+Nov 20 18:31 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Nov 20 19:34 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Nov 20 19:34 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Nov 20 19:34 : player: played "♫ Best Uplifting Trance Mix - All Time Favourites #1 ♫-iXAbte4QXKs.mp3"
+Nov 21 16:59 : config: inotify: auto_update was disabled. enable during compilation phase
+Nov 21 16:59 : config: option 'enabled' on line 29 was not recognized
+Nov 21 16:59 : client: [0] opened from 127.0.0.1:50371
+Nov 21 16:59 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Nov 21 16:59 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Nov 21 18:25 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Nov 21 18:25 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Nov 21 18:25 : player: played "♫ Best Uplifting Trance Mix - All Time Favourites #1 ♫-iXAbte4QXKs.mp3"
+Nov 21 18:28 : client: [0] closed
+Nov 21 23:35 : client: [1] opened from 127.0.0.1:53945
+Nov 22 00:16 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Nov 22 00:16 : player: played "♫ Amazing Uplifting Trance Mix l May 2017 (Vol. 62)  ♫-sbf1q0igfks.mp3"
+Nov 22 00:16 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Nov 22 00:16 : client: [1] closed
+Nov 22 00:16 : client: [2] opened from 127.0.0.1:54684
+Nov 22 00:16 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Nov 22 00:17 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Nov 22 00:54 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Nov 22 02:59 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Nov 22 02:59 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Nov 22 02:59 : player: played "♫ Best Uplifting Trance Mix - All Time Favourites #1 ♫-iXAbte4QXKs.mp3"
+Nov 22 03:36 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Nov 22 04:33 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Nov 22 04:33 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Nov 22 04:33 : player: played "♫ Best Uplifting Trance Mix - All Time Favourites #1 ♫-iXAbte4QXKs.mp3"
+Nov 22 04:33 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Nov 22 05:21 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Nov 22 05:21 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Nov 22 05:21 : player: played "Best Of Pure • Emotional • Melodic • Euphoric • Uplifting Trance Mix-fugFmO7cGJ8.mp3"
+Nov 23 21:25 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Nov 23 21:25 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Nov 23 21:25 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Nov 23 21:25 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Nov 23 21:25 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Nov 24 20:22 : client: [2] closed
+Nov 24 21:12 : client: [3] opened from 127.0.0.1:63293
+Nov 24 21:12 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Nov 24 21:12 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Nov 24 21:12 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Nov 24 21:55 : client: [3] closed
+Nov 24 21:55 : client: [4] opened from 127.0.0.1:63548
+Nov 24 22:14 : client: [4] closed
+Nov 24 22:16 : client: [5] opened from 127.0.0.1:63575
+Nov 24 22:26 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Nov 24 23:36 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Nov 24 23:36 : player: played "♫ Amazing Uplifting Trance Mix l May 2017 (Vol. 62)  ♫-sbf1q0igfks.mp3"
+Nov 24 23:37 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Nov 26 19:45 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Nov 26 19:45 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Nov 26 19:45 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Nov 26 19:45 : client: [5] closed
+Nov 26 19:45 : client: [6] opened from 127.0.0.1:65289
+Nov 26 19:45 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Nov 26 19:45 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Nov 26 21:10 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Nov 26 21:10 : player: played "Best Of Pure • Emotional • Melodic • Euphoric • Uplifting Trance Mix-fugFmO7cGJ8.mp3"
+Nov 26 21:10 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Nov 27 22:43 : client: [7] opened from 127.0.0.1:50142
+Nov 28 09:43 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Nov 28 09:43 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Nov 28 11:11 : client: [7] closed
+Nov 29 17:18 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Nov 29 18:43 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Nov 29 18:43 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Nov 29 18:43 : player: played "♫ Best Uplifting Trance Mix - All Time Favourites #1 ♫-iXAbte4QXKs.mp3"
+Nov 29 20:08 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Nov 29 20:08 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Nov 29 20:08 : player: played "Best Of Pure • Emotional • Melodic • Euphoric • Uplifting Trance Mix-fugFmO7cGJ8.mp3"
+Nov 30 10:23 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Nov 30 10:24 : player: played "♫ Amazing Uplifting Trance Mix l May 2017 (Vol. 62)  ♫-sbf1q0igfks.mp3"
+Nov 30 10:24 : player: played "Ableton/User Library/Samples/Recorded/0001 12-Audio-1.wav"
+Nov 30 16:21 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Nov 30 16:23 : player: played "♫ Amazing Uplifting Trance Mix l May 2017 (Vol. 62)  ♫-sbf1q0igfks.mp3"
+Nov 30 16:23 : client: [6] closed
+Nov 30 16:23 : client: [8] opened from 127.0.0.1:58566
+Nov 30 16:23 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Nov 30 16:23 : client: [8] closed
+Nov 30 16:24 : client: [9] opened from 127.0.0.1:58568
+Nov 30 17:42 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Nov 30 17:42 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Nov 30 17:42 : player: played "Best Of Pure • Emotional • Melodic • Euphoric • Uplifting Trance Mix-fugFmO7cGJ8.mp3"

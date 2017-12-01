@@ -95,6 +95,7 @@ TIME	mywatch.sh	/^    TIME=1$/;"	v
 URL	gitgo.sh	/^    local URL="https:\/\/github.com\/$GITHUB_ACCOUNT\/$REPO_NAME_TO_CREATE"$/;"	v
 __ScriptVersion	macOnly/splitReg.sh	/^__ScriptVersion=1.0.0$/;"	v
 __ScriptVersion	macOnly/splitStdoutByRegex.sh	/^__ScriptVersion=1.0.0$/;"	v
+__ScriptVersion	tgzLocalInstaller.sh	/^__ScriptVersion="1.0.0"$/;"	v
 addContents	shebangChanger.sh	/^addContents(){$/;"	f
 addHeader	createTextFile.sh	/^addHeader(){$/;"	f
 addHeader	templater.sh	/^addHeader(){$/;"	f
@@ -478,6 +479,7 @@ usage	myWatchNoBlink.sh	/^usage(){$/;"	f
 usage	myWatchNoBlinkColorized.sh	/^usage(){$/;"	f
 usage	mywatch.sh	/^usage(){$/;"	f
 usage	shebangChanger.sh	/^usage(){$/;"	f
+usage	tgzLocalInstaller.sh	/^function usage ()$/;"	f
 user	gitRemoteRepoInformation.sh	/^            user="$(echo $line | awk -F'\/' '{print $4}')"$/;"	v
 view	eyes.sh	/^    view=${ary[$randIndex]}$/;"	v
 w	updater.sh	/^    w=80$/;"	v

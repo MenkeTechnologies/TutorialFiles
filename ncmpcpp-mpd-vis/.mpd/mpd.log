@@ -15018,3 +15018,157 @@ Nov 30 23:50 : ffmpeg/mp3: Could not update timestamps for skipped samples.
 Nov 30 23:50 : client: [11] opened from 127.0.0.1:49616
 Nov 30 23:50 : ffmpeg/mp3: Could not update timestamps for skipped samples.
 Nov 30 23:59 : client: [9] closed
+Dec 01 01:08 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Dec 01 01:08 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Dec 01 01:09 : player: played "Best Of Pure • Emotional • Melodic • Euphoric • Uplifting Trance Mix-fugFmO7cGJ8.mp3"
+Dec 01 01:09 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Dec 01 01:40 : client: [12] opened from 127.0.0.1:54238
+Dec 01 02:01 : client: [12] closed
+Dec 01 02:48 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Dec 01 02:48 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Dec 01 02:48 : player: played "♫ Best Uplifting Trance Mix - All Time Favourites #1 ♫-iXAbte4QXKs.mp3"
+Dec 01 13:55 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Dec 01 13:55 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Dec 01 13:56 : player: played "Best Of Pure • Emotional • Melodic • Euphoric • Uplifting Trance Mix-fugFmO7cGJ8.mp3"
+Dec 01 15:52 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Dec 01 15:52 : player: played "♫ Amazing Uplifting Trance Mix l May 2017 (Vol. 62)  ♫-sbf1q0igfks.mp3"
+Dec 01 15:53 : player: played "Ableton/User Library/Samples/Recorded/0001 12-Audio-1.wav"
+Dec 02 00:14 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Dec 02 01:35 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Dec 02 01:35 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Dec 02 01:35 : player: played "Best Of Pure • Emotional • Melodic • Euphoric • Uplifting Trance Mix-fugFmO7cGJ8.mp3"
+Dec 02 11:10 : player: played "♫ Amazing Uplifting Trance Mix l May 2017 (Vol. 62)  ♫-sbf1q0igfks.mp3"
+Dec 02 11:10 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Dec 02 11:10 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Dec 02 11:10 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Dec 02 11:25 : client: [13] opened from 127.0.0.1:54152
+Dec 02 11:25 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Dec 02 14:49 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Dec 02 19:49 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Dec 02 19:49 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Dec 02 19:50 : player: played "♫ Best Uplifting Trance Mix - All Time Favourites #1 ♫-iXAbte4QXKs.mp3"
+Dec 02 19:50 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Dec 02 23:00 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Dec 02 23:00 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Dec 03 00:28 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Dec 03 01:48 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Dec 03 01:48 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Dec 03 01:48 : player: played "♫ Best Uplifting Trance Mix - All Time Favourites #1 ♫-iXAbte4QXKs.mp3"
+Dec 03 02:32 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Dec 03 02:32 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Dec 03 02:32 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Dec 03 02:32 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Dec 03 02:32 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Dec 03 02:32 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Dec 03 02:32 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Dec 03 02:32 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Dec 03 02:32 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Dec 03 02:32 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Dec 03 02:32 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Dec 03 02:32 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Dec 03 02:32 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Dec 03 02:32 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Dec 03 02:32 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Dec 03 02:32 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Dec 03 02:32 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Dec 03 02:32 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Dec 03 02:32 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Dec 03 02:32 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Dec 03 02:32 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Dec 03 02:32 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Dec 03 02:32 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Dec 03 02:32 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Dec 03 02:32 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Dec 03 02:32 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Dec 03 02:32 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Dec 03 02:32 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Dec 03 02:32 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Dec 03 02:32 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Dec 03 02:32 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Dec 03 02:32 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Dec 03 02:32 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Dec 03 02:32 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Dec 03 02:32 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Dec 03 02:32 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Dec 03 02:32 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Dec 03 02:32 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Dec 03 02:32 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Dec 03 02:32 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Dec 03 02:32 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Dec 03 02:32 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Dec 03 02:32 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Dec 03 02:32 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Dec 03 02:32 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Dec 03 02:32 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Dec 03 02:32 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Dec 03 02:32 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Dec 03 02:32 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Dec 03 02:32 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Dec 03 02:32 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Dec 03 02:32 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Dec 03 02:32 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Dec 03 02:32 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Dec 03 02:32 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Dec 03 02:32 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Dec 03 02:32 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Dec 03 02:32 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Dec 03 02:32 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Dec 03 02:32 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Dec 03 02:32 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Dec 03 02:32 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Dec 03 02:32 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Dec 03 02:32 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Dec 03 02:32 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Dec 03 02:32 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Dec 03 02:32 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Dec 03 02:32 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Dec 03 02:32 : ffmpeg/aiff: unknown or unsupported codec tag: able
+Dec 03 02:32 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to the newest one from Git. If the problem still occurs, it means that your file has a feature which has not been implemented.
+Dec 03 02:32 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
+Dec 03 02:32 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
+Dec 03 02:32 : update: added /TRANCE & TECH TRANCE ENERGY MUSIC MIX-YiTMZ-F8WJ0.mp3
+Dec 03 02:32 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Dec 03 03:33 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Dec 03 03:34 : player: played "TRANCE & TECH TRANCE ENERGY MUSIC MIX-YiTMZ-F8WJ0.mp3"
+Dec 03 03:36 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Dec 03 12:27 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Dec 03 12:27 : player: played "TRANCE & TECH TRANCE ENERGY MUSIC MIX-YiTMZ-F8WJ0.mp3"
+Dec 03 13:57 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Dec 03 20:58 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Dec 03 20:58 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Dec 03 22:08 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Dec 03 22:08 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Dec 03 22:09 : player: played "♫ Best Uplifting Trance Mix - All Time Favourites #1 ♫-iXAbte4QXKs.mp3"
+Dec 03 23:01 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Dec 04 00:01 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Dec 04 00:01 : player: played "TRANCE & TECH TRANCE ENERGY MUSIC MIX-YiTMZ-F8WJ0.mp3"
+Dec 04 00:02 : client: [13] closed
+Dec 04 00:03 : client: [14] opened from 127.0.0.1:61581
+Dec 04 00:03 : client: [14] closed
+Dec 04 00:03 : client: [15] opened from 127.0.0.1:61618
+Dec 04 00:03 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Dec 04 00:03 : client: [15] closed
+Dec 04 00:03 : client: [16] opened from 127.0.0.1:61641
+Dec 04 00:03 : client: [16] closed
+Dec 04 00:03 : client: [17] opened from 127.0.0.1:61652
+Dec 05 11:48 : player: played "TRANCE & TECH TRANCE ENERGY MUSIC MIX-YiTMZ-F8WJ0.mp3"
+Dec 05 11:55 : config: inotify: auto_update was disabled. enable during compilation phase
+Dec 05 11:55 : config: option 'enabled' on line 29 was not recognized
+Dec 05 11:56 : client: [0] opened from 127.0.0.1:49647
+Dec 05 11:56 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Dec 05 11:57 : client: [0] closed
+Dec 05 11:58 : client: [1] opened from 127.0.0.1:49721
+Dec 05 15:35 : player: played "TRANCE & TECH TRANCE ENERGY MUSIC MIX-YiTMZ-F8WJ0.mp3"
+Dec 06 17:04 : config: inotify: auto_update was disabled. enable during compilation phase
+Dec 06 17:04 : config: option 'enabled' on line 29 was not recognized
+Dec 06 17:05 : client: [0] opened from 127.0.0.1:56625
+Dec 06 19:10 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Dec 06 19:10 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Dec 06 19:18 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Dec 06 20:22 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Dec 06 20:22 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Dec 06 20:23 : player: played "♫ Best Uplifting Trance Mix - All Time Favourites #1 ♫-iXAbte4QXKs.mp3"
+Dec 07 14:44 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Dec 07 14:44 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Dec 07 14:44 : player: played "Best Of Pure • Emotional • Melodic • Euphoric • Uplifting Trance Mix-fugFmO7cGJ8.mp3"
+Dec 07 23:15 : ffmpeg/mp3: Could not update timestamps for skipped samples.

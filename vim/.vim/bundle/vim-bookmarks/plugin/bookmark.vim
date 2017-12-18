@@ -47,8 +47,6 @@ function! s:init(file)
   endif
 endfunction
 
-autocmd VimEnter * call s:init(expand('<afile>:p'))
-
 " }}}
 
 
@@ -526,7 +524,7 @@ function! s:set_up_auto_save(file)
     augroup bm_auto_save
       autocmd!
       autocmd BufWinEnter * call s:add_missing_signs(expand('<afile>:p'))
-      autocmd BufLeave,VimLeave * call s:auto_save()
+      autocmd BufLeave,VimLeave,BufReadPre * call s:auto_save()
     augroup END
   endif
 endfunction
@@ -561,3 +559,11 @@ call s:register_mapping('BookmarkMoveDown',   'mjj', 1)
 call s:register_mapping('BookmarkMoveToLine', 'mg',  1)
 
 " }}}
+
+" Init {{{
+
+if has('vim_starting')
+  autocmd VimEnter * call s:init(expand('<afile>:p'))
+else
+  call s:init(expand('%:p'))
+endif

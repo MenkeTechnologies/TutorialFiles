@@ -15496,3 +15496,24 @@ Dec 17 01:04 : client: [5] opened from 127.0.0.1:56869
 Dec 17 01:04 : ffmpeg/mp3: Could not update timestamps for skipped samples.
 Dec 17 01:14 : ffmpeg/mp3: Could not update timestamps for skipped samples.
 Dec 18 01:51 : player: played "Tech Trance Mix 2015 _HD-yh6rx1vLUeY.mp3"
+Dec 20 12:48 : config: inotify: auto_update was disabled. enable during compilation phase
+Dec 20 12:48 : config: option 'enabled' on line 29 was not recognized
+Dec 20 12:48 : client: [0] opened from 127.0.0.1:53264
+Dec 20 12:48 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Dec 20 12:49 : client: [0] closed
+Dec 20 12:49 : client: [1] opened from 127.0.0.1:53290
+Dec 20 12:49 : client: [1] closed
+Dec 20 12:49 : client: [2] opened from 127.0.0.1:53313
+Dec 20 13:44 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Dec 20 13:44 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Dec 20 13:44 : player: played "Stellar Evolution _ Tech Trance Mix #1--DyuwcxMpHY.mp3"
+Dec 20 14:57 : client: [2] closed
+Dec 20 14:58 : client: [3] opened from 127.0.0.1:57769
+Dec 20 14:58 : client: [3] closed
+Dec 20 14:58 : player: played "♫ Best Uplifting Trance Mix - All Time Favourites #1 ♫-iXAbte4QXKs.mp3"
+Dec 20 14:58 : config: inotify: auto_update was disabled. enable during compilation phase
+Dec 20 14:58 : config: option 'enabled' on line 29 was not recognized
+Dec 20 14:58 : client: [0] opened from 127.0.0.1:57783
+Dec 20 14:58 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Dec 20 14:58 : client: [0] closed
+Dec 20 14:58 : client: [1] opened from 127.0.0.1:57790

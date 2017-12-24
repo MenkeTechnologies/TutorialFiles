@@ -15524,3 +15524,24 @@ Dec 21 23:21 : client: [1] closed
 Dec 21 23:21 : client: [3] opened from 127.0.0.1:51143
 Dec 21 23:21 : client: [3] closed
 Dec 21 23:21 : client: [4] opened from 127.0.0.1:51149
+Dec 22 00:30 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Dec 22 00:30 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Dec 22 00:30 : player: played "Stellar Evolution _ Tech Trance Mix #1--DyuwcxMpHY.mp3"
+Dec 22 15:28 : config: inotify: auto_update was disabled. enable during compilation phase
+Dec 22 15:28 : config: option 'enabled' on line 29 was not recognized
+Dec 22 15:28 : client: [0] opened from 127.0.0.1:50248
+Dec 22 15:28 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Dec 22 15:28 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Dec 22 16:16 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Dec 22 16:16 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Dec 22 16:16 : player: played "Stellar Evolution _ Tech Trance Mix #1--DyuwcxMpHY.mp3"
+Dec 22 17:52 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Dec 22 17:52 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Dec 22 17:52 : player: played "♫ Best Uplifting Trance Mix - All Time Favourites #1 ♫-iXAbte4QXKs.mp3"
+Dec 22 18:11 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Dec 22 19:09 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Dec 22 19:09 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Dec 22 19:10 : player: played "Tech Trance Mix 2015 _HD-yh6rx1vLUeY.mp3"
+Dec 22 20:05 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Dec 22 20:05 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Dec 22 20:05 : player: played "Stellar Evolution _ Tech Trance Mix #1--DyuwcxMpHY.mp3"

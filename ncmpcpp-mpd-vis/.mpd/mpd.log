@@ -15564,3 +15564,20 @@ Dec 26 12:48 : ffmpeg/mp3: Could not update timestamps for discarded samples.
 Dec 26 12:48 : ffmpeg/mp3: Could not update timestamps for skipped samples.
 Dec 26 12:48 : player: played "TRANCE & TECH TRANCE ENERGY MUSIC MIX-YiTMZ-F8WJ0.mp3"
 Dec 27 00:12 : player: played "Yoji Tech Dance Mix 3-bwZBumna5D8.mp3"
+Dec 29 11:39 : config: inotify: auto_update was disabled. enable during compilation phase
+Dec 29 11:39 : config: option 'enabled' on line 29 was not recognized
+Dec 29 11:39 : client: [0] opened from 127.0.0.1:51608
+Dec 29 11:39 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Dec 29 11:39 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Dec 29 11:39 : client: [1] opened from 127.0.0.1:51618
+Dec 29 11:39 : client: [2] opened from 127.0.0.1:51620
+Dec 29 11:39 : client: [3] opened from 127.0.0.1:51623
+Dec 29 12:40 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Dec 29 12:40 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Dec 29 12:40 : player: played "TRANCE & TECH TRANCE ENERGY MUSIC MIX-YiTMZ-F8WJ0.mp3"
+Dec 29 17:14 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Dec 29 17:14 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Dec 29 17:15 : player: played "Yoji Tech Dance Mix 3-bwZBumna5D8.mp3"
+Dec 29 18:20 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Dec 29 18:20 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Dec 29 18:21 : player: played "Tech Trance Mix 2015 _HD-yh6rx1vLUeY.mp3"

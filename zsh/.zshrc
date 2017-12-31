@@ -10,15 +10,6 @@ export ZSH=$HOME/.oh-my-zsh
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="simonoff"
 
-#if this is a mac or linux
-[[ "$(uname)" == "Darwin" ]] && {
-	source "$HOME/.powerlevel9kconfig.sh" \
-	: ~WCC
-} || {
-
-}
-#shell to recognize env variables in prompt
-: ~SCRIPTS
 
 #colors for common commands
 [[ -f "$HOME/grc.zsh" ]] && source "$HOME/grc.zsh"
@@ -85,6 +76,15 @@ hg_prompt_info(){}
 #has all my aliases and functioms
 source ~/.shell_aliases_functions.sh
 
+#if this is a mac or linux
+[[ "$(uname)" == "Darwin" ]] && {
+    source "$HOME/.powerlevel9kconfig.sh" \
+	: ~WCC
+} || {
+	export RPROMPT="%{%B%}`tty` `echo $$ $-`"
+}
+#shell to recognize env variables in prompt
+: ~SCRIPTS
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
@@ -112,60 +112,60 @@ bindkey -M vicmd '^r' history-incremental-search-backward
 #**************************************************************
 
 _sub (){
-	zle kill-whole-line
-	BUFFER="suc"
-	zle .accept-line
+    zle kill-whole-line
+    BUFFER="suc"
+    zle .accept-line
 
 }
 _updater (){
-	zle kill-whole-line
-	#bash -l options for creating login shell to run script
-	#avoiding issues with rvm which only runs on login shell
-	BUFFER="( cat $SCRIPTS/updater.sh |  bash -l 2>&1 | tee -a $LOGFILE | perl -pne 's/\\e\[.*m/\n/g' | mutt -s \"Log from `date`\" jamenk@me.com 2>$LOGFILE &)"
-	zle .accept-line
+    zle kill-whole-line
+    #bash -l options for creating login shell to run script
+    #avoiding issues with rvm which only runs on login shell
+    BUFFER="( cat $SCRIPTS/updater.sh |  bash -l 2>&1 | tee -a $LOGFILE | perl -pne 's/\\e\[.*m/\n/g' | mutt -s \"Log from `date`\" jamenk@me.com 2>$LOGFILE &)"
+    zle .accept-line
 }
 
 _gitfunc () {
-	gitCommitAndPush "$BUFFER"
-	zle kill-whole-line
-	zle .accept-line
+    gitCommitAndPush "$BUFFER"
+    zle kill-whole-line
+    zle .accept-line
 }
 
 _tutsUpdate() {
-	commitMessage="$BUFFER"
-	if [[ "$commitMessage" ]]; then
-		if [[ "$commitMessage" =~ ^\ +$ ]]; then
-			printf "No commit message\n" >&2
-			zle .accept-line
-		else
-			zle kill-whole-line
-			BUFFER="( tutorialConfigUpdater.sh '$commitMessage' >> \"$LOGFILE\" 2>&1 & )"
-			zle .accept-line
-		fi
-	else
-		printf "No commit message\n" >&2
-		zle .accept-line
-	fi
+    commitMessage="$BUFFER"
+    if [[ "$commitMessage" ]]; then
+        if [[ "$commitMessage" =~ ^\ +$ ]]; then
+            printf "No commit message\n" >&2
+            zle .accept-line
+        else
+            zle kill-whole-line
+            BUFFER="( tutorialConfigUpdater.sh '$commitMessage' >> \"$LOGFILE\" 2>&1 & )"
+            zle .accept-line
+        fi
+    else
+        printf "No commit message\n" >&2
+        zle .accept-line
+    fi
 }
 
 _tmm() {
-	zle kill-whole-line
-	BUFFER=tmm
-	zle .accept-line
+    zle kill-whole-line
+    BUFFER=tmm
+    zle .accept-line
 }
 
 _db() {
-	zle kill-whole-line
-	BUFFER=db
-	zle .accept-line
+    zle kill-whole-line
+    BUFFER=db
+    zle .accept-line
 }
 
 expand-aliases() {
 unset 'functions[_expand-aliases]'
 functions[_expand-aliases]=$BUFFER
 (($+functions[_expand-aliases])) &&
-	BUFFER=${functions[_expand-aliases]#$'\t'} &&
-	CURSOR=$#BUFFER
+    BUFFER=${functions[_expand-aliases]#$'\t'} &&
+    CURSOR=$#BUFFER
 }
 
 zle -N expand-aliases
@@ -209,10 +209,10 @@ WILL_CLEAR=false
 commandsThatModifyFiles=(rm to md touch chown chmod rmdir mv cp chflags chgrp ln mkdir git\ reset git\ clone gcl dot_clean)
 
 for command in ${commandsThatModifyFiles[@]}; do
-	regex="^sudo $command .*\$|^$command .*\$"
-	if [[ "$BUFFER" =~ $regex ]]; then
-		WILL_CLEAR=true
-	fi
+    regex="^sudo $command .*\$|^$command .*\$"
+    if [[ "$BUFFER" =~ $regex ]]; then
+        WILL_CLEAR=true
+    fi
 done
 
 zle .accept-line 
@@ -220,21 +220,21 @@ zle .accept-line
 zle -N accept-line my-accept-line
 
 precmd(){
-	if [[ $? == 0 ]]; then
-		if [[ "$WILL_CLEAR" == true ]]; then
-			clear
-			listNoClear
-		fi
-	fi
-	#exec 2> >(blueUpperText.sh)
+    if [[ $? == 0 ]]; then
+        if [[ "$WILL_CLEAR" == true ]]; then
+            clear
+            listNoClear
+        fi
+    fi
+    #exec 2> >(blueUpperText.sh)
 }
 
 rationalize-dot (){
-if [[ $LBUFFER = *.. ]]; then
-	LBUFFER+=/..
-else
-	LBUFFER+=.
-fi
+    if [[ $LBUFFER = *.. ]]; then
+        LBUFFER+=/..
+    else
+        LBUFFER+=.
+    fi
 }
 zle -N rationalize-dot
 bindkey . rationalize-dot
@@ -318,7 +318,7 @@ zstyle ':completion:*' list-prompt '%SAt %p: Hit TAB for more, or the character 
 zstyle ':completion:*' select-prompt '%SScrolling active: current selection at %p%s'
 # Add simple colors to kill
 zstyle ':completion:*:*:kill:*:processes' list-colors \
-	'=(#b) #([0-9]#) ([0-9a-z-]#)*=01;34=0=01'
+    '=(#b) #([0-9]#) ([0-9a-z-]#)*=01;34=0=01'
 # list of completers to use
 zstyle ':completion:*::::' completer _expand _complete _ignored _approximate
 zstyle ':completion:*' menu select=1 _complete _ignored _approximate
@@ -329,7 +329,7 @@ zstyle ':completion:*:*:-subscript-:*' tag-order indexes parameters
 # formatting and messages
 zstyle ':completion:*' verbose yes
 zstyle ':completion:*:descriptions' format \
-	$'\e[1;31m-<<\e[0;34m%d\e[1;31m>>-\e[0m'
+    $'\e[1;31m-<<\e[0;34m%d\e[1;31m>>-\e[0m'
 
 zstyle ':completion:*:messages' format '%d'
 zstyle ':completion:*:warnings' format 'No matches for: %d'
@@ -340,9 +340,9 @@ zstyle ':completion:*:corrections' format '%B%d (errors: %e)%b'
 # 2 -- word flex completion (abc => A-big-Car)
 # 3 -- full flex completion (abc => ABraCadabra)
 zstyle ':completion:*' matcher-list '' \
-	'm:{a-z\-}={A-Z\_}' \
-	'r:[^[:alpha:]]||[[:alpha:]]=** r:|=* m:{a-z\-}={A-Z\_}' \
-	'r:|?=** m:{a-z\-}={A-Z\_}'
+    'm:{a-z\-}={A-Z\_}' \
+    'r:[^[:alpha:]]||[[:alpha:]]=** r:|=* m:{a-z\-}={A-Z\_}' \
+    'r:|?=** m:{a-z\-}={A-Z\_}'
 
 #}}}
 
@@ -373,40 +373,40 @@ source "$HOME/z.sh"
 
 #go to desktop if not root
 if [[ "$(uname)" = Darwin ]]; then
-	if [[ "$UID" != "0" ]]; then
-		# builtin cd "$D" && clear
-		type figlet > /dev/null 2>&1 && {
-			printf "\e[1m"
-		[[ -f "$SCRIPTS/macOnly/figletRandomFontOnce.sh" ]] && {
-			[[ -f "$SCRIPTS/macOnly/splitReg.sh" ]] && {
-			bash "$SCRIPTS/macOnly/figletRandomFontOnce.sh" \
-			"$(hostname)" | ponysay -W 100 | splitReg.sh -- ---------------------- lolcat
-	} || {
-		bash "$SCRIPTS/macOnly/figletRandomFontOnce.sh" \
-		"$(hostname)" | ponysay -W 100
+    if [[ "$UID" != "0" ]]; then
+        # builtin cd "$D" && clear
+        type figlet > /dev/null 2>&1 && {
+            printf "\e[1m"
+        [[ -f "$SCRIPTS/macOnly/figletRandomFontOnce.sh" ]] && {
+            [[ -f "$SCRIPTS/macOnly/splitReg.sh" ]] && {
+            bash "$SCRIPTS/macOnly/figletRandomFontOnce.sh" \
+            "$(hostname)" | ponysay -W 100 | splitReg.sh -- ---------------------- lolcat
+    } || {
+        bash "$SCRIPTS/macOnly/figletRandomFontOnce.sh" \
+        "$(hostname)" | ponysay -W 100
 }
-				}
-			}
-			printf "\e[0m"
-			# type screenfetch > /dev/null 2>&1 && screenfetch 2> /dev/null
-			listNoClear
-		else
-			clearList
-		fi
-	else
-		distro="$(cat /etc/os-release | grep "^NAME" | cut -d= -f2 | tr -d \")"
+                }
+            }
+            printf "\e[0m"
+            # type screenfetch > /dev/null 2>&1 && screenfetch 2> /dev/null
+            listNoClear
+        else
+            clearList
+        fi
+    else
+        distro="$(cat /etc/os-release | grep "^NAME" | cut -d= -f2 | tr -d \")"
 
-		if [[ "$UID" != "0" ]]; then
-			builtin cd "$D"
-			if [[ "$distro" =~ Raspbian* ]]; then
-				type ponysay 1>/dev/null 2>&1 && {
-					bash "$HOME/motd.sh" | ponysay -W 120 
-			} || bash "$HOME/motd.sh"
-		fi
-		listNoClear
-	else
-		clearList
-	fi
+        if [[ "$UID" != "0" ]]; then
+            builtin cd "$D"
+            if [[ "$distro" =~ Raspbian* ]]; then
+                type ponysay 1>/dev/null 2>&1 && {
+                    bash "$HOME/motd.sh" | ponysay -W 120 
+            } || bash "$HOME/motd.sh"
+        fi
+        listNoClear
+    else
+        clearList
+    fi
 fi
 
 
@@ -418,12 +418,12 @@ color2
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 h=()
 if [[ -r ~/.ssh/config ]]; then
-	h=($h ${${${(@M)${(f)"$(cat ~/.ssh/config)"}:#Host *}#Host }:#*[*?]*})
-	h=($h ${${${(@M)${(f)"$(cat ~/.ssh/config)"}:#Hostname *}#Hostname }:#*[*?]*})
+    h=($h ${${${(@M)${(f)"$(cat ~/.ssh/config)"}:#Host *}#Host }:#*[*?]*})
+    h=($h ${${${(@M)${(f)"$(cat ~/.ssh/config)"}:#Hostname *}#Hostname }:#*[*?]*})
 fi
 if [[ $#h -gt 0 ]]; then
-	zstyle ':completion:*:ssh:*' hosts $h
-	zstyle ':completion:*:slogin:*' hosts $h
+    zstyle ':completion:*:ssh:*' hosts $h
+    zstyle ':completion:*:slogin:*' hosts $h
 fi
 
 zstyle ':completion:*:options' list-colors '=(#b)(--#)([a-zA-Z0-9-]#)*=1;32=1;33=34'

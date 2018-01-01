@@ -289,7 +289,7 @@ setopt CSH_NULL_GLOB
 
 setopt nolistbeep
 
-# > file creates files
+# > file creates file
 setopt shnullcmd
 
 # allow unquoted globs to pass through
@@ -344,6 +344,23 @@ zstyle ':completion:*' matcher-list '' \
     'r:[^[:alpha:]]||[[:alpha:]]=** r:|=* m:{a-z\-}={A-Z\_}' \
     'r:|?=** m:{a-z\-}={A-Z\_}'
 
+h=()
+if [[ -r ~/.ssh/config ]]; then
+    h=($h ${${${(@M)${(f)"$(cat ~/.ssh/config)"}:#Host *}#Host }:#*[*?]*})
+    h=($h ${${${(@M)${(f)"$(cat ~/.ssh/config)"}:#Hostname *}#Hostname }:#*[*?]*})
+fi
+if [[ $#h -gt 0 ]]; then
+    zstyle ':completion:*:ssh:*' hosts $h
+    zstyle ':completion:*:slogin:*' hosts $h
+fi
+
+zstyle ':completion:*:options' list-colors '=(#b)(--#)([a-zA-Z0-9-]#)*=1;32=1;33=34'
+
+#zstyle ':completion:*:*:kill:*' list-colors '=(#b) #([0-9]#)*( *[a-z])*=34=31=33'
+
+zstyle ':completion:*' group-name ''
+
+zstyle ':completion:*:manuals' separate-sections true
 #}}}
 
 #global aliases
@@ -415,23 +432,6 @@ color2
 
 #homebrew conflicts with /usr/bin/perl
 #unset PERL5LIB
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-h=()
-if [[ -r ~/.ssh/config ]]; then
-    h=($h ${${${(@M)${(f)"$(cat ~/.ssh/config)"}:#Host *}#Host }:#*[*?]*})
-    h=($h ${${${(@M)${(f)"$(cat ~/.ssh/config)"}:#Hostname *}#Hostname }:#*[*?]*})
-fi
-if [[ $#h -gt 0 ]]; then
-    zstyle ':completion:*:ssh:*' hosts $h
-    zstyle ':completion:*:slogin:*' hosts $h
-fi
-
-zstyle ':completion:*:options' list-colors '=(#b)(--#)([a-zA-Z0-9-]#)*=1;32=1;33=34'
-
-#zstyle ':completion:*:*:kill:*' list-colors '=(#b) #([0-9]#)*( *[a-z])*=34=31=33'
-
-zstyle ':completion:*' group-name ''
-
 #change history file size
 export SAVEHIST=50000
 #change history size
@@ -441,5 +441,4 @@ export HISTSIZE=50000
 #set right prompt string during continuation 
 RPS2='+%N:%i:%^'
 
-zstyle ':completion:*:manuals' separate-sections true
 

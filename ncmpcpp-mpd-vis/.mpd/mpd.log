@@ -15594,3 +15594,8 @@ Dec 30 23:50 : client: [0] closed
 Dec 30 23:50 : client: [3] closed
 Dec 30 23:50 : client: [1] closed
 Dec 30 23:50 : client: [2] closed
+Jan 01 17:28 : client: [4] opened from 127.0.0.1:61571
+Jan 01 17:28 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Jan 01 17:28 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Jan 01 18:16 : player: played "TRANCE & TECH TRANCE ENERGY MUSIC MIX-YiTMZ-F8WJ0.mp3"
+Jan 01 18:16 : ffmpeg/mp3: Could not update timestamps for skipped samples.

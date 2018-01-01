@@ -79,9 +79,9 @@ source ~/.shell_aliases_functions.sh
 #if this is a mac or linux
 [[ "$(uname)" == "Darwin" ]] && {
     source "$HOME/.powerlevel9kconfig.sh" \
-	: ~WCC
+    : ~WCC
 } || {
-	export RPROMPT="%{%B%}`tty` `echo $$ $-`"
+    export RPROMPT="%{%B%}`tty` `echo $$ $-`"
 }
 #shell to recognize env variables in prompt
 : ~SCRIPTS
@@ -230,11 +230,11 @@ precmd(){
 }
 
 rationalize-dot (){
-    if [[ $LBUFFER = *.. ]]; then
-        LBUFFER+=/..
-    else
-        LBUFFER+=.
-    fi
+if [[ $LBUFFER = *.. ]]; then
+    LBUFFER+=/..
+else
+    LBUFFER+=.
+fi
 }
 zle -N rationalize-dot
 bindkey . rationalize-dot
@@ -328,13 +328,17 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 zstyle ':completion:*:*:-subscript-:*' tag-order indexes parameters
 # formatting and messages
 zstyle ':completion:*' verbose yes
+zstyle ':completion:*' format \
+    $'\e[1;31m-<<\e[0;34m%d\e[1;31m>>-\e[0m'
 zstyle ':completion:*:descriptions' format \
     $'\e[1;31m-<<\e[0;34m%d\e[1;31m>>-\e[0m'
 
-zstyle ':completion:*:messages' format '%d'
-zstyle ':completion:*:warnings' format 'No matches for: %d'
 zstyle ':completion:*:corrections' format '%B%d (errors: %e)%b'
+zstyle ':completion:*:messages' format \
+    $'\e[1;31m-<<\e[0;34m%d\e[1;31m>>-\e[0m'
 
+zstyle ':completion:*:warnings' format \
+    $'\e[1;31m-<<\e[0;34mNo Matches for %d\e[1;31m>>-\e[0m'
 # 0 -- vanilla completion (abc => abc)
 # 1 -- smart case completion (abc => Abc)
 # 2 -- word flex completion (abc => A-big-Car)
@@ -349,6 +353,7 @@ if [[ -r ~/.ssh/config ]]; then
     h=($h ${${${(@M)${(f)"$(cat ~/.ssh/config)"}:#Host *}#Host }:#*[*?]*})
     h=($h ${${${(@M)${(f)"$(cat ~/.ssh/config)"}:#Hostname *}#Hostname }:#*[*?]*})
 fi
+
 if [[ $#h -gt 0 ]]; then
     zstyle ':completion:*:ssh:*' hosts $h
     zstyle ':completion:*:slogin:*' hosts $h

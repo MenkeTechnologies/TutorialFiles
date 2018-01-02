@@ -242,6 +242,7 @@ bindkey . rationalize-dot
 bindkey -M listscroll q send-break
 bindkey -M listscroll f complete-word
 
+bindkey -M menuselect '\C-o' accept-and-menu-complete
 #}}}***********************************************************
 
 # Set Options {{{

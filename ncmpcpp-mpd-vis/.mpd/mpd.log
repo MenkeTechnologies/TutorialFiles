@@ -15635,3 +15635,6 @@ Jan 02 23:53 : client: [0] closed
 Jan 02 23:53 : client: [1] closed
 Jan 03 00:02 : client: [2] opened from 127.0.0.1:54284
 Jan 03 00:02 : client: [3] opened from 127.0.0.1:54286
+Jan 03 00:21 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Jan 03 00:21 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Jan 03 00:21 : player: played "♫ Best Uplifting Trance Mix - All Time Favourites #1 ♫-iXAbte4QXKs.mp3"

@@ -1,7 +1,9 @@
 sw_volume: 58
 audio_device_state:1:CoreAudio
 audio_device_state:1:my_fifo
-state: stop
+state: play
+current: 6
+time: 244.968000
 random: 0
 repeat: 0
 single: 0
@@ -15,7 +17,7 @@ playlist_begin
 2:♫ Amazing Uplifting Trance Mix l May 2017 (Vol. 62)  ♫-sbf1q0igfks.mp3
 3:Ableton/User Library/Samples/Recorded/0001 12-Audio-1.wav
 4:TRANCE & TECH TRANCE ENERGY MUSIC MIX-YiTMZ-F8WJ0.mp3
-5:Yoji Tech Dance Mix 3-bwZBumna5D8.mp3
-6:Tech Trance Mix 2015 _HD-yh6rx1vLUeY.mp3
-7:Stellar Evolution _ Tech Trance Mix #1--DyuwcxMpHY.mp3
+5:Tech Trance Mix 2015 _HD-yh6rx1vLUeY.mp3
+6:Stellar Evolution _ Tech Trance Mix #1--DyuwcxMpHY.mp3
+7:Kris Menace feat. Fred Falke - Fairlight-mNgVSqrSNWE.mp3
 playlist_end

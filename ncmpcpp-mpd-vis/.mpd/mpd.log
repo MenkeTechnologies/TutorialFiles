@@ -15615,3 +15615,13 @@ Jan 02 11:55 : config: inotify: auto_update was disabled. enable during compilat
 Jan 02 11:55 : config: option 'enabled' on line 29 was not recognized
 Jan 02 12:17 : ffmpeg/mp3: Could not update timestamps for discarded samples.
 Jan 02 12:18 : player: played "Stellar Evolution _ Tech Trance Mix #1--DyuwcxMpHY.mp3"
+Jan 02 21:03 : config: inotify: auto_update was disabled. enable during compilation phase
+Jan 02 21:03 : config: option 'enabled' on line 29 was not recognized
+Jan 02 21:03 : client: [0] opened from 127.0.0.1:50529
+Jan 02 21:03 : client: [1] opened from 127.0.0.1:50533
+Jan 02 21:03 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Jan 02 21:37 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Jan 02 21:45 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Jan 02 21:46 : player: played "Kris Menace feat. Fred Falke - Fairlight-mNgVSqrSNWE.mp3"
+Jan 02 21:57 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Jan 02 21:57 : ffmpeg/mp3: Could not update timestamps for skipped samples.

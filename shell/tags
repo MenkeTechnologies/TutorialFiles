@@ -317,6 +317,7 @@ newfile	createTextFile.sh	/^newfile="$1"$/;"	v
 newfile	macOnly/.shell_aliases_functions.sh	/^    newfile="$1".$(date +%Y%m%d.%H.%M.bak)$/;"	v
 nn	customTerminalInstaller/.shell_aliases_functions.sh	/^nn(){$/;"	f
 nn	macOnly/.shell_aliases_functions.sh	/^nn(){$/;"	f
+num	storageShower.sh	/^    num="$1"$/;"	v
 number	batchRename.sh	/^        local number=$((10#$number))$/;"	v
 number	batchRename.sh	/^        local number=`echo ${last%%.*}`$/;"	v
 o	macOnly/combo.sh	/^o="$(cat)"$/;"	v
@@ -324,7 +325,7 @@ openTextEditor	createScriptButDontOpenSublime.sh	/^openTextEditor(){$/;"	f
 openTextEditor	createTextFile.sh	/^openTextEditor(){$/;"	f
 optstring	directoryContentsSize.sh	/^optstring=shta$/;"	v
 optstring	gitgo.sh	/^optstring=p:hcl$/;"	v
-optstring	myWatchMaintainEscapes.sh	/^optstring=dh$/;"	v
+optstring	myWatchMaintainEscapes.sh	/^optstring=dhl:$/;"	v
 optstring	myWatchNoBlink.sh	/^optstring=bh$/;"	v
 optstring	myWatchNoBlinkColorized.sh	/^optstring=bh$/;"	v
 optstring	mywatch.sh	/^optstring=dh$/;"	v

@@ -15810,3 +15810,37 @@ Jan 07 17:36 : player: played "Ableton/User Library/Samples/Imported/ATE Drum Lo
 Jan 07 17:36 : player: played "Ableton/User Library/Samples/Imported/ATE Drum Loop - 047 - 138 BPM - Percussion Loop.wav"
 Jan 07 17:36 : player: played "Ableton/User Library/Samples/Imported/ATE Drum Loop - 064 - 138 BPM - Percussion Loop.wav"
 Jan 08 10:08 : player: played "Ableton/User Library/Samples/Imported/ATE Drum Loop - 064 - 138 BPM - Percussion Loop.wav"
+Jan 09 14:20 : config: inotify: auto_update was disabled. enable during compilation phase
+Jan 09 14:20 : config: option 'enabled' on line 29 was not recognized
+Jan 09 14:20 : client: [0] opened from 127.0.0.1:53735
+Jan 09 14:20 : client: [1] opened from 127.0.0.1:53737
+Jan 09 14:20 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Jan 09 14:20 : client: [2] opened from 127.0.0.1:53752
+Jan 09 14:20 : client: [3] opened from 127.0.0.1:53754
+Jan 09 16:15 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Jan 09 16:15 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Jan 09 16:15 : player: played "TRANCE & TECH TRANCE ENERGY MUSIC MIX-YiTMZ-F8WJ0.mp3"
+Jan 09 17:19 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Jan 09 17:19 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Jan 09 17:19 : player: played "Tech Trance Mix 2015 _HD-yh6rx1vLUeY.mp3"
+Jan 10 16:46 : client: [0] closed
+Jan 10 16:46 : client: [1] closed
+Jan 10 16:46 : client: [2] closed
+Jan 10 16:46 : client: [3] closed
+Jan 10 17:09 : client: [4] opened from 127.0.0.1:51149
+Jan 10 17:10 : client: [5] opened from 127.0.0.1:51151
+Jan 10 17:10 : client: [4] closed
+Jan 10 17:10 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Jan 10 17:12 : client: [5] closed
+Jan 10 17:13 : client: [6] opened from 127.0.0.1:51197
+Jan 10 17:13 : client: [7] opened from 127.0.0.1:51199
+Jan 10 17:13 : client: [8] opened from 127.0.0.1:51201
+Jan 10 17:13 : client: [9] opened from 127.0.0.1:51202
+Jan 10 17:15 : client: [10] opened from 127.0.0.1:51244
+Jan 10 17:15 : client: [11] opened from 127.0.0.1:51246
+Jan 10 17:15 : client: [12] opened from 127.0.0.1:51248
+Jan 10 17:15 : client: [13] opened from 127.0.0.1:51250
+Jan 10 17:15 : client: [13] closed
+Jan 10 17:15 : client: [11] closed
+Jan 10 17:15 : client: [10] closed
+Jan 10 17:15 : client: [12] closed

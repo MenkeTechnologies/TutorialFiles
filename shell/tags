@@ -95,7 +95,9 @@ TIME	mywatch.sh	/^    TIME=1$/;"	v
 URL	gitgo.sh	/^    local URL="https:\/\/github.com\/$GITHUB_ACCOUNT\/$REPO_NAME_TO_CREATE"$/;"	v
 __ScriptVersion	macOnly/splitReg.sh	/^__ScriptVersion=1.0.0$/;"	v
 __ScriptVersion	macOnly/splitStdoutByRegex.sh	/^__ScriptVersion=1.0.0$/;"	v
+__ScriptVersion	powerTo.sh	/^__ScriptVersion="1.0.0"$/;"	v
 __ScriptVersion	tgzLocalInstaller.sh	/^__ScriptVersion="1.0.0"$/;"	v
+active	powerTo.sh	/^active=$(tmux list-panes | grep active | cut -c1)$/;"	v
 addContents	shebangChanger.sh	/^addContents(){$/;"	f
 addHeader	createTextFile.sh	/^addHeader(){$/;"	f
 addHeader	templater.sh	/^addHeader(){$/;"	f
@@ -283,6 +285,7 @@ killCursor	secureDelete.sh	/^killCursor(){$/;"	f
 last	batchRename.sh	/^        local last=`echo ${file##*_}`$/;"	v
 last_fields	macOnly/.shell_aliases_functions.sh	/^                last_fields="$(echo $locale | cut -d' ' -f3-10)"$/;"	v
 lcline	openAll.sh	/^	lcline="$(echo $line | tr '[:upper:]' '[:lower:]')"$/;"	v
+leaveMeAlone	powerTo.sh	/^leaveMeAlone=false$/;"	v
 length	filenameLengthCounters.sh	/^        length="$(echo $file_name | wc -c | tr -d ' ')"$/;"	v
 level	macOnly/splitReg.sh	/^level=1$/;"	v
 lib_command	macOnly/.shell_aliases_functions.sh	/^lib_command="ldd -v"$/;"	v
@@ -317,6 +320,8 @@ newfile	createTextFile.sh	/^newfile="$1"$/;"	v
 newfile	macOnly/.shell_aliases_functions.sh	/^    newfile="$1".$(date +%Y%m%d.%H.%M.bak)$/;"	v
 nn	customTerminalInstaller/.shell_aliases_functions.sh	/^nn(){$/;"	f
 nn	macOnly/.shell_aliases_functions.sh	/^nn(){$/;"	f
+num	powerTo.sh	/^    num=$1$/;"	v
+num	powerTo.sh	/^    num=`tmux list-panes | wc -l`$/;"	v
 num	storageShower.sh	/^    num="$1"$/;"	v
 number	batchRename.sh	/^        local number=$((10#$number))$/;"	v
 number	batchRename.sh	/^        local number=`echo ${last%%.*}`$/;"	v
@@ -487,6 +492,7 @@ usage	myWatchNoBlink.sh	/^usage(){$/;"	f
 usage	myWatchNoBlinkColorized.sh	/^usage(){$/;"	f
 usage	mywatch.sh	/^usage(){$/;"	f
 usage	mywatchBlink.sh	/^usage(){$/;"	f
+usage	powerTo.sh	/^function usage ()$/;"	f
 usage	shebangChanger.sh	/^usage(){$/;"	f
 usage	tgzLocalInstaller.sh	/^function usage ()$/;"	f
 user	gitRemoteRepoInformation.sh	/^            user="$(echo $line | awk -F'\/' '{print $4}')"$/;"	v

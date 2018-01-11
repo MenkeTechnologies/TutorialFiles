@@ -285,7 +285,7 @@ killCursor	secureDelete.sh	/^killCursor(){$/;"	f
 last	batchRename.sh	/^        local last=`echo ${file##*_}`$/;"	v
 last_fields	macOnly/.shell_aliases_functions.sh	/^                last_fields="$(echo $locale | cut -d' ' -f3-10)"$/;"	v
 lcline	openAll.sh	/^	lcline="$(echo $line | tr '[:upper:]' '[:lower:]')"$/;"	v
-leaveMeAlone	powerTo.sh	/^leaveMeAlone=false$/;"	v
+leavePresentPaneAloneFlag	powerTo.sh	/^leavePresentPaneAloneFlag=false$/;"	v
 length	filenameLengthCounters.sh	/^        length="$(echo $file_name | wc -c | tr -d ' ')"$/;"	v
 level	macOnly/splitReg.sh	/^level=1$/;"	v
 lib_command	macOnly/.shell_aliases_functions.sh	/^lib_command="ldd -v"$/;"	v
@@ -406,7 +406,7 @@ rangePossibleIndices	macOnly/figletRandomFontOnce.sh	/^rangePossibleIndices=${#a
 rangePossibleIndices	macOnly/menkeTechRandomFont.sh	/^rangePossibleIndices=${#ary[*]}$/;"	v
 rangePossibleIndices	macOnly/randomCow.sh	/^rangePossibleIndices=${#ary[*]}$/;"	v
 rangePossibleIndices	menkeTechRandoFont.sh	/^rangePossibleIndices=${#ary[*]}$/;"	v
-realNum	powerTo.sh	/^realNum=`tmux list-panes | wc -l`$/;"	v
+realNum	powerTo.sh	/^realNum=$(tmux list-panes | wc -l)$/;"	v
 red	customTerminalInstaller/.shell_aliases_functions.sh	/^red=$(tput setaf 1)$/;"	v
 red	macOnly/.shell_aliases_functions.sh	/^	red=$(tput setaf 1)$/;"	v
 regex	macOnly/splitReg.sh	/^regex="$1"$/;"	v

@@ -320,8 +320,9 @@ newfile	createTextFile.sh	/^newfile="$1"$/;"	v
 newfile	macOnly/.shell_aliases_functions.sh	/^    newfile="$1".$(date +%Y%m%d.%H.%M.bak)$/;"	v
 nn	customTerminalInstaller/.shell_aliases_functions.sh	/^nn(){$/;"	f
 nn	macOnly/.shell_aliases_functions.sh	/^nn(){$/;"	f
+num	powerTo.sh	/^        num=realNum$/;"	v
 num	powerTo.sh	/^    num=$1$/;"	v
-num	powerTo.sh	/^    num=`tmux list-panes | wc -l`$/;"	v
+num	powerTo.sh	/^    num=realNum$/;"	v
 num	storageShower.sh	/^    num="$1"$/;"	v
 number	batchRename.sh	/^        local number=$((10#$number))$/;"	v
 number	batchRename.sh	/^        local number=`echo ${last%%.*}`$/;"	v
@@ -405,6 +406,7 @@ rangePossibleIndices	macOnly/figletRandomFontOnce.sh	/^rangePossibleIndices=${#a
 rangePossibleIndices	macOnly/menkeTechRandomFont.sh	/^rangePossibleIndices=${#ary[*]}$/;"	v
 rangePossibleIndices	macOnly/randomCow.sh	/^rangePossibleIndices=${#ary[*]}$/;"	v
 rangePossibleIndices	menkeTechRandoFont.sh	/^rangePossibleIndices=${#ary[*]}$/;"	v
+realNum	powerTo.sh	/^realNum=`tmux list-panes | wc -l`$/;"	v
 red	customTerminalInstaller/.shell_aliases_functions.sh	/^red=$(tput setaf 1)$/;"	v
 red	macOnly/.shell_aliases_functions.sh	/^	red=$(tput setaf 1)$/;"	v
 regex	macOnly/splitReg.sh	/^regex="$1"$/;"	v

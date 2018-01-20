@@ -16433,3 +16433,18 @@ Jan 18 19:29 : client: [3] closed
 Jan 18 19:29 : client: [0] closed
 Jan 18 19:29 : client: [2] closed
 Jan 18 19:29 : client: [1] closed
+Jan 20 11:45 : config: inotify: auto_update was disabled. enable during compilation phase
+Jan 20 11:45 : config: option 'enabled' on line 29 was not recognized
+Jan 20 11:45 : client: [0] opened from 127.0.0.1:51489
+Jan 20 11:45 : client: [1] opened from 127.0.0.1:51490
+Jan 20 11:45 : client: [2] opened from 127.0.0.1:51491
+Jan 20 11:45 : client: [3] opened from 127.0.0.1:51493
+Jan 20 11:45 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Jan 20 13:06 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Jan 20 13:06 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Jan 20 13:06 : player: played "♫ Best Uplifting Trance Mix - All Time Favourites #1 ♫-iXAbte4QXKs.mp3"
+Jan 20 13:40 : client: [3] closed
+Jan 20 13:40 : client: [0] closed
+Jan 20 13:40 : client: [2] closed
+Jan 20 13:40 : client: [1] closed
+Jan 20 14:07 : player: played "Best Of Pure • Emotional • Melodic • Euphoric • Uplifting Trance Mix-fugFmO7cGJ8.mp3"

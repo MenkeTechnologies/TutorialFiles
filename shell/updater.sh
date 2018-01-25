@@ -64,11 +64,12 @@ exists pip2 && {
     #update pip itself
     pip2 install --upgrade pip setuptools wheel &> /dev/null
 }
+
 exists /usr/local/bin/ruby && {
     prettyPrint "Updating Ruby Packages"
-    gem update --system
-    gem update
-    gem cleanup
+    /usr/loca/bin/gem update --system
+    /usr/loca/bin/gem update
+    /usr/loca/bin/gem cleanup
 }
 
 exists brew && {

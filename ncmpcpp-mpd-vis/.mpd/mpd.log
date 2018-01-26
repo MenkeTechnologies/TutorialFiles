@@ -16636,3 +16636,10 @@ Jan 24 14:57 : ffmpeg/mp3: Could not update timestamps for skipped samples.
 Jan 24 14:58 : player: played "Ableton/User Library/Samples/Imported/ATE Drum Loop - 064 - 138 BPM - Percussion Loop.wav"
 Jan 24 16:05 : ffmpeg/mp3: Could not update timestamps for skipped samples.
 Jan 24 20:18 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Jan 25 13:46 : client: [0] closed
+Jan 25 13:46 : client: [3] closed
+Jan 25 13:46 : client: [1] closed
+Jan 25 13:46 : client: [2] closed
+Jan 25 15:07 : client: [4] opened from 127.0.0.1:63480
+Jan 25 15:07 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Jan 25 15:07 : ffmpeg/mp3: Could not update timestamps for skipped samples.

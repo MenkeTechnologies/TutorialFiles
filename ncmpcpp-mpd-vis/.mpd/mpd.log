@@ -16810,3 +16810,16 @@ Jan 28 12:27 : ffmpeg/mp3: Could not update timestamps for skipped samples.
 Jan 28 12:32 : ffmpeg/mp3: Could not update timestamps for discarded samples.
 Jan 28 12:32 : ffmpeg/mp3: Could not update timestamps for skipped samples.
 Jan 28 12:32 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Jan 28 13:25 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Jan 28 13:33 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Jan 28 14:09 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Jan 28 15:31 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Jan 28 15:31 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Jan 28 15:32 : player: played "Tech Trance Mix 2015 _HD-yh6rx1vLUeY.mp3"
+Jan 28 18:34 : player: played "Stellar Evolution _ Tech Trance Mix #1--DyuwcxMpHY.mp3"
+Jan 28 18:46 : config: inotify: auto_update was disabled. enable during compilation phase
+Jan 28 18:46 : config: option 'enabled' on line 29 was not recognized
+Jan 28 18:46 : client: [0] opened from 127.0.0.1:49343
+Jan 28 18:46 : client: [1] opened from 127.0.0.1:49345
+Jan 28 18:46 : client: [2] opened from 127.0.0.1:49347
+Jan 28 18:46 : client: [3] opened from 127.0.0.1:49349

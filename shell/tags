@@ -150,6 +150,7 @@ contents	duplicateLineDeleter.sh	/^	contents=$(cat -s "$file")$/;"	v
 contents	indenterAndDuplicateLineDeleter.sh	/^    contents=$(cat -s "$file")$/;"	v
 convertFiles	batchRename.sh	/^convertFiles(){$/;"	f
 count	animation	/^count=$topline$/;"	v
+count	uploadWebPi.sh	/^count=0$/;"	v
 counter	filenameLengthCounters.sh	/^counter=0$/;"	v
 createGIF	customTerminalInstaller/.shell_aliases_functions.sh	/^    createGIF(){$/;"	f
 createGIF	macOnly/.shell_aliases_functions.sh	/^createGIF(){$/;"	f
@@ -292,6 +293,7 @@ lib_command	macOnly/.shell_aliases_functions.sh	/^lib_command="ldd -v"$/;"	v
 lib_command	macOnly/.shell_aliases_functions.sh	/^lib_command="otool -L"$/;"	v
 line	gitRemoteRepoInformation.sh	/^        line="$(git remote -v 2>\/dev\/null)"$/;"	v
 lineCounter	shebangChanger.sh	/^    lineCounter=1$/;"	v
+link	uploadWebPi.sh	/^        link="http:\/\/$MY_IP:$RPI_HTML_PORT\/$i"$/;"	v
 listNoClear	macOnly/.shell_aliases_functions.sh	/^listNoClear () {$/;"	f
 ls_command	macOnly/.shell_aliases_functions.sh	/^        ls_command="grc -c \/usr\/local\/share\/grc\/conf.gls gls -iFlhA --color=always"$/;"	v
 ls_command	macOnly/.shell_aliases_functions.sh	/^        ls_command="grc -c \/usr\/share\/grc\/conf.gls ls -iFlhA --color=always"$/;"	v
@@ -479,6 +481,7 @@ title	macOnly/.shell_aliases_functions.sh	/^    title="$1"$/;"	v
 topline	animation	/^topline=0$/;"	v
 total	oldCounter.sh	/^total=0$/;"	v
 total	oldCounter.sh	/^total=`expr $(ls -F $1 | grep ".*[*@]" | wc -l) + $total`$/;"	v
+total	uploadWebPi.sh	/^total=$#$/;"	v
 transferFile	transfer.sh	/^transferFile="$1"$/;"	v
 tutorialDir	macOnly/tutorialConfigUpdater.sh	/^tutorialDir="$HOME\/Documents\/tutorialsRepo"$/;"	v
 update	customTerminalInstaller/install.sh	/^update (){$/;"	f

@@ -1,6 +1,6 @@
 " ~/.vim/sessions/vrc.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 09 November 2017 at 07:49:12.
+" Created by session.vim 2.13.1 on 30 January 2018 at 23:29:50.
 " Open this file in Vim and run :source % to restore your session.
 
 set guioptions=egmrL
@@ -12,7 +12,7 @@ if exists('g:did_indent_on') != 1 | filetype indent on | endif
 if &background != 'dark'
 	set background=dark
 endif
-if !exists('g:colors_name') || g:colors_name != 'neverness' | colorscheme neverness | endif
+if !exists('g:colors_name') || g:colors_name != 'blue' | colorscheme blue | endif
 call setqflist([])
 let SessionLoad = 1
 if &cp | set nocp | endif
@@ -44,17 +44,13 @@ setlocal fdl=5
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-197
+201
 silent! normal! zo
-317
-silent! normal! zo
-318
-silent! normal! zo
-let s:l = 427 - ((28 * winheight(0) + 33) / 67)
+let s:l = 420 - ((21 * winheight(0) + 33) / 67)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-427
+420
 normal! 0
 tabnext 1
 if exists('s:wipebuf')

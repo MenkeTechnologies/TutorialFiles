@@ -16846,3 +16846,10 @@ Jan 30 14:05 : client: [8] opened from 127.0.0.1:58537
 Jan 30 14:05 : client: [9] opened from 127.0.0.1:58539
 Jan 30 14:05 : client: [10] opened from 127.0.0.1:58541
 Jan 30 14:05 : client: [11] opened from 127.0.0.1:58543
+Jan 30 16:37 : player: played "Tech Trance Mix 2015 _HD-yh6rx1vLUeY.mp3"
+Jan 30 23:16 : config: inotify: auto_update was disabled. enable during compilation phase
+Jan 30 23:16 : config: option 'enabled' on line 29 was not recognized
+Jan 30 23:16 : client: [0] opened from 127.0.0.1:51320
+Jan 30 23:16 : client: [1] opened from 127.0.0.1:51321
+Jan 30 23:16 : client: [2] opened from 127.0.0.1:51323
+Jan 30 23:16 : client: [3] opened from 127.0.0.1:51325

@@ -1,6 +1,6 @@
 " ~/.vim/sessions/aliases.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 30 January 2018 at 23:28:12.
+" Created by session.vim 2.13.1 on 31 January 2018 at 03:14:44.
 " Open this file in Vim and run :source % to restore your session.
 
 set guioptions=egmrL
@@ -12,7 +12,7 @@ if exists('g:did_indent_on') != 1 | filetype indent on | endif
 if &background != 'dark'
 	set background=dark
 endif
-if !exists('g:colors_name') || g:colors_name != 'neonwave' | colorscheme neonwave | endif
+if !exists('g:colors_name') || g:colors_name != 'kkruby' | colorscheme kkruby | endif
 call setqflist([])
 let SessionLoad = 1
 if &cp | set nocp | endif
@@ -39,16 +39,18 @@ setlocal fdm=marker
 setlocal fde=0
 setlocal fmr={{{,}}}
 setlocal fdi=#
-setlocal fdl=1
+setlocal fdl=2
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 187 - ((19 * winheight(0) + 33) / 67)
+88
+silent! normal! zo
+let s:l = 434 - ((62 * winheight(0) + 33) / 67)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-187
-normal! 071|
+434
+normal! 05|
 tabnext 1
 if exists('s:wipebuf')
 "   silent exe 'bwipe ' . s:wipebuf

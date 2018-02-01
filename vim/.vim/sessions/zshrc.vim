@@ -1,6 +1,6 @@
 " ~/.vim/sessions/zshrc.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 31 January 2018 at 23:48:01.
+" Created by session.vim 2.13.1 on 01 February 2018 at 00:07:34.
 " Open this file in Vim and run :source % to restore your session.
 
 set guioptions=egmrL
@@ -25,9 +25,13 @@ if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
 endif
 set shortmess=aoO
 badd +0 ~/.zshrc
+badd +0 ~/.oh-my-zsh/oh-my-zsh.sh
+badd +1 ~/.oh-my-zsh/custom/plugins/zsh-more-completions/
+badd +0 ~/.oh-my-zsh/custom/plugins/zsh-more-completions/src/_otool
 argglobal
 silent! argdel *
 $argadd ~/.zshrc
+set stal=2
 edit ~/.zshrc
 set splitbelow splitright
 set nosplitbelow
@@ -43,13 +47,56 @@ setlocal fdl=1
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 510 - ((33 * winheight(0) + 35) / 71)
+let s:l = 485 - ((8 * winheight(0) + 35) / 70)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-510
-normal! 010|
+485
+normal! 0
+tabedit ~/.oh-my-zsh/oh-my-zsh.sh
+set splitbelow splitright
+set nosplitbelow
+set nosplitright
+wincmd t
+set winminheight=1 winheight=1 winminwidth=1 winwidth=1
+argglobal
+setlocal fdm=marker
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+let s:l = 37 - ((36 * winheight(0) + 35) / 70)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+37
+normal! 0
+tabedit ~/.oh-my-zsh/custom/plugins/zsh-more-completions/src/_otool
+set splitbelow splitright
+set nosplitbelow
+set nosplitright
+wincmd t
+set winminheight=1 winheight=1 winminwidth=1 winwidth=1
+argglobal
+setlocal fdm=marker
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+let s:l = 1 - ((0 * winheight(0) + 35) / 70)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+1
+normal! 014|
 tabnext 1
+set stal=1
 if exists('s:wipebuf')
 "   silent exe 'bwipe ' . s:wipebuf
 endif

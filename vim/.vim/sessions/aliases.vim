@@ -1,6 +1,6 @@
 " ~/.vim/sessions/aliases.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 31 January 2018 at 23:48:04.
+" Created by session.vim 2.13.1 on 01 February 2018 at 00:05:34.
 " Open this file in Vim and run :source % to restore your session.
 
 set guioptions=egmrL
@@ -12,7 +12,7 @@ if exists('g:did_indent_on') != 1 | filetype indent on | endif
 if &background != 'dark'
 	set background=dark
 endif
-if !exists('g:colors_name') || g:colors_name != 'kkruby' | colorscheme kkruby | endif
+if !exists('g:colors_name') || g:colors_name != 'marklar' | colorscheme marklar | endif
 call setqflist([])
 let SessionLoad = 1
 if &cp | set nocp | endif
@@ -24,10 +24,14 @@ if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
-badd +0 ~/.shell_aliases_functions.sh
+badd +206 ~/.shell_aliases_functions.sh
+badd +4 ~/.iftop.conf
+badd +32 ~/.config/powerline/themes/tmux/default.json
+badd +0 ~/.tokens.sh
 argglobal
 silent! argdel *
 $argadd ~/.shell_aliases_functions.sh
+set stal=2
 edit ~/.shell_aliases_functions.sh
 set splitbelow splitright
 set nosplitbelow
@@ -43,13 +47,35 @@ setlocal fdl=3
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 248 - ((37 * winheight(0) + 35) / 71)
+let s:l = 95 - ((8 * winheight(0) + 35) / 70)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-248
-normal! 04|
-tabnext 1
+95
+normal! 0
+tabedit ~/.tokens.sh
+set splitbelow splitright
+set nosplitbelow
+set nosplitright
+wincmd t
+set winminheight=1 winheight=1 winminwidth=1 winwidth=1
+argglobal
+setlocal fdm=marker
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=1
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+let s:l = 48 - ((14 * winheight(0) + 35) / 70)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+48
+normal! 08|
+tabnext 2
+set stal=1
 if exists('s:wipebuf')
 "   silent exe 'bwipe ' . s:wipebuf
 endif
@@ -67,7 +93,7 @@ let &so = s:so_save | let &siso = s:siso_save
 " by :mksession out of the box).
 
 1wincmd w
-tabnext 1
+tabnext 2
 if exists('s:wipebuf')
   if empty(bufname(s:wipebuf))
 if !getbufvar(s:wipebuf, '&modified')

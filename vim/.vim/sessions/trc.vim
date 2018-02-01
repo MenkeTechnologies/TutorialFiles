@@ -1,6 +1,6 @@
 " ~/.vim/sessions/trc.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 31 January 2018 at 23:48:00.
+" Created by session.vim 2.13.1 on 01 February 2018 at 00:05:36.
 " Open this file in Vim and run :source % to restore your session.
 
 set guioptions=egmrL
@@ -25,9 +25,11 @@ if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
 endif
 set shortmess=aoO
 badd +0 .tmux.conf
+badd +0 ~/.config/powerline/themes/tmux/default.json
 argglobal
 silent! argdel *
 $argadd .tmux.conf
+set stal=2
 edit .tmux.conf
 set splitbelow splitright
 set nosplitbelow
@@ -43,13 +45,35 @@ setlocal fdl=1
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 77 - ((35 * winheight(0) + 35) / 71)
+let s:l = 48 - ((6 * winheight(0) + 35) / 70)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-77
-normal! 042|
-tabnext 1
+48
+normal! 0
+tabedit ~/.config/powerline/themes/tmux/default.json
+set splitbelow splitright
+set nosplitbelow
+set nosplitright
+wincmd t
+set winminheight=1 winheight=1 winminwidth=1 winwidth=1
+argglobal
+setlocal fdm=marker
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+let s:l = 25 - ((24 * winheight(0) + 35) / 70)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+25
+normal! 013|
+tabnext 2
+set stal=1
 if exists('s:wipebuf')
 "   silent exe 'bwipe ' . s:wipebuf
 endif
@@ -67,7 +91,7 @@ let &so = s:so_save | let &siso = s:siso_save
 " by :mksession out of the box).
 
 1wincmd w
-tabnext 1
+tabnext 2
 if exists('s:wipebuf')
   if empty(bufname(s:wipebuf))
 if !getbufvar(s:wipebuf, '&modified')

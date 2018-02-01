@@ -1,6 +1,6 @@
 " ~/.vim/sessions/vrc.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 31 January 2018 at 23:48:02.
+" Created by session.vim 2.13.1 on 01 February 2018 at 00:05:35.
 " Open this file in Vim and run :source % to restore your session.
 
 set guioptions=egmrL
@@ -26,9 +26,11 @@ endif
 set shortmess=aoO
 badd +0 ~/.vimrc
 badd +1 modena.css
+badd +0 ~/.config/powerline/themes/vim/default.json
 argglobal
 silent! argdel *
 $argadd ~/.vimrc
+set stal=2
 edit ~/.vimrc
 set splitbelow splitright
 set nosplitbelow
@@ -44,13 +46,43 @@ setlocal fdl=5
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 447 - ((32 * winheight(0) + 35) / 71)
+201
+silent! normal! zo
+321
+silent! normal! zo
+322
+silent! normal! zo
+323
+silent! normal! zo
+let s:l = 318 - ((2 * winheight(0) + 35) / 70)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-447
+318
 normal! 0
-tabnext 1
+tabedit ~/.config/powerline/themes/vim/default.json
+set splitbelow splitright
+set nosplitbelow
+set nosplitright
+wincmd t
+set winminheight=1 winheight=1 winminwidth=1 winwidth=1
+argglobal
+setlocal fdm=marker
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+let s:l = 26 - ((25 * winheight(0) + 35) / 70)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+26
+normal! 030|
+tabnext 2
+set stal=1
 if exists('s:wipebuf')
 "   silent exe 'bwipe ' . s:wipebuf
 endif
@@ -68,7 +100,7 @@ let &so = s:so_save | let &siso = s:siso_save
 " by :mksession out of the box).
 
 1wincmd w
-tabnext 1
+tabnext 2
 if exists('s:wipebuf')
   if empty(bufname(s:wipebuf))
 if !getbufvar(s:wipebuf, '&modified')

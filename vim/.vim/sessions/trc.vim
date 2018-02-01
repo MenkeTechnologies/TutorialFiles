@@ -1,6 +1,6 @@
 " ~/.vim/sessions/trc.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 31 January 2018 at 15:29:55.
+" Created by session.vim 2.13.1 on 31 January 2018 at 23:48:00.
 " Open this file in Vim and run :source % to restore your session.
 
 set guioptions=egmrL
@@ -43,12 +43,12 @@ setlocal fdl=1
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 80 - ((33 * winheight(0) + 33) / 66)
+let s:l = 77 - ((35 * winheight(0) + 35) / 71)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-80
-normal! 0
+77
+normal! 042|
 tabnext 1
 if exists('s:wipebuf')
 "   silent exe 'bwipe ' . s:wipebuf

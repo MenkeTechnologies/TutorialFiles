@@ -1,6 +1,6 @@
 " ~/.vim/sessions/aliases.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 31 January 2018 at 03:14:44.
+" Created by session.vim 2.13.1 on 31 January 2018 at 23:48:04.
 " Open this file in Vim and run :source % to restore your session.
 
 set guioptions=egmrL
@@ -39,18 +39,16 @@ setlocal fdm=marker
 setlocal fde=0
 setlocal fmr={{{,}}}
 setlocal fdi=#
-setlocal fdl=2
+setlocal fdl=3
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-88
-silent! normal! zo
-let s:l = 434 - ((62 * winheight(0) + 33) / 67)
+let s:l = 248 - ((37 * winheight(0) + 35) / 71)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-434
-normal! 05|
+248
+normal! 04|
 tabnext 1
 if exists('s:wipebuf')
 "   silent exe 'bwipe ' . s:wipebuf

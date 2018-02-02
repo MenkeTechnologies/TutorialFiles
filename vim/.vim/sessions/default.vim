@@ -1,35 +1,36 @@
 " ~/.vim/sessions/default.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 18 June 2017 at 21:37:37.
+" Created by session.vim 2.13.1 on 02 February 2018 at 00:52:36.
 " Open this file in Vim and run :source % to restore your session.
 
+set guioptions=egmrL
+silent! set guifont=
 if exists('g:syntax_on') != 1 | syntax on | endif
 if exists('g:did_load_filetypes') != 1 | filetype on | endif
 if exists('g:did_load_ftplugin') != 1 | filetype plugin on | endif
 if exists('g:did_indent_on') != 1 | filetype indent on | endif
-if &background != 'light'
-	set background=light
+if &background != 'dark'
+	set background=dark
 endif
-if !exists('g:colors_name') || g:colors_name != 'lapis256' | colorscheme lapis256 | endif
+if !exists('g:colors_name') || g:colors_name != 'baycomb' | colorscheme baycomb | endif
 call setqflist([])
 let SessionLoad = 1
 if &cp | set nocp | endif
 let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0
 let v:this_session=expand("<sfile>:p")
 silent only
-cd /Volumes/JAKESD/wcc/cps
+cd ~/Documents/shellScripts/customTerminalInstaller
 if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
-badd +273 vimNotes/vimTricks.txt
+badd +0 install.sh
 argglobal
 silent! argdel *
-$argadd vimNotes/vimTricks.txt
-edit vimNotes/vimTricks.txt
+$argadd install.sh
+edit install.sh
 set splitbelow splitright
 set nosplitbelow
-set nosplitright
 wincmd t
 set winminheight=1 winheight=1 winminwidth=1 winwidth=1
 argglobal
@@ -37,20 +38,16 @@ setlocal fdm=marker
 setlocal fde=0
 setlocal fmr={{{,}}}
 setlocal fdi=#
-setlocal fdl=0
+setlocal fdl=1
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-285
-silent! normal! zo
-300
-silent! normal! zo
-let s:l = 300 - ((82 * winheight(0) + 39) / 78)
+let s:l = 155 - ((34 * winheight(0) + 24) / 48)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-300
-normal! 032|
+155
+normal! 0
 tabnext 1
 if exists('s:wipebuf')
 "   silent exe 'bwipe ' . s:wipebuf

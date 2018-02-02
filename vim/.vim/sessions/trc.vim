@@ -1,6 +1,6 @@
 " ~/.vim/sessions/trc.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 01 February 2018 at 00:05:36.
+" Created by session.vim 2.13.1 on 01 February 2018 at 00:23:08.
 " Open this file in Vim and run :source % to restore your session.
 
 set guioptions=egmrL
@@ -26,6 +26,9 @@ endif
 set shortmess=aoO
 badd +0 .tmux.conf
 badd +0 ~/.config/powerline/themes/tmux/default.json
+badd +1 ~/.gitconfig
+badd +0 ~/.gitignore_global
+badd +0 ~/.mongorc.js
 argglobal
 silent! argdel *
 $argadd .tmux.conf
@@ -45,12 +48,12 @@ setlocal fdl=1
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 48 - ((6 * winheight(0) + 35) / 70)
+let s:l = 56 - ((14 * winheight(0) + 35) / 70)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-48
-normal! 0
+56
+normal! 030|
 tabedit ~/.config/powerline/themes/tmux/default.json
 set splitbelow splitright
 set nosplitbelow
@@ -66,13 +69,81 @@ setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 25 - ((24 * winheight(0) + 35) / 70)
+let s:l = 30 - ((29 * winheight(0) + 35) / 70)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-25
-normal! 013|
-tabnext 2
+30
+normal! 0
+tabedit ~/.mongorc.js
+set splitbelow splitright
+set nosplitbelow
+set nosplitright
+wincmd t
+set winminheight=1 winheight=1 winminwidth=1 winwidth=1
+argglobal
+setlocal fdm=marker
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+let s:l = 20 - ((13 * winheight(0) + 35) / 70)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+20
+normal! 067|
+tabedit ~/.gitignore_global
+set splitbelow splitright
+wincmd _ | wincmd |
+split
+1wincmd k
+wincmd w
+set nosplitbelow
+set nosplitright
+wincmd t
+set winminheight=1 winheight=1 winminwidth=1 winwidth=1
+exe '1resize ' . ((&lines * 35 + 36) / 73)
+exe '2resize ' . ((&lines * 34 + 36) / 73)
+argglobal
+setlocal fdm=marker
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+let s:l = 18 - ((17 * winheight(0) + 17) / 35)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+18
+normal! 04|
+wincmd w
+argglobal
+if bufexists('~/.gitconfig') | buffer ~/.gitconfig | else | edit ~/.gitconfig | endif
+setlocal fdm=marker
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+let s:l = 5 - ((4 * winheight(0) + 17) / 34)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+5
+normal! 015|
+wincmd w
+exe '1resize ' . ((&lines * 35 + 36) / 73)
+exe '2resize ' . ((&lines * 34 + 36) / 73)
+tabnext 1
 set stal=1
 if exists('s:wipebuf')
 "   silent exe 'bwipe ' . s:wipebuf
@@ -91,7 +162,7 @@ let &so = s:so_save | let &siso = s:siso_save
 " by :mksession out of the box).
 
 1wincmd w
-tabnext 2
+tabnext 1
 if exists('s:wipebuf')
   if empty(bufname(s:wipebuf))
 if !getbufvar(s:wipebuf, '&modified')

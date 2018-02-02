@@ -1,6 +1,6 @@
 " ~/.vim/sessions/vrc.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 01 February 2018 at 00:05:35.
+" Created by session.vim 2.13.1 on 01 February 2018 at 00:23:04.
 " Open this file in Vim and run :source % to restore your session.
 
 set guioptions=egmrL
@@ -27,6 +27,10 @@ set shortmess=aoO
 badd +0 ~/.vimrc
 badd +1 modena.css
 badd +0 ~/.config/powerline/themes/vim/default.json
+badd +33 /etc/ssh/ssh_config
+badd +8 /etc/ssh/sshd_config
+badd +0 ~/.ssh/config
+badd +0 ~/.muttrc
 argglobal
 silent! argdel *
 $argadd ~/.vimrc
@@ -54,12 +58,12 @@ silent! normal! zo
 silent! normal! zo
 323
 silent! normal! zo
-let s:l = 318 - ((2 * winheight(0) + 35) / 70)
+let s:l = 335 - ((19 * winheight(0) + 35) / 70)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-318
-normal! 0
+335
+normal! 020|
 tabedit ~/.config/powerline/themes/vim/default.json
 set splitbelow splitright
 set nosplitbelow
@@ -75,13 +79,55 @@ setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 26 - ((25 * winheight(0) + 35) / 70)
+let s:l = 10 - ((9 * winheight(0) + 35) / 70)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-26
-normal! 030|
-tabnext 2
+10
+normal! 013|
+tabedit ~/.ssh/config
+set splitbelow splitright
+set nosplitbelow
+set nosplitright
+wincmd t
+set winminheight=1 winheight=1 winminwidth=1 winwidth=1
+argglobal
+setlocal fdm=marker
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+let s:l = 12 - ((11 * winheight(0) + 35) / 70)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+12
+normal! 031|
+tabedit ~/.muttrc
+set splitbelow splitright
+set nosplitbelow
+set nosplitright
+wincmd t
+set winminheight=1 winheight=1 winminwidth=1 winwidth=1
+argglobal
+setlocal fdm=marker
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+let s:l = 1 - ((0 * winheight(0) + 35) / 70)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+1
+normal! 0
+tabnext 1
 set stal=1
 if exists('s:wipebuf')
 "   silent exe 'bwipe ' . s:wipebuf
@@ -100,7 +146,7 @@ let &so = s:so_save | let &siso = s:siso_save
 " by :mksession out of the box).
 
 1wincmd w
-tabnext 2
+tabnext 1
 if exists('s:wipebuf')
   if empty(bufname(s:wipebuf))
 if !getbufvar(s:wipebuf, '&modified')

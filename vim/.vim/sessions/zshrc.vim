@@ -1,6 +1,6 @@
 " ~/.vim/sessions/zshrc.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 01 February 2018 at 00:07:34.
+" Created by session.vim 2.13.1 on 01 February 2018 at 00:23:09.
 " Open this file in Vim and run :source % to restore your session.
 
 set guioptions=egmrL
@@ -27,7 +27,9 @@ set shortmess=aoO
 badd +0 ~/.zshrc
 badd +0 ~/.oh-my-zsh/oh-my-zsh.sh
 badd +1 ~/.oh-my-zsh/custom/plugins/zsh-more-completions/
-badd +0 ~/.oh-my-zsh/custom/plugins/zsh-more-completions/src/_otool
+badd +14 ~/.oh-my-zsh/custom/plugins/zsh-more-completions/src/_otool
+badd +0 ~/grc.zsh
+badd +0 ~/.powerlevel9kconfig.sh
 argglobal
 silent! argdel *
 $argadd ~/.zshrc
@@ -47,12 +49,33 @@ setlocal fdl=1
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 485 - ((8 * winheight(0) + 35) / 70)
+let s:l = 455 - ((17 * winheight(0) + 35) / 70)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-485
-normal! 0
+455
+normal! 013|
+tabedit ~/grc.zsh
+set splitbelow splitright
+set nosplitbelow
+set nosplitright
+wincmd t
+set winminheight=1 winheight=1 winminwidth=1 winwidth=1
+argglobal
+setlocal fdm=marker
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+let s:l = 35 - ((34 * winheight(0) + 35) / 70)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+35
+normal! 06|
 tabedit ~/.oh-my-zsh/oh-my-zsh.sh
 set splitbelow splitright
 set nosplitbelow
@@ -74,7 +97,7 @@ exe s:l
 normal! zt
 37
 normal! 0
-tabedit ~/.oh-my-zsh/custom/plugins/zsh-more-completions/src/_otool
+tabedit ~/.powerlevel9kconfig.sh
 set splitbelow splitright
 set nosplitbelow
 set nosplitright
@@ -85,16 +108,16 @@ setlocal fdm=marker
 setlocal fde=0
 setlocal fmr={{{,}}}
 setlocal fdi=#
-setlocal fdl=0
+setlocal fdl=1
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 35) / 70)
+let s:l = 9 - ((8 * winheight(0) + 35) / 70)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-1
-normal! 014|
+9
+normal! 0
 tabnext 1
 set stal=1
 if exists('s:wipebuf')

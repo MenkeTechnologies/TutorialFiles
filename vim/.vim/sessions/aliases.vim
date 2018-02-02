@@ -1,6 +1,6 @@
 " ~/.vim/sessions/aliases.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 01 February 2018 at 00:05:34.
+" Created by session.vim 2.13.1 on 01 February 2018 at 00:22:57.
 " Open this file in Vim and run :source % to restore your session.
 
 set guioptions=egmrL
@@ -24,10 +24,11 @@ if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
-badd +206 ~/.shell_aliases_functions.sh
+badd +90 ~/.shell_aliases_functions.sh
 badd +4 ~/.iftop.conf
 badd +32 ~/.config/powerline/themes/tmux/default.json
 badd +0 ~/.tokens.sh
+badd +6 ~/Documents/shellScripts/updater.sh
 argglobal
 silent! argdel *
 $argadd ~/.shell_aliases_functions.sh
@@ -47,12 +48,12 @@ setlocal fdl=3
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 95 - ((8 * winheight(0) + 35) / 70)
+let s:l = 13 - ((12 * winheight(0) + 35) / 70)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-95
-normal! 0
+13
+normal! 025|
 tabedit ~/.tokens.sh
 set splitbelow splitright
 set nosplitbelow
@@ -68,13 +69,51 @@ setlocal fdl=1
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 48 - ((14 * winheight(0) + 35) / 70)
+let s:l = 5 - ((4 * winheight(0) + 35) / 70)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-48
-normal! 08|
-tabnext 2
+5
+normal! 027|
+tabedit ~/Documents/shellScripts/updater.sh
+set splitbelow splitright
+set nosplitbelow
+set nosplitright
+wincmd t
+set winminheight=1 winheight=1 winminwidth=1 winwidth=1
+argglobal
+setlocal fdm=marker
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=1
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+let s:l = 8 - ((7 * winheight(0) + 35) / 70)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+8
+normal! 032|
+tabnew
+set splitbelow splitright
+set nosplitbelow
+set nosplitright
+wincmd t
+set winminheight=1 winheight=1 winminwidth=1 winwidth=1
+argglobal
+enew
+" file NERD_tree_2
+setlocal fdm=manual
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=20
+setlocal nofen
+tabnext 1
 set stal=1
 if exists('s:wipebuf')
 "   silent exe 'bwipe ' . s:wipebuf
@@ -93,7 +132,19 @@ let &so = s:so_save | let &siso = s:siso_save
 " by :mksession out of the box).
 
 1wincmd w
-tabnext 2
+tabnext 4
+let s:bufnr_save = bufnr("%")
+let s:cwd_save = getcwd()
+NERDTree ~/Documents/shellScripts
+if !getbufvar(s:bufnr_save, '&modified')
+  let s:wipebuflines = getbufline(s:bufnr_save, 1, '$')
+  if len(s:wipebuflines) <= 1 && empty(get(s:wipebuflines, 0, ''))
+    silent execute 'bwipeout' s:bufnr_save
+  endif
+endif
+execute "cd" fnameescape(s:cwd_save)
+1wincmd w
+tabnext 1
 if exists('s:wipebuf')
   if empty(bufname(s:wipebuf))
 if !getbufvar(s:wipebuf, '&modified')

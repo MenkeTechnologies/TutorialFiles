@@ -182,9 +182,11 @@ displayProgress	batchRename.sh	/^displayProgress(){$/;"	f
 displayProgress	picture_finder.sh	/^displayProgress(){$/;"	f
 displayProgress	secureDelete.sh	/^displayProgress(){$/;"	f
 displayProgressIndicator	openAll.sh	/^displayProgressIndicator(){$/;"	f
+distro	customTerminalInstaller/install.sh	/^            distro=redhat$/;"	v
+distro	customTerminalInstaller/install.sh	/^           distro=debian$/;"	v
 distroName	clearTrash.sh	/^    distroName=$(lsb_release -a | head -1 | awk '{print $3}')$/;"	v
 distroName	colorLogger.sh	/^    distroName=$(lsb_release -a | head -1 | awk '{print $3}')$/;"	v
-distroName	customTerminalInstaller/install.sh	/^    distroName=$(lsb_release -a | head -1 | awk '{print $3}')$/;"	v
+distroName	customTerminalInstaller/install.sh	/^    distroName=$(cat \/etc\/os-release | grep "^ID=" | cut -d= -f2 | tr -d \\")$/;"	v
 distroName	macOnly/.shell_aliases_functions.sh	/^    distroName=$(lsb_release -a | head -1 | awk '{print $3}')$/;"	v
 dontSummarizeSizes	directoryContentsSize.sh	/^dontSummarizeSizes(){$/;"	f
 e_badargs	secureDelete.sh	/^e_badargs=70     #  Various error exit codes.$/;"	v
@@ -373,6 +375,7 @@ pion	macOnly/.shell_aliases_functions.sh	/^pion (){$/;"	f
 pipe	readFIFO.sh	/^pipe=$HOME\/Desktop\/testpipe$/;"	v
 pipe	readFIFO.sh	/^pipe=\/tmp\/testpipe$/;"	v
 prettyPrint	customTerminalInstaller/.shell_aliases_functions.sh	/^    prettyPrint(){$/;"	f
+prettyPrint	customTerminalInstaller/install.sh	/^prettyPrint(){$/;"	f
 prettyPrint	macOnly/.shell_aliases_functions.sh	/^prettyPrint(){$/;"	f
 prettyPrint	macOnly/tor.sh	/^prettyPrint (){$/;"	f
 prettyPrint	rpiSoftwareUpdater.sh	/^prettyPrint(){$/;"	f

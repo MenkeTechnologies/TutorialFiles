@@ -274,6 +274,7 @@ hub_delete	customTerminalInstaller/.shell_aliases_functions.sh	/^    hub_delete(
 hub_delete	macOnly/.shell_aliases_functions.sh	/^hub_delete(){$/;"	f
 humanReadable	customTerminalInstaller/.shell_aliases_functions.sh	/^humanReadable(){$/;"	f
 humanReadable	macOnly/.shell_aliases_functions.sh	/^humanReadable(){$/;"	f
+iface	customTerminalInstaller/install.sh	/^iface=$(ifconfig | grep -B1 "inet addr:$ip" | awk '$1!="inet" && $1!="--" {print $1}')$/;"	v
 initializeGitDirectory	gitgo.sh	/^initializeGitDirectory(){$/;"	f
 install	tgzLocalInstaller.sh	/^install(){$/;"	f
 installGitHubPlugin	customTerminalInstaller/tmux_plugins_install.sh	/^installGitHubPlugin(){$/;"	f
@@ -281,6 +282,7 @@ installOhMyZshPlugin	customTerminalInstaller/zsh.sh	/^installOhMyZshPlugin(){$/;
 installOhMyZshPlugin	customTerminalInstaller/zsh_plugins_install.sh	/^installOhMyZshPlugin(){$/;"	f
 installVimPlugin	customTerminalInstaller/vim_plugins_install.sh	/^installVimPlugin(){$/;"	f
 installerDir	macOnly/tutorialConfigUpdater.sh	/^installerDir="$HOME\/Documents\/shellScripts\/customTerminalInstaller"$/;"	v
+ip	customTerminalInstaller/install.sh	/^ip=$(ifconfig | grep "inet\\s" | grep -v 127 | awk '{print $2}' | sed 's\/addr:\/\/')$/;"	v
 killCursor	batchRename.sh	/^killCursor(){$/;"	f
 killCursor	openAll.sh	/^killCursor(){$/;"	f
 killCursor	picture_finder.sh	/^killCursor(){$/;"	f

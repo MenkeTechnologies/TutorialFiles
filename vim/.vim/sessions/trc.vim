@@ -1,6 +1,6 @@
 " ~/.vim/sessions/trc.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 01 February 2018 at 00:23:08.
+" Created by session.vim 2.13.1 on 01 February 2018 at 23:53:11.
 " Open this file in Vim and run :source % to restore your session.
 
 set guioptions=egmrL
@@ -25,10 +25,10 @@ if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
 endif
 set shortmess=aoO
 badd +0 .tmux.conf
-badd +0 ~/.config/powerline/themes/tmux/default.json
+badd +1 .config/powerline/themes/tmux/default.json
 badd +1 ~/.gitconfig
-badd +0 ~/.gitignore_global
-badd +0 ~/.mongorc.js
+badd +1 ~/.gitignore_global
+badd +1 ~/.mongorc.js
 argglobal
 silent! argdel *
 $argadd .tmux.conf
@@ -48,13 +48,13 @@ setlocal fdl=1
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 56 - ((14 * winheight(0) + 35) / 70)
+let s:l = 85 - ((16 * winheight(0) + 34) / 68)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-56
-normal! 030|
-tabedit ~/.config/powerline/themes/tmux/default.json
+85
+normal! 0
+tabedit .config/powerline/themes/tmux/default.json
 set splitbelow splitright
 set nosplitbelow
 set nosplitright
@@ -69,7 +69,7 @@ setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 30 - ((29 * winheight(0) + 35) / 70)
+let s:l = 30 - ((28 * winheight(0) + 34) / 68)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -90,7 +90,7 @@ setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 20 - ((13 * winheight(0) + 35) / 70)
+let s:l = 20 - ((13 * winheight(0) + 34) / 68)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -106,8 +106,8 @@ set nosplitbelow
 set nosplitright
 wincmd t
 set winminheight=1 winheight=1 winminwidth=1 winwidth=1
-exe '1resize ' . ((&lines * 35 + 36) / 73)
-exe '2resize ' . ((&lines * 34 + 36) / 73)
+exe '1resize ' . ((&lines * 34 + 35) / 71)
+exe '2resize ' . ((&lines * 33 + 35) / 71)
 argglobal
 setlocal fdm=marker
 setlocal fde=0
@@ -117,7 +117,7 @@ setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 18 - ((17 * winheight(0) + 17) / 35)
+let s:l = 18 - ((17 * winheight(0) + 17) / 34)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -134,15 +134,15 @@ setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 5 - ((4 * winheight(0) + 17) / 34)
+let s:l = 5 - ((4 * winheight(0) + 16) / 33)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
 5
 normal! 015|
 wincmd w
-exe '1resize ' . ((&lines * 35 + 36) / 73)
-exe '2resize ' . ((&lines * 34 + 36) / 73)
+exe '1resize ' . ((&lines * 34 + 35) / 71)
+exe '2resize ' . ((&lines * 33 + 35) / 71)
 tabnext 1
 set stal=1
 if exists('s:wipebuf')

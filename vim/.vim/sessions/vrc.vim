@@ -1,6 +1,6 @@
 " ~/.vim/sessions/vrc.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 01 February 2018 at 00:23:04.
+" Created by session.vim 2.13.1 on 01 February 2018 at 23:52:57.
 " Open this file in Vim and run :source % to restore your session.
 
 set guioptions=egmrL
@@ -25,12 +25,14 @@ if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
 endif
 set shortmess=aoO
 badd +0 ~/.vimrc
+badd +1 ~/.config/powerline/themes/vim/default.json
 badd +1 modena.css
-badd +0 ~/.config/powerline/themes/vim/default.json
 badd +33 /etc/ssh/ssh_config
 badd +8 /etc/ssh/sshd_config
-badd +0 ~/.ssh/config
-badd +0 ~/.muttrc
+badd +1 ~/.ssh/config
+badd +1 ~/.muttrc
+badd +1 NERD_tree_1
+badd +0 /Volumes/SD/wcc/cps/vimNotes/vimTricks.txt
 argglobal
 silent! argdel *
 $argadd ~/.vimrc
@@ -58,12 +60,12 @@ silent! normal! zo
 silent! normal! zo
 323
 silent! normal! zo
-let s:l = 335 - ((19 * winheight(0) + 35) / 70)
+let s:l = 308 - ((17 * winheight(0) + 34) / 68)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-335
-normal! 020|
+308
+normal! 032|
 tabedit ~/.config/powerline/themes/vim/default.json
 set splitbelow splitright
 set nosplitbelow
@@ -79,12 +81,12 @@ setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 10 - ((9 * winheight(0) + 35) / 70)
+let s:l = 10 - ((9 * winheight(0) + 34) / 68)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
 10
-normal! 013|
+normal! 01|
 tabedit ~/.ssh/config
 set splitbelow splitright
 set nosplitbelow
@@ -100,7 +102,7 @@ setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 12 - ((11 * winheight(0) + 35) / 70)
+let s:l = 12 - ((11 * winheight(0) + 34) / 68)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -121,12 +123,33 @@ setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 35) / 70)
+let s:l = 1 - ((0 * winheight(0) + 34) / 68)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
 1
 normal! 0
+tabedit /Volumes/SD/wcc/cps/vimNotes/vimTricks.txt
+set splitbelow splitright
+set nosplitbelow
+set nosplitright
+wincmd t
+set winminheight=1 winheight=1 winminwidth=1 winwidth=1
+argglobal
+setlocal fdm=marker
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=1
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+let s:l = 29 - ((28 * winheight(0) + 34) / 68)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+29
+normal! 08|
 tabnext 1
 set stal=1
 if exists('s:wipebuf')

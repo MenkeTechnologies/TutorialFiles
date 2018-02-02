@@ -1,6 +1,6 @@
 " ~/.vim/sessions/vrc.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 01 February 2018 at 23:52:57.
+" Created by session.vim 2.13.1 on 02 February 2018 at 00:19:22.
 " Open this file in Vim and run :source % to restore your session.
 
 set guioptions=egmrL
@@ -12,7 +12,7 @@ if exists('g:did_indent_on') != 1 | filetype indent on | endif
 if &background != 'dark'
 	set background=dark
 endif
-if !exists('g:colors_name') || g:colors_name != 'vimbrant' | colorscheme vimbrant | endif
+if !exists('g:colors_name') || g:colors_name != 'bluedrake' | colorscheme bluedrake | endif
 call setqflist([])
 let SessionLoad = 1
 if &cp | set nocp | endif
@@ -32,7 +32,7 @@ badd +8 /etc/ssh/sshd_config
 badd +1 ~/.ssh/config
 badd +1 ~/.muttrc
 badd +1 NERD_tree_1
-badd +0 /Volumes/SD/wcc/cps/vimNotes/vimTricks.txt
+badd +1 /Volumes/SD/wcc/cps/vimNotes/vimTricks.txt
 argglobal
 silent! argdel *
 $argadd ~/.vimrc
@@ -60,12 +60,12 @@ silent! normal! zo
 silent! normal! zo
 323
 silent! normal! zo
-let s:l = 308 - ((17 * winheight(0) + 34) / 68)
+let s:l = 303 - ((15 * winheight(0) + 34) / 68)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-308
-normal! 032|
+303
+normal! 018|
 tabedit ~/.config/powerline/themes/vim/default.json
 set splitbelow splitright
 set nosplitbelow
@@ -86,7 +86,7 @@ if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
 10
-normal! 01|
+normal! 0
 tabedit ~/.ssh/config
 set splitbelow splitright
 set nosplitbelow
@@ -144,12 +144,12 @@ setlocal fdl=1
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 29 - ((28 * winheight(0) + 34) / 68)
+let s:l = 239 - ((27 * winheight(0) + 34) / 68)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-29
-normal! 08|
+239
+normal! 09|
 tabnext 1
 set stal=1
 if exists('s:wipebuf')

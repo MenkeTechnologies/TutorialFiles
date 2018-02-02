@@ -1,6 +1,6 @@
 " ~/.vim/sessions/aliases.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 01 February 2018 at 23:53:09.
+" Created by session.vim 2.13.1 on 02 February 2018 at 00:18:47.
 " Open this file in Vim and run :source % to restore your session.
 
 set guioptions=egmrL
@@ -12,7 +12,7 @@ if exists('g:did_indent_on') != 1 | filetype indent on | endif
 if &background != 'dark'
 	set background=dark
 endif
-if !exists('g:colors_name') || g:colors_name != 'marklar' | colorscheme marklar | endif
+if !exists('g:colors_name') || g:colors_name != 'pf_earth' | colorscheme pf_earth | endif
 call setqflist([])
 let SessionLoad = 1
 if &cp | set nocp | endif
@@ -29,7 +29,7 @@ badd +32 ~/.config/powerline/themes/tmux/default.json
 badd +4 ~/.iftop.conf
 badd +1 ~/.tokens.sh
 badd +6 ~/Documents/shellScripts/updater.sh
-badd +0 ~/Documents/shellScripts/macOnly/tor.sh
+badd +1 ~/Documents/shellScripts/macOnly/tor.sh
 argglobal
 silent! argdel *
 $argadd ~/.shell_aliases_functions.sh
@@ -51,12 +51,12 @@ setlocal fdn=20
 setlocal fen
 87
 silent! normal! zo
-let s:l = 165 - ((8 * winheight(0) + 34) / 68)
+let s:l = 2 - ((1 * winheight(0) + 34) / 68)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-165
-normal! 02|
+2
+normal! 0
 tabedit ~/.tokens.sh
 set splitbelow splitright
 set nosplitbelow

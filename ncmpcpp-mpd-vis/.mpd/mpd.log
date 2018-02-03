@@ -17131,3 +17131,161 @@ Feb 02 23:30 : ffmpeg/mp3: Could not update timestamps for skipped samples.
 Feb 02 23:30 : ffmpeg/mp3: Could not update timestamps for skipped samples.
 Feb 03 00:14 : ffmpeg/mp3: Could not update timestamps for discarded samples.
 Feb 03 00:14 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Feb 03 00:15 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Feb 03 01:07 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Feb 03 01:07 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Feb 03 01:07 : player: played "Tech Trance Mix 2015 _HD-yh6rx1vLUeY.mp3"
+Feb 03 02:05 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Feb 03 02:05 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Feb 03 02:05 : player: played "Stellar Evolution _ Tech Trance Mix #1--DyuwcxMpHY.mp3"
+Feb 03 02:14 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Feb 03 02:14 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Feb 03 02:14 : player: played "Kris Menace feat. Fred Falke - Fairlight-mNgVSqrSNWE.mp3"
+Feb 03 03:13 : client: [13] opened from 127.0.0.1:60839
+Feb 03 03:13 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Feb 03 03:46 : client: [13] closed
+Feb 03 03:46 : client: [11] closed
+Feb 03 03:46 : client: [9] closed
+Feb 03 03:46 : client: [10] closed
+Feb 03 03:46 : client: [12] closed
+Feb 03 03:46 : client: [14] opened from 127.0.0.1:61398
+Feb 03 03:58 : client: [14] closed
+Feb 03 04:00 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Feb 03 04:00 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Feb 03 04:01 : player: played "Tech Trance Mix 2015 _HD-yh6rx1vLUeY.mp3"
+Feb 03 11:00 : player: played "Stellar Evolution _ Tech Trance Mix #1--DyuwcxMpHY.mp3"
+Feb 03 14:30 : config: inotify: auto_update was disabled. enable during compilation phase
+Feb 03 14:30 : config: option 'enabled' on line 29 was not recognized
+Feb 03 14:30 : client: [0] opened from 127.0.0.1:50581
+Feb 03 14:30 : client: [1] opened from 127.0.0.1:50629
+Feb 03 14:30 : client: [2] opened from 127.0.0.1:50633
+Feb 03 14:30 : client: [3] opened from 127.0.0.1:50647
+Feb 03 14:46 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Feb 03 14:46 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Feb 03 14:47 : player: played "Stellar Evolution _ Tech Trance Mix #1--DyuwcxMpHY.mp3"
+Feb 03 14:55 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Feb 03 14:55 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Feb 03 14:56 : player: played "Kris Menace feat. Fred Falke - Fairlight-mNgVSqrSNWE.mp3"
+Feb 03 15:55 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Feb 03 15:56 : player: played "Yoji Tech Dance Mix 3-bwZBumna5D8.mp3"
+Feb 03 15:56 : player: played "Ableton/User Library/Samples/Imported/ATE Open Hat - 011.wav"
+Feb 03 15:56 : player: played "Ableton/User Library/Samples/Imported/ATE Open Hat - 012.wav"
+Feb 03 15:56 : player: played "Ableton/User Library/Samples/Imported/ATE Open Hat - 013.wav"
+Feb 03 15:56 : player: played "Ableton/User Library/Samples/Imported/ATE Open Hat - 014.wav"
+Feb 03 15:56 : player: played "Ableton/User Library/Samples/Imported/ATE Open Hat - 015.wav"
+Feb 03 15:56 : player: played "Ableton/User Library/Samples/Imported/ATE Open Hat - 016.wav"
+Feb 03 15:56 : player: played "Ableton/User Library/Samples/Imported/ATE Open Hat - 017.wav"
+Feb 03 15:56 : player: played "Ableton/User Library/Samples/Imported/ATE Open Hat - 018.wav"
+Feb 03 15:56 : player: played "Ableton/User Library/Samples/Imported/ATE Open Hat - 019.wav"
+Feb 03 15:56 : player: played "Ableton/User Library/Samples/Imported/ATE Open Hat - 020.wav"
+Feb 03 15:56 : player: played "Ableton/User Library/Samples/Imported/ATE Open Hat - 021.wav"
+Feb 03 15:56 : player: played "Ableton/User Library/Samples/Imported/ATE Open Hat - 022.wav"
+Feb 03 15:56 : player: played "Ableton/User Library/Samples/Imported/ATE Open Hat - 023.wav"
+Feb 03 15:56 : player: played "Ableton/User Library/Samples/Imported/ATE Open Hat - 024.wav"
+Feb 03 15:56 : player: played "Ableton/User Library/Samples/Imported/ATE Open Hat - 025.wav"
+Feb 03 15:56 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 051.wav"
+Feb 03 15:56 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 052.wav"
+Feb 03 15:56 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 053.wav"
+Feb 03 15:56 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 054.wav"
+Feb 03 15:56 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 055.wav"
+Feb 03 15:56 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 056.wav"
+Feb 03 15:56 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 057.wav"
+Feb 03 15:56 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 058.wav"
+Feb 03 15:56 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 059.wav"
+Feb 03 15:56 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 060.wav"
+Feb 03 15:56 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 061.wav"
+Feb 03 15:56 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 062.wav"
+Feb 03 15:56 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 063.wav"
+Feb 03 15:56 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 064.wav"
+Feb 03 15:56 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 065.wav"
+Feb 03 15:56 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 066.wav"
+Feb 03 15:56 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 067.wav"
+Feb 03 15:56 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 068.wav"
+Feb 03 15:56 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 069.wav"
+Feb 03 15:56 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 070.wav"
+Feb 03 15:56 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 071.wav"
+Feb 03 15:56 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 072.wav"
+Feb 03 15:56 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 073.wav"
+Feb 03 15:56 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 074.wav"
+Feb 03 15:56 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 075.wav"
+Feb 03 15:56 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 076.wav"
+Feb 03 15:56 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 077.wav"
+Feb 03 15:56 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 078.wav"
+Feb 03 15:56 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 079.wav"
+Feb 03 15:56 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 080.wav"
+Feb 03 15:56 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 081.wav"
+Feb 03 15:56 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 082.wav"
+Feb 03 15:56 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 083.wav"
+Feb 03 15:56 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 084.wav"
+Feb 03 15:56 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 085.wav"
+Feb 03 15:56 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 086.wav"
+Feb 03 15:56 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 087.wav"
+Feb 03 15:56 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 088.wav"
+Feb 03 15:56 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 089.wav"
+Feb 03 15:56 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 090.wav"
+Feb 03 15:56 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 091.wav"
+Feb 03 15:56 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 092.wav"
+Feb 03 15:56 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 093.wav"
+Feb 03 15:56 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 094.wav"
+Feb 03 15:56 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 095.wav"
+Feb 03 15:56 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 096.wav"
+Feb 03 15:56 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 097.wav"
+Feb 03 15:56 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 098.wav"
+Feb 03 15:56 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 099.wav"
+Feb 03 15:56 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 100.wav"
+Feb 03 15:57 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion FX - 044.wav"
+Feb 03 15:57 : player: played "Ableton/User Library/Samples/Imported/ATE Shaker - 001.wav"
+Feb 03 15:57 : player: played "Ableton/User Library/Samples/Imported/ATE Shaker - 002.wav"
+Feb 03 15:57 : player: played "Ableton/User Library/Samples/Imported/ATE Shaker - 003.wav"
+Feb 03 15:57 : player: played "Ableton/User Library/Samples/Imported/ATE Shaker - 004.wav"
+Feb 03 15:57 : player: played "Ableton/User Library/Samples/Imported/ATE Shaker - 005.wav"
+Feb 03 15:57 : player: played "Ableton/User Library/Samples/Imported/ATE Shaker - 006.wav"
+Feb 03 15:57 : player: played "Ableton/User Library/Samples/Imported/ATE Shaker - 007.wav"
+Feb 03 15:57 : player: played "Ableton/User Library/Samples/Imported/ATE Shaker - 008.wav"
+Feb 03 15:57 : player: played "Ableton/User Library/Samples/Imported/ATE Shaker - 009.wav"
+Feb 03 15:57 : player: played "Ableton/User Library/Samples/Imported/ATE Shaker - 010.wav"
+Feb 03 15:57 : player: played "Ableton/User Library/Samples/Imported/ATE Shaker - 011.wav"
+Feb 03 15:57 : player: played "Ableton/User Library/Samples/Imported/ATE Shaker - 012.wav"
+Feb 03 15:57 : player: played "Ableton/User Library/Samples/Imported/ATE Shaker - 013.wav"
+Feb 03 15:57 : player: played "Ableton/User Library/Samples/Imported/ATE Shaker - 014.wav"
+Feb 03 15:57 : player: played "Ableton/User Library/Samples/Imported/ATE Shaker - 015.wav"
+Feb 03 15:57 : player: played "Ableton/User Library/Samples/Imported/ATE Shaker - 016.wav"
+Feb 03 15:57 : player: played "Ableton/User Library/Samples/Imported/ATE Shaker - 017.wav"
+Feb 03 15:57 : player: played "Ableton/User Library/Samples/Imported/ATE Shaker - 018.wav"
+Feb 03 15:57 : player: played "Ableton/User Library/Samples/Imported/ATE Shaker - 019.wav"
+Feb 03 15:57 : player: played "Ableton/User Library/Samples/Imported/ATE Shaker - 020.wav"
+Feb 03 15:57 : player: played "Ableton/User Library/Samples/Imported/ATE Synth Hit (Dry) - 031 - C.wav"
+Feb 03 15:57 : player: played "Ableton/User Library/Samples/Imported/ATE Synth Hit (Dry) - 032 - C.wav"
+Feb 03 15:57 : player: played "Ableton/User Library/Samples/Imported/ATE Synth Hit (Dry) - 033 - C.wav"
+Feb 03 15:57 : player: played "Ableton/User Library/Samples/Imported/ATE Synth Hit (Dry) - 034 - C.wav"
+Feb 03 15:57 : player: played "Ableton/User Library/Samples/Imported/ATE Synth Hit (Dry) - 035 - C.wav"
+Feb 03 15:57 : player: played "Ableton/User Library/Samples/Imported/ATE Synth Hit (Dry) - 036 - C.wav"
+Feb 03 15:57 : player: played "Ableton/User Library/Samples/Imported/ATE Synth Hit (Dry) - 037 - C.wav"
+Feb 03 15:57 : player: played "Ableton/User Library/Samples/Imported/ATE Synth Hit (Dry) - 038 - C.wav"
+Feb 03 15:57 : player: played "Ableton/User Library/Samples/Imported/ATE Synth Hit (Dry) - 039 - C.wav"
+Feb 03 15:57 : player: played "Ableton/User Library/Samples/Imported/ATE Synth Hit (Dry) - 040 - C.wav"
+Feb 03 15:57 : player: played "Ableton/User Library/Samples/Imported/ATE Synth Hit (Dry) - 041 - C.wav"
+Feb 03 15:58 : player: played "Ableton/User Library/Samples/Imported/ATE Synth Hit (Dry) - 042 - C.wav"
+Feb 03 15:58 : player: played "Ableton/User Library/Samples/Imported/ATE Synth Hit (Dry) - 043 - C.wav"
+Feb 03 15:58 : player: played "Ableton/User Library/Samples/Imported/ATE Synth Hit (Dry) - 044 - C.wav"
+Feb 03 15:58 : player: played "Ableton/User Library/Samples/Imported/ATE Synth Hit (Dry) - 045 - C.wav"
+Feb 03 15:58 : player: played "Ableton/User Library/Samples/Imported/ATE Synth Hit (Dry) - 046 - C.wav"
+Feb 03 15:58 : player: played "Ableton/User Library/Samples/Imported/ATE Synth Hit (Dry) - 047 - C.wav"
+Feb 03 15:58 : player: played "Ableton/User Library/Samples/Imported/ATE Synth Hit (Dry) - 048 - C.wav"
+Feb 03 15:58 : player: played "Ableton/User Library/Samples/Imported/ATE Synth Hit (Dry) - 049 - C.wav"
+Feb 03 15:58 : player: played "Ableton/User Library/Samples/Imported/ATE Synth Hit (Dry) - 050 - C.wav"
+Feb 03 15:58 : player: played "Ableton/User Library/Samples/Imported/ATE Drum Loop - 006 - 138 BPM - Percussion Loop.wav"
+Feb 03 15:58 : player: played "Ableton/User Library/Samples/Imported/ATE Drum Loop - 016 - 138 BPM - Full Loop.wav"
+Feb 03 15:58 : player: played "Ableton/User Library/Samples/Imported/ATE Drum Loop - 047 - 138 BPM - Percussion Loop.wav"
+Feb 03 15:58 : player: played "Ableton/User Library/Samples/Imported/ATE Drum Loop - 064 - 138 BPM - Percussion Loop.wav"
+Feb 03 15:58 : player: played "Ableton/User Library/Samples/Imported/ATE Drum Loop - 064 - 138 BPM - Percussion Loop.wav"
+Feb 03 16:10 : client: [0] closed
+Feb 03 16:10 : client: [3] closed
+Feb 03 16:10 : client: [2] closed
+Feb 03 16:10 : client: [1] closed
+Feb 03 16:11 : client: [4] opened from 127.0.0.1:53269
+Feb 03 16:11 : client: [5] opened from 127.0.0.1:53272
+Feb 03 16:11 : client: [6] opened from 127.0.0.1:53312
+Feb 03 16:11 : client: [7] opened from 127.0.0.1:53314
+Feb 03 16:58 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Feb 03 17:02 : ffmpeg/mp3: Could not update timestamps for skipped samples.

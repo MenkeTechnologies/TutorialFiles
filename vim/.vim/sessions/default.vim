@@ -1,6 +1,6 @@
 " ~/.vim/sessions/default.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 02 February 2018 at 00:52:36.
+" Created by session.vim 2.13.1 on 03 February 2018 at 02:50:13.
 " Open this file in Vim and run :source % to restore your session.
 
 set guioptions=egmrL
@@ -12,23 +12,22 @@ if exists('g:did_indent_on') != 1 | filetype indent on | endif
 if &background != 'dark'
 	set background=dark
 endif
-if !exists('g:colors_name') || g:colors_name != 'baycomb' | colorscheme baycomb | endif
+if !exists('g:colors_name') || g:colors_name != 'candy' | colorscheme candy | endif
 call setqflist([])
 let SessionLoad = 1
 if &cp | set nocp | endif
 let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0
 let v:this_session=expand("<sfile>:p")
 silent only
-cd ~/Documents/shellScripts/customTerminalInstaller
+cd ~/
 if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
-badd +0 install.sh
+badd +0 Desktop/t.lisp
 argglobal
 silent! argdel *
-$argadd install.sh
-edit install.sh
+edit Desktop/t.lisp
 set splitbelow splitright
 set nosplitbelow
 wincmd t
@@ -38,16 +37,17 @@ setlocal fdm=marker
 setlocal fde=0
 setlocal fmr={{{,}}}
 setlocal fdi=#
-setlocal fdl=1
+setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 155 - ((34 * winheight(0) + 24) / 48)
+let s:l = 241 - ((75 * winheight(0) + 38) / 77)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-155
+241
 normal! 0
+lcd ~/Desktop
 tabnext 1
 if exists('s:wipebuf')
 "   silent exe 'bwipe ' . s:wipebuf

@@ -1,6 +1,6 @@
 " ~/.vim/sessions/zshrc.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 01 February 2018 at 23:53:12.
+" Created by session.vim 2.13.1 on 03 February 2018 at 16:12:33.
 " Open this file in Vim and run :source % to restore your session.
 
 set guioptions=egmrL
@@ -25,10 +25,10 @@ if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
 endif
 set shortmess=aoO
 badd +0 ~/.zshrc
+badd +1 ~/grc.zsh
 badd +1 ~/.oh-my-zsh/oh-my-zsh.sh
 badd +1 ~/.oh-my-zsh/custom/plugins/zsh-more-completions/
 badd +14 ~/.oh-my-zsh/custom/plugins/zsh-more-completions/src/_otool
-badd +1 ~/grc.zsh
 badd +1 ~/.powerlevel9kconfig.sh
 argglobal
 silent! argdel *
@@ -49,12 +49,12 @@ setlocal fdl=1
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 16 - ((15 * winheight(0) + 34) / 68)
+let s:l = 487 - ((45 * winheight(0) + 34) / 69)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-16
-normal! 013|
+487
+normal! 06|
 tabedit ~/grc.zsh
 set splitbelow splitright
 set nosplitbelow
@@ -70,7 +70,7 @@ setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 35 - ((33 * winheight(0) + 34) / 68)
+let s:l = 35 - ((33 * winheight(0) + 34) / 69)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -91,7 +91,7 @@ setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 37 - ((35 * winheight(0) + 34) / 68)
+let s:l = 37 - ((36 * winheight(0) + 34) / 69)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -112,7 +112,7 @@ setlocal fdl=1
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 9 - ((8 * winheight(0) + 34) / 68)
+let s:l = 9 - ((8 * winheight(0) + 34) / 69)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt

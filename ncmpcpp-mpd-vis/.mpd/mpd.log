@@ -17119,3 +17119,13 @@ Feb 02 01:52 : player: played "Stellar Evolution _ Tech Trance Mix #1--DyuwcxMpH
 Feb 02 02:00 : ffmpeg/mp3: Could not update timestamps for discarded samples.
 Feb 02 02:00 : ffmpeg/mp3: Could not update timestamps for skipped samples.
 Feb 02 02:01 : player: played "Kris Menace feat. Fred Falke - Fairlight-mNgVSqrSNWE.mp3"
+Feb 02 20:00 : client: [5] closed
+Feb 02 20:00 : client: [8] closed
+Feb 02 20:00 : client: [6] closed
+Feb 02 20:00 : client: [7] closed
+Feb 02 20:01 : client: [9] opened from 127.0.0.1:55300
+Feb 02 20:01 : client: [10] opened from 127.0.0.1:55304
+Feb 02 20:01 : client: [11] opened from 127.0.0.1:55319
+Feb 02 20:01 : client: [12] opened from 127.0.0.1:55372
+Feb 02 23:30 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Feb 02 23:30 : ffmpeg/mp3: Could not update timestamps for skipped samples.

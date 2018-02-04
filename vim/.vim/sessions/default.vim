@@ -1,6 +1,6 @@
 " ~/.vim/sessions/default.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 03 February 2018 at 20:21:41.
+" Created by session.vim 2.13.1 on 04 February 2018 at 16:33:27.
 " Open this file in Vim and run :source % to restore your session.
 
 set guioptions=egmrL
@@ -9,45 +9,73 @@ if exists('g:syntax_on') != 1 | syntax on | endif
 if exists('g:did_load_filetypes') != 1 | filetype on | endif
 if exists('g:did_load_ftplugin') != 1 | filetype plugin on | endif
 if exists('g:did_indent_on') != 1 | filetype indent on | endif
-if &background != 'light'
-	set background=light
+if &background != 'dark'
+	set background=dark
 endif
-if !exists('g:colors_name') || g:colors_name != 'Dev_Delight' | colorscheme Dev_Delight | endif
+if !exists('g:colors_name') || g:colors_name != 'maroloccio' | colorscheme maroloccio | endif
 call setqflist([])
 let SessionLoad = 1
 if &cp | set nocp | endif
 let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0
 let v:this_session=expand("<sfile>:p")
 silent only
-cd ~/Desktop
+cd ~/.oh-my-zsh/custom/plugins/zsh-more-completions/src
 if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
-badd +0 t.sh
+badd +19 _react-native
+badd +26 _diskutil
+badd +49 _dir
 argglobal
 silent! argdel *
-$argadd t.sh
-edit t.sh
+$argadd _react-native
+edit _react-native
 set splitbelow splitright
+wincmd _ | wincmd |
+vsplit
+1wincmd h
+wincmd w
 set nosplitbelow
 wincmd t
 set winminheight=1 winheight=1 winminwidth=1 winwidth=1
+exe 'vert 1resize ' . ((&columns * 67 + 67) / 135)
+exe 'vert 2resize ' . ((&columns * 67 + 67) / 135)
 argglobal
 setlocal fdm=marker
 setlocal fde=0
 setlocal fmr={{{,}}}
 setlocal fdi=#
-setlocal fdl=1
+setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 30 - ((29 * winheight(0) + 23) / 46)
+let s:l = 22 - ((21 * winheight(0) + 23) / 46)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-30
-normal! 042|
+22
+normal! 012|
+wincmd w
+argglobal
+if bufexists('_diskutil') | buffer _diskutil | else | edit _diskutil | endif
+setlocal fdm=marker
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+let s:l = 42 - ((28 * winheight(0) + 23) / 46)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+42
+normal! 0
+wincmd w
+exe 'vert 1resize ' . ((&columns * 67 + 67) / 135)
+exe 'vert 2resize ' . ((&columns * 67 + 67) / 135)
 tabnext 1
 if exists('s:wipebuf')
 "   silent exe 'bwipe ' . s:wipebuf

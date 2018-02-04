@@ -398,13 +398,12 @@ function Quoter(type)
     "then run the quoting
 
     if (line =~ '\v^.*\$\(.*\).*$') 
-        "solved nested
         call InsertMatchingPunct(quote, '$')
         echo "$(command substitution)"
     elseif (line =~ '\v^.*\$\{.*\}.*$') 
         call Insert(quote, '$', '}')
         echo "${paramater substitution}"
-    elseif (line =~'^(\w)*=.*(\s)*$')
+    elseif (line =~'\v\s*\w+\=\w+\s*$')
         call InsertEquals(quote, '=', '')
         echo "var=value"
     elseif (line =~ '\v.*`.*`.*')

@@ -157,7 +157,7 @@ createTheFile	createScriptButDontOpenSublime.sh	/^createTheFile(){$/;"	f
 createTheFile	createTextFile.sh	/^createTheFile(){$/;"	f
 db	customTerminalInstaller/.shell_aliases_functions.sh	/^db(){$/;"	f
 db	macOnly/.shell_aliases_functions.sh	/^db(){$/;"	f
-default_recipent	textmessage.sh	/^    default_recipent=555111333$/;"	v
+default_recipent	textmessage.sh	/^    default_recipent="555111333"$/;"	v
 delay	batchRename.sh	/^    local delay=.1 # time in seconds between characters$/;"	v
 delay	openAll.sh	/^local delay=.1 # time in seconds between characters$/;"	v
 delim	batchRename.sh	/^delim=_$/;"	v
@@ -304,7 +304,7 @@ ls_command	macOnly/.shell_aliases_functions.sh	/^    ls_command="ls -iFhlA"$/;"	
 ls_command	macOnly/.shell_aliases_functions.sh	/^    ls_command="ls -iFlhAO"$/;"	v
 master	dsDownloader.sh	/^master="jacobmenke"$/;"	v
 master	rpiDownloader.sh	/^master="jacobmenke"$/;"	v
-member_1	textmessage.sh	/^    member_1=5551113333$/;"	v
+member_1	textmessage.sh	/^    member_1="5551113333"$/;"	v
 messageToSpeak	macOnly/say.sh	/^messageToSpeak=""$/;"	v
 messageToSpeak	say.sh	/^messageToSpeak=""$/;"	v
 mp3	customTerminalInstaller/.shell_aliases_functions.sh	/^    mp3(){$/;"	f

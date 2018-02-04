@@ -213,7 +213,7 @@ exists	macOnly/.shell_aliases_functions.sh	/^exists(){$/;"	f
 exists	updater.sh	/^exists(){$/;"	f
 f	customTerminalInstaller/.shell_aliases_functions.sh	/^    f(){$/;"	f
 f	macOnly/.shell_aliases_functions.sh	/^f(){$/;"	f
-family_phone_numbers	textmessage.sh	/^    family_phone_numbers=($member_1)$/;"	v
+family_phone_numbers	textmessage.sh	/^    family_phone_numbers=("$member_1")$/;"	v
 file	inotifyWatchLogAndEmailIfNAS.sh	/^file="$1"$/;"	v
 file	macOnly/splitReg.sh	/^file=\/tmp\/temp$\$$/;"	v
 file	macOnly/splitStdOut.sh	/^file=\/tmp\/temp$\$$/;"	v

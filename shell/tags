@@ -22,7 +22,6 @@ DIR	rsyncr.sh	/^localDIR="$1"$/;"	v
 DIR_WATCHING	fsWatchLongRunning.sh	/^DIR_WATCHING="$1"$/;"	v
 DIR_WATCHING	watchServiceFSWatchGit.sh	/^DIR_WATCHING="$1"$/;"	v
 DIR_WATCHING	watchServiceFSWatchLS-ALH.sh	/^DIR_WATCHING="$1"$/;"	v
-DIR_WATCHING	watchServiceFSWatchPiDesktop.sh	/^DIR_WATCHING="$1"$/;"	v
 DIR_WATCHING	watchServiceFSWatchPiWeb.sh	/^DIR_WATCHING="$1"$/;"	v
 DIR_WATCHING	watchServiceFSWatchRustCompile.sh	/^DIR_WATCHING="$1"$/;"	v
 ECHO	oldCounter.sh	/^                        ECHO="true"$/;"	v
@@ -81,7 +80,6 @@ ROWS	myWatchNoBlinkColorized.sh	/^        ROWS=$(tput lines)$/;"	v
 SCRIPTS	macOnly/tutorialConfigUpdater.sh	/^SCRIPTS="$HOME\/Documents\/shellScripts"$/;"	v
 SCRIPTS	printHeader.sh	/^    SCRIPTS="$HOME\/Documents\/shellScripts"$/;"	v
 SCRIPTS	updaterEmail.sh	/^SCRIPTS=\/Users\/jacobmenke\/Documents\/shellScripts$/;"	v
-SCRIPT_TO_RUN	watchServiceFSWatchPiDesktop.sh	/^SCRIPT_TO_RUN=$SCRIPTS\/upLoadPi.sh$/;"	v
 SCRIPT_TO_RUN	watchServiceFSWatchPiWeb.sh	/^SCRIPT_TO_RUN=$SCRIPTS\/uploadWebPi.sh$/;"	v
 TEXT_TO_DISPLAY	figletRandomFont.sh	/^TEXT_TO_DISPLAY="$1"$/;"	v
 TEXT_TO_DISPLAY	figletRandomFontOnce.sh	/^TEXT_TO_DISPLAY="$1"$/;"	v
@@ -174,6 +172,7 @@ dirNum	oldCounter.sh	/^dirNum=`expr $(echo $PATH | tr -cd : | wc -c) + 1`$/;"	v
 dir_name	macOnly/.shell_aliases_functions.sh	/^    dir_name=${git_name%.*}$/;"	v
 dir_to_search	openAll.sh	/^	dir_to_search="$2"$/;"	v
 dir_to_search	openAll.sh	/^dir_to_search="$(pwd)"$/;"	v
+dir_watching	watchServiceFSWatchPiDesktop.sh	/^dir_watching="$1"$/;"	v
 directory_name	tgzLocalInstaller.sh	/^        directory_name="${1%.tar.gz}"$/;"	v
 directory_name	tgzLocalInstaller.sh	/^        directory_name="${1%.tgz}"$/;"	v
 disable_proxy	macOnly/tor.sh	/^function disable_proxy() {$/;"	f
@@ -439,8 +438,17 @@ s	customTerminalInstaller/.shell_aliases_functions.sh	/^        s=substr(s,1,4)$
 s	customTerminalInstaller/.shell_aliases_functions.sh	/^    s=" B   KiB MiB GiB TiB EiB PiB YiB ZiB"$/;"	v
 s	macOnly/.shell_aliases_functions.sh	/^        s=substr(s,1,4)$/;"	v
 s	macOnly/.shell_aliases_functions.sh	/^    s=" B   KiB MiB GiB TiB EiB PiB YiB ZiB"$/;"	v
+s10_pid	backgroundMastery.sh	/^s10_pid=$!$/;"	v
+s1_pid	backgroundMastery.sh	/^s1_pid="$!"$/;"	v
+s2_pid	backgroundMastery.sh	/^s2_pid="$!"$/;"	v
+s3_pid	backgroundMastery.sh	/^s3_pid=$!$/;"	v
+s4_pid	backgroundMastery.sh	/^s4_pid="$!"$/;"	v
+s5_pid	backgroundMastery.sh	/^s5_pid="$!"$/;"	v
+s6_pid	backgroundMastery.sh	/^s6_pid=$!$/;"	v
+s8_pid	backgroundMastery.sh	/^s8_pid=$!$/;"	v
 scnew	customTerminalInstaller/.shell_aliases_functions.sh	/^scnew(){$/;"	f
 scnew	macOnly/.shell_aliases_functions.sh	/^scnew(){$/;"	f
+script_to_run	watchServiceFSWatchPiDesktop.sh	/^script_to_run="$SCRIPTS\/upLoadPi.sh"$/;"	v
 scripts_dir	duplicateLineDeleter.sh	/^scripts_dir=$SCRIPTS$/;"	v
 scripts_dir	indenterAndDuplicateLineDeleter.sh	/^scripts_dir=$SCRIPTS$/;"	v
 search	customTerminalInstaller/.shell_aliases_functions.sh	/^    search(){$/;"	f

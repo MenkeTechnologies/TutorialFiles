@@ -1,6 +1,6 @@
 " ~/.vim/sessions/default.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 03 February 2018 at 02:50:13.
+" Created by session.vim 2.13.1 on 03 February 2018 at 20:21:41.
 " Open this file in Vim and run :source % to restore your session.
 
 set guioptions=egmrL
@@ -9,25 +9,26 @@ if exists('g:syntax_on') != 1 | syntax on | endif
 if exists('g:did_load_filetypes') != 1 | filetype on | endif
 if exists('g:did_load_ftplugin') != 1 | filetype plugin on | endif
 if exists('g:did_indent_on') != 1 | filetype indent on | endif
-if &background != 'dark'
-	set background=dark
+if &background != 'light'
+	set background=light
 endif
-if !exists('g:colors_name') || g:colors_name != 'candy' | colorscheme candy | endif
+if !exists('g:colors_name') || g:colors_name != 'Dev_Delight' | colorscheme Dev_Delight | endif
 call setqflist([])
 let SessionLoad = 1
 if &cp | set nocp | endif
 let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0
 let v:this_session=expand("<sfile>:p")
 silent only
-cd ~/
+cd ~/Desktop
 if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
-badd +0 Desktop/t.lisp
+badd +0 t.sh
 argglobal
 silent! argdel *
-edit Desktop/t.lisp
+$argadd t.sh
+edit t.sh
 set splitbelow splitright
 set nosplitbelow
 wincmd t
@@ -37,17 +38,16 @@ setlocal fdm=marker
 setlocal fde=0
 setlocal fmr={{{,}}}
 setlocal fdi=#
-setlocal fdl=0
+setlocal fdl=1
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 241 - ((75 * winheight(0) + 38) / 77)
+let s:l = 30 - ((29 * winheight(0) + 23) / 46)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-241
-normal! 0
-lcd ~/Desktop
+30
+normal! 042|
 tabnext 1
 if exists('s:wipebuf')
 "   silent exe 'bwipe ' . s:wipebuf

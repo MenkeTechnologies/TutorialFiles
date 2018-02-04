@@ -438,14 +438,14 @@ s	customTerminalInstaller/.shell_aliases_functions.sh	/^        s=substr(s,1,4)$
 s	customTerminalInstaller/.shell_aliases_functions.sh	/^    s=" B   KiB MiB GiB TiB EiB PiB YiB ZiB"$/;"	v
 s	macOnly/.shell_aliases_functions.sh	/^        s=substr(s,1,4)$/;"	v
 s	macOnly/.shell_aliases_functions.sh	/^    s=" B   KiB MiB GiB TiB EiB PiB YiB ZiB"$/;"	v
-s10_pid	backgroundMastery.sh	/^s10_pid=$!$/;"	v
+s10_pid	backgroundMastery.sh	/^s10_pid="$!"$/;"	v
 s1_pid	backgroundMastery.sh	/^s1_pid="$!"$/;"	v
 s2_pid	backgroundMastery.sh	/^s2_pid="$!"$/;"	v
-s3_pid	backgroundMastery.sh	/^s3_pid=$!$/;"	v
+s3_pid	backgroundMastery.sh	/^s3_pid="$!"$/;"	v
 s4_pid	backgroundMastery.sh	/^s4_pid="$!"$/;"	v
 s5_pid	backgroundMastery.sh	/^s5_pid="$!"$/;"	v
-s6_pid	backgroundMastery.sh	/^s6_pid=$!$/;"	v
-s8_pid	backgroundMastery.sh	/^s8_pid=$!$/;"	v
+s6_pid	backgroundMastery.sh	/^s6_pid="$!"$/;"	v
+s8_pid	backgroundMastery.sh	/^s8_pid="$!"$/;"	v
 scnew	customTerminalInstaller/.shell_aliases_functions.sh	/^scnew(){$/;"	f
 scnew	macOnly/.shell_aliases_functions.sh	/^scnew(){$/;"	f
 script_to_run	watchServiceFSWatchPiDesktop.sh	/^script_to_run="$SCRIPTS\/upLoadPi.sh"$/;"	v

@@ -7,6 +7,16 @@ printf "%$1\n" $2
 endsnippet
 
 
+snippet iee "if elif else"
+if [[ $1 ]]; then
+	${2::}
+elif [[ $3 ]]; then
+	${4::}
+else
+	${5::}
+fi
+endsnippet
+
 snippet ff "for loop shell"
 for (( i = 0; i < $1; i++ )); do
 	$2

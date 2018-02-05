@@ -252,10 +252,6 @@ inoremap <silent> <C-V> <C-[>:w<CR>:call TmuxRepeatGeneric()<CR>a
 nnoremap <silent> <Esc>t mbgg=G`b
 inoremap <silent> <Esc>t <ESC>mbgg=G`ba
 
-nnoremap <silent> <C-T> xp
-vnoremap <silent> <C-T> xp
-inoremap <silent> <C-T> xp
-
 "transpose words (like emacs `transpose-words')
 function! TransposeWords()
     if search('\w\+\%#\w*\W\+\w\+')
@@ -268,9 +264,12 @@ function! TransposeWords()
     normal el
 endfunction
 
+nnoremap <silent> <C-Y> xp
+vnoremap <silent> <C-Y> xp
+inoremap <silent> <C-Y> xp
 
-nnoremap <silent> <C-Y> :call TransposeWords()<CR>
-inoremap <silent> <C-Y> <C-O>:call TransposeWords()<CR>
+nnoremap <silent> <C-T> :call TransposeWords()<CR>
+inoremap <silent> <C-T> <C-O>:call TransposeWords()<CR>
 
 nnoremap <silent> <C-C> :wq!<CR>:qa!<CR>
 "vnoremap <silent> <C-C> :<C-C>:wq!<CR>:qa!<CR>

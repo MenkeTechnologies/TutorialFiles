@@ -17442,3 +17442,5 @@ Feb 04 12:35 : ffmpeg/aiff:  is not implemented. Update your FFmpeg version to t
 Feb 04 12:35 : ffmpeg/aiff: If you want to help, upload a sample of this file to ftp://upload.ffmpeg.org/incoming/ and contact the ffmpeg-devel mailing list. (ffmpeg-devel@ffmpeg.org)
 Feb 04 12:35 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
 Feb 04 12:35 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Feb 04 20:35 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Feb 04 20:36 : player: played "♫ Best Uplifting Trance of 2017 l Top 50 Yearmix 2017 ♫-wzTSyUT2Qwc.mp3"

@@ -1,6 +1,6 @@
 " ~/.vim/sessions/vrc.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 02 February 2018 at 00:19:22.
+" Created by session.vim 2.13.1 on 04 February 2018 at 21:49:11.
 " Open this file in Vim and run :source % to restore your session.
 
 set guioptions=egmrL
@@ -12,7 +12,7 @@ if exists('g:did_indent_on') != 1 | filetype indent on | endif
 if &background != 'dark'
 	set background=dark
 endif
-if !exists('g:colors_name') || g:colors_name != 'bluedrake' | colorscheme bluedrake | endif
+if !exists('g:colors_name') || g:colors_name != 'pf_earth' | colorscheme pf_earth | endif
 call setqflist([])
 let SessionLoad = 1
 if &cp | set nocp | endif
@@ -54,18 +54,12 @@ setlocal fdn=20
 setlocal fen
 201
 silent! normal! zo
-321
-silent! normal! zo
-322
-silent! normal! zo
-323
-silent! normal! zo
-let s:l = 303 - ((15 * winheight(0) + 34) / 68)
+let s:l = 266 - ((26 * winheight(0) + 33) / 67)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-303
-normal! 018|
+266
+normal! 0
 tabedit ~/.config/powerline/themes/vim/default.json
 set splitbelow splitright
 set nosplitbelow
@@ -81,7 +75,7 @@ setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 10 - ((9 * winheight(0) + 34) / 68)
+let s:l = 10 - ((9 * winheight(0) + 33) / 67)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -102,7 +96,7 @@ setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 12 - ((11 * winheight(0) + 34) / 68)
+let s:l = 12 - ((11 * winheight(0) + 33) / 67)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -123,7 +117,7 @@ setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 34) / 68)
+let s:l = 1 - ((0 * winheight(0) + 33) / 67)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -144,7 +138,7 @@ setlocal fdl=1
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 239 - ((27 * winheight(0) + 34) / 68)
+let s:l = 239 - ((27 * winheight(0) + 33) / 67)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt

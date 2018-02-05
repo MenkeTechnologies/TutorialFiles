@@ -1,6 +1,6 @@
 " ~/.vim/sessions/trc.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 02 February 2018 at 00:25:11.
+" Created by session.vim 2.13.1 on 05 February 2018 at 04:35:31.
 " Open this file in Vim and run :source % to restore your session.
 
 set guioptions=egmrL
@@ -12,7 +12,7 @@ if exists('g:did_indent_on') != 1 | filetype indent on | endif
 if &background != 'dark'
 	set background=dark
 endif
-if !exists('g:colors_name') || g:colors_name != 'darth' | colorscheme darth | endif
+if !exists('g:colors_name') || g:colors_name != 'forneus' | colorscheme forneus | endif
 call setqflist([])
 let SessionLoad = 1
 if &cp | set nocp | endif
@@ -26,9 +26,9 @@ endif
 set shortmess=aoO
 badd +0 .tmux.conf
 badd +1 .config/powerline/themes/tmux/default.json
-badd +1 ~/.gitconfig
-badd +1 ~/.gitignore_global
-badd +1 ~/.mongorc.js
+badd +1 .gitconfig
+badd +1 .gitignore_global
+badd +1 .mongorc.js
 argglobal
 silent! argdel *
 $argadd .tmux.conf
@@ -48,12 +48,12 @@ setlocal fdl=1
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 26 - ((17 * winheight(0) + 34) / 68)
+let s:l = 34 - ((24 * winheight(0) + 34) / 68)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-26
-normal! 0
+34
+normal! 012|
 tabedit .config/powerline/themes/tmux/default.json
 set splitbelow splitright
 set nosplitbelow
@@ -75,7 +75,7 @@ exe s:l
 normal! zt
 15
 normal! 014|
-tabedit ~/.mongorc.js
+tabedit .mongorc.js
 set splitbelow splitright
 set nosplitbelow
 set nosplitright
@@ -96,7 +96,7 @@ exe s:l
 normal! zt
 20
 normal! 067|
-tabedit ~/.gitignore_global
+tabedit .gitignore_global
 set splitbelow splitright
 wincmd _ | wincmd |
 split
@@ -106,8 +106,8 @@ set nosplitbelow
 set nosplitright
 wincmd t
 set winminheight=1 winheight=1 winminwidth=1 winwidth=1
-exe '1resize ' . ((&lines * 34 + 35) / 71)
-exe '2resize ' . ((&lines * 33 + 35) / 71)
+exe '1resize ' . ((&lines * 35 + 35) / 71)
+exe '2resize ' . ((&lines * 32 + 35) / 71)
 argglobal
 setlocal fdm=marker
 setlocal fde=0
@@ -117,7 +117,7 @@ setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 9 - ((8 * winheight(0) + 17) / 34)
+let s:l = 9 - ((8 * winheight(0) + 17) / 35)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -125,7 +125,7 @@ normal! zt
 normal! 09|
 wincmd w
 argglobal
-if bufexists('~/.gitconfig') | buffer ~/.gitconfig | else | edit ~/.gitconfig | endif
+if bufexists('.gitconfig') | buffer .gitconfig | else | edit .gitconfig | endif
 setlocal fdm=marker
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -134,15 +134,15 @@ setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 5 - ((4 * winheight(0) + 16) / 33)
+let s:l = 5 - ((4 * winheight(0) + 16) / 32)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
 5
 normal! 015|
 wincmd w
-exe '1resize ' . ((&lines * 34 + 35) / 71)
-exe '2resize ' . ((&lines * 33 + 35) / 71)
+exe '1resize ' . ((&lines * 35 + 35) / 71)
+exe '2resize ' . ((&lines * 32 + 35) / 71)
 tabnew
 set splitbelow splitright
 set nosplitbelow

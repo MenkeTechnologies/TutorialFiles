@@ -17518,3 +17518,10 @@ Feb 04 21:16 : ffmpeg/aiff: If you want to help, upload a sample of this file to
 Feb 04 21:16 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
 Feb 04 21:17 : ffmpeg/mp3: Could not update timestamps for skipped samples.
 Feb 04 23:42 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Feb 05 14:16 : player: played "♫ Best Uplifting Trance of 2017 l Top 50 Yearmix 2017 ♫-wzTSyUT2Qwc.mp3"
+Feb 05 14:19 : config: inotify: auto_update was disabled. enable during compilation phase
+Feb 05 14:19 : config: option 'enabled' on line 29 was not recognized
+Feb 05 14:19 : client: [0] opened from 127.0.0.1:49553
+Feb 05 14:19 : client: [1] opened from 127.0.0.1:49557
+Feb 05 14:19 : client: [2] opened from 127.0.0.1:49559
+Feb 05 14:19 : client: [3] opened from 127.0.0.1:49561

@@ -1,7 +1,9 @@
 sw_volume: 52
 audio_device_state:1:CoreAudio
 audio_device_state:1:my_fifo
-state: stop
+state: play
+current: 118
+time: 10537.256000
 random: 0
 repeat: 0
 single: 0
@@ -129,4 +131,5 @@ playlist_begin
 116:Ableton/User Library/Samples/Imported/ATE Drum Loop - 064 - 138 BPM - Percussion Loop.wav
 117:Digitalism - Apollo-Gize (Fred Falke Remix)-_ykDET9kLJI.mp3
 118:♫ Best Uplifting Trance of 2017 l Top 50 Yearmix 2017 ♫-wzTSyUT2Qwc.mp3
+119:Tech Trance Mix 2015 _HD-yh6rx1vLUeY.mp3
 playlist_end

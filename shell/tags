@@ -267,7 +267,7 @@ home_dir	duplicateLineDeleter.sh	/^home_dir=$HOME$/;"	v
 home_dir	indenterAndDuplicateLineDeleter.sh	/^home_dir=$HOME$/;"	v
 host	macOnly/rsyncr.sh	/^host="r"$/;"	v
 host	rsyncr.sh	/^host="r"$/;"	v
-hostname	updater.sh	/^    hostname="$(echo $1 | awk -F: '{print $1}')"$/;"	v
+hostname	updater.sh	/^    hostname="$(echo "$1" | awk -F: '{print $1}')"$/;"	v
 htopDIR	customTerminalInstaller/install.sh	/^htopDIR="$HOME\/.config\/htop"$/;"	v
 hub_create	customTerminalInstaller/.shell_aliases_functions.sh	/^    hub_create(){$/;"	f
 hub_create	macOnly/.shell_aliases_functions.sh	/^hub_create(){$/;"	f
@@ -304,7 +304,7 @@ ls_command	macOnly/.shell_aliases_functions.sh	/^        ls_command="grc -c \/us
 ls_command	macOnly/.shell_aliases_functions.sh	/^        ls_command="grc -c \/usr\/share\/grc\/conf.gls ls -iFlhA --color=always"$/;"	v
 ls_command	macOnly/.shell_aliases_functions.sh	/^    ls_command="ls -iFhlA"$/;"	v
 ls_command	macOnly/.shell_aliases_functions.sh	/^    ls_command="ls -iFlhAO"$/;"	v
-manager	updater.sh	/^    manager="$(echo $1 | awk -F: '{print $2}')"$/;"	v
+manager	updater.sh	/^    manager="$(echo "$1" | awk -F: '{print $2}')"$/;"	v
 master	dsDownloader.sh	/^master="jacobmenke"$/;"	v
 master	rpiDownloader.sh	/^master="jacobmenke"$/;"	v
 member_1	textmessage.sh	/^    member_1="5551113333"$/;"	v

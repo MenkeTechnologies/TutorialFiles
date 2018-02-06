@@ -117,7 +117,6 @@ blocksToSize	macOnly/.shell_aliases_functions.sh	/^blocksToSize(){$/;"	f
 blocksize	secureDelete.sh	/^blocksize=1      #  I\/O with \/dev\/urandom requires unit block size,$/;"	v
 bold	customTerminalInstaller/.shell_aliases_functions.sh	/^bold=$(tput bold || tput md)$/;"	v
 bold	macOnly/.shell_aliases_functions.sh	/^	bold=$(tput bold || tput md)$/;"	v
-boldAndUnderlinedPrint	macOnly/tutorialConfigUpdater.sh	/^boldAndUnderlinedPrint(){$/;"	f
 bytes	customTerminalInstaller/.shell_aliases_functions.sh	/^    local bytes=$(( input * 512 ))$/;"	v
 bytes	macOnly/.shell_aliases_functions.sh	/^    local bytes=$(( input * 512 ))$/;"	v
 cd	customTerminalInstaller/.shell_aliases_functions.sh	/^    cd(){$/;"	f
@@ -382,6 +381,7 @@ prettyPrint	customTerminalInstaller/.shell_aliases_functions.sh	/^    prettyPrin
 prettyPrint	customTerminalInstaller/install.sh	/^prettyPrint(){$/;"	f
 prettyPrint	macOnly/.shell_aliases_functions.sh	/^prettyPrint(){$/;"	f
 prettyPrint	macOnly/tor.sh	/^prettyPrint (){$/;"	f
+prettyPrint	macOnly/tutorialConfigUpdater.sh	/^prettyPrint(){$/;"	f
 prettyPrint	rpiSoftwareUpdater.sh	/^prettyPrint(){$/;"	f
 prettyPrint	textmessage.sh	/^prettyPrint () {$/;"	f
 prettyPrint	tor.sh	/^prettyPrint (){$/;"	f

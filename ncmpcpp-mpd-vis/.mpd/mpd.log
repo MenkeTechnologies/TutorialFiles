@@ -17531,3 +17531,11 @@ Feb 05 16:20 : player: played "♫ Best Uplifting Trance of 2017 l Top 50 Yearmi
 Feb 05 17:24 : ffmpeg/mp3: Could not update timestamps for discarded samples.
 Feb 05 17:24 : player: played "Tech Trance Mix 2015 _HD-yh6rx1vLUeY.mp3"
 Feb 05 22:57 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Feb 06 09:52 : client: [3] closed
+Feb 06 09:52 : client: [0] closed
+Feb 06 09:52 : client: [1] closed
+Feb 06 09:52 : client: [2] closed
+Feb 06 09:52 : client: [4] opened from 127.0.0.1:49332
+Feb 06 09:52 : client: [5] opened from 127.0.0.1:49362
+Feb 06 09:52 : client: [6] opened from 127.0.0.1:49364
+Feb 06 09:52 : client: [7] opened from 127.0.0.1:49380

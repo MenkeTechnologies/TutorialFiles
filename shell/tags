@@ -4,6 +4,14 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
+--enable-gui	customTerminalInstaller/install.sh	/^            --enable-gui=gtk2 --enable-cscope --prefix=\/usr$/;"	v
+--enable-luainterp	customTerminalInstaller/install.sh	/^            --enable-luainterp=yes \\$/;"	v
+--enable-perlinterp	customTerminalInstaller/install.sh	/^            --enable-perlinterp=yes \\$/;"	v
+--enable-python3interp	customTerminalInstaller/install.sh	/^            --enable-python3interp=yes \\$/;"	v
+--enable-pythoninterp	customTerminalInstaller/install.sh	/^            --enable-pythoninterp=yes \\$/;"	v
+--enable-rubyinterp	customTerminalInstaller/install.sh	/^            --enable-rubyinterp=yes \\$/;"	v
+--with-python-config-dir	customTerminalInstaller/install.sh	/^            --with-python-config-dir=\/usr\/lib\/python2.7\/config \\$/;"	v
+--with-python3-config-dir	customTerminalInstaller/install.sh	/^            --with-python3-config-dir=\/usr\/lib\/python3.5\/config \\$/;"	v
 BLUE	blueText.sh	/^BLUE='\\e[37;44m'$/;"	v
 BLUE	blueUpperText.sh	/^BLUE='\\e[37;44m'$/;"	v
 BLUE	boldText.sh	/^BLUE='\\e[37;44m'$/;"	v
@@ -498,6 +506,7 @@ timeToSleep	myWatchNoBlinkColorized.sh	/^    timeToSleep=$2$/;"	v
 timeToSleep	myWatchNoBlinkColorized.sh	/^    timeToSleep=0.5$/;"	v
 title	customTerminalInstaller/.shell_aliases_functions.sh	/^    title="$1"$/;"	v
 title	macOnly/.shell_aliases_functions.sh	/^    title="$1"$/;"	v
+tmuxPowerlineDir	customTerminalInstaller/install.sh	/^    tmuxPowerlineDir=$HOME\/.config\/powerline\/themes\/tmux$/;"	v
 topline	animation	/^topline=0$/;"	v
 total	oldCounter.sh	/^total=0$/;"	v
 total	oldCounter.sh	/^total=`expr $(ls -F $1 | grep ".*[*@]" | wc -l) + $total`$/;"	v
@@ -522,6 +531,7 @@ usage	shebangChanger.sh	/^usage(){$/;"	f
 usage	tgzLocalInstaller.sh	/^function usage ()$/;"	f
 user	gitRemoteRepoInformation.sh	/^            user="$(echo $line | awk -F'\/' '{print $4}')"$/;"	v
 view	eyes.sh	/^    view=${ary[$randIndex]}$/;"	v
+vimV	customTerminalInstaller/install.sh	/^vimV="$(vim --version | head -1 | awk '{print $5}')"$/;"	v
 w	updater.sh	/^    w=80$/;"	v
 w	uploadWebPi.sh	/^w=80$/;"	v
 watchCommand	myWatchNoBlink.sh	/^watchCommand() {$/;"	f

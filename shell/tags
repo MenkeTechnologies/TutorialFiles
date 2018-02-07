@@ -185,8 +185,8 @@ displayProgress	batchRename.sh	/^displayProgress(){$/;"	f
 displayProgress	picture_finder.sh	/^displayProgress(){$/;"	f
 displayProgress	secureDelete.sh	/^displayProgress(){$/;"	f
 displayProgressIndicator	openAll.sh	/^displayProgressIndicator(){$/;"	f
+distro	customTerminalInstaller/install.sh	/^            distro=debian$/;"	v
 distro	customTerminalInstaller/install.sh	/^            distro=redhat$/;"	v
-distro	customTerminalInstaller/install.sh	/^           distro=debian$/;"	v
 distroName	clearTrash.sh	/^    distroName=$(lsb_release -a | head -1 | awk '{print $3}')$/;"	v
 distroName	colorLogger.sh	/^    distroName=$(lsb_release -a | head -1 | awk '{print $3}')$/;"	v
 distroName	customTerminalInstaller/install.sh	/^    distroName=$(cat \/etc\/os-release | grep "^ID=" | cut -d= -f2 | tr -d \\")$/;"	v

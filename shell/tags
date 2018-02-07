@@ -98,6 +98,10 @@ __ScriptVersion	powerTo.sh	/^__ScriptVersion="1.0.0"$/;"	v
 __ScriptVersion	tgzLocalInstaller.sh	/^__ScriptVersion="1.0.0"$/;"	v
 active	powerTo.sh	/^active=$(tmux list-panes | grep active | cut -c1)$/;"	v
 addContents	shebangChanger.sh	/^addContents(){$/;"	f
+addDependenciesDebian	customTerminalInstaller/install.sh	/^addDependenciesDebian(){$/;"	f
+addDependenciesLinux	customTerminalInstaller/install.sh	/^addDependenciesLinux(){$/;"	f
+addDependenciesMac	customTerminalInstaller/install.sh	/^addDependenciesMac(){$/;"	f
+addDependenciesRedHat	customTerminalInstaller/install.sh	/^addDependenciesRedHat(){$/;"	f
 addHeader	createTextFile.sh	/^addHeader(){$/;"	f
 addHeader	templater.sh	/^addHeader(){$/;"	f
 address	uploadWebDS.sh	/^address="jacobmenke@$MY_IP:\/var\/services\/web"$/;"	v

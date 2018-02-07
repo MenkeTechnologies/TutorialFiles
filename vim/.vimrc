@@ -252,6 +252,10 @@ nnoremap <silent> <C-C> :wq!<CR>:qa!<CR>
 "vnoremap <silent> <C-C> :<C-C>:wq!<CR>:qa!<CR>
 inoremap <silent> <C-C> <C-[>:wq!<CR>:qa!<CR>
 
+nnoremap <silent> <C-D> :update<CR>
+vnoremap <silent> <C-D> :<C-C>:update<CR>
+inoremap <silent> <C-D> <C-[>:update<CR>
+
 nnoremap <silent> <C-W> :update<CR>:SyntasticCheck<CR>
 vnoremap <silent> <C-W> :<C-C>:update<CR>:SyntasticCheck<CR>
 inoremap <silent> <C-W> <C-[>:update<CR>:SyntasticCheck<CR>a

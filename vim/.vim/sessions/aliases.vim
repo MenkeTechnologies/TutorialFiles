@@ -1,6 +1,6 @@
 " ~/.vim/sessions/aliases.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 05 February 2018 at 04:29:23.
+" Created by session.vim 2.13.1 on 06 February 2018 at 17:09:37.
 " Open this file in Vim and run :source % to restore your session.
 
 set guioptions=egmrL
@@ -25,10 +25,10 @@ if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
 endif
 set shortmess=aoO
 badd +0 ~/.shell_aliases_functions.sh
+badd +6 ~/Documents/shellScripts/updater.sh
 badd +32 ~/.config/powerline/themes/tmux/default.json
 badd +4 ~/.iftop.conf
 badd +1 ~/.tokens.sh
-badd +6 ~/Documents/shellScripts/updater.sh
 badd +1 ~/Documents/shellScripts/macOnly/tor.sh
 argglobal
 silent! argdel *
@@ -49,14 +49,14 @@ setlocal fdl=3
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-87
+88
 silent! normal! zo
-let s:l = 8 - ((7 * winheight(0) + 34) / 68)
+let s:l = 586 - ((36 * winheight(0) + 33) / 66)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-8
-normal! 0
+586
+normal! 031|
 tabedit ~/.tokens.sh
 set splitbelow splitright
 set nosplitbelow
@@ -72,7 +72,7 @@ setlocal fdl=1
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 36 - ((28 * winheight(0) + 34) / 68)
+let s:l = 36 - ((27 * winheight(0) + 33) / 66)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -93,7 +93,7 @@ setlocal fdl=1
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 34) / 68)
+let s:l = 1 - ((0 * winheight(0) + 33) / 66)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -114,7 +114,7 @@ setlocal fdl=1
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 34) / 68)
+let s:l = 1 - ((0 * winheight(0) + 33) / 66)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt

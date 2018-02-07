@@ -197,7 +197,7 @@ distro	customTerminalInstaller/install.sh	/^            distro=debian$/;"	v
 distro	customTerminalInstaller/install.sh	/^            distro=redhat$/;"	v
 distroName	clearTrash.sh	/^    distroName=$(lsb_release -a | head -1 | awk '{print $3}')$/;"	v
 distroName	colorLogger.sh	/^    distroName=$(lsb_release -a | head -1 | awk '{print $3}')$/;"	v
-distroName	customTerminalInstaller/install.sh	/^    distroName=$(cat \/etc\/os-release | grep "^ID=" | cut -d= -f2 | tr -d \\")$/;"	v
+distroName	customTerminalInstaller/install.sh	/^    distroName=$(grep "^ID=" \/etc\/os-release | cut -d= -f2 | tr -d \\")$/;"	v
 distroName	macOnly/.shell_aliases_functions.sh	/^    distroName=$(lsb_release -a | head -1 | awk '{print $3}')$/;"	v
 dontSummarizeSizes	directoryContentsSize.sh	/^dontSummarizeSizes(){$/;"	f
 e_badargs	secureDelete.sh	/^e_badargs=70     #  Various error exit codes.$/;"	v
@@ -442,6 +442,7 @@ replacer	macOnly/.shell_aliases_functions.sh	/^replacer(){$/;"	f
 repo	gitRemoteRepoInformation.sh	/^            repo="$(echo $line | awk -F'\/' '{print $5}' | awk '{print $1}')"$/;"	v
 res	customTerminalInstaller/.shell_aliases_functions.sh	/^            res="$2"$/;"	v
 res	customTerminalInstaller/.shell_aliases_functions.sh	/^        res=600x400$/;"	v
+res	customTerminalInstaller/install.sh	/^res=$(echo "$vimV >= 8.0" | bc)$/;"	v
 res	macOnly/.shell_aliases_functions.sh	/^    res=600x400$/;"	v
 return2	customTerminalInstaller/.shell_aliases_functions.sh	/^    return2(){$/;"	f
 return2	macOnly/.shell_aliases_functions.sh	/^return2(){$/;"	f

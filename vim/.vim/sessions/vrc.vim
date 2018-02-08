@@ -1,6 +1,6 @@
 " ~/.vim/sessions/vrc.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 07 February 2018 at 02:19:14.
+" Created by session.vim 2.13.1 on 07 February 2018 at 23:55:36.
 " Open this file in Vim and run :source % to restore your session.
 
 set guioptions=egmrL
@@ -12,7 +12,7 @@ if exists('g:did_indent_on') != 1 | filetype indent on | endif
 if &background != 'dark'
 	set background=dark
 endif
-if !exists('g:colors_name') || g:colors_name != 'darth' | colorscheme darth | endif
+if !exists('g:colors_name') || g:colors_name != 'forneus' | colorscheme forneus | endif
 call setqflist([])
 let SessionLoad = 1
 if &cp | set nocp | endif
@@ -54,18 +54,12 @@ setlocal fdn=20
 setlocal fen
 201
 silent! normal! zo
-316
-silent! normal! zo
-317
-silent! normal! zo
-318
-silent! normal! zo
-let s:l = 203 - ((23 * winheight(0) + 33) / 66)
+let s:l = 204 - ((24 * winheight(0) + 33) / 66)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-203
-normal! 0
+204
+normal! 012|
 tabedit ~/.config/powerline/themes/vim/default.json
 set splitbelow splitright
 set nosplitbelow

@@ -105,9 +105,11 @@ distroName=$(grep "^ID=" /etc/os-release | cut -d= -f2 | tr -d \")
         (ubuntu) 
 		plugins+=(ubuntu)
             ;;
-        (centos|fedora|rhel) 
+        (centos|rhel) 
 		plugins+=(yum)
-
+            ;;
+        (fedora) 
+		plugins+=(yum fedora)
             ;;
         (*) :
 			;;

@@ -1,6 +1,6 @@
 " ~/.vim/sessions/aliases.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 07 February 2018 at 02:19:13.
+" Created by session.vim 2.13.1 on 08 February 2018 at 02:11:27.
 " Open this file in Vim and run :source % to restore your session.
 
 set guioptions=egmrL
@@ -31,7 +31,7 @@ badd +4 ~/.iftop.conf
 badd +1 ~/.tokens.sh
 badd +1 ~/Documents/shellScripts/macOnly/tor.sh
 badd +1 /Volumes/SD/wcc/cps/javaTips/printfTips.txt
-badd +0 /Volumes/SD/wcc/cps/javaTips/gradle.txt
+badd +1 /Volumes/SD/wcc/cps/javaTips/gradle.txt
 argglobal
 silent! argdel *
 $argadd ~/.shell_aliases_functions.sh
@@ -53,12 +53,12 @@ setlocal fdn=20
 setlocal fen
 88
 silent! normal! zo
-let s:l = 598 - ((18 * winheight(0) + 33) / 66)
+let s:l = 181 - ((48 * winheight(0) + 33) / 66)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-598
-normal! 069|
+181
+normal! 08|
 tabedit ~/.tokens.sh
 set splitbelow splitright
 set nosplitbelow

@@ -1,6 +1,6 @@
 " ~/.vim/sessions/zshrc.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 07 February 2018 at 23:56:12.
+" Created by session.vim 2.13.1 on 08 February 2018 at 01:18:52.
 " Open this file in Vim and run :source % to restore your session.
 
 set guioptions=egmrL
@@ -12,7 +12,7 @@ if exists('g:did_indent_on') != 1 | filetype indent on | endif
 if &background != 'dark'
 	set background=dark
 endif
-if !exists('g:colors_name') || g:colors_name != 'neverland' | colorscheme neverland | endif
+if !exists('g:colors_name') || g:colors_name != 'elrond' | colorscheme elrond | endif
 call setqflist([])
 let SessionLoad = 1
 if &cp | set nocp | endif
@@ -49,12 +49,12 @@ setlocal fdl=1
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 138 - ((0 * winheight(0) + 33) / 66)
+let s:l = 644 - ((42 * winheight(0) + 33) / 66)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-138
-normal! 0
+644
+normal! 021|
 tabedit ~/grc.zsh
 set splitbelow splitright
 set nosplitbelow

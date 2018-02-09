@@ -208,7 +208,6 @@ noremap <c-h> 4h
 noremap <c-l> 4l
 
 nnoremap <silent> <C-G> :w<CR>:Dispatch<CR>
-nnoremap <silent> <C-H> wgUl
 
 "vnoremap <silent> <C-G> :<C-C>:w<CR>:Dispatch<CR>
 inoremap <silent> <C-G> <C-[>:w<CR>:Dispatch<CR>a
@@ -679,8 +678,8 @@ endfunction
 " get rid of plugin mapping
 autocmd VimEnter * iunmap <C-F>
 
-
 nnoremap <silent> <C-F> :w<CR>:call TmuxRepeat()<CR>
+vnoremap <silent> <C-F> :call NERDComment("x","Toggle")<CR>
 autocmd VimEnter * inoremap <silent> <C-F> <C-[>:w<CR>:call TmuxRepeat()<CR>a
 
 nnoremap <silent> <C-V> :w<CR>:call TmuxRepeatGeneric()<CR>

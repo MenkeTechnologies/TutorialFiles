@@ -103,6 +103,7 @@ URL	gitgo.sh	/^    local URL="https:\/\/github.com\/$GITHUB_ACCOUNT\/$REPO_NAME_
 __ScriptVersion	macOnly/splitReg.sh	/^__ScriptVersion=1.0.0$/;"	v
 __ScriptVersion	macOnly/splitStdoutByRegex.sh	/^__ScriptVersion=1.0.0$/;"	v
 __ScriptVersion	powerTo.sh	/^__ScriptVersion="1.0.0"$/;"	v
+__ScriptVersion	storageShower.sh	/^__ScriptVersion="version"$/;"	v
 __ScriptVersion	tgzLocalInstaller.sh	/^__ScriptVersion="1.0.0"$/;"	v
 active	powerTo.sh	/^active=$(tmux list-panes | grep active | cut -c1)$/;"	v
 addContents	shebangChanger.sh	/^addContents(){$/;"	f
@@ -197,7 +198,7 @@ distro	customTerminalInstaller/install.sh	/^            distro=debian$/;"	v
 distro	customTerminalInstaller/install.sh	/^            distro=redhat$/;"	v
 distroName	clearTrash.sh	/^    distroName=$(lsb_release -a | head -1 | awk '{print $3}')$/;"	v
 distroName	colorLogger.sh	/^    distroName=$(lsb_release -a | head -1 | awk '{print $3}')$/;"	v
-distroName	customTerminalInstaller/install.sh	/^    distroName=$(grep "^ID=" \/etc\/os-release | cut -d= -f2 | tr -d \\")$/;"	v
+distroName	customTerminalInstaller/install.sh	/^    distroName=$(grep "^ID=" \/etc\/os-release | cut -d= -f2 | tr -d \\" | head -n 1)$/;"	v
 distroName	macOnly/.shell_aliases_functions.sh	/^    distroName=$(lsb_release -a | head -1 | awk '{print $3}')$/;"	v
 dontSummarizeSizes	directoryContentsSize.sh	/^dontSummarizeSizes(){$/;"	f
 e_badargs	secureDelete.sh	/^e_badargs=70     #  Various error exit codes.$/;"	v
@@ -529,6 +530,7 @@ usage	mywatch.sh	/^usage(){$/;"	f
 usage	mywatchBlink.sh	/^usage(){$/;"	f
 usage	powerTo.sh	/^function usage ()$/;"	f
 usage	shebangChanger.sh	/^usage(){$/;"	f
+usage	storageShower.sh	/^function usage ()$/;"	f
 usage	tgzLocalInstaller.sh	/^function usage ()$/;"	f
 user	gitRemoteRepoInformation.sh	/^            user="$(echo $line | awk -F'\/' '{print $4}')"$/;"	v
 view	eyes.sh	/^    view=${ary[$randIndex]}$/;"	v

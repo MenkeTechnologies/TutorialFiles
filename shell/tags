@@ -551,7 +551,5 @@ x	myWatchMaintainEscapes.sh	/^        x="$(script -q \/dev\/null $1 | tr -d '\\r
 x	myWatchMaintainEscapes.sh	/^        x="$(script -q \/dev\/null -c "$1" | tr -d '\\r' | cat)"$/;"	v
 x	mywatch.sh	/^    x=$(eval "$1")$/;"	v
 x	mywatchBlink.sh	/^    x="$(eval "$1")"$/;"	v
-x	test.sh	/^x=5$/;"	v
-x	test.sh	/^x=50$/;"	v
 xf	customTerminalInstaller/.shell_aliases_functions.sh	/^        xf=(s==" B  ")?"%5d   ":"%8.2f"$/;"	v
 xf	macOnly/.shell_aliases_functions.sh	/^        xf=(s==" B  ")?"%5d   ":"%8.2f"$/;"	v

@@ -1,6 +1,6 @@
 " ~/.vim/sessions/default.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 05 February 2018 at 02:29:38.
+" Created by session.vim 2.13.1 on 09 February 2018 at 00:47:50.
 " Open this file in Vim and run :source % to restore your session.
 
 set guioptions=egmrL
@@ -12,7 +12,7 @@ if exists('g:did_indent_on') != 1 | filetype indent on | endif
 if &background != 'dark'
 	set background=dark
 endif
-if !exists('g:colors_name') || g:colors_name != 'wellsokai' | colorscheme wellsokai | endif
+if !exists('g:colors_name') || g:colors_name != 'neverland-darker' | colorscheme neverland-darker | endif
 call setqflist([])
 let SessionLoad = 1
 if &cp | set nocp | endif
@@ -24,11 +24,11 @@ if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
-badd +0 .quotes.zsh
+badd +0 .powerlevel9kconfig.sh
 argglobal
 silent! argdel *
-$argadd .quotes.zsh
-edit .quotes.zsh
+$argadd .powerlevel9kconfig.sh
+edit .powerlevel9kconfig.sh
 set splitbelow splitright
 set nosplitbelow
 wincmd t
@@ -38,15 +38,15 @@ setlocal fdm=marker
 setlocal fde=0
 setlocal fmr={{{,}}}
 setlocal fdi=#
-setlocal fdl=0
+setlocal fdl=1
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 31 - ((12 * winheight(0) + 10) / 21)
+let s:l = 16 - ((15 * winheight(0) + 23) / 46)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-31
+16
 normal! 0
 tabnext 1
 if exists('s:wipebuf')

@@ -19,12 +19,15 @@ import re
 import shlex
 import subprocess
 import sys
+import tarfile
+import shutil
+import hashlib
 
 PY_MAJOR, PY_MINOR = sys.version_info[ 0 : 2 ]
-if not ( ( PY_MAJOR == 2 and PY_MINOR >= 6 ) or
-         ( PY_MAJOR == 3 and PY_MINOR >= 3 ) or
+if not ( ( PY_MAJOR == 2 and PY_MINOR == 7 ) or
+         ( PY_MAJOR == 3 and PY_MINOR >= 4 ) or
          PY_MAJOR > 3 ):
-  sys.exit( 'ycmd requires Python >= 2.6 or >= 3.3; '
+  sys.exit( 'ycmd requires Python 2.7 or >= 3.4; '
             'your version of Python is ' + sys.version )
 
 DIR_OF_THIS_SCRIPT = p.dirname( p.abspath( __file__ ) )
@@ -35,12 +38,15 @@ for folder in os.listdir( DIR_OF_THIRD_PARTY ):
   if p.isdir( abs_folder_path ) and not os.listdir( abs_folder_path ):
     sys.exit(
       'ERROR: some folders in {0} are empty; you probably forgot to run:\n'
-      '\tgit submodule update --init --recursive\n'.format( DIR_OF_THIRD_PARTY )
+      '\tgit submodule update --init --recursive\n'.format(
+        DIR_OF_THIRD_PARTY )
     )
 
 sys.path.insert( 1, p.abspath( p.join( DIR_OF_THIRD_PARTY, 'argparse' ) ) )
+sys.path.insert( 1, p.abspath( p.join( DIR_OF_THIRD_PARTY, 'requests' ) ) )
 
 import argparse
+import requests
 
 NO_DYNAMIC_PYTHON_ERROR = (
   'ERROR: found static Python library ({library}) but a dynamic one is '
@@ -53,11 +59,11 @@ NO_PYTHON_LIBRARY_ERROR = 'ERROR: unable to find an appropriate Python library.'
 # Regular expressions used to find static and dynamic Python libraries.
 # Notes:
 #  - Python 3 library name may have an 'm' suffix on Unix platforms, for
-#    instance libpython3.3m.so;
+#    instance libpython3.4m.so;
 #  - the linker name (the soname without the version) does not always
 #    exist so we look for the versioned names too;
 #  - on Windows, the .lib extension is used instead of the .dll one. See
-#    http://xenophilia.org/winvunix.html to understand why.
+#    https://en.wikipedia.org/wiki/Dynamic-link_library#Import_libraries
 STATIC_PYTHON_LIBRARY_REGEX = '^libpython{major}\.{minor}m?\.a$'
 DYNAMIC_PYTHON_LIBRARY_REGEX = """
   ^(?:
@@ -72,6 +78,12 @@ DYNAMIC_PYTHON_LIBRARY_REGEX = """
   )$
 """
 
+JDTLS_MILESTONE = '0.11.0'
+JDTLS_BUILD_STAMP = '201801162212'
+JDTLS_SHA256 = (
+  '5afa45d1ba3d38d4c6c9ef172874b430730ee168db365c5e5209b39d53deab23'
+)
+
 
 def OnMac():
   return platform.system() == 'Darwin'
@@ -81,8 +93,19 @@ def OnWindows():
   return platform.system() == 'Windows'
 
 
-def OnTravisOrAppVeyor():
+def OnCiService():
   return 'CI' in os.environ
+
+
+def FindExecutableOrDie( executable, message ):
+  path = FindExecutable( executable )
+
+  if not path:
+    sys.exit( "ERROR: Unable to find executable '{0}'. {1}".format(
+      executable,
+      message ) )
+
+  return path
 
 
 # On Windows, distutils.spawn.find_executable only works for .exe files
@@ -263,6 +286,8 @@ def ParseArguments():
                        help = 'Enable Rust semantic completion engine.' )
   parser.add_argument( '--js-completer', action = 'store_true',
                        help = 'Enable JavaScript semantic completion engine.' ),
+  parser.add_argument( '--java-completer', action = 'store_true',
+                       help = 'Enable Java semantic completion engine.' ),
   parser.add_argument( '--system-boost', action = 'store_true',
                        help = 'Use the system boost instead of bundled one. '
                        'NOT RECOMMENDED OR SUPPORTED!')
@@ -335,6 +360,9 @@ def GetCmakeArgs( parsed_args ):
 
   use_python2 = 'ON' if PY_MAJOR == 2 else 'OFF'
   cmake_args.append( '-DUSE_PYTHON2=' + use_python2 )
+
+  if OnCiService():
+    cmake_args.append( '-DUSE_LIBCLANG_PACKAGE=ON' )
 
   extra_cmake_args = os.environ.get( 'EXTRA_CMAKE_ARGS', '' )
   # We use shlex split to properly parse quoted CMake arguments.
@@ -447,7 +475,7 @@ def BuildYcmdLib( args ):
     if args.build_dir:
       print( 'The build files are in: ' + build_dir )
     else:
-      rmtree( build_dir, ignore_errors = OnTravisOrAppVeyor() )
+      rmtree( build_dir, ignore_errors = OnCiService() )
 
 
 def EnableCsCompleter():
@@ -458,31 +486,31 @@ def EnableCsCompleter():
 
   os.chdir( p.join( DIR_OF_THIS_SCRIPT, 'third_party', 'OmniSharpServer' ) )
   CheckCall( [ build_command, '/property:Configuration=Release',
+                              '/property:Platform=Any CPU',
                               '/property:TargetFrameworkVersion=v4.5' ] )
 
 
 def EnableGoCompleter():
-  if not FindExecutable( 'go' ):
-    sys.exit( 'ERROR: go is required to build gocode.' )
+  go = FindExecutableOrDie( 'go', 'go is required to build gocode.' )
 
   os.chdir( p.join( DIR_OF_THIS_SCRIPT, 'third_party', 'gocode' ) )
-  CheckCall( [ 'go', 'build' ] )
+  CheckCall( [ go, 'build' ] )
   os.chdir( p.join( DIR_OF_THIS_SCRIPT, 'third_party', 'godef' ) )
-  CheckCall( [ 'go', 'build', 'godef.go' ] )
+  CheckCall( [ go, 'build', 'godef.go' ] )
 
 
 def EnableRustCompleter():
   """
   Build racerd. This requires a reasonably new version of rustc/cargo.
   """
-  if not FindExecutable( 'cargo' ):
-    sys.exit( 'ERROR: cargo is required for the Rust completer.' )
+  cargo = FindExecutableOrDie( 'cargo',
+                               'cargo is required for the Rust completer.' )
 
   os.chdir( p.join( DIR_OF_THIRD_PARTY, 'racerd' ) )
-  args = [ 'cargo', 'build' ]
-  # We don't use the --release flag on Travis/AppVeyor because it makes building
+  args = [ cargo, 'build' ]
+  # We don't use the --release flag on CI services because it makes building
   # racerd 2.5x slower and we don't care about the speed of the produced racerd.
-  if not OnTravisOrAppVeyor():
+  if not OnCiService():
     args.append( '--release' )
   CheckCall( args )
 
@@ -492,9 +520,7 @@ def EnableJavaScriptCompleter():
   node = PathToFirstExistingExecutable( [ 'nodejs', 'node' ] )
   if not node:
     sys.exit( 'ERROR: node is required to set up Tern.' )
-  npm = FindExecutable( 'npm' )
-  if not npm:
-    sys.exit( 'ERROR: npm is required to set up Tern.' )
+  npm = FindExecutableOrDie( 'npm', 'ERROR: npm is required to set up Tern.' )
 
   # We install Tern into a runtime directory. This allows us to control
   # precisely the version (and/or git commit) that is used by ycmd.  We use a
@@ -518,6 +544,56 @@ def EnableJavaScriptCompleter():
   CheckCall( [ npm, 'install', '--production' ] )
 
 
+def EnableJavaCompleter():
+  TARGET = p.join( DIR_OF_THIRD_PARTY, 'eclipse.jdt.ls', 'target', )
+  REPOSITORY = p.join( TARGET, 'repository' )
+  CACHE = p.join( TARGET, 'cache' )
+
+  JDTLS_SERVER_URL_FORMAT = ( 'http://download.eclipse.org/jdtls/milestones/'
+                              '{jdtls_milestone}/{jdtls_package_name}' )
+  JDTLS_PACKAGE_NAME_FORMAT = ( 'jdt-language-server-{jdtls_milestone}-'
+                                '{jdtls_build_stamp}.tar.gz' )
+
+  package_name = JDTLS_PACKAGE_NAME_FORMAT.format(
+      jdtls_milestone = JDTLS_MILESTONE,
+      jdtls_build_stamp = JDTLS_BUILD_STAMP )
+  url = JDTLS_SERVER_URL_FORMAT.format(
+      jdtls_milestone = JDTLS_MILESTONE,
+      jdtls_build_stamp = JDTLS_BUILD_STAMP,
+      jdtls_package_name = package_name )
+  file_name = p.join( CACHE, package_name )
+
+  if p.exists( REPOSITORY ):
+    shutil.rmtree( REPOSITORY )
+
+  os.makedirs( REPOSITORY )
+
+  if not p.exists( CACHE ):
+    os.makedirs( CACHE )
+  elif p.exists( file_name ):
+    with open( file_name, 'rb' ) as existing_file:
+      existing_sha256 = hashlib.sha256( existing_file.read() ).hexdigest()
+    if existing_sha256 != JDTLS_SHA256:
+      print( 'Cached tar file does not match checksum. Removing...' )
+      os.remove( file_name )
+
+
+  if p.exists( file_name ):
+    print( 'Using cached jdt.ls: {0}'.format( file_name ) )
+  else:
+    print( "Downloading jdt.ls from {0}...".format( url ) )
+    request = requests.get( url, stream = True )
+    with open( file_name, 'wb' ) as package_file:
+      package_file.write( request.content )
+    request.close()
+
+  print( "Extracting jdt.ls to {0}...".format( REPOSITORY ) )
+  with tarfile.open( file_name ) as package_tar:
+    package_tar.extractall( REPOSITORY )
+
+  print( "Done installing jdt.ls" )
+
+
 def WritePythonUsedDuringBuild():
   path = p.join( DIR_OF_THIS_SCRIPT, 'PYTHON_USED_DURING_BUILDING' )
   with open( path, 'w' ) as f:
@@ -538,6 +614,8 @@ def Main():
     EnableJavaScriptCompleter()
   if args.rust_completer or args.racer_completer or args.all_completers:
     EnableRustCompleter()
+  if args.java_completer or args.all_completers:
+    EnableJavaCompleter()
 
 
 if __name__ == '__main__':

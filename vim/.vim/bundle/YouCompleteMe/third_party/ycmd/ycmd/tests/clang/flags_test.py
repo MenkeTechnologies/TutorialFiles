@@ -29,9 +29,9 @@ from nose.tools import eq_, ok_
 from ycmd.completers.cpp import flags
 from mock import patch, MagicMock
 from types import ModuleType
-from ycmd.tests.test_utils import MacOnly
+from ycmd.tests.test_utils import MacOnly, TemporaryTestDir
 from ycmd.responses import NoExtraConfDetected
-from ycmd.tests.clang import TemporaryClangProject, TemporaryClangTestDir
+from ycmd.tests.clang import TemporaryClangProject
 
 from hamcrest import assert_that, calling, contains, has_item, not_, raises
 
@@ -223,7 +223,7 @@ def FlagsForFile_DoNotAddMacIncludePathsWithSysroot_test():
 
 def RemoveUnusedFlags_Passthrough_test():
   eq_( [ '-foo', '-bar' ],
-       flags._RemoveUnusedFlags( [ '-foo', '-bar' ], 'file' ) )
+       flags._RemoveUnusedFlags( [ '-foo', '-bar' ], 'file', False ) )
 
 
 def RemoveUnusedFlags_RemoveDashC_test():
@@ -232,14 +232,14 @@ def RemoveUnusedFlags_RemoveDashC_test():
   filename = 'file'
 
   eq_( expected,
-       flags._RemoveUnusedFlags( expected + to_remove, filename ) )
+       flags._RemoveUnusedFlags( expected + to_remove, filename, False ) )
 
   eq_( expected,
-       flags._RemoveUnusedFlags( to_remove + expected, filename ) )
+       flags._RemoveUnusedFlags( to_remove + expected, filename, False ) )
 
   eq_( expected,
        flags._RemoveUnusedFlags(
-         expected[ :1 ] + to_remove + expected[ -1: ], filename ) )
+         expected[ :1 ] + to_remove + expected[ -1: ], filename, False ) )
 
 
 def RemoveUnusedFlags_RemoveColor_test():
@@ -248,14 +248,14 @@ def RemoveUnusedFlags_RemoveColor_test():
   filename = 'file'
 
   eq_( expected,
-       flags._RemoveUnusedFlags( expected + to_remove, filename ) )
+       flags._RemoveUnusedFlags( expected + to_remove, filename, False ) )
 
   eq_( expected,
-       flags._RemoveUnusedFlags( to_remove + expected, filename ) )
+       flags._RemoveUnusedFlags( to_remove + expected, filename, False ) )
 
   eq_( expected,
        flags._RemoveUnusedFlags(
-         expected[ :1 ] + to_remove + expected[ -1: ], filename ) )
+         expected[ :1 ] + to_remove + expected[ -1: ], filename, False ) )
 
 
 def RemoveUnusedFlags_RemoveDashO_test():
@@ -264,14 +264,14 @@ def RemoveUnusedFlags_RemoveDashO_test():
   filename = 'file'
 
   eq_( expected,
-       flags._RemoveUnusedFlags( expected + to_remove, filename ) )
+       flags._RemoveUnusedFlags( expected + to_remove, filename, False ) )
 
   eq_( expected,
-       flags._RemoveUnusedFlags( to_remove + expected, filename ) )
+       flags._RemoveUnusedFlags( to_remove + expected, filename, False ) )
 
   eq_( expected,
        flags._RemoveUnusedFlags(
-         expected[ :1 ] + to_remove + expected[ -1: ], filename ) )
+         expected[ :1 ] + to_remove + expected[ -1: ], filename, False ) )
 
 
 def RemoveUnusedFlags_RemoveMP_test():
@@ -280,14 +280,14 @@ def RemoveUnusedFlags_RemoveMP_test():
   filename = 'file'
 
   eq_( expected,
-       flags._RemoveUnusedFlags( expected + to_remove, filename ) )
+       flags._RemoveUnusedFlags( expected + to_remove, filename, False ) )
 
   eq_( expected,
-       flags._RemoveUnusedFlags( to_remove + expected, filename ) )
+       flags._RemoveUnusedFlags( to_remove + expected, filename, False ) )
 
   eq_( expected,
        flags._RemoveUnusedFlags(
-         expected[ :1 ] + to_remove + expected[ -1: ], filename ) )
+         expected[ :1 ] + to_remove + expected[ -1: ], filename, False ) )
 
 
 def RemoveUnusedFlags_RemoveFilename_test():
@@ -296,15 +296,15 @@ def RemoveUnusedFlags_RemoveFilename_test():
   filename = 'file'
 
   eq_( expected,
-       flags._RemoveUnusedFlags( expected + to_remove, filename ) )
+       flags._RemoveUnusedFlags( expected + to_remove, filename, False ) )
 
   eq_( expected,
        flags._RemoveUnusedFlags( expected[ :1 ] + to_remove + expected[ 1: ],
-                                 filename ) )
+                                 filename, False ) )
 
   eq_( expected,
        flags._RemoveUnusedFlags(
-         expected[ :1 ] + to_remove + expected[ -1: ], filename ) )
+         expected[ :1 ] + to_remove + expected[ -1: ], filename, False ) )
 
 
 def RemoveUnusedFlags_RemoveFlagWithoutPrecedingDashFlag_test():
@@ -313,11 +313,50 @@ def RemoveUnusedFlags_RemoveFlagWithoutPrecedingDashFlag_test():
   filename = 'file'
 
   eq_( expected,
-       flags._RemoveUnusedFlags( expected + to_remove, filename ) )
+       flags._RemoveUnusedFlags( expected + to_remove, filename, False ) )
 
   eq_( expected,
        flags._RemoveUnusedFlags( expected[ :1 ] + to_remove + expected[ 1: ],
-                                 filename ) )
+                                 filename, False ) )
+  expected = [ 'g++', '-foo', '--driver-mode=cl', '-xc++', '-bar',
+               'include_dir', '/I', 'include_dir_other' ]
+  to_remove = [ '..' ]
+  filename = 'file'
+
+  eq_( expected,
+       flags._RemoveUnusedFlags( expected + to_remove, filename, True ) )
+
+  eq_( expected,
+       flags._RemoveUnusedFlags( expected[ :1 ] + to_remove + expected[ 1: ],
+                                 filename, True ) )
+
+
+def RemoveUnusedFlags_MultipleDriverModeFlags_test():
+  expected = [ 'g++',
+               '--driver-mode=cl',
+               '/Zi',
+               '-foo',
+               '--driver-mode=gcc',
+               '--driver-mode=cl',
+               'include_dir' ]
+  to_remove = [ 'unrelated_file', '/c' ]
+  filename = 'file'
+
+  eq_( expected,
+       flags._RemoveUnusedFlags( expected + to_remove, filename, True ) )
+  eq_( expected,
+       flags._RemoveUnusedFlags( expected[ :1 ] + to_remove + expected[ 1: ],
+                                 filename, True ) )
+
+  flags_expected = [ '/usr/bin/g++', '--driver-mode=cl', '--driver-mode=gcc' ]
+  flags_all = [ '/usr/bin/g++',
+                '/Zi',
+                '--driver-mode=cl',
+                '/foo',
+                '--driver-mode=gcc' ]
+  filename = 'file'
+
+  eq_( flags_expected, flags._RemoveUnusedFlags( flags_all, filename, False ) )
 
 
 def RemoveUnusedFlags_Depfiles_test():
@@ -337,7 +376,7 @@ def RemoveUnusedFlags_Depfiles_test():
     '-arch', 'armv7',
   ]
 
-  assert_that( flags._RemoveUnusedFlags( full_flags, 'test.m' ),
+  assert_that( flags._RemoveUnusedFlags( full_flags, 'test.m', False ),
                contains( *expected ) )
 
 
@@ -365,15 +404,15 @@ def RemoveUnusedFlags_RemoveFilenameWithoutPrecedingInclude_test():
     expected = [ 'clang', flag, '/foo/bar', '-isystem/zoo/goo' ]
 
     eq_( expected,
-         flags._RemoveUnusedFlags( expected + to_remove, filename ) )
+         flags._RemoveUnusedFlags( expected + to_remove, filename, False ) )
 
     eq_( expected,
          flags._RemoveUnusedFlags( expected[ :1 ] + to_remove + expected[ 1: ],
-                                   filename ) )
+                                   filename, False ) )
 
     eq_( expected + expected[ 1: ],
          flags._RemoveUnusedFlags( expected + to_remove + expected[ 1: ],
-                                   filename ) )
+                                   filename, False ) )
 
   include_flags = [ '-isystem', '-I', '-iquote', '-isysroot', '--sysroot',
                     '-gcc-toolchain', '-include', '-include-pch',
@@ -402,7 +441,11 @@ def RemoveXclangFlags_test():
 
 def AddLanguageFlagWhenAppropriate_Passthrough_test():
   eq_( [ '-foo', '-bar' ],
-       flags._AddLanguageFlagWhenAppropriate( [ '-foo', '-bar' ] ) )
+       flags._AddLanguageFlagWhenAppropriate( [ '-foo', '-bar' ], False ) )
+  eq_( [ '-foo', '-bar', '--driver-mode=cl' ],
+       flags._AddLanguageFlagWhenAppropriate( [ '-foo',
+                                                '-bar',
+                                                '--driver-mode=cl' ], True ) )
 
 
 def _AddLanguageFlagWhenAppropriateTester( compiler, language_flag = [] ):
@@ -416,7 +459,7 @@ def _AddLanguageFlagWhenAppropriateTester( compiler, language_flag = [] ):
   for to_remove in to_removes:
     eq_( [ compiler ] + language_flag + expected,
          flags._AddLanguageFlagWhenAppropriate( to_remove + [ compiler ] +
-                                                expected ) )
+                                                expected, False ) )
 
 
 def AddLanguageFlagWhenAppropriate_CCompiler_test():
@@ -493,7 +536,7 @@ def Mac_SelectMacToolchain_CommandLineTools_test( *args ):
 
 
 def CompilationDatabase_NoDatabase_test():
-  with TemporaryClangTestDir() as tmp_dir:
+  with TemporaryTestDir() as tmp_dir:
     assert_that(
       calling( flags.Flags().FlagsForFile ).with_args(
         os.path.join( tmp_dir, 'test.cc' ) ),
@@ -502,7 +545,7 @@ def CompilationDatabase_NoDatabase_test():
 
 def CompilationDatabase_FileNotInDatabase_test():
   compile_commands = [ ]
-  with TemporaryClangTestDir() as tmp_dir:
+  with TemporaryTestDir() as tmp_dir:
     with TemporaryClangProject( tmp_dir, compile_commands ):
       eq_(
         flags.Flags().FlagsForFile( os.path.join( tmp_dir, 'test.cc' ) ),
@@ -510,7 +553,7 @@ def CompilationDatabase_FileNotInDatabase_test():
 
 
 def CompilationDatabase_InvalidDatabase_test():
-  with TemporaryClangTestDir() as tmp_dir:
+  with TemporaryTestDir() as tmp_dir:
     with TemporaryClangProject( tmp_dir, 'this is junk' ):
       assert_that(
         calling( flags.Flags().FlagsForFile ).with_args(
@@ -519,7 +562,7 @@ def CompilationDatabase_InvalidDatabase_test():
 
 
 def CompilationDatabase_UseFlagsFromDatabase_test():
-  with TemporaryClangTestDir() as tmp_dir:
+  with TemporaryTestDir() as tmp_dir:
     compile_commands = [
       {
         'directory': tmp_dir,
@@ -543,7 +586,7 @@ def CompilationDatabase_UseFlagsFromDatabase_test():
 
 
 def CompilationDatabase_UseFlagsFromSameDir_test():
-  with TemporaryClangTestDir() as tmp_dir:
+  with TemporaryTestDir() as tmp_dir:
     compile_commands = [
       {
         'directory': tmp_dir,
@@ -590,7 +633,7 @@ def CompilationDatabase_UseFlagsFromSameDir_test():
 
 
 def CompilationDatabase_HeaderFileHeuristic_test():
-  with TemporaryClangTestDir() as tmp_dir:
+  with TemporaryTestDir() as tmp_dir:
     compile_commands = [
       {
         'directory': tmp_dir,
@@ -614,7 +657,7 @@ def CompilationDatabase_HeaderFileHeuristic_test():
 
 
 def CompilationDatabase_HeaderFileHeuristicNotFound_test():
-  with TemporaryClangTestDir() as tmp_dir:
+  with TemporaryTestDir() as tmp_dir:
     compile_commands = [
       {
         'directory': tmp_dir,
@@ -634,7 +677,7 @@ def CompilationDatabase_HeaderFileHeuristicNotFound_test():
 
 
 def CompilationDatabase_ExplicitHeaderFileEntry_test():
-  with TemporaryClangTestDir() as tmp_dir:
+  with TemporaryTestDir() as tmp_dir:
     # Have an explicit header file entry which should take priority over the
     # corresponding source file
     compile_commands = [

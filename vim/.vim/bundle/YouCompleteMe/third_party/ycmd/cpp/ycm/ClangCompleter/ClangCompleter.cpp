@@ -16,7 +16,6 @@
 // along with ycmd.  If not, see <http://www.gnu.org/licenses/>.
 
 #include "ClangCompleter.h"
-#include "exceptions.h"
 #include "Result.h"
 #include "Candidate.h"
 #include "TranslationUnit.h"
@@ -61,8 +60,9 @@ bool ClangCompleter::UpdatingTranslationUnit( const std::string &filename ) {
   ReleaseGil unlock;
   shared_ptr< TranslationUnit > unit = translation_unit_store_.Get( filename );
 
-  if ( !unit )
+  if ( !unit ) {
     return false;
+  }
 
   // Thankfully, an invalid, sentinel TU always returns true for
   // IsCurrentlyUpdating, so no caller will try to rely on the TU object, even
@@ -83,21 +83,15 @@ std::vector< Diagnostic > ClangCompleter::UpdateTranslationUnit(
                                          flags,
                                          translation_unit_created );
 
-  if ( !unit )
-    return std::vector< Diagnostic >();
-
   try {
     return unit->Reparse( unsaved_files );
-  }
-
-  catch ( ClangParseError & ) {
+  } catch ( const ClangParseError & ) {
     // If unit->Reparse fails, then the underlying TranslationUnit object is not
     // valid anymore and needs to be destroyed and removed from the filename ->
     // TU map.
     translation_unit_store_.Remove( filename );
+    throw;
   }
-
-  return std::vector< Diagnostic >();
 }
 
 
@@ -111,9 +105,6 @@ ClangCompleter::CandidatesForLocationInFile(
   ReleaseGil unlock;
   shared_ptr< TranslationUnit > unit =
     translation_unit_store_.GetOrCreate( filename, unsaved_files, flags );
-
-  if ( !unit )
-    return std::vector< CompletionData >();
 
   return unit->CandidatesForLocation( line,
                                       column,
@@ -132,10 +123,6 @@ Location ClangCompleter::GetDeclarationLocation(
   shared_ptr< TranslationUnit > unit =
     translation_unit_store_.GetOrCreate( filename, unsaved_files, flags );
 
-  if ( !unit ) {
-    return Location();
-  }
-
   return unit->GetDeclarationLocation( line, column, unsaved_files, reparse );
 }
 
@@ -150,10 +137,6 @@ Location ClangCompleter::GetDefinitionLocation(
   ReleaseGil unlock;
   shared_ptr< TranslationUnit > unit =
     translation_unit_store_.GetOrCreate( filename, unsaved_files, flags );
-
-  if ( !unit ) {
-    return Location();
-  }
 
   return unit->GetDefinitionLocation( line, column, unsaved_files, reparse );
 }
@@ -170,10 +153,6 @@ std::string ClangCompleter::GetTypeAtLocation(
   shared_ptr< TranslationUnit > unit =
     translation_unit_store_.GetOrCreate( filename, unsaved_files, flags );
 
-  if ( !unit ) {
-    return "no unit";
-  }
-
   return unit->GetTypeAtLocation( line, column, unsaved_files, reparse );
 }
 
@@ -188,10 +167,6 @@ std::string ClangCompleter::GetEnclosingFunctionAtLocation(
   ReleaseGil unlock;
   shared_ptr< TranslationUnit > unit =
     translation_unit_store_.GetOrCreate( filename, unsaved_files, flags );
-
-  if ( !unit ) {
-    return "no unit";
-  }
 
   return unit->GetEnclosingFunctionAtLocation( line,
                                                column,
@@ -213,10 +188,6 @@ ClangCompleter::GetFixItsForLocationInFile(
   shared_ptr< TranslationUnit > unit =
     translation_unit_store_.GetOrCreate( filename, unsaved_files, flags );
 
-  if ( !unit ) {
-    return std::vector< FixIt >();
-  }
-
   return unit->GetFixItsForLocationInFile( line,
                                            column,
                                            unsaved_files,
@@ -236,10 +207,6 @@ DocumentationData ClangCompleter::GetDocsForLocationInFile(
 
   shared_ptr< TranslationUnit > unit =
     translation_unit_store_.GetOrCreate( filename, unsaved_files, flags );
-
-  if ( !unit ) {
-    return DocumentationData();
-  }
 
   return unit->GetDocsForLocationInFile( line,
                                          column,

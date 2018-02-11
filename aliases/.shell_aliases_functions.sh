@@ -285,12 +285,15 @@ b(){
 
 
 suc(){
-    subl $SCRIPTS
-    f $SCRIPTS
-    python3 $PYSCRIPTS/textEditorTwoColumns.py
+    subl "$SCRIPTS"
+    f "$SCRIPTS"
+    python3 "$PYSCRIPTS/textEditorTwoColumns.py"
 }
 db(){
-    python3 $PYSCRIPTS/logIntoMyDB.py
+    python3 "$PYSCRIPTS/loginDBChrome.py"
+}
+db2(){
+    python3 "$PYSCRIPTS/logIntoMyDB.py"
 }
 
 if [[ -f /usr/local/share/grc/conf.gls ]];then

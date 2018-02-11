@@ -1,9 +1,9 @@
-sw_volume: 40
+sw_volume: 60
 audio_device_state:1:CoreAudio
 audio_device_state:1:my_fifo
 state: play
-current: 5
-time: 1965.159000
+current: 118
+time: 14821.029000
 random: 0
 repeat: 0
 single: 0
@@ -14,122 +14,121 @@ mixrampdelay: -1.000000
 playlist_begin
 0:Ableton/User Library/Samples/Recorded/0001 12-Audio-1.wav
 1:TRANCE & TECH TRANCE ENERGY MUSIC MIX-YiTMZ-F8WJ0.mp3
-2:Best Of Pure • Emotional • Melodic • Euphoric • Uplifting Trance Mix-fugFmO7cGJ8.mp3
-3:Stellar Evolution _ Tech Trance Mix #1--DyuwcxMpHY.mp3
-4:Kris Menace feat. Fred Falke - Fairlight-mNgVSqrSNWE.mp3
-5:Yoji Tech Dance Mix 3-bwZBumna5D8.mp3
-6:Ableton/User Library/Samples/Imported/ATE Open Hat - 011.wav
-7:Ableton/User Library/Samples/Imported/ATE Open Hat - 012.wav
-8:Ableton/User Library/Samples/Imported/ATE Open Hat - 013.wav
-9:Ableton/User Library/Samples/Imported/ATE Open Hat - 014.wav
-10:Ableton/User Library/Samples/Imported/ATE Open Hat - 015.wav
-11:Ableton/User Library/Samples/Imported/ATE Open Hat - 016.wav
-12:Ableton/User Library/Samples/Imported/ATE Open Hat - 017.wav
-13:Ableton/User Library/Samples/Imported/ATE Open Hat - 018.wav
-14:Ableton/User Library/Samples/Imported/ATE Open Hat - 019.wav
-15:Ableton/User Library/Samples/Imported/ATE Open Hat - 020.wav
-16:Ableton/User Library/Samples/Imported/ATE Open Hat - 021.wav
-17:Ableton/User Library/Samples/Imported/ATE Open Hat - 022.wav
-18:Ableton/User Library/Samples/Imported/ATE Open Hat - 023.wav
-19:Ableton/User Library/Samples/Imported/ATE Open Hat - 024.wav
-20:Ableton/User Library/Samples/Imported/ATE Open Hat - 025.wav
-21:Ableton/User Library/Samples/Imported/ATE Percussion - 051.wav
-22:Ableton/User Library/Samples/Imported/ATE Percussion - 052.wav
-23:Ableton/User Library/Samples/Imported/ATE Percussion - 053.wav
-24:Ableton/User Library/Samples/Imported/ATE Percussion - 054.wav
-25:Ableton/User Library/Samples/Imported/ATE Percussion - 055.wav
-26:Ableton/User Library/Samples/Imported/ATE Percussion - 056.wav
-27:Ableton/User Library/Samples/Imported/ATE Percussion - 057.wav
-28:Ableton/User Library/Samples/Imported/ATE Percussion - 058.wav
-29:Ableton/User Library/Samples/Imported/ATE Percussion - 059.wav
-30:Ableton/User Library/Samples/Imported/ATE Percussion - 060.wav
-31:Ableton/User Library/Samples/Imported/ATE Percussion - 061.wav
-32:Ableton/User Library/Samples/Imported/ATE Percussion - 062.wav
-33:Ableton/User Library/Samples/Imported/ATE Percussion - 063.wav
-34:Ableton/User Library/Samples/Imported/ATE Percussion - 064.wav
-35:Ableton/User Library/Samples/Imported/ATE Percussion - 065.wav
-36:Ableton/User Library/Samples/Imported/ATE Percussion - 066.wav
-37:Ableton/User Library/Samples/Imported/ATE Percussion - 067.wav
-38:Ableton/User Library/Samples/Imported/ATE Percussion - 068.wav
-39:Ableton/User Library/Samples/Imported/ATE Percussion - 069.wav
-40:Ableton/User Library/Samples/Imported/ATE Percussion - 070.wav
-41:Ableton/User Library/Samples/Imported/ATE Percussion - 071.wav
-42:Ableton/User Library/Samples/Imported/ATE Percussion - 072.wav
-43:Ableton/User Library/Samples/Imported/ATE Percussion - 073.wav
-44:Ableton/User Library/Samples/Imported/ATE Percussion - 074.wav
-45:Ableton/User Library/Samples/Imported/ATE Percussion - 075.wav
-46:Ableton/User Library/Samples/Imported/ATE Percussion - 076.wav
-47:Ableton/User Library/Samples/Imported/ATE Percussion - 077.wav
-48:Ableton/User Library/Samples/Imported/ATE Percussion - 078.wav
-49:Ableton/User Library/Samples/Imported/ATE Percussion - 079.wav
-50:Ableton/User Library/Samples/Imported/ATE Percussion - 080.wav
-51:Ableton/User Library/Samples/Imported/ATE Percussion - 081.wav
-52:Ableton/User Library/Samples/Imported/ATE Percussion - 082.wav
-53:Ableton/User Library/Samples/Imported/ATE Percussion - 083.wav
-54:Ableton/User Library/Samples/Imported/ATE Percussion - 084.wav
-55:Ableton/User Library/Samples/Imported/ATE Percussion - 085.wav
-56:Ableton/User Library/Samples/Imported/ATE Percussion - 086.wav
-57:Ableton/User Library/Samples/Imported/ATE Percussion - 087.wav
-58:Ableton/User Library/Samples/Imported/ATE Percussion - 088.wav
-59:Ableton/User Library/Samples/Imported/ATE Percussion - 089.wav
-60:Ableton/User Library/Samples/Imported/ATE Percussion - 090.wav
-61:Ableton/User Library/Samples/Imported/ATE Percussion - 091.wav
-62:Ableton/User Library/Samples/Imported/ATE Percussion - 092.wav
-63:Ableton/User Library/Samples/Imported/ATE Percussion - 093.wav
-64:Ableton/User Library/Samples/Imported/ATE Percussion - 094.wav
-65:Ableton/User Library/Samples/Imported/ATE Percussion - 095.wav
-66:Ableton/User Library/Samples/Imported/ATE Percussion - 096.wav
-67:Ableton/User Library/Samples/Imported/ATE Percussion - 097.wav
-68:Ableton/User Library/Samples/Imported/ATE Percussion - 098.wav
-69:Ableton/User Library/Samples/Imported/ATE Percussion - 099.wav
-70:Ableton/User Library/Samples/Imported/ATE Percussion - 100.wav
-71:Ableton/User Library/Samples/Imported/ATE Percussion FX - 044.wav
-72:Ableton/User Library/Samples/Imported/ATE Shaker - 001.wav
-73:Ableton/User Library/Samples/Imported/ATE Shaker - 002.wav
-74:Ableton/User Library/Samples/Imported/ATE Shaker - 003.wav
-75:Ableton/User Library/Samples/Imported/ATE Shaker - 004.wav
-76:Ableton/User Library/Samples/Imported/ATE Shaker - 005.wav
-77:Ableton/User Library/Samples/Imported/ATE Shaker - 006.wav
-78:Ableton/User Library/Samples/Imported/ATE Shaker - 007.wav
-79:Ableton/User Library/Samples/Imported/ATE Shaker - 008.wav
-80:Ableton/User Library/Samples/Imported/ATE Shaker - 009.wav
-81:Ableton/User Library/Samples/Imported/ATE Shaker - 010.wav
-82:Ableton/User Library/Samples/Imported/ATE Shaker - 011.wav
-83:Ableton/User Library/Samples/Imported/ATE Shaker - 012.wav
-84:Ableton/User Library/Samples/Imported/ATE Shaker - 013.wav
-85:Ableton/User Library/Samples/Imported/ATE Shaker - 014.wav
-86:Ableton/User Library/Samples/Imported/ATE Shaker - 015.wav
-87:Ableton/User Library/Samples/Imported/ATE Shaker - 016.wav
-88:Ableton/User Library/Samples/Imported/ATE Shaker - 017.wav
-89:Ableton/User Library/Samples/Imported/ATE Shaker - 018.wav
-90:Ableton/User Library/Samples/Imported/ATE Shaker - 019.wav
-91:Ableton/User Library/Samples/Imported/ATE Shaker - 020.wav
-92:Ableton/User Library/Samples/Imported/ATE Synth Hit (Dry) - 031 - C.wav
-93:Ableton/User Library/Samples/Imported/ATE Synth Hit (Dry) - 032 - C.wav
-94:Ableton/User Library/Samples/Imported/ATE Synth Hit (Dry) - 033 - C.wav
-95:Ableton/User Library/Samples/Imported/ATE Synth Hit (Dry) - 034 - C.wav
-96:Ableton/User Library/Samples/Imported/ATE Synth Hit (Dry) - 035 - C.wav
-97:Ableton/User Library/Samples/Imported/ATE Synth Hit (Dry) - 036 - C.wav
-98:Ableton/User Library/Samples/Imported/ATE Synth Hit (Dry) - 037 - C.wav
-99:Ableton/User Library/Samples/Imported/ATE Synth Hit (Dry) - 038 - C.wav
-100:Ableton/User Library/Samples/Imported/ATE Synth Hit (Dry) - 039 - C.wav
-101:Ableton/User Library/Samples/Imported/ATE Synth Hit (Dry) - 040 - C.wav
-102:Ableton/User Library/Samples/Imported/ATE Synth Hit (Dry) - 041 - C.wav
-103:Ableton/User Library/Samples/Imported/ATE Synth Hit (Dry) - 042 - C.wav
-104:Ableton/User Library/Samples/Imported/ATE Synth Hit (Dry) - 043 - C.wav
-105:Ableton/User Library/Samples/Imported/ATE Synth Hit (Dry) - 044 - C.wav
-106:Ableton/User Library/Samples/Imported/ATE Synth Hit (Dry) - 045 - C.wav
-107:Ableton/User Library/Samples/Imported/ATE Synth Hit (Dry) - 046 - C.wav
-108:Ableton/User Library/Samples/Imported/ATE Synth Hit (Dry) - 047 - C.wav
-109:Ableton/User Library/Samples/Imported/ATE Synth Hit (Dry) - 048 - C.wav
-110:Ableton/User Library/Samples/Imported/ATE Synth Hit (Dry) - 049 - C.wav
-111:Ableton/User Library/Samples/Imported/ATE Synth Hit (Dry) - 050 - C.wav
-112:Ableton/User Library/Samples/Imported/ATE Drum Loop - 006 - 138 BPM - Percussion Loop.wav
-113:Ableton/User Library/Samples/Imported/ATE Drum Loop - 016 - 138 BPM - Full Loop.wav
-114:Ableton/User Library/Samples/Imported/ATE Drum Loop - 047 - 138 BPM - Percussion Loop.wav
+2:Stellar Evolution _ Tech Trance Mix #1--DyuwcxMpHY.mp3
+3:Kris Menace feat. Fred Falke - Fairlight-mNgVSqrSNWE.mp3
+4:Yoji Tech Dance Mix 3-bwZBumna5D8.mp3
+5:Ableton/User Library/Samples/Imported/ATE Open Hat - 011.wav
+6:Ableton/User Library/Samples/Imported/ATE Open Hat - 012.wav
+7:Ableton/User Library/Samples/Imported/ATE Open Hat - 013.wav
+8:Ableton/User Library/Samples/Imported/ATE Open Hat - 014.wav
+9:Ableton/User Library/Samples/Imported/ATE Open Hat - 015.wav
+10:Ableton/User Library/Samples/Imported/ATE Open Hat - 016.wav
+11:Ableton/User Library/Samples/Imported/ATE Open Hat - 017.wav
+12:Ableton/User Library/Samples/Imported/ATE Open Hat - 018.wav
+13:Ableton/User Library/Samples/Imported/ATE Open Hat - 019.wav
+14:Ableton/User Library/Samples/Imported/ATE Open Hat - 020.wav
+15:Ableton/User Library/Samples/Imported/ATE Open Hat - 021.wav
+16:Ableton/User Library/Samples/Imported/ATE Open Hat - 022.wav
+17:Ableton/User Library/Samples/Imported/ATE Open Hat - 023.wav
+18:Ableton/User Library/Samples/Imported/ATE Open Hat - 024.wav
+19:Ableton/User Library/Samples/Imported/ATE Open Hat - 025.wav
+20:Ableton/User Library/Samples/Imported/ATE Percussion - 051.wav
+21:Ableton/User Library/Samples/Imported/ATE Percussion - 052.wav
+22:Ableton/User Library/Samples/Imported/ATE Percussion - 053.wav
+23:Ableton/User Library/Samples/Imported/ATE Percussion - 054.wav
+24:Ableton/User Library/Samples/Imported/ATE Percussion - 055.wav
+25:Ableton/User Library/Samples/Imported/ATE Percussion - 056.wav
+26:Ableton/User Library/Samples/Imported/ATE Percussion - 057.wav
+27:Ableton/User Library/Samples/Imported/ATE Percussion - 058.wav
+28:Ableton/User Library/Samples/Imported/ATE Percussion - 059.wav
+29:Ableton/User Library/Samples/Imported/ATE Percussion - 060.wav
+30:Ableton/User Library/Samples/Imported/ATE Percussion - 061.wav
+31:Ableton/User Library/Samples/Imported/ATE Percussion - 062.wav
+32:Ableton/User Library/Samples/Imported/ATE Percussion - 063.wav
+33:Ableton/User Library/Samples/Imported/ATE Percussion - 064.wav
+34:Ableton/User Library/Samples/Imported/ATE Percussion - 065.wav
+35:Ableton/User Library/Samples/Imported/ATE Percussion - 066.wav
+36:Ableton/User Library/Samples/Imported/ATE Percussion - 067.wav
+37:Ableton/User Library/Samples/Imported/ATE Percussion - 068.wav
+38:Ableton/User Library/Samples/Imported/ATE Percussion - 069.wav
+39:Ableton/User Library/Samples/Imported/ATE Percussion - 070.wav
+40:Ableton/User Library/Samples/Imported/ATE Percussion - 071.wav
+41:Ableton/User Library/Samples/Imported/ATE Percussion - 072.wav
+42:Ableton/User Library/Samples/Imported/ATE Percussion - 073.wav
+43:Ableton/User Library/Samples/Imported/ATE Percussion - 074.wav
+44:Ableton/User Library/Samples/Imported/ATE Percussion - 075.wav
+45:Ableton/User Library/Samples/Imported/ATE Percussion - 076.wav
+46:Ableton/User Library/Samples/Imported/ATE Percussion - 077.wav
+47:Ableton/User Library/Samples/Imported/ATE Percussion - 078.wav
+48:Ableton/User Library/Samples/Imported/ATE Percussion - 079.wav
+49:Ableton/User Library/Samples/Imported/ATE Percussion - 080.wav
+50:Ableton/User Library/Samples/Imported/ATE Percussion - 081.wav
+51:Ableton/User Library/Samples/Imported/ATE Percussion - 082.wav
+52:Ableton/User Library/Samples/Imported/ATE Percussion - 083.wav
+53:Ableton/User Library/Samples/Imported/ATE Percussion - 084.wav
+54:Ableton/User Library/Samples/Imported/ATE Percussion - 085.wav
+55:Ableton/User Library/Samples/Imported/ATE Percussion - 086.wav
+56:Ableton/User Library/Samples/Imported/ATE Percussion - 087.wav
+57:Ableton/User Library/Samples/Imported/ATE Percussion - 088.wav
+58:Ableton/User Library/Samples/Imported/ATE Percussion - 089.wav
+59:Ableton/User Library/Samples/Imported/ATE Percussion - 090.wav
+60:Ableton/User Library/Samples/Imported/ATE Percussion - 091.wav
+61:Ableton/User Library/Samples/Imported/ATE Percussion - 092.wav
+62:Ableton/User Library/Samples/Imported/ATE Percussion - 093.wav
+63:Ableton/User Library/Samples/Imported/ATE Percussion - 094.wav
+64:Ableton/User Library/Samples/Imported/ATE Percussion - 095.wav
+65:Ableton/User Library/Samples/Imported/ATE Percussion - 096.wav
+66:Ableton/User Library/Samples/Imported/ATE Percussion - 097.wav
+67:Ableton/User Library/Samples/Imported/ATE Percussion - 098.wav
+68:Ableton/User Library/Samples/Imported/ATE Percussion - 099.wav
+69:Ableton/User Library/Samples/Imported/ATE Percussion - 100.wav
+70:Ableton/User Library/Samples/Imported/ATE Percussion FX - 044.wav
+71:Ableton/User Library/Samples/Imported/ATE Shaker - 001.wav
+72:Ableton/User Library/Samples/Imported/ATE Shaker - 002.wav
+73:Ableton/User Library/Samples/Imported/ATE Shaker - 003.wav
+74:Ableton/User Library/Samples/Imported/ATE Shaker - 004.wav
+75:Ableton/User Library/Samples/Imported/ATE Shaker - 005.wav
+76:Ableton/User Library/Samples/Imported/ATE Shaker - 006.wav
+77:Ableton/User Library/Samples/Imported/ATE Shaker - 007.wav
+78:Ableton/User Library/Samples/Imported/ATE Shaker - 008.wav
+79:Ableton/User Library/Samples/Imported/ATE Shaker - 009.wav
+80:Ableton/User Library/Samples/Imported/ATE Shaker - 010.wav
+81:Ableton/User Library/Samples/Imported/ATE Shaker - 011.wav
+82:Ableton/User Library/Samples/Imported/ATE Shaker - 012.wav
+83:Ableton/User Library/Samples/Imported/ATE Shaker - 013.wav
+84:Ableton/User Library/Samples/Imported/ATE Shaker - 014.wav
+85:Ableton/User Library/Samples/Imported/ATE Shaker - 015.wav
+86:Ableton/User Library/Samples/Imported/ATE Shaker - 016.wav
+87:Ableton/User Library/Samples/Imported/ATE Shaker - 017.wav
+88:Ableton/User Library/Samples/Imported/ATE Shaker - 018.wav
+89:Ableton/User Library/Samples/Imported/ATE Shaker - 019.wav
+90:Ableton/User Library/Samples/Imported/ATE Shaker - 020.wav
+91:Ableton/User Library/Samples/Imported/ATE Synth Hit (Dry) - 031 - C.wav
+92:Ableton/User Library/Samples/Imported/ATE Synth Hit (Dry) - 032 - C.wav
+93:Ableton/User Library/Samples/Imported/ATE Synth Hit (Dry) - 033 - C.wav
+94:Ableton/User Library/Samples/Imported/ATE Synth Hit (Dry) - 034 - C.wav
+95:Ableton/User Library/Samples/Imported/ATE Synth Hit (Dry) - 035 - C.wav
+96:Ableton/User Library/Samples/Imported/ATE Synth Hit (Dry) - 036 - C.wav
+97:Ableton/User Library/Samples/Imported/ATE Synth Hit (Dry) - 037 - C.wav
+98:Ableton/User Library/Samples/Imported/ATE Synth Hit (Dry) - 038 - C.wav
+99:Ableton/User Library/Samples/Imported/ATE Synth Hit (Dry) - 039 - C.wav
+100:Ableton/User Library/Samples/Imported/ATE Synth Hit (Dry) - 040 - C.wav
+101:Ableton/User Library/Samples/Imported/ATE Synth Hit (Dry) - 041 - C.wav
+102:Ableton/User Library/Samples/Imported/ATE Synth Hit (Dry) - 042 - C.wav
+103:Ableton/User Library/Samples/Imported/ATE Synth Hit (Dry) - 043 - C.wav
+104:Ableton/User Library/Samples/Imported/ATE Synth Hit (Dry) - 044 - C.wav
+105:Ableton/User Library/Samples/Imported/ATE Synth Hit (Dry) - 045 - C.wav
+106:Ableton/User Library/Samples/Imported/ATE Synth Hit (Dry) - 046 - C.wav
+107:Ableton/User Library/Samples/Imported/ATE Synth Hit (Dry) - 047 - C.wav
+108:Ableton/User Library/Samples/Imported/ATE Synth Hit (Dry) - 048 - C.wav
+109:Ableton/User Library/Samples/Imported/ATE Synth Hit (Dry) - 049 - C.wav
+110:Ableton/User Library/Samples/Imported/ATE Synth Hit (Dry) - 050 - C.wav
+111:Ableton/User Library/Samples/Imported/ATE Drum Loop - 006 - 138 BPM - Percussion Loop.wav
+112:Ableton/User Library/Samples/Imported/ATE Drum Loop - 016 - 138 BPM - Full Loop.wav
+113:Ableton/User Library/Samples/Imported/ATE Drum Loop - 047 - 138 BPM - Percussion Loop.wav
+114:Ableton/User Library/Samples/Imported/ATE Drum Loop - 064 - 138 BPM - Percussion Loop.wav
 115:Ableton/User Library/Samples/Imported/ATE Drum Loop - 064 - 138 BPM - Percussion Loop.wav
-116:Ableton/User Library/Samples/Imported/ATE Drum Loop - 064 - 138 BPM - Percussion Loop.wav
-117:Digitalism - Apollo-Gize (Fred Falke Remix)-_ykDET9kLJI.mp3
+116:Digitalism - Apollo-Gize (Fred Falke Remix)-_ykDET9kLJI.mp3
+117:Tech Trance Mix 2015 _HD-yh6rx1vLUeY.mp3
 118:♫ Best Uplifting Trance of 2017 l Top 50 Yearmix 2017 ♫-wzTSyUT2Qwc.mp3
-119:Tech Trance Mix 2015 _HD-yh6rx1vLUeY.mp3
 playlist_end

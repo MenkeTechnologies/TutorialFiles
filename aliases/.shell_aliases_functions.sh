@@ -241,6 +241,12 @@ alias il="idea list"
 
         echo "display notification \"$msg\" with title \"$title\"" | osascript 
     }
+    db(){
+        python3 "$PYSCRIPTS/loginDBChrome.py"
+    }
+    db2(){
+        python3 "$PYSCRIPTS/logIntoMyDB.py"
+    }
 
 }
 s(){
@@ -288,12 +294,6 @@ suc(){
     subl "$SCRIPTS"
     f "$SCRIPTS"
     python3 "$PYSCRIPTS/textEditorTwoColumns.py"
-}
-db(){
-    python3 "$PYSCRIPTS/loginDBChrome.py"
-}
-db2(){
-    python3 "$PYSCRIPTS/logIntoMyDB.py"
 }
 
 if [[ -f /usr/local/share/grc/conf.gls ]];then
@@ -425,12 +425,21 @@ cd(){
     builtin cd "$@" && clearList
 }
 gitCommitAndPush(){
+    blackListDirs=( "$HOME/IdeaProjects/reallingua-web" )
+    currentDir="$(pwd -P)"
+    for dir in "${blackListDirs[@]}" ; do
+       if [[ "$currentDir" == "$dir" ]]; then
+           return 1
+       fi 
+    done
+
     printf "\e[1m"
     git pull
     git add .
     git commit -m "$1"
     git push
     printf "\e[0m"
+    return 0
 }
 replacer(){
     orig="$1"

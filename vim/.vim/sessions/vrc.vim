@@ -1,6 +1,6 @@
 " ~/.vim/sessions/vrc.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 11 February 2018 at 22:12:42.
+" Created by session.vim 2.13.1 on 11 February 2018 at 22:43:31.
 " Open this file in Vim and run :source % to restore your session.
 
 set guioptions=egmrL
@@ -12,7 +12,7 @@ if exists('g:did_indent_on') != 1 | filetype indent on | endif
 if &background != 'dark'
 	set background=dark
 endif
-if !exists('g:colors_name') || g:colors_name != 'forneus' | colorscheme forneus | endif
+if !exists('g:colors_name') || g:colors_name != 'lettuce' | colorscheme lettuce | endif
 call setqflist([])
 let SessionLoad = 1
 if &cp | set nocp | endif
@@ -52,12 +52,12 @@ setlocal fdl=5
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 301 - ((21 * winheight(0) + 33) / 66)
+let s:l = 318 - ((38 * winheight(0) + 33) / 66)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-301
-normal! 04|
+318
+normal! 0
 tabedit ~/.config/powerline/themes/vim/default.json
 set splitbelow splitright
 set nosplitbelow
@@ -73,11 +73,11 @@ setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 10 - ((9 * winheight(0) + 33) / 66)
+let s:l = 1 - ((0 * winheight(0) + 33) / 66)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-10
+1
 normal! 0
 tabedit ~/.ssh/config
 set splitbelow splitright

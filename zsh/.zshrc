@@ -432,6 +432,7 @@ precmd(){
             listNoClear
         fi
     fi
+    printf "\x1b[0m"
     #exec 2> >(blueUpperText.sh)
 }
 

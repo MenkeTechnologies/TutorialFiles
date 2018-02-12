@@ -2,8 +2,8 @@ sw_volume: 60
 audio_device_state:1:CoreAudio
 audio_device_state:1:my_fifo
 state: play
-current: 118
-time: 15642.066000
+current: 119
+time: 126.063000
 random: 0
 repeat: 0
 single: 0
@@ -131,4 +131,5 @@ playlist_begin
 116:Digitalism - Apollo-Gize (Fred Falke Remix)-_ykDET9kLJI.mp3
 117:Tech Trance Mix 2015 _HD-yh6rx1vLUeY.mp3
 118:♫ Best Uplifting Trance of 2017 l Top 50 Yearmix 2017 ♫-wzTSyUT2Qwc.mp3
+119:Redstar -  All That I Am (Original Mix).mp3
 playlist_end

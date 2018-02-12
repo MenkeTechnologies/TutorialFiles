@@ -421,6 +421,7 @@ for command in ${commandsThatModifyFiles[@]}; do
 done
 
 zle .accept-line 
+printf "\x1b[0m"
 }
 zle -N accept-line my-accept-line
 

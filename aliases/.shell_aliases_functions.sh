@@ -129,6 +129,7 @@ alias ka="killall"
 alias sin="./configure && make && sudo make install"
 alias curl='curl -fsSL'
 #Darwin specific aliases
+alias mount='grc --colour=auto -c "$HOME/conf.mount" mount'
 if [[ "$(uname)" == "Darwin" ]]; then
     #statements
     alias ifconfig='grc --colour=auto /sbin/ifconfig'

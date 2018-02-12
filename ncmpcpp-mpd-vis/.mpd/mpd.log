@@ -17827,3 +17827,5 @@ Feb 12 00:08 : ffmpeg/aiff: could not find COMM tag or invalid block_align value
 Feb 12 00:08 : update: added /Redstar -  Whatever (Red Remix).mp3
 Feb 12 00:08 : update: added /Redstar -  All That I Am (Original Mix).mp3
 Feb 12 00:08 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Feb 12 00:14 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Feb 12 00:14 : player: played "Redstar -  All That I Am (Original Mix).mp3"

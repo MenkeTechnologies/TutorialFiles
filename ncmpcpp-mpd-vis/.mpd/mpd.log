@@ -17829,3 +17829,9 @@ Feb 12 00:08 : update: added /Redstar -  All That I Am (Original Mix).mp3
 Feb 12 00:08 : ffmpeg/mp3: Could not update timestamps for skipped samples.
 Feb 12 00:14 : ffmpeg/mp3: Could not update timestamps for discarded samples.
 Feb 12 00:14 : player: played "Redstar -  All That I Am (Original Mix).mp3"
+Feb 12 12:54 : config: inotify: auto_update was disabled. enable during compilation phase
+Feb 12 12:54 : config: option 'enabled' on line 29 was not recognized
+Feb 12 12:54 : client: [0] opened from 127.0.0.1:49728
+Feb 12 12:54 : client: [1] opened from 127.0.0.1:49731
+Feb 12 12:54 : client: [2] opened from 127.0.0.1:49733
+Feb 12 12:54 : client: [3] opened from 127.0.0.1:49750

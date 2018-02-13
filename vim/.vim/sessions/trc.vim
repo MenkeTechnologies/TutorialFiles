@@ -1,6 +1,6 @@
 " ~/.vim/sessions/trc.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 11 February 2018 at 22:42:34.
+" Created by session.vim 2.13.1 on 13 February 2018 at 01:33:02.
 " Open this file in Vim and run :source % to restore your session.
 
 set guioptions=egmrL
@@ -48,12 +48,12 @@ setlocal fdl=1
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 32 - ((31 * winheight(0) + 33) / 66)
+let s:l = 27 - ((25 * winheight(0) + 32) / 64)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-32
-normal! 0
+27
+normal! 027|
 tabedit .config/powerline/themes/tmux/default.json
 set splitbelow splitright
 set nosplitbelow
@@ -69,7 +69,7 @@ setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 15 - ((13 * winheight(0) + 33) / 66)
+let s:l = 15 - ((13 * winheight(0) + 32) / 64)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -90,7 +90,7 @@ setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 20 - ((13 * winheight(0) + 33) / 66)
+let s:l = 20 - ((13 * winheight(0) + 32) / 64)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -106,8 +106,8 @@ set nosplitbelow
 set nosplitright
 wincmd t
 set winminheight=1 winheight=1 winminwidth=1 winwidth=1
-exe '1resize ' . ((&lines * 34 + 34) / 69)
-exe '2resize ' . ((&lines * 31 + 34) / 69)
+exe '1resize ' . ((&lines * 33 + 33) / 67)
+exe '2resize ' . ((&lines * 30 + 33) / 67)
 argglobal
 setlocal fdm=marker
 setlocal fde=0
@@ -117,7 +117,7 @@ setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 9 - ((8 * winheight(0) + 17) / 34)
+let s:l = 9 - ((8 * winheight(0) + 16) / 33)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -134,15 +134,15 @@ setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 5 - ((4 * winheight(0) + 15) / 31)
+let s:l = 5 - ((4 * winheight(0) + 15) / 30)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
 5
 normal! 015|
 wincmd w
-exe '1resize ' . ((&lines * 34 + 34) / 69)
-exe '2resize ' . ((&lines * 31 + 34) / 69)
+exe '1resize ' . ((&lines * 33 + 33) / 67)
+exe '2resize ' . ((&lines * 30 + 33) / 67)
 tabnew
 set splitbelow splitright
 set nosplitbelow

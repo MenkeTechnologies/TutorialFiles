@@ -1,6 +1,6 @@
 " ~/.vim/sessions/aliases.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 11 February 2018 at 22:42:38.
+" Created by session.vim 2.13.1 on 13 February 2018 at 01:33:01.
 " Open this file in Vim and run :source % to restore your session.
 
 set guioptions=egmrL
@@ -51,14 +51,14 @@ setlocal fdl=3
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-94
+95
 silent! normal! zo
-let s:l = 623 - ((25 * winheight(0) + 33) / 66)
+let s:l = 156 - ((17 * winheight(0) + 32) / 64)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-623
-normal! 028|
+156
+normal! 033|
 tabedit ~/.tokens.sh
 set splitbelow splitright
 set nosplitbelow
@@ -74,12 +74,12 @@ setlocal fdl=1
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 36 - ((27 * winheight(0) + 33) / 66)
+let s:l = 36 - ((26 * winheight(0) + 32) / 64)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
 36
-normal! 0119|
+normal! 01|
 tabedit ~/Documents/shellScripts/updater.sh
 set splitbelow splitright
 set nosplitbelow
@@ -95,7 +95,7 @@ setlocal fdl=1
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 33) / 66)
+let s:l = 1 - ((0 * winheight(0) + 32) / 64)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -116,7 +116,7 @@ setlocal fdl=1
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 33) / 66)
+let s:l = 1 - ((0 * winheight(0) + 32) / 64)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -137,7 +137,7 @@ setlocal fdl=1
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 33) / 66)
+let s:l = 1 - ((0 * winheight(0) + 32) / 64)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt

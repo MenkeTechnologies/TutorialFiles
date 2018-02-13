@@ -444,9 +444,7 @@ commandsThatModifyFiles=(rm to md touch chown chmod rmdir mv cp chflags chgrp ln
 
 for command in ${commandsThatModifyFiles[@]}; do
     regex="^sudo $command .*\$|^$command .*\$"
-    if [[ "$BUFFER" =~ $regex ]]; then
-        WILL_CLEAR=true
-    fi
+    printf "$BUFFER" | egrep -q "$regex" && WILL_CLEAR=true
 done
 
 zle .accept-line 

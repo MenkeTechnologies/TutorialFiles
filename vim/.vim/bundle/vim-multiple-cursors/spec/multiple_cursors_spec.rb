@@ -1,4 +1,4 @@
-# -*- encoding: utf-8 -*- 
+# -*- encoding: utf-8 -*-
 require 'spec_helper'
 
 def set_file_content(string)
@@ -190,7 +190,53 @@ describe "Multiple Cursors when visual_maps is empty" do
 
 end
 
-describe "Multiple Cursors" do
+describe "Multiple Cursors when changing the line count" do
+  let(:filename) { 'test.txt' }
+  let(:options) { ['set backspace=indent,eol,start'] }
+
+  specify "#backspace on first char of the line, then carriage return" do
+    before <<-EOF
+      madec
+
+      antoine
+      andre
+      joseph
+    EOF
+
+    type 'Gvip<C-n>i<BS><cr>'
+
+    after <<-EOF
+      madec
+
+      antoine
+      andre
+      joseph
+    EOF
+  end
+
+  specify "#del at EOL, then carriage return" do
+    before <<-EOF
+      madec
+      antoine
+      joseph
+
+      andre
+    EOF
+
+    type 'vip<C-n>A<DEL><cr>'
+
+    after <<-EOF
+      madec
+      antoine
+      joseph
+
+      andre
+    EOF
+  end
+
+end
+
+describe "Multiple Cursors misc" do
   let(:filename) { 'test.txt' }
   let(:options) { ['set autoindent'] }
 

@@ -17849,3 +17849,14 @@ Feb 13 00:21 : client: [4] opened from 127.0.0.1:55991
 Feb 13 00:21 : client: [5] opened from 127.0.0.1:55993
 Feb 13 00:21 : client: [6] opened from 127.0.0.1:55995
 Feb 13 00:21 : client: [7] opened from 127.0.0.1:55997
+Feb 14 15:58 : client: [4] closed
+Feb 14 15:58 : client: [5] closed
+Feb 14 15:58 : client: [7] closed
+Feb 14 15:58 : client: [6] closed
+Feb 14 15:59 : client: [8] opened from 127.0.0.1:56240
+Feb 14 15:59 : client: [9] opened from 127.0.0.1:56266
+Feb 14 15:59 : client: [10] opened from 127.0.0.1:56268
+Feb 14 15:59 : client: [11] opened from 127.0.0.1:56270
+Feb 14 16:00 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Feb 14 16:05 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Feb 14 16:06 : player: played "Redstar -  All That I Am (Original Mix).mp3"

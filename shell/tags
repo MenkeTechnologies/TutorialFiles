@@ -394,6 +394,7 @@ pid	fsWatchLongRunning.sh	/^        pid=$!$/;"	v
 pion	macOnly/.shell_aliases_functions.sh	/^pion (){$/;"	f
 pipe	readFIFO.sh	/^pipe=$HOME\/Desktop\/testpipe$/;"	v
 pipe	readFIFO.sh	/^pipe=\/tmp\/testpipe$/;"	v
+prettyPrint	colorLogger.sh	/^prettyPrint () {$/;"	f
 prettyPrint	customTerminalInstaller/.shell_aliases_functions.sh	/^    prettyPrint(){$/;"	f
 prettyPrint	customTerminalInstaller/install.sh	/^prettyPrint(){$/;"	f
 prettyPrint	macOnly/.shell_aliases_functions.sh	/^prettyPrint(){$/;"	f

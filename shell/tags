@@ -289,7 +289,7 @@ hub_delete	customTerminalInstaller/.shell_aliases_functions.sh	/^    hub_delete(
 hub_delete	macOnly/.shell_aliases_functions.sh	/^hub_delete(){$/;"	f
 humanReadable	customTerminalInstaller/.shell_aliases_functions.sh	/^humanReadable(){$/;"	f
 humanReadable	macOnly/.shell_aliases_functions.sh	/^humanReadable(){$/;"	f
-iface	customTerminalInstaller/install.sh	/^iface=$(ifconfig | grep -B1 "inet addr:$ip" | awk '$1!="inet" && $1!="--" {print $1}')$/;"	v
+iface	customTerminalInstaller/install.sh	/^iface=$(ifconfig | grep -B3 "inet .*$ip" | grep '^[a-zA-Z0-9].*' | awk '{print $1}' | tr -d ":")$/;"	v
 initializeGitDirectory	gitgo.sh	/^initializeGitDirectory(){$/;"	f
 install	tgzLocalInstaller.sh	/^install(){$/;"	f
 installGitHubPlugin	customTerminalInstaller/tmux_plugins_install.sh	/^installGitHubPlugin(){$/;"	f

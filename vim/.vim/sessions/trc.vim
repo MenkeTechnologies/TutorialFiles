@@ -1,6 +1,6 @@
 " ~/.vim/sessions/trc.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 15 February 2018 at 13:28:15.
+" Created by session.vim 2.13.1 on 15 February 2018 at 16:30:23.
 " Open this file in Vim and run :source % to restore your session.
 
 set guioptions=egmrL
@@ -12,7 +12,7 @@ if exists('g:did_indent_on') != 1 | filetype indent on | endif
 if &background != 'dark'
 	set background=dark
 endif
-if !exists('g:colors_name') || g:colors_name != 'pf_earth' | colorscheme pf_earth | endif
+if !exists('g:colors_name') || g:colors_name != 'ir_black' | colorscheme ir_black | endif
 call setqflist([])
 let SessionLoad = 1
 if &cp | set nocp | endif
@@ -48,12 +48,12 @@ setlocal fdl=1
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 52 - ((27 * winheight(0) + 31) / 62)
+let s:l = 60 - ((26 * winheight(0) + 31) / 62)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-52
-normal! 031|
+60
+normal! 017|
 tabedit .config/powerline/themes/tmux/default.json
 set splitbelow splitright
 set nosplitbelow

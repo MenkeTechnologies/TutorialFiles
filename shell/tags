@@ -513,6 +513,7 @@ timeToSleep	myWatchNoBlinkColorized.sh	/^    timeToSleep=$2$/;"	v
 timeToSleep	myWatchNoBlinkColorized.sh	/^    timeToSleep=0.5$/;"	v
 title	customTerminalInstaller/.shell_aliases_functions.sh	/^    title="$1"$/;"	v
 title	macOnly/.shell_aliases_functions.sh	/^    title="$1"$/;"	v
+tmuxPowerlineDir	customTerminalInstaller/install.sh	/^    tmuxPowerlineDir="$HOME\/.config\/powerline\/themes\/tmux"$/;"	v
 tmuxPowerlineDir	customTerminalInstaller/install.sh	/^    tmuxPowerlineDir=$HOME\/.config\/powerline\/themes\/tmux$/;"	v
 topline	animation	/^topline=0$/;"	v
 total	oldCounter.sh	/^total=0$/;"	v

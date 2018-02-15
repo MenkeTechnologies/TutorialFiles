@@ -1,6 +1,6 @@
 " ~/.vim/sessions/trc.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 15 February 2018 at 12:07:49.
+" Created by session.vim 2.13.1 on 15 February 2018 at 13:28:15.
 " Open this file in Vim and run :source % to restore your session.
 
 set guioptions=egmrL
@@ -48,12 +48,12 @@ setlocal fdl=1
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 55 - ((30 * winheight(0) + 31) / 62)
+let s:l = 52 - ((27 * winheight(0) + 31) / 62)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-55
-normal! 0
+52
+normal! 031|
 tabedit .config/powerline/themes/tmux/default.json
 set splitbelow splitright
 set nosplitbelow

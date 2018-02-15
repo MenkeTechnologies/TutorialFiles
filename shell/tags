@@ -195,10 +195,12 @@ displayProgress	batchRename.sh	/^displayProgress(){$/;"	f
 displayProgress	picture_finder.sh	/^displayProgress(){$/;"	f
 displayProgress	secureDelete.sh	/^displayProgress(){$/;"	f
 displayProgressIndicator	openAll.sh	/^displayProgressIndicator(){$/;"	f
+distro	colorLogger.sh	/^            distro=debian$/;"	v
+distro	colorLogger.sh	/^            distro=redhat$/;"	v
 distro	customTerminalInstaller/install.sh	/^            distro=debian$/;"	v
 distro	customTerminalInstaller/install.sh	/^            distro=redhat$/;"	v
 distroName	clearTrash.sh	/^    distroName=$(lsb_release -a | head -1 | awk '{print $3}')$/;"	v
-distroName	colorLogger.sh	/^    distroName="$(grep "^ID=" \/etc\/os-release | cut -d= -f2 | tr -d \\" | head -n 1)"$/;"	v
+distroName	colorLogger.sh	/^    distroName=$(grep "^ID=" \/etc\/os-release | cut -d= -f2 | tr -d \\" | head -n 1)$/;"	v
 distroName	customTerminalInstaller/install.sh	/^    distroName=$(grep "^ID=" \/etc\/os-release | cut -d= -f2 | tr -d \\" | head -n 1)$/;"	v
 distroName	macOnly/.shell_aliases_functions.sh	/^    distroName=$(lsb_release -a | head -1 | awk '{print $3}')$/;"	v
 dontSummarizeSizes	directoryContentsSize.sh	/^dontSummarizeSizes(){$/;"	f

@@ -17932,3 +17932,6 @@ Feb 15 22:28 : ffmpeg/mp3: Could not update timestamps for skipped samples.
 Feb 16 00:00 : ffmpeg/mp3: Could not update timestamps for discarded samples.
 Feb 16 00:00 : ffmpeg/mp3: Could not update timestamps for skipped samples.
 Feb 16 00:01 : player: played "♫ Best Uplifting Trance of 2017 l Top 50 Yearmix 2017 ♫-wzTSyUT2Qwc.mp3"
+Feb 16 00:09 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Feb 16 00:09 : player: played "Redstar -  All That I Am (Original Mix).mp3"
+Feb 16 00:10 : ffmpeg/mp3: Could not update timestamps for skipped samples.

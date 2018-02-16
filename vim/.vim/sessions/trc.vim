@@ -1,6 +1,6 @@
 " ~/.vim/sessions/trc.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 15 February 2018 at 16:30:23.
+" Created by session.vim 2.13.1 on 15 February 2018 at 19:57:58.
 " Open this file in Vim and run :source % to restore your session.
 
 set guioptions=egmrL
@@ -12,7 +12,7 @@ if exists('g:did_indent_on') != 1 | filetype indent on | endif
 if &background != 'dark'
 	set background=dark
 endif
-if !exists('g:colors_name') || g:colors_name != 'ir_black' | colorscheme ir_black | endif
+if !exists('g:colors_name') || g:colors_name != 'impact' | colorscheme impact | endif
 call setqflist([])
 let SessionLoad = 1
 if &cp | set nocp | endif
@@ -48,12 +48,12 @@ setlocal fdl=1
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 60 - ((26 * winheight(0) + 31) / 62)
+let s:l = 64 - ((33 * winheight(0) + 34) / 69)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-60
-normal! 017|
+64
+normal! 0
 tabedit .config/powerline/themes/tmux/default.json
 set splitbelow splitright
 set nosplitbelow
@@ -69,7 +69,7 @@ setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 15 - ((13 * winheight(0) + 31) / 62)
+let s:l = 15 - ((14 * winheight(0) + 34) / 69)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -90,7 +90,7 @@ setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 20 - ((13 * winheight(0) + 31) / 62)
+let s:l = 20 - ((15 * winheight(0) + 34) / 69)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -106,8 +106,8 @@ set nosplitbelow
 set nosplitright
 wincmd t
 set winminheight=1 winheight=1 winminwidth=1 winwidth=1
-exe '1resize ' . ((&lines * 32 + 32) / 65)
-exe '2resize ' . ((&lines * 29 + 32) / 65)
+exe '1resize ' . ((&lines * 32 + 36) / 72)
+exe '2resize ' . ((&lines * 36 + 36) / 72)
 argglobal
 setlocal fdm=marker
 setlocal fde=0
@@ -134,15 +134,15 @@ setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 5 - ((4 * winheight(0) + 14) / 29)
+let s:l = 5 - ((4 * winheight(0) + 18) / 36)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
 5
 normal! 015|
 wincmd w
-exe '1resize ' . ((&lines * 32 + 32) / 65)
-exe '2resize ' . ((&lines * 29 + 32) / 65)
+exe '1resize ' . ((&lines * 32 + 36) / 72)
+exe '2resize ' . ((&lines * 36 + 36) / 72)
 tabnew
 set splitbelow splitright
 set nosplitbelow

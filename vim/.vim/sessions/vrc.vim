@@ -1,6 +1,6 @@
 " ~/.vim/sessions/vrc.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 15 February 2018 at 16:30:22.
+" Created by session.vim 2.13.1 on 15 February 2018 at 19:58:00.
 " Open this file in Vim and run :source % to restore your session.
 
 set guioptions=egmrL
@@ -62,12 +62,12 @@ silent! normal! zo
 silent! normal! zo
 320
 silent! normal! zo
-let s:l = 724 - ((22 * winheight(0) + 31) / 62)
+let s:l = 726 - ((27 * winheight(0) + 34) / 69)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-724
-normal! 029|
+726
+normal! 069|
 tabedit ~/.config/powerline/themes/vim/default.json
 set splitbelow splitright
 set nosplitbelow

@@ -1,6 +1,6 @@
 " ~/.vim/sessions/zshrc.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 15 February 2018 at 16:30:24.
+" Created by session.vim 2.13.1 on 15 February 2018 at 19:58:01.
 " Open this file in Vim and run :source % to restore your session.
 
 set guioptions=egmrL
@@ -49,12 +49,12 @@ setlocal fdl=1
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 195 - ((25 * winheight(0) + 31) / 62)
+let s:l = 776 - ((30 * winheight(0) + 34) / 69)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-195
-normal! 05|
+776
+normal! 021|
 tabedit ~/grc.zsh
 set splitbelow splitright
 set nosplitbelow

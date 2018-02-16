@@ -591,12 +591,11 @@ zle-keymap-select() {
     zle reset-prompt
 }
 
-zle-line-init() {
-    typeset -g __prompt_status="$?"
-}
+#zle-line-init() {
+    #typeset -g __prompt_status="$?"
+#}
 
 zle -N zle-keymap-select
-zle -N zle-line-init
 
 #}}}***********************************************************
 

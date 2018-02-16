@@ -17920,3 +17920,11 @@ Feb 15 21:04 : client: [5] opened from 127.0.0.1:54536
 Feb 15 21:04 : client: [6] opened from 127.0.0.1:54538
 Feb 15 21:04 : client: [7] opened from 127.0.0.1:54540
 Feb 15 21:04 : client: [8] opened from 127.0.0.1:54545
+Feb 15 21:47 : client: [7] closed
+Feb 15 21:47 : client: [8] closed
+Feb 15 21:47 : client: [6] closed
+Feb 15 21:47 : client: [5] closed
+Feb 15 21:48 : client: [9] opened from 127.0.0.1:55218
+Feb 15 21:48 : client: [10] opened from 127.0.0.1:55222
+Feb 15 21:48 : client: [11] opened from 127.0.0.1:55224
+Feb 15 21:48 : client: [12] opened from 127.0.0.1:55226

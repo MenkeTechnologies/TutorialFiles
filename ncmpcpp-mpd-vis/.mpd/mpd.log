@@ -17947,3 +17947,16 @@ Feb 16 10:03 : client: [0] closed
 Feb 16 10:49 : player: played "♫ Best Uplifting Trance of 2017 l Top 50 Yearmix 2017 ♫-wzTSyUT2Qwc.mp3"
 Feb 16 10:50 : config: inotify: auto_update was disabled. enable during compilation phase
 Feb 16 10:50 : config: option 'enabled' on line 29 was not recognized
+Feb 16 11:12 : client: [0] opened from 127.0.0.1:54845
+Feb 16 11:12 : client: [1] opened from 127.0.0.1:54859
+Feb 16 11:12 : client: [2] opened from 127.0.0.1:54861
+Feb 16 11:12 : client: [3] opened from 127.0.0.1:54899
+Feb 16 23:28 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Feb 17 00:15 : config: inotify: auto_update was disabled. enable during compilation phase
+Feb 17 00:15 : config: option 'enabled' on line 29 was not recognized
+Feb 17 00:21 : client: [0] opened from 127.0.0.1:49551
+Feb 17 01:51 : client: [0] closed
+Feb 17 10:40 : client: [1] opened from 127.0.0.1:50738
+Feb 17 10:40 : client: [2] opened from 127.0.0.1:50741
+Feb 17 10:40 : client: [3] opened from 127.0.0.1:50743
+Feb 17 10:40 : client: [4] opened from 127.0.0.1:50745

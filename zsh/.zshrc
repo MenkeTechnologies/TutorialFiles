@@ -467,6 +467,8 @@ bindkey -M vicmd '\e^T' transpose-words
 bindkey -M viins '^T' transpose-chars
 bindkey -M vicmd '^T' transpose-chars
 
+bindkey -M viins '^A' beginning-of-line 
+bindkey -M viins '^E' end-of-line
 #Filter stderr through shell scripts
 #having this setting messes with tmux resurrect so will enable it on individual basis
 #exec 2> >("$SCRIPTS"/redText.sh)

@@ -452,7 +452,7 @@ zle .redisplay
     #F2 key
     bindkey '\eOQ' sub
 
-    [[ "$(uname)" == Darwin ]] && {
+[[ "$(uname)" == Darwin ]] && {
         #Ctrl plus arrow keys
     bindkey '\e[1;5A' gitfunc
     bindkey '\e[1;5B' updater
@@ -482,7 +482,7 @@ commandsThatModifyFiles=(rm to md touch chown chmod rmdir mv cp chflags chgrp ln
 
 for command in ${commandsThatModifyFiles[@]}; do
     regex="^sudo $command .*\$|^$command .*\$"
-    printf "$BUFFER" | egrep -q "$regex" && {
+    print "$BUFFER" | egrep -q "$regex" && {
         __WILL_CLEAR=true
 }
     done

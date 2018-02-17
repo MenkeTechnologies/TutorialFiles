@@ -17960,3 +17960,8 @@ Feb 17 10:40 : client: [1] opened from 127.0.0.1:50738
 Feb 17 10:40 : client: [2] opened from 127.0.0.1:50741
 Feb 17 10:40 : client: [3] opened from 127.0.0.1:50743
 Feb 17 10:40 : client: [4] opened from 127.0.0.1:50745
+Feb 17 12:42 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Feb 17 12:42 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Feb 17 12:43 : player: played "♫ Best Uplifting Trance of 2017 l Top 50 Yearmix 2017 ♫-wzTSyUT2Qwc.mp3"
+Feb 17 12:51 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Feb 17 12:51 : player: played "Redstar -  All That I Am (Original Mix).mp3"

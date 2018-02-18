@@ -1,6 +1,6 @@
 " ~/.vim/sessions/aliases.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 17 February 2018 at 10:45:01.
+" Created by session.vim 2.13.1 on 17 February 2018 at 21:32:40.
 " Open this file in Vim and run :source % to restore your session.
 
 set guioptions=egmrL
@@ -12,7 +12,7 @@ if exists('g:did_indent_on') != 1 | filetype indent on | endif
 if &background != 'dark'
 	set background=dark
 endif
-if !exists('g:colors_name') || g:colors_name != 'ingretu' | colorscheme ingretu | endif
+if !exists('g:colors_name') || g:colors_name != 'elrond' | colorscheme elrond | endif
 call setqflist([])
 let SessionLoad = 1
 if &cp | set nocp | endif
@@ -53,12 +53,12 @@ setlocal fdn=20
 setlocal fen
 95
 silent! normal! zo
-let s:l = 666 - ((21 * winheight(0) + 33) / 67)
+let s:l = 636 - ((30 * winheight(0) + 33) / 67)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-666
-normal! 0
+636
+normal! 030|
 tabedit ~/.tokens.sh
 set splitbelow splitright
 set nosplitbelow

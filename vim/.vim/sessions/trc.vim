@@ -1,6 +1,6 @@
 " ~/.vim/sessions/trc.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 17 February 2018 at 10:44:26.
+" Created by session.vim 2.13.1 on 17 February 2018 at 21:32:39.
 " Open this file in Vim and run :source % to restore your session.
 
 set guioptions=egmrL
@@ -12,7 +12,7 @@ if exists('g:did_indent_on') != 1 | filetype indent on | endif
 if &background != 'dark'
 	set background=dark
 endif
-if !exists('g:colors_name') || g:colors_name != 'icansee' | colorscheme icansee | endif
+if !exists('g:colors_name') || g:colors_name != 'pf_earth' | colorscheme pf_earth | endif
 call setqflist([])
 let SessionLoad = 1
 if &cp | set nocp | endif
@@ -29,6 +29,7 @@ badd +1 .config/powerline/themes/tmux/default.json
 badd +1 .gitconfig
 badd +1 .gitignore_global
 badd +1 .mongorc.js
+badd +1 .tmux/tmux-mac
 argglobal
 silent! argdel *
 $argadd .tmux.conf
@@ -48,12 +49,12 @@ setlocal fdl=1
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 60 - ((28 * winheight(0) + 33) / 67)
+let s:l = 69 - ((37 * winheight(0) + 33) / 67)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-60
-normal! 018|
+69
+normal! 046|
 tabedit .config/powerline/themes/tmux/default.json
 set splitbelow splitright
 set nosplitbelow
@@ -143,12 +144,18 @@ normal! 015|
 wincmd w
 exe '1resize ' . ((&lines * 31 + 35) / 70)
 exe '2resize ' . ((&lines * 35 + 35) / 70)
-tabnew
+tabedit .tmux/tmux-mac
 set splitbelow splitright
+wincmd _ | wincmd |
+vsplit
+1wincmd h
+wincmd w
 set nosplitbelow
 set nosplitright
 wincmd t
 set winminheight=1 winheight=1 winminwidth=1 winwidth=1
+exe 'vert 1resize ' . ((&columns * 31 + 33) / 67)
+exe 'vert 2resize ' . ((&columns * 35 + 33) / 67)
 argglobal
 enew
 " file NERD_tree_1
@@ -160,6 +167,25 @@ setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal nofen
+wincmd w
+argglobal
+setlocal fdm=marker
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+let s:l = 2 - ((1 * winheight(0) + 33) / 67)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+2
+normal! 017|
+wincmd w
+exe 'vert 1resize ' . ((&columns * 31 + 33) / 67)
+exe 'vert 2resize ' . ((&columns * 35 + 33) / 67)
 tabnext 1
 set stal=1
 if exists('s:wipebuf')
@@ -190,6 +216,7 @@ if !getbufvar(s:bufnr_save, '&modified')
   endif
 endif
 execute "cd" fnameescape(s:cwd_save)
+1resize 67|vert 1resize 31|2resize 67|vert 2resize 35|
 1wincmd w
 tabnext 1
 if exists('s:wipebuf')

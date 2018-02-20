@@ -18099,3 +18099,9 @@ Feb 20 02:07 : player: played "♫ Best Uplifting Trance of 2017 l Top 50 Yearmi
 Feb 20 02:15 : ffmpeg/mp3: Could not update timestamps for discarded samples.
 Feb 20 02:16 : player: played "Redstar -  All That I Am (Original Mix).mp3"
 Feb 20 02:17 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Feb 20 13:30 : config: inotify: auto_update was disabled. enable during compilation phase
+Feb 20 13:30 : config: option 'enabled' on line 29 was not recognized
+Feb 20 15:03 : client: [0] opened from 127.0.0.1:63196
+Feb 20 15:03 : client: [1] opened from 127.0.0.1:63219
+Feb 20 15:03 : client: [2] opened from 127.0.0.1:63221
+Feb 20 15:03 : client: [3] opened from 127.0.0.1:63256

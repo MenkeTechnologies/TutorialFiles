@@ -1,6 +1,6 @@
 " ~/.vim/sessions/trc.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 19 February 2018 at 23:40:03.
+" Created by session.vim 2.13.1 on 20 February 2018 at 18:48:45.
 " Open this file in Vim and run :source % to restore your session.
 
 set guioptions=egmrL
@@ -12,7 +12,7 @@ if exists('g:did_indent_on') != 1 | filetype indent on | endif
 if &background != 'dark'
 	set background=dark
 endif
-if !exists('g:colors_name') || g:colors_name != 'ubaryd' | colorscheme ubaryd | endif
+if !exists('g:colors_name') || g:colors_name != 'neonwave' | colorscheme neonwave | endif
 call setqflist([])
 let SessionLoad = 1
 if &cp | set nocp | endif
@@ -49,12 +49,12 @@ setlocal fdl=1
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 69 - ((35 * winheight(0) + 32) / 64)
+let s:l = 62 - ((33 * winheight(0) + 33) / 67)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-69
-normal! 014|
+62
+normal! 018|
 tabedit .config/powerline/themes/tmux/default.json
 set splitbelow splitright
 set nosplitbelow
@@ -70,7 +70,7 @@ setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 15 - ((13 * winheight(0) + 32) / 64)
+let s:l = 15 - ((14 * winheight(0) + 33) / 67)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -91,7 +91,7 @@ setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 20 - ((14 * winheight(0) + 32) / 64)
+let s:l = 20 - ((15 * winheight(0) + 33) / 67)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -107,8 +107,8 @@ set nosplitbelow
 set nosplitright
 wincmd t
 set winminheight=1 winheight=1 winminwidth=1 winwidth=1
-exe '1resize ' . ((&lines * 29 + 33) / 67)
-exe '2resize ' . ((&lines * 34 + 33) / 67)
+exe '1resize ' . ((&lines * 30 + 35) / 70)
+exe '2resize ' . ((&lines * 36 + 35) / 70)
 argglobal
 setlocal fdm=marker
 setlocal fde=0
@@ -118,7 +118,7 @@ setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 9 - ((7 * winheight(0) + 14) / 29)
+let s:l = 9 - ((7 * winheight(0) + 15) / 30)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -135,15 +135,15 @@ setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 5 - ((4 * winheight(0) + 17) / 34)
+let s:l = 5 - ((4 * winheight(0) + 18) / 36)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
 5
 normal! 015|
 wincmd w
-exe '1resize ' . ((&lines * 29 + 33) / 67)
-exe '2resize ' . ((&lines * 34 + 33) / 67)
+exe '1resize ' . ((&lines * 30 + 35) / 70)
+exe '2resize ' . ((&lines * 36 + 35) / 70)
 tabedit .tmux/tmux-mac
 set splitbelow splitright
 wincmd _ | wincmd |
@@ -154,8 +154,10 @@ set nosplitbelow
 set nosplitright
 wincmd t
 set winminheight=1 winheight=1 winminwidth=1 winwidth=1
-exe 'vert 1resize ' . ((&columns * 31 + 33) / 67)
-exe 'vert 2resize ' . ((&columns * 35 + 33) / 67)
+exe '1resize ' . ((&lines * 64 + 35) / 70)
+exe 'vert 1resize ' . ((&columns * 30 + 33) / 66)
+exe '2resize ' . ((&lines * 64 + 35) / 70)
+exe 'vert 2resize ' . ((&columns * 35 + 33) / 66)
 argglobal
 enew
 " file NERD_tree_1
@@ -184,8 +186,10 @@ normal! zt
 2
 normal! 017|
 wincmd w
-exe 'vert 1resize ' . ((&columns * 31 + 33) / 67)
-exe 'vert 2resize ' . ((&columns * 35 + 33) / 67)
+exe '1resize ' . ((&lines * 64 + 35) / 70)
+exe 'vert 1resize ' . ((&columns * 30 + 33) / 66)
+exe '2resize ' . ((&lines * 64 + 35) / 70)
+exe 'vert 2resize ' . ((&columns * 35 + 33) / 66)
 tabnext 1
 set stal=1
 if exists('s:wipebuf')
@@ -216,7 +220,7 @@ if !getbufvar(s:bufnr_save, '&modified')
   endif
 endif
 execute "cd" fnameescape(s:cwd_save)
-1resize 64|vert 1resize 31|2resize 64|vert 2resize 35|
+1resize 64|vert 1resize 30|2resize 64|vert 2resize 35|
 1wincmd w
 tabnext 1
 if exists('s:wipebuf')

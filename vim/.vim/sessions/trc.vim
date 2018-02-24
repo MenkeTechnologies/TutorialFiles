@@ -1,6 +1,6 @@
 " ~/.vim/sessions/trc.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 21 February 2018 at 02:58:07.
+" Created by session.vim 2.13.1 on 24 February 2018 at 02:02:28.
 " Open this file in Vim and run :source % to restore your session.
 
 set guioptions=egmrL
@@ -49,12 +49,12 @@ setlocal fdl=1
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 48 - ((31 * winheight(0) + 33) / 67)
+let s:l = 53 - ((35 * winheight(0) + 32) / 65)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-48
-normal! 0
+53
+normal! 022|
 tabedit .config/powerline/themes/tmux/default.json
 set splitbelow splitright
 set nosplitbelow
@@ -70,7 +70,7 @@ setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 15 - ((14 * winheight(0) + 33) / 67)
+let s:l = 15 - ((14 * winheight(0) + 32) / 65)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -91,7 +91,7 @@ setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 20 - ((15 * winheight(0) + 33) / 67)
+let s:l = 20 - ((15 * winheight(0) + 32) / 65)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -107,8 +107,8 @@ set nosplitbelow
 set nosplitright
 wincmd t
 set winminheight=1 winheight=1 winminwidth=1 winwidth=1
-exe '1resize ' . ((&lines * 30 + 35) / 70)
-exe '2resize ' . ((&lines * 36 + 35) / 70)
+exe '1resize ' . ((&lines * 29 + 34) / 68)
+exe '2resize ' . ((&lines * 35 + 34) / 68)
 argglobal
 setlocal fdm=marker
 setlocal fde=0
@@ -118,7 +118,7 @@ setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 9 - ((7 * winheight(0) + 15) / 30)
+let s:l = 9 - ((7 * winheight(0) + 14) / 29)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -135,15 +135,15 @@ setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 5 - ((4 * winheight(0) + 18) / 36)
+let s:l = 5 - ((4 * winheight(0) + 17) / 35)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
 5
 normal! 015|
 wincmd w
-exe '1resize ' . ((&lines * 30 + 35) / 70)
-exe '2resize ' . ((&lines * 36 + 35) / 70)
+exe '1resize ' . ((&lines * 29 + 34) / 68)
+exe '2resize ' . ((&lines * 35 + 34) / 68)
 tabedit .tmux/tmux-mac
 set splitbelow splitright
 wincmd _ | wincmd |
@@ -154,9 +154,9 @@ set nosplitbelow
 set nosplitright
 wincmd t
 set winminheight=1 winheight=1 winminwidth=1 winwidth=1
-exe '1resize ' . ((&lines * 64 + 35) / 70)
+exe '1resize ' . ((&lines * 64 + 34) / 68)
 exe 'vert 1resize ' . ((&columns * 30 + 33) / 66)
-exe '2resize ' . ((&lines * 64 + 35) / 70)
+exe '2resize ' . ((&lines * 64 + 34) / 68)
 exe 'vert 2resize ' . ((&columns * 35 + 33) / 66)
 argglobal
 enew
@@ -186,9 +186,9 @@ normal! zt
 2
 normal! 017|
 wincmd w
-exe '1resize ' . ((&lines * 64 + 35) / 70)
+exe '1resize ' . ((&lines * 64 + 34) / 68)
 exe 'vert 1resize ' . ((&columns * 30 + 33) / 66)
-exe '2resize ' . ((&lines * 64 + 35) / 70)
+exe '2resize ' . ((&lines * 64 + 34) / 68)
 exe 'vert 2resize ' . ((&columns * 35 + 33) / 66)
 tabnext 1
 set stal=1

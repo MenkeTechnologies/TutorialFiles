@@ -1,11 +1,10 @@
 sw_volume: 68
 audio_device_state:1:CoreAudio
 audio_device_state:1:my_fifo
-state: pause
-current: 118
-time: 15559.317000
+state: stop
+current: 100
 random: 0
-repeat: 0
+repeat: 1
 single: 0
 consume: 0
 crossfade: 5
@@ -112,8 +111,8 @@ playlist_begin
 97:Ableton/User Library/Samples/Imported/ATE Synth Hit (Dry) - 037 - C.wav
 98:Ableton/User Library/Samples/Imported/ATE Synth Hit (Dry) - 038 - C.wav
 99:Ableton/User Library/Samples/Imported/ATE Synth Hit (Dry) - 039 - C.wav
-100:Ableton/User Library/Samples/Imported/ATE Synth Hit (Dry) - 040 - C.wav
-101:Ableton/User Library/Samples/Imported/ATE Synth Hit (Dry) - 041 - C.wav
+100:Ableton/User Library/Samples/Imported/ATE Synth Hit (Dry) - 041 - C.wav
+101:Ableton/User Library/Samples/Imported/ATE Synth Hit (Dry) - 040 - C.wav
 102:Ableton/User Library/Samples/Imported/ATE Synth Hit (Dry) - 042 - C.wav
 103:Ableton/User Library/Samples/Imported/ATE Synth Hit (Dry) - 043 - C.wav
 104:Ableton/User Library/Samples/Imported/ATE Synth Hit (Dry) - 044 - C.wav

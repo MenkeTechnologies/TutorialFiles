@@ -1,6 +1,6 @@
 " ~/.vim/sessions/zshrc.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 21 February 2018 at 02:58:08.
+" Created by session.vim 2.13.1 on 24 February 2018 at 02:11:53.
 " Open this file in Vim and run :source % to restore your session.
 
 set guioptions=egmrL
@@ -12,7 +12,7 @@ if exists('g:did_indent_on') != 1 | filetype indent on | endif
 if &background != 'dark'
 	set background=dark
 endif
-if !exists('g:colors_name') || g:colors_name != 'understated' | colorscheme understated | endif
+if !exists('g:colors_name') || g:colors_name != 'darth' | colorscheme darth | endif
 call setqflist([])
 let SessionLoad = 1
 if &cp | set nocp | endif
@@ -49,12 +49,12 @@ setlocal fdl=1
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 860 - ((31 * winheight(0) + 33) / 67)
+let s:l = 906 - ((30 * winheight(0) + 32) / 65)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-860
-normal! 0
+906
+normal! 077|
 tabedit ~/grc.zsh
 set splitbelow splitright
 set nosplitbelow
@@ -70,7 +70,7 @@ setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 35 - ((32 * winheight(0) + 33) / 67)
+let s:l = 35 - ((31 * winheight(0) + 32) / 65)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -91,7 +91,7 @@ setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 37 - ((35 * winheight(0) + 33) / 67)
+let s:l = 37 - ((34 * winheight(0) + 32) / 65)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -112,7 +112,7 @@ setlocal fdl=1
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 42 - ((22 * winheight(0) + 33) / 67)
+let s:l = 42 - ((21 * winheight(0) + 32) / 65)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt

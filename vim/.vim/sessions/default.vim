@@ -1,6 +1,6 @@
 " ~/.vim/sessions/default.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 25 February 2018 at 14:41:32.
+" Created by session.vim 2.13.1 on 25 February 2018 at 16:10:33.
 " Open this file in Vim and run :source % to restore your session.
 
 set guioptions=egmrL
@@ -9,10 +9,10 @@ if exists('g:syntax_on') != 1 | syntax on | endif
 if exists('g:did_load_filetypes') != 1 | filetype on | endif
 if exists('g:did_load_ftplugin') != 1 | filetype plugin on | endif
 if exists('g:did_indent_on') != 1 | filetype indent on | endif
-if &background != 'dark'
-	set background=dark
+if &background != 'light'
+	set background=light
 endif
-if !exists('g:colors_name') || g:colors_name != 'Guardian' | colorscheme Guardian | endif
+if !exists('g:colors_name') || g:colors_name != 'automation' | colorscheme automation | endif
 call setqflist([])
 let SessionLoad = 1
 if &cp | set nocp | endif
@@ -34,21 +34,20 @@ set nosplitbelow
 wincmd t
 set winminheight=1 winheight=1 winminwidth=1 winwidth=1
 argglobal
-setlocal fdm=manual
+setlocal fdm=marker
 setlocal fde=0
 setlocal fmr={{{,}}}
 setlocal fdi=#
-setlocal fdl=0
+setlocal fdl=1
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-silent! normal! zE
-let s:l = 12 - ((11 * winheight(0) + 25) / 51)
+let s:l = 10 - ((9 * winheight(0) + 21) / 43)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-12
-normal! 010|
+10
+normal! 025|
 tabnext 1
 if exists('s:wipebuf')
 "   silent exe 'bwipe ' . s:wipebuf

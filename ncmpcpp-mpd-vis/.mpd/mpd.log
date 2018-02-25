@@ -18163,3 +18163,11 @@ Feb 25 04:16 : ffmpeg/mp3: Could not update timestamps for discarded samples.
 Feb 25 04:16 : player: played "Redstar -  All That I Am (Original Mix).mp3"
 Feb 25 04:16 : ffmpeg/mp3: Could not update timestamps for skipped samples.
 Feb 25 04:16 : player: played "Ableton/User Library/Samples/Recorded/0001 12-Audio-1.wav"
+Feb 25 04:37 : client: [18] closed
+Feb 25 04:37 : client: [17] closed
+Feb 25 04:37 : client: [15] closed
+Feb 25 04:37 : client: [16] closed
+Feb 25 04:38 : client: [19] opened from 127.0.0.1:55267
+Feb 25 04:38 : client: [20] opened from 127.0.0.1:55269
+Feb 25 04:38 : client: [21] opened from 127.0.0.1:55271
+Feb 25 04:38 : client: [22] opened from 127.0.0.1:55273

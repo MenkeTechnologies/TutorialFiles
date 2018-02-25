@@ -1,6 +1,6 @@
 " ~/.vim/sessions/aliases.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 25 February 2018 at 06:09:07.
+" Created by session.vim 2.13.1 on 25 February 2018 at 16:19:04.
 " Open this file in Vim and run :source % to restore your session.
 
 set guioptions=egmrL
@@ -51,11 +51,11 @@ setlocal fdl=3
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 535 - ((15 * winheight(0) + 34) / 68)
+let s:l = 503 - ((34 * winheight(0) + 34) / 68)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-535
+503
 normal! 0
 tabedit ~/.tokens.sh
 set splitbelow splitright

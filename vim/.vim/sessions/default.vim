@@ -1,6 +1,6 @@
 " ~/.vim/sessions/default.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 25 February 2018 at 03:33:53.
+" Created by session.vim 2.13.1 on 25 February 2018 at 14:41:32.
 " Open this file in Vim and run :source % to restore your session.
 
 set guioptions=egmrL
@@ -12,42 +12,43 @@ if exists('g:did_indent_on') != 1 | filetype indent on | endif
 if &background != 'dark'
 	set background=dark
 endif
-if !exists('g:colors_name') || g:colors_name != 'iceberg' | colorscheme iceberg | endif
+if !exists('g:colors_name') || g:colors_name != 'Guardian' | colorscheme Guardian | endif
 call setqflist([])
 let SessionLoad = 1
 if &cp | set nocp | endif
 let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0
 let v:this_session=expand("<sfile>:p")
 silent only
-cd ~/.vim/bundle
+cd ~/Desktop
 if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
-badd +0 repmo-vim/autoload/repmo.vim
+badd +0 t.sh
 argglobal
 silent! argdel *
-$argadd repmo-vim/autoload/repmo.vim
-edit repmo-vim/autoload/repmo.vim
+$argadd t.sh
+edit t.sh
 set splitbelow splitright
 set nosplitbelow
 wincmd t
 set winminheight=1 winheight=1 winminwidth=1 winwidth=1
 argglobal
-setlocal fdm=marker
+setlocal fdm=manual
 setlocal fde=0
 setlocal fmr={{{,}}}
 setlocal fdi=#
-setlocal fdl=1
+setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 34 - ((24 * winheight(0) + 23) / 47)
+silent! normal! zE
+let s:l = 12 - ((11 * winheight(0) + 25) / 51)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-34
-normal! 0
+12
+normal! 010|
 tabnext 1
 if exists('s:wipebuf')
 "   silent exe 'bwipe ' . s:wipebuf

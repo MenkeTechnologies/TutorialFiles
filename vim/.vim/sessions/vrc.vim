@@ -1,6 +1,6 @@
 " ~/.vim/sessions/vrc.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 25 February 2018 at 06:09:43.
+" Created by session.vim 2.13.1 on 25 February 2018 at 15:05:51.
 " Open this file in Vim and run :source % to restore your session.
 
 set guioptions=egmrL
@@ -12,7 +12,7 @@ if exists('g:did_indent_on') != 1 | filetype indent on | endif
 if &background != 'dark'
 	set background=dark
 endif
-if !exists('g:colors_name') || g:colors_name != 'forneus' | colorscheme forneus | endif
+if !exists('g:colors_name') || g:colors_name != 'getafe' | colorscheme getafe | endif
 call setqflist([])
 let SessionLoad = 1
 if &cp | set nocp | endif
@@ -64,12 +64,12 @@ silent! normal! zo
 silent! normal! zo
 611
 silent! normal! zo
-let s:l = 673 - ((35 * winheight(0) + 34) / 68)
+let s:l = 666 - ((7 * winheight(0) + 34) / 68)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-673
-normal! 0
+666
+normal! 061|
 tabedit ~/.config/powerline/themes/vim/default.json
 set splitbelow splitright
 set nosplitbelow
@@ -148,12 +148,12 @@ setlocal fdl=1
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 179 - ((39 * winheight(0) + 34) / 68)
+let s:l = 240 - ((28 * winheight(0) + 34) / 68)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-179
-normal! 03|
+240
+normal! 02|
 tabnext 1
 set stal=1
 if exists('s:wipebuf')

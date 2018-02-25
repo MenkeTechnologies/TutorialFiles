@@ -1,6 +1,6 @@
 " ~/.vim/sessions/aliases.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 24 February 2018 at 02:02:26.
+" Created by session.vim 2.13.1 on 24 February 2018 at 17:04:22.
 " Open this file in Vim and run :source % to restore your session.
 
 set guioptions=egmrL
@@ -9,10 +9,10 @@ if exists('g:syntax_on') != 1 | syntax on | endif
 if exists('g:did_load_filetypes') != 1 | filetype on | endif
 if exists('g:did_load_ftplugin') != 1 | filetype plugin on | endif
 if exists('g:did_indent_on') != 1 | filetype indent on | endif
-if &background != 'dark'
-	set background=dark
+if &background != 'light'
+	set background=light
 endif
-if !exists('g:colors_name') || g:colors_name != 'kkruby' | colorscheme kkruby | endif
+if !exists('g:colors_name') || g:colors_name != 'eclipse' | colorscheme eclipse | endif
 call setqflist([])
 let SessionLoad = 1
 if &cp | set nocp | endif
@@ -51,12 +51,12 @@ setlocal fdl=3
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 695 - ((32 * winheight(0) + 32) / 65)
+let s:l = 27 - ((26 * winheight(0) + 32) / 64)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-695
-normal! 0
+27
+normal! 031|
 tabedit ~/.tokens.sh
 set splitbelow splitright
 set nosplitbelow
@@ -72,7 +72,7 @@ setlocal fdl=1
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 36 - ((27 * winheight(0) + 32) / 65)
+let s:l = 36 - ((27 * winheight(0) + 32) / 64)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -93,7 +93,7 @@ setlocal fdl=1
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 32) / 65)
+let s:l = 1 - ((0 * winheight(0) + 32) / 64)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -114,7 +114,7 @@ setlocal fdl=1
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 32) / 65)
+let s:l = 1 - ((0 * winheight(0) + 32) / 64)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -135,7 +135,7 @@ setlocal fdl=1
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 32) / 65)
+let s:l = 1 - ((0 * winheight(0) + 32) / 64)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt

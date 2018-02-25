@@ -1,6 +1,6 @@
 " ~/.vim/sessions/vrc.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 24 February 2018 at 02:02:27.
+" Created by session.vim 2.13.1 on 25 February 2018 at 05:06:47.
 " Open this file in Vim and run :source % to restore your session.
 
 set guioptions=egmrL
@@ -64,14 +64,12 @@ silent! normal! zo
 silent! normal! zo
 611
 silent! normal! zo
-723
-silent! normal! zo
-let s:l = 716 - ((24 * winheight(0) + 32) / 65)
+let s:l = 671 - ((33 * winheight(0) + 34) / 68)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-716
-normal! 062|
+671
+normal! 022|
 tabedit ~/.config/powerline/themes/vim/default.json
 set splitbelow splitright
 set nosplitbelow
@@ -87,7 +85,7 @@ setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 32) / 65)
+let s:l = 1 - ((0 * winheight(0) + 34) / 68)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -108,7 +106,7 @@ setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 12 - ((11 * winheight(0) + 32) / 65)
+let s:l = 12 - ((11 * winheight(0) + 34) / 68)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -129,7 +127,7 @@ setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 23 - ((20 * winheight(0) + 32) / 65)
+let s:l = 23 - ((21 * winheight(0) + 34) / 68)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -150,7 +148,7 @@ setlocal fdl=1
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 179 - ((37 * winheight(0) + 32) / 65)
+let s:l = 179 - ((39 * winheight(0) + 34) / 68)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt

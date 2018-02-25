@@ -1,6 +1,6 @@
 " ~/.vim/sessions/default.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 24 February 2018 at 13:30:06.
+" Created by session.vim 2.13.1 on 25 February 2018 at 03:33:53.
 " Open this file in Vim and run :source % to restore your session.
 
 set guioptions=egmrL
@@ -12,23 +12,23 @@ if exists('g:did_indent_on') != 1 | filetype indent on | endif
 if &background != 'dark'
 	set background=dark
 endif
-if !exists('g:colors_name') || g:colors_name != 'primary' | colorscheme primary | endif
+if !exists('g:colors_name') || g:colors_name != 'iceberg' | colorscheme iceberg | endif
 call setqflist([])
 let SessionLoad = 1
 if &cp | set nocp | endif
 let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0
 let v:this_session=expand("<sfile>:p")
 silent only
-cd ~/
+cd ~/.vim/bundle
 if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
-badd +0 .tokens.sh
+badd +0 repmo-vim/autoload/repmo.vim
 argglobal
 silent! argdel *
-$argadd .tokens.sh
-edit .tokens.sh
+$argadd repmo-vim/autoload/repmo.vim
+edit repmo-vim/autoload/repmo.vim
 set splitbelow splitright
 set nosplitbelow
 wincmd t
@@ -42,11 +42,11 @@ setlocal fdl=1
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 16 - ((15 * winheight(0) + 11) / 23)
+let s:l = 34 - ((24 * winheight(0) + 23) / 47)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-16
+34
 normal! 0
 tabnext 1
 if exists('s:wipebuf')

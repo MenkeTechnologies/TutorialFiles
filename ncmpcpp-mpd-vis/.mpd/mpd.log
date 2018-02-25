@@ -18171,3 +18171,13 @@ Feb 25 04:38 : client: [19] opened from 127.0.0.1:55267
 Feb 25 04:38 : client: [20] opened from 127.0.0.1:55269
 Feb 25 04:38 : client: [21] opened from 127.0.0.1:55271
 Feb 25 04:38 : client: [22] opened from 127.0.0.1:55273
+Feb 25 05:18 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Feb 25 05:18 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Feb 25 05:19 : player: played "TRANCE & TECH TRANCE ENERGY MUSIC MIX-YiTMZ-F8WJ0.mp3"
+Feb 25 05:50 : player: played "Stellar Evolution _ Tech Trance Mix #1--DyuwcxMpHY.mp3"
+Feb 25 05:52 : config: inotify: auto_update was disabled. enable during compilation phase
+Feb 25 05:52 : config: option 'enabled' on line 29 was not recognized
+Feb 25 05:54 : client: [0] opened from 127.0.0.1:49341
+Feb 25 05:54 : client: [1] opened from 127.0.0.1:49343
+Feb 25 05:54 : client: [2] opened from 127.0.0.1:49346
+Feb 25 05:54 : client: [3] opened from 127.0.0.1:49363

@@ -1,6 +1,6 @@
 " ~/.vim/sessions/aliases.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 25 February 2018 at 16:19:04.
+" Created by session.vim 2.13.1 on 28 February 2018 at 13:18:02.
 " Open this file in Vim and run :source % to restore your session.
 
 set guioptions=egmrL
@@ -25,10 +25,10 @@ if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
 endif
 set shortmess=aoO
 badd +0 ~/.shell_aliases_functions.sh
+badd +1 ~/.tokens.sh
 badd +6 ~/Documents/shellScripts/updater.sh
 badd +32 ~/.config/powerline/themes/tmux/default.json
 badd +4 ~/.iftop.conf
-badd +1 ~/.tokens.sh
 badd +1 ~/Documents/shellScripts/macOnly/tor.sh
 badd +1 /Volumes/SD/wcc/cps/javaTips/printfTips.txt
 badd +1 /Volumes/SD/wcc/cps/javaTips/gradle.txt
@@ -51,11 +51,11 @@ setlocal fdl=3
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 503 - ((34 * winheight(0) + 34) / 68)
+let s:l = 724 - ((63 * winheight(0) + 35) / 70)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-503
+724
 normal! 0
 tabedit ~/.tokens.sh
 set splitbelow splitright
@@ -72,12 +72,12 @@ setlocal fdl=1
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 36 - ((29 * winheight(0) + 34) / 68)
+let s:l = 36 - ((29 * winheight(0) + 35) / 70)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
 36
-normal! 041|
+normal! 038|
 tabedit ~/Documents/shellScripts/updater.sh
 set splitbelow splitright
 set nosplitbelow
@@ -93,11 +93,11 @@ setlocal fdl=1
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 34) / 68)
+let s:l = 96 - ((17 * winheight(0) + 35) / 70)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-1
+96
 normal! 0
 tabedit ~/Documents/shellScripts/macOnly/tor.sh
 set splitbelow splitright
@@ -114,7 +114,7 @@ setlocal fdl=1
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 34) / 68)
+let s:l = 1 - ((0 * winheight(0) + 35) / 70)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -135,13 +135,13 @@ setlocal fdl=1
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 34) / 68)
+let s:l = 1 - ((0 * winheight(0) + 35) / 70)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
 1
 normal! 0
-tabnext 1
+tabnext 3
 set stal=1
 if exists('s:wipebuf')
 "   silent exe 'bwipe ' . s:wipebuf
@@ -160,7 +160,7 @@ let &so = s:so_save | let &siso = s:siso_save
 " by :mksession out of the box).
 
 1wincmd w
-tabnext 1
+tabnext 3
 if exists('s:wipebuf')
   if empty(bufname(s:wipebuf))
 if !getbufvar(s:wipebuf, '&modified')

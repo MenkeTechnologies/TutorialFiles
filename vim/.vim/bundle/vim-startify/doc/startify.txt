@@ -647,11 +647,13 @@ $PWD and $OLDPWD are ignored.
 ==============================================================================
 AUTOCMD                                                       *startify-autocmd*
 
-In case you want to alter the startify buffer to cause all kinds of mayhem, an
-user autocmd is issued. You can hook into it like this:
+When the Startify buffer is fully set up, it emits an User event. You can hook
+into that to customize Startify even further:
 >
     autocmd User Startified let &l:stl = ' This statusline rocks!'
 <
+Or use it to disable single mappings: |startify-faq-16|.
+
 NOTE: Autocmds don't nest by default. If you use any command that triggers new
 events, be sure to add "nested": |autocmd-nested|.
 
@@ -807,6 +809,7 @@ FAQ                                                               *startify-faq*
     |startify-faq-13|  How to disable random quotes header?
     |startify-faq-14|  NERDTree with NERDTreeTabs does not work in gvim!
     |startify-faq-15|  Startify is cluttered with help files!
+    |startify-faq-16|  How to disable single mappings?
 
 ------------------------------------------------------------------------------
                                                                *startify-faq-01*
@@ -1012,6 +1015,15 @@ This works for most use cases, but not for all.
 If the default fails for you and the Startify buffer is cluttered with help
 files, add that path to the skiplist yourself: |g:startify_skiplist|.
 
+------------------------------------------------------------------------------
+                                                               *startify-faq-16*
+How to disable single mappings?~
+
+Use |startify-autocmd|:
+>
+    autocmd User Startified for key in ['b','s','t','v'] |
+          \ execute 'nunmap <buffer>' key | endfor
+<
 ==============================================================================
 EXAMPLE                                                       *startify-example*
 

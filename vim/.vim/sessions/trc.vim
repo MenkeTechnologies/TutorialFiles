@@ -1,6 +1,6 @@
 " ~/.vim/sessions/trc.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 28 February 2018 at 13:18:04.
+" Created by session.vim 2.13.1 on 01 March 2018 at 00:53:06.
 " Open this file in Vim and run :source % to restore your session.
 
 set guioptions=egmrL
@@ -49,12 +49,12 @@ setlocal fdl=1
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 27 - ((26 * winheight(0) + 35) / 70)
+let s:l = 28 - ((26 * winheight(0) + 34) / 68)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-27
-normal! 063|
+28
+normal! 028|
 tabedit .config/powerline/themes/tmux/default.json
 set splitbelow splitright
 set nosplitbelow
@@ -70,7 +70,7 @@ setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 15 - ((14 * winheight(0) + 34) / 69)
+let s:l = 15 - ((14 * winheight(0) + 34) / 68)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -91,7 +91,7 @@ setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 20 - ((16 * winheight(0) + 34) / 69)
+let s:l = 20 - ((16 * winheight(0) + 34) / 68)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -107,8 +107,8 @@ set nosplitbelow
 set nosplitright
 wincmd t
 set winminheight=1 winheight=1 winminwidth=1 winwidth=1
-exe '1resize ' . ((&lines * 30 + 36) / 73)
-exe '2resize ' . ((&lines * 38 + 36) / 73)
+exe '1resize ' . ((&lines * 30 + 35) / 71)
+exe '2resize ' . ((&lines * 37 + 35) / 71)
 argglobal
 setlocal fdm=marker
 setlocal fde=0
@@ -135,15 +135,15 @@ setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 5 - ((4 * winheight(0) + 19) / 38)
+let s:l = 5 - ((4 * winheight(0) + 18) / 37)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
 5
 normal! 015|
 wincmd w
-exe '1resize ' . ((&lines * 30 + 36) / 73)
-exe '2resize ' . ((&lines * 38 + 36) / 73)
+exe '1resize ' . ((&lines * 30 + 35) / 71)
+exe '2resize ' . ((&lines * 37 + 35) / 71)
 tabedit .tmux/tmux-mac
 set splitbelow splitright
 wincmd _ | wincmd |
@@ -154,10 +154,8 @@ set nosplitbelow
 set nosplitright
 wincmd t
 set winminheight=1 winheight=1 winminwidth=1 winwidth=1
-exe '1resize ' . ((&lines * 64 + 36) / 73)
-exe 'vert 1resize ' . ((&columns * 31 + 33) / 67)
-exe '2resize ' . ((&lines * 64 + 36) / 73)
-exe 'vert 2resize ' . ((&columns * 35 + 33) / 67)
+exe 'vert 1resize ' . ((&columns * 30 + 33) / 66)
+exe 'vert 2resize ' . ((&columns * 35 + 33) / 66)
 argglobal
 enew
 " file NERD_tree_1
@@ -179,17 +177,15 @@ setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 2 - ((1 * winheight(0) + 32) / 64)
+let s:l = 2 - ((1 * winheight(0) + 34) / 68)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
 2
 normal! 017|
 wincmd w
-exe '1resize ' . ((&lines * 64 + 36) / 73)
-exe 'vert 1resize ' . ((&columns * 31 + 33) / 67)
-exe '2resize ' . ((&lines * 64 + 36) / 73)
-exe 'vert 2resize ' . ((&columns * 35 + 33) / 67)
+exe 'vert 1resize ' . ((&columns * 30 + 33) / 66)
+exe 'vert 2resize ' . ((&columns * 35 + 33) / 66)
 tabnext 1
 set stal=1
 if exists('s:wipebuf')
@@ -220,7 +216,7 @@ if !getbufvar(s:bufnr_save, '&modified')
   endif
 endif
 execute "cd" fnameescape(s:cwd_save)
-1resize 70|vert 1resize 31|2resize 70|vert 2resize 35|
+1resize 68|vert 1resize 30|2resize 68|vert 2resize 35|
 1wincmd w
 tabnext 1
 if exists('s:wipebuf')

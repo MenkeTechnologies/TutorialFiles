@@ -18225,3 +18225,88 @@ Feb 27 22:55 : client: [15] opened from 127.0.0.1:49528
 Feb 27 22:55 : client: [16] opened from 127.0.0.1:49530
 Feb 27 22:55 : client: [17] opened from 127.0.0.1:49535
 Feb 28 00:04 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Feb 28 17:57 : config: inotify: auto_update was disabled. enable during compilation phase
+Feb 28 17:57 : config: option 'enabled' on line 29 was not recognized
+Feb 28 17:58 : client: [0] opened from 127.0.0.1:49329
+Feb 28 17:58 : client: [1] opened from 127.0.0.1:49335
+Feb 28 17:58 : client: [2] opened from 127.0.0.1:49338
+Feb 28 17:59 : client: [3] opened from 127.0.0.1:49355
+Feb 28 18:03 : client: [0] closed
+Feb 28 18:03 : client: [1] closed
+Feb 28 18:03 : client: [2] closed
+Feb 28 18:03 : client: [3] closed
+Feb 28 18:03 : client: [4] opened from 127.0.0.1:49508
+Feb 28 18:03 : client: [5] opened from 127.0.0.1:49515
+Feb 28 18:03 : client: [6] opened from 127.0.0.1:49517
+Feb 28 18:03 : client: [7] opened from 127.0.0.1:49519
+Feb 28 18:06 : client: [4] closed
+Feb 28 18:06 : client: [7] closed
+Feb 28 18:06 : client: [5] closed
+Feb 28 18:06 : client: [6] closed
+Feb 28 18:06 : client: [8] opened from 127.0.0.1:49692
+Feb 28 18:06 : client: [9] opened from 127.0.0.1:49699
+Feb 28 18:06 : client: [10] opened from 127.0.0.1:49701
+Feb 28 18:06 : client: [11] opened from 127.0.0.1:49703
+Feb 28 18:46 : client: [8] closed
+Feb 28 18:46 : client: [11] closed
+Feb 28 18:46 : client: [9] closed
+Feb 28 18:46 : client: [10] closed
+Feb 28 19:42 : client: [12] opened from 127.0.0.1:51318
+Feb 28 19:42 : client: [13] opened from 127.0.0.1:51326
+Feb 28 19:42 : client: [14] opened from 127.0.0.1:51328
+Feb 28 19:42 : client: [15] opened from 127.0.0.1:51341
+Feb 28 19:45 : client: [12] closed
+Feb 28 19:45 : client: [14] closed
+Feb 28 19:45 : client: [15] closed
+Feb 28 19:45 : client: [13] closed
+Feb 28 19:45 : client: [16] opened from 127.0.0.1:51507
+Feb 28 19:45 : client: [17] opened from 127.0.0.1:51510
+Feb 28 19:45 : client: [18] opened from 127.0.0.1:51512
+Feb 28 19:46 : client: [19] opened from 127.0.0.1:51530
+Feb 28 20:02 : client: [16] closed
+Feb 28 20:02 : client: [17] closed
+Feb 28 20:02 : client: [18] closed
+Feb 28 20:02 : client: [19] closed
+Feb 28 20:03 : client: [20] opened from 127.0.0.1:51889
+Feb 28 20:03 : client: [21] opened from 127.0.0.1:51895
+Feb 28 20:03 : client: [22] opened from 127.0.0.1:51897
+Feb 28 20:03 : client: [23] opened from 127.0.0.1:51899
+Feb 28 22:29 : client: [20] closed
+Feb 28 22:29 : client: [23] closed
+Feb 28 22:29 : client: [21] closed
+Feb 28 22:29 : client: [22] closed
+Feb 28 22:31 : player: played "♫ Best Uplifting Trance of 2017 l Top 50 Yearmix 2017 ♫-wzTSyUT2Qwc.mp3"
+Feb 28 22:32 : config: inotify: auto_update was disabled. enable during compilation phase
+Feb 28 22:32 : config: option 'enabled' on line 29 was not recognized
+Feb 28 22:34 : client: [0] opened from 127.0.0.1:49312
+Feb 28 22:34 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Feb 28 22:34 : client: [0] closed
+Feb 28 22:38 : client: [1] opened from 127.0.0.1:49425
+Feb 28 22:38 : client: [2] opened from 127.0.0.1:49431
+Feb 28 22:38 : client: [3] opened from 127.0.0.1:49433
+Feb 28 22:38 : client: [4] opened from 127.0.0.1:49435
+Feb 28 22:39 : client: [3] closed
+Feb 28 22:39 : client: [5] opened from 127.0.0.1:49527
+Feb 28 22:43 : client: [1] closed
+Feb 28 22:43 : client: [2] closed
+Feb 28 22:43 : client: [4] closed
+Feb 28 22:43 : client: [5] closed
+Feb 28 22:56 : client: [6] opened from 127.0.0.1:49886
+Feb 28 22:56 : client: [7] opened from 127.0.0.1:49893
+Feb 28 22:56 : client: [8] opened from 127.0.0.1:49895
+Feb 28 22:56 : client: [9] opened from 127.0.0.1:49897
+Feb 28 23:00 : client: [6] closed
+Feb 28 23:00 : client: [8] closed
+Feb 28 23:00 : client: [9] closed
+Feb 28 23:00 : client: [7] closed
+Feb 28 23:01 : player: played "♫ Best Uplifting Trance of 2017 l Top 50 Yearmix 2017 ♫-wzTSyUT2Qwc.mp3"
+Feb 28 23:02 : config: inotify: auto_update was disabled. enable during compilation phase
+Feb 28 23:02 : config: option 'enabled' on line 29 was not recognized
+Feb 28 23:05 : client: [0] opened from 127.0.0.1:49324
+Feb 28 23:05 : client: [1] opened from 127.0.0.1:49330
+Feb 28 23:05 : client: [2] opened from 127.0.0.1:49332
+Feb 28 23:05 : client: [3] opened from 127.0.0.1:49334
+Feb 28 23:13 : client: [0] closed
+Feb 28 23:13 : client: [1] closed
+Feb 28 23:13 : client: [2] closed
+Feb 28 23:13 : client: [3] closed

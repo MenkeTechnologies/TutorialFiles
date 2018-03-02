@@ -18328,3 +18328,18 @@ Mar 01 20:49 : client: [0] opened from 127.0.0.1:49344
 Mar 01 20:49 : client: [1] opened from 127.0.0.1:49351
 Mar 01 20:49 : client: [2] opened from 127.0.0.1:49353
 Mar 01 20:49 : client: [3] opened from 127.0.0.1:49355
+Mar 02 02:04 : client: [0] closed
+Mar 02 02:04 : client: [3] closed
+Mar 02 02:04 : client: [2] closed
+Mar 02 02:04 : client: [1] closed
+Mar 02 02:05 : client: [4] opened from 127.0.0.1:51579
+Mar 02 02:05 : client: [5] opened from 127.0.0.1:51586
+Mar 02 02:05 : client: [6] opened from 127.0.0.1:51588
+Mar 02 02:05 : client: [7] opened from 127.0.0.1:51590
+Mar 02 11:15 : player: played "♫ Best Uplifting Trance of 2017 l Top 50 Yearmix 2017 ♫-wzTSyUT2Qwc.mp3"
+Mar 02 11:22 : config: inotify: auto_update was disabled. enable during compilation phase
+Mar 02 11:22 : config: option 'enabled' on line 29 was not recognized
+Mar 02 11:25 : client: [0] opened from 127.0.0.1:49500
+Mar 02 11:25 : client: [1] opened from 127.0.0.1:49507
+Mar 02 11:25 : client: [2] opened from 127.0.0.1:49509
+Mar 02 11:25 : client: [3] opened from 127.0.0.1:49511

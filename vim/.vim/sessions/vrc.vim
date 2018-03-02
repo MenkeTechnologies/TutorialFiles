@@ -1,6 +1,6 @@
 " ~/.vim/sessions/vrc.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 01 March 2018 at 00:53:04.
+" Created by session.vim 2.13.1 on 02 March 2018 at 02:04:44.
 " Open this file in Vim and run :source % to restore your session.
 
 set guioptions=egmrL
@@ -48,42 +48,16 @@ setlocal fdm=marker
 setlocal fde=0
 setlocal fmr={{{,}}}
 setlocal fdi=#
-setlocal fdl=0
+setlocal fdl=5
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-331
-silent! normal! zo
-335
-silent! normal! zo
-336
-silent! normal! zo
-337
-silent! normal! zo
-338
-silent! normal! zo
-342
-silent! normal! zo
-594
-silent! normal! zo
-627
-silent! normal! zo
-644
-silent! normal! zo
-711
-silent! normal! zo
-752
-silent! normal! zo
-769
-silent! normal! zo
-801
-silent! normal! zo
-let s:l = 796 - ((25 * winheight(0) + 34) / 68)
+let s:l = 741 - ((60 * winheight(0) + 35) / 70)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-796
-normal! 032|
+741
+normal! 0
 tabedit ~/.config/powerline/themes/vim/default.json
 set splitbelow splitright
 set nosplitbelow
@@ -99,7 +73,7 @@ setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 34) / 68)
+let s:l = 1 - ((0 * winheight(0) + 35) / 70)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -120,12 +94,12 @@ setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 12 - ((11 * winheight(0) + 34) / 68)
+let s:l = 13 - ((0 * winheight(0) + 35) / 70)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-12
-normal! 024|
+13
+normal! 0
 tabedit ~/.muttrc
 set splitbelow splitright
 set nosplitbelow
@@ -141,7 +115,7 @@ setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 23 - ((21 * winheight(0) + 34) / 68)
+let s:l = 23 - ((22 * winheight(0) + 35) / 70)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -162,12 +136,12 @@ setlocal fdl=1
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 240 - ((28 * winheight(0) + 34) / 68)
+let s:l = 1 - ((0 * winheight(0) + 35) / 70)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-240
-normal! 02|
+1
+normal! 0
 tabnext 1
 set stal=1
 if exists('s:wipebuf')

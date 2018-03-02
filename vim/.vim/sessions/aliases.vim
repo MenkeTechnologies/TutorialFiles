@@ -1,6 +1,6 @@
 " ~/.vim/sessions/aliases.vim:
 " Vim session script.
-" Created by session.vim 2.13.1 on 01 March 2018 at 00:53:18.
+" Created by session.vim 2.13.1 on 02 March 2018 at 02:04:44.
 " Open this file in Vim and run :source % to restore your session.
 
 set guioptions=egmrL
@@ -51,12 +51,12 @@ setlocal fdl=3
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 509 - ((20 * winheight(0) + 34) / 68)
+let s:l = 671 - ((22 * winheight(0) + 35) / 70)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-509
-normal! 012|
+671
+normal! 0
 tabedit ~/.tokens.sh
 set splitbelow splitright
 set nosplitbelow
@@ -72,12 +72,12 @@ setlocal fdl=1
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 36 - ((28 * winheight(0) + 34) / 68)
+let s:l = 205 - ((36 * winheight(0) + 35) / 70)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-36
-normal! 031|
+205
+normal! 012|
 tabedit ~/Documents/shellScripts/updater.sh
 set splitbelow splitright
 set nosplitbelow
@@ -93,12 +93,12 @@ setlocal fdl=1
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 175 - ((33 * winheight(0) + 34) / 68)
+let s:l = 179 - ((40 * winheight(0) + 35) / 70)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-175
-normal! 097|
+179
+normal! 032|
 tabedit ~/Documents/shellScripts/macOnly/tor.sh
 set splitbelow splitright
 set nosplitbelow
@@ -114,7 +114,7 @@ setlocal fdl=1
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 34) / 68)
+let s:l = 1 - ((0 * winheight(0) + 35) / 70)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
@@ -135,13 +135,13 @@ setlocal fdl=1
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-let s:l = 1 - ((0 * winheight(0) + 34) / 68)
+let s:l = 1 - ((0 * winheight(0) + 35) / 70)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
 1
 normal! 0
-tabnext 3
+tabnext 1
 set stal=1
 if exists('s:wipebuf')
 "   silent exe 'bwipe ' . s:wipebuf
@@ -160,7 +160,7 @@ let &so = s:so_save | let &siso = s:siso_save
 " by :mksession out of the box).
 
 1wincmd w
-tabnext 3
+tabnext 1
 if exists('s:wipebuf')
   if empty(bufname(s:wipebuf))
 if !getbufvar(s:wipebuf, '&modified')

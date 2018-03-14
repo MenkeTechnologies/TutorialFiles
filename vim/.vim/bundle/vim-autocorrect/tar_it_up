@@ -1,2 +1,0 @@
-ruby generator.rb
-tar -cf autocorrect.tar autocorrect.dat generator.rb autocorrect.vim README

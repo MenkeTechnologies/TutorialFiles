@@ -93,7 +93,7 @@ plugins=(fzf-zsh zsh-more-completions zsh-completions zsh-syntax-highlighting zs
 [[ "$(uname)" == "Darwin" ]] && {
     plugins+=(zsh-xcode-completions brew osx pod)
 } || {
-
+    #linux
     plugins+=(systemd)
     distroName="$(grep '^ID=' /etc/os-release | cut -d= -f2 | tr -d \")"
 
@@ -106,6 +106,9 @@ plugins=(fzf-zsh zsh-more-completions zsh-completions zsh-syntax-highlighting zs
             ;;
         (centos|rhel) 
             plugins+=(yum dnf)
+            ;;
+        (opensuse) 
+            plugins+=(suse z)
             ;;
         (fedora) 
             plugins+=(yum fedora dnf)
@@ -126,6 +129,7 @@ source $ZSH/oh-my-zsh.sh
 #has all my aliases and functions
 
 source ~/.shell_aliases_functions.sh
+alias -r > "$HOME/.common_aliases"
 
 #}}}***********************************************************
 
@@ -186,7 +190,7 @@ tutsUpdate() {
             zle .accept-line
         else
             zle .kill-whole-line
-            BUFFER="( tutorialConfigUpdater.sh '$commitMessage' >> \"$LOGFILE\" 2>&1 & )"
+            BUFFER="( tutorialConfigUpdater.sh '${commitMessage}' >> \"$LOGFILE\" 2>&1 & )"
             zle .accept-line
         fi
     else
@@ -231,7 +235,7 @@ expand-aliases() {
     (($+functions[_expand-aliases])) &&
     BUFFER=${functions[_expand-aliases]#$'\t'} &&
     CURSOR=$#BUFFER
-    }
+}
 __COUNTER=0
 
 changeQuotes(){
@@ -377,19 +381,27 @@ basicSedSub(){
 }
 
 clipboard(){
+    if [[ -z "$BUFFER" ]]; then
+        return 1
+    fi
+
     [[ "$(uname)" == Darwin ]] && {
         print -sr "$BUFFER"
-        printf "$BUFFER" | pbcopy
+        print -n "$BUFFER" | pbcopy
         echo
-        printf  "\x1b[0;34mCopied \x1b[1m\"$BUFFER\"\x1b[0;34m to System Clipboard!\n"
+        print -n "\x1b[0;34mCopied \x1b[1m\""
+        print -n "$BUFFER"
+        print  "\"\x1b[0;34m to System Clipboard!"
         echo
         zle .redisplay
     }  || {
         type xclip &> /dev/null && {
         print -sr "$BUFFER"
-        printf "$BUFFER" | xclip -selection c -i
+        print -n "$BUFFER" | xclip -selection c -i
         echo
-        printf  "\x1b[0;34mCopied \x1b[1m\"$BUFFER\"\x1b[0;34m to System Clipboard!\n"
+        print -n "\x1b[0;34mCopied \x1b[1m\""
+        print -nR "$BUFFER"
+        print  "\"\x1b[0;34m to System Clipboard!"
         echo
         zle .redisplay
         } || { 
@@ -517,9 +529,33 @@ deleteMatching(){
 
 }
 
+runner() {
+
+    if [[ ! -z "$BUFFER" ]]; then
+        tutsUpdate
+    else
+        zle .kill-whole-line
+        BUFFER=ge
+        zle .accept-line
+    fi
+}
+
+updater() {
+    zle .kill-whole-line
+    BUFFER=u8
+    zle .accept-line
+}
+
 zle -N surround
 zle -N deleteMatching
+zle -N updater
+zle -N runner
 
+bindkey -M viins "\e^O" runner
+bindkey -M vicmd "\e^O" runner
+
+bindkey -M viins "\e^P" updater
+bindkey -M vicmd "\e^P" updater
 #vim  mode
 bindkey -v
 
@@ -545,8 +581,11 @@ bindkey -M vicmd '^O' edit-command-line
 bindkey -M viins '^F' fzf-file-widget
 bindkey -M vicmd '^F' fzf-file-widget
 
-bindkey -M viins '^H' fzf-history-widget
-bindkey -M vicmd '^H' fzf-history-widget
+bindkey -M viins '^N' fzf-history-widget
+bindkey -M vicmd '^N' fzf-history-widget
+
+bindkey -M viins '^Y' fzf-cd-widget
+bindkey -M vicmd '^Y' fzf-cd-widget
 
 zle -N changeQuotes
 zle -N alternateQuotes
@@ -587,8 +626,8 @@ bindkey '\e[1;2D' sub
 #press both escape and control f then oo
 bindkey '\e^f' sub
 #bound to control spacebar
-bindkey -M vicmd '^@' sshRegain
-bindkey -M viins '^@' sshRegain
+bindkey -M vicmd '\e ' sshRegain
+bindkey -M viins '\e ' sshRegain
 
 #F1 key
 bindkey '\eOP' updater
@@ -596,15 +635,23 @@ bindkey '\eOP' updater
 bindkey '\eOQ' sub
 
 [[ "$(uname)" == Darwin ]] && {
+    PARENT_PROCESS="$(ps -ef | awk "\$2 == $PPID{print \$8}")"
+    echo "$PARENT_PROCESS" | egrep -q 'login|tmux' && {
     #Ctrl plus arrow keys
-    bindkey '\e[1;5A' gitfunc
-    bindkey '\e[1;5B' updater
-    bindkey '\e[1;5C' tutsUpdate
-    bindkey '\e[1;5D' dbz
+        bindkey '\e[1;5A' gitfunc
+        bindkey '\e[1;5B' updater
+        bindkey '\e[1;5C' tutsUpdate
+        bindkey '\e[1;5D' dbz
+    } || {
+        bindkey '\e[5A' gitfunc
+        bindkey '\e[5B' updater
+        bindkey '\e[5C' tutsUpdate
+        bindkey '\e[5D' dbz
+    }
 }
 
 bindkey '^S' gitfunc
-bindkey '```' sudo-command-line
+bindkey '^N' sudo-command-line
 bindkey -M viins '\e^T' transpose-words
 bindkey -M vicmd '\e^T' transpose-words
 bindkey -M viins '^T' transpose-chars
@@ -628,7 +675,26 @@ my-accept-line () {
         print "$BUFFER" | egrep -q "$regex" && {
             __WILL_CLEAR=true
         }
-        done
+    done
+
+    [[ -z "$__GLOBAL_ALIAS_PREFIX" ]] && {
+    
+        [[ -z "$BUFFER" ]] && zle .accept-line && return 0
+
+        mywords=("${(z)BUFFER}")
+
+        if [[ ! -z $(alias -g $mywords[1]) ]];then
+            line="$(cat $HOME/.common_aliases | grep "^$mywords[1]=.*" | awk -F= '{print $2}')"
+            if [[ -z $line ]];then
+                #fxn
+                BUFFER="\\$mywords"
+            else
+                #non global alias
+                print "$line" | fgrep "'" && BUFFER="${line:1:-1} $mywords[2,$]" || BUFFER="$line $mywords[2,$]"
+            fi
+        fi
+    
+    }
 
     zle .accept-line 
     #leaky simonoff theme so reset ANSI escape sequences
@@ -930,12 +996,108 @@ zstyle ':completion:*:manuals' separate-sections true
 
 #{{{                    MARK:Global Aliases
 #**************************************************************
-alias -g L='|less -MN'
-alias -g W='| wc -l'
-alias -g nul="> /dev/null 2>&1"
-alias -g nerr="2> /dev/null"
-ROUGIFY_THEME=tulip
-alias -g F=' "$(fzf --reverse --border --preview "[[ -f {} ]] && rougify -t $ROUGIFY_THEME {} 2>/dev/null || ls -dAlhFi {} | head -500")"'
+__GLOBAL_ALIAS_PREFIX=j
+alias -g ${__GLOBAL_ALIAS_PREFIX}l='| less -MN'
+alias -g ${__GLOBAL_ALIAS_PREFIX}lo='"$LOGFILE"'
+alias -g ${__GLOBAL_ALIAS_PREFIX}x='| tr a-z A-Z'
+alias -g ${__GLOBAL_ALIAS_PREFIX}b='&>> "$LOGFILE" &; disown %1; ps -ef | grep -v grep | grep $!'
+alias -g ${__GLOBAL_ALIAS_PREFIX}k="| awk 'BEGIN {} {printf \"%s\\n\", \$1} END {}'"
+alias -g ${__GLOBAL_ALIAS_PREFIX}ap="| awk -F: 'BEGIN {} {printf \"%s\\n\", \$1} END {}'"
+alias -g ${__GLOBAL_ALIAS_PREFIX}s="| sed -E 's@@@g'"
+alias -g ${__GLOBAL_ALIAS_PREFIX}t="| tr '' "
+alias -g ${__GLOBAL_ALIAS_PREFIX}ta="| tail" 
+alias -g ${__GLOBAL_ALIAS_PREFIX}w='| wc -l'
+alias -g ${__GLOBAL_ALIAS_PREFIX}n="> /dev/null 2>&1"
+alias -g ${__GLOBAL_ALIAS_PREFIX}o='&>> "$LOGFILE"'
+alias -g ${__GLOBAL_ALIAS_PREFIX}ne="2> /dev/null"
+alias -g ${__GLOBAL_ALIAS_PREFIX}g='git add . && git commit -m "" && git push'
+alias -g ${__GLOBAL_ALIAS_PREFIX}e='|& fgrep -v "grep" |& egrep -i'
+alias -g ${__GLOBAL_ALIAS_PREFIX}p="| perl -lanE 'say'"
+alias -g ${__GLOBAL_ALIAS_PREFIX}c="| cut -d ' ' -f1"
+alias -g ${__GLOBAL_ALIAS_PREFIX}r="| sort"
+alias -g ${__GLOBAL_ALIAS_PREFIX}u="| awk '{print \$1}' | uniq -c | sort -rn | head -10"
+
+if [[ "$(uname)" == Darwin ]]; then
+    alias -g ${__GLOBAL_ALIAS_PREFIX}v='| pbcopy -pboard general'
+    alias ge="exe 'z src;gl;getrc;nz'"
+else
+    alias -g ${__GLOBAL_ALIAS_PREFIX}v='| xclip -selection clipboard'
+fi
+
+
+declare -A __CORRECT_WORDS
+__CORRECT_WORDS[and]="adn nad"
+__CORRECT_WORDS[the]="teh hte eht eth"
+__CORRECT_WORDS[this]="tihs"
+__CORRECT_WORDS[they]="tehy ethy"
+__CORRECT_WORDS[back]="abck bak"
+__CORRECT_WORDS[that]="taht"
+__CORRECT_WORDS[than]="tahn"
+__CORRECT_WORDS[then]="tehn"
+__CORRECT_WORDS[to]="ot"
+__CORRECT_WORDS[why]="hwy wyh"
+__CORRECT_WORDS[inside]="insdie inisde isnide sindie"
+__CORRECT_WORDS[just]="jsut jutsi just"
+__CORRECT_WORDS[here]="ehre"
+__CORRECT_WORDS[not]="not"
+__CORRECT_WORDS[store]="sotre"
+
+
+supernatural-space() {
+	    #statements
+    __TEMP_BUFFER="$(echo $LBUFFER | tr -d "()[]{}\$,%'\"" )"
+    mywords=("${(z)__TEMP_BUFFER}")
+    finished=false
+
+    for key in ${(k)__CORRECT_WORDS[@]}; do
+        badWords=("${(z)__CORRECT_WORDS[$key]}")
+        for misspelling in $badWords[@];do
+
+            #echo "Does $misspelling matches $mywords[-1]?" >> $LOGFILE
+            #echo "words: $mywords" >> $LOGFILE
+
+            if [[ $mywords[-1] == $misspelling ]]; then
+                #echo  >> $LOGFILE
+            #echo "$misspelling matches $mywords[-1]!" >> $LOGFILE
+                #echo  >> $LOGFILE
+                LBUFFER="$(print -R "$LBUFFER" | sed -E "s@\\b$misspelling\\b@$key@g")"
+                finished=true
+                break
+            fi
+        done
+        if [[ $finished == true ]]; then
+            break
+        fi
+    done
+
+
+    if (( $#mywords == 1 )); then
+        alias $LBUFFER | egrep -q '(grc|_z|cd|cat)' || {
+            #dont expand first word if \,' or " and buffer is one word long
+            [[ -z $(alias -g $LBUFFER) ]] && {
+                [[ ${LBUFFER:0:1} != '\' ]] && \
+                [[ ${LBUFFER:0:1} != "'" ]] && [[ ${LBUFFER:0:1} != '"' ]] && zle _expand_alias
+            
+            }
+        }
+    else
+        zle _expand_alias
+    fi
+     zle expand-history
+     zle self-insert
+}
+
+terminate-space(){
+    [[ -z $RBUFFER ]] && zle magic-space || { zle end-of-line; zle magic-space}
+}
+
+zle -N supernatural-space
+zle -N terminate-space
+
+bindkey -M viins " " supernatural-space
+bindkey -M viins "^@" terminate-space
+bindkey -M isearch '^A' beginning-of-line
+
 #export ZPLUG_HOME=/usr/local/opt/zplug
 #source $ZPLUG_HOME/init.zsh
 #
@@ -962,7 +1124,7 @@ alias -g F=' "$(fzf --reverse --border --preview "[[ -f {} ]] && rougify -t $ROU
 #go to desktop if not root
 if [[ "$(uname)" = Darwin ]]; then
     if [[ "$UID" != "0" ]]; then
-         builtin cd "$D" && clear
+         #builtin cd "$D" && clear
         clear
         type figlet > /dev/null 2>&1 && {
             printf "\e[1m"
@@ -990,6 +1152,9 @@ else
             type ponysay 1>/dev/null 2>&1 && {
                 bash "$HOME/motd.sh" | ponysay -W 120 
             } || bash "$HOME/motd.sh"
+        elif [[ "$distro" == opensuse ]];then
+            builtin cd "$D"
+            figlet -f block "$(whoami)" | ponysay -W 120 | splitReg.sh -- ------------- lolcat
         elif [[ "$distro" == fedora ]];then
             builtin cd "$D"
             figlet -f block "$(whoami)" | ponysay -W 120 | splitReg.sh -- ------------- lolcat
@@ -1011,6 +1176,7 @@ export HISTSIZE=50000
 
 #set right prompt string during continuation 
 RPS2='+%N:%i:%^'
+export PS3=$'\e[1;34m-->>>> \e[0m'
 
 #if this is a mac or linux
 [[ "$(uname)" == "Darwin" ]] && {
@@ -1066,16 +1232,83 @@ colortest(){
 
 #{{{                    MARK:FZF
 #**************************************************************
-[[ -f "$HOME/.fzf.zsh" ]] && source "$HOME/.fzf.zsh"
-#to include hidden files in search
+ROUGIFY_THEME="github"
+__COMMON_FZF_ELEMENTS="--prompt='-->>> '"
+alias -g ${__GLOBAL_ALIAS_PREFIX}f=' "$(fzf --reverse --border '"$__COMMON_FZF_ELEMENTS"' --preview "[[ -f {} ]] && rougify -t $ROUGIFY_THEME {} 2>/dev/null || stat {} | fold -80 | head -500")"'
+
+#to include dirs files in search
 export FZF_DEFAULT_COMMAND='find * | ag -v ".git/"'
-export FZF_DEFAULT_OPTS="--reverse --border --height 100%" 
-export FZF_CTRL_T_OPTS="--preview \"[[ -f {} ]] && rougify -t $ROUGIFY_THEME {} 2>/dev/null || ls -dAlhFi {} | head -500\""
+export FZF_DEFAULT_OPTS="$__COMMON_FZF_ELEMENTS --reverse --border --height 100%" 
+export FZF_CTRL_T_OPTS="$__COMMON_FZF_ELEMENTS --preview \"[[ -f {} ]] && rougify -t $ROUGIFY_THEME {} 2>/dev/null || stat {} | fold -80 | head -500\""
+
+#completion trigger plus tab, defaults to ~~
+export FZF_COMPLETION_OPTS="$__COMMON_FZF_ELEMENTS --preview  \"[[ -f {} ]] &&
+    rougify -t $ROUGIFY_THEME {} 2>/dev/null || {
+        [[ -e {} ]] && {
+            stat {} | fold -80 | head -500
+        } || {
+            source ~/.shell_aliases_functions.sh
+        { 
+            echo {} | egrep '(\d{1,3}\.){3}\d{1,3}' && {
+                whois {} | egrep -q 'No (match|whois)' && dig {} || whois {}
+            } || {
+                cat ~/.common_aliases | grep {}= || set | grep {} | grep -v ZSH_EXEC || alias | grep {} || \
+                whois {} | egrep -q 'No (match|whois)' && dig {} || whois {}
+            }
+            
+         } | cowsay | ponysay
+   }
+}\""
+
+export FZF_COMPLETION_TRIGGER=';'
+
+_fzf_complete_echo() {
+  _fzf_complete '-m' "$@" < <(
+      declare -xp | sed 's/=.*//' | sed 's/.* //'
+    )
+}
+
+_fzf_complete_alias() {
+  _fzf_complete '+m' "$@" < <(
+      alias | sed 's/=.*//'
+        )
+}
+
+[[ -f "$HOME/.oh-my-zsh/custom/plugins/fzf/shell/completion.zsh" ]] && source "$HOME/.oh-my-zsh/custom/plugins/fzf/shell/completion.zsh" 
+
+local base03="234"
+local base02="235"
+local base01="240"
+local base00="241"
+local base0="244"
+local base1="245"
+local base2="254"
+local base3="230"
+local yellow="136"
+local orange="166"
+local red="160"
+local magenta="125"
+local violet="61"
+local blue="33"
+local cyan="37"
+local green="64"
+
+# Comment and uncomment below for the light theme.
+
+# Solarized Dark color scheme for fzf
+export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS
+    --color fg:-1,bg:-1,hl:$blue,fg+:$base2,bg+:$base02,hl+:$blue
+    --color info:$yellow,prompt:$yellow,pointer:$base3,marker:$base3,spinner:$yellow
+  "
 #}}}***********************************************************
 
 #{{{                    MARK:override default FTP completion
 #**************************************************************
 _comps[ftp]=_ftp
+_comps[passwd]=_passwd
+_comps[ksh]=_ksh
+_comps[tcsh]=_tcsh
+_comps[csh]=_tcsh
 #}}}***********************************************************
 
 #{{{                    MARK:Groovy
@@ -1085,6 +1318,10 @@ unset GROOVY_HOME # when set this messes up classpath
 #{{{                    MARK:Suffix aliases
 #**************************************************************
 alias -s txt='vim'
+
+alias numcmd='print -rlo -- $commands | wc -l'
+
+export KEYTIMEOUT=1
 #}}}***********************************************************
 #
 #

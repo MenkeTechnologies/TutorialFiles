@@ -19,7 +19,6 @@ if [[ -z "$PYSCRIPTS" ]]; then
     export PS4='>\e[1;4;39m${BASH_SOURCE}\e[37m\e[0;34m__${LINENO}\e[37m__\e[0;32m${FUNCNAME[0]}> \e[0m'
     export CLICOLOR="YES"
     export LSCOLORS="ExFxBxDxCxegedabagacad"
-    export TERM="xterm-256color"
     export SCRIPTS="$HOME/Documents/shellScripts"
     export PYEXECUTABLES="$HOME/Documents/pythonScripts"
     export PYSCRIPTS="$HOME/PycharmProjects/fromShell"
@@ -31,10 +30,9 @@ if [[ -z "$PYSCRIPTS" ]]; then
     export TERMINAL_APP="Terminal.app"
 
     [[ "$(uname)" == Darwin ]] && {
-        export SD_PATH="/Volumes/SD"
-        export WCC="$SD_PATH/wcc/cps"
+        export TERM="xterm-256color"
         export HOMEBREW_HOME_FORMULAE="/usr/local/Homebrew/Library/taps/homebrew/homebrew-core/formula"
-        export PATH="$SCRIPTS/macOnly:$HOME/.tokenScripts:$HOME/.platformio/penv/bin:$PATH"
+        export PATH="$SCRIPTS/macOnly:$HOME/.tokenScripts:$PATH:$HOME/.platformio/penv/bin"
         export PATH="$HOME/Library/Android/sdk/tools:$HOME/Library/Android/sdk/tools/bin:$PATH"
     } || export PATH="$PATH:/usr/games"
 
@@ -55,7 +53,7 @@ if [[ -z "$PYSCRIPTS" ]]; then
         eval `perl -I ~/perl5/lib/perl5 -Mlocal::lib`
         export MANPATH=$HOME/perl5/man:$MANPATH
         export MANPATH="$HOMEBREW_OPT_HOME/erlang/lib/erlang/man:$MANPATH"
-        export TUTORIAL_FILES="$HOME/Documents/tu;orialsRepo"
+        export TUTORIAL_FILES="$HOME/Documents/tutorialsRepo"
         export PIP3_HOME="/usr/local/lib/python3.6/site-packages"
         export PIP_HOME="/usr/local/lib/python2.7/site-packages"
         export EDITOR='mvim -v'
@@ -96,12 +94,14 @@ fi
 #**********************************************************************
 #portable aliases
 alias va='cd /var'
+alias plr='rlwrap perl -de1'
 alias nz='exec zsh'
 alias ll="clearList"
 alias la="clearList"
 alias l="clearList"
 alias r="cd .."
 alias t="cd /"
+alias ca='cat -tn'
 [[ -d "$PYSCRIPTS" ]] && alias py="cd $PYSCRIPTS"
 alias p2="python2"
 alias p3="python3"
@@ -131,14 +131,11 @@ alias ka="killall"
 alias sin="./configure && make && sudo make install"
 alias curl='curl -fsSL'
 
-if [[ -f /usr/local/share/grc/conf.gls ]];then
-    alias lr='grc -c /usr/local/share/grc/conf.gls gls -iAlhFR --color=always'
-    alias mount='grc --colour=auto -c "$HOME/conf.mount" mount'
-    alias ifconfig='grc --colour=auto /sbin/ifconfig'
-elif [[ -f /usr/share/grc/conf.gls ]];then
-    alias lr='grc -c /usr/share/grc/conf.gls ls -iAlhFR --color=always'
-    alias mount='grc --colour=auto -c "$HOME/conf.mount" mount'
-fi
+alias lr='grc -c "$HOME/conf.gls" gls -iAlhFR --color=always'
+alias mount='grc --colour=auto -c "$HOME/conf.mount" mount'
+alias ifconfig='grc --colour=auto -c "$HOME/conf.ifconfig" ifconfig'
+#alias df='grc --colour=auto -c "$HOME/conf.df" df'
+
 if [[ "$(uname)" == "Darwin" ]]; then
     #Darwin specific aliases
     alias p_refresh="pio -f -c clion init --ide clion "
@@ -147,10 +144,10 @@ if [[ "$(uname)" == "Darwin" ]]; then
     alias mem="top -o mem"
     alias tip="top -o +command"
     alias nd="defaults write com.apple.dock autohide-delay -float 100 && defaults write com.apple.dock tilesize -int 1 && killall Dock"
-    alias back="nohup /System/Library/Frameworks/ScreenSaver.framework/Resources/ScreenSaverEngine.app/Contents/MacOS/ScreenSaverEngine -background > /dev/null &"
+    alias bsaver="nohup /System/Library/Frameworks/ScreenSaver.framework/Resources/ScreenSaverEngine.app/Contents/MacOS/ScreenSaverEngine -background > /dev/null &"
     alias n="open $HOME/mnt/ds/JAKENAS/softwareTutorials"
-    alias c="cd $WCC"
-    alias emu="cd $SD_PATH/emu"
+    alias c='cd $WCC'
+    alias emu='cd $SD_PATH/emu'
     alias pkill="pkill -iIl"
     alias q="qlmanage -p &>/dev/null"
     #keep remote tty sessions alive by stopping sleep
@@ -198,10 +195,10 @@ alias inst="bash $SCRIPTS/tgzLocalInstaller.sh"
 #**********************************************************************
 alias mapit="execpy mapIt.py"
 alias ,="execpy amazonSearch.py"
-alias shut="execpy shutdown.py"
+alias shutpy="execpy shutdown.py"
 alias pb="execpy bills.py"
 alias ud=" execpy udemy.py"
-alias i="ifconfig | grep 'inet\s' | grep -v 127 | awk '{print \$2}' | sed 's/addr://'"
+alias ipa="ifconfig | grep 'inet\s' | grep -v 127 | awk '{print \$2}' | sed 's/addr://'"
 
 alias pgrep='pgrep -l'
 #**********************************************************************
@@ -216,12 +213,12 @@ alias uweb="bash $SCRIPTS/uploadWebDS.sh"
 alias sy="bash $SCRIPTS/sync.sh"
 alias sf="bash $SCRIPTS/directoryContentsSize.sh"
 alias sc='cd $SCRIPTS'
-alias blue='source $SCRIPTS/blueText.sh'
+alias bluef='source $SCRIPTS/blueText.sh'
 alias dl='cd $HOME/Downloads'
-alias doc='cd $HOME/Documents'
+alias docu='cd $HOME/Documents'
 alias o="open ."
 alias jobs="jobs -l"
-alias 8="bash -l updater.sh"
+alias u8="bash -l updater.sh"
 alias sd="clear;ssh d "
 alias gitgo='$SCRIPTS/gitgo.sh'
 alias watchGit='bash $SCRIPTS/watchServiceFSWatchGit.sh'
@@ -234,7 +231,7 @@ alias mkdir='mkdir -pv'
 
 exists tput && {
     bold=$(tput bold || tput md)
-red=$(tput setaf 1)
+    red=$(tput setaf 1)
 }
 alias ic="idea create"
 alias il="idea list"
@@ -676,6 +673,13 @@ jetbrainsWorkspaceEdit(){
 
 getrc(){
     REPO_NAME="customTerminalInstaller"
+    if [[ $(uname) == Darwin ]]; then
+       printf "Are you sure? "
+       read
+       if [[ $REPLY != "y" ]]; then
+           return 0
+       fi
+    fi
     cd "$HOME" && {
         git clone "https://github.com/$GITHUB_ACCOUNT/$REPO_NAME.git"
         cd "$REPO_NAME" && {
@@ -688,6 +692,7 @@ getrc(){
         cp conf.df "$HOME"
         cp conf.ifconfig "$HOME"
         cp grc.zsh "$HOME"
+        cp .inputrc "$HOME"
 
         cp -R .tmux/* "$HOME/.tmux"
         cp -f scripts/* "$SCRIPTS"

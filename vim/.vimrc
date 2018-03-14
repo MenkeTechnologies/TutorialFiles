@@ -40,6 +40,8 @@ set autoread
 set ignorecase
 set smartcase
 set tabstop=4
+"60 ms wait for next key in mappings
+"set timeoutlen=300
 "using powerline status bar instead
 "set statusline+=%F
 "set statusline+=%=
@@ -170,8 +172,8 @@ highlight BookmarkSign ctermbg=NONE ctermfg=160
 highlight BookmarkLine ctermbg=194 ctermfg=NONE
 let g:bookmark_highlight_lines = 0
 
-let g:slime_target = "tmux"
-let g:slime_paste_file = "$HOME/.slime_paste"
+"let g:slime_target = "tmux"
+"let g:slime_paste_file = "$HOME/.slime_paste"
 " or maybe...
 "let g:slime_paste_file = tempname()
 "let g:slime_default_config = {"socket_name": split($TMUX, ",")[0], "target_pane": ":"}
@@ -237,13 +239,13 @@ nmap @: <Plug>RepeatEx
 
 "Transpose Words Like Emacs
 nnoremap <silent> <ESC><C-T> :call TransposeWords()<CR>
-inoremap <silent> <ESC><C-T> <C-O>:call TransposeWords()<CR>
+inoremap <silent> <C-D><C-T> <C-O>:call TransposeWords()<CR>
 
 "move to next word and capitalize
 nnoremap <ESC><C-C> wvU
 
 "Insert mode mappings:
-inoremap <ESC><C-C> <C-O>w<C-O>vU
+"inoremap <C-C> <C-O>w<C-O>vU
 
 "Ctrl-C exits like in shell
 nnoremap <silent> <C-C> :wq!<CR>:qa!<CR>
@@ -264,7 +266,7 @@ nnoremap <End> G
 
 "comment out
 inoremap <silent> <C-B> <ESC>I//<ESC>ji
-inoremap <silent> <ESC><C-B> <ESC>^2xji
+inoremap <silent> <C-B><C-N> <ESC>^2xji
 
 "nnoremap <silent> <C-I> :SaveSession<CR>
 "vnoremap <silent> <C-I> :<C-C>:SaveSession<CR>
@@ -300,9 +302,9 @@ fun GoToNextMarker(searchTerm, backwardsSearch)
 
     while loopCounter < mycount
         if a:backwardsSearch == 0
-            silent! exe "/".a:searchTerm 
+            silent! exe "/".a:searchTerm
         else
-            silent! exe "?".a:searchTerm 
+            silent! exe "?".a:searchTerm
             silent! exe "?".a:searchTerm
         endif
         let loopCounter += 1
@@ -464,7 +466,7 @@ function InsertQuoteVisualMode(type)
         let sym=0
     endif
 
-    if sym == 1 
+    if sym == 1
         exe "normal! `<"
         let lineNumR=line('.')
         exe "normal! i".quote
@@ -552,17 +554,17 @@ function Quoter(type)
         else
             call ReplaceBracketToDouble("[","]","[","]") 
             echo "Replace [] with [[]]"
-        endif 
+        endif
         let g:COUNTER=g:COUNTER +1
         return 0
     endif
     "if line matches regex and cursor position within matching capture group
     "then run the quoting
 
-    if (line =~ '\v^.*\$\(.*\).*$') 
+    if (line =~ '\v^.*\$\(.*\).*$')
         call InsertMatchingPunct(quote, '$')
         echo "$(command substitution)"
-    elseif (line =~ '\v^.*\$\{.*\}.*$') 
+    elseif (line =~ '\v^.*\$\{.*\}.*$')
         call InsertMatchingPunct(quote, '$')
         echo "${parameter substitution}"
     elseif (line =~'\v\s*\S+\=\S+\s*$')
@@ -608,19 +610,6 @@ augroup indentGroup
     endif
 augroup end
 
-let os = substitute(system('uname'), "\n", "", "")
-"mac and linux send different codes for Ctrl arrow keys
-if os == "Darwin"
-    map <ESC>[1;5A <C-Up>
-    map <ESC>[1;5B <C-Down>
-    map <ESC>[1;5C <C-Right>
-    map <ESC>[1;5D <C-Left>
-elseif os == "Linux"
-    map <ESC>[A <C-Up>
-    map <ESC>[B <C-Down>
-    map <ESC>[C <C-Right>
-    map <ESC>[D <C-Left>
-endif
 
 "}}}***********************************************************
 
@@ -668,6 +657,9 @@ map <silent> <leader><leader>e <Plug>(easymotion-bd-e)
 "map <silent> <leader><leader>b <Plug>(easymotion-bd-b)
 
 "for moving selection up and down, displacing other text 
+xmap <C-Right> >gv
+xmap <C-Left> <gv
+
 xmap <C-Down> :m '> + <CR> gv
 xmap <C-Up> :m '< -- <CR> gv
 
@@ -710,6 +702,22 @@ noremap <expr> l repmo#SelfKey('l', 'h')|sunmap l
 map <expr> j repmo#Key('gj', 'gk')|sunmap j
 map <expr> k repmo#Key('gk', 'gj')|sunmap k
 
+function CompleteLine()
+    let SemiColon=['java','pl','c','cpp','js']
+    let exeFileType=expand('%:e')
+    if index(SemiColon, exeFileType) >= 0
+        inoremap <C-Space> <C-O>$;<Enter>
+        inoremap <C-D><Space> <ESC>+
+        nnoremap <C-D><Space> +
+    else
+        inoremap <C-Space> <C-O>$<Enter>
+        inoremap <C-D><Space> <ESC>+
+        nnoremap <C-D><Space> +
+endif
+endfunction
+
+autocmd VimEnter * call CompleteLine()
+
 "}}}***********************************************************
 
 "{{{                    MARK:Remaps
@@ -718,23 +726,23 @@ set pastetoggle=<F9>
 
 " Repeat last command in the next tmux pane.
 function TmuxRepeat()
-    let supportedTypes=['sh','py','rb','pl', 'clj', 'tcl', 'vim', 'lisp', 'hs', 'coffee', 'lua', 'java']
-    let exeFileType=expand('%:e')
-    if index(supportedTypes, exeFileType) >= 0
-        silent! exec "!tmux send-keys -t right C-c 'bash \"$SCRIPTS/runner.sh\"' ' \"' ".fnameescape(expand('%:p'))." '\"' C-m"
-        redraw!
-    else
-        silent! exec "!tmux send-keys -t right C-c up C-m"
-        echom "Unknown Filetype '".exeFileType. "'. Falling Back to Prev Command!"
-        redraw!
-    endif
-    exe "normal! zz"
+let supportedTypes=['sh','py','rb','pl', 'clj', 'tcl', 'vim', 'lisp', 'hs', 'coffee', 'lua', 'java']
+let exeFileType=expand('%:e')
+if index(supportedTypes, exeFileType) >= 0
+    silent! exec "!tmux send-keys -t right C-c 'bash \"$SCRIPTS/runner.sh\"' ' \"' ".fnameescape(expand('%:p'))." '\"' C-m"
+    redraw!
+else
+    silent! exec "!tmux send-keys -t right C-c up C-m"
+    echom "Unknown Filetype '".exeFileType. "'. Falling Back to Prev Command!"
+    redraw!
+endif
+exe "normal! zz"
 endfunction
 
 function TmuxRepeatGeneric()
-    silent! exec "!tmux send-keys -t right C-c 'clear' C-m up up C-m"
-    redraw!
-    exe "normal! zz"
+silent! exec "!tmux send-keys -t right C-c 'clear' C-m up up C-m"
+redraw!
+exe "normal! zz"
 endfunction
 
 " reassing readline plugin mapping
@@ -808,17 +816,44 @@ autocmd BufNewFile * exe "normal! G" | startinsert!
 execute pathogen#infect()
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 
+let os = substitute(system('uname'), "\n", "", "")
+
 "powerline-status pip package installs to different locations of different OS
 if os == "Darwin"
     set rtp+=/usr/local/lib/python2.7/site-packages/powerline/bindings/vim
+    map <ESC>[1;5A <C-Up>
+    map <ESC>[1;5B <C-Down>
+    map <ESC>[1;5C <C-Right>
+    map <ESC>[1;5D <C-Left>
 elseif os == "Linux"
     let distro = substitute(system('grep "^ID=" /etc/os-release | cut -d= -f2 | tr -d \"'), "\n", "", "")
 
     if distro == "raspbian"
         set  rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim/
+        map <ESC>[A <C-Up>
+        map <ESC>[B <C-Down>
+        map <ESC>[C <C-Right>
+        map <ESC>[D <C-Left>
+    elseif distro == "opensuse"
+        map <ESC>[1;5A <C-Up>
+        map <ESC>[1;5B <C-Down>
+        map <ESC>[1;5C <C-Right>
+        map <ESC>[1;5D <C-Left>
+        set  rtp+=/usr/lib/python2.7/site-packages/powerline/bindings/vim/
     elseif distro == "fedora"
         set  rtp+=/usr/lib/python2.7/site-packages/powerline/bindings/vim/
+        map <ESC>[A <C-Up>
+        map <ESC>[B <C-Down>
+        map <ESC>[C <C-Right>
+        map <ESC>[D <C-Left>
+    else
+        set  rtp+=/usr/lib/python2.7/site-packages/powerline/bindings/vim/
+        map <ESC>[A <C-Up>
+        map <ESC>[B <C-Down>
+        map <ESC>[C <C-Right>
+        map <ESC>[D <C-Left>
     endif
+
 endif
 
 "gf and :find will find file automatically in these locations
@@ -845,5 +880,6 @@ set thesaurus+=~/mthesaur.txt
 inoremap <silent> <F10> <C-X><C-K>
 "easier mapping for thesaurus completion
 inoremap <silent> <F11> <C-X><C-T>
+
 
 "}}}*****************za******************************************

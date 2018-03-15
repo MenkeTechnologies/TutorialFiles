@@ -21691,3 +21691,10 @@ Mar 14 20:12 : ffmpeg/mp3: Could not update timestamps for skipped samples.
 Mar 14 20:12 : player: played "iTunes/iTunes Media/Music/Unknown Artist/Unknown Album/Napoli Rhythm (Jakob Menke Mash).wav"
 Mar 14 20:22 : ffmpeg/mp3: Could not update timestamps for skipped samples.
 Mar 15 12:53 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Mar 15 14:14 : player: played "Redstar -  All That I Am (Original Mix).mp3"
+Mar 15 14:16 : config: inotify: auto_update was disabled. enable during compilation phase
+Mar 15 14:16 : config: option 'enabled' on line 29 was not recognized
+Mar 15 14:16 : client: [0] opened from 127.0.0.1:49510
+Mar 15 14:16 : client: [1] opened from 127.0.0.1:49512
+Mar 15 14:16 : client: [2] opened from 127.0.0.1:49518
+Mar 15 14:16 : client: [3] opened from 127.0.0.1:49520

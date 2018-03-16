@@ -21700,3 +21700,22 @@ Mar 15 14:16 : client: [2] opened from 127.0.0.1:49518
 Mar 15 14:16 : client: [3] opened from 127.0.0.1:49520
 Mar 15 17:56 : client: [4] opened from 127.0.0.1:51618
 Mar 15 17:56 : client: [4] closed
+Mar 15 22:55 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Mar 15 22:55 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Mar 15 22:56 : player: played "Redstar -  All That I Am (Original Mix).mp3"
+Mar 15 23:51 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Mar 15 23:51 : player: played "Stellar Evolution _ Tech Trance Mix #1--DyuwcxMpHY.mp3"
+Mar 15 23:51 : player: played "Ableton/User Library/Samples/Recorded/0001 6-Audio-1.aif"
+Mar 15 23:51 : player: played "Ableton/User Library/Samples/Recorded/0001 6-Audio.wav"
+Mar 15 23:51 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Mar 15 23:52 : player: played "Ableton/User Library/Samples/Recorded/0001 5-Audio.aif"
+Mar 15 23:52 : player: played "Ableton/User Library/Samples/Recorded/0001 6-Audio-1.aif"
+Mar 15 23:52 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Mar 15 23:52 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Mar 15 23:52 : player: played "Ableton/User Library/Samples/Recorded/0001 5-Audio.aif"
+Mar 15 23:52 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Mar 15 23:52 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Mar 15 23:52 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Mar 15 23:52 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Mar 15 23:57 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Mar 15 23:57 : player: played "iTunes/iTunes Media/Music/Unknown Artist/Unknown Album/Napoli Rhythm (Jakob Menke Mash).wav"

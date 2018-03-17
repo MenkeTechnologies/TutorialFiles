@@ -21719,3 +21719,88 @@ Mar 15 23:52 : ffmpeg/mp3: Could not update timestamps for skipped samples.
 Mar 15 23:52 : ffmpeg/mp3: Could not update timestamps for skipped samples.
 Mar 15 23:57 : ffmpeg/mp3: Could not update timestamps for skipped samples.
 Mar 15 23:57 : player: played "iTunes/iTunes Media/Music/Unknown Artist/Unknown Album/Napoli Rhythm (Jakob Menke Mash).wav"
+Mar 16 01:27 : player: played "Best Of Pure • Emotional • Melodic • Euphoric • Uplifting Trance Mix-fugFmO7cGJ8.mp3"
+Mar 16 01:40 : config: inotify: auto_update was disabled. enable during compilation phase
+Mar 16 01:40 : config: option 'enabled' on line 29 was not recognized
+Mar 16 01:40 : client: [0] opened from 127.0.0.1:49368
+Mar 16 01:40 : client: [1] opened from 127.0.0.1:49371
+Mar 16 01:40 : client: [2] opened from 127.0.0.1:49373
+Mar 16 01:40 : client: [3] opened from 127.0.0.1:49390
+Mar 16 12:02 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Mar 16 12:02 : player: played "iTunes/iTunes Media/Music/Unknown Artist/Unknown Album/Napoli Rhythm (Jakob Menke Mash).wav"
+Mar 16 21:01 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Mar 16 21:01 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Mar 16 21:01 : player: played "Best Of Pure • Emotional • Melodic • Euphoric • Uplifting Trance Mix-fugFmO7cGJ8.mp3"
+Mar 16 22:15 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Mar 16 22:15 : player: played "Kris Menace feat. Fred Falke - Fairlight-mNgVSqrSNWE.mp3"
+Mar 16 22:15 : player: played "Ableton/User Library/Samples/Imported/ATE Open Hat - 011.wav"
+Mar 16 22:15 : player: played "Ableton/User Library/Samples/Imported/ATE Open Hat - 012.wav"
+Mar 16 22:15 : player: played "Ableton/User Library/Samples/Imported/ATE Open Hat - 013.wav"
+Mar 16 22:15 : player: played "Ableton/User Library/Samples/Imported/ATE Open Hat - 014.wav"
+Mar 16 22:15 : player: played "Ableton/User Library/Samples/Imported/ATE Open Hat - 015.wav"
+Mar 16 22:15 : player: played "Ableton/User Library/Samples/Imported/ATE Open Hat - 016.wav"
+Mar 16 22:15 : player: played "Ableton/User Library/Samples/Imported/ATE Open Hat - 017.wav"
+Mar 16 22:15 : player: played "Ableton/User Library/Samples/Imported/ATE Open Hat - 018.wav"
+Mar 16 22:15 : player: played "Ableton/User Library/Samples/Imported/ATE Open Hat - 019.wav"
+Mar 16 22:15 : player: played "Ableton/User Library/Samples/Imported/ATE Open Hat - 020.wav"
+Mar 16 22:15 : player: played "Ableton/User Library/Samples/Imported/ATE Open Hat - 021.wav"
+Mar 16 22:15 : player: played "Ableton/User Library/Samples/Imported/ATE Open Hat - 022.wav"
+Mar 16 22:15 : player: played "Ableton/User Library/Samples/Imported/ATE Open Hat - 023.wav"
+Mar 16 22:15 : player: played "Ableton/User Library/Samples/Imported/ATE Open Hat - 024.wav"
+Mar 16 22:15 : player: played "Ableton/User Library/Samples/Imported/ATE Open Hat - 025.wav"
+Mar 16 22:15 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 051.wav"
+Mar 16 22:15 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 052.wav"
+Mar 16 22:15 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 053.wav"
+Mar 16 22:15 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 054.wav"
+Mar 16 22:15 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 055.wav"
+Mar 16 22:15 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 056.wav"
+Mar 16 22:15 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 057.wav"
+Mar 16 22:15 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 058.wav"
+Mar 16 22:15 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 059.wav"
+Mar 16 22:15 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 060.wav"
+Mar 16 22:16 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 061.wav"
+Mar 16 22:16 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 062.wav"
+Mar 16 22:16 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 063.wav"
+Mar 16 22:16 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 064.wav"
+Mar 16 22:16 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 065.wav"
+Mar 16 22:16 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 066.wav"
+Mar 16 22:16 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 067.wav"
+Mar 16 22:16 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 068.wav"
+Mar 16 22:16 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 069.wav"
+Mar 16 22:16 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 070.wav"
+Mar 16 22:16 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 071.wav"
+Mar 16 22:16 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 072.wav"
+Mar 16 22:16 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 073.wav"
+Mar 16 22:16 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 074.wav"
+Mar 16 22:16 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 075.wav"
+Mar 16 22:16 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 076.wav"
+Mar 16 22:16 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 077.wav"
+Mar 16 22:16 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 078.wav"
+Mar 16 22:16 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 079.wav"
+Mar 16 22:16 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 080.wav"
+Mar 16 22:16 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 081.wav"
+Mar 16 22:16 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 082.wav"
+Mar 16 22:16 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 083.wav"
+Mar 16 22:16 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 084.wav"
+Mar 16 22:16 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 085.wav"
+Mar 16 22:16 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 086.wav"
+Mar 16 22:16 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 087.wav"
+Mar 16 22:16 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 088.wav"
+Mar 16 22:16 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 089.wav"
+Mar 16 22:16 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 090.wav"
+Mar 16 22:16 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 091.wav"
+Mar 16 22:16 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 092.wav"
+Mar 16 22:16 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 093.wav"
+Mar 16 22:16 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 094.wav"
+Mar 16 22:16 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 095.wav"
+Mar 16 22:16 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 096.wav"
+Mar 16 22:16 : player: played "Ableton/User Library/Samples/Imported/ATE Percussion - 097.wav"
+Mar 16 22:16 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Mar 16 22:22 : player: played "iTunes/iTunes Media/Music/Unknown Artist/Unknown Album/Ledo - Wonderful World (Original Mix).mp3"
+Mar 16 22:22 : player: played "Ableton/User Library/Samples/Processed/Crop/Lens - Dusk Till Dawn (Stalker Remix)-1.wav"
+Mar 16 22:29 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Mar 16 22:29 : player: played "iTunes/iTunes Media/Music/Unknown Artist/Unknown Album/Napoli Rhythm (Jakob Menke Mash).wav"
+Mar 16 22:46 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Mar 16 23:30 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Mar 16 23:30 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Mar 16 23:30 : player: played "Tech Trance Mix 2015 _HD-yh6rx1vLUeY.mp3"

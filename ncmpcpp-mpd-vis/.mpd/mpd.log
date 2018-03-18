@@ -21804,3 +21804,10 @@ Mar 16 22:46 : ffmpeg/mp3: Could not update timestamps for skipped samples.
 Mar 16 23:30 : ffmpeg/mp3: Could not update timestamps for discarded samples.
 Mar 16 23:30 : ffmpeg/mp3: Could not update timestamps for skipped samples.
 Mar 16 23:30 : player: played "Tech Trance Mix 2015 _HD-yh6rx1vLUeY.mp3"
+Mar 17 19:12 : player: played "♫ Best Uplifting Trance of 2017 l Top 50 Yearmix 2017 ♫-wzTSyUT2Qwc.mp3"
+Mar 17 19:15 : config: inotify: auto_update was disabled. enable during compilation phase
+Mar 17 19:15 : config: option 'enabled' on line 29 was not recognized
+Mar 17 19:15 : client: [0] opened from 127.0.0.1:49354
+Mar 17 19:15 : client: [1] opened from 127.0.0.1:49356
+Mar 17 19:15 : client: [2] opened from 127.0.0.1:49358
+Mar 17 19:15 : client: [3] opened from 127.0.0.1:49360

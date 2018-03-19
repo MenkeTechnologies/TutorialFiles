@@ -21811,3 +21811,18 @@ Mar 17 19:15 : client: [0] opened from 127.0.0.1:49354
 Mar 17 19:15 : client: [1] opened from 127.0.0.1:49356
 Mar 17 19:15 : client: [2] opened from 127.0.0.1:49358
 Mar 17 19:15 : client: [3] opened from 127.0.0.1:49360
+Mar 18 00:21 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Mar 18 00:25 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Mar 18 00:25 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Mar 18 00:26 : player: played "Redstar -  All That I Am (Original Mix).mp3"
+Mar 18 01:21 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Mar 18 01:21 : player: played "Stellar Evolution _ Tech Trance Mix #1--DyuwcxMpHY.mp3"
+Mar 18 01:21 : player: played "Ableton/User Library/Samples/Recorded/0001 6-Audio-1.aif"
+Mar 18 01:21 : player: played "Ableton/User Library/Samples/Recorded/0001 6-Audio.wav"
+Mar 18 01:21 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Mar 18 01:21 : player: played "Ableton/User Library/Samples/Recorded/0001 5-Audio.aif"
+Mar 18 01:28 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Mar 18 01:28 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Mar 18 01:28 : player: played "Solarstone - Nothing But Chemistry Here (Sean Tyas Remix)-lnKKI62FCQc.mp3"
+Mar 18 13:11 : client: [0] closed
+Mar 18 13:11 : client: [1] closed

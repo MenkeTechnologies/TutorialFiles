@@ -1,9 +1,9 @@
-sw_volume: 14
+sw_volume: 48
 audio_device_state:1:CoreAudio
 audio_device_state:1:my_fifo
 state: pause
-current: 120
-time: 1503.229000
+current: 124
+time: 770.111000
 random: 0
 repeat: 1
 single: 0
@@ -125,18 +125,17 @@ playlist_begin
 110:Ableton/User Library/Samples/Imported/ATE Drum Loop - 064 - 138 BPM - Percussion Loop.wav
 111:Ableton/User Library/Samples/Imported/ATE Drum Loop - 064 - 138 BPM - Percussion Loop.wav
 112:Tech Trance Mix 2015 _HD-yh6rx1vLUeY.mp3
-113:♫ Best Uplifting Trance of 2017 l Top 50 Yearmix 2017 ♫-wzTSyUT2Qwc.mp3
-114:Redstar -  All That I Am (Original Mix).mp3
-115:Stellar Evolution _ Tech Trance Mix #1--DyuwcxMpHY.mp3
-116:Ableton/User Library/Samples/Recorded/0001 6-Audio-1.aif
-117:Ableton/User Library/Samples/Recorded/0001 6-Audio.wav
-118:Ableton/User Library/Samples/Recorded/0001 5-Audio.aif
-119:Solarstone - Nothing But Chemistry Here (Sean Tyas Remix)-lnKKI62FCQc.mp3
-120:♫ Best Uplifting Trance Mix - All Time Favourites #1 ♫-iXAbte4QXKs.mp3
-121:Redstar -  Whatever (Original Mix).mp3
-122:Ableton/User Library/Samples/Recorded/0001 10-Audio.aif
-123:iTunes/iTunes Media/Music/Unknown Artist/Unknown Album/Ledo - Wonderful World (Original Mix).mp3
-124:Ableton/User Library/Samples/Processed/Crop/Lens - Dusk Till Dawn (Stalker Remix)-1.wav
-125:iTunes/iTunes Media/Music/Unknown Artist/Unknown Album/Napoli Rhythm (Jakob Menke Mash).wav
-126:Best Of Pure • Emotional • Melodic • Euphoric • Uplifting Trance Mix-fugFmO7cGJ8.mp3
+113:Redstar -  All That I Am (Original Mix).mp3
+114:Stellar Evolution _ Tech Trance Mix #1--DyuwcxMpHY.mp3
+115:Ableton/User Library/Samples/Recorded/0001 6-Audio-1.aif
+116:Ableton/User Library/Samples/Recorded/0001 6-Audio.wav
+117:Ableton/User Library/Samples/Recorded/0001 5-Audio.aif
+118:Solarstone - Nothing But Chemistry Here (Sean Tyas Remix)-lnKKI62FCQc.mp3
+119:Redstar -  Whatever (Original Mix).mp3
+120:Ableton/User Library/Samples/Recorded/0001 10-Audio.aif
+121:iTunes/iTunes Media/Music/Unknown Artist/Unknown Album/Ledo - Wonderful World (Original Mix).mp3
+122:Ableton/User Library/Samples/Processed/Crop/Lens - Dusk Till Dawn (Stalker Remix)-1.wav
+123:iTunes/iTunes Media/Music/Unknown Artist/Unknown Album/Napoli Rhythm (Jakob Menke Mash).wav
+124:Best Of Pure • Emotional • Melodic • Euphoric • Uplifting Trance Mix-fugFmO7cGJ8.mp3
+125:♫ Best Uplifting Trance Mix - All Time Favourites #1 ♫-iXAbte4QXKs.mp3
 playlist_end

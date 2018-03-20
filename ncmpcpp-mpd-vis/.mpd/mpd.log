@@ -21835,3 +21835,4 @@ Mar 19 00:41 : player: played "iTunes/iTunes Media/Music/Unknown Artist/Unknown 
 Mar 19 00:41 : player: played "Ableton/User Library/Samples/Processed/Crop/Lens - Dusk Till Dawn (Stalker Remix)-1.wav"
 Mar 19 00:48 : ffmpeg/mp3: Could not update timestamps for skipped samples.
 Mar 19 00:48 : player: played "iTunes/iTunes Media/Music/Unknown Artist/Unknown Album/Napoli Rhythm (Jakob Menke Mash).wav"
+Mar 20 11:50 : exception: Failed to open /Users/jacobmenke/.mpd/playlists/00-redstar_-_all_that_i_am__whatever-(monster040)-web-2010-ch00n.m3u.m3u: No such file or directory

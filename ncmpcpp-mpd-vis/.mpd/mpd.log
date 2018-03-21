@@ -21836,3 +21836,9 @@ Mar 19 00:41 : player: played "Ableton/User Library/Samples/Processed/Crop/Lens 
 Mar 19 00:48 : ffmpeg/mp3: Could not update timestamps for skipped samples.
 Mar 19 00:48 : player: played "iTunes/iTunes Media/Music/Unknown Artist/Unknown Album/Napoli Rhythm (Jakob Menke Mash).wav"
 Mar 20 11:50 : exception: Failed to open /Users/jacobmenke/.mpd/playlists/00-redstar_-_all_that_i_am__whatever-(monster040)-web-2010-ch00n.m3u.m3u: No such file or directory
+Mar 21 17:24 : client: [3] closed
+Mar 21 17:24 : client: [2] closed
+Mar 21 17:25 : client: [4] opened from 127.0.0.1:53741
+Mar 21 17:25 : client: [5] opened from 127.0.0.1:53747
+Mar 21 17:25 : client: [6] opened from 127.0.0.1:53749
+Mar 21 17:25 : client: [7] opened from 127.0.0.1:53751

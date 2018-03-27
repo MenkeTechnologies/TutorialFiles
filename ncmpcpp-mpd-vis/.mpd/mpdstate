@@ -1,9 +1,9 @@
-sw_volume: 48
+sw_volume: 60
 audio_device_state:1:CoreAudio
 audio_device_state:1:my_fifo
 state: pause
-current: 124
-time: 1436.031000
+current: 126
+time: 21114.602000
 random: 0
 repeat: 1
 single: 0
@@ -138,4 +138,5 @@ playlist_begin
 123:iTunes/iTunes Media/Music/Unknown Artist/Unknown Album/Napoli Rhythm (Jakob Menke Mash).wav
 124:Best Of Pure • Emotional • Melodic • Euphoric • Uplifting Trance Mix-fugFmO7cGJ8.mp3
 125:♫ Best Uplifting Trance Mix - All Time Favourites #1 ♫-iXAbte4QXKs.mp3
+126:♫ Best Uplifting Trance of 2017 l Top 50 Yearmix 2017 ♫-wzTSyUT2Qwc.mp3
 playlist_end

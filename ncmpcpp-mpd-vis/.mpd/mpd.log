@@ -21945,3 +21945,42 @@ Mar 27 15:26 : client: [8] opened from 127.0.0.1:55822
 Mar 27 15:26 : client: [9] opened from 127.0.0.1:55844
 Mar 27 15:26 : client: [10] opened from 127.0.0.1:55846
 Mar 27 15:26 : client: [11] opened from 127.0.0.1:55848
+Mar 27 21:21 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Mar 27 22:03 : client: [8] closed
+Mar 27 22:03 : client: [11] closed
+Mar 27 22:03 : client: [10] closed
+Mar 27 22:03 : client: [9] closed
+Mar 27 22:04 : client: [12] opened from 127.0.0.1:54253
+Mar 27 22:04 : client: [13] opened from 127.0.0.1:54280
+Mar 27 22:04 : client: [14] opened from 127.0.0.1:54282
+Mar 27 22:04 : client: [15] opened from 127.0.0.1:54284
+Mar 27 22:08 : client: [12] closed
+Mar 27 22:08 : client: [13] closed
+Mar 27 22:08 : client: [14] closed
+Mar 27 22:08 : client: [15] closed
+Mar 27 22:20 : client: [16] opened from 127.0.0.1:58431
+Mar 27 22:20 : client: [17] opened from 127.0.0.1:58445
+Mar 27 22:20 : client: [18] opened from 127.0.0.1:58447
+Mar 27 22:20 : client: [19] opened from 127.0.0.1:58449
+Mar 27 22:28 : client: [16] closed
+Mar 27 22:28 : client: [19] closed
+Mar 27 22:28 : client: [18] closed
+Mar 27 22:28 : client: [17] closed
+Mar 27 22:30 : client: [20] opened from 127.0.0.1:60865
+Mar 27 22:30 : client: [21] opened from 127.0.0.1:60892
+Mar 27 22:30 : client: [22] opened from 127.0.0.1:60898
+Mar 27 22:30 : client: [23] opened from 127.0.0.1:60900
+Mar 27 22:46 : config: inotify: auto_update was disabled. enable during compilation phase
+Mar 27 22:46 : config: option 'enabled' on line 29 was not recognized
+Mar 27 22:46 : client: [0] opened from 127.0.0.1:49366
+Mar 27 22:46 : client: [1] opened from 127.0.0.1:49370
+Mar 27 22:46 : client: [2] opened from 127.0.0.1:49372
+Mar 27 22:46 : client: [3] opened from 127.0.0.1:49374
+Mar 28 16:53 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Mar 28 16:53 : player: played "iTunes/iTunes Media/Music/Unknown Artist/Unknown Album/Napoli Rhythm (Jakob Menke Mash).wav"
+Mar 28 18:34 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Mar 28 18:34 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Mar 28 18:34 : player: played "Best Of Pure • Emotional • Melodic • Euphoric • Uplifting Trance Mix-fugFmO7cGJ8.mp3"
+Mar 28 21:52 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Mar 28 21:52 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Mar 28 21:53 : player: played "♫ Best Uplifting Trance Mix - All Time Favourites #1 ♫-iXAbte4QXKs.mp3"

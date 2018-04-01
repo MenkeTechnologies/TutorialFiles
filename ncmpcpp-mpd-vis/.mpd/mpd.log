@@ -22101,3 +22101,51 @@ Mar 30 14:56 : player: played "Ableton/User Library/Samples/Imported/ATE Drum Lo
 Mar 30 14:57 : player: played "Ableton/User Library/Samples/Imported/ATE Drum Loop - 064 - 138 BPM - Percussion Loop.wav"
 Mar 30 14:57 : ffmpeg/mp3: Could not update timestamps for skipped samples.
 Mar 30 14:57 : player: played "Ableton/User Library/Samples/Imported/ATE Drum Loop - 064 - 138 BPM - Percussion Loop.wav"
+Mar 30 16:00 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Mar 30 16:00 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Mar 30 16:01 : player: played "Tech Trance Mix 2015 _HD-yh6rx1vLUeY.mp3"
+Mar 30 16:09 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Mar 30 16:09 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Mar 30 16:09 : player: played "Redstar -  All That I Am (Original Mix).mp3"
+Mar 30 16:29 : player: played "Stellar Evolution _ Tech Trance Mix #1--DyuwcxMpHY.mp3"
+Mar 30 17:51 : config: inotify: auto_update was disabled. enable during compilation phase
+Mar 30 17:51 : config: option 'enabled' on line 29 was not recognized
+Mar 30 17:51 : client: [0] opened from 127.0.0.1:49587
+Mar 30 17:51 : client: [1] opened from 127.0.0.1:49588
+Mar 30 17:51 : client: [2] opened from 127.0.0.1:49589
+Mar 30 17:51 : client: [3] opened from 127.0.0.1:49608
+Mar 30 19:02 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Mar 30 19:02 : player: played "Stellar Evolution _ Tech Trance Mix #1--DyuwcxMpHY.mp3"
+Mar 30 19:02 : player: played "Ableton/User Library/Samples/Recorded/0001 6-Audio-1.aif"
+Mar 30 19:02 : player: played "Ableton/User Library/Samples/Recorded/0001 6-Audio.wav"
+Mar 30 19:02 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Mar 30 19:02 : player: played "Ableton/User Library/Samples/Recorded/0001 5-Audio.aif"
+Mar 30 19:09 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Mar 30 19:09 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Mar 30 19:09 : player: played "Solarstone - Nothing But Chemistry Here (Sean Tyas Remix)-lnKKI62FCQc.mp3"
+Mar 30 19:18 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Mar 30 19:18 : player: played "Redstar -  Whatever (Original Mix).mp3"
+Mar 30 19:19 : player: played "Ableton/User Library/Samples/Recorded/0001 10-Audio.aif"
+Mar 30 19:25 : player: played "iTunes/iTunes Media/Music/Unknown Artist/Unknown Album/Ledo - Wonderful World (Original Mix).mp3"
+Mar 30 19:25 : player: played "Ableton/User Library/Samples/Processed/Crop/Lens - Dusk Till Dawn (Stalker Remix)-1.wav"
+Mar 30 19:32 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Mar 30 19:32 : player: played "iTunes/iTunes Media/Music/Unknown Artist/Unknown Album/Napoli Rhythm (Jakob Menke Mash).wav"
+Mar 30 23:51 : player: played "Best Of Pure • Emotional • Melodic • Euphoric • Uplifting Trance Mix-fugFmO7cGJ8.mp3"
+Mar 31 00:59 : config: inotify: auto_update was disabled. enable during compilation phase
+Mar 31 00:59 : config: option 'enabled' on line 29 was not recognized
+Mar 31 00:59 : client: [0] opened from 127.0.0.1:50041
+Mar 31 01:00 : client: [1] opened from 127.0.0.1:50043
+Mar 31 01:00 : client: [2] opened from 127.0.0.1:50045
+Mar 31 01:00 : client: [3] opened from 127.0.0.1:50047
+Mar 31 01:17 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Mar 31 01:17 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Mar 31 01:19 : player: played "Best Of Pure • Emotional • Melodic • Euphoric • Uplifting Trance Mix-fugFmO7cGJ8.mp3"
+Mar 31 06:04 : client: [0] closed
+Mar 31 06:04 : client: [3] closed
+Mar 31 06:04 : client: [1] closed
+Mar 31 06:04 : client: [2] closed
+Mar 31 06:08 : client: [4] opened from 127.0.0.1:56980
+Mar 31 06:08 : client: [5] opened from 127.0.0.1:56986
+Mar 31 06:08 : client: [6] opened from 127.0.0.1:56988
+Mar 31 06:08 : client: [7] opened from 127.0.0.1:56990
+Mar 31 23:27 : ffmpeg/mp3: Could not update timestamps for skipped samples.

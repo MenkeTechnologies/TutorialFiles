@@ -22149,3 +22149,30 @@ Mar 31 06:08 : client: [5] opened from 127.0.0.1:56986
 Mar 31 06:08 : client: [6] opened from 127.0.0.1:56988
 Mar 31 06:08 : client: [7] opened from 127.0.0.1:56990
 Mar 31 23:27 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Apr 01 16:16 : config: inotify: auto_update was disabled. enable during compilation phase
+Apr 01 16:16 : config: option 'enabled' on line 29 was not recognized
+Apr 01 16:16 : client: [0] opened from 127.0.0.1:50029
+Apr 01 16:16 : client: [1] opened from 127.0.0.1:50036
+Apr 01 16:16 : client: [2] opened from 127.0.0.1:50038
+Apr 01 16:16 : client: [3] opened from 127.0.0.1:50040
+Apr 01 16:47 : client: [0] closed
+Apr 01 16:47 : client: [1] closed
+Apr 01 16:47 : client: [2] closed
+Apr 01 16:47 : client: [3] closed
+Apr 01 16:48 : client: [4] opened from 127.0.0.1:50695
+Apr 01 16:48 : client: [5] opened from 127.0.0.1:50697
+Apr 01 16:48 : client: [6] opened from 127.0.0.1:50699
+Apr 01 16:48 : client: [7] opened from 127.0.0.1:50701
+Apr 01 17:44 : client: [4] closed
+Apr 01 17:44 : client: [5] closed
+Apr 01 17:44 : client: [6] closed
+Apr 01 17:44 : client: [7] closed
+Apr 01 17:53 : client: [8] opened from 127.0.0.1:52410
+Apr 01 17:53 : client: [9] opened from 127.0.0.1:52413
+Apr 01 17:53 : client: [10] opened from 127.0.0.1:52415
+Apr 01 17:53 : client: [11] opened from 127.0.0.1:52417
+Apr 01 17:57 : client: [8] closed
+Apr 01 17:57 : client: [9] closed
+Apr 01 17:57 : client: [10] closed
+Apr 01 17:57 : client: [11] closed
+Apr 01 18:11 : player: played "♫ Best Uplifting Trance of 2017 l Top 50 Yearmix 2017 ♫-wzTSyUT2Qwc.mp3"

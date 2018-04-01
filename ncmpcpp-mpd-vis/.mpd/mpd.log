@@ -22176,3 +22176,14 @@ Apr 01 17:57 : client: [9] closed
 Apr 01 17:57 : client: [10] closed
 Apr 01 17:57 : client: [11] closed
 Apr 01 18:11 : player: played "♫ Best Uplifting Trance of 2017 l Top 50 Yearmix 2017 ♫-wzTSyUT2Qwc.mp3"
+Apr 01 18:45 : config: inotify: auto_update was disabled. enable during compilation phase
+Apr 01 18:45 : config: option 'enabled' on line 29 was not recognized
+Apr 01 18:45 : client: [0] opened from 127.0.0.1:49950
+Apr 01 18:46 : client: [1] opened from 127.0.0.1:49955
+Apr 01 18:46 : client: [2] opened from 127.0.0.1:49958
+Apr 01 18:46 : client: [3] opened from 127.0.0.1:49959
+Apr 01 18:53 : client: [0] closed
+Apr 01 18:53 : client: [1] closed
+Apr 01 18:53 : client: [2] closed
+Apr 01 18:53 : client: [3] closed
+Apr 01 18:55 : player: played "♫ Best Uplifting Trance of 2017 l Top 50 Yearmix 2017 ♫-wzTSyUT2Qwc.mp3"

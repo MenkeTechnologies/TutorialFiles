@@ -22194,3 +22194,32 @@ Apr 01 19:07 : client: [1] opened from 127.0.0.1:49665
 Apr 01 19:07 : client: [2] opened from 127.0.0.1:49666
 Apr 01 19:07 : client: [3] opened from 127.0.0.1:49672
 Apr 01 19:11 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Apr 01 19:17 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Apr 01 21:24 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Apr 01 21:31 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Apr 01 21:31 : player: played "Redstar -  Whatever (Original Mix).mp3"
+Apr 01 21:32 : player: played "Ableton/User Library/Samples/Recorded/0001 10-Audio.aif"
+Apr 01 21:38 : player: played "iTunes/iTunes Media/Music/Unknown Artist/Unknown Album/Ledo - Wonderful World (Original Mix).mp3"
+Apr 01 21:38 : player: played "Ableton/User Library/Samples/Processed/Crop/Lens - Dusk Till Dawn (Stalker Remix)-1.wav"
+Apr 01 21:45 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Apr 01 21:45 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Apr 01 21:51 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Apr 01 21:51 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Apr 01 21:52 : player: played "Redstar -  Whatever (Red Remix).mp3"
+Apr 01 22:02 : player: played "Kris Menace feat. Fred Falke - Fairlight-mNgVSqrSNWE.mp3"
+Apr 01 22:05 : config: inotify: auto_update was disabled. enable during compilation phase
+Apr 01 22:05 : config: option 'enabled' on line 29 was not recognized
+Apr 01 22:05 : client: [0] opened from 127.0.0.1:49308
+Apr 01 22:05 : client: [1] opened from 127.0.0.1:49310
+Apr 01 22:05 : client: [2] opened from 127.0.0.1:49312
+Apr 01 22:05 : client: [3] opened from 127.0.0.1:49314
+Apr 01 23:05 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Apr 01 23:05 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Apr 01 23:10 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Apr 01 23:10 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Apr 01 23:39 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Apr 01 23:39 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Apr 01 23:39 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Apr 02 02:01 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Apr 02 02:01 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Apr 02 02:01 : player: played "♫ Best Uplifting Trance of 2017 l Top 50 Yearmix 2017 ♫-wzTSyUT2Qwc.mp3"

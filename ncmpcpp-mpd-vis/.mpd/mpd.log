@@ -22223,3 +22223,9 @@ Apr 01 23:39 : ffmpeg/mp3: Could not update timestamps for skipped samples.
 Apr 02 02:01 : ffmpeg/mp3: Could not update timestamps for discarded samples.
 Apr 02 02:01 : ffmpeg/mp3: Could not update timestamps for skipped samples.
 Apr 02 02:01 : player: played "♫ Best Uplifting Trance of 2017 l Top 50 Yearmix 2017 ♫-wzTSyUT2Qwc.mp3"
+Apr 02 22:25 : config: inotify: auto_update was disabled. enable during compilation phase
+Apr 02 22:25 : config: option 'enabled' on line 29 was not recognized
+Apr 02 22:25 : client: [0] opened from 127.0.0.1:51085
+Apr 02 22:25 : client: [1] opened from 127.0.0.1:51090
+Apr 02 22:25 : client: [2] opened from 127.0.0.1:51091
+Apr 02 22:25 : client: [3] opened from 127.0.0.1:51092

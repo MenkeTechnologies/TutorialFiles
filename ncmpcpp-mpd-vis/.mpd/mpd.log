@@ -22235,3 +22235,7 @@ Apr 03 22:54 : client: [0] opened from 127.0.0.1:56314
 Apr 03 22:54 : client: [1] opened from 127.0.0.1:56336
 Apr 03 22:54 : client: [2] opened from 127.0.0.1:56338
 Apr 03 22:54 : client: [3] opened from 127.0.0.1:56340
+Apr 04 16:32 : client: [0] closed
+Apr 04 16:32 : client: [2] closed
+Apr 04 16:32 : client: [3] closed
+Apr 04 16:32 : client: [1] closed

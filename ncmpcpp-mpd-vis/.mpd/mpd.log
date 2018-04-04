@@ -22229,3 +22229,9 @@ Apr 02 22:25 : client: [0] opened from 127.0.0.1:51085
 Apr 02 22:25 : client: [1] opened from 127.0.0.1:51090
 Apr 02 22:25 : client: [2] opened from 127.0.0.1:51091
 Apr 02 22:25 : client: [3] opened from 127.0.0.1:51092
+Apr 03 22:54 : config: inotify: auto_update was disabled. enable during compilation phase
+Apr 03 22:54 : config: option 'enabled' on line 29 was not recognized
+Apr 03 22:54 : client: [0] opened from 127.0.0.1:56314
+Apr 03 22:54 : client: [1] opened from 127.0.0.1:56336
+Apr 03 22:54 : client: [2] opened from 127.0.0.1:56338
+Apr 03 22:54 : client: [3] opened from 127.0.0.1:56340

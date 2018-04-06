@@ -22251,3 +22251,14 @@ Apr 04 17:18 : client: [8] opened from 127.0.0.1:61256
 Apr 04 17:19 : client: [9] opened from 127.0.0.1:61278
 Apr 04 17:19 : client: [10] opened from 127.0.0.1:61284
 Apr 04 17:19 : client: [11] opened from 127.0.0.1:61286
+Apr 05 19:27 : player: played "Kris Menace feat. Fred Falke - Fairlight-mNgVSqrSNWE.mp3"
+Apr 05 19:30 : config: inotify: auto_update was disabled. enable during compilation phase
+Apr 05 19:30 : config: option 'enabled' on line 29 was not recognized
+Apr 05 19:30 : client: [0] opened from 127.0.0.1:49339
+Apr 05 19:30 : client: [1] opened from 127.0.0.1:49341
+Apr 05 19:30 : client: [2] opened from 127.0.0.1:49343
+Apr 05 19:30 : client: [3] opened from 127.0.0.1:49349
+Apr 05 22:44 : client: [0] closed
+Apr 05 22:44 : client: [3] closed
+Apr 05 22:44 : client: [2] closed
+Apr 05 22:44 : client: [1] closed

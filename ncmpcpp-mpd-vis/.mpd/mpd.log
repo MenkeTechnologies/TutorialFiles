@@ -22463,3 +22463,11 @@ Apr 12 03:38 : client: [0] opened from 127.0.0.1:49354
 Apr 12 03:38 : client: [1] opened from 127.0.0.1:49360
 Apr 12 03:38 : client: [2] opened from 127.0.0.1:49362
 Apr 12 03:38 : client: [3] opened from 127.0.0.1:49364
+Apr 12 04:05 : client: [0] closed
+Apr 12 04:05 : client: [1] closed
+Apr 12 04:05 : client: [2] closed
+Apr 12 04:05 : client: [3] closed
+Apr 12 04:07 : client: [4] opened from 127.0.0.1:50091
+Apr 12 04:07 : client: [5] opened from 127.0.0.1:50097
+Apr 12 04:07 : client: [6] opened from 127.0.0.1:50099
+Apr 12 04:07 : client: [7] opened from 127.0.0.1:50101

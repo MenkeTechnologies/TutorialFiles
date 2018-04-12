@@ -22443,3 +22443,11 @@ Apr 11 01:45 : ffmpeg/mp3: Could not update timestamps for discarded samples.
 Apr 11 01:45 : ffmpeg/mp3: Could not update timestamps for skipped samples.
 Apr 11 01:46 : player: played "Solarstone - Nothing But Chemistry Here (Sean Tyas Remix)-lnKKI62FCQc.mp3"
 Apr 11 01:52 : player: played "Redstar -  Whatever (Original Mix).mp3"
+Apr 12 01:41 : config: inotify: auto_update was disabled. enable during compilation phase
+Apr 12 01:41 : config: option 'enabled' on line 29 was not recognized
+Apr 12 01:42 : client: [0] opened from 127.0.0.1:60427
+Apr 12 01:42 : client: [1] opened from 127.0.0.1:60429
+Apr 12 01:42 : client: [2] opened from 127.0.0.1:60430
+Apr 12 01:42 : client: [3] opened from 127.0.0.1:60432
+Apr 12 01:43 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Apr 12 01:43 : player: played "Redstar -  Whatever (Original Mix).mp3"

@@ -22471,3 +22471,7 @@ Apr 12 04:07 : client: [4] opened from 127.0.0.1:50091
 Apr 12 04:07 : client: [5] opened from 127.0.0.1:50097
 Apr 12 04:07 : client: [6] opened from 127.0.0.1:50099
 Apr 12 04:07 : client: [7] opened from 127.0.0.1:50101
+Apr 12 13:45 : client: [4] closed
+Apr 12 13:45 : client: [6] closed
+Apr 12 13:45 : client: [5] closed
+Apr 12 13:45 : client: [7] closed

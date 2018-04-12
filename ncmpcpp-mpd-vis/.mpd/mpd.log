@@ -22456,3 +22456,10 @@ Apr 12 01:50 : player: played "iTunes/iTunes Media/Music/Unknown Artist/Unknown 
 Apr 12 01:50 : player: played "Ableton/User Library/Samples/Processed/Crop/Lens - Dusk Till Dawn (Stalker Remix)-1.wav"
 Apr 12 01:57 : ffmpeg/mp3: Could not update timestamps for skipped samples.
 Apr 12 01:57 : player: played "iTunes/iTunes Media/Music/Unknown Artist/Unknown Album/Napoli Rhythm (Jakob Menke Mash).wav"
+Apr 12 03:36 : player: played "Best Of Pure • Emotional • Melodic • Euphoric • Uplifting Trance Mix-fugFmO7cGJ8.mp3"
+Apr 12 03:38 : config: inotify: auto_update was disabled. enable during compilation phase
+Apr 12 03:38 : config: option 'enabled' on line 29 was not recognized
+Apr 12 03:38 : client: [0] opened from 127.0.0.1:49354
+Apr 12 03:38 : client: [1] opened from 127.0.0.1:49360
+Apr 12 03:38 : client: [2] opened from 127.0.0.1:49362
+Apr 12 03:38 : client: [3] opened from 127.0.0.1:49364

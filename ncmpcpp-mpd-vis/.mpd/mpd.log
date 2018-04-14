@@ -22496,3 +22496,9 @@ Apr 14 00:08 : client: [17] opened from 127.0.0.1:57045
 Apr 14 00:08 : client: [18] opened from 127.0.0.1:57047
 Apr 14 00:08 : client: [19] opened from 127.0.0.1:57049
 Apr 14 00:48 : player: played "Best Of Pure • Emotional • Melodic • Euphoric • Uplifting Trance Mix-fugFmO7cGJ8.mp3"
+Apr 14 02:12 : config: inotify: auto_update was disabled. enable during compilation phase
+Apr 14 02:12 : config: option 'enabled' on line 29 was not recognized
+Apr 14 02:12 : client: [0] opened from 127.0.0.1:50380
+Apr 14 02:12 : client: [1] opened from 127.0.0.1:50382
+Apr 14 02:12 : client: [2] opened from 127.0.0.1:50384
+Apr 14 02:12 : client: [3] opened from 127.0.0.1:50385

@@ -1,9 +1,9 @@
 sw_volume: 60
 audio_device_state:1:CoreAudio
 audio_device_state:1:my_fifo
-state: pause
-current: 122
-time: 944.640000
+state: play
+current: 128
+time: 177.484000
 random: 0
 repeat: 1
 single: 0
@@ -140,4 +140,5 @@ playlist_begin
 125:Ableton/User Library/Samples/Imported/00DB_Pad_sweller_130_A.wav
 126:Ableton/User Library/Samples/Imported/00DB_Super_clap_verb.wav
 127:Redstar -  Whatever (Red Remix).mp3
+128:David Moleon @ Reaction Control 17 - 18.04.2015-JWoRo0ka6BQ.mp3
 playlist_end

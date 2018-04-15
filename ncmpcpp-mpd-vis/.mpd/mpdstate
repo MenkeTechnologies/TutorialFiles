@@ -2,8 +2,8 @@ sw_volume: 60
 audio_device_state:1:CoreAudio
 audio_device_state:1:my_fifo
 state: play
-current: 128
-time: 4018.091000
+current: 131
+time: 137.474000
 random: 0
 repeat: 1
 single: 0
@@ -141,4 +141,7 @@ playlist_begin
 126:Ableton/User Library/Samples/Imported/00DB_Super_clap_verb.wav
 127:Redstar -  Whatever (Red Remix).mp3
 128:David Moleon @ Reaction Control 17 - 18.04.2015-JWoRo0ka6BQ.mp3
+129:♫ Best Uplifting Trance of 2017 l Top 50 Yearmix 2017 ♫-wzTSyUT2Qwc.mp3
+130:Digitalism - Apollo-Gize (Fred Falke Remix)-_ykDET9kLJI.mp3
+131:Dj Lukas vs  David Moleon @ Sunfec Festival, Spain (2012.09.15)-LHnij12xd8M.mp3
 playlist_end

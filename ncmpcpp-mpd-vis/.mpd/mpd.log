@@ -23079,3 +23079,7 @@ Apr 17 15:56 : player: played "Solarstone - Nothing But Chemistry Here (Sean Tya
 Apr 17 16:04 : ffmpeg/mp3: Could not update timestamps for discarded samples.
 Apr 17 16:04 : player: played "Redstar -  Whatever (Original Mix).mp3"
 Apr 17 16:05 : player: played "Ableton/User Library/Samples/Recorded/0001 10-Audio.aif"
+Apr 17 16:11 : player: played "iTunes/iTunes Media/Music/Unknown Artist/Unknown Album/Ledo - Wonderful World (Original Mix).mp3"
+Apr 17 16:11 : player: played "Ableton/User Library/Samples/Processed/Crop/Lens - Dusk Till Dawn (Stalker Remix)-1.wav"
+Apr 17 16:18 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Apr 17 16:18 : player: played "iTunes/iTunes Media/Music/Unknown Artist/Unknown Album/Napoli Rhythm (Jakob Menke Mash).wav"

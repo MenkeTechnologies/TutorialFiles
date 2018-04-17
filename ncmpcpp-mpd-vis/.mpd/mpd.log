@@ -23067,3 +23067,12 @@ Apr 17 14:53 : player: played "Ableton/User Library/Samples/Imported/ATE Drum Lo
 Apr 17 14:53 : player: played "Ableton/User Library/Samples/Imported/ATE Drum Loop - 064 - 138 BPM - Percussion Loop.wav"
 Apr 17 14:53 : ffmpeg/mp3: Could not update timestamps for skipped samples.
 Apr 17 14:53 : player: played "Ableton/User Library/Samples/Imported/ATE Drum Loop - 064 - 138 BPM - Percussion Loop.wav"
+Apr 17 15:48 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Apr 17 15:49 : player: played "Stellar Evolution _ Tech Trance Mix #1--DyuwcxMpHY.mp3"
+Apr 17 15:49 : player: played "Ableton/User Library/Samples/Recorded/0001 6-Audio-1.aif"
+Apr 17 15:49 : player: played "Ableton/User Library/Samples/Recorded/0001 6-Audio.wav"
+Apr 17 15:49 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Apr 17 15:49 : player: played "Ableton/User Library/Samples/Recorded/0001 5-Audio.aif"
+Apr 17 15:56 : ffmpeg/mp3: Could not update timestamps for discarded samples.
+Apr 17 15:56 : ffmpeg/mp3: Could not update timestamps for skipped samples.
+Apr 17 15:56 : player: played "Solarstone - Nothing But Chemistry Here (Sean Tyas Remix)-lnKKI62FCQc.mp3"

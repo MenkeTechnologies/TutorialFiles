@@ -23083,3 +23083,11 @@ Apr 17 16:11 : player: played "iTunes/iTunes Media/Music/Unknown Artist/Unknown 
 Apr 17 16:11 : player: played "Ableton/User Library/Samples/Processed/Crop/Lens - Dusk Till Dawn (Stalker Remix)-1.wav"
 Apr 17 16:18 : ffmpeg/mp3: Could not update timestamps for skipped samples.
 Apr 17 16:18 : player: played "iTunes/iTunes Media/Music/Unknown Artist/Unknown Album/Napoli Rhythm (Jakob Menke Mash).wav"
+Apr 17 17:55 : client: [0] closed
+Apr 17 17:55 : client: [3] closed
+Apr 17 17:55 : client: [1] closed
+Apr 17 17:55 : client: [2] closed
+Apr 17 17:59 : client: [4] opened from 127.0.0.1:64953
+Apr 17 17:59 : client: [5] opened from 127.0.0.1:64967
+Apr 17 17:59 : client: [6] opened from 127.0.0.1:64969
+Apr 17 17:59 : client: [7] opened from 127.0.0.1:64971

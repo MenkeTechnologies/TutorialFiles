@@ -23332,3 +23332,11 @@ Apr 21 16:10 : player: played "Redstar -  Whatever (Red Remix).mp3"
 Apr 21 23:40 : ffmpeg/mp3: Could not update timestamps for discarded samples.
 Apr 21 23:40 : ffmpeg/mp3: Could not update timestamps for skipped samples.
 Apr 21 23:41 : player: played "David Moleon @ Reaction Control 17 - 18.04.2015-JWoRo0ka6BQ.mp3"
+Apr 23 05:09 : client: [18] closed
+Apr 23 05:09 : client: [21] closed
+Apr 23 05:09 : client: [19] closed
+Apr 23 05:09 : client: [20] closed
+Apr 23 05:12 : client: [22] opened from 127.0.0.1:54513
+Apr 23 05:12 : client: [23] opened from 127.0.0.1:54537
+Apr 23 05:12 : client: [24] opened from 127.0.0.1:54546
+Apr 23 05:12 : client: [25] opened from 127.0.0.1:54550

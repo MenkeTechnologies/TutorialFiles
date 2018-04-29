@@ -23674,3 +23674,9 @@ Apr 25 15:29 : client: [6] opened from 127.0.0.1:64572
 Apr 25 15:29 : client: [7] opened from 127.0.0.1:64573
 Apr 25 18:28 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
 Apr 26 22:29 : player: played "David Moleon @ Reaction Control 17 - 18.04.2015-JWoRo0ka6BQ.mp3"
+Apr 28 14:14 : config: inotify: auto_update was disabled. enable during compilation phase
+Apr 28 14:14 : config: option 'enabled' on line 29 was not recognized
+Apr 28 14:14 : client: [0] opened from 127.0.0.1:63636
+Apr 28 14:14 : client: [1] opened from 127.0.0.1:63646
+Apr 28 14:14 : client: [2] opened from 127.0.0.1:63652
+Apr 28 14:14 : client: [3] opened from 127.0.0.1:63654

@@ -23680,3 +23680,7 @@ Apr 28 14:14 : client: [0] opened from 127.0.0.1:63636
 Apr 28 14:14 : client: [1] opened from 127.0.0.1:63646
 Apr 28 14:14 : client: [2] opened from 127.0.0.1:63652
 Apr 28 14:14 : client: [3] opened from 127.0.0.1:63654
+May 03 11:35 : client: [0] closed
+May 03 11:35 : client: [3] closed
+May 03 11:35 : client: [1] closed
+May 03 11:35 : client: [2] closed

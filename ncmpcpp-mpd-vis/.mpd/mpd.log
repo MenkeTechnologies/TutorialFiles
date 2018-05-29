@@ -23696,3 +23696,9 @@ May 10 09:44 : client: [3] closed
 May 10 09:44 : client: [1] closed
 May 10 09:44 : client: [2] closed
 May 12 00:35 : player: played "David Moleon @ Reaction Control 17 - 18.04.2015-JWoRo0ka6BQ.mp3"
+May 28 13:24 : config: inotify: auto_update was disabled. enable during compilation phase
+May 28 13:24 : config: option 'enabled' on line 29 was not recognized
+May 28 13:24 : client: [0] opened from 127.0.0.1:64994
+May 28 13:24 : client: [1] opened from 127.0.0.1:64995
+May 28 13:24 : client: [2] opened from 127.0.0.1:64996
+May 28 13:24 : client: [3] opened from 127.0.0.1:64997

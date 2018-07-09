@@ -23702,3 +23702,9 @@ May 28 13:24 : client: [0] opened from 127.0.0.1:64994
 May 28 13:24 : client: [1] opened from 127.0.0.1:64995
 May 28 13:24 : client: [2] opened from 127.0.0.1:64996
 May 28 13:24 : client: [3] opened from 127.0.0.1:64997
+Jul 08 22:50 : config: inotify: auto_update was disabled. enable during compilation phase
+Jul 08 22:50 : config: option 'enabled' on line 29 was not recognized
+Jul 08 22:50 : client: [0] opened from 127.0.0.1:49645
+Jul 08 22:50 : client: [1] opened from 127.0.0.1:49648
+Jul 08 22:50 : client: [2] opened from 127.0.0.1:49650
+Jul 08 22:50 : client: [3] opened from 127.0.0.1:49653

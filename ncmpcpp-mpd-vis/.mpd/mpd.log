@@ -23708,3 +23708,10 @@ Jul 08 22:50 : client: [0] opened from 127.0.0.1:49645
 Jul 08 22:50 : client: [1] opened from 127.0.0.1:49648
 Jul 08 22:50 : client: [2] opened from 127.0.0.1:49650
 Jul 08 22:50 : client: [3] opened from 127.0.0.1:49653
+Jul 09 22:40 : config: inotify: auto_update was disabled. enable during compilation phase
+Jul 09 22:40 : config: option 'enabled' on line 29 was not recognized
+Jul 09 22:40 : client: [0] opened from 127.0.0.1:49920
+Jul 09 22:40 : client: [1] opened from 127.0.0.1:49922
+Jul 09 22:40 : client: [2] opened from 127.0.0.1:49924
+Jul 09 22:40 : client: [3] opened from 127.0.0.1:49926
+Jul 09 23:14 : ffmpeg/mp3float: Could not update timestamps for skipped samples.

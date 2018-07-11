@@ -23715,3 +23715,19 @@ Jul 09 22:40 : client: [1] opened from 127.0.0.1:49922
 Jul 09 22:40 : client: [2] opened from 127.0.0.1:49924
 Jul 09 22:40 : client: [3] opened from 127.0.0.1:49926
 Jul 09 23:14 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jul 10 20:14 : client: [0] closed
+Jul 10 20:14 : client: [3] closed
+Jul 10 20:14 : client: [1] closed
+Jul 10 20:14 : client: [2] closed
+Jul 10 20:16 : client: [4] opened from 127.0.0.1:49354
+Jul 10 20:16 : client: [5] opened from 127.0.0.1:49356
+Jul 10 20:16 : client: [6] opened from 127.0.0.1:49358
+Jul 10 20:17 : client: [6] closed
+Jul 10 20:17 : client: [7] opened from 127.0.0.1:49409
+Jul 10 20:17 : client: [4] closed
+Jul 10 20:17 : client: [5] closed
+Jul 10 20:17 : client: [7] closed
+Jul 10 20:19 : client: [8] opened from 127.0.0.1:49434
+Jul 10 20:19 : client: [9] opened from 127.0.0.1:49436
+Jul 10 20:19 : client: [10] opened from 127.0.0.1:49438
+Jul 10 20:19 : client: [11] opened from 127.0.0.1:49440

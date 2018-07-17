@@ -23870,3 +23870,16 @@ Jul 14 15:59 : player: played "iTunes/iTunes Media/Music/Unknown Artist/Unknown 
 Jul 14 15:59 : player: played "Ableton/User Library/Samples/Processed/Crop/Lens - Dusk Till Dawn (Stalker Remix)-1.wav"
 Jul 14 16:06 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
 Jul 14 16:06 : player: played "iTunes/iTunes Media/Music/Unknown Artist/Unknown Album/Napoli Rhythm (Jakob Menke Mash).wav"
+Jul 14 16:45 : player: played "Best Of Pure • Emotional • Melodic • Euphoric • Uplifting Trance Mix-fugFmO7cGJ8.mp3"
+Jul 16 13:29 : config: inotify: auto_update was disabled. enable during compilation phase
+Jul 16 13:29 : config: option 'enabled' on line 29 was not recognized
+Jul 16 13:30 : client: [0] opened from 127.0.0.1:57209
+Jul 16 13:30 : client: [1] opened from 127.0.0.1:57211
+Jul 16 13:30 : client: [2] opened from 127.0.0.1:57214
+Jul 16 13:30 : client: [3] opened from 127.0.0.1:57215
+Jul 16 14:15 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Jul 16 14:15 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jul 16 14:16 : player: played "Best Of Pure • Emotional • Melodic • Euphoric • Uplifting Trance Mix-fugFmO7cGJ8.mp3"
+Jul 16 15:15 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
+Jul 16 15:15 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Jul 16 15:16 : player: played "Yoji Tech Dance Mix 3-bwZBumna5D8.mp3"

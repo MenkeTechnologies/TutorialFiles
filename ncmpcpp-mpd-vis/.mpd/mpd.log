@@ -23883,3 +23883,10 @@ Jul 16 14:16 : player: played "Best Of Pure • Emotional • Melodic • Euphor
 Jul 16 15:15 : ffmpeg/mp3float: Could not update timestamps for discarded samples.
 Jul 16 15:15 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
 Jul 16 15:16 : player: played "Yoji Tech Dance Mix 3-bwZBumna5D8.mp3"
+Jul 18 09:32 : player: played "Redstar -  All That I Am (Original Mix).mp3"
+Jul 18 09:56 : config: inotify: auto_update was disabled. enable during compilation phase
+Jul 18 09:56 : config: option 'enabled' on line 29 was not recognized
+Jul 18 09:56 : client: [0] opened from 127.0.0.1:49913
+Jul 18 09:56 : client: [1] opened from 127.0.0.1:49915
+Jul 18 09:56 : client: [2] opened from 127.0.0.1:49917
+Jul 18 09:56 : client: [3] opened from 127.0.0.1:49918

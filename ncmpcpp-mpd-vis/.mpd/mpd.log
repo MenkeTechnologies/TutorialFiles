@@ -23891,3 +23891,9 @@ Jul 18 09:56 : client: [1] opened from 127.0.0.1:49915
 Jul 18 09:56 : client: [2] opened from 127.0.0.1:49917
 Jul 18 09:56 : client: [3] opened from 127.0.0.1:49918
 Jul 27 19:54 : player: played "Redstar -  All That I Am (Original Mix).mp3"
+Aug 04 21:55 : config: inotify: auto_update was disabled. enable during compilation phase
+Aug 04 21:55 : config: option 'enabled' on line 29 was not recognized
+Aug 04 21:55 : client: [0] opened from 127.0.0.1:55004
+Aug 04 21:55 : ffmpeg/mp3float: Could not update timestamps for skipped samples.
+Aug 04 21:56 : client: [0] closed
+Aug 04 21:56 : client: [1] opened from 127.0.0.1:55019

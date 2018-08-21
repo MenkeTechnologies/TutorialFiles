@@ -1,0 +1,85 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+addContents	shebangChanger.sh	/^addContents(){$/;"	f
+addHeader	createTextFile.sh	/^addHeader(){$/;"	f
+addHeader	templater.sh	/^addHeader(){$/;"	f
+alternatingPrettyPrint	CPU_Stresser.sh	/^alternatingPrettyPrint(){$/;"	f
+alternatingPrettyPrint	pipUpdater.sh	/^alternatingPrettyPrint(){$/;"	f
+alternatingPrettyPrint	rpiSoftwareUpdater.sh	/^alternatingPrettyPrint(){$/;"	f
+alternatingPrettyPrint	updater.sh	/^alternatingPrettyPrint(){$/;"	f
+checkForExistence	batchRename.sh	/^checkForExistence(){$/;"	f
+commitTheDirectory	gitgo.sh	/^commitTheDirectory(){$/;"	f
+convertFiles	batchRename.sh	/^convertFiles(){$/;"	f
+createTemplate	templater.sh	/^createTemplate(){$/;"	f
+createTheFile	createScriptButDontOpenSublime.sh	/^createTheFile(){$/;"	f
+createTheFile	createTextFile.sh	/^createTheFile(){$/;"	f
+displayProgress	batchRename.sh	/^displayProgress(){$/;"	f
+displayProgress	picture_finder.sh	/^displayProgress(){$/;"	f
+displayProgress	secureDelete.sh	/^displayProgress(){$/;"	f
+displayProgressIndicator	openAll.sh	/^displayProgressIndicator(){$/;"	f
+dontSummarizeSizes	directoryContentsSize.sh	/^dontSummarizeSizes(){$/;"	f
+executableScriptsProcessing	createScriptButDontOpenSublime.sh	/^executableScriptsProcessing(){$/;"	f
+executableScriptsProcessing	createTextFile.sh	/^executableScriptsProcessing(){$/;"	f
+executableScriptsProcessing	runner.sh	/^executableScriptsProcessing(){$/;"	f
+executableScriptsProcessing	templater.sh	/^executableScriptsProcessing(){$/;"	f
+executeFileFirstArgIsCommand	runner.sh	/^executeFileFirstArgIsCommand(){$/;"	f
+executeTheFile	runner.sh	/^executeTheFile(){$/;"	f
+exists	CPU_Stresser.sh	/^exists(){$/;"	f
+exists	rpiSoftwareUpdater.sh	/^exists(){$/;"	f
+exists	updater.sh	/^exists(){$/;"	f
+findTotal	oldCounter.sh	/^findTotal (){$/;"	f
+getInitialCommit	gitgo.sh	/^getInitialCommit(){$/;"	f
+getRemoteDetails	gitgo.sh	/^getRemoteDetails(){$/;"	f
+gitPull	gitgo.sh	/^gitPull(){$/;"	f
+gitPush	gitgo.sh	/^gitPush(){$/;"	f
+gitRepoUpdater	rpiSoftwareUpdater.sh	/^gitRepoUpdater(){$/;"	f
+gitRepoUpdater	updater.sh	/^gitRepoUpdater(){$/;"	f
+gitters	remoteRepoMonitorDaemon.sh	/^gitters(){$/;"	f
+initializeGitDirectory	gitgo.sh	/^initializeGitDirectory(){$/;"	f
+install	tgzLocalInstaller.sh	/^install(){$/;"	f
+killCursor	batchRename.sh	/^killCursor(){$/;"	f
+killCursor	openAll.sh	/^killCursor(){$/;"	f
+killCursor	picture_finder.sh	/^killCursor(){$/;"	f
+killCursor	secureDelete.sh	/^killCursor(){$/;"	f
+killpids	CPU_Stresser.sh	/^killpids(){$/;"	f
+main	remoteRepoMonitorDaemon.sh	/^main(){$/;"	f
+myPrettyPrint	gitgo.sh	/^myPrettyPrint(){$/;"	f
+openTextEditor	createScriptButDontOpenSublime.sh	/^openTextEditor(){$/;"	f
+openTextEditor	createTextFile.sh	/^openTextEditor(){$/;"	f
+prettyPrint	CPU_Stresser.sh	/^prettyPrint(){$/;"	f
+prettyPrint	colorLogger.sh	/^prettyPrint () {$/;"	f
+prettyPrint	rpiSoftwareUpdater.sh	/^prettyPrint(){$/;"	f
+prettyPrint	textmessage.sh	/^prettyPrint () {$/;"	f
+prettyPrint	updater.sh	/^prettyPrint(){$/;"	f
+printD	banner.pl	/^sub printD{$/;"	s
+printDate	banner.pl	/^sub printDate{$/;"	s
+refreshers	remoteRepoMonitorDaemon.sh	/^refreshers(){$/;"	f
+removeSpaces	minifySpaces.pl	/^sub removeSpaces {$/;"	s
+showHidden	directoryContentsSize.sh	/^showHidden(){$/;"	f
+startCursor	batchRename.sh	/^startCursor(){$/;"	f
+startCursor	openAll.sh	/^startCursor(){$/;"	f
+startCursor	picture_finder.sh	/^startCursor(){$/;"	f
+startCursor	secureDelete.sh	/^startCursor(){$/;"	f
+summarizeSizes	directoryContentsSize.sh	/^summarizeSizes(){$/;"	f
+updatePI	updater.sh	/^updatePI(){ #-t to force pseudoterminal allocation for interactive programs on remote host$/;"	f
+usage	CPU_Stresser.sh	/^function usage ()$/;"	f
+usage	directoryContentsSize.sh	/^usage(){$/;"	f
+usage	duplicateLineDeleter.sh	/^usage(){$/;"	f
+usage	gitgo.sh	/^usage(){$/;"	f
+usage	indenterAndDuplicateLineDeleter.sh	/^usage(){$/;"	f
+usage	myWatchMaintainEscapes.sh	/^usage(){$/;"	f
+usage	myWatchNoBlink.sh	/^usage(){$/;"	f
+usage	myWatchNoBlinkColorized.sh	/^usage(){$/;"	f
+usage	mywatch.sh	/^usage(){$/;"	f
+usage	powerTo.sh	/^function usage ()$/;"	f
+usage	shebangChanger.sh	/^usage(){$/;"	f
+usage	splitReg.sh	/^function usage ()$/;"	f
+usage	storageShower.sh	/^function usage ()$/;"	f
+usage	tgzLocalInstaller.sh	/^function usage ()$/;"	f
+usage	updater.sh	/^usage() {$/;"	f
+watchCommand	myWatchNoBlink.sh	/^watchCommand() {$/;"	f
+watchCommand	myWatchNoBlinkColorized.sh	/^watchCommand() {$/;"	f

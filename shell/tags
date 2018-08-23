@@ -71,6 +71,7 @@ usage	directoryContentsSize.sh	/^usage(){$/;"	f
 usage	duplicateLineDeleter.sh	/^usage(){$/;"	f
 usage	gitgo.sh	/^usage(){$/;"	f
 usage	indenterAndDuplicateLineDeleter.sh	/^usage(){$/;"	f
+usage	macOnly/splitReg.sh	/^function usage ()$/;"	f
 usage	myWatchMaintainEscapes.sh	/^usage(){$/;"	f
 usage	myWatchNoBlink.sh	/^usage(){$/;"	f
 usage	myWatchNoBlinkColorized.sh	/^usage(){$/;"	f

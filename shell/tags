@@ -5,9 +5,16 @@
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
 addContents	shebangChanger.sh	/^addContents(){$/;"	f
+addDependenciesArch	customTerminalInstaller/install.sh	/^addDependenciesArch(){$/;"	f
+addDependenciesDebian	customTerminalInstaller/install.sh	/^addDependenciesDebian(){$/;"	f
+addDependenciesLinux	customTerminalInstaller/install.sh	/^addDependenciesLinux(){$/;"	f
+addDependenciesMac	customTerminalInstaller/install.sh	/^addDependenciesMac(){$/;"	f
+addDependenciesRedHat	customTerminalInstaller/install.sh	/^addDependenciesRedHat(){$/;"	f
+addDependenciesSuse	customTerminalInstaller/install.sh	/^addDependenciesSuse(){$/;"	f
 addHeader	createTextFile.sh	/^addHeader(){$/;"	f
 addHeader	templater.sh	/^addHeader(){$/;"	f
 alternatingPrettyPrint	CPU_Stresser.sh	/^alternatingPrettyPrint(){$/;"	f
+alternatingPrettyPrint	customTerminalInstaller/common.sh	/^alternatingPrettyPrint(){$/;"	f
 alternatingPrettyPrint	pipUpdater.sh	/^alternatingPrettyPrint(){$/;"	f
 alternatingPrettyPrint	rpiSoftwareUpdater.sh	/^alternatingPrettyPrint(){$/;"	f
 alternatingPrettyPrint	updater.sh	/^alternatingPrettyPrint(){$/;"	f
@@ -29,6 +36,7 @@ executableScriptsProcessing	templater.sh	/^executableScriptsProcessing(){$/;"	f
 executeFileFirstArgIsCommand	runner.sh	/^executeFileFirstArgIsCommand(){$/;"	f
 executeTheFile	runner.sh	/^executeTheFile(){$/;"	f
 exists	CPU_Stresser.sh	/^exists(){$/;"	f
+exists	customTerminalInstaller/common.sh	/^exists(){$/;"	f
 exists	rpiSoftwareUpdater.sh	/^exists(){$/;"	f
 exists	updater.sh	/^exists(){$/;"	f
 findTotal	oldCounter.sh	/^findTotal (){$/;"	f
@@ -52,6 +60,7 @@ openTextEditor	createScriptButDontOpenSublime.sh	/^openTextEditor(){$/;"	f
 openTextEditor	createTextFile.sh	/^openTextEditor(){$/;"	f
 prettyPrint	CPU_Stresser.sh	/^prettyPrint(){$/;"	f
 prettyPrint	colorLogger.sh	/^prettyPrint () {$/;"	f
+prettyPrint	customTerminalInstaller/common.sh	/^prettyPrint(){$/;"	f
 prettyPrint	rpiSoftwareUpdater.sh	/^prettyPrint(){$/;"	f
 prettyPrint	textmessage.sh	/^prettyPrint () {$/;"	f
 prettyPrint	updater.sh	/^prettyPrint(){$/;"	f
@@ -65,8 +74,13 @@ startCursor	openAll.sh	/^startCursor(){$/;"	f
 startCursor	picture_finder.sh	/^startCursor(){$/;"	f
 startCursor	secureDelete.sh	/^startCursor(){$/;"	f
 summarizeSizes	directoryContentsSize.sh	/^summarizeSizes(){$/;"	f
+turnOffDebugging	customTerminalInstaller/common.sh	/^turnOffDebugging(){$/;"	f
+turnOnDebugging	customTerminalInstaller/common.sh	/^turnOnDebugging(){$/;"	f
+update	customTerminalInstaller/install.sh	/^update (){$/;"	f
 updatePI	updater.sh	/^updatePI(){ #-t to force pseudoterminal allocation for interactive programs on remote host$/;"	f
+upgrade	customTerminalInstaller/install.sh	/^upgrade(){$/;"	f
 usage	CPU_Stresser.sh	/^function usage ()$/;"	f
+usage	customTerminalInstaller/install.sh	/^function usage ()$/;"	f
 usage	directoryContentsSize.sh	/^usage(){$/;"	f
 usage	duplicateLineDeleter.sh	/^usage(){$/;"	f
 usage	gitgo.sh	/^usage(){$/;"	f

@@ -76,11 +76,11 @@ startCursor	secureDelete.sh	/^startCursor(){$/;"	f
 summarizeSizes	directoryContentsSize.sh	/^summarizeSizes(){$/;"	f
 turnOffDebugging	customTerminalInstaller/common.sh	/^turnOffDebugging(){$/;"	f
 turnOnDebugging	customTerminalInstaller/common.sh	/^turnOnDebugging(){$/;"	f
-update	customTerminalInstaller/install.sh	/^update (){$/;"	f
+update	customTerminalInstaller/install.sh	/^update(){$/;"	f
 updatePI	updater.sh	/^updatePI(){ #-t to force pseudoterminal allocation for interactive programs on remote host$/;"	f
 upgrade	customTerminalInstaller/install.sh	/^upgrade(){$/;"	f
 usage	CPU_Stresser.sh	/^function usage ()$/;"	f
-usage	customTerminalInstaller/install.sh	/^function usage ()$/;"	f
+usage	customTerminalInstaller/install.sh	/^usage(){$/;"	f
 usage	directoryContentsSize.sh	/^usage(){$/;"	f
 usage	duplicateLineDeleter.sh	/^usage(){$/;"	f
 usage	gitgo.sh	/^usage(){$/;"	f

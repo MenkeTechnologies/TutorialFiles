@@ -68,7 +68,7 @@ printD	banner.pl	/^sub printD{$/;"	s
 printDate	banner.pl	/^sub printDate{$/;"	s
 refreshers	remoteRepoMonitorDaemon.sh	/^refreshers(){$/;"	f
 removeSpaces	minifySpaces.pl	/^sub removeSpaces {$/;"	s
-restart_wlan0	pingordie.sh	/^    restart_wlan0() {$/;"	f
+restart_wlan0	pingordie.sh	/^restart_wlan0() {$/;"	f
 showHidden	directoryContentsSize.sh	/^showHidden(){$/;"	f
 startCursor	batchRename.sh	/^startCursor(){$/;"	f
 startCursor	openAll.sh	/^startCursor(){$/;"	f

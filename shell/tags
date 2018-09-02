@@ -66,6 +66,7 @@ prettyPrint	textmessage.sh	/^prettyPrint () {$/;"	f
 prettyPrint	updater.sh	/^prettyPrint(){$/;"	f
 printD	banner.pl	/^sub printD{$/;"	s
 printDate	banner.pl	/^sub printDate{$/;"	s
+refresh	customTerminalInstaller/install.sh	/^refresh(){$/;"	f
 refreshers	remoteRepoMonitorDaemon.sh	/^refreshers(){$/;"	f
 removeSpaces	minifySpaces.pl	/^sub removeSpaces {$/;"	s
 restart_wlan0	pingordie.sh	/^restart_wlan0() {$/;"	f

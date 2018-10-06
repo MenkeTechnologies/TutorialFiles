@@ -4,6 +4,9 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
+Template	help2comp.py	/^from string import Template$/;"	i
+URL	help2comp.py	/^URL = 'http:\/\/github.com\/RobSis\/zsh-completion-generator'$/;"	v
+_escape	help2comp.py	/^def _escape(line):$/;"	f
 addContents	shebangChanger.sh	/^addContents(){$/;"	f
 addDependenciesArch	customTerminalInstaller/install.sh	/^addDependenciesArch(){$/;"	f
 addDependenciesDebian	customTerminalInstaller/install.sh	/^addDependenciesDebian(){$/;"	f
@@ -24,6 +27,7 @@ convertFiles	batchRename.sh	/^convertFiles(){$/;"	f
 createTemplate	templater.sh	/^createTemplate(){$/;"	f
 createTheFile	createScriptButDontOpenSublime.sh	/^createTheFile(){$/;"	f
 createTheFile	createTextFile.sh	/^createTheFile(){$/;"	f
+cut_option	help2comp.py	/^def cut_option(line):$/;"	f
 displayProgress	batchRename.sh	/^displayProgress(){$/;"	f
 displayProgress	picture_finder.sh	/^displayProgress(){$/;"	f
 displayProgress	secureDelete.sh	/^displayProgress(){$/;"	f
@@ -40,6 +44,8 @@ exists	customTerminalInstaller/common.sh	/^exists(){$/;"	f
 exists	rpiSoftwareUpdater.sh	/^exists(){$/;"	f
 exists	updater.sh	/^exists(){$/;"	f
 findTotal	oldCounter.sh	/^findTotal (){$/;"	f
+generate_argument_list	help2comp.py	/^def generate_argument_list(options):$/;"	f
+generate_completion_function	help2comp.py	/^def generate_completion_function(options, program_name):$/;"	f
 getInitialCommit	gitgo.sh	/^getInitialCommit(){$/;"	f
 getRemoteDetails	gitgo.sh	/^getRemoteDetails(){$/;"	f
 gitPull	gitgo.sh	/^gitPull(){$/;"	f
@@ -58,14 +64,18 @@ main	remoteRepoMonitorDaemon.sh	/^main(){$/;"	f
 myPrettyPrint	gitgo.sh	/^myPrettyPrint(){$/;"	f
 openTextEditor	createScriptButDontOpenSublime.sh	/^openTextEditor(){$/;"	f
 openTextEditor	createTextFile.sh	/^openTextEditor(){$/;"	f
+options	help2comp.py	/^        options = parse_options(sys.stdin.readlines())$/;"	v
+parse_options	help2comp.py	/^def parse_options(help_text):$/;"	f
 prettyPrint	CPU_Stresser.sh	/^prettyPrint(){$/;"	f
 prettyPrint	colorLogger.sh	/^prettyPrint () {$/;"	f
 prettyPrint	customTerminalInstaller/common.sh	/^prettyPrint(){$/;"	f
+prettyPrint	macOnly/tutorialConfigUpdater.sh	/^prettyPrint(){$/;"	f
 prettyPrint	rpiSoftwareUpdater.sh	/^prettyPrint(){$/;"	f
 prettyPrint	textmessage.sh	/^prettyPrint () {$/;"	f
 prettyPrint	updater.sh	/^prettyPrint(){$/;"	f
 printD	banner.pl	/^sub printD{$/;"	s
 printDate	banner.pl	/^sub printDate{$/;"	s
+re	help2comp.py	/^import re$/;"	i
 refresh	customTerminalInstaller/install.sh	/^refresh(){$/;"	f
 refreshers	remoteRepoMonitorDaemon.sh	/^refreshers(){$/;"	f
 removeSpaces	minifySpaces.pl	/^sub removeSpaces {$/;"	s
@@ -76,6 +86,7 @@ startCursor	openAll.sh	/^startCursor(){$/;"	f
 startCursor	picture_finder.sh	/^startCursor(){$/;"	f
 startCursor	secureDelete.sh	/^startCursor(){$/;"	f
 summarizeSizes	directoryContentsSize.sh	/^summarizeSizes(){$/;"	f
+sys	help2comp.py	/^import sys$/;"	i
 turnOffDebugging	customTerminalInstaller/common.sh	/^turnOffDebugging(){$/;"	f
 turnOnDebugging	customTerminalInstaller/common.sh	/^turnOnDebugging(){$/;"	f
 update	customTerminalInstaller/install.sh	/^update(){$/;"	f

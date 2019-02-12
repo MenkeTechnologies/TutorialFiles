@@ -25,4 +25,4 @@ EOF
         echo "$(date): Time diff $timediff. Next update at $nextdate." >> "$LOGFILE"
         (( timediff > $((3600*24)) )) && break
     done
-done
+drone

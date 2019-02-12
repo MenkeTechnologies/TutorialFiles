@@ -809,9 +809,9 @@ vnoremap Y y`>j
 nnoremap Y yy`>
 
 fun! GetRef()
-    let mystr = getline('.')
+    let mystr = trim(getline('.'))
     echom "Copied " . mystr
-    let @* = expand('%:p').' Line '.line('.').' '.getline('.')
+    let @* = expand('%:p').': '.line('.').' '.trim(getline('.'))
 endfun
 
 "}}}***********************************************************

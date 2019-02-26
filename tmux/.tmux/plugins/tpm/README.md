@@ -16,7 +16,8 @@ Clone TPM:
 $ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
 
-Put this at the bottom of `.tmux.conf`:
+Put this at the bottom of `~/.tmux.conf` (`$XDG_CONFIG_HOME/tmux/tmux.conf`
+works too):
 
 ```bash
 # List of plugins
@@ -29,7 +30,7 @@ set -g @plugin 'tmux-plugins/tmux-sensible'
 # set -g @plugin 'git@bitbucket.com/user/plugin'
 
 # Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
-run '~/.tmux/plugins/tpm/tpm'
+run -b '~/.tmux/plugins/tpm/tpm'
 ```
 
 Reload TMUX environment so TPM is sourced:
@@ -44,7 +45,7 @@ That's it!
 ### Installing plugins
 
 1. Add new plugin to `~/.tmux.conf` with `set -g @plugin '...'`
-2. Press `prefix` + <kbd>I</kbd> (capital I, as in **I**nstall) to fetch the plugin.
+2. Press `prefix` + <kbd>I</kbd> (capital i, as in **I**nstall) to fetch the plugin.
 
 You're good to go! The plugin was cloned to `~/.tmux/plugins/` dir and sourced.
 

@@ -244,17 +244,6 @@ dump_windows() {
 			if is_session_grouped "$session_name"; then
 				continue
 			fi
-			# window_layout is not correct for zoomed windows
-			if [[ "$window_flags" == *Z* ]]; then
-				# unmaximize the window
-				toggle_window_zoom "${session_name}:${window_index}"
-				# get correct window layout
-				window_layout="$(tmux display-message -p -t "${session_name}:${window_index}" -F "#{window_layout}")"
-				# sleep required otherwise vim does not redraw correctly, issue #112
-				sleep 0.1 || sleep 1 # portability hack
-				# maximize window again
-				toggle_window_zoom "${session_name}:${window_index}"
-			fi
 			echo "${line_type}${d}${session_name}${d}${window_index}${d}${window_active}${d}${window_flags}${d}${window_layout}"
 		done
 }
@@ -283,7 +272,7 @@ remove_old_backups() {
 	local -a files
 	files=($(ls -t $(resurrect_dir)/${RESURRECT_FILE_PREFIX}_*.${RESURRECT_FILE_EXTENSION} | tail -n +6))
 	[[ ${#files[@]} -eq 0 ]] ||
-		find "${files[@]}" -type f -mtime +30 | xargs rm
+		find "${files[@]}" -type f -mtime +30 -exec rm -v "{}" \;
 }
 
 save_all() {
@@ -294,6 +283,7 @@ save_all() {
 	dump_panes   >> "$resurrect_file_path"
 	dump_windows >> "$resurrect_file_path"
 	dump_state   >> "$resurrect_file_path"
+	execute_hook "post-save-layout" "$resurrect_file_path"
 	if files_differ "$resurrect_file_path" "$last_resurrect_file"; then
 		ln -fs "$(basename "$resurrect_file_path")" "$last_resurrect_file"
 	else
@@ -309,6 +299,7 @@ save_all() {
 		dump_shell_history
 	fi
 	remove_old_backups
+	execute_hook "post-save-all"
 }
 
 show_output() {

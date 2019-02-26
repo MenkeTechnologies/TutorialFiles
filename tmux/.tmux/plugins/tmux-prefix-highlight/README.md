@@ -16,7 +16,7 @@ Prefix on:
 
 Just add `#{prefix_highlight}` to your left/right status bar.
 
-```tmux.confi
+```tmux.conf
 set -g status-right '#{prefix_highlight} | %a %Y-%m-%d %H:%M'
 ```
 
@@ -72,11 +72,36 @@ set -g @prefix_highlight_show_copy_mode 'on'
 set -g @prefix_highlight_copy_mode_attr 'fg=black,bg=yellow,bold' # default is 'fg=default,bg=yellow'
 ```
 
+The `prefix` prompt and `copy` prompt can also be configured:
+
+```tmux.conf
+set -g @prefix_highlight_prefix_prompt 'Wait'
+set -g @prefix_highlight_copy_prompt 'Copy'
+```
+
 Additionally, the plugin can be configured to attach optional affixes to the
 value contained in `#{prefix_highlight}`.
 (e.g. `< ^B >`)
 
 ```tmux.conf
+set -g @prefix_highlight_output_prefix '< '
+set -g @prefix_highlight_output_suffix ' >'
+```
+
+The empty (shown when prefix is off) prompt and attribute can be configured,
+It is useful for aligning segments.
+
+```tmux.conf
+set -g @prefix_highlight_empty_prompt '        '          # default is '' (empty char)
+set -g @prefix_highlight_empty_attr 'fg=default,bg=green' # default is 'fg=default,bg=default'
+```
+
+Defaultly, empty prompt can't be attached optional affixes.
+If you want attach affixes on empty prompt, config `@prefix_highlight_empty_has_affixes` to `on`.
+
+```tmux.conf
+set -g @prefix_highlight_empty_has_affixes 'on' # default is 'off'
+set -g @prefix_highlight_empty_prompt 'Tmux'
 set -g @prefix_highlight_output_prefix '< '
 set -g @prefix_highlight_output_suffix ' >'
 ```

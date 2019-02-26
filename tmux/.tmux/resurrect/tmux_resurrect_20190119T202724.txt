@@ -1,0 +1,4 @@
+pane	0	1	:reattach-to-user-namespace	1	:*	0	:	1	reattach-to-user-namespace	:less
+pane	0	1	:reattach-to-user-namespace	1	:*	1	:/Users/wizard/Documents/shellScripts	0	zsh	:
+window	0	1	1	:*	0ed0,318x85,0,0{150x85,0,0,0,167x85,151,0,2}
+state	0	

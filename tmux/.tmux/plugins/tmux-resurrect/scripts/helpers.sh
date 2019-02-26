@@ -112,7 +112,7 @@ _RESURRECT_DIR="$(resurrect_dir)"
 
 resurrect_file_path() {
 	if [ -z "$_RESURRECT_FILE_PATH" ]; then
-		local timestamp="$(date +"%Y-%m-%dT%H:%M:%S")"
+		local timestamp="$(date +"%Y%m%dT%H%M%S")"
 		echo "$(resurrect_dir)/${RESURRECT_FILE_PREFIX}_${timestamp}.${RESURRECT_FILE_EXTENSION}"
 	else
 		echo "$_RESURRECT_FILE_PATH"
@@ -147,4 +147,22 @@ resurrect_history_file() {
 	local pane_id="$1"
 	local shell_name="$2"
 	echo "$(resurrect_dir)/${shell_name}_history-${pane_id}"
+}
+
+execute_hook() {
+	local kind="$1"
+	shift
+	local args="" hook=""
+
+	hook=$(get_tmux_option "$hook_prefix$kind" "")
+
+	# If there are any args, pass them to the hook (in a way that preserves/copes
+	# with spaces and unusual characters.
+	if [ "$#" -gt 0 ]; then
+		printf -v args "%q " "$@"
+	fi
+
+	if [ -n "$hook" ]; then
+		eval "$hook $args"
+	fi
 }

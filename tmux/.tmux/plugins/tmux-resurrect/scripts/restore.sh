@@ -170,6 +170,7 @@ restore_pane() {
 		window_name="$(remove_first_char "$window_name")"
 		pane_full_command="$(remove_first_char "$pane_full_command")"
 		if pane_exists "$session_name" "$window_number" "$pane_index"; then
+			tmux rename-window -t "$window_number" "$window_name"
 			if is_restoring_from_scratch; then
 				# overwrite the pane
 				# happens only for the first pane if it's the only registered pane for the whole tmux server
@@ -182,6 +183,7 @@ restore_pane() {
 				register_existing_pane "$session_name" "$window_number" "$pane_index"
 			fi
 		elif window_exists "$session_name" "$window_number"; then
+			tmux rename-window -t "$window_number" "$window_name"
 			new_pane "$session_name" "$window_number" "$window_name" "$dir" "$pane_index"
 		elif session_exists "$session_name"; then
 			new_window "$session_name" "$window_number" "$window_name" "$dir" "$pane_index"
@@ -344,11 +346,14 @@ restore_active_and_alternate_sessions() {
 main() {
 	if supported_tmux_version_ok && check_saved_session_exists; then
 		start_spinner "Restoring..." "Tmux restore complete!"
+		execute_hook "pre-restore-all"
 		restore_all_panes
 		restore_pane_layout_for_each_window >/dev/null 2>&1
+		execute_hook "pre-restore-history"
 		if save_shell_history_option_on; then
 			restore_shell_history
 		fi
+		execute_hook "pre-restore-pane-processes"
 		restore_all_pane_processes
 		# below functions restore exact cursor positions
 		restore_active_pane_for_each_window
@@ -356,6 +361,7 @@ main() {
 		restore_grouped_sessions  # also restores active and alt windows for grouped sessions
 		restore_active_and_alternate_windows
 		restore_active_and_alternate_sessions
+		execute_hook "post-restore-all"
 		stop_spinner
 		display_message "Tmux restore complete!"
 	fi

@@ -1,0 +1,32 @@
+pane	0	1	:emacs-26.1	1	:*	0	:/Users/wizard/Desktop	0	emacs-26.1	:emacs .zshrc
+pane	0	1	:emacs-26.1	1	:*	0	:/Users/wizard/Desktop	0	emacs-26.1	:emacs .zshrc
+pane	0	1	:emacs-26.1	1	:*	1	:/Users/wizard/Desktop	1	emacs-26.1	:emacs
+pane	0	1	:emacs-26.1	1	:*	1	:/Users/wizard/Desktop	1	emacs-26.1	:emacs
+pane	0	2	:[tmux]	0	:-	0	:/usr/local/Cellar/vim/8.1.0750/share/vim/vim81/syntax	1	zsh	:
+pane	0	2	:[tmux]	0	:-	0	:/usr/local/Cellar/vim/8.1.0750/share/vim/vim81/syntax	1	zsh	:
+pane	0	2	:[tmux]	0	:-	1	:/Users/wizard	0	zsh	:
+pane	0	2	:[tmux]	0	:-	1	:/Users/wizard	0	zsh	:
+pane	config	1	:Vim	1	:*	0	:/Users/wizard	0	Vim	:/Applications/MacVim.app/Contents/bin/../MacOS/Vim -g -v -S /Users/wizard/.vim/sessions/aliases.vim + /Users/wizard/.shell_aliases_functions.sh
+pane	config	1	:Vim	1	:*	0	:/Users/wizard	0	Vim	:/Applications/MacVim.app/Contents/bin/../MacOS/Vim -g -v -S /Users/wizard/.vim/sessions/aliases.vim + /Users/wizard/.shell_aliases_functions.sh
+pane	config	1	:Vim	1	:*	1	:/Users/wizard	0	Vim	:/Applications/MacVim.app/Contents/bin/../MacOS/Vim -g -v -S /Users/wizard/.vim/sessions/vrc.vim /Users/wizard/.vimrc
+pane	config	1	:Vim	1	:*	1	:/Users/wizard	0	Vim	:/Applications/MacVim.app/Contents/bin/../MacOS/Vim -g -v -S /Users/wizard/.vim/sessions/vrc.vim /Users/wizard/.vimrc
+pane	config	1	:Vim	1	:*	2	:/Users/wizard	0	Vim	:/Applications/MacVim.app/Contents/bin/../MacOS/Vim -g -v -S /Users/wizard/.vim/sessions/trc.vim /Users/wizard/.tmux.conf
+pane	config	1	:Vim	1	:*	2	:/Users/wizard	0	Vim	:/Applications/MacVim.app/Contents/bin/../MacOS/Vim -g -v -S /Users/wizard/.vim/sessions/trc.vim /Users/wizard/.tmux.conf
+pane	config	1	:Vim	1	:*	3	:/Users/wizard	1	Vim	:/Applications/MacVim.app/Contents/bin/../MacOS/Vim -g -v -S /Users/wizard/.vim/sessions/zshrc.vim + /Users/wizard/.zshrc
+pane	config	1	:Vim	1	:*	3	:/Users/wizard	1	Vim	:/Applications/MacVim.app/Contents/bin/../MacOS/Vim -g -v -S /Users/wizard/.vim/sessions/zshrc.vim + /Users/wizard/.zshrc
+pane	main	1	:zsh	1	:*	0	:/Users/wizard/Desktop	1	zsh	:
+pane	main	1	:zsh	1	:*	0	:/Users/wizard/Desktop	1	zsh	:
+pane	srr5	1	:zsh	1	:*	0	:/Users/wizard/Desktop	1	zsh	:
+pane	srr5	1	:zsh	1	:*	0	:/Users/wizard/Desktop	1	zsh	:
+window	0	1	1	:*	b93a,318x85,0,0{186x85,0,0,12,131x85,187,0,9}
+window	0	2	0	:-	3d67,318x85,0,0{159x85,0,0,16,158x85,160,0,17}
+window	config	1	1	:*	8f7d,318x85,0,0{78x85,0,0,2,79x85,79,0,4,79x85,159,0,3,79x85,239,0,5}
+window	main	1	1	:*	65b3,318x85,0,0,14
+window	srr5	1	1	:*	65b7,318x85,0,0,18
+window	0	1	1	:*	b93a,318x85,0,0{186x85,0,0,12,131x85,187,0,9}
+window	0	2	0	:-	3d67,318x85,0,0{159x85,0,0,16,158x85,160,0,17}
+state	0	main
+window	config	1	1	:*	8f7d,318x85,0,0{78x85,0,0,2,79x85,79,0,4,79x85,159,0,3,79x85,239,0,5}
+window	main	1	1	:*	65b3,318x85,0,0,14
+window	srr5	1	1	:*	65b7,318x85,0,0,18
+state	0	main

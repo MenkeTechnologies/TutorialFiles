@@ -1,6 +1,6 @@
 # Tmux Resurrect
 
-[![Build Status](https://travis-ci.org/tmux-plugins/tmux-resurrect.png?branch=master)](https://travis-ci.org/tmux-plugins/tmux-resurrect)
+[![Build Status](https://travis-ci.org/tmux-plugins/tmux-resurrect.svg?branch=master)](https://travis-ci.org/tmux-plugins/tmux-resurrect)
 
 Restore `tmux` environment after system restart.
 
@@ -90,8 +90,9 @@ You should now be able to use the plugin.
 **Configuration**
 
 - [Changing the default key bindings](docs/custom_key_bindings.md).
+- [Setting up hooks on save & restore](docs/hooks.md).
 - Only a conservative list of programs is restored by default:<br/>
-  `vi vim nvim emacs man less more tail top htop irssi mutt`.<br/>
+  `vi vim nvim emacs man less more tail top htop irssi weechat mutt`.<br/>
   [Restoring programs doc](docs/restoring_programs.md) explains how to restore
   additional programs.
 - [Change a directory](docs/save_dir.md) where `tmux-resurrect` saves tmux

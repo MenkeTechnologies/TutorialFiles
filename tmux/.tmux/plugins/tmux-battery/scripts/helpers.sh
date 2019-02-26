@@ -31,11 +31,12 @@ battery_status() {
 	if command_exists "pmset"; then
 		pmset -g batt | awk -F '; *' 'NR==2 { print $2 }'
 	elif command_exists "upower"; then
-		# sort order: attached, charging, discharging
-		for battery in $(upower -e | grep battery); do
-			upower -i $battery | grep state | awk '{print $2}'
-		done | sort | head -1
+		local battery
+		battery=$(upower -e | grep -E 'battery|DisplayDevice'| tail -n1)
+		upower -i $battery | awk '/state/ {print $2}'
 	elif command_exists "acpi"; then
-		acpi -b | grep -oi 'discharging' | awk '{print tolower($0)}'
+		acpi -b | awk '{gsub(/,/, ""); print tolower($3); exit}'
+	elif command_exists "termux-battery-status"; then
+		termux-battery-status | jq -r '.status' | awk '{printf("%s%", tolower($1))}'
 	fi
 }

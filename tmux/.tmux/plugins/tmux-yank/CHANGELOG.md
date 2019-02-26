@@ -6,6 +6,14 @@ Change Log
 
 ### Added
 
+-   Mouse support, controlled by `yank_with_mouse` and `yank_selection_mouse`
+    (@keidax)
+
+[v2.3.0] 2018-02-01
+-------------------
+
+### Added
+
 -   Tmux 2.4 support (@docwhat, @edi9999)
 -   Windows Subsystem for Linux (WSL) support via `clip.exe` (@lukewang1024)
 -   "copy pane current directory" feature (@bruno-)
@@ -112,7 +120,8 @@ Notes
 
 This change log is kept in <http://keepachangelog.com/> format.
 
-  [master]: https://github.com/tmux-plugins/tmux-yank/compare/v2.2.0...HEAD
+  [master]: https://github.com/tmux-plugins/tmux-yank/compare/v2.3.0...HEAD
+  [v2.3.0]: https://github.com/tmux-plugins/tmux-yank/compare/v2.2.0...v2.3.0
   [v2.2.0]: https://github.com/tmux-plugins/tmux-yank/compare/v2.1.0...v2.2.0
   [v2.1.0]: https://github.com/tmux-plugins/tmux-yank/compare/v2.0.0...v2.1.0
   [v2.0.0]: https://github.com/tmux-plugins/tmux-yank/compare/v1.0.0...v2.0.0

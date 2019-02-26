@@ -1,0 +1,5 @@
+pane	0	1	:zsh	1	:*	0	:/Users/wizard/.config/powerline/themes/tmux	1	zsh	:
+pane	config	1	:reattach-to-user-namespace	1	:*	0	:/Users/wizard/forkedRepos	1	zsh	:/usr/local/Cellar/python/3.7.2_1/Frameworks/Python.framework/Versions/3.7/Resources/Python.app/Contents/MacOS/Python /usr/local/bin/grc --colour=on ls -G .
+window	0	1	1	:*	cafd,318x85,0,0,0
+window	config	1	1	:*	cafe,318x85,0,0,1
+state	config	

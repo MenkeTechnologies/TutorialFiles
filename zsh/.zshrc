@@ -1403,6 +1403,9 @@ if (( $#h > 0 )); then
     zstyle ':completion:*:slogin:*' hosts $h
 fi
 
+#do not ascii sort for z completion
+zstyle ':completion:*:z:*' sort false
+
 if [[ $CUSTOM_COLORS == true ]]; then
 
     zstyle ':completion:*' list-colors 'ma=37;1;4;44'

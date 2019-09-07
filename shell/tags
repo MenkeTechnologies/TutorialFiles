@@ -343,6 +343,7 @@ killCursor	picture_finder.sh	/^killCursor() {$/;"	f
 killCursor	secureDelete.sh	/^killCursor() {$/;"	f
 killpids	CPU_Stresser.sh	/^killpids() {$/;"	f
 last	batchRename.sh	/^        local last=$(echo ${file##*_})$/;"	v
+lastcommit	about.sh	/^            lastcommit="$(git log --oneline -n 1)"$/;"	v
 lcline	openAll.sh	/^    lcline="$(echo $line | tr '[:upper:]' '[:lower:]')"$/;"	v
 leavePresentPaneAloneFlag	powerTo.sh	/^leavePresentPaneAloneFlag=false$/;"	v
 len	manzshcompgen.zsh	/^    len=${#1}$/;"	v

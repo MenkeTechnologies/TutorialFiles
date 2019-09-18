@@ -639,7 +639,6 @@ user	gitRemoteRepoInformation.sh	/^                        user="$(echo $line | 
 user_framework	boiler_gen.py	/^user_framework = sys.argv[1]$/;"	v
 valid_framework	boiler_gen.py	/^valid_framework = get_frame_work(user_framework)$/;"	v
 var	mantozshcomp.py	/^    def var(self):$/;"	m	class:Deroffer
-verb	zpwr.sh	/^verb="$1"$/;"	v
 version	about.sh	/^            version="$(git describe --tags $(git rev-list --tags --max-count=1) | perl -pe 's@[\\t ]@@')"$/;"	v
 view	eyes.sh	/^    view=${ary[$randIndex]}$/;"	v
 w	uploadWebPi.sh	/^w=80$/;"	v

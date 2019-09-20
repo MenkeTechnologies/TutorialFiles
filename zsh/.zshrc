@@ -1037,8 +1037,6 @@ zle -N bracketed-paste bracketed-paste-magic
 setopt rcquotes # allow '' escape
 setopt interactive_comments # Allow comments even in interactive shells (especially for Muness)
 
-setopt shwordsplit # split vars on space
-
 setopt auto_cd # If you type foo, and it isn't a command, and it is a directory in your cdpath, go there
 setopt cdablevarS # if argument to cd is the name of a parameter whose value is a valid directory, it will become the current directory
 setopt pushd_ignore_dups # don't push multiple copies of the same directory onto the directory stack

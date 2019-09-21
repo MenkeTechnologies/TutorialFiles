@@ -1,0 +1,12 @@
+pane	config	0	:Vim	1	:*	0	:/Users/wizard	0	Vim	:/Applications/MacVim.app/Contents/MacOS/Vim -g -v -S /Users/wizard/.vim/sessions/aliases.vim + /Users/wizard/.shell_aliases_functions.sh
+pane	config	0	:Vim	1	:*	1	:/Users/wizard	0	Vim	:/Applications/MacVim.app/Contents/MacOS/Vim -g -v -S /Users/wizard/.vim/sessions/vrc.vim /Users/wizard/.vimrc
+pane	config	0	:Vim	1	:*	2	:/Users/wizard	0	Vim	:/Applications/MacVim.app/Contents/MacOS/Vim -g -v -S /Users/wizard/.vim/sessions/trc.vim /Users/wizard/.tmux.conf
+pane	config	0	:Vim	1	:*	3	:/Users/wizard	1	Vim	:/Applications/MacVim.app/Contents/MacOS/Vim -g -v -S /Users/wizard/.vim/sessions/zshrc.vim + /Users/wizard/.zshrc
+pane	config	1	:sleep	0	:-	0	:/Users/wizard	1	sleep	:sleep 600
+pane	main	0	:zsh	1	:*	0	:	0	sudo	:sudo htop
+pane	main	0	:zsh	1	:*	1	:/Users/wizard	0	bash	:bash /Users/wizard/Documents/shellScripts/colorLogger.sh
+pane	main	0	:zsh	1	:*	2	:/Users/wizard	0	bash	:bash /Users/wizard/Documents/shellScripts/storageShower.sh 8 1
+pane	main	0	:zsh	1	:*	3	:/Users/wizard	1	zsh	:
+pane	main	0	:zsh	1	:*	4	:/Users/wizard	0	zsh	:
+pane	main	0	:zsh	1	:*	5	:	0	sudo	:sudo /usr/local/sbin/iftop -f not port mdns and not port ssdp and not port llmnr and not port upnp-discovery -c /Users/wizard/.iftop.conf
+pane	main	1	:prod	0	:	0	:/Users/wizard	1	expect	:expect /Users/wizard/mnt/prod.tcl

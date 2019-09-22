@@ -255,7 +255,6 @@ fileToBeExecuted	runner.sh	/^fileToBeExecuted="$1"$/;"	v
 fileToBeExecuted	templater.sh	/^fileToBeExecuted="$1"$/;"	v
 file_is_overwritable	mantozshcomp.py	/^def file_is_overwritable(path):$/;"	f
 files	backupBashConfig.sh	/^files=("$my_home_dir\/.bashrc" "$my_home_dir\/.bash_profile" "$my_home_dir\/.profile" '\/etc\/bashrc' '\/etc\/profile')$/;"	v
-files	backupBashConfig.sh~	/^files=("$my_home_dir\/.bashrc" "$my_home_dir\/.bash_profile" "$my_home_dir\/.profile" '\/etc\/bashrc' '\/etc\/profile')$/;"	v
 filesArray	openAll.sh	/^filesArray=()$/;"	v
 filter	macOnly/splitReg.sh	/^filter="$2"$/;"	v
 filter	splitReg.sh	/^filter="$2"$/;"	v
@@ -409,11 +408,8 @@ minute	timeConverter.sh	/^minute=$(date | tr -s ' ' | cut -d ' ' -f4 | cut -d ':
 minutes_to_sleep	autoUpdater.sh	/^minutes_to_sleep=10$/;"	v
 myPrettyPrint	gitgo.sh	/^myPrettyPrint() {$/;"	f
 my_backup_dir	backupBashConfig.sh	/^my_backup_dir="$my_scripts_dir\/rcBackups"$/;"	v
-my_backup_dir	backupBashConfig.sh~	/^my_backup_dir="$my_scripts_dir\/rcBackups"$/;"	v
 my_home_dir	backupBashConfig.sh	/^my_home_dir="$HOME"$/;"	v
-my_home_dir	backupBashConfig.sh~	/^my_home_dir="$HOME"$/;"	v
 my_scripts_dir	backupBashConfig.sh	/^my_scripts_dir="$SCRIPTS"$/;"	v
-my_scripts_dir	backupBashConfig.sh~	/^my_scripts_dir="$SCRIPTS"$/;"	v
 needSudo	updater.sh	/^                needSudo=no$/;"	v
 needSudo	updater.sh	/^                needSudo=yes$/;"	v
 needSudo	updater.sh	/^            needSudo=no$/;"	v

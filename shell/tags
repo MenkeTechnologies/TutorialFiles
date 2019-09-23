@@ -200,9 +200,9 @@ displayProgressIndicator	openAll.sh	/^displayProgressIndicator() {$/;"	f
 distro	colorLogger.sh	/^        distro=debian$/;"	v
 distro	colorLogger.sh	/^        distro=redhat$/;"	v
 distro	colorLogger.sh	/^        distro=suse$/;"	v
-distroName	clearTrash.sh	/^    distroName="$(grep '^ID=' \/etc\/os-release | cut -d= -f2 | tr -d \\")"$/;"	v
-distroName	colorLogger.sh	/^    distroName="$(grep '^ID=' \/etc\/os-release | cut -d= -f2 | tr -d \\")"$/;"	v
-distroName	logs.sh	/^    distroName=$(lsb_release -a | head -1 | awk '{print $3}')$/;"	v
+distroName	clearTrash.sh	/^    distroName=$(perl -lne 'do{print s\/"\/\/,$1;exit0}if\/^ID=(.*)\/')$/;"	v
+distroName	colorLogger.sh	/^    distroName=$(perl -lne 'do{print s\/"\/\/,$1;exit0}if\/^ID=(.*)\/')$/;"	v
+distroName	logs.sh	/^    distroName=$(perl -lne 'do{print s\/"\/\/,$1;exit0}if\/^ID=(.*)\/')$/;"	v
 do_line	mantozshcomp.py	/^    def do_line(self):$/;"	m	class:Deroffer
 do_tbl	mantozshcomp.py	/^    def do_tbl(self):$/;"	m	class:Deroffer
 dontSummarizeSizes	directoryContentsSize.sh	/^dontSummarizeSizes() {$/;"	f

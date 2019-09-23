@@ -200,9 +200,9 @@ displayProgressIndicator	openAll.sh	/^displayProgressIndicator() {$/;"	f
 distro	colorLogger.sh	/^        distro=debian$/;"	v
 distro	colorLogger.sh	/^        distro=redhat$/;"	v
 distro	colorLogger.sh	/^        distro=suse$/;"	v
-distroName	clearTrash.sh	/^    distroName=$(perl -lne 'do{print s\/"\/\/,$1;exit0}if\/^ID=(.*)\/')$/;"	v
-distroName	colorLogger.sh	/^    distroName=$(perl -lne 'do{print s\/"\/\/,$1;exit0}if\/^ID=(.*)\/')$/;"	v
-distroName	logs.sh	/^    distroName=$(perl -lne 'do{print s\/"\/\/,$1;exit0}if\/^ID=(.*)\/')$/;"	v
+distroName	clearTrash.sh	/^        distroName=$(perl -lne 'do{($_=$1)=~s\/"\/\/;print;exit0}if\/^ID=(.*)\/' \/etc\/os-release)$/;"	v
+distroName	colorLogger.sh	/^        distroName=$(perl -lne 'do{($_=$1)=~s\/"\/\/;print;exit0}if\/^ID=(.*)\/' \/etc\/os-release)$/;"	v
+distroName	logs.sh	/^        distroName=$(perl -lne 'do{($_=$1)=~s\/"\/\/;print;exit0}if\/^ID=(.*)\/' \/etc\/os-release)$/;"	v
 do_line	mantozshcomp.py	/^    def do_line(self):$/;"	m	class:Deroffer
 do_tbl	mantozshcomp.py	/^    def do_tbl(self):$/;"	m	class:Deroffer
 dontSummarizeSizes	directoryContentsSize.sh	/^dontSummarizeSizes() {$/;"	f

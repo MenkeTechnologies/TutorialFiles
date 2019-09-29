@@ -16,7 +16,7 @@ COLS	myWatchNoBlink.sh	/^        COLS=$(tput cols)$/;"	v
 COLS	myWatchNoBlinkColorized.sh	/^        COLS=$(tput cols)$/;"	v
 COMPLETION_DIR	remoteRepoMonitorDaemon.sh	/^    COMPLETION_DIR="$HOME\/.oh-my-zsh\/custom\/plugins"$/;"	v
 CONFIG_DIR	remoteRepoMonitorDaemon.sh	/^CONFIG_DIR="$HOME\/forkedRepos\/$REPO_NAME"$/;"	v
-COWSAY_DIR	macOnly/randomCow.sh	/^COWSAY_DIR=\/usr\/local\/lib\/node_modules\/cowsay\/cows$/;"	v
+COW_FILES	macOnly/randomCow.sh	/^COW_FILES=($(cowsay -l | perl -ne 'do{{$_=~s@(\\x09|\\x20)+@\\x0a@g;print}} if !\/Cow files.*:\/'))$/;"	v
 CR	batchRename.sh	/^    local CR="\\r"$/;"	v
 CR	openAll.sh	/^    local CR="\\r"$/;"	v
 CodeFile	boiler_gen.py	/^class CodeFile:$/;"	c
@@ -272,7 +272,7 @@ flush_output	mantozshcomp.py	/^    def flush_output(self, where):$/;"	m	class:De
 font	macOnly/figletRandomFont.sh	/^    font=${ary[$randIndex]}$/;"	v
 font	macOnly/figletRandomFontOnce.sh	/^font=${ary[$randIndex]}$/;"	v
 font	macOnly/menkeTechRandomFont.sh	/^    font=${ary[$randIndex]}$/;"	v
-font	macOnly/randomCow.sh	/^    font=${ary[$randIndex]}$/;"	v
+font	macOnly/randomCow.sh	/^font=${COW_FILES[$randIndex]}$/;"	v
 font	mantozshcomp.py	/^    def font(self):$/;"	m	class:Deroffer
 font2	mantozshcomp.py	/^    def font2(self):$/;"	m	class:Deroffer
 fortuneQuote	eyes.sh	/^        fortuneQuote="$(figlet -f "$1" \\"$fortuneQuote\\")"$/;"	v
@@ -519,14 +519,14 @@ randIndex	eyes.sh	/^    randIndex=$((RANDOM % rangePossibleIndices))$/;"	v
 randIndex	macOnly/figletRandomFont.sh	/^    randIndex=$(($RANDOM % $rangePossibleIndices))$/;"	v
 randIndex	macOnly/figletRandomFontOnce.sh	/^randIndex=$(($RANDOM % $rangePossibleIndices))$/;"	v
 randIndex	macOnly/menkeTechRandomFont.sh	/^    randIndex=$(($RANDOM % $rangePossibleIndices))$/;"	v
-randIndex	macOnly/randomCow.sh	/^    randIndex=$(($RANDOM % $rangePossibleIndices))$/;"	v
+randIndex	macOnly/randomCow.sh	/^randIndex=$((RANDOM % rangePossibleIndices))$/;"	v
 randomCowsayCowScript	macOnly/combo.sh	/^randomCowsayCowScript="$SCRIPTS\/macOnly\/randomCow.sh"$/;"	v
 randomFigletFontScript	macOnly/combo.sh	/^randomFigletFontScript="$SCRIPTS\/macOnly\/figletRandomFontOnce.sh"$/;"	v
 rangePossibleIndices	eyes.sh	/^rangePossibleIndices=${#ary[*]}$/;"	v
 rangePossibleIndices	macOnly/figletRandomFont.sh	/^rangePossibleIndices=${#ary[*]}$/;"	v
 rangePossibleIndices	macOnly/figletRandomFontOnce.sh	/^rangePossibleIndices=${#ary[*]}$/;"	v
 rangePossibleIndices	macOnly/menkeTechRandomFont.sh	/^rangePossibleIndices=${#ary[*]}$/;"	v
-rangePossibleIndices	macOnly/randomCow.sh	/^    rangePossibleIndices=${#ary[*]}$/;"	v
+rangePossibleIndices	macOnly/randomCow.sh	/^rangePossibleIndices=${#COW_FILES[@]}$/;"	v
 re	help2comp.py	/^import re$/;"	i
 re	mantozshcomp.py	/^import re$/;"	i
 react_routine	boiler_gen.py	/^def react_routine(name):$/;"	f

@@ -425,6 +425,8 @@ newfile	createTextFile.sh	/^newfile="$1"$/;"	v
 newfile	macOnly/postscriptToPDFCreator.sh	/^    newfile=${file%.*}$/;"	v
 newtime	autoUpdater.sh	/^        newtime=$(date +"%s")$/;"	v
 nextdate	autoUpdater.sh	/^    nextdate=$(echo "$perlscript" | perl -MTime::Piece -MTime::Seconds)$/;"	v
+nmcmd	fzfPreviewOptsCommon.sh	/^    nmcmd="nm -D"$/;"	v
+nmcmd	fzfPreviewOptsCommon.sh	/^    nmcmd="nm"$/;"	v
 node_exe	macOnly/randomCow.sh	/^node_exe="\/usr\/local\/lib\/node_modules\/cowsay\/cli.js"$/;"	v
 nproc	CPU_Stresser.sh	/^nproc=10$/;"	v
 num	myWatchMaintainEscapes.sh	/^        num=$OPTARG$/;"	v
@@ -453,6 +455,7 @@ optstring	myWatchNoBlinkColorized.sh	/^optstring=bh$/;"	v
 optstring	mywatch.sh	/^optstring=dh$/;"	v
 origin	gitgo.sh	/^    local origin="$(git remote -v | awk '{print $1}' | tail -1 | tr -d ' ')"$/;"	v
 os	boiler_gen.py	/^import os$/;"	i
+os	fzfPreviewOptsCommon.sh	/^os="$(uname -s)"$/;"	v
 os	mantozshcomp.py	/^    import subprocess, os$/;"	i
 os	mantozshcomp.py	/^import os.path$/;"	i
 out	inotifyWatchLogAndEmailIfNAS.sh	/^        out=$(tail -1 "$file" | grep "nas")$/;"	v

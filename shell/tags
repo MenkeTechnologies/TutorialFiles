@@ -133,6 +133,7 @@ clearList	clearList.sh	/^clearList() {$/;"	f
 clearline	batchRename.sh	/^    local clearline="\\e[K"          # clear to end of line (ANSI terminal)$/;"	v
 clearline	openAll.sh	/^    local clearline="\\e[K"          # clear to end of line (ANSI terminal)$/;"	v
 cmd	delete_dups.zsh	/^    cmd="$(echo $f | cut -c2-)"$/;"	v
+cmd	fzfMan.sh	/^cmd="$1"$/;"	v
 codecs	mantozshcomp.py	/^import codecs$/;"	i
 cols	picture_finder.sh	/^cols=$(tput cols)$/;"	v
 command	macOnly/commandToColors.sh	/^command="$@"$/;"	v
@@ -358,9 +359,11 @@ lf	clearList.sh	/^                    lf="$(echo $loc|cut -d' ' -f3-10)"$/;"	v
 lib_command	clearList.sh	/^        lib_command="ldd"$/;"	v
 lib_command	clearList.sh	/^        lib_command="otool -L"$/;"	v
 limitFlag	myWatchMaintainEscapes.sh	/^        limitFlag=true$/;"	v
+line	fzfMan.sh	/^line=\\$(echo {} | perl -lane "do{\\\\\\$_=~s@^\\\\\\s+|\\\\\\s+\\\\\\$@@g;print}");$/;"	v
 line	gitRemoteRepoInformation.sh	/^                line="$(git remote -v 2>\/dev\/null | sed 1q)" && {$/;"	v
 lineCounter	shebangChanger.sh	/^    lineCounter=1$/;"	v
 link	uploadWebPi.sh	/^        link="http:\/\/$MY_IP:$RPI_HTML_PORT\/$i"$/;"	v
+log	fzfMan.sh	/^log=\/Users\/wizard\/updaterlog.txt$/;"	v
 lossy_unicode	mantozshcomp.py	/^def lossy_unicode(s):$/;"	f
 ls_command	clearList.sh	/^                ls_command="grc -c $HOME\/conf.gls gls -iFlhAd --color=always"$/;"	v
 ls_command	clearList.sh	/^                ls_command="grc -c $HOME\/conf.gls ls -iFlhA --color=always"$/;"	v

@@ -368,7 +368,6 @@ line	fzfMan.sh	/^line=\\$(echo {} | perl -lane "do{\\\\\\$_=~s@^\\\\\\s+|\\\\\\s
 line	gitRemoteRepoInformation.sh	/^                line="$(git remote -v 2>\/dev\/null | sed 1q)" && {$/;"	v
 lineCounter	shebangChanger.sh	/^    lineCounter=1$/;"	v
 link	uploadWebPi.sh	/^        link="http:\/\/$MY_IP:$RPI_HTML_PORT\/$i"$/;"	v
-log	fzfEnv.sh	/^log=\/Users\/wizard\/updaterlog.txt$/;"	v
 log	fzfMan.sh	/^log=\/Users\/wizard\/updaterlog.txt$/;"	v
 lossy_unicode	mantozshcomp.py	/^def lossy_unicode(s):$/;"	f
 ls_command	clearList.sh	/^                ls_command="grc -c $HOME\/conf.gls gls -iFlhAd --color=always"$/;"	v

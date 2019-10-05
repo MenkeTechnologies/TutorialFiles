@@ -134,6 +134,7 @@ clearline	batchRename.sh	/^    local clearline="\\e[K"          # clear to end o
 clearline	openAll.sh	/^    local clearline="\\e[K"          # clear to end of line (ANSI terminal)$/;"	v
 cmd	delete_dups.zsh	/^    cmd="$(echo $f | cut -c2-)"$/;"	v
 cmd	fzfMan.sh	/^cmd="$1"$/;"	v
+cmdType	fzfEnv.sh	/^cmdType=\\$(grep -F "\\$line" ${ALL_ENV}Key.txt | awk "{print \\\\\\$1; exit}")$/;"	v
 codecs	mantozshcomp.py	/^import codecs$/;"	i
 cols	picture_finder.sh	/^cols=$(tput cols)$/;"	v
 command	macOnly/commandToColors.sh	/^command="$@"$/;"	v
@@ -234,6 +235,7 @@ executeFileFirstArgIsCommand	runner.sh	/^executeFileFirstArgIsCommand() {$/;"	f
 executeTheFile	runner.sh	/^executeTheFile() {$/;"	f
 exists	CPU_Stresser.sh	/^exists() {$/;"	f
 exists	clearList.sh	/^exists(){$/;"	f
+exists	fzfEnv.sh	/^    exists(){$/;"	f
 exists	fzfPreviewOptsCommon.sh	/^    exists(){$/;"	f
 exists	manzshcompgen.zsh	/^exists(){$/;"	f
 exists	rpiSoftwareUpdater.sh	/^exists() {$/;"	f
@@ -244,6 +246,7 @@ fallback2	mantozshcomp.py	/^    def fallback2(self, options_section):$/;"	m	clas
 family_phone_numbers	textmessage.sh	/^    family_phone_numbers=("$member_1")$/;"	v
 fetch	about.sh	/^            fetch="$(git remote -v | grep zpwr | grep fetch | head -n 1 | perl -pe 's@[\\t ]+@    @')"$/;"	v
 file	boiler_gen.py	/^    file = CodeFile(model_file, directory, model)$/;"	v
+file	fzfEnv.sh	/^file=\\$(grep -F "\\$line" ${ALL_ENV}Key.txt | awk "{print \\\\\\$2; exit}")$/;"	v
 file	inotifyWatchLogAndEmailIfNAS.sh	/^file="$1"$/;"	v
 file	macOnly/splitReg.sh	/^file=\/tmp\/temp$\$$/;"	v
 file	openAll.sh	/^    file="$(echo $file | tr '[:upper:]' '[:lower:]')"$/;"	v
@@ -330,6 +333,7 @@ installDir	updater.sh	/^            installDir=$(python2 -m pip show "$i" | \\pe
 installDir	updater.sh	/^            installDir=$(python3 -m pip show "$i" | \\perl -ne 'print $1 if \/^Location: (.*)\/')$/;"	v
 installDir	updater.sh	/^        installDir=$(npm root -g | head -n 1)$/;"	v
 installerDir	macOnly/tutorialConfigUpdater.sh	/^installerDir="$HOME\/Documents\/shellScripts\/$REPO_NAME"$/;"	v
+isZsh	fzfEnv.sh	/^isZsh(){$/;"	f
 isZsh	fzfPreviewOptsCommon.sh	/^isZsh(){$/;"	f
 is_my_type	mantozshcomp.py	/^    def is_my_type(self, manpage):$/;"	m	class:ManParser
 is_my_type	mantozshcomp.py	/^    def is_my_type(self, manpage):$/;"	m	class:Type1ManParser
@@ -359,10 +363,12 @@ lf	clearList.sh	/^                    lf="$(echo $loc|cut -d' ' -f3-10)"$/;"	v
 lib_command	clearList.sh	/^        lib_command="ldd"$/;"	v
 lib_command	clearList.sh	/^        lib_command="otool -L"$/;"	v
 limitFlag	myWatchMaintainEscapes.sh	/^        limitFlag=true$/;"	v
+line	fzfEnv.sh	/^line={};$/;"	v
 line	fzfMan.sh	/^line=\\$(echo {} | perl -lane "do{\\\\\\$_=~s@^\\\\\\s+|\\\\\\s+\\\\\\$@@g;print}");$/;"	v
 line	gitRemoteRepoInformation.sh	/^                line="$(git remote -v 2>\/dev\/null | sed 1q)" && {$/;"	v
 lineCounter	shebangChanger.sh	/^    lineCounter=1$/;"	v
 link	uploadWebPi.sh	/^        link="http:\/\/$MY_IP:$RPI_HTML_PORT\/$i"$/;"	v
+log	fzfEnv.sh	/^log=\/Users\/wizard\/updaterlog.txt$/;"	v
 log	fzfMan.sh	/^log=\/Users\/wizard\/updaterlog.txt$/;"	v
 lossy_unicode	mantozshcomp.py	/^def lossy_unicode(s):$/;"	f
 ls_command	clearList.sh	/^                ls_command="grc -c $HOME\/conf.gls gls -iFlhAd --color=always"$/;"	v

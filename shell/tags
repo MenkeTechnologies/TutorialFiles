@@ -246,6 +246,7 @@ fallback2	mantozshcomp.py	/^    def fallback2(self, options_section):$/;"	m	clas
 family_phone_numbers	textmessage.sh	/^    family_phone_numbers=("$member_1")$/;"	v
 fetch	about.sh	/^            fetch="$(git remote -v | grep zpwr | grep fetch | head -n 1 | perl -pe 's@[\\t ]+@    @')"$/;"	v
 file	boiler_gen.py	/^    file = CodeFile(model_file, directory, model)$/;"	v
+file	fzfEnv.sh	/^        file=\\$(echo \\$file | sed "s@[]\\\\\\[^\\$.*\/]@\\\\\\\\\\\\&@g")$/;"	v
 file	fzfEnv.sh	/^file=\\$(grep -F "\\$line" ${ALL_ENV}Key.txt | awk "{print \\\\\\$2; exit}")$/;"	v
 file	inotifyWatchLogAndEmailIfNAS.sh	/^file="$1"$/;"	v
 file	macOnly/splitReg.sh	/^file=\/tmp\/temp$\$$/;"	v

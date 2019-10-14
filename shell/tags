@@ -134,7 +134,7 @@ clearline	batchRename.sh	/^    local clearline="\\e[K"          # clear to end o
 clearline	openAll.sh	/^    local clearline="\\e[K"          # clear to end of line (ANSI terminal)$/;"	v
 cmd	delete_dups.zsh	/^    cmd="$(echo $f | cut -c2-)"$/;"	v
 cmd	fzfMan.sh	/^cmd="$1"$/;"	v
-cmdType	fzfEnv.sh	/^cmdType=\\$(grep -m1 " \\$line\\$" ${ALL_ENV}Key.txt | awk "{print \\\\\\$1}")$/;"	v
+cmdType	fzfEnv.sh	/^cmdType=\\$(grep -m1 -a " \\$line\\$" ${ALL_ENV}Key.txt | awk "{print \\\\\\$1}")$/;"	v
 codecs	mantozshcomp.py	/^import codecs$/;"	i
 cols	picture_finder.sh	/^cols=$(tput cols)$/;"	v
 command	macOnly/commandToColors.sh	/^command="$@"$/;"	v
@@ -248,7 +248,7 @@ family_phone_numbers	textmessage.sh	/^    family_phone_numbers=("$member_1")$/;"
 fetch	about.sh	/^            fetch="$(git remote -v | grep zpwr | grep fetch | head -n 1 | perl -pe 's@[\\t ]+@    @')"$/;"	v
 file	boiler_gen.py	/^    file = CodeFile(model_file, directory, model)$/;"	v
 file	fzfEnv.sh	/^        file=\\$(echo \\$file | sed "s@[]\\\\\\[^\\$.*\/]@\\\\\\\\\\\\&@g")$/;"	v
-file	fzfEnv.sh	/^file=\\$(grep -m1 " \\$line\\$" ${ALL_ENV}Key.txt | awk "{print \\\\\\$2}")$/;"	v
+file	fzfEnv.sh	/^file=\\$(grep -m1 -a " \\$line\\$" ${ALL_ENV}Key.txt | awk "{print \\\\\\$2}")$/;"	v
 file	inotifyWatchLogAndEmailIfNAS.sh	/^file="$1"$/;"	v
 file	macOnly/splitReg.sh	/^file=\/tmp\/temp$\$$/;"	v
 file	openAll.sh	/^    file="$(echo $file | tr '[:upper:]' '[:lower:]')"$/;"	v

@@ -246,9 +246,6 @@ exists	manzshcompgen.zsh	/^exists(){$/;"	f
 exists	rpiSoftwareUpdater.sh	/^exists() {$/;"	f
 exists	updater.sh	/^exists() {$/;"	f
 exists	zshcompgen.zsh	/^exists(){$/;"	f
-extension	fzfPreviewOpts.sh	/^            extension=\\${file##*.};$/;"	v
-extension	fzfPreviewOptsCtrlT.sh	/^            extension=\\${file##*.};$/;"	v
-extension	fzfPreviewOptsPony.sh	/^            extension="\\${\\$file##*.}"$/;"	v
 fallback	mantozshcomp.py	/^    def fallback(self, options_section):$/;"	m	class:Type1ManParser
 fallback2	mantozshcomp.py	/^    def fallback2(self, options_section):$/;"	m	class:Type1ManParser
 family_phone_numbers	textmessage.sh	/^    family_phone_numbers=("$member_1")$/;"	v

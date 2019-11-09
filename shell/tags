@@ -138,6 +138,8 @@ clearline	batchRename.sh	/^    local clearline="\\e[K"          # clear to end o
 clearline	openAll.sh	/^    local clearline="\\e[K"          # clear to end of line (ANSI terminal)$/;"	v
 cmd	delete_dups.zsh	/^    cmd="$(echo $f | cut -c2-)"$/;"	v
 cmd	fzfMan.sh	/^cmd="$1"$/;"	v
+cmd	keybindingsToFZFVim.zsh	/^    cmd=nvim$/;"	v
+cmd	keybindingsToFZFVim.zsh	/^    cmd=vim$/;"	v
 cmdType	fzfEnv.sh	/^cmdType=\\$(grep -m1 -a " \\$line\\$" ${ALL_ENV}Key.txt | awk "{print \\\\\\$1}")$/;"	v
 codecs	mantozshcomp.py	/^import codecs$/;"	i
 cols	picture_finder.sh	/^cols=$(tput cols)$/;"	v

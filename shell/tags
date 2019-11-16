@@ -115,6 +115,7 @@ arr	sortedArrayCounter.sh	/^arr=()$/;"	v
 backup_dir	duplicateLineDeleter.sh	/^backup_dir=$scripts_dir\/rcBackups$/;"	v
 backup_dir	indenterAndDuplicateLineDeleter.sh	/^backup_dir=$scripts_dir\/rcBackups$/;"	v
 banner	about.sh	/^banner() {$/;"	f
+base	fzfPreviewOptsCommon.sh	/^            base=\\$(basename \\$file)$/;"	v
 blocksize	secureDelete.sh	/^blocksize=1  # I\/O with \/dev\/urandom requires unit block size,$/;"	v
 boldflag	myWatchNoBlink.sh	/^        boldflag=true$/;"	v
 boldflag	myWatchNoBlinkColorized.sh	/^        boldflag=true$/;"	v

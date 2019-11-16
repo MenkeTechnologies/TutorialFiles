@@ -515,7 +515,7 @@ parse_options	help2comp.py	/^def parse_options(help_text):$/;"	f
 pass_count	secureDelete.sh	/^    pass_count=1$/;"	v
 passes	secureDelete.sh	/^passes=7     # Number of file-shredding passes.$/;"	v
 paste_cmd	crossOSCommands.sh	/^                paste_cmd="powershell.exe -c 'Get-Clipboard'"$/;"	v
-paste_cmd	crossOSCommands.sh	/^                paste_cmd='xclip -o -sel clip 2>\/dev\/null'$/;"	v
+paste_cmd	crossOSCommands.sh	/^                paste_cmd='xclip -o -sel clip'$/;"	v
 paste_cmd	crossOSCommands.sh	/^            paste_cmd="powershell.exe -c 'Get-Clipboard'"$/;"	v
 paste_cmd	crossOSCommands.sh	/^            paste_cmd='pbpaste'$/;"	v
 path	mantozshcomp.py	/^import os.path$/;"	i

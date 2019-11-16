@@ -126,6 +126,7 @@ built_command	mantozshcomp.py	/^def built_command(options, description, arg):$/;
 built_command_output	mantozshcomp.py	/^built_command_output = []$/;"	v
 bz2	mantozshcomp.py	/^import bz2$/;"	i
 cargo_bin	rpiSoftwareUpdater.sh	/^cargo_bin="$HOME\/.cargo\/bin\/cargo"$/;"	v
+casestr	fzfPreviewOptsCommon.sh	/^casestr=$(cat<<EOF$/;"	v
 chars	batchRename.sh	/^    local chars=1                   # number of characters to display$/;"	v
 chars	openAll.sh	/^    local chars=1                   # number of characters to display$/;"	v
 checkForExistence	batchRename.sh	/^checkForExistence() {$/;"	f

@@ -162,6 +162,10 @@ condputs_tr	mantozshcomp.py	/^    def condputs_tr(self, str):$/;"	m	class:Deroff
 contents	duplicateLineDeleter.sh	/^    contents=$(cat -s "$file")$/;"	v
 contents	indenterAndDuplicateLineDeleter.sh	/^    contents=$(cat -s "$file")$/;"	v
 convertFiles	batchRename.sh	/^convertFiles() {$/;"	f
+copy_cmd	crossOSCommands.sh	/^                copy_cmd='clip.exe'$/;"	v
+copy_cmd	crossOSCommands.sh	/^                copy_cmd='xclip -i -sel clip'$/;"	v
+copy_cmd	crossOSCommands.sh	/^            copy_cmd='clip.exe'$/;"	v
+copy_cmd	crossOSCommands.sh	/^            copy_cmd='pbcopy'$/;"	v
 could_be_description	mantozshcomp.py	/^    def could_be_description(self, line):$/;"	m	class:TypeDeroffManParser
 count	uploadWebPi.sh	/^count=0$/;"	v
 count_argument_dashes	mantozshcomp.py	/^    def count_argument_dashes(self, line):$/;"	m	class:TypeDarwinManParser
@@ -308,7 +312,10 @@ gen_files_react	boiler_gen.py	/^def gen_files_react(start):$/;"	f
 gen_files_spring	boiler_gen.py	/^def gen_files_spring(start):$/;"	f
 generate_argument_list	help2comp.py	/^def generate_argument_list(options):$/;"	f
 generate_completion_function	help2comp.py	/^def generate_completion_function(options, program_name):$/;"	f
+getCopyCommand	crossOSCommands.sh	/^getCopyCommand(){$/;"	f
 getInitialCommit	gitgo.sh	/^getInitialCommit() {$/;"	f
+getOpenCommand	crossOSCommands.sh	/^getOpenCommand(){$/;"	f
+getPasteCommand	crossOSCommands.sh	/^getPasteCommand(){$/;"	f
 getRemoteDetails	gitgo.sh	/^getRemoteDetails() {$/;"	f
 get_arg	mantozshcomp.py	/^    def get_arg(self, optionName):$/;"	m	class:ManParser
 get_frame_work	boiler_gen.py	/^def get_frame_work(user_framework):$/;"	f
@@ -462,6 +469,8 @@ oldifs	sortedArrayCounter.sh	/^oldifs="$IFS"$/;"	v
 oldtime	autoUpdater.sh	/^    oldtime=$(date +"%s")$/;"	v
 openTextEditor	createScriptButDontOpenSublime.sh	/^openTextEditor() {$/;"	f
 openTextEditor	createTextFile.sh	/^openTextEditor() {$/;"	f
+open_cmd	crossOSCommands.sh	/^                open_cmd='cmd.exe \/c start ""'$/;"	v
+open_cmd	crossOSCommands.sh	/^                open_cmd='nohup xdg-open'$/;"	v
 options	help2comp.py	/^        options = parse_options(sys.stdin.readlines())$/;"	v
 optstring	directoryContentsSize.sh	/^optstring=shta$/;"	v
 optstring	gitgo.sh	/^optstring=p:hcl$/;"	v
@@ -505,6 +514,10 @@ parse_manpage_at_path	mantozshcomp.py	/^def parse_manpage_at_path(manpage_path, 
 parse_options	help2comp.py	/^def parse_options(help_text):$/;"	f
 pass_count	secureDelete.sh	/^    pass_count=1$/;"	v
 passes	secureDelete.sh	/^passes=7     # Number of file-shredding passes.$/;"	v
+paste_cmd	crossOSCommands.sh	/^                paste_cmd="powershell.exe -c 'Get-Clipboard'"$/;"	v
+paste_cmd	crossOSCommands.sh	/^                paste_cmd='xclip -o -sel clip 2>\/dev\/null'$/;"	v
+paste_cmd	crossOSCommands.sh	/^            paste_cmd="powershell.exe -c 'Get-Clipboard'"$/;"	v
+paste_cmd	crossOSCommands.sh	/^            paste_cmd='pbpaste'$/;"	v
 path	mantozshcomp.py	/^import os.path$/;"	i
 path	shebangChanger.sh	/^path="#!\/usr\/bin\/env $executableProgram"$/;"	v
 perlOutdated	updater.sh	/^        perlOutdated=$(cpan-outdated -p -L "$PERL5LIB")$/;"	v

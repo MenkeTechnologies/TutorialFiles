@@ -123,6 +123,8 @@ boxesChar	manzshcompgen.zsh	/^    boxesChar='\/'$/;"	v
 boxesChar	zshcompgen.zsh	/^    boxesChar='\/'$/;"	v
 boxesPrint	manzshcompgen.zsh	/^boxesPrint(){$/;"	f
 boxesPrint	zshcompgen.zsh	/^boxesPrint(){$/;"	f
+br	bridgeDown.sh	/^br="br0"$/;"	v
+br	bridgeUp.sh	/^br="br0"$/;"	v
 built_command	mantozshcomp.py	/^def built_command(options, description, arg):$/;"	f
 built_command_output	mantozshcomp.py	/^built_command_output = []$/;"	v
 bz2	mantozshcomp.py	/^import bz2$/;"	i
@@ -239,6 +241,18 @@ errno	mantozshcomp.py	/^import errno$/;"	i
 esc	mantozshcomp.py	/^    def esc(self):$/;"	m	class:Deroffer
 esc_char	mantozshcomp.py	/^    def esc_char(self):$/;"	m	class:Deroffer
 esc_char_backslash	mantozshcomp.py	/^    def esc_char_backslash(self):$/;"	m	class:Deroffer
+eth	bridgeDown.sh	/^eth="eth0"$/;"	v
+eth	bridgeUp.sh	/^eth="eth0"$/;"	v
+eth_broadcast	bridgeDown.sh	/^eth_broadcast="192.168.0.255"$/;"	v
+eth_broadcast	bridgeUp.sh	/^eth_broadcast="192.168.0.255"$/;"	v
+eth_gateway	bridgeDown.sh	/^eth_gateway="192.168.0.1"$/;"	v
+eth_gateway	bridgeUp.sh	/^eth_gateway="192.168.0.1"$/;"	v
+eth_ip	bridgeDown.sh	/^eth_ip="192.168.0.149"$/;"	v
+eth_ip	bridgeUp.sh	/^eth_ip="192.168.0.149"$/;"	v
+eth_mac	bridgeDown.sh	/^eth_mac="REPLACE"$/;"	v
+eth_mac	bridgeUp.sh	/^eth_mac="REPLACE"$/;"	v
+eth_netmask	bridgeDown.sh	/^eth_netmask="255.255.255.0"$/;"	v
+eth_netmask	bridgeUp.sh	/^eth_netmask="255.255.255.0"$/;"	v
 executableProgram	shebangChanger.sh	/^executableProgram=$1$/;"	v
 executableScriptsProcessing	createScriptButDontOpenSublime.sh	/^executableScriptsProcessing() {$/;"	f
 executableScriptsProcessing	createTextFile.sh	/^executableScriptsProcessing() {$/;"	f
@@ -647,6 +661,8 @@ sys	mantozshcomp.py	/^import sys$/;"	i
 tail	shebangChanger.sh	/^        tail=$(cat "$file")$/;"	v
 tail	shebangChanger.sh	/^        tail=$(sed -n "$lineCounter,$"p "$file")$/;"	v
 tailVersion	colorLogger.sh	/^tailVersion=tail$/;"	v
+tap	bridgeDown.sh	/^tap="tap0"$/;"	v
+tap	bridgeUp.sh	/^tap="tap0"$/;"	v
 tarbellDirectory	tgzLocalInstaller.sh	/^tarbellDirectory="$1"$/;"	v
 temp	batchRename.sh	/^        local temp=${spinner#?}           # remove first character from $spinner$/;"	v
 temp	openAll.sh	/^        local temp=${spinner#?}         # remove first character from $spinner$/;"	v

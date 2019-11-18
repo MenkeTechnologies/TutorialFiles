@@ -143,6 +143,7 @@ cmd	keybindingsToFZFVim.zsh	/^    cmd=nvim$/;"	v
 cmd	keybindingsToFZFVim.zsh	/^    cmd=vim$/;"	v
 cmdType	fzfEnv.sh	/^cmdType=\\$(grep -m1 -a " \\$line\\$" ${ALL_ENV}Key.txt | awk "{print \\\\\\$1}")$/;"	v
 codecs	mantozshcomp.py	/^import codecs$/;"	i
+color	tailZOU.sh	/^    color=$2$/;"	v
 cols	picture_finder.sh	/^cols=$(tput cols)$/;"	v
 command	macOnly/commandToColors.sh	/^command="$@"$/;"	v
 command	runner.sh	/^    command="vim -i NONE -V1 -Nes -c 'so""$fileToBeExecuted""' -c'echo""|q!' 2>&1 | sed -n '4,$p'"$/;"	v
@@ -526,6 +527,8 @@ perlOutdated	updater.sh	/^        perlOutdated=$(cpan-outdated -p -L "$PERL5LIB"
 perlscript	autoUpdater.sh	/^    perlscript=$($/;"	v
 pid	fsWatchLongRunning.sh	/^            pid=$!$/;"	v
 pid	fsWatchLongRunning.sh	/^        pid=$!$/;"	v
+pid	tailZOU.sh	/^        pid=$!$/;"	v
+pid	tailZOU.sh	/^    pid=$!$/;"	v
 pids	CPU_Stresser.sh	/^        pids="$pids $!"$/;"	v
 pids	fdswap.sh	/^pids=$*$/;"	v
 pipe	readFIFO.sh	/^pipe=$HOME\/Desktop\/testpipe$/;"	v
@@ -581,6 +584,7 @@ repoFile	boiler_gen.py	/^    repoFile = f'{name}Repository.java'$/;"	v
 request_or_macro	mantozshcomp.py	/^    def request_or_macro(self):$/;"	m	class:Deroffer
 request_or_macro2	mantozshcomp.py	/^    def request_or_macro2(self):$/;"	m	class:Deroffer
 resourceFile	boiler_gen.py	/^    resourceFile = f'{name}Controller.java'$/;"	v
+restart	tailZOU.sh	/^    restart=$3$/;"	v
 restart_wlan0	pingordie.sh	/^restart_wlan0() {$/;"	f
 revarr	picture_finder.sh	/^    local revarr=('|' '\/' '-' '\\')$/;"	v
 revarr	secureDelete.sh	/^    local revarr=('|' '\/' '-' '\\')$/;"	v
@@ -605,6 +609,8 @@ sidelen	zshcompgen.zsh	/^    sidelen=$(($width - $len - $spacerlen * 2))$/;"	v
 sidelen2	manzshcompgen.zsh	/^    sidelen2=$sidelen$/;"	v
 sidelen2	zshcompgen.zsh	/^    sidelen2=$sidelen$/;"	v
 size	mantozshcomp.py	/^    def size(self):$/;"	m	class:Deroffer
+size	tailZOU.sh	/^    size=$1$/;"	v
+size	tailZOU.sh	/^size=100$/;"	v
 skip_char	mantozshcomp.py	/^    def skip_char(self, amt=1):$/;"	m	class:Deroffer
 skip_leading_whitespace	mantozshcomp.py	/^    def skip_leading_whitespace(self):$/;"	m	class:Deroffer
 sorted	sortedArrayCounter.sh	/^sorted=($(sort -f <<<"${arr[*]}"))$/;"	v
@@ -634,6 +640,7 @@ subprocess	mantozshcomp.py	/^    import subprocess, os$/;"	i
 sum	listAllCommands.sh	/^sum=0$/;"	v
 sum	sortedArrayCounter.sh	/^sum=0$/;"	v
 summarizeSizes	directoryContentsSize.sh	/^summarizeSizes() {$/;"	f
+svc	tailZOU.sh	/^svc=(ufw ovpn zabbix-agent)$/;"	v
 sys	boiler_gen.py	/^import sys$/;"	i
 sys	help2comp.py	/^import sys$/;"	i
 sys	mantozshcomp.py	/^import sys$/;"	i

@@ -325,6 +325,7 @@ g_re_word	mantozshcomp.py	/^    g_re_word = re.compile(r"[a-zA-Z_]+")  # equival
 g_specs	mantozshcomp.py	/^    g_specs = {$/;"	v	class:Deroffer
 g_specs_specletter	mantozshcomp.py	/^    g_specs_specletter = {$/;"	v	class:Deroffer
 gateway_ip	pingordie.sh	/^gateway_ip='8.8.8.8'$/;"	v
+gateway_ip	pingordieBridge.sh	/^gateway_ip='8.8.8.8'$/;"	v
 gen_files_react	boiler_gen.py	/^def gen_files_react(start):$/;"	f
 gen_files_spring	boiler_gen.py	/^def gen_files_spring(start):$/;"	f
 generate_argument_list	help2comp.py	/^def generate_argument_list(options):$/;"	f
@@ -354,6 +355,7 @@ home_dir	duplicateLineDeleter.sh	/^home_dir=$HOME$/;"	v
 home_dir	indenterAndDuplicateLineDeleter.sh	/^home_dir=$HOME$/;"	v
 host	macOnly/rsyncr.sh	/^host="r"$/;"	v
 host_status	pingordie.sh	/^    host_status=$(fping $gateway_ip)$/;"	v
+host_status	pingordieBridge.sh	/^    host_status=$(fping $gateway_ip)$/;"	v
 hostname	updater.sh	/^    hostname="$(echo "$1" | awk -F: '{print $1}')"$/;"	v
 hour	timeConverter.sh	/^    hour=$((hour - 12))$/;"	v
 hour	timeConverter.sh	/^hour=$(date | tr -s ' ' | cut -d ' ' -f4 | cut -d ':' -f1)$/;"	v
@@ -456,7 +458,9 @@ needSudo	updater.sh	/^                needSudo=yes$/;"	v
 needSudo	updater.sh	/^            needSudo=no$/;"	v
 needSudo	updater.sh	/^            needSudo=yes$/;"	v
 network_check_threshold	pingordie.sh	/^network_check_threshold=5$/;"	v
+network_check_threshold	pingordieBridge.sh	/^network_check_threshold=5$/;"	v
 network_check_tries	pingordie.sh	/^network_check_tries=0$/;"	v
+network_check_tries	pingordieBridge.sh	/^network_check_tries=0$/;"	v
 newfile	batchRename.sh	/^        local newfile="$first$number.$endFileEnding"$/;"	v
 newfile	createScriptButDontOpenSublime.sh	/^    newfile="$newfile.txt"$/;"	v
 newfile	createScriptButDontOpenSublime.sh	/^newfile="$1"$/;"	v
@@ -600,6 +604,7 @@ request_or_macro2	mantozshcomp.py	/^    def request_or_macro2(self):$/;"	m	class
 resourceFile	boiler_gen.py	/^    resourceFile = f'{name}Controller.java'$/;"	v
 restart	tailZOU.sh	/^    restart=$3$/;"	v
 restart_wlan0	pingordie.sh	/^restart_wlan0() {$/;"	f
+restart_wlan0	pingordieBridge.sh	/^restart_wlan0() {$/;"	f
 revarr	picture_finder.sh	/^    local revarr=('|' '\/' '-' '\\')$/;"	v
 revarr	secureDelete.sh	/^    local revarr=('|' '\/' '-' '\\')$/;"	v
 rustup_bin	rpiSoftwareUpdater.sh	/^rustup_bin="$HOME\/.cargo\/bin\/rustup"$/;"	v

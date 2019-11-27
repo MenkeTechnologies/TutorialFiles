@@ -266,6 +266,7 @@ exists	fzfEnv.sh	/^    exists(){$/;"	f
 exists	fzfPreviewOptsCommon.sh	/^    exists(){$/;"	f
 exists	manzshcompgen.zsh	/^exists(){$/;"	f
 exists	rpiSoftwareUpdater.sh	/^exists() {$/;"	f
+exists	tailZOU.sh	/^    exists(){$/;"	f
 exists	updater.sh	/^exists() {$/;"	f
 exists	zshcompgen.zsh	/^exists(){$/;"	f
 fallback	mantozshcomp.py	/^    def fallback(self, options_section):$/;"	m	class:Type1ManParser
@@ -370,6 +371,7 @@ installDir	updater.sh	/^        installDir=$(npm root -g | head -n 1)$/;"	v
 installerDir	macOnly/tutorialConfigUpdater.sh	/^installerDir="$HOME\/Documents\/shellScripts\/$REPO_NAME"$/;"	v
 isZsh	fzfEnv.sh	/^isZsh(){$/;"	f
 isZsh	fzfPreviewOptsCommon.sh	/^isZsh(){$/;"	f
+isZsh	tailZOU.sh	/^isZsh(){$/;"	f
 is_my_type	mantozshcomp.py	/^    def is_my_type(self, manpage):$/;"	m	class:ManParser
 is_my_type	mantozshcomp.py	/^    def is_my_type(self, manpage):$/;"	m	class:Type1ManParser
 is_my_type	mantozshcomp.py	/^    def is_my_type(self, manpage):$/;"	m	class:Type2ManParser

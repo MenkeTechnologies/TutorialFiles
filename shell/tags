@@ -628,7 +628,7 @@ script_to_run	watchServiceFSWatchPiDesktop.sh	/^script_to_run="$SCRIPTS\/upLoadP
 script_to_run	watchServiceFSWatchPiWeb.sh	/^script_to_run=$SCRIPTS\/uploadWebPi.sh$/;"	v
 scripts_dir	duplicateLineDeleter.sh	/^scripts_dir=$SCRIPTS$/;"	v
 scripts_dir	indenterAndDuplicateLineDeleter.sh	/^scripts_dir=$SCRIPTS$/;"	v
-sha	fzfGitOpts.sh	/^    sha=\\$(echo {} | cut -d: -f1)$/;"	v
+sha	fzfGitOpts.sh	/^    sha=\\$(echo {} | cut -d" " -f1)$/;"	v
 showHidden	directoryContentsSize.sh	/^showHidden() {$/;"	f
 sidelen	manzshcompgen.zsh	/^    sidelen=$(( ($sidelen + 2 -1) \/ 2))$/;"	v
 sidelen	manzshcompgen.zsh	/^    sidelen=$(($width - $len - $spacerlen * 2))$/;"	v

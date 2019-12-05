@@ -82,7 +82,7 @@ export ZPWR_DEBUG=false
 export ZPWR_TRACE=false
 export ZPWR_USE_NEOVIM=true
 export ZPWR_LEARN=true
-export ZPWR_COMMIT_COLOR='37;45'
+export ZPWR_COMMIT_STYLE='1;37;45'
 
 # non zpwr env vars
 export LC_ALL="en_US.UTF-8"
@@ -1335,7 +1335,7 @@ if [[ $ZPWR_COLORS == true ]]; then
     zstyle ':completion:*:global-aliases' list-colors '=(#b)(*)=1;30=1;34;43;4'
 
     #git commit colors
-    zstyle ':completion:*:*:commits' list-colors '=(#b)(*)=1;'$ZPWR_COMMIT_COLOR
+    zstyle ':completion:*:*:commits' list-colors '=(#b)(*)='$ZPWR_COMMIT_STYLE
     zstyle ':completion:*:heads' list-colors '=(#b)(*)=1;30=34;42;4'
     zstyle ':completion:*:commit-tags' list-colors '=(#b)(*)=1;30=1;34;41;4'
     zstyle ':completion:*:cached-files' list-colors '=(#b)(*)=1;30=1;34;41;4'
@@ -1918,7 +1918,7 @@ _fzf_complete_git() {
         export FZF_GIT_OPTS="$ZPWR_COMMON_FZF_ELEM --preview '$(bash "$SCRIPTS/fzfGitOpts.sh" HEAD)'"
     fi
     FZF_COMPLETION_OPTS="$FZF_GIT_OPTS" _fzf_complete "-m $FZF_DRACULA --ansi" "$@" < <(
-        printf "\x1b[${ZPWR_COMMIT_COLOR}m"
+        printf "\x1b[${ZPWR_COMMIT_STYLE}m"
         git log --format='%h %s'
         git for-each-ref | perl -lane '$_=substr($F[0],0,7)." $F[2]";print if ! m{^\s*$}'
         printf "\x1b[0m"

@@ -64,9 +64,7 @@ ROWS	myWatchNoBlinkColorized.sh	/^        ROWS=$(tput lines)$/;"	v
 SCRIPTS	macOnly/tutorialConfigUpdater.sh	/^SCRIPTS="$HOME\/Documents\/shellScripts"$/;"	v
 SCRIPTS	printHeader.sh	/^    SCRIPTS="$HOME\/Documents\/shellScripts"$/;"	v
 SCRIPTS	updaterEmail.sh	/^SCRIPTS="\/Users\/jacobmenke\/Documents\/shellScripts"$/;"	v
-TEMPFILE	keybindingsToFZF.zsh	/^    TEMPFILE="\/tmp\/.temp$$"$/;"	v
 TEMPFILE	keybindingsToFZFVim.zsh	/^    TEMPFILE="\/tmp\/.temp$$"$/;"	v
-TEMPFILE	keybindingsToREADME.zsh	/^    TEMPFILE="\/tmp\/.temp$$"$/;"	v
 TEMPFILE	macOnly/splitReg.sh	/^    TEMPFILE="\/tmp\/temp$$"$/;"	v
 TEXT_TO_DISPLAY	macOnly/figletRandomFont.sh	/^TEXT_TO_DISPLAY="$1"$/;"	v
 TEXT_TO_DISPLAY	macOnly/figletRandomFontOnce.sh	/^TEXT_TO_DISPLAY="$1"$/;"	v
@@ -81,6 +79,8 @@ TypeDarwinManParser	mantozshcomp.py	/^class TypeDarwinManParser(ManParser):$/;"	
 TypeDeroffManParser	mantozshcomp.py	/^class TypeDeroffManParser(ManParser):$/;"	c
 URL	gitgo.sh	/^    local URL="https:\/\/github.com\/$GITHUB_ACCOUNT\/$REPO_NAME_TO_CREATE"$/;"	v
 URL	help2comp.py	/^URL = 'http:\/\/github.com\/RobSis\/zsh-completion-generator'$/;"	v
+ZPWR_TEMPFILE	keybindingsToFZF.zsh	/^    ZPWR_TEMPFILE="\/tmp\/.temp$$"$/;"	v
+ZPWR_TEMPFILE	keybindingsToREADME.zsh	/^    ZPWR_TEMPFILE="\/tmp\/.temp$$"$/;"	v
 ZSH_COMP_DIR	remoteRepoMonitorDaemon.sh	/^ZSH_COMP_DIR="$HOME\/.oh-my-zsh\/custom\/plugins\/$ZSH_COMP_REPO_NAME"$/;"	v
 __ScriptVersion	CPU_Stresser.sh	/^__ScriptVersion="1.0.2"$/;"	v
 __ScriptVersion	macOnly/splitReg.sh	/^__ScriptVersion=1.0.0$/;"	v

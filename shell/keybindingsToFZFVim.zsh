@@ -6,7 +6,7 @@
 ##### Purpose: zsh script to gen the keybindings for README
 ##### Notes:
 #}}}***********************************************************
-if [[ $USE_NEOVIM == true ]]; then
+if [[ $ZPWR_USE_NEOVIM == true ]]; then
     cmd=nvim
 else
     cmd=vim

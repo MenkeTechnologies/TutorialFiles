@@ -368,7 +368,7 @@ install	tgzLocalInstaller.sh	/^install() {$/;"	f
 installDir	updater.sh	/^            installDir=$(python2 -m pip show "$i" | \\perl -ne 'print $1 if \/^Location: (.*)\/')$/;"	v
 installDir	updater.sh	/^            installDir=$(python3 -m pip show "$i" | \\perl -ne 'print $1 if \/^Location: (.*)\/')$/;"	v
 installDir	updater.sh	/^        installDir=$(npm root -g | head -n 1)$/;"	v
-installerDir	macOnly/tutorialConfigUpdater.sh	/^installerDir="$HOME\/Documents\/shellScripts\/$REPO_NAME"$/;"	v
+installerDir	macOnly/tutorialConfigUpdater.sh	/^installerDir="$HOME\/Documents\/shellScripts\/$ZPWR_REPO_NAME"$/;"	v
 isZsh	fzfEnv.sh	/^isZsh(){$/;"	f
 isZsh	fzfPreviewOptsCommon.sh	/^isZsh(){$/;"	f
 isZsh	tailZOU.sh	/^isZsh(){$/;"	f

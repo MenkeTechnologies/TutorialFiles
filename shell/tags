@@ -89,6 +89,7 @@ __ScriptVersion	splitReg.sh	/^__ScriptVersion=1.0.0$/;"	v
 __ScriptVersion	storageShower.sh	/^__ScriptVersion="version"$/;"	v
 __ScriptVersion	tgzLocalInstaller.sh	/^__ScriptVersion="1.0.0"$/;"	v
 __ScriptVersion	updater.sh	/^__ScriptVersion="1.0.0"$/;"	v
+__ScriptVersion	updaterNoPip.sh	/^__ScriptVersion="1.0.0"$/;"	v
 __init__	boiler_gen.py	/^    def __init__(self, filename, directory, contents):$/;"	m	class:CodeFile
 __init__	mantozshcomp.py	/^    def __init__(self):$/;"	m	class:Deroffer
 _escape	help2comp.py	/^def _escape(line):$/;"	f
@@ -106,6 +107,7 @@ alternatingPrettyPrint	CPU_Stresser.sh	/^alternatingPrettyPrint() {$/;"	f
 alternatingPrettyPrint	pipUpdater.sh	/^alternatingPrettyPrint() {$/;"	f
 alternatingPrettyPrint	rpiSoftwareUpdater.sh	/^alternatingPrettyPrint() {$/;"	f
 alternatingPrettyPrint	updater.sh	/^alternatingPrettyPrint() {$/;"	f
+alternatingPrettyPrint	updaterNoPip.sh	/^alternatingPrettyPrint() {$/;"	f
 amPm	timeConverter.sh	/^    amPm="PM"$/;"	v
 amPm	timeConverter.sh	/^amPm="AM"$/;"	v
 arr	listAllCommands.sh	/^arr=()$/;"	v
@@ -234,6 +236,7 @@ el	myWatchNoBlink.sh	/^    el=$(tput el)$/;"	v
 el	myWatchNoBlinkColorized.sh	/^    el=$(tput el)$/;"	v
 enclosing_dir	rpiSoftwareUpdater.sh	/^    enclosing_dir="$1"$/;"	v
 enclosing_dir	updater.sh	/^    enclosing_dir="$1"$/;"	v
+enclosing_dir	updaterNoPip.sh	/^    enclosing_dir="$1"$/;"	v
 encrypt_program	encrypt.sh	/^    encrypt_program=zip$/;"	v
 encrypt_program	encrypt.sh	/^encrypt_program=ccrypt$/;"	v
 ending	picture_finder.sh	/^    ending=${destinationFile##*.}$/;"	v
@@ -268,6 +271,7 @@ exists	manzshcompgen.zsh	/^exists(){$/;"	f
 exists	rpiSoftwareUpdater.sh	/^exists() {$/;"	f
 exists	tailZOU.sh	/^    exists(){$/;"	f
 exists	updater.sh	/^exists() {$/;"	f
+exists	updaterNoPip.sh	/^exists() {$/;"	f
 exists	zshcompgen.zsh	/^exists(){$/;"	f
 fallback	mantozshcomp.py	/^    def fallback(self, options_section):$/;"	m	class:Type1ManParser
 fallback2	mantozshcomp.py	/^    def fallback2(self, options_section):$/;"	m	class:Type1ManParser
@@ -346,6 +350,7 @@ gitPull	gitgo.sh	/^gitPull() {$/;"	f
 gitPush	gitgo.sh	/^gitPush() {$/;"	f
 gitRepoUpdater	rpiSoftwareUpdater.sh	/^gitRepoUpdater() {$/;"	f
 gitRepoUpdater	updater.sh	/^gitRepoUpdater() {$/;"	f
+gitRepoUpdater	updaterNoPip.sh	/^gitRepoUpdater() {$/;"	f
 gittersdev	remoteRepoMonitorDaemon.sh	/^gittersdev() {$/;"	f
 gittersmaster	remoteRepoMonitorDaemon.sh	/^gittersmaster() {$/;"	f
 groff_replace_escapes	mantozshcomp.py	/^    def groff_replace_escapes(self, line):$/;"	m	class:TypeDarwinManParser
@@ -360,6 +365,7 @@ host_status	pingordie.sh	/^    host_status=$(fping $gateway_ip)$/;"	v
 host_status	pingordieBridge.sh	/^    host_status=$(fping $gateway_ip)$/;"	v
 host_status	pingordieBridgeVPN.sh	/^    host_status=$(fping $gateway_ip)$/;"	v
 hostname	updater.sh	/^    hostname="$(echo "$1" | awk -F: '{print $1}')"$/;"	v
+hostname	updaterNoPip.sh	/^    hostname="$(echo "$1" | awk -F: '{print $1}')"$/;"	v
 hour	timeConverter.sh	/^    hour=$((hour - 12))$/;"	v
 hour	timeConverter.sh	/^hour=$(date | tr -s ' ' | cut -d ' ' -f4 | cut -d ':' -f1)$/;"	v
 info	about.sh	/^            info="$(git tag -l -n9 "$version" | perl -pe 's@[\\t ]+@ @')"$/;"	v
@@ -368,6 +374,7 @@ install	tgzLocalInstaller.sh	/^install() {$/;"	f
 installDir	updater.sh	/^            installDir=$(python2 -m pip show "$i" | \\perl -ne 'print $1 if \/^Location: (.*)\/')$/;"	v
 installDir	updater.sh	/^            installDir=$(python3 -m pip show "$i" | \\perl -ne 'print $1 if \/^Location: (.*)\/')$/;"	v
 installDir	updater.sh	/^        installDir=$(npm root -g | head -n 1)$/;"	v
+installDir	updaterNoPip.sh	/^        installDir=$(npm root -g | head -n 1)$/;"	v
 installerDir	macOnly/tutorialConfigUpdater.sh	/^installerDir="$HOME\/Documents\/shellScripts\/$ZPWR_REPO_NAME"$/;"	v
 isZsh	fzfEnv.sh	/^isZsh(){$/;"	f
 isZsh	fzfPreviewOptsCommon.sh	/^isZsh(){$/;"	f
@@ -445,6 +452,7 @@ macro_tr	mantozshcomp.py	/^    def macro_tr(self):$/;"	m	class:Deroffer
 macro_ts	mantozshcomp.py	/^    def macro_ts(self):$/;"	m	class:Deroffer
 main	remoteRepoMonitorDaemon.sh	/^main() {$/;"	f
 manager	updater.sh	/^    manager="$(echo "$1" | awk -F: '{print $2}')"$/;"	v
+manager	updaterNoPip.sh	/^    manager="$(echo "$1" | awk -F: '{print $2}')"$/;"	v
 master	dsDownloader.sh	/^master="jacobmenke"$/;"	v
 master	rpiDownloader.sh	/^master="jacobmenke"$/;"	v
 member_1	textmessage.sh	/^    member_1="5551113333"$/;"	v
@@ -461,6 +469,8 @@ needSudo	updater.sh	/^                needSudo=no$/;"	v
 needSudo	updater.sh	/^                needSudo=yes$/;"	v
 needSudo	updater.sh	/^            needSudo=no$/;"	v
 needSudo	updater.sh	/^            needSudo=yes$/;"	v
+needSudo	updaterNoPip.sh	/^            needSudo=no$/;"	v
+needSudo	updaterNoPip.sh	/^            needSudo=yes$/;"	v
 network_check_threshold	pingordie.sh	/^network_check_threshold=5$/;"	v
 network_check_threshold	pingordieBridge.sh	/^network_check_threshold=5$/;"	v
 network_check_threshold	pingordieBridgeVPN.sh	/^network_check_threshold=5$/;"	v
@@ -548,6 +558,7 @@ paste_cmd	crossOSCommands.sh	/^            paste_cmd='pbpaste'$/;"	v
 path	mantozshcomp.py	/^import os.path$/;"	i
 path	shebangChanger.sh	/^path="#!\/usr\/bin\/env $executableProgram"$/;"	v
 perlOutdated	updater.sh	/^        perlOutdated=$(cpan-outdated -p -L "$PERL5LIB")$/;"	v
+perlOutdated	updaterNoPip.sh	/^        perlOutdated=$(cpan-outdated -p -L "$PERL5LIB")$/;"	v
 perlscript	autoUpdater.sh	/^    perlscript=$($/;"	v
 pid	fsWatchLongRunning.sh	/^            pid=$!$/;"	v
 pid	fsWatchLongRunning.sh	/^        pid=$!$/;"	v
@@ -567,6 +578,7 @@ prettyPrint	macOnly/tutorialConfigUpdater.sh	/^prettyPrint() {$/;"	f
 prettyPrint	rpiSoftwareUpdater.sh	/^prettyPrint() {$/;"	f
 prettyPrint	textmessage.sh	/^prettyPrint() {$/;"	f
 prettyPrint	updater.sh	/^prettyPrint() {$/;"	f
+prettyPrint	updaterNoPip.sh	/^prettyPrint() {$/;"	f
 printD	banner.pl	/^sub printD {$/;"	s
 printDate	banner.pl	/^sub printDate {$/;"	s
 progress_pid	batchRename.sh	/^    progress_pid=$!$/;"	v
@@ -702,6 +714,7 @@ tutorialDir	macOnly/tutorialConfigUpdater.sh	/^tutorialDir="$HOME\/Documents\/tu
 unquote_double_quotes	mantozshcomp.py	/^def unquote_double_quotes(data):$/;"	f
 unquote_single_quotes	mantozshcomp.py	/^def unquote_single_quotes(data):$/;"	f
 updatePI	updater.sh	/^updatePI() { #-t to force pseudoterminal allocation for interactive programs on remote host$/;"	f
+updatePI	updaterNoPip.sh	/^updatePI() { #-t to force pseudoterminal allocation for interactive programs on remote host$/;"	f
 usage	CPU_Stresser.sh	/^usage() {$/;"	f
 usage	directoryContentsSize.sh	/^usage() {$/;"	f
 usage	duplicateLineDeleter.sh	/^usage() {$/;"	f
@@ -720,6 +733,7 @@ usage	splitReg.sh	/^function usage() {$/;"	f
 usage	storageShower.sh	/^function usage() {$/;"	f
 usage	tgzLocalInstaller.sh	/^function usage() {$/;"	f
 usage	updater.sh	/^usage() {$/;"	f
+usage	updaterNoPip.sh	/^usage() {$/;"	f
 user	gitRemoteRepoInformation.sh	/^                        user="$(echo $line | awk -F':' '{print $2}' | awk -F'\/' '{print $1}')"$/;"	v
 user	gitRemoteRepoInformation.sh	/^                        user="$(echo $line | awk -F'\/' '{print $4}')"$/;"	v
 user_framework	boiler_gen.py	/^user_framework = sys.argv[1]$/;"	v
@@ -737,6 +751,7 @@ websiteDir	macOnly/tutorialConfigUpdater.sh	/^websiteDir="$HOME\/WebstormProject
 width	macOnly/randomCow.sh	/^width=$1$/;"	v
 width	manzshcompgen.zsh	/^    width=70$/;"	v
 width	updater.sh	/^        width=80$/;"	v
+width	updaterNoPip.sh	/^        width=80$/;"	v
 width	zshcompgen.zsh	/^    width=70$/;"	v
 word	mantozshcomp.py	/^    def word(self):$/;"	m	class:Deroffer
 x	macOnly/combo.sh	/^    x="$(python -c 'print("trina"*5)')"$/;"	v

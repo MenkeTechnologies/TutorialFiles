@@ -118,6 +118,7 @@ backup_dir	duplicateLineDeleter.sh	/^backup_dir=$scripts_dir\/rcBackups$/;"	v
 backup_dir	indenterAndDuplicateLineDeleter.sh	/^backup_dir=$scripts_dir\/rcBackups$/;"	v
 banner	about.sh	/^banner() {$/;"	f
 base	fzfPreviewOptsCommon.sh	/^            base=\\$(basename \\$file)$/;"	v
+base	fzfPreviewOptsCommon2.sh	/^            base=\\$(basename \\$file)$/;"	v
 blocksize	secureDelete.sh	/^blocksize=1  # I\/O with \/dev\/urandom requires unit block size,$/;"	v
 boldflag	myWatchNoBlink.sh	/^        boldflag=true$/;"	v
 boldflag	myWatchNoBlinkColorized.sh	/^        boldflag=true$/;"	v
@@ -132,6 +133,7 @@ built_command_output	mantozshcomp.py	/^built_command_output = []$/;"	v
 bz2	mantozshcomp.py	/^import bz2$/;"	i
 cargo_bin	rpiSoftwareUpdater.sh	/^cargo_bin="$HOME\/.cargo\/bin\/cargo"$/;"	v
 casestr	fzfPreviewOptsCommon.sh	/^casestr=$(cat<<EOF$/;"	v
+casestr	fzfPreviewOptsCommon2.sh	/^casestr=$(cat<<EOF$/;"	v
 chars	batchRename.sh	/^    local chars=1                   # number of characters to display$/;"	v
 chars	openAll.sh	/^    local chars=1                   # number of characters to display$/;"	v
 checkForExistence	batchRename.sh	/^checkForExistence() {$/;"	f
@@ -267,6 +269,7 @@ exists	CPU_Stresser.sh	/^exists() {$/;"	f
 exists	clearList.sh	/^exists(){$/;"	f
 exists	fzfEnv.sh	/^    exists(){$/;"	f
 exists	fzfPreviewOptsCommon.sh	/^    exists(){$/;"	f
+exists	fzfPreviewOptsCommon2.sh	/^    exists(){$/;"	f
 exists	manzshcompgen.zsh	/^exists(){$/;"	f
 exists	rpiSoftwareUpdater.sh	/^exists() {$/;"	f
 exists	tailZOU.sh	/^    exists(){$/;"	f
@@ -378,6 +381,7 @@ installDir	updaterNoPip.sh	/^        installDir=$(npm root -g | head -n 1)$/;"	v
 installerDir	macOnly/tutorialConfigUpdater.sh	/^installerDir="$HOME\/Documents\/shellScripts\/$ZPWR_REPO_NAME"$/;"	v
 isZsh	fzfEnv.sh	/^isZsh(){$/;"	f
 isZsh	fzfPreviewOptsCommon.sh	/^isZsh(){$/;"	f
+isZsh	fzfPreviewOptsCommon2.sh	/^isZsh(){$/;"	f
 isZsh	tailZOU.sh	/^isZsh(){$/;"	f
 is_my_type	mantozshcomp.py	/^    def is_my_type(self, manpage):$/;"	m	class:ManParser
 is_my_type	mantozshcomp.py	/^    def is_my_type(self, manpage):$/;"	m	class:Type1ManParser
@@ -487,6 +491,8 @@ newtime	autoUpdater.sh	/^        newtime=$(date +"%s")$/;"	v
 nextdate	autoUpdater.sh	/^    nextdate=$(echo "$perlscript" | perl -MTime::Piece -MTime::Seconds)$/;"	v
 nmcmd	fzfPreviewOptsCommon.sh	/^    nmcmd="nm -D"$/;"	v
 nmcmd	fzfPreviewOptsCommon.sh	/^    nmcmd="nm"$/;"	v
+nmcmd	fzfPreviewOptsCommon2.sh	/^    nmcmd="nm -D"$/;"	v
+nmcmd	fzfPreviewOptsCommon2.sh	/^    nmcmd="nm"$/;"	v
 node_exe	macOnly/randomCow.sh	/^node_exe="\/usr\/local\/lib\/node_modules\/cowsay\/cli.js"$/;"	v
 nproc	CPU_Stresser.sh	/^nproc=10$/;"	v
 num	myWatchMaintainEscapes.sh	/^        num=$OPTARG$/;"	v
@@ -518,6 +524,7 @@ optstring	mywatch.sh	/^optstring=dh$/;"	v
 origin	gitgo.sh	/^    local origin="$(git remote -v | awk '{print $1}' | tail -1 | tr -d ' ')"$/;"	v
 os	boiler_gen.py	/^import os$/;"	i
 os	fzfPreviewOptsCommon.sh	/^os="$(uname -s)"$/;"	v
+os	fzfPreviewOptsCommon2.sh	/^os="$(uname -s)"$/;"	v
 os	mantozshcomp.py	/^    import subprocess, os$/;"	i
 os	mantozshcomp.py	/^import os.path$/;"	i
 out	inotifyWatchLogAndEmailIfNAS.sh	/^        out=$(tail -1 "$file" | grep "nas")$/;"	v

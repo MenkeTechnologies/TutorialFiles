@@ -1,0 +1,8 @@
+pane	0	0	:zsh	1	:*	0	:	0	sudo	:sudo htop
+pane	0	0	:zsh	1	:*	1	:	0	sudo	:sudo bash /Users/wizard/Documents/shellScripts/colorLogger.sh
+pane	0	0	:zsh	1	:*	2	:/Users/wizard/Documents/shellScripts/zpwr	0	bash	:bash /Users/wizard/Documents/shellScripts/storageShower.sh 8 1
+pane	0	0	:zsh	1	:*	3	:/Users/wizard/Documents/shellScripts/zpwr	1	zsh	:
+pane	0	0	:zsh	1	:*	4	:/Users/wizard/Documents/shellScripts/zpwr	0	zsh	:-zsh
+pane	0	0	:zsh	1	:*	5	:	0	sudo	:sudo /usr/local/sbin/iftop -f not port mdns and not port ssdp and not port llmnr and not port upnp-discovery -c /Users/wizard/.iftop.conf
+window	0	0	1	:*	5455,318x87,0,0{158x87,0,0[158x44,0,0,2,158x29,0,45,5,158x12,0,75,6],159x87,159,0[159x69,159,0{95x69,159,0,4,63x69,255,0,8},159x17,159,70,7]}
+state	0	

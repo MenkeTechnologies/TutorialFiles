@@ -1,0 +1,43 @@
+pane	config	0	:nvim	1	:*	0	:/Users/wizard	1	nvim	:nvim -S /Users/wizard/.vim/sessions/aliases.vim + /Users/wizard/.shell_aliases_functions.sh
+pane	config	0	:nvim	1	:*	1	:/Users/wizard	0	nvim	:nvim -S /Users/wizard/.vim/sessions/vrc.vim /Users/wizard/.vimrc
+pane	config	0	:nvim	1	:*	2	:/Users/wizard	0	nvim	:nvim -S /Users/wizard/.vim/sessions/trc.vim /Users/wizard/.tmux.conf
+pane	config	0	:nvim	1	:*	3	:/Users/wizard	0	nvim	:nvim -S /Users/wizard/.vim/sessions/zshrc.vim + /Users/wizard/.zshrc
+pane	config	1	:bash	0	:-	0	:/Users/wizard/.oh-my-zsh/tools	1	bash	:bash -l updater.sh -e
+pane	main	0	:zsh	1	:*	0	:	0	sudo	:sudo htop
+pane	main	0	:zsh	1	:*	1	:	0	sudo	:sudo bash /Users/wizard/Documents/shellScripts/colorLogger.sh
+pane	main	0	:zsh	1	:*	2	:/Users/wizard/Documents/shellScripts/zpwr	0	bash	:bash /Users/wizard/Documents/shellScripts/storageShower.sh 8 1
+pane	main	0	:zsh	1	:*	3	:/Users/wizard/Documents/shellScripts/zpwr	1	zsh	:
+pane	main	0	:zsh	1	:*	4	:/Users/wizard/Documents/shellScripts/zpwr	0	zsh	:
+pane	main	0	:zsh	1	:*	5	:	0	sudo	:sudo /usr/local/sbin/iftop -f not port mdns and not port ssdp and not port llmnr and not port upnp-discovery -c /Users/wizard/.iftop.conf
+pane	main	1	:learn	0	:!	0	:/Users/wizard/Documents/shellScripts/zpwr	0	zsh	:
+pane	main	1	:learn	0	:!	1	:/Users/wizard/Documents/shellScripts/zpwr	0	zsh	:-zsh
+pane	main	1	:learn	0	:!	2	:/Users/wizard/Documents/shellScripts/zpwr	1	zsh	:
+pane	main	2	:prod	0	:	0	:/Users/wizard/Documents/shellScripts/zpwr	1	sleep	:sleep 10
+pane	main	3	:testing	0	:	0	:/Users/wizard/Documents/shellScripts/zpwr	1	sleep	:expect /Users/wizard/mnt/testing.tcl
+pane	main	4	:media	0	:	0	:/Users/wizard/Documents/shellScripts/zpwr	1	sleep	:sleep 10
+pane	main	5	:db	0	:	0	:/Users/wizard/Documents/shellScripts/zpwr	1	expect	:expect /Users/wizard/mnt/db.tcl
+pane	main	6	:db_prod	0	:	0	:/Users/wizard/Documents/shellScripts/zpwr	1	sleep	:sleep 10
+pane	main	7	:REPL	0	:!-	0	:/Users/wizard/Documents/shellScripts/zpwr	0	lua	:lua
+pane	main	7	:REPL	0	:!-	1	:/Users/wizard/Documents/shellScripts/zpwr	0	lldb	:/Applications/Xcode.app/Contents/Developer/usr/bin/lldb --repl=-enable-objc-interop -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -color-diagnostics
+pane	main	7	:REPL	0	:!-	2	:/Users/wizard/Documents/shellScripts/zpwr	0	ghc	:/usr/local/Cellar/ghc/8.8.1/lib/ghc-8.8.1/bin/ghc -B/usr/local/Cellar/ghc/8.8.1/lib/ghc-8.8.1 --interactive
+pane	main	7	:REPL	0	:!-	3	:/Users/wizard/Documents/shellScripts/zpwr	0	lisp.run	:/usr/local/Cellar/clisp/2.49_2/lib/clisp-2.49/base/lisp.run -B /usr/local/Cellar/clisp/2.49_2/lib/clisp-2.49 -M /usr/local/Cellar/clisp/2.49_2/lib/clisp-2.49/base/lispinit.mem -N 
+pane	main	7	:REPL	0	:!-	4	:/Users/wizard/Documents/shellScripts/zpwr	0	bash	:/bin/sh /Users/wizard/.opam/default/bin/ocaml
+pane	main	7	:REPL	0	:!-	5	:/Users/wizard/Documents/shellScripts/zpwr	0	rlwrap	:rlwrap clojure
+pane	main	7	:REPL	0	:!-	6	:/Users/wizard/Documents/shellScripts/zpwr	0	ruby	:pry 
+pane	main	7	:REPL	0	:!-	7	:/Users/wizard/Documents/shellScripts/zpwr	0	Python	:/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/Resources/Python.app/Contents/MacOS/Python -m bpython
+pane	main	7	:REPL	0	:!-	8	:/Users/wizard/Documents/shellScripts/zpwr	0	php	:php -a
+pane	main	7	:REPL	0	:!-	9	:/Users/wizard/Documents/shellScripts/zpwr	0	java	:/Users/wizard/.jenv/versions/1.8/bin/java -Xdock:name=GroovyShell -Xdock:icon=/usr/local/Cellar/groovy/2.5.8/libexec/lib/groovy.icns -Dgroovy.jaxb=jaxb -classpath /usr/local/Cellar/groovy/2.5.8/libexec/lib/groovy-2.5.8.jar -Dscript.name=/usr/local/bin/groovysh -Dprogram.name=groovysh -Dgroovy.starter.conf=/usr/local/Cellar/groovy/2.5.8/libexec/conf/groovy-starter.conf -Dgroovy.home=/usr/local/Cellar/groovy/2.5.8/libexec -Dtools.jar=/Users/wizard/.jenv/versions/1.8/lib/tools.jar org.codehaus.groovy.tools.GroovyStarter --main org.codehaus.groovy.tools.shell.Main --conf /usr/local/Cellar/groovy/2.5.8/libexec/conf/groovy-starter.conf --classpath .
+pane	main	7	:REPL	0	:!-	10	:/Users/wizard/Documents/shellScripts/zpwr	0	mono-sgen	:/usr/local/Cellar/mono/6.6.0.161/bin/mono /usr/local/Cellar/mono/6.6.0.161/lib/mono/4.5/csharp.exe
+pane	main	7	:REPL	0	:!-	11	:/Users/wizard/Documents/shellScripts/zpwr	0	bash	:bash /usr/local/bin/kotlinc
+pane	main	7	:REPL	0	:!-	12	:/Users/wizard/Documents/shellScripts/zpwr	0	node	:node
+pane	main	7	:REPL	0	:!-	13	:/Users/wizard/Documents/shellScripts/zpwr	0	node	:node /usr/local/bin/coffee
+pane	main	7	:REPL	0	:!-	14	:/Users/wizard/Documents/shellScripts/zpwr	0	rlwrap	:rlwrap tclsh
+pane	main	7	:REPL	0	:!-	15	:/Users/wizard/Documents/shellScripts/zpwr	0	ksh	:ksh
+pane	main	7	:REPL	0	:!-	16	:/Users/wizard/Documents/shellScripts/zpwr	0	bash	:bash
+pane	main	7	:REPL	0	:!-	17	:/Users/wizard/Documents/shellScripts/zpwr	0	csh	:-sh
+pane	main	7	:REPL	0	:!-	18	:/Users/wizard/Documents/shellScripts/zpwr	0	rlwrap	:rlwrap perl -dE1
+pane	main	7	:REPL	0	:!-	19	:/Users/wizard/Documents/shellScripts/zpwr	0	zsh	:
+pane	main	7	:REPL	0	:!-	20	:/Users/wizard/Documents/shellScripts/zpwr	0	zsh	:
+pane	main	7	:REPL	0	:!-	21	:/Users/wizard/Documents/shellScripts/zpwr	0	Python	:/usr/local/Cellar/python/3.7.5/Frameworks/Python.framework/Versions/3.7/Resources/Python.app/Contents/MacOS/Python /usr/local/bin/mycli
+pane	main	7	:REPL	0	:!-	22	:/Users/wizard/Documents/shellScripts/zpwr	0	zsh	:
+pane	main	7	:REPL	0	:!-	23	:/Users/wizard/Documents/shellScripts/zpwr	0	zsh	:

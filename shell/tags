@@ -107,14 +107,14 @@ BASE_DIR	remoteRepoMonitorDaemon.sh	/^BASE_DIR="$HOME\/forkedRepos"$/;"	v
 BASE_DIR	zpwr/scripts/remoteRepoMonitorDaemon.sh	/^BASE_DIR="$HOME\/forkedRepos"$/;"	v
 BINDINGS_DIR	zpwr/.tmux/plugins/tpm/tpm	/^BINDINGS_DIR="$CURRENT_DIR\/bindings"$/;"	v
 BINDINGS_DIRECTORY	zpwr/.tmux/powerline/config.py	/^BINDINGS_DIRECTORY = os.path.join(POWERLINE_ROOT, 'powerline', 'bindings')$/;"	v
-BLUE	blueText.sh	/^BLUE='\\e[37;44m'$/;"	v
-BLUE	blueUpperText.sh	/^BLUE='\\e[37;44m'$/;"	v
-BLUE	boldText.sh	/^BLUE='\\e[37;44m'$/;"	v
-BLUE	coolFormatter.sh	/^BLUE='\\e[37;44m'$/;"	v
-BLUE	zpwr/scripts/blueText.sh	/^BLUE='\\e[37;44m'$/;"	v
-BLUE	zpwr/scripts/blueUpperText.sh	/^BLUE='\\e[37;44m'$/;"	v
-BLUE	zpwr/scripts/boldText.sh	/^BLUE='\\e[37;44m'$/;"	v
-BLUE	zpwr/scripts/coolFormatter.sh	/^BLUE='\\e[37;44m'$/;"	v
+ZPWR_BLUE	blueText.sh	/^ZPWR_BLUE='\\e[37;44m'$/;"	v
+ZPWR_BLUE	blueUpperText.sh	/^ZPWR_BLUE='\\e[37;44m'$/;"	v
+ZPWR_BLUE	boldText.sh	/^ZPWR_BLUE='\\e[37;44m'$/;"	v
+ZPWR_BLUE	coolFormatter.sh	/^ZPWR_BLUE='\\e[37;44m'$/;"	v
+ZPWR_BLUE	zpwr/scripts/blueText.sh	/^ZPWR_BLUE='\\e[37;44m'$/;"	v
+ZPWR_BLUE	zpwr/scripts/blueUpperText.sh	/^ZPWR_BLUE='\\e[37;44m'$/;"	v
+ZPWR_BLUE	zpwr/scripts/boldText.sh	/^ZPWR_BLUE='\\e[37;44m'$/;"	v
+ZPWR_BLUE	zpwr/scripts/coolFormatter.sh	/^ZPWR_BLUE='\\e[37;44m'$/;"	v
 BUFFER	zpwr/.shell_aliases_functions.sh	/^        BUFFER=""$/;"	v
 BaseConstructor	zpwr/.tmux/powerline/lint/markedjson/constructor.py	/^class BaseConstructor:$/;"	c
 BaseDirChanged	zpwr/.tmux/powerline/lib/watcher/inotify.py	/^class BaseDirChanged(ValueError):$/;"	c
@@ -485,7 +485,7 @@ IFS	zpwr/scripts/saygoogle.sh	/^IFS=+$/;"	v
 IFS	zpwr/scripts/sortedArrayCounter.sh	/^        IFS="$oldifs"$/;"	v
 IFS	zpwr/scripts/sortedArrayCounter.sh	/^IFS=$'\\n'$/;"	v
 IFS	zpwr/scripts/sortedArrayCounter.sh	/^IFS=:$/;"	v
-IGNORED	zpwr/.tmux/powerline/lib/inotify.py	/^	IGNORED = 0x00008000     # File was ignored.$/;"	v	class:INotify
+IGNOZPWR_RED	zpwr/.tmux/powerline/lib/inotify.py	/^	IGNOZPWR_RED = 0x00008000     # File was ignored.$/;"	v	class:INotify
 IMAP4	zpwr/.tmux/powerline/segments/common/mail.py	/^from imaplib import IMAP4_SSL_PORT, IMAP4_SSL, IMAP4$/;"	i
 IMAP4_SSL	zpwr/.tmux/powerline/segments/common/mail.py	/^from imaplib import IMAP4_SSL_PORT, IMAP4_SSL, IMAP4$/;"	i
 IMAP4_SSL_PORT	zpwr/.tmux/powerline/segments/common/mail.py	/^from imaplib import IMAP4_SSL_PORT, IMAP4_SSL, IMAP4$/;"	i
@@ -821,8 +821,8 @@ Python	zpwr/.tmux/powerline/segments/common/bat.py	/^		from shutil import which 
 QTilePowerline	zpwr/.tmux/powerline/bindings/qtile/widget.py	/^class QTilePowerline(Powerline):$/;"	c
 Q_OVERFLOW	zpwr/.tmux/powerline/lib/inotify.py	/^	Q_OVERFLOW = 0x00004000  # Event queued overflowed.$/;"	v	class:INotify
 RDIOPlayerSegment	zpwr/.tmux/powerline/segments/common/players.py	/^class RDIOPlayerSegment(PlayerSegment):$/;"	c
-RED	redText.sh	/^RED='\\e[31;1m'$/;"	v
-RED	zpwr/scripts/redText.sh	/^RED='\\e[31;1m'$/;"	v
+ZPWR_RED	redText.sh	/^ZPWR_RED='\\e[31;1m'$/;"	v
+ZPWR_RED	zpwr/scripts/redText.sh	/^ZPWR_RED='\\e[31;1m'$/;"	v
 REMOTE_SHELL_WAIT_TIME	zpwr/.tmux/plugins/tmux-yank/scripts/copy_line.sh	/^REMOTE_SHELL_WAIT_TIME="0.4"$/;"	v
 REMOVE_THIS_KEY	zpwr/.tmux/powerline/lib/dict.py	/^REMOVE_THIS_KEY = object()$/;"	v
 REMOVE_THIS_KEY	zpwr/.tmux/powerline/lib/overrides.py	/^from powerline.lib.dict import REMOVE_THIS_KEY$/;"	i
@@ -7327,9 +7327,9 @@ s:BG	zpwr/.vim/colors/primary.vim	/^  let s:BG     = s:WHITE$/;"	v
 s:BLACK	zpwr/.vim/colors/primary.vim	/^    let s:BLACK  = '16'$/;"	v
 s:BLACK	zpwr/.vim/colors/primary.vim	/^    let s:BLACK  = 'black'$/;"	v
 s:BLACK	zpwr/.vim/colors/primary.vim	/^  let s:BLACK  = '#000000'$/;"	v
-s:BLUE	zpwr/.vim/colors/primary.vim	/^    let s:BLUE   = '69'$/;"	v
-s:BLUE	zpwr/.vim/colors/primary.vim	/^    let s:BLUE   = 'blue'$/;"	v
-s:BLUE	zpwr/.vim/colors/primary.vim	/^  let s:BLUE   = '#4285F4'$/;"	v
+s:ZPWR_BLUE	zpwr/.vim/colors/primary.vim	/^    let s:ZPWR_BLUE   = '69'$/;"	v
+s:ZPWR_BLUE	zpwr/.vim/colors/primary.vim	/^    let s:ZPWR_BLUE   = 'blue'$/;"	v
+s:ZPWR_BLUE	zpwr/.vim/colors/primary.vim	/^  let s:ZPWR_BLUE   = '#4285F4'$/;"	v
 s:Background	zpwr/.vim/colors/two2tango.vim	/^let s:Background    = '#212628'$/;"	v
 s:Black	zpwr/.vim/colors/3dglasses.vim	/^let s:Black			=	['#000000', '#001621', '#1B3641', '#00222B']$/;"	v
 s:BoldStatement	zpwr/.vim/colors/tabula.vim	/^  let s:BoldStatement = g:Tabula_BoldStatement$/;"	v
@@ -7431,9 +7431,9 @@ s:Orange	zpwr/.vim/colors/two2tango.vim	/^let s:Orange		= ['#fcaf3e', '#f57900',
 s:Plum	zpwr/.vim/colors/two2tango.vim	/^let s:Plum			= ['#ad7fa8', '#75507b', '#5c3566']$/;"	v
 s:PreProcBg	zpwr/.vim/colors/otaku.vim	/^let s:PreProcBg = s:NormalBg $/;"	v
 s:PreProcFg	zpwr/.vim/colors/otaku.vim	/^let s:PreProcFg = '#b58848'$/;"	v
-s:RED	zpwr/.vim/colors/primary.vim	/^    let s:RED    = '124'$/;"	v
-s:RED	zpwr/.vim/colors/primary.vim	/^    let s:RED    = 'red'$/;"	v
-s:RED	zpwr/.vim/colors/primary.vim	/^  let s:RED    = '#DB4437'$/;"	v
+s:ZPWR_RED	zpwr/.vim/colors/primary.vim	/^    let s:ZPWR_RED    = '124'$/;"	v
+s:ZPWR_RED	zpwr/.vim/colors/primary.vim	/^    let s:ZPWR_RED    = 'red'$/;"	v
+s:ZPWR_RED	zpwr/.vim/colors/primary.vim	/^  let s:ZPWR_RED    = '#DB4437'$/;"	v
 s:Red	zpwr/.vim/colors/3dglasses.vim	/^let s:Red			=	['#2b0000', '#800000', '#AA0000', '#FF0000', '#FF2A2A', '#FF5555']$/;"	v
 s:Repeat	zpwr/.vim/colors/otaku.vim	/^let s:Repeat = 'bold'$/;"	v
 s:RepeatBg	zpwr/.vim/colors/otaku.vim	/^let s:RepeatBg = s:NormalBg $/;"	v

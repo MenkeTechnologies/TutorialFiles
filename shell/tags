@@ -886,9 +886,9 @@ RewriteResult	zpwr/.tmux/powerline/ipython.py	/^class RewriteResult(object):$/;"
 RhythmboxPlayerSegment	zpwr/.tmux/powerline/segments/common/players.py	/^class RhythmboxPlayerSegment(PlayerSegment):$/;"	c
 SCHEME_RE	zpwr/.tmux/powerline/segments/vim/__init__.py	/^SCHEME_RE = re.compile(b'^\\\\w[\\\\w\\\\d+\\\\-.]*(?=:)')$/;"	v
 SCRATCHPAD_ICONS	zpwr/.tmux/powerline/segments/i3wm.py	/^SCRATCHPAD_ICONS = {$/;"	v
-SCRIPTS	macOnly/tutorialConfigUpdater.sh	/^SCRIPTS="$HOME\/Documents\/shellScripts"$/;"	v
-SCRIPTS	printHeader.sh	/^    SCRIPTS="$HOME\/Documents\/shellScripts"$/;"	v
-SCRIPTS	updaterEmail.sh	/^SCRIPTS="$HOME\/Documents\/shellScripts"$/;"	v
+SCRIPTS	macOnly/tutorialConfigUpdater.sh	/^SCRIPTS="$ZPWR_HIDDEN_DIR\/scripts"$/;"	v
+SCRIPTS	printHeader.sh	/^    SCRIPTS="$HOME\/.zpwr\/scripts"$/;"	v
+SCRIPTS	updaterEmail.sh	/^SCRIPTS="$HOME\/.zpwr\/scripts"$/;"	v
 SCRIPTS	zpwr/scripts/macOnly/tutorialConfigUpdater.sh	/^SCRIPTS="$HOME\/Documents\/shellScripts"$/;"	v
 SCRIPTS	zpwr/scripts/printHeader.sh	/^    SCRIPTS="$HOME\/Documents\/shellScripts"$/;"	v
 SCRIPTS	zpwr/scripts/updaterEmail.sh	/^SCRIPTS="\/Users\/jacobmenke\/Documents\/shellScripts"$/;"	v
@@ -1430,7 +1430,7 @@ XRANDR_OUTPUT_RE	zpwr/.tmux/powerline/bindings/wm/__init__.py	/^XRANDR_OUTPUT_RE
 YCM_CORES	zpwr/ycm_install.sh	/^    YCM_CORES=1 python3 install.py --clang-completer$/;"	v
 YCM_PID	zpwr/install.sh	/^    YCM_PID=$!$/;"	v
 ZLE_RPROMPT_INDENT	zpwr/.powerlevel9kconfig.sh	/^ZLE_RPROMPT_INDENT=0$/;"	v
-ZPWR_LOGFILE	updaterEmail.sh	/^ZPWR_LOGFILE="$ZPWR_HIDDEN_DIR\/updaterlog.txt"$/;"	v
+ZPWR_LOGFILE	updaterEmail.sh	/^ZPWR_LOGFILE="$ZPWR_HIDDEN_DIR\/zpwrLog.txt"$/;"	v
 ZPWR_OS_TYPE	zpwr/.tmux/google.sh	/^ZPWR_OS_TYPE="$(uname -s | perl -e 'print lc<>')"$/;"	v
 ZPWR_OS_TYPE	zpwr/common.sh	/^ZPWR_OS_TYPE="$(uname -s | perl -e 'print lc<>')"$/;"	v
 ZPWR_OS_TYPE	zpwr/install.sh	/^ZPWR_OS_TYPE="$(uname -s | perl -e 'print lc<>')"$/;"	v
@@ -5521,7 +5521,7 @@ install_key	zpwr/.tmux/plugins/tpm/tpm	/^	local install_key="$(get_tmux_option "
 install_key_option	zpwr/.tmux/plugins/tpm/scripts/variables.sh	/^install_key_option="@tpm-install"$/;"	v
 install_plugin	zpwr/.tmux/plugins/tpm/scripts/install_plugins.sh	/^install_plugin() {$/;"	f
 install_plugins	zpwr/.tmux/plugins/tpm/scripts/install_plugins.sh	/^install_plugins() {$/;"	f
-installerDir	macOnly/tutorialConfigUpdater.sh	/^installerDir="$HOME\/Documents\/shellScripts\/$ZPWR_REPO_NAME"$/;"	v
+installerDir	macOnly/tutorialConfigUpdater.sh	/^installerDir="$ZPWR_HIDDEN_DIR\/scripts\/$ZPWR_REPO_NAME"$/;"	v
 installerDir	zpwr/scripts/macOnly/tutorialConfigUpdater.sh	/^installerDir="$HOME\/Documents\/shellScripts\/$ZPWR_REPO_NAME"$/;"	v
 int_or_sig	zpwr/.tmux/powerline/commands/main.py	/^def int_or_sig(s):$/;"	f
 int_to_rgb	zpwr/.tmux/powerline/renderers/shell/__init__.py	/^def int_to_rgb(num):$/;"	f

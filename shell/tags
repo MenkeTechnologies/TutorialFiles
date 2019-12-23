@@ -424,9 +424,9 @@ H	zpwr/.vim/colors/saturn.vim	/^fu! <SID>H(group, fg, bg, attr)$/;"	f
 HELPERS_DIR	zpwr/.tmux/plugins/tmux-yank/scripts/copy_line.sh	/^HELPERS_DIR="$CURRENT_DIR"$/;"	v
 HELPERS_DIR	zpwr/.tmux/plugins/tmux-yank/scripts/copy_pane_pwd.sh	/^HELPERS_DIR="$CURRENT_DIR"$/;"	v
 HELPERS_DIR	zpwr/.tmux/plugins/tmux-yank/yank.tmux	/^HELPERS_DIR="${CURRENT_DIR}\/scripts"$/;"	v
-HELPERS_DIR	zpwr/.tmux/plugins/tpm/bindings/clean_plugins	/^HELPERS_DIR="$SCRIPTS_DIR\/helpers"$/;"	v
-HELPERS_DIR	zpwr/.tmux/plugins/tpm/bindings/install_plugins	/^HELPERS_DIR="$SCRIPTS_DIR\/helpers"$/;"	v
-HELPERS_DIR	zpwr/.tmux/plugins/tpm/bindings/update_plugins	/^HELPERS_DIR="$SCRIPTS_DIR\/helpers"$/;"	v
+HELPERS_DIR	zpwr/.tmux/plugins/tpm/bindings/clean_plugins	/^HELPERS_DIR="$ZPWR_SCRIPTS_DIR\/helpers"$/;"	v
+HELPERS_DIR	zpwr/.tmux/plugins/tpm/bindings/install_plugins	/^HELPERS_DIR="$ZPWR_SCRIPTS_DIR\/helpers"$/;"	v
+HELPERS_DIR	zpwr/.tmux/plugins/tpm/bindings/update_plugins	/^HELPERS_DIR="$ZPWR_SCRIPTS_DIR\/helpers"$/;"	v
 HELPERS_DIR	zpwr/.tmux/plugins/tpm/scripts/clean_plugins.sh	/^HELPERS_DIR="$CURRENT_DIR\/helpers"$/;"	v
 HELPERS_DIR	zpwr/.tmux/plugins/tpm/scripts/install_plugins.sh	/^HELPERS_DIR="$CURRENT_DIR\/helpers"$/;"	v
 HELPERS_DIR	zpwr/.tmux/plugins/tpm/scripts/source_plugins.sh	/^HELPERS_DIR="$CURRENT_DIR\/helpers"$/;"	v
@@ -886,20 +886,20 @@ RewriteResult	zpwr/.tmux/powerline/ipython.py	/^class RewriteResult(object):$/;"
 RhythmboxPlayerSegment	zpwr/.tmux/powerline/segments/common/players.py	/^class RhythmboxPlayerSegment(PlayerSegment):$/;"	c
 SCHEME_RE	zpwr/.tmux/powerline/segments/vim/__init__.py	/^SCHEME_RE = re.compile(b'^\\\\w[\\\\w\\\\d+\\\\-.]*(?=:)')$/;"	v
 SCRATCHPAD_ICONS	zpwr/.tmux/powerline/segments/i3wm.py	/^SCRATCHPAD_ICONS = {$/;"	v
-SCRIPTS	macOnly/tutorialConfigUpdater.sh	/^SCRIPTS="$ZPWR_HIDDEN_DIR\/scripts"$/;"	v
-SCRIPTS	printHeader.sh	/^    SCRIPTS="$HOME\/.zpwr\/scripts"$/;"	v
-SCRIPTS	updaterEmail.sh	/^SCRIPTS="$HOME\/.zpwr\/scripts"$/;"	v
-SCRIPTS	zpwr/scripts/macOnly/tutorialConfigUpdater.sh	/^SCRIPTS="$HOME\/Documents\/shellScripts"$/;"	v
-SCRIPTS	zpwr/scripts/printHeader.sh	/^    SCRIPTS="$HOME\/Documents\/shellScripts"$/;"	v
-SCRIPTS	zpwr/scripts/updaterEmail.sh	/^SCRIPTS="\/Users\/jacobmenke\/Documents\/shellScripts"$/;"	v
-SCRIPTS_DIR	zpwr/.tmux/plugins/tmux-yank/yank.tmux	/^SCRIPTS_DIR="${CURRENT_DIR}\/scripts"$/;"	v
-SCRIPTS_DIR	zpwr/.tmux/plugins/tpm/bin/clean_plugins	/^SCRIPTS_DIR="$CURRENT_DIR\/..\/scripts"$/;"	v
-SCRIPTS_DIR	zpwr/.tmux/plugins/tpm/bin/install_plugins	/^SCRIPTS_DIR="$CURRENT_DIR\/..\/scripts"$/;"	v
-SCRIPTS_DIR	zpwr/.tmux/plugins/tpm/bin/update_plugins	/^SCRIPTS_DIR="$CURRENT_DIR\/..\/scripts"$/;"	v
-SCRIPTS_DIR	zpwr/.tmux/plugins/tpm/bindings/clean_plugins	/^SCRIPTS_DIR="$CURRENT_DIR\/..\/scripts"$/;"	v
-SCRIPTS_DIR	zpwr/.tmux/plugins/tpm/bindings/install_plugins	/^SCRIPTS_DIR="$CURRENT_DIR\/..\/scripts"$/;"	v
-SCRIPTS_DIR	zpwr/.tmux/plugins/tpm/bindings/update_plugins	/^SCRIPTS_DIR="$CURRENT_DIR\/..\/scripts"$/;"	v
-SCRIPTS_DIR	zpwr/.tmux/plugins/tpm/tpm	/^SCRIPTS_DIR="$CURRENT_DIR\/scripts"$/;"	v
+ZPWR_SCRIPTS	macOnly/tutorialConfigUpdater.sh	/^ZPWR_SCRIPTS="$ZPWR_HIDDEN_DIR\/scripts"$/;"	v
+ZPWR_SCRIPTS	printHeader.sh	/^    ZPWR_SCRIPTS="$HOME\/.zpwr\/scripts"$/;"	v
+ZPWR_SCRIPTS	updaterEmail.sh	/^ZPWR_SCRIPTS="$HOME\/.zpwr\/scripts"$/;"	v
+ZPWR_SCRIPTS	zpwr/scripts/macOnly/tutorialConfigUpdater.sh	/^ZPWR_SCRIPTS="$HOME\/Documents\/shellScripts"$/;"	v
+ZPWR_SCRIPTS	zpwr/scripts/printHeader.sh	/^    ZPWR_SCRIPTS="$HOME\/Documents\/shellScripts"$/;"	v
+ZPWR_SCRIPTS	zpwr/scripts/updaterEmail.sh	/^ZPWR_SCRIPTS="\/Users\/jacobmenke\/Documents\/shellScripts"$/;"	v
+ZPWR_SCRIPTS_DIR	zpwr/.tmux/plugins/tmux-yank/yank.tmux	/^ZPWR_SCRIPTS_DIR="${CURRENT_DIR}\/scripts"$/;"	v
+ZPWR_SCRIPTS_DIR	zpwr/.tmux/plugins/tpm/bin/clean_plugins	/^ZPWR_SCRIPTS_DIR="$CURRENT_DIR\/..\/scripts"$/;"	v
+ZPWR_SCRIPTS_DIR	zpwr/.tmux/plugins/tpm/bin/install_plugins	/^ZPWR_SCRIPTS_DIR="$CURRENT_DIR\/..\/scripts"$/;"	v
+ZPWR_SCRIPTS_DIR	zpwr/.tmux/plugins/tpm/bin/update_plugins	/^ZPWR_SCRIPTS_DIR="$CURRENT_DIR\/..\/scripts"$/;"	v
+ZPWR_SCRIPTS_DIR	zpwr/.tmux/plugins/tpm/bindings/clean_plugins	/^ZPWR_SCRIPTS_DIR="$CURRENT_DIR\/..\/scripts"$/;"	v
+ZPWR_SCRIPTS_DIR	zpwr/.tmux/plugins/tpm/bindings/install_plugins	/^ZPWR_SCRIPTS_DIR="$CURRENT_DIR\/..\/scripts"$/;"	v
+ZPWR_SCRIPTS_DIR	zpwr/.tmux/plugins/tpm/bindings/update_plugins	/^ZPWR_SCRIPTS_DIR="$CURRENT_DIR\/..\/scripts"$/;"	v
+ZPWR_SCRIPTS_DIR	zpwr/.tmux/plugins/tpm/tpm	/^ZPWR_SCRIPTS_DIR="$CURRENT_DIR\/scripts"$/;"	v
 SCRIPT_OUTPUT	zpwr/.tmux/plugins/tmux-resurrect/scripts/save.sh	/^SCRIPT_OUTPUT="$1"$/;"	v
 SHELL_ACTIONS	zpwr/.tmux/powerline/commands/config.py	/^SHELL_ACTIONS = {$/;"	v
 SPIN	zpwr/.tmux/plugins/tmux-resurrect/scripts/tmux_spinner.sh	/^SPIN='-\\|\/'$/;"	v
@@ -2419,7 +2419,7 @@ cmd	zpwr/scripts/delete_dups.zsh	/^    cmd="$(echo $f | cut -c2-)"$/;"	v
 cmd	zpwr/scripts/fzfMan.sh	/^cmd="$1"$/;"	v
 cmd	zpwr/scripts/keybindingsToFZFVim.zsh	/^    cmd=nvim$/;"	v
 cmd	zpwr/scripts/keybindingsToFZFVim.zsh	/^    cmd=vim$/;"	v
-cmdType	fzfEnv.sh	/^cmdType=\\$(grep -m1 -a " \\$line\\$" ${ALL_ENV}Key.txt | awk "{print \\\\\\$1}")$/;"	v
+cmdType	fzfEnv.sh	/^cmdType=\\$(grep -m1 -a " \\$line\\$" ${ZPWR_ENV}Key.txt | awk "{print \\\\\\$1}")$/;"	v
 cmdType	zpwr/scripts/fzfEnv.sh	/^cmdType=\\$(grep -m1 -a " \\$line\\$" ${ALL_ENV}Key.txt | awk "{print \\\\\\$1}")$/;"	v
 cmd_get	zpwr/.tmux/powerline/bindings/qtile/widget.py	/^	def cmd_get(self):$/;"	m	class:PowerlineTextBox
 cmd_update	zpwr/.tmux/powerline/bindings/qtile/widget.py	/^	def cmd_update(self, text):$/;"	m	class:PowerlineTextBox
@@ -3200,7 +3200,7 @@ directory_name	zpwr/scripts/tgzLocalInstaller.sh	/^        directory_name="${1%.
 directory_name	zpwr/scripts/tgzLocalInstaller.sh	/^        directory_name="${1%.tgz}"$/;"	v
 dirname	zpwr/.shell_aliases_functions.sh	/^        dirname="$(dirname $file)"$/;"	v
 dirs	zpwr/install.sh	/^dirs=(Documents\/shellScripts .config\/htop .config\/powerline\/themes\/tmux)$/;"	v
-dirsc	zpwr/.shell_aliases_functions.sh	/^    dirsc="$SCRIPTS\/$ZPWR_REPO_NAME"$/;"	v
+dirsc	zpwr/.shell_aliases_functions.sh	/^    dirsc="$ZPWR_SCRIPTS\/$ZPWR_REPO_NAME"$/;"	v
 disable_proxy	macOnly/tor.sh	/^function disable_proxy() {$/;"	f
 disable_proxy	zpwr/scripts/macOnly/tor.sh	/^function disable_proxy() {$/;"	f
 display	zpwr/.tmux/powerline/lint/__init__.py	/^	display=Spec().type(bool).optional(),$/;"	v
@@ -3682,7 +3682,7 @@ fgbg	zpwr/.vim/colors/detailed.vim	/^fun! s:fgbg(group, fg, bg)$/;"	f
 figletfonts	zpwr/.shell_aliases_functions.sh	/^figletfonts(){$/;"	f
 file	boiler_gen.py	/^    file = CodeFile(model_file, directory, model)$/;"	v
 file	fzfEnv.sh	/^        file=\\$(echo \\$file | sed "s@[]\\\\\\[^\\$.*\/]@\\\\\\\\\\\\&@g")$/;"	v
-file	fzfEnv.sh	/^file=\\$(grep -m1 -a " \\$line\\$" ${ALL_ENV}Key.txt | awk "{print \\\\\\$2}")$/;"	v
+file	fzfEnv.sh	/^file=\\$(grep -m1 -a " \\$line\\$" ${ZPWR_ENV}Key.txt | awk "{print \\\\\\$2}")$/;"	v
 file	inotifyWatchLogAndEmailIfNAS.sh	/^file="$1"$/;"	v
 file	macOnly/splitReg.sh	/^file="$ZPWR_TEMPFILE"$/;"	v
 file	openAll.sh	/^    file="$(echo $file | tr '[:upper:]' '[:lower:]')"$/;"	v
@@ -6056,8 +6056,8 @@ my_backup_dir	backupBashConfig.sh	/^my_backup_dir="$my_scripts_dir\/rcBackups"$/
 my_backup_dir	zpwr/scripts/backupBashConfig.sh	/^my_backup_dir="$my_scripts_dir\/rcBackups"$/;"	v
 my_home_dir	backupBashConfig.sh	/^my_home_dir="$HOME"$/;"	v
 my_home_dir	zpwr/scripts/backupBashConfig.sh	/^my_home_dir="$HOME"$/;"	v
-my_scripts_dir	backupBashConfig.sh	/^my_scripts_dir="$SCRIPTS"$/;"	v
-my_scripts_dir	zpwr/scripts/backupBashConfig.sh	/^my_scripts_dir="$SCRIPTS"$/;"	v
+my_scripts_dir	backupBashConfig.sh	/^my_scripts_dir="$ZPWR_SCRIPTS"$/;"	v
+my_scripts_dir	zpwr/scripts/backupBashConfig.sh	/^my_scripts_dir="$ZPWR_SCRIPTS"$/;"	v
 mycurl	zpwr/.shell_aliases_functions.sh	/^mycurl(){$/;"	f
 name	zpwr/.tmux/powerline/bindings/i3/powerline-i3.py	/^		name = sys.argv[1]$/;"	v
 name	zpwr/.tmux/powerline/bindings/i3/powerline-i3.py	/^	name = 'wm'$/;"	v
@@ -6899,10 +6899,10 @@ randIndex	zpwr/scripts/macOnly/figletRandomFontOnce.sh	/^randIndex=$(($RANDOM % 
 randIndex	zpwr/scripts/macOnly/menkeTechRandomFont.sh	/^    randIndex=$(($RANDOM % $rangePossibleIndices))$/;"	v
 randIndex	zpwr/scripts/macOnly/randomCow.sh	/^    randIndex=$((RANDOM % rangePossibleIndices))$/;"	v
 random	zpwr/.vim/colors/xmaslights.vim	/^import random$/;"	m
-randomCowsayCowScript	macOnly/combo.sh	/^randomCowsayCowScript="$SCRIPTS\/macOnly\/randomCow.sh"$/;"	v
-randomCowsayCowScript	zpwr/scripts/macOnly/combo.sh	/^randomCowsayCowScript="$SCRIPTS\/macOnly\/randomCow.sh"$/;"	v
-randomFigletFontScript	macOnly/combo.sh	/^randomFigletFontScript="$SCRIPTS\/macOnly\/figletRandomFontOnce.sh"$/;"	v
-randomFigletFontScript	zpwr/scripts/macOnly/combo.sh	/^randomFigletFontScript="$SCRIPTS\/macOnly\/figletRandomFontOnce.sh"$/;"	v
+randomCowsayCowScript	macOnly/combo.sh	/^randomCowsayCowScript="$ZPWR_SCRIPTS\/macOnly\/randomCow.sh"$/;"	v
+randomCowsayCowScript	zpwr/scripts/macOnly/combo.sh	/^randomCowsayCowScript="$ZPWR_SCRIPTS\/macOnly\/randomCow.sh"$/;"	v
+randomFigletFontScript	macOnly/combo.sh	/^randomFigletFontScript="$ZPWR_SCRIPTS\/macOnly\/figletRandomFontOnce.sh"$/;"	v
+randomFigletFontScript	zpwr/scripts/macOnly/combo.sh	/^randomFigletFontScript="$ZPWR_SCRIPTS\/macOnly\/figletRandomFontOnce.sh"$/;"	v
 random_color	zpwr/.shell_aliases_functions.sh	/^            random_color=${file_ary[$i]}$/;"	v
 randscript	zpwr/.shell_aliases_functions.sh	/^        randscript="print int(rand()*$len)"$/;"	v
 range	zpwr/.tmux/powerline/segments/vim/__init__.py	/^	from __builtin__ import xrange as range$/;"	i
@@ -11949,15 +11949,15 @@ script	zpwr/.tmux/plugins/tpm/tests/helpers/tpm.sh	/^	local script="$1"$/;"	v
 scriptToPDF	zpwr/.shell_aliases_functions.sh	/^        scriptToPDF(){$/;"	f
 scriptToPDF	zpwr/.shell_aliases_functions.sh	/^    scriptToPDF(){$/;"	f
 script_run_helper	zpwr/.tmux/plugins/tpm/tests/helpers/tpm.sh	/^script_run_helper() {$/;"	f
-script_to_run	watchServiceFSWatchPiDesktop.sh	/^script_to_run="$SCRIPTS\/upLoadPi.sh"$/;"	v
-script_to_run	watchServiceFSWatchPiWeb.sh	/^script_to_run=$SCRIPTS\/uploadWebPi.sh$/;"	v
-script_to_run	zpwr/scripts/watchServiceFSWatchPiDesktop.sh	/^script_to_run="$SCRIPTS\/upLoadPi.sh"$/;"	v
-script_to_run	zpwr/scripts/watchServiceFSWatchPiWeb.sh	/^script_to_run=$SCRIPTS\/uploadWebPi.sh$/;"	v
+script_to_run	watchServiceFSWatchPiDesktop.sh	/^script_to_run="$ZPWR_SCRIPTS\/upLoadPi.sh"$/;"	v
+script_to_run	watchServiceFSWatchPiWeb.sh	/^script_to_run=$ZPWR_SCRIPTS\/uploadWebPi.sh$/;"	v
+script_to_run	zpwr/scripts/watchServiceFSWatchPiDesktop.sh	/^script_to_run="$ZPWR_SCRIPTS\/upLoadPi.sh"$/;"	v
+script_to_run	zpwr/scripts/watchServiceFSWatchPiWeb.sh	/^script_to_run=$ZPWR_SCRIPTS\/uploadWebPi.sh$/;"	v
 scripts	zpwr/.shell_aliases_functions.sh	/^scripts(){$/;"	f
-scripts_dir	duplicateLineDeleter.sh	/^scripts_dir=$SCRIPTS$/;"	v
-scripts_dir	indenterAndDuplicateLineDeleter.sh	/^scripts_dir=$SCRIPTS$/;"	v
-scripts_dir	zpwr/scripts/duplicateLineDeleter.sh	/^scripts_dir=$SCRIPTS$/;"	v
-scripts_dir	zpwr/scripts/indenterAndDuplicateLineDeleter.sh	/^scripts_dir=$SCRIPTS$/;"	v
+scripts_dir	duplicateLineDeleter.sh	/^scripts_dir=$ZPWR_SCRIPTS$/;"	v
+scripts_dir	indenterAndDuplicateLineDeleter.sh	/^scripts_dir=$ZPWR_SCRIPTS$/;"	v
+scripts_dir	zpwr/scripts/duplicateLineDeleter.sh	/^scripts_dir=$ZPWR_SCRIPTS$/;"	v
+scripts_dir	zpwr/scripts/indenterAndDuplicateLineDeleter.sh	/^scripts_dir=$ZPWR_SCRIPTS$/;"	v
 se	zpwr/.shell_aliases_functions.sh	/^    se(){$/;"	f
 search	zpwr/.shell_aliases_functions.sh	/^    search="$1"$/;"	v
 search	zpwr/.shell_aliases_functions.sh	/^search(){$/;"	f

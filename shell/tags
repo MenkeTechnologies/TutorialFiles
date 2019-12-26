@@ -8,7 +8,7 @@
 --color	/Users/wizard/.zshrc	/^--color=info:#af87ff,prompt:#5fff87,pointer:#ff87d7,marker:#ff87d7,spinner:#ff87d7"$/;"	v	language:Sh
 256colors	/Users/wizard/.zshrc	/^256colors(){$/;"	f	language:Sh
 ARCHFLAGS	/Users/wizard/.zshrc	/^export ARCHFLAGS="-arch x86_64"$/;"	v	language:Sh
-BASE_DIR	remoteRepoMonitorDaemon.sh	/^BASE_DIR="$HOME\/forkedRepos"$/;"	v	language:Sh
+BASE_DIR	remoteRepoMonitorDaemon.sh	/^BASE_DIR="$HOME\/forkedRepos"$/;"	v
 BUFFER	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^        BUFFER=""$/;"	v	language:Sh
 BUFFER	/Users/wizard/.zshrc	/^                    BUFFER="$line $mywords[2,$]"$/;"	v	language:Sh
 BUFFER	/Users/wizard/.zshrc	/^                    BUFFER="${line:1:-1} $mywords[2,$]" ||$/;"	v	language:Sh
@@ -73,9 +73,9 @@ COLS	myWatchNoBlink.sh	/^        COLS=$(tput cols)$/;"	v	language:Sh
 COLS	myWatchNoBlinkColorized.sh	/^        COLS=$(tput cols)$/;"	v	language:Sh
 COMMON_ZSTYLE_OPTS	/Users/wizard/.zshrc	/^    COMMON_ZSTYLE_OPTS='reply=("${PREFIX:+=(#bi)($PREFIX:t)(?)(*)==37;45=37;43=34}:${(s.:.)LS_COLORS}")'$/;"	v	language:Sh
 COMPLETION_DIR	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    COMPLETION_DIR="$HOME\/.oh-my-zsh\/custom\/plugins"$/;"	v	language:Sh
-COMPLETION_DIR	remoteRepoMonitorDaemon.sh	/^    COMPLETION_DIR="$HOME\/.oh-my-zsh\/custom\/plugins"$/;"	v	language:Sh
+COMPLETION_DIR	remoteRepoMonitorDaemon.sh	/^    COMPLETION_DIR="$HOME\/.oh-my-zsh\/custom\/plugins"$/;"	v
 COMPLETION_WAITING_DOTS	/Users/wizard/.zshrc	/^COMPLETION_WAITING_DOTS="true"$/;"	v	language:Sh
-CONFIG_DIR	remoteRepoMonitorDaemon.sh	/^CONFIG_DIR="$HOME\/forkedRepos\/$REPO_NAME"$/;"	v	language:Sh
+CONFIG_DIR	remoteRepoMonitorDaemon.sh	/^CONFIG_DIR="$HOME\/forkedRepos\/$REPO_NAME"$/;"	v
 COW_FILES	macOnly/randomCow.sh	/^    COW_FILES=($("$node_exe" -l | perl -ne 'do{{$_=~s@(\\x09|\\x20)+@\\x0a@g;print}} if !\/Cow files.*:\/'))$/;"	v	language:Sh
 COW_FILES	macOnly/randomCow.sh	/^    COW_FILES=($(cowsay -l | perl -ne 'do{{$_=~s@(\\x09|\\x20)+@\\x0a@g;print}} if !\/Cow files.*:\/'))$/;"	v	language:Sh
 CPATH	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^        export CPATH="\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX.sdk\/usr\/include"$/;"	v	language:Sh
@@ -338,7 +338,7 @@ ZPWR_WILL_CLEAR	/Users/wizard/.zshrc	/^            ZPWR_WILL_CLEAR=true$/;"	v	la
 ZPWR_WILL_CLEAR	/Users/wizard/.zshrc	/^    ZPWR_WILL_CLEAR=false$/;"	v	language:Sh
 ZSH	/Users/wizard/.zshrc	/^export ZSH=$HOME\/.oh-my-zsh$/;"	v	language:Sh
 ZSH_AUTOSUGGEST_STRATEGY	/Users/wizard/.zshrc	/^ZSH_AUTOSUGGEST_STRATEGY=match_prev_cmd$/;"	v	language:Sh
-ZSH_COMP_DIR	remoteRepoMonitorDaemon.sh	/^ZSH_COMP_DIR="$HOME\/.oh-my-zsh\/custom\/plugins\/$ZSH_COMP_REPO_NAME"$/;"	v	language:Sh
+ZSH_COMP_DIR	remoteRepoMonitorDaemon.sh	/^ZSH_COMP_DIR="$HOME\/.oh-my-zsh\/custom\/plugins\/$ZSH_COMP_REPO_NAME"$/;"	v
 ZSH_DISABLE_COMPFIX	/Users/wizard/.zshrc	/^ZSH_DISABLE_COMPFIX=true$/;"	v	language:Sh
 ZSH_THEME	/Users/wizard/.zshrc	/^        ZSH_THEME=simonoff$/;"	v	language:Sh
 _SEMI_OLDBUFFER	/Users/wizard/.zshrc	/^        _SEMI_OLDBUFFER="$BUFFER"$/;"	v	language:Sh
@@ -802,8 +802,8 @@ gitRepoUpdater	rpiSoftwareUpdater.sh	/^gitRepoUpdater() {$/;"	f	language:Sh
 gitRepoUpdater	updater.sh	/^gitRepoUpdater() {$/;"	f	language:Sh
 gitRepoUpdater	updaterNoPip.sh	/^gitRepoUpdater() {$/;"	f	language:Sh
 git_name	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    git_name="${1##*\/}"$/;"	v	language:Sh
-gittersdev	remoteRepoMonitorDaemon.sh	/^gittersdev() {$/;"	f	language:Sh
-gittersmaster	remoteRepoMonitorDaemon.sh	/^gittersmaster() {$/;"	f	language:Sh
+gittersdev	remoteRepoMonitorDaemon.sh	/^gittersdev() {$/;"	f
+gittersmaster	remoteRepoMonitorDaemon.sh	/^gittersmaster() {$/;"	f
 globalAliasesInit	/Users/wizard/.zshrc	/^globalAliasesInit(){$/;"	f	language:Sh
 goThere	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    goThere(){$/;"	f	language:Sh
 goclean	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^goclean() {$/;"	f	language:Sh
@@ -971,7 +971,7 @@ macro_te	mantozshcomp.py	/^    def macro_te(self):$/;"	m	language:Python	class:D
 macro_tr	mantozshcomp.py	/^    def macro_tr(self):$/;"	m	language:Python	class:Deroffer
 macro_ts	mantozshcomp.py	/^    def macro_ts(self):$/;"	m	language:Python	class:Deroffer
 magenta	/Users/wizard/.zshrc	/^local magenta="125"$/;"	v	language:Sh
-main	remoteRepoMonitorDaemon.sh	/^main() {$/;"	f	language:Sh
+main	remoteRepoMonitorDaemon.sh	/^main() {$/;"	f
 manager	updatePi.sh	/^    manager="$(echo "$1" | awk -F: '{print $2}')"$/;"	v	language:Sh
 manager	updater.sh	/^    manager="$(echo "$1" | awk -F: '{print $2}')"$/;"	v	language:Sh
 manager	updaterNoPip.sh	/^    manager="$(echo "$1" | awk -F: '{print $2}')"$/;"	v	language:Sh
@@ -1105,8 +1105,8 @@ output	macOnly/splitReg.sh	/^output=$(cat $file)$/;"	v	language:Sh
 output	myWatchMaintainEscapes.sh	/^        output="$(script -q \/dev\/null $1 | tr -d '\\r' | cat)"$/;"	v	language:Sh
 output	myWatchMaintainEscapes.sh	/^        output="$(script -q \/dev\/null -c "$1" | tr -d '\\r' | cat)"$/;"	v	language:Sh
 output	mywatch.sh	/^    output=$(eval "$1")$/;"	v	language:Sh
-output	remoteRepoMonitorDaemon.sh	/^    output=$(git log HEAD..origin\/dev --oneline)$/;"	v	language:Sh
-output	remoteRepoMonitorDaemon.sh	/^    output=$(git log HEAD..origin\/master --oneline)$/;"	v	language:Sh
+output	remoteRepoMonitorDaemon.sh	/^    output=$(git log HEAD..origin\/dev --oneline)$/;"	v
+output	remoteRepoMonitorDaemon.sh	/^    output=$(git log HEAD..origin\/master --oneline)$/;"	v
 output	splitReg.sh	/^output=$(cat $file)$/;"	v	language:Sh
 outputDir	dsDownloader.sh	/^outputDir="Desktop"$/;"	v	language:Sh
 outputDir	rpiDownloader.sh	/^outputDir="Desktop"$/;"	v	language:Sh
@@ -1207,7 +1207,7 @@ red	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    red=$(tput setaf 1)$/;
 red	/Users/wizard/.zshrc	/^local red="160"$/;"	v	language:Sh
 redo	/Users/wizard/.zshrc	/^    redo(){$/;"	f	language:Sh
 ref	fzfGitOpts.sh	/^ref=$1$/;"	v	language:Sh
-refreshers	remoteRepoMonitorDaemon.sh	/^refreshers() {$/;"	f	language:Sh
+refreshers	remoteRepoMonitorDaemon.sh	/^refreshers() {$/;"	f
 regenAll	/Users/wizard/.zshrc	/^regenAll(){$/;"	f	language:Sh
 regenAllGitRepos	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^regenAllGitRepos(){$/;"	f	language:Sh
 regenAllKeybindingsCache	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^regenAllKeybindingsCache(){$/;"	f	language:Sh

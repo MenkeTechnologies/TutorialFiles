@@ -4,25 +4,105 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
+--color	/Users/wizard/.zshrc	/^--color=fg:-1,bg:-1,hl:#5fff87,fg+:-1,bg+:-1,hl+:#ffaf5f$/;"	v
+--color	/Users/wizard/.zshrc	/^--color=info:#af87ff,prompt:#5fff87,pointer:#ff87d7,marker:#ff87d7,spinner:#ff87d7"$/;"	v
+256colors	/Users/wizard/.zshrc	/^256colors(){$/;"	f
+ARCHFLAGS	/Users/wizard/.zshrc	/^export ARCHFLAGS="-arch x86_64"$/;"	v
 BASE_DIR	remoteRepoMonitorDaemon.sh	/^BASE_DIR="$HOME\/forkedRepos"$/;"	v
+BUFFER	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^        BUFFER=""$/;"	v
+BUFFER	/Users/wizard/.zshrc	/^                    BUFFER="$line $mywords[2,$]"$/;"	v
+BUFFER	/Users/wizard/.zshrc	/^                    BUFFER="${line:1:-1} $mywords[2,$]" ||$/;"	v
+BUFFER	/Users/wizard/.zshrc	/^                BUFFER="\\\\$mywords"$/;"	v
+BUFFER	/Users/wizard/.zshrc	/^            BUFFER=""$/;"	v
+BUFFER	/Users/wizard/.zshrc	/^            BUFFER="$BUFFER $found"$/;"	v
+BUFFER	/Users/wizard/.zshrc	/^            BUFFER="( tutorialConfigUpdater.sh '$commitMessage' >> \\"$ZPWR_LOGFILE\\" 2>&1 & )"$/;"	v
+BUFFER	/Users/wizard/.zshrc	/^            BUFFER="c $found"$/;"	v
+BUFFER	/Users/wizard/.zshrc	/^            BUFFER="cd $firstArg; c $found"$/;"	v
+BUFFER	/Users/wizard/.zshrc	/^            BUFFER="le '${learning\/\/'\/\\''}'"$/;"	v
+BUFFER	/Users/wizard/.zshrc	/^            BUFFER="sudo $cmdlet $mywords[3,$]"$/;"	v
+BUFFER	/Users/wizard/.zshrc	/^            BUFFER=tmm$/;"	v
+BUFFER	/Users/wizard/.zshrc	/^            BUFFER=tmm_full$/;"	v
+BUFFER	/Users/wizard/.zshrc	/^        BUFFER="$BUFFER "$mywords[-1]$/;"	v
+BUFFER	/Users/wizard/.zshrc	/^        BUFFER="$BUFFER $(fz vim)"$/;"	v
+BUFFER	/Users/wizard/.zshrc	/^        BUFFER="$BUFFER $(fz)"$/;"	v
+BUFFER	/Users/wizard/.zshrc	/^        BUFFER="$BUFFER"$mywords[-1]$/;"	v
+BUFFER	/Users/wizard/.zshrc	/^        BUFFER="$_SEMI_OLDBUFFER"$/;"	v
+BUFFER	/Users/wizard/.zshrc	/^        BUFFER="${__OLDBUFFER}"$/;"	v
+BUFFER	/Users/wizard/.zshrc	/^        BUFFER="\\"${BUFFER}\\""$/;"	v
+BUFFER	/Users/wizard/.zshrc	/^        BUFFER="\\$(${_SEMI_OLDBUFFER})"$/;"	v
+BUFFER	/Users/wizard/.zshrc	/^        BUFFER="cd $firstdir\\"; $BUFFER; clearList"$/;"	v
+BUFFER	/Users/wizard/.zshrc	/^        BUFFER="vim -v -c Commits! -c quitall"$/;"	v
+BUFFER	/Users/wizard/.zshrc	/^        BUFFER=$/;"	v
+BUFFER	/Users/wizard/.zshrc	/^        BUFFER=${BUFFER\/\/\\"\/\\'}$/;"	v
+BUFFER	/Users/wizard/.zshrc	/^        BUFFER=${BUFFER\/\/\\"\/\\`}$/;"	v
+BUFFER	/Users/wizard/.zshrc	/^        BUFFER=${BUFFER\/\/\\'\/\\"}$/;"	v
+BUFFER	/Users/wizard/.zshrc	/^        BUFFER=${mywords[1,-2]}" "$/;"	v
+BUFFER	/Users/wizard/.zshrc	/^        BUFFER=ge$/;"	v
+BUFFER	/Users/wizard/.zshrc	/^    BUFFER=""$/;"	v
+BUFFER	/Users/wizard/.zshrc	/^    BUFFER="$(print -r "$BUFFER" | tr "\\"'" "'\\"" )"$/;"	v
+BUFFER	/Users/wizard/.zshrc	/^    BUFFER="$BUFFER $(fasdFList)"$/;"	v
+BUFFER	/Users/wizard/.zshrc	/^    BUFFER="( cat $ZPWR_SCRIPTS\/updater.sh |  bash -l 2>&1 | tee -a $ZPWR_LOGFILE | perl -pe 's@\\\\e\\[.*m@\\n@g' | mutt -s \\"Log from `date`\\" $EMAIL 2>$ZPWR_LOGFILE &)"$/;"	v
+BUFFER	/Users/wizard/.zshrc	/^    BUFFER="getrc"$/;"	v
+BUFFER	/Users/wizard/.zshrc	/^    BUFFER="suc"$/;"	v
+BUFFER	/Users/wizard/.zshrc	/^    BUFFER="vim $(fzvim)"$/;"	v
+BUFFER	/Users/wizard/.zshrc	/^    BUFFER="z $(fzfZList)"$/;"	v
+BUFFER	/Users/wizard/.zshrc	/^    BUFFER=${BUFFER:s@  @ @}$/;"	v
+BUFFER	/Users/wizard/.zshrc	/^    BUFFER=db$/;"	v
+BUFFER	/Users/wizard/.zshrc	/^    BUFFER=u8$/;"	v
+CHEATCOLORS	/Users/wizard/.zshrc	/^export CHEATCOLORS=true$/;"	v
+CLICOLOR	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^export CLICOLOR="YES"$/;"	v
 CMD	myWatchNoBlink.sh	/^        CMD="$@"$/;"	v
 CMD	myWatchNoBlinkColorized.sh	/^        CMD="$@"$/;"	v
 CMDNAME	mantozshcomp.py	/^CMDNAME = ""$/;"	v
+COLORIZER_FZF	/Users/wizard/.zshrc	/^        export COLORIZER_FZF="pygmentize -f terminal256 -g -O style=\\$PYGMENTIZE_COLOR {} | cat -n"$/;"	v
+COLORIZER_FZF	/Users/wizard/.zshrc	/^        export COLORIZER_FZF='bat --paging never --wrap character --color always --style="numbers,grid,changes,header" {}'$/;"	v
+COLORIZER_FZF	/Users/wizard/.zshrc	/^    export COLORIZER_FZF="pygmentize -f terminal256 -g -O style=\\$PYGMENTIZE_COLOR {} | cat -n"$/;"	v
+COLORIZER_FZF_C	/Users/wizard/.zshrc	/^export COLORIZER_FZF_C="$ZPWR_COLORIZER -l c"$/;"	v
+COLORIZER_FZF_FILE	/Users/wizard/.zshrc	/^        export COLORIZER_FZF_FILE="pygmentize -f terminal256 -g -O style=\\$PYGMENTIZE_COLOR \\"\\$file\\" | cat -n"$/;"	v
+COLORIZER_FZF_FILE	/Users/wizard/.zshrc	/^        export COLORIZER_FZF_FILE='bat --paging never --wrap character --color always --style="numbers,grid,changes,header" "$file"'$/;"	v
+COLORIZER_FZF_FILE	/Users/wizard/.zshrc	/^    export COLORIZER_FZF_FILE="pygmentize -f terminal256 -g -O style=\\$PYGMENTIZE_COLOR \\"\\$file\\" | cat -n"$/;"	v
+COLORIZER_FZF_FILE_DEFAULT	/Users/wizard/.zshrc	/^        export COLORIZER_FZF_FILE_DEFAULT='bat --paging never --wrap character --color always --style="numbers,grid,changes,header" -l ASP "$file"'$/;"	v
+COLORIZER_FZF_FILE_TEXT	/Users/wizard/.zshrc	/^        export COLORIZER_FZF_FILE_TEXT='bat --paging never --wrap character --color always --style="numbers,grid,changes,header" -l ASP "$file"'$/;"	v
+COLORIZER_FZF_JAVA	/Users/wizard/.zshrc	/^export COLORIZER_FZF_JAVA="$ZPWR_COLORIZER -l java"$/;"	v
+COLORIZER_FZF_SH	/Users/wizard/.zshrc	/^export COLORIZER_FZF_SH="$ZPWR_COLORIZER  -l sh"$/;"	v
+COLORIZER_FZF_YAML	/Users/wizard/.zshrc	/^export COLORIZER_FZF_YAML="$ZPWR_COLORIZER -l yaml"$/;"	v
+COLORIZER_NL	/Users/wizard/.zshrc	/^        export COLORIZER_NL=' | cat -n'$/;"	v
+COLORIZER_NL	/Users/wizard/.zshrc	/^        export COLORIZER_NL=''$/;"	v
+COLORIZER_NL	/Users/wizard/.zshrc	/^    export COLORIZER_NL=' | cat -n'$/;"	v
 COLS	myWatchNoBlink.sh	/^        COLS=$(tput cols)$/;"	v
 COLS	myWatchNoBlinkColorized.sh	/^        COLS=$(tput cols)$/;"	v
+COMMON_ZSTYLE_OPTS	/Users/wizard/.zshrc	/^    COMMON_ZSTYLE_OPTS='reply=("${PREFIX:+=(#bi)($PREFIX:t)(?)(*)==37;45=37;43=34}:${(s.:.)LS_COLORS}")'$/;"	v
+COMPLETION_DIR	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    COMPLETION_DIR="$HOME\/.oh-my-zsh\/custom\/plugins"$/;"	v
 COMPLETION_DIR	remoteRepoMonitorDaemon.sh	/^    COMPLETION_DIR="$HOME\/.oh-my-zsh\/custom\/plugins"$/;"	v
+COMPLETION_WAITING_DOTS	/Users/wizard/.zshrc	/^COMPLETION_WAITING_DOTS="true"$/;"	v
 CONFIG_DIR	remoteRepoMonitorDaemon.sh	/^CONFIG_DIR="$HOME\/forkedRepos\/$REPO_NAME"$/;"	v
 COW_FILES	macOnly/randomCow.sh	/^    COW_FILES=($("$node_exe" -l | perl -ne 'do{{$_=~s@(\\x09|\\x20)+@\\x0a@g;print}} if !\/Cow files.*:\/'))$/;"	v
 COW_FILES	macOnly/randomCow.sh	/^    COW_FILES=($(cowsay -l | perl -ne 'do{{$_=~s@(\\x09|\\x20)+@\\x0a@g;print}} if !\/Cow files.*:\/'))$/;"	v
+CPATH	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^        export CPATH="\/Library\/Developer\/CommandLineTools\/SDKs\/MacOSX.sdk\/usr\/include"$/;"	v
 CR	batchRename.sh	/^    local CR="\\r"$/;"	v
 CR	openAll.sh	/^    local CR="\\r"$/;"	v
+CURSOR	/Users/wizard/.zshrc	/^        CURSOR=$#BUFFER$/;"	v
+CURSOR	/Users/wizard/.zshrc	/^        CURSOR=$lenToFirstTS$/;"	v
+CURSOR	/Users/wizard/.zshrc	/^    CURSOR=$#BUFFER$/;"	v
 CodeFile	boiler_gen.py	/^class CodeFile:$/;"	c
 DELIMITER_CHAR	pipUpdater.sh	/^export DELIMITER_CHAR='%'$/;"	v
 DELIMITER_CHAR	rpiSoftwareUpdater.sh	/^export DELIMITER_CHAR='%'$/;"	v
 DIR	macOnly/rsyncr.sh	/^localDIR="$1"$/;"	v
+DIRSTACKSIZE	/Users/wizard/.zshrc	/^export DIRSTACKSIZE=20$/;"	v
+DISABLE_UNTRACKED_FILES_DIRTY	/Users/wizard/.zshrc	/^DISABLE_UNTRACKED_FILES_DIRTY="true"$/;"	v
+DISABLE_UPDATE_PROMPT	/Users/wizard/.zshrc	/^DISABLE_UPDATE_PROMPT="true"$/;"	v
+DONE	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    DONE=false$/;"	v
 Deroffer	mantozshcomp.py	/^class Deroffer:$/;"	c
 ECHO	oldCounter.sh	/^        ECHO="true"$/;"	v
+EDITOR	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^                export EDITOR='mvim'$/;"	v
+EDITOR	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^                export EDITOR='nvim'$/;"	v
+EDITOR	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^                export EDITOR='vim'$/;"	v
+EDITOR	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^            export EDITOR='vim'$/;"	v
+EOLorNextTabStop	/Users/wizard/.zshrc	/^EOLorNextTabStop(){$/;"	f
+EXA_COLORS	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^            export EXA_COLORS="in=34:ur=32:uw=32:ux=32:gr=33:gw=33:gx=33:tr=31:tw=31:tx=31:xx=34:uu=38:gu=32:lc=32;1:un=41;37;1:gn=43;37;1:sb=4;1:xa=1;34:df=31;46;1:ds=31;45;1:lp=36;1:cc=1;31;46:da=34:b0=31;1;4:gm=32;1;4:ga=36;1;4:gd=34;1;4:gv=35;1;4:gt=37;1;4"$/;"	v
 EXA_COMMAND	clearList.sh	/^EXA_COMMAND="command exa --git -il -F -H --extended --color-scale -g -a --colour=always"$/;"	v
+FIGLET_DIR	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^        FIGLET_DIR="\/usr\/local\/Cellar\/figlet\/2.2.5\/share\/figlet\/fonts"$/;"	v
+FIGLET_DIR	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^        FIGLET_DIR="\/usr\/share\/figlet"$/;"	v
 FIGLET_DIR	macOnly/figletRandomFont.sh	/^    FIGLET_DIR="\/usr\/local\/Cellar\/figlet\/2.2.5\/share\/figlet\/fonts"$/;"	v
 FIGLET_DIR	macOnly/figletRandomFont.sh	/^    FIGLET_DIR="\/usr\/share\/figlet"$/;"	v
 FIGLET_DIR	macOnly/figletRandomFontOnce.sh	/^    FIGLET_DIR="\/usr\/local\/Cellar\/figlet\/2.2.5\/share\/figlet\/fonts"$/;"	v
@@ -36,26 +116,111 @@ FILTER	macOnly/figletRandomFontOnce.sh	/^FILTER="$2"$/;"	v
 FILTER	macOnly/figletRotater.sh	/^FILTER="$2"$/;"	v
 FILTER	macOnly/menkeTechRandomFont.sh	/^FILTER="$1"$/;"	v
 FILTER	macOnly/randomCow.sh	/^FILTER="$2"$/;"	v
+FORKED_DIR	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^export FORKED_DIR="$HOME\/forkedRepos"$/;"	v
+FZF_COMPLETION_OPTS	/Users/wizard/.zshrc	/^        export FZF_COMPLETION_OPTS="$ZPWR_COMMON_FZF_ELEM --preview '$(bash "$ZPWR_SCRIPTS\/fzfPreviewOpts.sh")'"$/;"	v
+FZF_COMPLETION_OPTS	/Users/wizard/.zshrc	/^        export FZF_COMPLETION_OPTS="$ZPWR_COMMON_FZF_ELEM --preview '$(bash "$ZPWR_SCRIPTS\/fzfPreviewOptsPony.sh")'"$/;"	v
+FZF_COMPLETION_OPTS	/Users/wizard/.zshrc	/^    FZF_COMPLETION_OPTS="$FZF_GIT_OPTS" _fzf_complete "-m $FZF_DRACULA --ansi" "$@" < <($/;"	v
+FZF_COMPLETION_OPTS	/Users/wizard/.zshrc	/^    FZF_COMPLETION_OPTS=$FZF_ENV_OPTS _fzf_complete '-m' "$@" < <($/;"	v
+FZF_COMPLETION_OPTS	/Users/wizard/.zshrc	/^  FZF_COMPLETION_OPTS= _fzf_complete '-m --ansi' "$@" < <($/;"	v
+FZF_COMPLETION_OPTS	/Users/wizard/.zshrc	/^  FZF_COMPLETION_OPTS=$FZF_CTRL_T_OPTS _fzf_complete '--ansi' "$@" < <($/;"	v
+FZF_COMPLETION_OPTS	/Users/wizard/.zshrc	/^  FZF_COMPLETION_OPTS=$FZF_CTRL_T_OPTS _fzf_complete '-m' "$@" < <($/;"	v
+FZF_COMPLETION_OPTS	/Users/wizard/.zshrc	/^  FZF_COMPLETION_OPTS=$FZF_CTRL_T_OPTS_2 _fzf_complete '--ansi' "$@" < <($/;"	v
+FZF_COMPLETION_TRIGGER	/Users/wizard/.zshrc	/^export FZF_COMPLETION_TRIGGER=';'$/;"	v
+FZF_CTRL_T_COMMAND	/Users/wizard/.zshrc	/^    export FZF_CTRL_T_COMMAND='find . | ag -v ".git\/"'$/;"	v
+FZF_CTRL_T_OPTS	/Users/wizard/.zshrc	/^    export FZF_CTRL_T_OPTS="$ZPWR_COMMON_FZF_ELEM --preview '$(bash "$ZPWR_SCRIPTS\/fzfPreviewOptsCtrlT.sh")'"$/;"	v
+FZF_CTRL_T_OPTS_2	/Users/wizard/.zshrc	/^    export FZF_CTRL_T_OPTS_2="$ZPWR_COMMON_FZF_ELEM --preview '$(bash "$ZPWR_SCRIPTS\/fzfPreviewOpts2Pos.sh")'"$/;"	v
+FZF_DEFAULT_COMMAND	/Users/wizard/.zshrc	/^    export FZF_DEFAULT_COMMAND='find * | ag -v ".git\/"'$/;"	v
+FZF_DEFAULT_OPTS	/Users/wizard/.zshrc	/^    export FZF_DEFAULT_OPTS="$ZPWR_COMMON_FZF_ELEM --reverse --border --height 100%"$/;"	v
+FZF_DEFAULT_OPTS	/Users/wizard/.zshrc	/^export FZF_DEFAULT_OPTS="$FZF_DEFAULT_OPTS$/;"	v
+FZF_DRACULA	/Users/wizard/.zshrc	/^export FZF_DRACULA="--color=dark$/;"	v
+FZF_ENV_OPTS	/Users/wizard/.zshrc	/^    export FZF_ENV_OPTS="$ZPWR_COMMON_FZF_ELEM --preview '$(bash "$ZPWR_SCRIPTS\/fzfEnv.sh")'"$/;"	v
+FZF_GIT_OPTS	/Users/wizard/.zshrc	/^        export FZF_GIT_OPTS="$ZPWR_COMMON_FZF_ELEM --preview '$(bash "$ZPWR_SCRIPTS\/fzfGitOpts.sh" $lastWord)'"$/;"	v
+FZF_GIT_OPTS	/Users/wizard/.zshrc	/^        export FZF_GIT_OPTS="$ZPWR_COMMON_FZF_ELEM --preview '$(bash "$ZPWR_SCRIPTS\/fzfGitOpts.sh" HEAD)'"$/;"	v
+FZF_JELLY	/Users/wizard/.zshrc	/^export FZF_JELLY="--color fg:-1,bg:-1,hl:230,fg+:3,bg+:233,hl+:229$/;"	v
+FZF_MAN_OPTS	/Users/wizard/.zshrc	/^   FZF_MAN_OPTS="$ZPWR_COMMON_FZF_ELEM --preview '$(bash "$ZPWR_SCRIPTS\/fzfMan.sh" "$1")'"$/;"	v
+GIT_AUTHOR_EMAIL	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^        GIT_AUTHOR_EMAIL="'$newEmail'"; git commit-tree "$@";$/;"	v
+GOPATH	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    export GOPATH="$HOME\/go"$/;"	v
+GROOVY_LIB	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^        export GROOVY_LIB="$HOMEBREW_OPT_HOME\/groovy"$/;"	v
+HISTSIZE	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^export HISTSIZE=50000$/;"	v
+HISTSIZE	/Users/wizard/.zshrc	/^export HISTSIZE=10000000$/;"	v
+HISTTIMEFORMAT	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^export HISTTIMEFORMAT=' %F %T _ '$/;"	v
+HIST_STAMPS	/Users/wizard/.zshrc	/^HIST_STAMPS="mm\/dd\/yyyy"$/;"	v
+HOMEBREW_DBHOME	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^        export HOMEBREW_DBHOME='\/usr\/local\/var'$/;"	v
+HOMEBREW_DB_CONF	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^        export HOMEBREW_DB_CONF='\/usr\/local\/etc'$/;"	v
+HOMEBREW_HOME	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^        export HOMEBREW_HOME='\/usr\/local\/Cellar'$/;"	v
+HOMEBREW_HOME_FORMULAE	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^        export HOMEBREW_HOME_FORMULAE="\/usr\/local\/Homebrew\/Library\/taps\/homebrew\/homebrew-core\/formula"$/;"	v
+HOMEBREW_OPT_HOME	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^        export HOMEBREW_OPT_HOME='\/usr\/local\/opt'$/;"	v
+HYPHEN_INSENSITIVE	/Users/wizard/.zshrc	/^HYPHEN_INSENSITIVE="true"$/;"	v
 IFS	listAllCommands.sh	/^IFS=:$/;"	v
 IFS	saygoogle.sh	/^IFS=+$/;"	v
 IFS	sortedArrayCounter.sh	/^        IFS="$oldifs"$/;"	v
 IFS	sortedArrayCounter.sh	/^IFS=$'\\n'$/;"	v
 IFS	sortedArrayCounter.sh	/^IFS=:$/;"	v
 INTERFACE	macOnly/tor.sh	/^INTERFACE=Wi-Fi$/;"	v
+KEYTIMEOUT	/Users/wizard/.zshrc	/^export KEYTIMEOUT=1$/;"	v
+LBUFFER	/Users/wizard/.zshrc	/^        LBUFFER="sudo -E nvim $(fzvim)"$/;"	v
+LBUFFER	/Users/wizard/.zshrc	/^        LBUFFER="sudo -E vim $(fzvim)"$/;"	v
+LBUFFER	/Users/wizard/.zshrc	/^    LBUFFER="$LBUFFER |& fzf -m --border --ansi"$/;"	v
+LBUFFER	/Users/wizard/.zshrc	/^    LBUFFER="$LBUFFER$(sudo lsof -i | sed -n '2,$p' | fzf -m | awk '{print $2}' | uniq | tr '[:space:]' ' ')"$/;"	v
+LBUFFER	/Users/wizard/.zshrc	/^    LBUFFER=$/;"	v
+LC_ALL	/Users/wizard/.zshrc	/^export LC_ALL="en_US.UTF-8"$/;"	v
+LC_MESSAGES	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^  LC_MESSAGES=C command grep -Hm1 '^' < "${1-$REPLY}" | command grep -sq '^Binary'$/;"	v
+LESS	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    export LESS="$old"$/;"	v
+LESS	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^export LESS="-M -N -R -K -F -X"$/;"	v
+LSCOLORS	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^export LSCOLORS="ExFxBxDxCxegedabagacad"$/;"	v
+LS_COLORS	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^            export LS_COLORS="fi=38:di=32;1:ex=31;1"$/;"	v
+MANPATH	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^        export MANPATH="$HOMEBREW_OPT_HOME\/erlang\/lib\/erlang\/man:$MANPATH"$/;"	v
+MANPATH	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^        export MANPATH=$HOME\/perl5\/man:$MANPATH$/;"	v
 ManParser	mantozshcomp.py	/^class ManParser(object):$/;"	c
+NMON	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^export NMON='mndckt'$/;"	v
+NODE_HOME	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^export NODE_HOME="\/usr\/local\/lib\/node_modules"$/;"	v
+NODE_PATH	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^export NODE_PATH="\/usr\/local\/lib\/node_modules:$YARN_HOME\/global\/node_modules"$/;"	v
 ORGIN_NAME	gitgo.sh	/^    local ORGIN_NAME="$(git remote -v | awk '{print $1}' | tail -1 | tr -d ' ')"$/;"	v
 Output	macOnly/figletRandomFont.sh	/^    Output="$(echo $TEXT_TO_DISPLAY | figlet -f $font)"$/;"	v
 PARSER_INFO	mantozshcomp.py	/^PARSER_INFO = {}$/;"	v
+PATH	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^        export PATH="$HOME\/Library\/Android\/sdk\/tools:$HOME\/Library\/Android\/sdk\/tools\/bin:$HOME\/Library\/Android\/sdk\/platform-tools:\/Library\/Developer\/CommandLineTools\/usr\/bin:$PATH"$/;"	v
+PATH	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^        export PATH="$PATH:\/usr\/games"$/;"	v
+PATH	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^        export PATH="$ZPWR_SCRIPTS\/macOnly:$HOME\/.tokenScripts:$PATH:$HOME\/.platformio\/penv\/bin"$/;"	v
+PATH	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    export PATH="$HOME\/.cargo\/bin:$PATH"$/;"	v
+PATH	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    export PATH="$PATH:$HOME\/go\/bin:\/usr\/local\/lib\/python2.7\/site-packages\/powerline\/scripts\/"$/;"	v
+PATH	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    export PATH="$PYEXECUTABLES:$ZPWR_SCRIPTS\/save-run:$HOME\/.local\/bin:$HOME\/perl5\/bin:$ZPWR_SCRIPTS:\/usr\/bin:\/bin:\/usr\/sbin:\/sbin:\/opt\/X11\/bin:\/usr\/local\/sbin:$PATH"$/;"	v
+PATH	/Users/wizard/.zshrc	/^    export PATH="$HOME\/.jenv\/shims:$PATH"$/;"	v
 PATH	macOnly/tmuxer.sh	/^PATH="\/usr\/local\/bin:$PATH"$/;"	v
+PERL5LIB	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^export PERL5LIB="$HOME\/perl5\/lib\/perl5"$/;"	v
+PERL_HOME	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^        export PERL_HOME="$HOMEBREW_OPT_HOME\/perl"$/;"	v
+PIP3_HOME	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^        export PIP3_HOME="\/usr\/local\/lib\/python3.7\/site-packages"$/;"	v
+PIP_HOME	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^        export PIP_HOME="\/usr\/local\/lib\/python2.7\/site-packages"$/;"	v
+PROMPT4	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^export PROMPT4=$'\\e[34m%x\\t%0N\\t%i\\t%_\\e[0m\\t'$/;"	v
+PS3	/Users/wizard/.zshrc	/^export PS3=$'\\e[1;34m-->>>> \\e[0m'$/;"	v
+PS4	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^export PS4='>\\e[1;4;39m${BASH_SOURCE}\\e[37m\\e[0;34m__${LINENO}\\e[37m__\\e[0;32m${FUNCNAME[0]}> \\e[0m'$/;"	v
+PSQL_EDITOR	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^                export PSQL_EDITOR='mvim -v -c "setf sql"'$/;"	v
+PSQL_EDITOR	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^                export PSQL_EDITOR='nvim -c "setf sql"'$/;"	v
+PSQL_EDITOR	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^                export PSQL_EDITOR='vim -c "setf sql"'$/;"	v
+PSQL_EDITOR	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^            export PSQL_EDITOR='vim -c "setf sql"'$/;"	v
 PULL_URL	gitgo.sh	/^        local PULL_URL="$(git remote -v |$/;"	v
+PYEXECUTABLES	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^export PYEXECUTABLES="$HOME\/Documents\/pythonScripts"$/;"	v
+PYGMENTIZE_COLOR	/Users/wizard/.zshrc	/^export PYGMENTIZE_COLOR="emacs"$/;"	v
+PYSCRIPTS	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^export PYSCRIPTS="$HOME\/PycharmProjects\/fromShell"$/;"	v
+RBUFFER	/Users/wizard/.zshrc	/^        RBUFFER=${RBUFFER:$#ZPWR_TABSTOP}$/;"	v
+REPLY	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^            REPLY="$(cat "$ZPWR_TEMPFILE")"$/;"	v
 REPO_NAME	gitgo.sh	/^        local REPO_NAME="$(git remote -v | awk '{print $2}' | tail -1 | tr -d ' ')"$/;"	v
 REPO_NAME_TO_CREATE	gitgo.sh	/^        local REPO_NAME_TO_CREATE="$1"$/;"	v
 ROWS	myWatchNoBlink.sh	/^        ROWS=$(tput lines)$/;"	v
 ROWS	myWatchNoBlinkColorized.sh	/^        ROWS=$(tput lines)$/;"	v
+RPROMPT	/Users/wizard/.zshrc	/^        RPROMPT="%B%F{blue}$$ %b%F{blue}$-"$/;"	v
+RPS2	/Users/wizard/.zshrc	/^RPS2='+%N:%i:%^'$/;"	v
+SAVEHIST	/Users/wizard/.zshrc	/^export SAVEHIST=10000000$/;"	v
+SCALA_HOME	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^        export SCALA_HOME="$HOMEBREW_OPT_HOME\/scala"$/;"	v
+SHELL	/Users/wizard/.zshrc	/^export SHELL="$(which zsh)"$/;"	v
+SSH_KEY_PATH	/Users/wizard/.zshrc	/^export SSH_KEY_PATH="~\/.ssh\/rsa_id"$/;"	v
+TERM	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    export TERM="xterm-256color"$/;"	v
+TERMINAL_APP	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^export TERMINAL_APP="Terminal.app"$/;"	v
 TEXT_TO_DISPLAY	macOnly/figletRandomFont.sh	/^TEXT_TO_DISPLAY="$1"$/;"	v
 TEXT_TO_DISPLAY	macOnly/figletRandomFontOnce.sh	/^TEXT_TO_DISPLAY="$1"$/;"	v
 TEXT_TO_DISPLAY	macOnly/figletRotater.sh	/^TEXT_TO_DISPLAY="$1"$/;"	v
 TEXT_TO_DISPLAY	macOnly/menkeTechRandomFont.sh	/^TEXT_TO_DISPLAY="Menke Technologies"$/;"	v
+TMUX_HOME	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^export TMUX_HOME="$HOME\/.tmux"$/;"	v
+TUTORIAL_FILES	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^        export TUTORIAL_FILES="$HOME\/Documents\/tutorialsRepo"$/;"	v
 Template	help2comp.py	/^from string import Template$/;"	i
 Type1ManParser	mantozshcomp.py	/^class Type1ManParser(ManParser):$/;"	c
 Type2ManParser	mantozshcomp.py	/^class Type2ManParser(ManParser):$/;"	c
@@ -63,35 +228,129 @@ Type3ManParser	mantozshcomp.py	/^class Type3ManParser(ManParser):$/;"	c
 Type4ManParser	mantozshcomp.py	/^class Type4ManParser(ManParser):$/;"	c
 TypeDarwinManParser	mantozshcomp.py	/^class TypeDarwinManParser(ManParser):$/;"	c
 TypeDeroffManParser	mantozshcomp.py	/^class TypeDeroffManParser(ManParser):$/;"	c
+UMASK	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^export UMASK=077$/;"	v
 URL	gitgo.sh	/^    local URL="https:\/\/github.com\/$GITHUB_ACCOUNT\/$REPO_NAME_TO_CREATE"$/;"	v
 URL	help2comp.py	/^URL = 'http:\/\/github.com\/RobSis\/zsh-completion-generator'$/;"	v
+XAUTHORITY	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^export XAUTHORITY="$HOME\/.Xauthority"$/;"	v
+YARN_HOME	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^export YARN_HOME="$HOME\/.config\/yarn"$/;"	v
+ZPWR_ALL_GIT_DIRS	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^export ZPWR_ALL_GIT_DIRS="$ZPWR_HIDDEN_DIR\/zpwrGitDirs.txt"$/;"	v
+ZPWR_ALL_KEYBINDINGS	/Users/wizard/.zshrc	/^export ZPWR_ALL_KEYBINDINGS="$ZPWR_HIDDEN_DIR\/zpwrAllKeybindings.txt"$/;"	v
+ZPWR_AUTO_ATTACH	/Users/wizard/.zshrc	/^export ZPWR_AUTO_ATTACH=true$/;"	v
+ZPWR_AUTO_SELECT	/Users/wizard/.zshrc	/^export ZPWR_AUTO_SELECT=true$/;"	v
+ZPWR_BAT_THEME	/Users/wizard/.zshrc	/^export ZPWR_BAT_THEME="GitHub"$/;"	v
+ZPWR_BLUE	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^export ZPWR_BLUE="\\x1b[37;44m"$/;"	v
 ZPWR_BLUE	blueText.sh	/^ZPWR_BLUE='\\e[37;44m'$/;"	v
 ZPWR_BLUE	blueUpperText.sh	/^ZPWR_BLUE='\\e[37;44m'$/;"	v
 ZPWR_BLUE	boldText.sh	/^ZPWR_BLUE='\\e[37;44m'$/;"	v
 ZPWR_BLUE	coolFormatter.sh	/^ZPWR_BLUE='\\e[37;44m'$/;"	v
+ZPWR_CD_AUTO_LS	/Users/wizard/.zshrc	/^export ZPWR_CD_AUTO_LS=true$/;"	v
+ZPWR_CHAR_LOGO	/Users/wizard/.zshrc	/^export ZPWR_CHAR_LOGO="<<)(>>"$/;"	v
+ZPWR_COLORIZER	/Users/wizard/.zshrc	/^        export ZPWR_COLORIZER="pygmentize -f terminal256 -g -O style=\\$PYGMENTIZE_COLOR"$/;"	v
+ZPWR_COLORIZER	/Users/wizard/.zshrc	/^        export ZPWR_COLORIZER='bat --paging never --wrap character --color always --style="numbers,grid,changes,header"'$/;"	v
+ZPWR_COLORIZER	/Users/wizard/.zshrc	/^    export ZPWR_COLORIZER="pygmentize -f terminal256 -g -O style=\\$PYGMENTIZE_COLOR"$/;"	v
+ZPWR_COLORIZER	/Users/wizard/.zshrc	/^export ZPWR_COLORIZER=bat$/;"	v
+ZPWR_COLORS	/Users/wizard/.zshrc	/^export ZPWR_COLORS=true$/;"	v
+ZPWR_COMMIT_STYLE	/Users/wizard/.zshrc	/^export ZPWR_COMMIT_STYLE='1;37;45'$/;"	v
+ZPWR_COMMON_FZF_ELEM	/Users/wizard/.zshrc	/^    ZPWR_COMMON_FZF_ELEM="--prompt='-->>> '"$/;"	v
+ZPWR_COMPLETION_DIR	/Users/wizard/.zshrc	/^export ZPWR_COMPLETION_DIR="zsh-more-completions"$/;"	v
 ZPWR_COPY_CMD	crossOSCommands.sh	/^export ZPWR_COPY_CMD="$(getCopyCommand)"$/;"	v
+ZPWR_COUNTER	/Users/wizard/.zshrc	/^            ZPWR_COUNTER=0$/;"	v
+ZPWR_COUNTER	/Users/wizard/.zshrc	/^ZPWR_COUNTER=0$/;"	v
+ZPWR_D	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^export ZPWR_D="$HOME\/Desktop"$/;"	v
+ZPWR_DEBUG	/Users/wizard/.zshrc	/^export ZPWR_DEBUG=false$/;"	v
+ZPWR_DEFAULT_BANNER	/Users/wizard/.zshrc	/^export ZPWR_DEFAULT_BANNER="bash $ZPWR_SCRIPTS\/macOnly\/figletRandomFontOnce.sh $(hostname)"$/;"	v
+ZPWR_DELIMITER_CHAR	/Users/wizard/.zshrc	/^export ZPWR_DELIMITER_CHAR='%'$/;"	v
+ZPWR_DL	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^export ZPWR_DL="$HOME\/Downloads"$/;"	v
+ZPWR_DOC	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^export ZPWR_DOC="$HOME\/Documents"$/;"	v
+ZPWR_ENV	/Users/wizard/.zshrc	/^export ZPWR_ENV="$ZPWR_HIDDEN_DIR\/zpwrEnv"$/;"	v
+ZPWR_EXA_COMMAND	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    export ZPWR_EXA_COMMAND='command exa --git -il -F -H --color-scale -g -a --colour=always'$/;"	v
+ZPWR_EXA_COMMAND	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    export ZPWR_EXA_COMMAND='command exa --git -il -F -H --extended --color-scale -g -a --colour=always'$/;"	v
+ZPWR_EXA_EXTENDED	/Users/wizard/.zshrc	/^export ZPWR_EXA_EXTENDED=true$/;"	v
+ZPWR_EXPAND	/Users/wizard/.zshrc	/^export ZPWR_EXPAND=true$/;"	v
+ZPWR_EXPAND_SECOND_POSITION	/Users/wizard/.zshrc	/^export ZPWR_EXPAND_SECOND_POSITION=true$/;"	v
+ZPWR_GITHUB_ACCOUNT	/Users/wizard/.zshrc	/^export ZPWR_GITHUB_ACCOUNT='MenkeTechnologies'$/;"	v
+ZPWR_GITHUB_URL	/Users/wizard/.zshrc	/^export ZPWR_GITHUB_URL="https:\/\/github.com\/$ZPWR_GITHUB_ACCOUNT"$/;"	v
+ZPWR_GLOBAL_ALIAS_PREFIX	/Users/wizard/.zshrc	/^export ZPWR_GLOBAL_ALIAS_PREFIX=j$/;"	v
+ZPWR_HIDDEN_DIR	/Users/wizard/.zshrc	/^export ZPWR_HIDDEN_DIR="$HOME\/.zpwr"$/;"	v
+ZPWR_HIDDEN_DIR_TEMP	/Users/wizard/.zshrc	/^export ZPWR_HIDDEN_DIR_TEMP="$HOME\/.zpwr\/.temp"$/;"	v
+ZPWR_LEARN	/Users/wizard/.zshrc	/^export ZPWR_LEARN=true$/;"	v
+ZPWR_LOCK_FILE	/Users/wizard/.zshrc	/^export ZPWR_LOCK_FILE="$ZPWR_HIDDEN_DIR\/.lock"$/;"	v
+ZPWR_LOGFILE	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^export ZPWR_LOGFILE="$ZPWR_HIDDEN_DIR\/zpwrLog.txt"$/;"	v
 ZPWR_LOGFILE	updaterEmail.sh	/^ZPWR_LOGFILE="$ZPWR_HIDDEN_DIR\/zpwrLog.txt"$/;"	v
+ZPWR_LOG_DATE_COLOR	/Users/wizard/.zshrc	/^export ZPWR_LOG_DATE_COLOR='\\x1b[0;32;44m'$/;"	v
+ZPWR_LOG_MSG_COLOR	/Users/wizard/.zshrc	/^export ZPWR_LOG_MSG_COLOR='\\x1b[0;37;45m'$/;"	v
+ZPWR_LOG_QUOTE_COLOR	/Users/wizard/.zshrc	/^export ZPWR_LOG_QUOTE_COLOR='\\x1b[0;35m'$/;"	v
+ZPWR_LOG_UNDER_COLOR	/Users/wizard/.zshrc	/^export ZPWR_LOG_UNDER_COLOR='\\x1b[0;34m'$/;"	v
+ZPWR_NVIMINFO	/Users/wizard/.zshrc	/^export ZPWR_NVIMINFO="$ZPWR_HIDDEN_DIR\/.nviminfo"$/;"	v
 ZPWR_OPEN_CMD	crossOSCommands.sh	/^export ZPWR_OPEN_CMD="$(getOpenCommand)"$/;"	v
+ZPWR_OS_TYPE	/Users/wizard/.zshrc	/^export ZPWR_OS_TYPE="$(uname -s | perl -e 'print lc<>')"$/;"	v
 ZPWR_OS_TYPE	crossOSCommands.sh	/^    export ZPWR_OS_TYPE="$(uname -s | perl -e 'print lc<>')"$/;"	v
+ZPWR_PARENT_PROCESS	/Users/wizard/.zshrc	/^ZPWR_PARENT_PROCESS="$(command ps -p $PPID | perl -lane '$"=" ";print "@F[3..$#F]" if m{^\\s*\\d+.*}')"$/;"	v
 ZPWR_PASTE_CMD	crossOSCommands.sh	/^export ZPWR_PASTE_CMD="$(getPasteCommand)"$/;"	v
+ZPWR_PROFILING	/Users/wizard/.zshrc	/^export ZPWR_PROFILING=false$/;"	v
+ZPWR_PROMPT	/Users/wizard/.zshrc	/^export ZPWR_PROMPT=POWERLEVEL$/;"	v
+ZPWR_PROMPT_FILE	/Users/wizard/.zshrc	/^export ZPWR_PROMPT_FILE="$ZPWR_HIDDEN_DIR\/.powerlevel9kconfig.sh"$/;"	v
+ZPWR_RED	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^export ZPWR_RED="\\x1b[31m"$/;"	v
 ZPWR_RED	redText.sh	/^ZPWR_RED='\\e[31;1m'$/;"	v
+ZPWR_REPO_NAME	/Users/wizard/.zshrc	/^export ZPWR_REPO_NAME="zpwr"$/;"	v
+ZPWR_RESET	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^export ZPWR_RESET="\\x1b[0m"$/;"	v
 ZPWR_RESET	blueText.sh	/^ZPWR_RESET='\\e[0m'$/;"	v
 ZPWR_RESET	blueUpperText.sh	/^ZPWR_RESET='\\e[0m'$/;"	v
 ZPWR_RESET	boldText.sh	/^ZPWR_RESET='\\e[0m'$/;"	v
 ZPWR_RESET	coolFormatter.sh	/^ZPWR_RESET='\\e[0m'$/;"	v
 ZPWR_RESET	redText.sh	/^ZPWR_RESET='\\e[0m'$/;"	v
+ZPWR_RM_AUTO_LS	/Users/wizard/.zshrc	/^export ZPWR_RM_AUTO_LS=true$/;"	v
+ZPWR_SCHEMA_NAME	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    export ZPWR_SCHEMA_NAME=root$/;"	v
+ZPWR_SCRIPTS	/Users/wizard/.zshrc	/^export ZPWR_SCRIPTS="$ZPWR_HIDDEN_DIR\/scripts"$/;"	v
 ZPWR_SCRIPTS	macOnly/tutorialConfigUpdater.sh	/^ZPWR_SCRIPTS="$ZPWR_HIDDEN_DIR\/scripts"$/;"	v
 ZPWR_SCRIPTS	printHeader.sh	/^    ZPWR_SCRIPTS="$HOME\/.zpwr\/scripts"$/;"	v
 ZPWR_SCRIPTS	updaterEmail.sh	/^ZPWR_SCRIPTS="$HOME\/.zpwr\/scripts"$/;"	v
+ZPWR_SEND_KEYS_FULL	/Users/wizard/.zshrc	/^    ZPWR_SEND_KEYS_FULL=false$/;"	v
+ZPWR_SEND_KEYS_FULL	/Users/wizard/.zshrc	/^    ZPWR_SEND_KEYS_FULL=true$/;"	v
+ZPWR_SEND_KEYS_FULL	/Users/wizard/.zshrc	/^export ZPWR_SEND_KEYS_FULL=false$/;"	v
+ZPWR_SEND_KEYS_PANE	/Users/wizard/.zshrc	/^    ZPWR_SEND_KEYS_PANE=$1$/;"	v
+ZPWR_SEND_KEYS_PANE	/Users/wizard/.zshrc	/^    ZPWR_SEND_KEYS_PANE=-1$/;"	v
+ZPWR_SEND_KEYS_PANE	/Users/wizard/.zshrc	/^export ZPWR_SEND_KEYS_PANE=-1$/;"	v
+ZPWR_SURROUND	/Users/wizard/.zshrc	/^export ZPWR_SURROUND=true$/;"	v
+ZPWR_TABLE_NAME	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    export ZPWR_TABLE_NAME=LearningCollection$/;"	v
+ZPWR_TABSTOP	/Users/wizard/.zshrc	/^export ZPWR_TABSTOP=__________$/;"	v
+ZPWR_TEMPFILE	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    export ZPWR_TEMPFILE="$TMPDIR\/$ZPWR_REPO_NAME\/.temp$$-$USER"$/;"	v
+ZPWR_TEMPFILE	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    export ZPWR_TEMPFILE="\/tmp\/$ZPWR_REPO_NAME\/.temp$$-$USER"$/;"	v
 ZPWR_TEMPFILE	keybindingsToFZF.zsh	/^    ZPWR_TEMPFILE="\/tmp\/.temp$$"$/;"	v
 ZPWR_TEMPFILE	keybindingsToFZFVim.zsh	/^    ZPWR_TEMPFILE="\/tmp\/.temp$$"$/;"	v
 ZPWR_TEMPFILE	keybindingsToREADME.zsh	/^    ZPWR_TEMPFILE="\/tmp\/.temp$$"$/;"	v
 ZPWR_TEMPFILE	macOnly/splitReg.sh	/^    ZPWR_TEMPFILE="\/tmp\/temp$$"$/;"	v
+ZPWR_TEMPFILE1	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    export ZPWR_TEMPFILE1="$TMPDIR\/$ZPWR_REPO_NAME\/.temp$$-1$USER"$/;"	v
+ZPWR_TEMPFILE1	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    export ZPWR_TEMPFILE1="\/tmp\/$ZPWR_REPO_NAME\/.temp$$-1$USER"$/;"	v
 ZPWR_TEMPFILE1	keybindingsToFZF.zsh	/^    ZPWR_TEMPFILE1="\/tmp\/.temp$$-1"$/;"	v
+ZPWR_TEMPFILE2	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    export ZPWR_TEMPFILE2="$TMPDIR\/$ZPWR_REPO_NAME\/.temp$$-2$USER"$/;"	v
+ZPWR_TEMPFILE2	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    export ZPWR_TEMPFILE2="\/tmp\/$ZPWR_REPO_NAME\/.temp$$-2$USER"$/;"	v
 ZPWR_TEMPFILE2	keybindingsToFZF.zsh	/^    ZPWR_TEMPFILE2="\/tmp\/.temp$$-2"$/;"	v
+ZPWR_TEMPFILE3	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    export ZPWR_TEMPFILE3="$TMPDIR\/$ZPWR_REPO_NAME\/.temp$$-3$USER"$/;"	v
+ZPWR_TEMPFILE3	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    export ZPWR_TEMPFILE3="\/tmp\/$ZPWR_REPO_NAME\/.temp$$-3$USER"$/;"	v
 ZPWR_TEMPFILE3	keybindingsToFZF.zsh	/^    ZPWR_TEMPFILE3="\/tmp\/.temp$$-3"$/;"	v
+ZPWR_TEMPFILE4	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    export ZPWR_TEMPFILE4="$TMPDIR\/$ZPWR_REPO_NAME\/.temp$$-4$USER"$/;"	v
+ZPWR_TEMPFILE4	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    export ZPWR_TEMPFILE4="\/tmp\/$ZPWR_REPO_NAME\/.temp$$-4$USER"$/;"	v
 ZPWR_TEMPFILE4	keybindingsToFZF.zsh	/^    ZPWR_TEMPFILE4="\/tmp\/.temp$$-4"$/;"	v
+ZPWR_TEMPFILE_SQL	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    export ZPWR_TEMPFILE_SQL="$TMPDIR\/$ZPWR_REPO_NAME\/.temp$$-2$USER.sql"$/;"	v
+ZPWR_TEMPFILE_SQL	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    export ZPWR_TEMPFILE_SQL="\/tmp\/$ZPWR_REPO_NAME\/.temp$$-2$USER.sql"$/;"	v
+ZPWR_TMUX_PREFIX	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^export ZPWR_TMUX_PREFIX=x$/;"	v
+ZPWR_TMUX_REMOTE_PREFIX	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^export ZPWR_TMUX_REMOTE_PREFIX=b$/;"	v
+ZPWR_TRACE	/Users/wizard/.zshrc	/^export ZPWR_TRACE=false$/;"	v
+ZPWR_USE_NEOVIM	/Users/wizard/.zshrc	/^export ZPWR_USE_NEOVIM=true$/;"	v
+ZPWR_VIM_KEYBINDINGS	/Users/wizard/.zshrc	/^export ZPWR_VIM_KEYBINDINGS="$ZPWR_HIDDEN_DIR\/zpwrVimKeybindings.txt"$/;"	v
+ZPWR_WILL_CLEAR	/Users/wizard/.zshrc	/^            ZPWR_WILL_CLEAR=false$/;"	v
+ZPWR_WILL_CLEAR	/Users/wizard/.zshrc	/^            ZPWR_WILL_CLEAR=true$/;"	v
+ZPWR_WILL_CLEAR	/Users/wizard/.zshrc	/^    ZPWR_WILL_CLEAR=false$/;"	v
+ZSH	/Users/wizard/.zshrc	/^export ZSH=$HOME\/.oh-my-zsh$/;"	v
+ZSH_AUTOSUGGEST_STRATEGY	/Users/wizard/.zshrc	/^ZSH_AUTOSUGGEST_STRATEGY=match_prev_cmd$/;"	v
 ZSH_COMP_DIR	remoteRepoMonitorDaemon.sh	/^ZSH_COMP_DIR="$HOME\/.oh-my-zsh\/custom\/plugins\/$ZSH_COMP_REPO_NAME"$/;"	v
+ZSH_DISABLE_COMPFIX	/Users/wizard/.zshrc	/^ZSH_DISABLE_COMPFIX=true$/;"	v
+ZSH_THEME	/Users/wizard/.zshrc	/^        ZSH_THEME=simonoff$/;"	v
+_SEMI_OLDBUFFER	/Users/wizard/.zshrc	/^        _SEMI_OLDBUFFER="$BUFFER"$/;"	v
+_SEMI_OLDBUFFER	/Users/wizard/.zshrc	/^        _SEMI_OLDBUFFER=${_SEMI_OLDBUFFER\/\/\\`\/}$/;"	v
+__NEW_BUFFER	/Users/wizard/.zshrc	/^            local __NEW_BUFFER="exe \\"$BUFFER\\""$/;"	v
+__OLDBUFFER	/Users/wizard/.zshrc	/^        __OLDBUFFER="${BUFFER}"$/;"	v
 __ScriptVersion	CPU_Stresser.sh	/^__ScriptVersion="1.0.2"$/;"	v
 __ScriptVersion	macOnly/splitReg.sh	/^__ScriptVersion=1.0.0$/;"	v
 __ScriptVersion	powerTo.sh	/^__ScriptVersion="1.0.0"$/;"	v
@@ -102,7 +361,48 @@ __ScriptVersion	updater.sh	/^__ScriptVersion="1.0.0"$/;"	v
 __ScriptVersion	updaterNoPip.sh	/^__ScriptVersion="1.0.0"$/;"	v
 __init__	boiler_gen.py	/^    def __init__(self, filename, directory, contents):$/;"	m	class:CodeFile
 __init__	mantozshcomp.py	/^    def __init__(self):$/;"	m	class:Deroffer
+_alias_file	/Users/wizard/.zshrc	/^_alias_file="$ZPWR_HIDDEN_DIR\/.shell_aliases_functions.sh"$/;"	v
+_c	/Users/wizard/.zshrc	/^_c(){$/;"	f
+_cl	/Users/wizard/.zshrc	/^_cl(){$/;"	f
+_command_names	/Users/wizard/.zshrc	/^_command_names(){$/;"	f
+_complete_clipboard	/Users/wizard/.zshrc	/^_complete_clipboard(){$/;"	f
+_complete_hist	/Users/wizard/.zshrc	/^function _complete_hist(){$/;"	f
+_complete_plus_last_command_args	/Users/wizard/.zshrc	/^_complete_plus_last_command_args() {$/;"	f
 _escape	help2comp.py	/^def _escape(line):$/;"	f
+_f	/Users/wizard/.zshrc	/^_f(){$/;"	f
+_fzf_complete_alias	/Users/wizard/.zshrc	/^_fzf_complete_alias() {$/;"	f
+_fzf_complete_c	/Users/wizard/.zshrc	/^_fzf_complete_c() {$/;"	f
+_fzf_complete_clearList	/Users/wizard/.zshrc	/^_fzf_complete_clearList() {$/;"	f
+_fzf_complete_echo	/Users/wizard/.zshrc	/^_fzf_complete_echo() {$/;"	f
+_fzf_complete_echo_post	/Users/wizard/.zshrc	/^_fzf_complete_echo_post() {$/;"	f
+_fzf_complete_f	/Users/wizard/.zshrc	/^_fzf_complete_f() {$/;"	f
+_fzf_complete_git	/Users/wizard/.zshrc	/^_fzf_complete_git() {$/;"	f
+_fzf_complete_git_post	/Users/wizard/.zshrc	/^_fzf_complete_git_post() {$/;"	f
+_fzf_complete_killall	/Users/wizard/.zshrc	/^_fzf_complete_killall() {$/;"	f
+_fzf_complete_mvim	/Users/wizard/.zshrc	/^_fzf_complete_mvim() {$/;"	f
+_fzf_complete_nvim	/Users/wizard/.zshrc	/^_fzf_complete_nvim() {$/;"	f
+_fzf_complete_printf	/Users/wizard/.zshrc	/^_fzf_complete_printf() {$/;"	f
+_fzf_complete_printf_post	/Users/wizard/.zshrc	/^_fzf_complete_printf_post() {$/;"	f
+_fzf_complete_r	/Users/wizard/.zshrc	/^_fzf_complete_r() {$/;"	f
+_fzf_complete_r_post	/Users/wizard/.zshrc	/^_fzf_complete_r_post() {$/;"	f
+_fzf_complete_redo	/Users/wizard/.zshrc	/^_fzf_complete_redo() {$/;"	f
+_fzf_complete_redo_post	/Users/wizard/.zshrc	/^_fzf_complete_redo_post() {$/;"	f
+_fzf_complete_rsql	/Users/wizard/.zshrc	/^_fzf_complete_rsql() {$/;"	f
+_fzf_complete_rsql_post	/Users/wizard/.zshrc	/^_fzf_complete_rsql_post() {$/;"	f
+_fzf_complete_se	/Users/wizard/.zshrc	/^_fzf_complete_se() {$/;"	f
+_fzf_complete_se_post	/Users/wizard/.zshrc	/^_fzf_complete_se_post() {$/;"	f
+_fzf_complete_vim	/Users/wizard/.zshrc	/^_fzf_complete_vim() {$/;"	f
+_fzf_complete_z	/Users/wizard/.zshrc	/^_fzf_complete_z() {$/;"	f
+_megacomplete	/Users/wizard/.zshrc	/^_megacomplete(){$/;"	f
+_p	/Users/wizard/.zshrc	/^_p(){$/;"	f
+_r	/Users/wizard/.zshrc	/^_r(){$/;"	f
+_se	/Users/wizard/.zshrc	/^_se(){$/;"	f
+_ssd	/Users/wizard/.zshrc	/^_ssd(){$/;"	f
+_ssu	/Users/wizard/.zshrc	/^_ssu(){$/;"	f
+_tmux_capture_pane	/Users/wizard/.zshrc	/^  _tmux_capture_pane() {$/;"	f
+_tmux_pane_words	/Users/wizard/.zshrc	/^_tmux_pane_words() {$/;"	f
+_zpwr	/Users/wizard/.zshrc	/^_zpwr(){$/;"	f
+about	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^about(){$/;"	f
 active	powerTo.sh	/^active=$(tmux list-panes | grep active | cut -c1)$/;"	v
 addContents	shebangChanger.sh	/^addContents() {$/;"	f
 addHeader	createTextFile.sh	/^addHeader() {$/;"	f
@@ -111,8 +411,12 @@ addToAry	regexreplace.pl	/^sub addToAry {$/;"	s
 add_diagnostic	mantozshcomp.py	/^def add_diagnostic(dgn, msg_verbosity=VERY_VERBOSE):$/;"	f
 address	uploadWebDS.sh	/^address="jacobmenke@$MY_IP:\/var\/services\/web"$/;"	v
 address	uploadWebPi.sh	/^address="pi@$MY_IP:\/var\/www\/html"$/;"	v
+aliases	/Users/wizard/.zshrc	/^            aliases="$(cat $ZPWR_HIDDEN_DIR\/.common_aliases)"$/;"	v
+allRemotes	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^allRemotes(){$/;"	f
 allRemotes	about.sh	/^allRemotes() {$/;"	f
 already_output_completions	mantozshcomp.py	/^already_output_completions = {}$/;"	v
+alternateQuotes	/Users/wizard/.zshrc	/^alternateQuotes(){$/;"	f
+alternatingPrettyPrint	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^alternatingPrettyPrint(){$/;"	f
 alternatingPrettyPrint	CPU_Stresser.sh	/^alternatingPrettyPrint() {$/;"	f
 alternatingPrettyPrint	pipUpdater.sh	/^alternatingPrettyPrint() {$/;"	f
 alternatingPrettyPrint	rpiSoftwareUpdater.sh	/^alternatingPrettyPrint() {$/;"	f
@@ -120,16 +424,45 @@ alternatingPrettyPrint	updater.sh	/^alternatingPrettyPrint() {$/;"	f
 alternatingPrettyPrint	updaterNoPip.sh	/^alternatingPrettyPrint() {$/;"	f
 amPm	timeConverter.sh	/^    amPm="PM"$/;"	v
 amPm	timeConverter.sh	/^amPm="AM"$/;"	v
+animate	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^animate(){$/;"	f
+arg	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^            arg="$1"$/;"	v
+arg	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^            arg=${argdollar\/\/@\/\\\\@}$/;"	v
+argdollar	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^            argdollar=${arg\/\/$\/\\\\$}$/;"	v
+args	/Users/wizard/.zshrc	/^    args=( "$@" )$/;"	v
+arguments	/Users/wizard/.zshrc	/^    arguments=('*:systemd non running services:('"$(systemctl list-units -at service | perl -lane '$_=~s@[\\xe2\\x97\\x8f]@@g;do{$_=~s@\\s*(\\S+).*@$1@;print} if \/service\/ and!\/running\/')"')')$/;"	v
+arguments	/Users/wizard/.zshrc	/^    arguments=('*:systemd running services:('"$(systemctl list-units -at service | perl -lane '$_=~s@[\\xe2\\x97\\x8f]@@g;do{$_=~s@\\s*(\\S+).*@$1@;print} if \/service\/ and\/running\/')"')')$/;"	v
+arguments	/Users/wizard/.zshrc	/^  arguments=($/;"	v
 arr	listAllCommands.sh	/^arr=()$/;"	v
 arr	picture_finder.sh	/^    local arr=('|' '\\' '-' '\/')$/;"	v
 arr	secureDelete.sh	/^    local arr=('|' '\\' '-' '\/')$/;"	v
 arr	sortedArrayCounter.sh	/^arr=()$/;"	v
+arrayToJson	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^arrayToJson(){$/;"	f
+ary	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^        ary="$1"$/;"	v
+avg	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^        avg=$((runtime\/(count *1.0)))$/;"	v
+b	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^b(){$/;"	f
+backup	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^backup(){$/;"	f
 backup_dir	duplicateLineDeleter.sh	/^backup_dir=$scripts_dir\/rcBackups$/;"	v
 backup_dir	indenterAndDuplicateLineDeleter.sh	/^backup_dir=$scripts_dir\/rcBackups$/;"	v
+banner	/Users/wizard/.zshrc	/^banner(){$/;"	f
 banner	about.sh	/^banner() {$/;"	f
+bannerLolcat	/Users/wizard/.zshrc	/^bannerLolcat(){$/;"	f
+base	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^            base="$(dirname "$base")"$/;"	v
+base	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^        base="$(dirname "$1")"$/;"	v
 base	fzfPreviewOptsCommon.sh	/^            base=\\$(basename \\$file)$/;"	v
 base	fzfPreviewOptsCommon2Pos.sh	/^            base=\\$(basename \\$file)$/;"	v
+base0	/Users/wizard/.zshrc	/^local base0="244"$/;"	v
+base00	/Users/wizard/.zshrc	/^local base00="241"$/;"	v
+base01	/Users/wizard/.zshrc	/^local base01="240"$/;"	v
+base02	/Users/wizard/.zshrc	/^local base02="235"$/;"	v
+base03	/Users/wizard/.zshrc	/^local base03="234"$/;"	v
+base1	/Users/wizard/.zshrc	/^local base1="245"$/;"	v
+base2	/Users/wizard/.zshrc	/^local base2="254"$/;"	v
+base3	/Users/wizard/.zshrc	/^local base3="230"$/;"	v
+bin_dir	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    local bin_dir="$GOPATH\/pkg\/$ost\/$pkg"$/;"	v
+blocksToSize	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^blocksToSize(){$/;"	f
 blocksize	secureDelete.sh	/^blocksize=1  # I\/O with \/dev\/urandom requires unit block size,$/;"	v
+blue	/Users/wizard/.zshrc	/^local blue="33"$/;"	v
+bold	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    bold=$(tput bold || tput md)$/;"	v
 boldflag	myWatchNoBlink.sh	/^        boldflag=true$/;"	v
 boldflag	myWatchNoBlinkColorized.sh	/^        boldflag=true$/;"	v
 boxesChar	manzshcompgen.zsh	/^    boxesChar='\/'$/;"	v
@@ -138,29 +471,65 @@ boxesPrint	manzshcompgen.zsh	/^boxesPrint(){$/;"	f
 boxesPrint	zshcompgen.zsh	/^boxesPrint(){$/;"	f
 br	bridgeDown.sh	/^br="br0"$/;"	v
 br	bridgeUp.sh	/^br="br0"$/;"	v
+branch	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^        branch="$1"$/;"	v
+branch	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^        branch=master$/;"	v
+branch	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    branch=master$/;"	v
 built_command	mantozshcomp.py	/^def built_command(options, description, arg):$/;"	f
 built_command_output	mantozshcomp.py	/^built_command_output = []$/;"	v
+bytes	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    local bytes=$(( input * 512 ))$/;"	v
 bz2	mantozshcomp.py	/^import bz2$/;"	i
+c	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^c(){$/;"	f
 cargo_bin	rpiSoftwareUpdater.sh	/^cargo_bin="$HOME\/.cargo\/bin\/cargo"$/;"	v
 casestr	fzfPreviewOptsCommon.sh	/^casestr=$(cat<<EOF$/;"	v
 casestr	fzfPreviewOptsCommon2Pos.sh	/^casestr=$(cat<<EOF$/;"	v
+category	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^            category="$2"$/;"	v
+category	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^        category="programming"$/;"	v
+cd	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^cd(){$/;"	f
+cgh	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^cgh(){$/;"	f
+changeGitEmail	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^changeGitEmail(){$/;"	f
+changeQuotes	/Users/wizard/.zshrc	/^changeQuotes(){$/;"	f
 chars	batchRename.sh	/^    local chars=1                   # number of characters to display$/;"	v
 chars	openAll.sh	/^    local chars=1                   # number of characters to display$/;"	v
 checkForExistence	batchRename.sh	/^checkForExistence() {$/;"	f
 check_dir_exists	boiler_gen.py	/^def check_dir_exists(directory):$/;"	f
 cleanup_autogenerated_completions_in_directory	mantozshcomp.py	/^def cleanup_autogenerated_completions_in_directory(dir):$/;"	f
 cleanup_autogenerated_file	mantozshcomp.py	/^def cleanup_autogenerated_file(path):$/;"	f
+clearLine	/Users/wizard/.zshrc	/^clearLine() {$/;"	f
+clearList	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^clearList() {$/;"	f
 clearList	clearList.sh	/^clearList() {$/;"	f
+clearListFZF	/Users/wizard/.zshrc	/^clearListFZF(){$/;"	f
 clearline	batchRename.sh	/^    local clearline="\\e[K"          # clear to end of line (ANSI terminal)$/;"	v
 clearline	openAll.sh	/^    local clearline="\\e[K"          # clear to end of line (ANSI terminal)$/;"	v
+clipboard	/Users/wizard/.zshrc	/^clipboard(){$/;"	f
+clipboard_array	/Users/wizard/.zshrc	/^    clipboard_array=(${(u)=clipboard_str} ${clipboard_str} "\\"${clipboard_str}\\"" "'${clipboard_str}'")$/;"	v
+clipboard_str	/Users/wizard/.zshrc	/^                    clipboard_str="$(powershell.exe -c 'Get-Clipboard')"$/;"	v
+clipboard_str	/Users/wizard/.zshrc	/^                    clipboard_str="$(xclip -o -sel clip 2>\/dev\/null)"$/;"	v
+clipboard_str	/Users/wizard/.zshrc	/^                clipboard_str="$(pbpaste)"$/;"	v
+clipboard_str	/Users/wizard/.zshrc	/^                clipboard_str="$(xclip -o -sel clip 2>\/dev\/null)"$/;"	v
+clipboard_str	/Users/wizard/.zshrc	/^        clipboard_str="$(${=ZPWR_PASTE_CMD} 2>\/dev\/null)"$/;"	v
+clipcmd	/Users/wizard/.zshrc	/^    local clipcmd=$ZPWR_COPY_CMD$/;"	v
+cloneToForked	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^cloneToForked(){$/;"	f
+cmd	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^        cmd="$ZPWR_OPEN_CMD"$/;"	v
+cmd	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^        cmd=date$/;"	v
+cmd	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^        cmd=gdate$/;"	v
+cmd	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^        cmd=subl$/;"	v
+cmd	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    cmd="$1"$/;"	v
+cmd	/Users/wizard/.zshrc	/^        cmd=${cmd#=}$/;"	v
+cmd	/Users/wizard/.zshrc	/^        cmd=${mywords[2]}$/;"	v
+cmd	/Users/wizard/.zshrc	/^    cmd=$words[1]$/;"	v
 cmd	delete_dups.zsh	/^    cmd="$(echo $f | cut -c2-)"$/;"	v
 cmd	fzfMan.sh	/^cmd="$1"$/;"	v
 cmd	keybindingsToFZFVim.zsh	/^    cmd=nvim$/;"	v
 cmd	keybindingsToFZFVim.zsh	/^    cmd=vim$/;"	v
 cmdType	fzfEnv.sh	/^cmdType=\\$(grep -m1 -a " \\$line\\$" ${ZPWR_ENV}Key.txt | awk "{print \\\\\\$1}")$/;"	v
+cmdlet	/Users/wizard/.zshrc	/^            cmdlet="$(eval echo "${out#*=}")"$/;"	v
 cmds	grc.zsh	/^  cmds=($/;"	v
 codecs	mantozshcomp.py	/^import codecs$/;"	i
+colo	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^        colo=$/;"	v
 color	tailZOU.sh	/^    color=$2$/;"	v
+color2	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^color2(){$/;"	f
+colorizer	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    local colorizer=bat$/;"	v
+colortest	/Users/wizard/.zshrc	/^colortest(){$/;"	f
 cols	picture_finder.sh	/^cols=$(tput cols)$/;"	v
 command	macOnly/commandToColors.sh	/^command="$@"$/;"	v
 command	runner.sh	/^    command="vim -i NONE -V1 -Nes -c 'so""$fileToBeExecuted""' -c'echo""|q!' 2>&1 | sed -n '4,$p'"$/;"	v
@@ -168,7 +537,10 @@ commandList	oldCounter.sh	/^        commandList="$i\\n$commandList"$/;"	v
 commandList	oldCounter.sh	/^commandList=""$/;"	v
 commands	oldCounter.sh	/^            commands="$f $commands"$/;"	v
 commands	oldCounter.sh	/^commands=""$/;"	v
+commandsThatModifyFiles	/Users/wizard/.zshrc	/^    commandsThatModifyFiles=(unlink rm srm to md touch chown chmod rmdir mv cp chflags chgrp ln mkdir nz git\\ reset git\\ clone gcl dot_clean)$/;"	v
 comment	mantozshcomp.py	/^    def comment(self):$/;"	m	class:Deroffer
+commit	/Users/wizard/.zshrc	/^commit(){$/;"	f
+commitMessage	/Users/wizard/.zshrc	/^    commitMessage="$BUFFER"$/;"	v
 commitMessage	gitgo.sh	/^    local commitMessage="$1"$/;"	v
 commitTheDirectory	gitgo.sh	/^commitTheDirectory() {$/;"	f
 comp_dir	manzshcompgen.zsh	/^comp_dir="comp_dir"$/;"	v
@@ -181,39 +553,60 @@ condputs	mantozshcomp.py	/^    def condputs(self, str):$/;"	m	class:Deroffer
 condputs_tr	mantozshcomp.py	/^    def condputs_tr(self, str):$/;"	m	class:Deroffer
 contents	duplicateLineDeleter.sh	/^    contents=$(cat -s "$file")$/;"	v
 contents	indenterAndDuplicateLineDeleter.sh	/^    contents=$(cat -s "$file")$/;"	v
+contribCount	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^contribCount(){$/;"	f
 convertFiles	batchRename.sh	/^convertFiles() {$/;"	f
+copyConf	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^copyConf(){$/;"	f
 copy_cmd	crossOSCommands.sh	/^                copy_cmd='clip.exe'$/;"	v
 copy_cmd	crossOSCommands.sh	/^                copy_cmd='xclip -i -sel clip'$/;"	v
 copy_cmd	crossOSCommands.sh	/^            copy_cmd='clip.exe'$/;"	v
 copy_cmd	crossOSCommands.sh	/^            copy_cmd='pbcopy'$/;"	v
 could_be_description	mantozshcomp.py	/^    def could_be_description(self, line):$/;"	m	class:TypeDeroffManParser
+count	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    local count=100$/;"	v
 count	uploadWebPi.sh	/^count=0$/;"	v
 count_argument_dashes	mantozshcomp.py	/^    def count_argument_dashes(self, line):$/;"	m	class:TypeDarwinManParser
+counter	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    counter=0$/;"	v
 counter	CPU_Stresser.sh	/^    counter=0$/;"	v
 counter	pipUpdater.sh	/^    counter=0$/;"	v
 counter	rpiSoftwareUpdater.sh	/^    counter=0$/;"	v
+createLearningCollection	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    createLearningCollection(){$/;"	f
 createTemplate	templater.sh	/^createTemplate() {$/;"	f
 createTheFile	createScriptButDontOpenSublime.sh	/^createTheFile() {$/;"	f
 createTheFile	createTextFile.sh	/^createTheFile() {$/;"	f
+creategif	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^creategif(){$/;"	f
+currentDir	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    currentDir="$(pwd -P)"$/;"	v
 cut_option	help2comp.py	/^def cut_option(line):$/;"	f
+cyan	/Users/wizard/.zshrc	/^local cyan="37"$/;"	v
 dateflag	myWatchMaintainEscapes.sh	/^        dateflag=true$/;"	v
 dateflag	mywatch.sh	/^        dateflag=true$/;"	v
+db	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    db(){$/;"	f
+db2	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    db2(){$/;"	f
+dbz	/Users/wizard/.zshrc	/^dbz() {$/;"	f
 default_recipent	textmessage.sh	/^    default_recipent="555111333"$/;"	v
+defs	/Users/wizard/.zshrc	/^    defs=( "$defs[@]"$/;"	v
+defs	/Users/wizard/.zshrc	/^    defs=($/;"	v
+del	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    del(){$/;"	f
 delay	batchRename.sh	/^    local delay=.1                  # time in seconds between characters$/;"	v
 delay	openAll.sh	/^    local delay=.1                  # time in seconds between characters$/;"	v
+deleteLastWord	/Users/wizard/.zshrc	/^deleteLastWord(){$/;"	f
 delim	batchRename.sh	/^delim=_$/;"	v
 delim	macOnly/splitReg.sh	/^delim=$(echo "$output" | grep -n -- "$regex" | tail -$level | head -1 | cut -d: -f1)$/;"	v
 delim	splitReg.sh	/^delim=$(echo "$output" | grep -n -- "$regex" | tail -$level | head -1 | cut -d: -f1)$/;"	v
 deroff	mantozshcomp.py	/^    def deroff(self, str):$/;"	m	class:Deroffer
 deroff_files	mantozshcomp.py	/^def deroff_files(files):$/;"	f
 destinationFile	picture_finder.sh	/^    destinationFile=$destinationDirectory\/${picture##*\/}$/;"	v
+detachall	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^detachall(){$/;"	f
 diagnostic_indent	mantozshcomp.py	/^diagnostic_indent = 0$/;"	v
 diagnostic_output	mantozshcomp.py	/^diagnostic_output = []$/;"	v
 digit	mantozshcomp.py	/^    def digit(self, idx):$/;"	m	class:Deroffer
+digs	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^digs(){$/;"	f
+dir	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    dir="$(command python3 -m pip show pygments | command grep Location | awk '{print $2}')"$/;"	v
+dir	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    dir="$(sudo python3 -m pip show powerline-status | \\grep --color=always '^Location' | awk '{print $2}')\/powerline"$/;"	v
+dir	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    dir="$1"$/;"	v
 dir	oldCounter.sh	/^    dir=$(echo $PATH | cut -d: -f$i)$/;"	v
 dir	runner.sh	/^        dir="$(dirname "$2")"$/;"	v
 dir	runner.sh	/^    dir="$(dirname "$2")"$/;"	v
 dirNum	oldCounter.sh	/^dirNum=$(expr $(echo $PATH | tr -cd : | wc -c) + 1)$/;"	v
+dir_name	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    dir_name=${git_name%.*}$/;"	v
 dir_to_search	openAll.sh	/^    dir_to_search="$2"$/;"	v
 dir_to_search	openAll.sh	/^dir_to_search="$(pwd)"$/;"	v
 dir_watched	fsWatchLongRunning.sh	/^dir_watched="$1"$/;"	v
@@ -224,6 +617,8 @@ dir_watching	watchServiceFSWatchPiWeb.sh	/^dir_watching="$1"$/;"	v
 dir_watching	watchServiceFSWatchRustCompile.sh	/^dir_watching="$1"$/;"	v
 directory_name	tgzLocalInstaller.sh	/^        directory_name="${1%.tar.gz}"$/;"	v
 directory_name	tgzLocalInstaller.sh	/^        directory_name="${1%.tgz}"$/;"	v
+dirname	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^        dirname="$(dirname $file)"$/;"	v
+dirsc	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    dirsc="$ZPWR_SCRIPTS\/$ZPWR_REPO_NAME"$/;"	v
 disable_proxy	macOnly/tor.sh	/^function disable_proxy() {$/;"	f
 displayProgress	batchRename.sh	/^displayProgress() {$/;"	f
 displayProgress	picture_finder.sh	/^displayProgress() {$/;"	f
@@ -232,6 +627,8 @@ displayProgressIndicator	openAll.sh	/^displayProgressIndicator() {$/;"	f
 distro	colorLogger.sh	/^        distro=debian$/;"	v
 distro	colorLogger.sh	/^        distro=redhat$/;"	v
 distro	colorLogger.sh	/^        distro=suse$/;"	v
+distroName	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^            distroName=$(perl -lne 'do{($_=$1)=~s\/"\/\/;print;exit0}if\/^ID=(.*)\/' \/etc\/os-release)$/;"	v
+distroName	/Users/wizard/.zshrc	/^    distroName=$(perl -lne 'do{($_=$1)=~s@"@@g;print;exit0}if m{^ID=(.*)}' \/etc\/os-release)$/;"	v
 distroName	clearTrash.sh	/^        distroName=$(perl -lne 'do{($_=$1)=~s\/"\/\/g;print;exit0}if\/^ID=(.*)\/' \/etc\/os-release)$/;"	v
 distroName	colorLogger.sh	/^        distroName=$(perl -lne 'do{($_=$1)=~s\/"\/\/g;print;exit0}if\/^ID=(.*)\/' \/etc\/os-release)$/;"	v
 distroName	logs.sh	/^        distroName=$(perl -lne 'do{($_=$1)=~s\/"\/\/g;print;exit0}if\/^ID=(.*)\/' \/etc\/os-release)$/;"	v
@@ -252,11 +649,14 @@ enclosing_dir	updater.sh	/^    enclosing_dir="$1"$/;"	v
 enclosing_dir	updaterNoPip.sh	/^    enclosing_dir="$1"$/;"	v
 encrypt_program	encrypt.sh	/^    encrypt_program=zip$/;"	v
 encrypt_program	encrypt.sh	/^encrypt_program=ccrypt$/;"	v
+end	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^            end=$($cmd +%s%N)$/;"	v
+endTimestamp	/Users/wizard/.zshrc	/^endTimestamp=$(date +%s)$/;"	v
 ending	picture_finder.sh	/^    ending=${destinationFile##*.}$/;"	v
 errno	mantozshcomp.py	/^import errno$/;"	i
 esc	mantozshcomp.py	/^    def esc(self):$/;"	m	class:Deroffer
 esc_char	mantozshcomp.py	/^    def esc_char(self):$/;"	m	class:Deroffer
 esc_char_backslash	mantozshcomp.py	/^    def esc_char_backslash(self):$/;"	m	class:Deroffer
+escapeRemove	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^escapeRemove(){$/;"	f
 eth	bridgeDown.sh	/^eth="eth0"$/;"	v
 eth	bridgeUp.sh	/^eth="eth0"$/;"	v
 eth_broadcast	bridgeDown.sh	/^eth_broadcast="192.168.0.255"$/;"	v
@@ -269,6 +669,10 @@ eth_mac	bridgeDown.sh	/^eth_mac="REPLACE"$/;"	v
 eth_mac	bridgeUp.sh	/^eth_mac="REPLACE"$/;"	v
 eth_netmask	bridgeDown.sh	/^eth_netmask="255.255.255.0"$/;"	v
 eth_netmask	bridgeUp.sh	/^eth_netmask="255.255.255.0"$/;"	v
+exe	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^                exe="proxychains4 -q"$/;"	v
+exe	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^                exe=(proxychains4 -q) ||$/;"	v
+exe	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    exe(){$/;"	f
+execpy	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^execpy(){$/;"	f
 executableProgram	shebangChanger.sh	/^executableProgram=$1$/;"	v
 executableScriptsProcessing	createScriptButDontOpenSublime.sh	/^executableScriptsProcessing() {$/;"	f
 executableScriptsProcessing	createTextFile.sh	/^executableScriptsProcessing() {$/;"	f
@@ -276,6 +680,7 @@ executableScriptsProcessing	runner.sh	/^executableScriptsProcessing() {$/;"	f
 executableScriptsProcessing	templater.sh	/^executableScriptsProcessing() {$/;"	f
 executeFileFirstArgIsCommand	runner.sh	/^executeFileFirstArgIsCommand() {$/;"	f
 executeTheFile	runner.sh	/^executeTheFile() {$/;"	f
+exists	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    exists(){$/;"	f
 exists	CPU_Stresser.sh	/^exists() {$/;"	f
 exists	clearList.sh	/^exists(){$/;"	f
 exists	fzfEnv.sh	/^    exists(){$/;"	f
@@ -287,10 +692,23 @@ exists	tailZOU.sh	/^    exists(){$/;"	f
 exists	updater.sh	/^exists() {$/;"	f
 exists	updaterNoPip.sh	/^exists() {$/;"	f
 exists	zshcompgen.zsh	/^exists(){$/;"	f
+expandAliasAccept	/Users/wizard/.zshrc	/^expandAliasAccept(){$/;"	f
+f	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^f(){$/;"	f
 fallback	mantozshcomp.py	/^    def fallback(self, options_section):$/;"	m	class:Type1ManParser
 fallback2	mantozshcomp.py	/^    def fallback2(self, options_section):$/;"	m	class:Type1ManParser
 family_phone_numbers	textmessage.sh	/^    family_phone_numbers=("$member_1")$/;"	v
+fasdFList	/Users/wizard/.zshrc	/^fasdFList(){$/;"	f
+fasdFZF	/Users/wizard/.zshrc	/^fasdFZF(){$/;"	f
 fetch	about.sh	/^            fetch="$(git remote -v | grep zpwr | grep fetch | head -n 1 | perl -pe 's@[\\t ]+@    @')"$/;"	v
+ff	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^ff(){$/;"	f
+fff	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^fff(){$/;"	f
+ffilt	/Users/wizard/.zshrc	/^    ffilt='[(I)[^_.]*]'$/;"	v
+fig	/Users/wizard/.zshrc	/^        fig="$ZPWR_SCRIPTS\/macOnly\/figletRandomFontOnce.sh"$/;"	v
+figletfonts	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^figletfonts(){$/;"	f
+file	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^            file=${file##*\/}$/;"	v
+file	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    file="$HOME\/.config\/powerline\/themes\/tmux\/default.json"$/;"	v
+file	/Users/wizard/.zshrc	/^        file="$HOME\/.viminfo"$/;"	v
+file	/Users/wizard/.zshrc	/^        file="$ZPWR_NVIMINFO"$/;"	v
 file	boiler_gen.py	/^    file = CodeFile(model_file, directory, model)$/;"	v
 file	fzfEnv.sh	/^        file=\\$(echo \\$file | sed "s@[]\\\\\\[^\\$.*\/]@\\\\\\\\\\\\&@g")$/;"	v
 file	fzfEnv.sh	/^file=\\$(grep -m1 -a " \\$line\\$" ${ZPWR_ENV}Key.txt | awk "{print \\\\\\$2}")$/;"	v
@@ -308,31 +726,48 @@ fileToBeExecuted	templater.sh	/^fileToBeExecuted="$1"$/;"	v
 file_is_overwritable	mantozshcomp.py	/^def file_is_overwritable(path):$/;"	f
 files	backupBashConfig.sh	/^files=("$my_home_dir\/.bashrc" "$my_home_dir\/.bash_profile" "$my_home_dir\/.profile" '\/etc\/bashrc' '\/etc\/profile')$/;"	v
 filesArray	openAll.sh	/^filesArray=()$/;"	v
+filter	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^               filter=true$/;"	v
+filter	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^        filter=false$/;"	v
 filter	macOnly/splitReg.sh	/^filter="$2"$/;"	v
 filter	splitReg.sh	/^filter="$2"$/;"	v
 findTotal	oldCounter.sh	/^findTotal() {$/;"	f
+first	/Users/wizard/.zshrc	/^    first="$1"$/;"	v
 first	batchRename.sh	/^        local first=$(echo ${file%%$delim*})$/;"	v
+firstArg	/Users/wizard/.zshrc	/^        firstArg="${${(Az)found}[1]\/\/\\"\/}"$/;"	v
 firstFile	sync.sh	/^    firstFile="${firstFile}\/"$/;"	v
 firstFile	sync.sh	/^firstFile="$1"$/;"	v
 firstString	createTextFile.sh	/^    firstString="$($/;"	v
 first_iteration	fsWatchLongRunning.sh	/^        first_iteration=false$/;"	v
 first_iteration	fsWatchLongRunning.sh	/^first_iteration=true$/;"	v
+firstdir	/Users/wizard/.zshrc	/^        firstdir=${mywords[2]:h}$/;"	v
+firstdir	/Users/wizard/.zshrc	/^        firstdir=${mywords[4]:h}$/;"	v
 fish_escape_single_quote	mantozshcomp.py	/^def fish_escape_single_quote(str):$/;"	f
 flength	secureDelete.sh	/^    flength=$(ls -l "$file" | awk '{print $5}') # Field 5 is file length.$/;"	v
 flush_diagnostics	mantozshcomp.py	/^def flush_diagnostics(where):$/;"	f
 flush_output	mantozshcomp.py	/^    def flush_output(self, where):$/;"	m	class:Deroffer
+fm	/Users/wizard/.zshrc	/^fm(){$/;"	f
 font	macOnly/figletRandomFont.sh	/^    font=${ary[$randIndex]}$/;"	v
 font	macOnly/figletRandomFontOnce.sh	/^font=${ary[$randIndex]}$/;"	v
 font	macOnly/menkeTechRandomFont.sh	/^    font=${ary[$randIndex]}$/;"	v
 font	macOnly/randomCow.sh	/^    font=${COW_FILES[$randIndex]}$/;"	v
 font	mantozshcomp.py	/^    def font(self):$/;"	m	class:Deroffer
 font2	mantozshcomp.py	/^    def font2(self):$/;"	m	class:Deroffer
+forked	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    forked="$FORKED_DIR\/$ZPWR_REPO_NAME"$/;"	v
 fortuneQuote	eyes.sh	/^        fortuneQuote="$(figlet -f "$1" \\"$fortuneQuote\\")"$/;"	v
 fortuneQuote	eyes.sh	/^    fortuneQuote="$(fortune)"$/;"	v
+found	/Users/wizard/.zshrc	/^        found="$(getFound)"$/;"	v
 found	shebangChanger.sh	/^            found=false$/;"	v
 found	shebangChanger.sh	/^            found=true$/;"	v
 found	shebangChanger.sh	/^    found=false$/;"	v
 frameworks	boiler_gen.py	/^frameworks = [{$/;"	v
+fz	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^fz(){$/;"	f
+fzfAllKeybind	/Users/wizard/.zshrc	/^fzfAllKeybind(){$/;"	f
+fzfCommits	/Users/wizard/.zshrc	/^fzfCommits(){$/;"	f
+fzfEnv	/Users/wizard/.zshrc	/^fzfEnv(){$/;"	f
+fzfVimKeybind	/Users/wizard/.zshrc	/^fzfVimKeybind(){$/;"	f
+fzfZList	/Users/wizard/.zshrc	/^fzfZList(){$/;"	f
+fzf_setup	/Users/wizard/.zshrc	/^fzf_setup(){$/;"	f
+fzvim	/Users/wizard/.zshrc	/^fzvim(){$/;"	f
 g_fish_safe_chars	mantozshcomp.py	/^g_fish_safe_chars = frozenset(string.ascii_letters + string.digits +$/;"	v
 g_macro_dict	mantozshcomp.py	/^    g_macro_dict = False$/;"	v	class:Deroffer
 g_re_esc_char	mantozshcomp.py	/^    g_re_esc_char = re.compile($/;"	v	class:Deroffer
@@ -346,11 +781,13 @@ g_specs_specletter	mantozshcomp.py	/^    g_specs_specletter = {$/;"	v	class:Dero
 gateway_ip	pingordie.sh	/^gateway_ip='8.8.8.8'$/;"	v
 gateway_ip	pingordieBridge.sh	/^gateway_ip='8.8.8.8'$/;"	v
 gateway_ip	pingordieBridgeVPN.sh	/^gateway_ip='8.8.8.8'$/;"	v
+gcl	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^gcl() {$/;"	f
 gen_files_react	boiler_gen.py	/^def gen_files_react(start):$/;"	f
 gen_files_spring	boiler_gen.py	/^def gen_files_spring(start):$/;"	f
 generate_argument_list	help2comp.py	/^def generate_argument_list(options):$/;"	f
 generate_completion_function	help2comp.py	/^def generate_completion_function(options, program_name):$/;"	f
 getCopyCommand	crossOSCommands.sh	/^getCopyCommand(){$/;"	f
+getFound	/Users/wizard/.zshrc	/^getFound(){$/;"	f
 getInitialCommit	gitgo.sh	/^getInitialCommit() {$/;"	f
 getOpenCommand	crossOSCommands.sh	/^getOpenCommand(){$/;"	f
 getPasteCommand	crossOSCommands.sh	/^getPasteCommand(){$/;"	f
@@ -360,16 +797,33 @@ get_frame_work	boiler_gen.py	/^def get_frame_work(user_framework):$/;"	f
 get_output	mantozshcomp.py	/^    def get_output(self):$/;"	m	class:Deroffer
 get_paths_from_man_locations	mantozshcomp.py	/^def get_paths_from_man_locations():$/;"	f
 getopt	mantozshcomp.py	/^import getopt$/;"	i
+getrc	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^getrc(){$/;"	f
+getrcWidget	/Users/wizard/.zshrc	/^getrcWidget(){$/;"	f
+getrcdev	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^getrcdev(){$/;"	f
+gitCheckoutRebasePush	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^gitCheckoutRebasePush(){$/;"	f
+gitCommitAndPush	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^gitCommitAndPush(){$/;"	f
 gitPull	gitgo.sh	/^gitPull() {$/;"	f
 gitPush	gitgo.sh	/^gitPush() {$/;"	f
 gitRepoUpdater	rpiSoftwareUpdater.sh	/^gitRepoUpdater() {$/;"	f
 gitRepoUpdater	updater.sh	/^gitRepoUpdater() {$/;"	f
 gitRepoUpdater	updaterNoPip.sh	/^gitRepoUpdater() {$/;"	f
+git_name	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    git_name="${1##*\/}"$/;"	v
 gittersdev	remoteRepoMonitorDaemon.sh	/^gittersdev() {$/;"	f
 gittersmaster	remoteRepoMonitorDaemon.sh	/^gittersmaster() {$/;"	f
+globalAliasesInit	/Users/wizard/.zshrc	/^globalAliasesInit(){$/;"	f
+goThere	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    goThere(){$/;"	f
+goclean	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^goclean() {$/;"	f
+green	/Users/wizard/.zshrc	/^local green="64"$/;"	v
 groff_replace_escapes	mantozshcomp.py	/^    def groff_replace_escapes(self, line):$/;"	m	class:TypeDarwinManParser
+group	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^        group=$(id -gn)$/;"	v
+gsdc	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^gsdc(){$/;"	f
 gzip	mantozshcomp.py	/^import gzip$/;"	i
+h	/Users/wizard/.zshrc	/^    h=($h ${${${(@M)${(f)"$(cat ~\/.ssh\/config)"}:#Hostname *}#Hostname }:#*[*?]*})$/;"	v
+h	/Users/wizard/.zshrc	/^    h=(${${${(@M)${(f)"$(cat ~\/.ssh\/config)"}:#Host *}#Host }:#*[*?]*})$/;"	v
+hc	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^hc(){$/;"	f
+hd	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^hd(){$/;"	f
 headerSTRING	templater.sh	/^    headerSTRING=$($/;"	v
+hg_prompt_info	/Users/wizard/.zshrc	/^hg_prompt_info(){}$/;"	f
 home	myWatchNoBlink.sh	/^    home=$(tput cup 0 0)$/;"	v
 home	myWatchNoBlinkColorized.sh	/^    home=$(tput cup 0 0)$/;"	v
 home_dir	duplicateLineDeleter.sh	/^home_dir=$HOME$/;"	v
@@ -383,14 +837,27 @@ hostname	updater.sh	/^    hostname="$(echo "$1" | awk -F: '{print $1}')"$/;"	v
 hostname	updaterNoPip.sh	/^    hostname="$(echo "$1" | awk -F: '{print $1}')"$/;"	v
 hour	timeConverter.sh	/^    hour=$((hour - 12))$/;"	v
 hour	timeConverter.sh	/^hour=$(date | tr -s ' ' | cut -d ' ' -f4 | cut -d ':' -f1)$/;"	v
+humanReadable	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^humanReadable(){$/;"	f
+id	/Users/wizard/.zshrc	/^            id=$(echo "select id from $ZPWR_SCHEMA_NAME.$ZPWR_TABLE_NAME order by dateAdded" | mysql | perl -ne "print if \\$. == $num")$/;"	v
 info	about.sh	/^            info="$(git tag -l -n9 "$version" | perl -pe 's@[\\t ]+@ @')"$/;"	v
 initializeGitDirectory	gitgo.sh	/^initializeGitDirectory() {$/;"	f
+ino	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^ino(){$/;"	f
 install	tgzLocalInstaller.sh	/^install() {$/;"	f
 installDir	updater.sh	/^            installDir=$(python2 -m pip show "$i" | \\perl -ne 'print $1 if \/^Location: (.*)\/')$/;"	v
 installDir	updater.sh	/^            installDir=$(python3 -m pip show "$i" | \\perl -ne 'print $1 if \/^Location: (.*)\/')$/;"	v
 installDir	updater.sh	/^        installDir=$(npm root -g | head -n 1)$/;"	v
 installDir	updaterNoPip.sh	/^        installDir=$(npm root -g | head -n 1)$/;"	v
 installerDir	macOnly/tutorialConfigUpdater.sh	/^installerDir="$ZPWR_HIDDEN_DIR\/scripts\/$ZPWR_REPO_NAME"$/;"	v
+interceptDelete	/Users/wizard/.zshrc	/^interceptDelete(){$/;"	f
+interceptSurround	/Users/wizard/.zshrc	/^interceptSurround(){$/;"	f
+intoFzf	/Users/wizard/.zshrc	/^intoFzf(){$/;"	f
+intoFzfAg	/Users/wizard/.zshrc	/^intoFzfAg(){$/;"	f
+ip	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^                    ip="$(echo "$out" | command grep 'address' | head -n 1 | awk '{print $4}')"$/;"	v
+ip	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    ip=$(curl --socks5 127.0.0.1:9050 icanhazip.com)$/;"	v
+isBinary	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^isBinary() {$/;"	f
+isGitDir	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^isGitDir(){$/;"	f
+isGitDirMessage	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^isGitDirMessage(){$/;"	f
+isZsh	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^isZsh(){$/;"	f
 isZsh	fzfEnv.sh	/^isZsh(){$/;"	f
 isZsh	fzfPreviewOptsCommon.sh	/^isZsh(){$/;"	f
 isZsh	fzfPreviewOptsCommon2Pos.sh	/^isZsh(){$/;"	f
@@ -405,32 +872,74 @@ is_my_type	mantozshcomp.py	/^    def is_my_type(self, manpage):$/;"	m	class:Type
 is_option	mantozshcomp.py	/^    def is_option(self, line):$/;"	m	class:TypeDarwinManParser
 is_option	mantozshcomp.py	/^    def is_option(self, line):$/;"	m	class:TypeDeroffManParser
 is_white	mantozshcomp.py	/^    def is_white(self, idx):$/;"	m	class:Deroffer
+item	/Users/wizard/.zshrc	/^            item=$(echo "select learning from $ZPWR_SCHEMA_NAME.$ZPWR_TABLE_NAME where id=$id" | mysql 2>> $ZPWR_LOGFILE | tail -n 1)$/;"	v
+item	/Users/wizard/.zshrc	/^            item=${item\/\/\\'\/\\\\\\'\\'}$/;"	v
+item	/Users/wizard/.zshrc	/^            item=${item\/\/\\'\/\\\\\\'}$/;"	v
+j	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^function j(){$/;"	f
+jd	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^jd(){$/;"	f
+jetbrainsWorkspaceEdit	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^jetbrainsWorkspaceEdit(){$/;"	f
+json	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    local json="$(cat)"$/;"	v
+jsonToArray	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^jsonToArray(){$/;"	f
+key	/Users/wizard/.zshrc	/^                    key="$(ssh-keygen -l -f "$ZPWR_TEMPFILE" | awk '{print $2}' | awk -F: '{print $2}')"$/;"	v
+key	/Users/wizard/.zshrc	/^                    key="$(ssh-keygen -l -f "$ZPWR_TEMPFILE" | awk '{print $2}')"$/;"	v
+keyClear	/Users/wizard/.zshrc	/^keyClear(){$/;"	f
+keySender	/Users/wizard/.zshrc	/^keySender(){$/;"	f
 killCursor	batchRename.sh	/^killCursor() {$/;"	f
 killCursor	openAll.sh	/^killCursor() {$/;"	f
 killCursor	picture_finder.sh	/^killCursor() {$/;"	f
 killCursor	secureDelete.sh	/^killCursor() {$/;"	f
 killpids	CPU_Stresser.sh	/^killpids() {$/;"	f
 last	batchRename.sh	/^        local last=$(echo ${file##*_})$/;"	v
+lastWord	/Users/wizard/.zshrc	/^    lastWord=${${(Az)@}[-1]}$/;"	v
+lastWordDouble	/Users/wizard/.zshrc	/^lastWordDouble(){$/;"	f
+last_command	/Users/wizard/.zshrc	/^        last_command=$history[$num]$/;"	v
+last_command_array	/Users/wizard/.zshrc	/^        last_command_array=(${(u)=last_command} ${last_command} "\\"${last_command}\\"" "( ${last_command}; )" "{ ${last_command}; }" "\\$(${last_command})" "\\"\\$(${last_command})"\\" "'${last_command}'")$/;"	v
+last_ten	/Users/wizard/.zshrc	/^    last_ten=( ${(f)"$(fc -l 200 | perl -lane 'print "@F[1..$#F]"')"} )$/;"	v
 lastcommit	about.sh	/^            lastcommit="$(git log --oneline -n 1)"$/;"	v
 lcline	openAll.sh	/^    lcline="$(echo $line | tr '[:upper:]' '[:lower:]')"$/;"	v
+le	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    le(){$/;"	f
+learn	/Users/wizard/.zshrc	/^    learn(){$/;"	f
+learning	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^        learning="$(printf -- '%s' "$1" | sed 's@^[[:space:]]*@@;s@[[:space:]]*$@@')"$/;"	v
+learning	/Users/wizard/.zshrc	/^        learning="$(print -- "$BUFFER" | perl -pe 's@\\x0a@\\x20@' | perl -pe 's@^\\x20+|\\x20+$@@g;s@\\x20+@\\x20@g')"$/;"	v
 leavePresentPaneAloneFlag	powerTo.sh	/^leavePresentPaneAloneFlag=false$/;"	v
+len	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^        len=${#file_ary}$/;"	v
 len	manzshcompgen.zsh	/^    len=${#1}$/;"	v
 len	zshcompgen.zsh	/^    len=${#1}$/;"	v
+lenToFirstTS	/Users/wizard/.zshrc	/^    lenToFirstTS=${#BUFFER%%$ZPWR_TABSTOP*}$/;"	v
 letter	mantozshcomp.py	/^    def letter(self, idx):$/;"	m	class:Deroffer
 level	macOnly/splitReg.sh	/^level=1$/;"	v
 level	splitReg.sh	/^level=1$/;"	v
+lf	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^                    lf="$(echo $loc | cut -d' ' -f3-10)"$/;"	v
 lf	clearList.sh	/^                    lf="$(echo $loc|cut -d' ' -f3-10)"$/;"	v
+lib_command	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^        lib_command="ldd"$/;"	v
+lib_command	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^        lib_command="otool -L"$/;"	v
 lib_command	clearList.sh	/^        lib_command="ldd"$/;"	v
 lib_command	clearList.sh	/^        lib_command="otool -L"$/;"	v
 limitFlag	myWatchMaintainEscapes.sh	/^        limitFlag=true$/;"	v
+line	/Users/wizard/.zshrc	/^            line="$(print -r $aliases | perl -ne 'print $1 if m{\\Q'$mywords[1]'\\E=(.*)}')"$/;"	v
 line	fzfEnv.sh	/^line=\\$(echo \\$line| sed "s@[]\\\\\\[^\\$.*\/]@\\\\\\\\\\\\&@g")$/;"	v
 line	fzfEnv.sh	/^line={};$/;"	v
 line	fzfMan.sh	/^line=\\$(echo {} | perl -lane "do{\\\\\\$_=~s@^\\\\\\s+|\\\\\\s+\\\\\\$@@g;print}");$/;"	v
 line	gitRemoteRepoInformation.sh	/^                line="$(git remote -v 2>\/dev\/null | sed 1q)" && {$/;"	v
+lineContribCount	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^lineContribCount(){$/;"	f
+lineCount	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    lineCount="$(cat "$ZPWR_TEMPFILE" | wc -l)"$/;"	v
+lineCount	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    lineCount="$(echo $lines | wc -l)"$/;"	v
 lineCounter	shebangChanger.sh	/^    lineCounter=1$/;"	v
+lines	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    lines="$(git status > \/dev\/null && git log --pretty="%an" | sort | uniq -c | sort -rn)"$/;"	v
 link	uploadWebPi.sh	/^        link="http:\/\/$MY_IP:$RPI_HTML_PORT\/$i"$/;"	v
+listNoClear	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^listNoClear () {$/;"	f
+locateFzf	/Users/wizard/.zshrc	/^locateFzf(){$/;"	f
 log	fzfMan.sh	/^log=\/Users\/wizard\/updaterlog.txt$/;"	v
+logg	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^logg(){$/;"	f
+loginCount	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^loginCount(){$/;"	f
 lossy_unicode	mantozshcomp.py	/^def lossy_unicode(s):$/;"	f
+ls_command	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^                ls_command="grc -c $HOME\/conf.gls gls -iFlhAd --color=always"$/;"	v
+ls_command	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^                ls_command="grc -c $HOME\/conf.gls ls -iFlhA --color=always"$/;"	v
+ls_command	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^                ls_command="ls -iFlhA"$/;"	v
+ls_command	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^                ls_command="ls -iFlhAOd"$/;"	v
+ls_command	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^            ls_command="$ZPWR_EXA_COMMAND"$/;"	v
+ls_command	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^            ls_command="grc -c $HOME\/conf.gls ls -iFlhA"$/;"	v
+ls_command	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^            ls_command="ls -iFhlA"$/;"	v
 ls_command	clearList.sh	/^                ls_command="grc -c $HOME\/conf.gls gls -iFlhAd --color=always"$/;"	v
 ls_command	clearList.sh	/^                ls_command="grc -c $HOME\/conf.gls ls -iFlhA --color=always"$/;"	v
 ls_command	clearList.sh	/^                ls_command="ls -iFlhA"$/;"	v
@@ -438,6 +947,7 @@ ls_command	clearList.sh	/^                ls_command="ls -iFlhAOd"$/;"	v
 ls_command	clearList.sh	/^            ls_command="$EXA_COMMAND"$/;"	v
 ls_command	clearList.sh	/^            ls_command="grc -c $HOME\/conf.gls ls -iFlhA"$/;"	v
 ls_command	clearList.sh	/^            ls_command="ls -iFhlA"$/;"	v
+lsoffzf	/Users/wizard/.zshrc	/^lsoffzf(){$/;"	f
 lzma	mantozshcomp.py	/^        from backports import lzma$/;"	i
 lzma	mantozshcomp.py	/^        import lzma$/;"	i
 lzma_available	mantozshcomp.py	/^    lzma_available = False$/;"	v
@@ -466,6 +976,7 @@ macro_t_and	mantozshcomp.py	/^    def macro_t_and(self):$/;"	m	class:Deroffer
 macro_te	mantozshcomp.py	/^    def macro_te(self):$/;"	m	class:Deroffer
 macro_tr	mantozshcomp.py	/^    def macro_tr(self):$/;"	m	class:Deroffer
 macro_ts	mantozshcomp.py	/^    def macro_ts(self):$/;"	m	class:Deroffer
+magenta	/Users/wizard/.zshrc	/^local magenta="125"$/;"	v
 main	remoteRepoMonitorDaemon.sh	/^main() {$/;"	f
 manager	updatePi.sh	/^    manager="$(echo "$1" | awk -F: '{print $2}')"$/;"	v
 manager	updater.sh	/^    manager="$(echo "$1" | awk -F: '{print $2}')"$/;"	v
@@ -478,10 +989,17 @@ min_args	boiler_gen.py	/^    min_args = 3$/;"	v
 min_args_check	boiler_gen.py	/^def min_args_check(min_args):$/;"	f
 minute	timeConverter.sh	/^minute=$(date | tr -s ' ' | cut -d ' ' -f4 | cut -d ':' -f2)$/;"	v
 minutes_to_sleep	autoUpdater.sh	/^minutes_to_sleep=10$/;"	v
+mobile	/Users/wizard/.zshrc	/^            mobile=true$/;"	v
+msg	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^        msg="$2"$/;"	v
 myPrettyPrint	gitgo.sh	/^myPrettyPrint() {$/;"	f
 my_backup_dir	backupBashConfig.sh	/^my_backup_dir="$my_scripts_dir\/rcBackups"$/;"	v
 my_home_dir	backupBashConfig.sh	/^my_home_dir="$HOME"$/;"	v
 my_scripts_dir	backupBashConfig.sh	/^my_scripts_dir="$ZPWR_SCRIPTS"$/;"	v
+mycurl	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^mycurl(){$/;"	f
+mywords	/Users/wizard/.zshrc	/^            mywords=("${(z)BUFFER}")$/;"	v
+mywords	/Users/wizard/.zshrc	/^    mywords=("${(z)BUFFER}")$/;"	v
+mywords	/Users/wizard/.zshrc	/^    mywords=(${(z)BUFFER})$/;"	v
+needSudo	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^needSudo(){$/;"	f
 needSudo	updater.sh	/^                needSudo=no$/;"	v
 needSudo	updater.sh	/^                needSudo=yes$/;"	v
 needSudo	updater.sh	/^            needSudo=no$/;"	v
@@ -494,6 +1012,8 @@ network_check_threshold	pingordieBridgeVPN.sh	/^network_check_threshold=5$/;"	v
 network_check_tries	pingordie.sh	/^network_check_tries=0$/;"	v
 network_check_tries	pingordieBridge.sh	/^network_check_tries=0$/;"	v
 network_check_tries	pingordieBridgeVPN.sh	/^network_check_tries=0$/;"	v
+newEmail	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    newEmail="$2"$/;"	v
+newfile	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    newfile="$1".$(date +%Y%m%d.%H.%M.bak)$/;"	v
 newfile	batchRename.sh	/^        local newfile="$first$number.$endFileEnding"$/;"	v
 newfile	createScriptButDontOpenSublime.sh	/^    newfile="$newfile.txt"$/;"	v
 newfile	createScriptButDontOpenSublime.sh	/^newfile="$1"$/;"	v
@@ -506,27 +1026,43 @@ nmcmd	fzfPreviewOptsCommon.sh	/^    nmcmd="nm -D"$/;"	v
 nmcmd	fzfPreviewOptsCommon.sh	/^    nmcmd="nm"$/;"	v
 nmcmd	fzfPreviewOptsCommon2Pos.sh	/^    nmcmd="nm -D"$/;"	v
 nmcmd	fzfPreviewOptsCommon2Pos.sh	/^    nmcmd="nm"$/;"	v
+nn	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    nn(){$/;"	f
+noPonyBanner	/Users/wizard/.zshrc	/^noPonyBanner(){$/;"	f
 node_exe	macOnly/randomCow.sh	/^node_exe="\/usr\/local\/lib\/node_modules\/cowsay\/cli.js"$/;"	v
+noport	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^                noport="$(echo "$url" | sed -E 's@(.*\\.[^\/]+)(\/.*)$@\\1@' | sed -E 's@:[0-9]{1,4}$@@')"$/;"	v
+noproto	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^                        noproto="${noproto:0:-1}"$/;"	v
+noproto	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^                noproto="$(echo "$noport" | sed -E 's@https:\/\/|http:\/\/@@')"$/;"	v
 nproc	CPU_Stresser.sh	/^nproc=10$/;"	v
+num	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^            num=$1$/;"	v
+num	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^        local num=100$/;"	v
+num	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    num=$1$/;"	v
+num	/Users/wizard/.zshrc	/^        num=$((HISTCMD-1))$/;"	v
 num	myWatchMaintainEscapes.sh	/^        num=$OPTARG$/;"	v
 num	powerTo.sh	/^        num=realNum$/;"	v
 num	powerTo.sh	/^    num=$1$/;"	v
 num	powerTo.sh	/^    num=realNum$/;"	v
 num	storageShower.sh	/^    num="$1"$/;"	v
+num_con	/Users/wizard/.zshrc	/^                num_con="$(command ps -ef |command grep 'sshd' | command grep pts | command grep -v grep | wc -l)"$/;"	v
 number	batchRename.sh	/^        local number=$((10#$number))$/;"	v
 number	batchRename.sh	/^        local number=$(echo ${last%%.*})$/;"	v
 number	mantozshcomp.py	/^    def number(self):$/;"	m	class:Deroffer
 numreq	mantozshcomp.py	/^    def numreq(self):$/;"	m	class:Deroffer
+o	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^o(){$/;"	f
 o	macOnly/combo.sh	/^    o="$(cat)"$/;"	v
 o	macOnly/combo.sh	/^    o="$(hostname)"$/;"	v
 o	sixLangDisplayer.sh	/^o="$(cat)"$/;"	v
+old	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    old="$LESS"$/;"	v
+oldEmail	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    oldEmail="$1"$/;"	v
+old_dir	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    old_dir="$(pwd)"$/;"	v
 olddate	autoUpdater.sh	/^    olddate="$(date +'%Y-%m-%d %H:%M:%S')"$/;"	v
 oldifs	sortedArrayCounter.sh	/^oldifs="$IFS"$/;"	v
 oldtime	autoUpdater.sh	/^    oldtime=$(date +"%s")$/;"	v
 openTextEditor	createScriptButDontOpenSublime.sh	/^openTextEditor() {$/;"	f
 openTextEditor	createTextFile.sh	/^openTextEditor() {$/;"	f
+open_cmd	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    open_cmd="$ZPWR_OPEN_CMD" || return 1$/;"	v
 open_cmd	crossOSCommands.sh	/^                open_cmd='cmd.exe \/c start ""'$/;"	v
 open_cmd	crossOSCommands.sh	/^                open_cmd='nohup xdg-open'$/;"	v
+openmygh	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^openmygh(){$/;"	f
 options	help2comp.py	/^        options = parse_options(sys.stdin.readlines())$/;"	v
 optstring	directoryContentsSize.sh	/^optstring=shta$/;"	v
 optstring	gitgo.sh	/^optstring=p:hcl$/;"	v
@@ -534,14 +1070,36 @@ optstring	myWatchMaintainEscapes.sh	/^optstring=dhl:$/;"	v
 optstring	myWatchNoBlink.sh	/^optstring=bh$/;"	v
 optstring	myWatchNoBlinkColorized.sh	/^optstring=bh$/;"	v
 optstring	mywatch.sh	/^optstring=dh$/;"	v
+orange	/Users/wizard/.zshrc	/^local orange="166"$/;"	v
+orig	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    orig="$1"$/;"	v
 origin	gitgo.sh	/^    local origin="$(git remote -v | awk '{print $1}' | tail -1 | tr -d ' ')"$/;"	v
 os	boiler_gen.py	/^import os$/;"	i
 os	fzfPreviewOptsCommon.sh	/^os="$(uname -s)"$/;"	v
 os	fzfPreviewOptsCommon2Pos.sh	/^os="$(uname -s)"$/;"	v
 os	mantozshcomp.py	/^    import subprocess, os$/;"	i
 os	mantozshcomp.py	/^import os.path$/;"	i
+ost	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^        ost="$(uname | tr A-Z a-z)_amd64"$/;"	v
+out	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^                    out="$($colo $exe whois "$noproto")"$/;"	v
+out	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^                    out="$($exe whois "$noproto")"$/;"	v
+out	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^                    out="$($exe whois "$primary")"$/;"	v
+out	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^                out="$($colo $exe host "$noproto")"$/;"	v
+out	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^                out="$($exe host "$noproto")"$/;"	v
+out	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^            out="$(echo "$@" | python3 -c 'import urllib.parse; print(urllib.parse.quote(input(), safe=""))')"$/;"	v
+out	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^        out="$(ps -ef)"$/;"	v
+out	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^        out="$(ps aux)"$/;"	v
+out	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^        out=$(echo "$file" | sed -n "$search"p |  wc -l | tr -d ' ')$/;"	v
+out	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    out="$(curl -u "$user" -X DELETE "https:\/\/api.github.com\/repos\/$user\/$repo")"$/;"	v
+out	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    out="$(eval "$@")"$/;"	v
+out	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    out="$(goThere)"$/;"	v
+out	/Users/wizard/.zshrc	/^                        out="$(tmux ls 2>&1)"$/;"	v
+out	/Users/wizard/.zshrc	/^                    out="$(sudo \\grep -a 'Accepted publickey for' \/var\/log\/auth.log* | grep -v sudo | tail -1)"$/;"	v
+out	/Users/wizard/.zshrc	/^                    out="$(sudo cat \/var\/log\/secure | command grep 'Accepted publickey' | tail -1)"$/;"	v
+out	/Users/wizard/.zshrc	/^                    out="$(sudo journalctl -u sshd.service | command grep 'Accepted publickey' | tail -1)"$/;"	v
+out	/Users/wizard/.zshrc	/^                    out="$(tail \/var\/log\/messages)"$/;"	v
+out	/Users/wizard/.zshrc	/^        out="$(alias -- $cmd)"$/;"	v
 out	inotifyWatchLogAndEmailIfNAS.sh	/^        out=$(tail -1 "$file" | grep "nas")$/;"	v
 out	macOnly/commandToColors.sh	/^out="$(eval $command)"$/;"	v
+outFile	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    outFile=out.gif$/;"	v
 outdated	pipUpdater.sh	/^    outdated=$(python3 -m pip list --outdated --format=columns | sed -n '3,$p' | awk '{print $1}')$/;"	v
 outdated	pipUpdater.sh	/^    outdated=$(python3 -m pip list --outdated | sed -n '3,$p' | awk '{print $1}')$/;"	v
 outdated	pipUpdater.sh	/^outdated=$(python2 -m pip list --outdated --format=columns | sed -n '3,$p' | awk '{print $1}')$/;"	v
@@ -559,6 +1117,7 @@ output	splitReg.sh	/^output=$(cat $file)$/;"	v
 outputDir	dsDownloader.sh	/^outputDir="Desktop"$/;"	v
 outputDir	rpiDownloader.sh	/^outputDir="Desktop"$/;"	v
 output_complete_command	mantozshcomp.py	/^def output_complete_command(cmdname, args, description, output_list, argument):$/;"	f
+p	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^p(){$/;"	f
 parse_and_output_man_pages	mantozshcomp.py	/^def parse_and_output_man_pages(paths, output_directory, show_progress):$/;"	f
 parse_man_page	mantozshcomp.py	/^    def parse_man_page(self, manpage):$/;"	m	class:ManParser
 parse_man_page	mantozshcomp.py	/^    def parse_man_page(self, manpage):$/;"	m	class:Type1ManParser
@@ -575,11 +1134,15 @@ paste_cmd	crossOSCommands.sh	/^                paste_cmd="powershell.exe -c 'Get
 paste_cmd	crossOSCommands.sh	/^                paste_cmd='xclip -o -sel clip'$/;"	v
 paste_cmd	crossOSCommands.sh	/^            paste_cmd="powershell.exe -c 'Get-Clipboard'"$/;"	v
 paste_cmd	crossOSCommands.sh	/^            paste_cmd='pbpaste'$/;"	v
+path	/Users/wizard/.zshrc	/^        path=( $cmdpath )$/;"	v
 path	mantozshcomp.py	/^import os.path$/;"	i
 path	shebangChanger.sh	/^path="#!\/usr\/bin\/env $executableProgram"$/;"	v
 perlOutdated	updater.sh	/^        perlOutdated=$(cpan-outdated -p -L "$PERL5LIB")$/;"	v
 perlOutdated	updaterNoPip.sh	/^        perlOutdated=$(cpan-outdated -p -L "$PERL5LIB")$/;"	v
+perlremovespaces	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^perlremovespaces(){$/;"	f
 perlscript	autoUpdater.sh	/^    perlscript=$($/;"	v
+picounter	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    picounter=1$/;"	v
+pid	/Users/wizard/.zshrc	/^        pid=$(tmux list-panes -F '#{pane_index} #{pane_pid}' | perl -lane 'print $F[1] if $F[0] =~ m{'$pane'}')$/;"	v
 pid	fsWatchLongRunning.sh	/^            pid=$!$/;"	v
 pid	fsWatchLongRunning.sh	/^        pid=$!$/;"	v
 pid	tailZOU.sh	/^        pid=$!$/;"	v
@@ -588,7 +1151,16 @@ pids	CPU_Stresser.sh	/^        pids="$pids $!"$/;"	v
 pids	fdswap.sh	/^pids=$*$/;"	v
 pipe	readFIFO.sh	/^pipe=$HOME\/Desktop\/testpipe$/;"	v
 pipe	readFIFO.sh	/^pipe=\/tmp\/testpipe$/;"	v
+pirun	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^pirun(){$/;"	f
+pkg	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    local pkg=$1;$/;"	v
+plugins	/Users/wizard/.zshrc	/^plugins=(fasd-simple gh_reveal zsh-z zsh-expand zsh-surround \\$/;"	v
+post	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^post(){$/;"	f
+postfix	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    postfix="$1"$/;"	v
 prch	mantozshcomp.py	/^    def prch(self, idx):$/;"	m	class:Deroffer
+pre	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^pre(){$/;"	f
+precmd	/Users/wizard/.zshrc	/^precmd(){$/;"	f
+prefix	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    prefix="$1"$/;"	v
+prettyPrint	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^prettyPrint(){$/;"	f
 prettyPrint	CPU_Stresser.sh	/^prettyPrint() {$/;"	f
 prettyPrint	clearList.sh	/^prettyPrint(){$/;"	f
 prettyPrint	colorLogger.sh	/^prettyPrint() {$/;"	f
@@ -599,6 +1171,7 @@ prettyPrint	rpiSoftwareUpdater.sh	/^prettyPrint() {$/;"	f
 prettyPrint	textmessage.sh	/^prettyPrint() {$/;"	f
 prettyPrint	updater.sh	/^prettyPrint() {$/;"	f
 prettyPrint	updaterNoPip.sh	/^prettyPrint() {$/;"	f
+primary	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^                    primary="$(echo "$noproto" | sed -E 's@^(.*)\\.([^.]+)\\.([^.]+)$@\\2.\\3@')"$/;"	v
 printD	banner.pl	/^sub printD {$/;"	s
 printDate	banner.pl	/^sub printDate {$/;"	s
 progress_pid	batchRename.sh	/^    progress_pid=$!$/;"	v
@@ -607,10 +1180,15 @@ progress_pid	picture_finder.sh	/^    progress_pid=$!$/;"	v
 progress_pid	secureDelete.sh	/^    progress_pid=$!$/;"	v
 prompt	batchRename.sh	/^    local prompt="press any key..." # user prompt$/;"	v
 prompt	openAll.sh	/^    local prompt="press any key..." # user prompt$/;"	v
+pstreemonitor	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^pstreemonitor(){$/;"	f
 purpose	headerSummarizer.sh	/^    purpose="$(sed -n 6p "$file")"$/;"	v
 push	about.sh	/^            push="$(git remote -v | grep zpwr | grep push | tail -n 1 | perl -pe 's@[\\t ]+@    @')"$/;"	v
 putchar	mantozshcomp.py	/^    def putchar(self, c):$/;"	m	class:Deroffer
+pygmentcolors	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^pygmentcolors(){$/;"	f
+qu	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    qu(){$/;"	f
 quoted_arg	mantozshcomp.py	/^    def quoted_arg(self):$/;"	m	class:Deroffer
+r	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^r(){$/;"	f
+rand	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^        rand=$(echo "$randscript" | perl)$/;"	v
 randIndex	eyes.sh	/^    randIndex=$((RANDOM % rangePossibleIndices))$/;"	v
 randIndex	macOnly/figletRandomFont.sh	/^    randIndex=$(($RANDOM % $rangePossibleIndices))$/;"	v
 randIndex	macOnly/figletRandomFontOnce.sh	/^randIndex=$(($RANDOM % $rangePossibleIndices))$/;"	v
@@ -618,36 +1196,75 @@ randIndex	macOnly/menkeTechRandomFont.sh	/^    randIndex=$(($RANDOM % $rangePoss
 randIndex	macOnly/randomCow.sh	/^    randIndex=$((RANDOM % rangePossibleIndices))$/;"	v
 randomCowsayCowScript	macOnly/combo.sh	/^randomCowsayCowScript="$ZPWR_SCRIPTS\/macOnly\/randomCow.sh"$/;"	v
 randomFigletFontScript	macOnly/combo.sh	/^randomFigletFontScript="$ZPWR_SCRIPTS\/macOnly\/figletRandomFontOnce.sh"$/;"	v
+random_color	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^            random_color=${file_ary[$i]}$/;"	v
+randscript	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^        randscript="print int(rand()*$len)"$/;"	v
 rangePossibleIndices	eyes.sh	/^rangePossibleIndices=${#ary[*]}$/;"	v
 rangePossibleIndices	macOnly/figletRandomFont.sh	/^rangePossibleIndices=${#ary[*]}$/;"	v
 rangePossibleIndices	macOnly/figletRandomFontOnce.sh	/^rangePossibleIndices=${#ary[*]}$/;"	v
 rangePossibleIndices	macOnly/menkeTechRandomFont.sh	/^rangePossibleIndices=${#ary[*]}$/;"	v
 rangePossibleIndices	macOnly/randomCow.sh	/^    rangePossibleIndices=${#COW_FILES[@]}$/;"	v
+rdirs	/Users/wizard/.zshrc	/^    rdirs=($(dirname $(pwd) | perl -e '$s=<>;chomp $s;$c=1;print "$c:".quotemeta($s)." ";exit if $s eq "\/";while( ($s=substr($s,0,rindex($s, "\/"))) ne ""){print ++$c.":".quotemeta($s)." "};print ++$c.":\/"'))$/;"	v
 re	help2comp.py	/^import re$/;"	i
 re	mantozshcomp.py	/^import re$/;"	i
 react_routine	boiler_gen.py	/^def react_routine(name):$/;"	f
 realNum	powerTo.sh	/^realNum=$(tmux list-panes | wc -l)$/;"	v
+recompile	/Users/wizard/.zshrc	/^recompile(){$/;"	f
+red	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    red=$(tput setaf 1)$/;"	v
+red	/Users/wizard/.zshrc	/^local red="160"$/;"	v
+redo	/Users/wizard/.zshrc	/^    redo(){$/;"	f
 ref	fzfGitOpts.sh	/^ref=$1$/;"	v
 refreshers	remoteRepoMonitorDaemon.sh	/^refreshers() {$/;"	f
+regenAll	/Users/wizard/.zshrc	/^regenAll(){$/;"	f
+regenAllGitRepos	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^regenAllGitRepos(){$/;"	f
+regenAllKeybindingsCache	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^regenAllKeybindingsCache(){$/;"	f
+regenPowerlineLink	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^regenPowerlineLink(){$/;"	f
+regenSearchEnv	/Users/wizard/.zshrc	/^regenSearchEnv(){$/;"	f
+regenTags	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^regenTags(){$/;"	f
+regenZshCompCache	/Users/wizard/.zshrc	/^regenZshCompCache(){$/;"	f
+regencp	/Users/wizard/.zshrc	/^    regencp=true$/;"	v
+regencp	/Users/wizard/.zshrc	/^regencp=false$/;"	v
+regex	/Users/wizard/.zshrc	/^        regex="^sudo $command .*\\$|^$command .*\\$"$/;"	v
 regex	macOnly/splitReg.sh	/^regex="$1"$/;"	v
 regex	splitReg.sh	/^regex="$1"$/;"	v
 remoteDIR	macOnly/rsyncr.sh	/^remoteDIR="$2"$/;"	v
 removeSpaces	minifySpaces.pl	/^sub removeSpaces {$/;"	s
 remove_groff_formatting	mantozshcomp.py	/^def remove_groff_formatting(data):$/;"	f
+rename	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^rename(){$/;"	f
+replace	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    replace="$2"$/;"	v
 replaceSpecialCharsInArgument	mantozshcomp.py	/^    def replaceSpecialCharsInArgument(self, string):$/;"	m	class:ManParser
+replacer	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^replacer(){$/;"	f
+repo	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^                repo="$(echo $line | awk -F'\/' '{print $2}' |$/;"	v
+repo	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^                repo="$(echo $line | awk -F'\/' '{print $5}' |$/;"	v
 repo	gitRemoteRepoInformation.sh	/^                        repo="$(echo $line | awk -F'\/' '{print $2}' | awk '{print $1}')"$/;"	v
 repo	gitRemoteRepoInformation.sh	/^                        repo="$(echo $line | awk -F'\/' '{print $5}' | awk '{print $1}')"$/;"	v
 repoFile	boiler_gen.py	/^    repoFile = f'{name}Repository.java'$/;"	v
+reponame	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^        reponame="$1"$/;"	v
 request_or_macro	mantozshcomp.py	/^    def request_or_macro(self):$/;"	m	class:Deroffer
 request_or_macro2	mantozshcomp.py	/^    def request_or_macro2(self):$/;"	m	class:Deroffer
+res	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    res=600x400$/;"	v
 resourceFile	boiler_gen.py	/^    resourceFile = f'{name}Controller.java'$/;"	v
+restart	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    restart(){$/;"	f
 restart	tailZOU.sh	/^    restart=$3$/;"	v
+restartZabbixAgent	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    restartZabbixAgent(){$/;"	f
 restart_br0	pingordieBridge.sh	/^restart_br0() {$/;"	f
 restart_br0	pingordieBridgeVPN.sh	/^restart_br0() {$/;"	f
 restart_wlan0	pingordie.sh	/^restart_wlan0() {$/;"	f
+ret	/Users/wizard/.zshrc	/^                            ret=$?$/;"	v
+ret	/Users/wizard/.zshrc	/^                        ret=$?$/;"	v
+ret	/Users/wizard/.zshrc	/^            ret=0 || ret=1$/;"	v
+ret	/Users/wizard/.zshrc	/^        ret=0 || ret=1$/;"	v
+return2	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^return2(){$/;"	f
 revarr	picture_finder.sh	/^    local revarr=('|' '\/' '-' '\\')$/;"	v
 revarr	secureDelete.sh	/^    local revarr=('|' '\/' '-' '\\')$/;"	v
+revealRecurse	/Users/wizard/.zshrc	/^revealRecurse(){$/;"	f
+rm	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^function rm(){$/;"	f
+rsql	/Users/wizard/.zshrc	/^    rsql(){$/;"	f
+runner	/Users/wizard/.zshrc	/^runner() {$/;"	f
+runtime	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^            runtime=$(((end-start)\/1000000.0))$/;"	v
 rustup_bin	rpiSoftwareUpdater.sh	/^rustup_bin="$HOME\/.cargo\/bin\/rustup"$/;"	v
+s	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^        s=" B   KiB MiB GiB TiB PiB EiB ZiB YiB"$/;"	v
+s	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^        s=substr(s,1,4)$/;"	v
+s	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^s(){$/;"	f
 s10_pid	backgroundMastery.sh	/^s10_pid="$!"$/;"	v
 s1_pid	backgroundMastery.sh	/^s1_pid="$!"$/;"	v
 s2_pid	backgroundMastery.sh	/^s2_pid="$!"$/;"	v
@@ -656,11 +1273,32 @@ s4_pid	backgroundMastery.sh	/^s4_pid="$!"$/;"	v
 s5_pid	backgroundMastery.sh	/^s5_pid="$!"$/;"	v
 s6_pid	backgroundMastery.sh	/^s6_pid="$!"$/;"	v
 s8_pid	backgroundMastery.sh	/^s8_pid="$!"$/;"	v
+scnew	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^scnew(){$/;"	f
+script	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    script="$1"$/;"	v
+scriptToPDF	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^        scriptToPDF(){$/;"	f
+scriptToPDF	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    scriptToPDF(){$/;"	f
 script_to_run	watchServiceFSWatchPiDesktop.sh	/^script_to_run="$ZPWR_SCRIPTS\/upLoadPi.sh"$/;"	v
 script_to_run	watchServiceFSWatchPiWeb.sh	/^script_to_run=$ZPWR_SCRIPTS\/uploadWebPi.sh$/;"	v
+scripts	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^scripts(){$/;"	f
 scripts_dir	duplicateLineDeleter.sh	/^scripts_dir=$ZPWR_SCRIPTS$/;"	v
 scripts_dir	indenterAndDuplicateLineDeleter.sh	/^scripts_dir=$ZPWR_SCRIPTS$/;"	v
+se	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    se(){$/;"	f
+search	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    search="$1"$/;"	v
+search	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^search(){$/;"	f
+searchAllGitRepos	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^searchAllGitRepos(){$/;"	f
+searchDirtyGitRepos	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^searchDirtyGitRepos(){$/;"	f
+searchGitCommon	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^searchGitCommon(){$/;"	f
+sec_cmd	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^        sec_cmd="$ZPWR_OPEN_CMD"$/;"	v
+sec_cmd	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^        sec_cmd=s$/;"	v
+see	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    see(){$/;"	f
+seee	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    seee(){$/;"	f
+sef	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    sef(){$/;"	f
+self	/Users/wizard/.zshrc	/^function self-insert() {$/;"	f
+ser	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    ser(){$/;"	f
+service	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^        service="$1"$/;"	v
+service_path	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^        local service_path="$src_dir\/$service.service"$/;"	v
 sha	fzfGitOpts.sh	/^    sha=\\$(echo {} | cut -d" " -f1)$/;"	v
+shouldRegen	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    shouldRegen="$1"$/;"	v
 showHidden	directoryContentsSize.sh	/^showHidden() {$/;"	f
 sidelen	manzshcompgen.zsh	/^    sidelen=$(( ($sidelen + 2 -1) \/ 2))$/;"	v
 sidelen	manzshcompgen.zsh	/^    sidelen=$(($width - $len - $spacerlen * 2))$/;"	v
@@ -668,11 +1306,14 @@ sidelen	zshcompgen.zsh	/^    sidelen=$(( ($sidelen + 2 -1) \/ 2))$/;"	v
 sidelen	zshcompgen.zsh	/^    sidelen=$(($width - $len - $spacerlen * 2))$/;"	v
 sidelen2	manzshcompgen.zsh	/^    sidelen2=$sidelen$/;"	v
 sidelen2	zshcompgen.zsh	/^    sidelen2=$sidelen$/;"	v
+size	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^            size=$1$/;"	v
+size	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^        size=100$/;"	v
 size	mantozshcomp.py	/^    def size(self):$/;"	m	class:Deroffer
 size	tailZOU.sh	/^    size=$1$/;"	v
 size	tailZOU.sh	/^size=100$/;"	v
 skip_char	mantozshcomp.py	/^    def skip_char(self, amt=1):$/;"	m	class:Deroffer
 skip_leading_whitespace	mantozshcomp.py	/^    def skip_leading_whitespace(self):$/;"	m	class:Deroffer
+sleepTime	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^        sleepTime=$2$/;"	v
 sorted	sortedArrayCounter.sh	/^sorted=($(sort -f <<<"${arr[*]}"))$/;"	v
 sorted	sortedArrayCounter.sh	/^sorted=($(uniq <<<"${sorted[*]}"))$/;"	v
 sortedCommand	directoryContentsSize.sh	/^sortedCommand=gsort$/;"	v
@@ -688,15 +1329,30 @@ spinner	openAll.sh	/^    local spinner="\\|\/-"            # spinner$/;"	v
 splitTrim	mantozshcomp.py	/^def splitTrim(arg, comps, dash):$/;"	f
 spring_routine	boiler_gen.py	/^def spring_routine(package, name):$/;"	f
 src	fdswap.sh	/^src="$1"$/;"	v
+src_dir	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^        src_dir="$FORKED_DIR\/$ZPWR_REPO_NAME"$/;"	v
+src_dir	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    local src_dir="$GOPATH\/src\/$pkg"$/;"	v
+ssd	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    ssd() {$/;"	f
+sshRegain	/Users/wizard/.zshrc	/^sshRegain() {$/;"	f
+ssu	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    ssu() {$/;"	f
+start	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^            start=$($cmd +%s%N)$/;"	v
 startCursor	batchRename.sh	/^startCursor() {$/;"	f
 startCursor	openAll.sh	/^startCursor() {$/;"	f
 startCursor	picture_finder.sh	/^startCursor() {$/;"	f
 startCursor	secureDelete.sh	/^startCursor() {$/;"	f
+startSend	/Users/wizard/.zshrc	/^startSend(){$/;"	f
+startSendFull	/Users/wizard/.zshrc	/^startSendFull(){$/;"	f
+startTimestamp	/Users/wizard/.zshrc	/^startTimestamp=$(date +%s)$/;"	v
+stopSend	/Users/wizard/.zshrc	/^stopSend(){$/;"	f
 str_at	mantozshcomp.py	/^    def str_at(self, idx):$/;"	m	class:Deroffer
 str_eq	mantozshcomp.py	/^    def str_eq(offset, other, len):$/;"	m	class:Deroffer
 string	mantozshcomp.py	/^import string$/;"	i
 string	openAll.sh	/^    string=""$/;"	v
+styles_dir	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    styles_dir='\/usr\/local\/opt\/httpie\/libexec\/lib\/python3.7\/site-packages\/pygments\/styles\/'$/;"	v
+sub	/Users/wizard/.zshrc	/^sub (){$/;"	f
+subcommands_ary	/Users/wizard/.zshrc	/^subcommands_ary=($(cat "$ZPWR_SCRIPTS\/zpwr.zsh" | perl -ne 'print "$1\\\\:\\"$2\\" " if m{^\\s*([a-zA-z]+)\\s*\\).*#(.*)$}'))$/;"	v
+subcommands_str	/Users/wizard/.zshrc	/^subcommands_str="commands:sub commands:((${subcommands_ary[@]}))"$/;"	v
 subprocess	mantozshcomp.py	/^    import subprocess, os$/;"	i
+suc	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^suc(){$/;"	f
 sum	listAllCommands.sh	/^sum=0$/;"	v
 sum	sortedArrayCounter.sh	/^sum=0$/;"	v
 summarizeSizes	directoryContentsSize.sh	/^summarizeSizes() {$/;"	f
@@ -704,17 +1360,22 @@ svc	tailZOU.sh	/^svc=(ufw ovpn zabbix-agent)$/;"	v
 sys	boiler_gen.py	/^import sys$/;"	i
 sys	help2comp.py	/^import sys$/;"	i
 sys	mantozshcomp.py	/^import sys$/;"	i
+tac	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^tac(){$/;"	f
 tail	shebangChanger.sh	/^        tail=$(cat "$file")$/;"	v
 tail	shebangChanger.sh	/^        tail=$(sed -n "$lineCounter,$"p "$file")$/;"	v
 tailVersion	colorLogger.sh	/^tailVersion=tail$/;"	v
+tailufw	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    tailufw(){$/;"	f
 tap	bridgeDown.sh	/^tap="tap0"$/;"	v
 tap	bridgeUp.sh	/^tap="tap0"$/;"	v
 tarbellDirectory	tgzLocalInstaller.sh	/^tarbellDirectory="$1"$/;"	v
 temp	batchRename.sh	/^        local temp=${spinner#?}           # remove first character from $spinner$/;"	v
 temp	openAll.sh	/^        local temp=${spinner#?}         # remove first character from $spinner$/;"	v
+tempFile	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^            tempFile="$HOME\/__test.ps"$/;"	v
+tempFile	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^        tempFile="$HOME\/__test.ps"$/;"	v
 text	mantozshcomp.py	/^    def text(self):$/;"	m	class:Deroffer
 text_arg	mantozshcomp.py	/^    def text_arg(self):$/;"	m	class:Deroffer
 text_arg2	mantozshcomp.py	/^    def text_arg2(self):$/;"	m	class:Deroffer
+time	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    time=$1$/;"	v
 time	myWatchMaintainEscapes.sh	/^    time="$2"$/;"	v
 time	myWatchMaintainEscapes.sh	/^    time=1$/;"	v
 time	mywatch.sh	/^    time="$2"$/;"	v
@@ -724,18 +1385,35 @@ timeToSleep	myWatchNoBlink.sh	/^    timeToSleep=0.5$/;"	v
 timeToSleep	myWatchNoBlinkColorized.sh	/^    timeToSleep=$2$/;"	v
 timeToSleep	myWatchNoBlinkColorized.sh	/^    timeToSleep=0.5$/;"	v
 timediff	autoUpdater.sh	/^        timediff=$((newtime - oldtime))$/;"	v
+timer	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^timer() {$/;"	f
+title	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^        title="$1"$/;"	v
+to	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^to(){$/;"	f
+torip	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^torip(){$/;"	f
+toriprenew	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^toriprenew() {$/;"	f
+tot	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    tot=$((totend-totstart))$/;"	v
+total	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    total=0$/;"	v
 total	oldCounter.sh	/^    total=$(expr $(ls -F $1 | grep ".*[*@]" | wc -l) + $total)$/;"	v
 total	oldCounter.sh	/^total=0$/;"	v
 total	uploadWebPi.sh	/^total=$#$/;"	v
+totalLines	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^totalLines(){$/;"	f
+totend	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    totend=$($cmd +%s)$/;"	v
+totstart	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    totstart=$($cmd +%s)$/;"	v
 traceback	mantozshcomp.py	/^import traceback$/;"	i
 transferFile	transfer.sh	/^transferFile="$1"$/;"	v
 trim_groff	mantozshcomp.py	/^    def trim_groff(self, line):$/;"	m	class:TypeDarwinManParser
 tutorialDir	macOnly/tutorialConfigUpdater.sh	/^tutorialDir="$HOME\/Documents\/tutorialsRepo"$/;"	v
+tutsUpdate	/Users/wizard/.zshrc	/^tutsUpdate() {$/;"	f
 unquote_double_quotes	mantozshcomp.py	/^def unquote_double_quotes(data):$/;"	f
 unquote_single_quotes	mantozshcomp.py	/^def unquote_single_quotes(data):$/;"	f
 updatePI	updatePi.sh	/^updatePI() {$/;"	f
 updatePI	updater.sh	/^updatePI() { #-t to force pseudoterminal allocation for interactive programs on remote host$/;"	f
 updatePI	updaterNoPip.sh	/^updatePI() { #-t to force pseudoterminal allocation for interactive programs on remote host$/;"	f
+updater	/Users/wizard/.zshrc	/^updater (){$/;"	f
+updater	/Users/wizard/.zshrc	/^updater() {$/;"	f
+upload	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^upload(){$/;"	f
+url	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^            url="https:\/\/google.com\/search?q=$out"$/;"	v
+url	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    url="$(echo $1 | sed 's@[^\/]*\/\/\\([^@]*@\\)\\?\\([^:\/]*.*\\)@\\2@')"$/;"	v
+urlSafe	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^urlSafe(){$/;"	f
 usage	CPU_Stresser.sh	/^usage() {$/;"	f
 usage	directoryContentsSize.sh	/^usage() {$/;"	f
 usage	duplicateLineDeleter.sh	/^usage() {$/;"	f
@@ -755,27 +1433,47 @@ usage	storageShower.sh	/^function usage() {$/;"	f
 usage	tgzLocalInstaller.sh	/^function usage() {$/;"	f
 usage	updater.sh	/^usage() {$/;"	f
 usage	updaterNoPip.sh	/^usage() {$/;"	f
+user	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^                user="$(echo $line | awk -F':' '{print $2}' |$/;"	v
+user	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^                user="$(echo $line | awk -F'\/' '{print $4}')"$/;"	v
+user	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    user="$(echo "$user" | tr 'A-Z' 'a-z')"$/;"	v
 user	gitRemoteRepoInformation.sh	/^                        user="$(echo $line | awk -F':' '{print $2}' | awk -F'\/' '{print $1}')"$/;"	v
 user	gitRemoteRepoInformation.sh	/^                        user="$(echo $line | awk -F'\/' '{print $4}')"$/;"	v
 user_framework	boiler_gen.py	/^user_framework = sys.argv[1]$/;"	v
 valid_framework	boiler_gen.py	/^valid_framework = get_frame_work(user_framework)$/;"	v
 var	mantozshcomp.py	/^    def var(self):$/;"	m	class:Deroffer
 verb	zpwr.zsh	/^verb="$1"$/;"	v
+version	/Users/wizard/.zshrc	/^version="$(zsh --version | awk '{print $2}' | awk -F. '{print $1 "." $2}')"$/;"	v
 version	about.sh	/^            version="$(git describe --tags $(git rev-list --tags --max-count=1) | perl -pe 's@[\\t ]@@')"$/;"	v
 view	eyes.sh	/^    view=${ary[$randIndex]}$/;"	v
+vimFzf	/Users/wizard/.zshrc	/^vimFzf(){$/;"	f
+vimFzfSudo	/Users/wizard/.zshrc	/^vimFzfSudo(){$/;"	f
+violet	/Users/wizard/.zshrc	/^local violet="61"$/;"	v
+w	/Users/wizard/.zshrc	/^  w=( ${(u)=$(_tmux_capture_pane)} )$/;"	v
 w	uploadWebPi.sh	/^w=80$/;"	v
 watchCommand	myWatchNoBlink.sh	/^watchCommand() {$/;"	f
 watchCommand	myWatchNoBlinkColorized.sh	/^watchCommand() {$/;"	f
 watchingFile	watchServiceFSWatchRustCompile.sh	/^    watchingFile=$(basename $2)$/;"	v
 weHaveCCZE	colorLogger.sh	/^weHaveCCZE=no$/;"	v
 websiteDir	macOnly/tutorialConfigUpdater.sh	/^websiteDir="$HOME\/WebstormProjects\/PersonalWebsite"$/;"	v
+whitelist_tmux_completion	/Users/wizard/.zshrc	/^whitelist_tmux_completion=(ping 1 dig 2 digs 3 host 4 mtr 5 traceroute 6)$/;"	v
 width	macOnly/randomCow.sh	/^width=$1$/;"	v
 width	manzshcompgen.zsh	/^    width=70$/;"	v
 width	updater.sh	/^        width=80$/;"	v
 width	updaterNoPip.sh	/^        width=80$/;"	v
 width	zshcompgen.zsh	/^    width=70$/;"	v
 word	mantozshcomp.py	/^    def word(self):$/;"	m	class:Deroffer
+ww	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^ww(){$/;"	f
+www	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^www(){$/;"	f
 x	macOnly/combo.sh	/^    x="$(python -c 'print("trina"*5)')"$/;"	v
 x	macOnly/combo.sh	/^    x=$(date | cut -c1-10)$/;"	v
 x	sixLangDisplayer.sh	/^    x="$(python -c 'print("trina"*5)')"$/;"	v
 x	sixLangDisplayer.sh	/^    x=$(date | cut -c1-10)$/;"	v
+xf	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^        xf=(s==" B  ") ? "%d" : "%.2f"$/;"	v
+xx	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^xx(){$/;"	f
+yellow	/Users/wizard/.zshrc	/^local yellow="136"$/;"	v
+zFZF	/Users/wizard/.zshrc	/^zFZF(){$/;"	f
+zarg	/Users/wizard/.zshrc	/^function zarg(){$/;"	f
+zp	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^zp(){$/;"	f
+zpwr	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^zpwr(){$/;"	f
+zpz	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^zpz(){$/;"	f
+zshrcsearch	/Users/wizard/.zshrc	/^zshrcsearch(){$/;"	f

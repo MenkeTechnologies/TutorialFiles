@@ -445,7 +445,7 @@ bannerLolcat	/Users/wizard/.zshrc	/^bannerLolcat(){$/;"	f	language:Sh
 base	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^            base="$(dirname "$base")"$/;"	v	language:Sh
 base	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^        base="$(dirname "$1")"$/;"	v	language:Sh
 base	fzfPreviewOptsCommon.sh	/^            base=\\${file##*\/}$/;"	v
-base	fzfPreviewOptsCommon2Pos.sh	/^            base=\\$(basename \\\\\\$file)$/;"	v
+base	fzfPreviewOptsCommon2Pos.sh	/^            base=\\${file##*\/}$/;"	v
 base0	/Users/wizard/.zshrc	/^local base0="244"$/;"	v	language:Sh
 base00	/Users/wizard/.zshrc	/^local base00="241"$/;"	v	language:Sh
 base01	/Users/wizard/.zshrc	/^local base01="240"$/;"	v	language:Sh

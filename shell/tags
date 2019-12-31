@@ -444,8 +444,8 @@ banner	about.sh	/^banner() {$/;"	f	language:Sh
 bannerLolcat	/Users/wizard/.zshrc	/^bannerLolcat(){$/;"	f	language:Sh
 base	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^            base="$(dirname "$base")"$/;"	v	language:Sh
 base	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^        base="$(dirname "$1")"$/;"	v	language:Sh
-base	fzfPreviewOptsCommon.sh	/^            base=\\${file##*\/}$/;"	v
-base	fzfPreviewOptsCommon2Pos.sh	/^            base=\\${file##*\/}$/;"	v
+base	fzfPreviewOptsCommon.sh	/^            base=\\${file##*\/}$/;"	v	language:Sh
+base	fzfPreviewOptsCommon2Pos.sh	/^            base=\\${file##*\/}$/;"	v	language:Sh
 base0	/Users/wizard/.zshrc	/^local base0="244"$/;"	v	language:Sh
 base00	/Users/wizard/.zshrc	/^local base00="241"$/;"	v	language:Sh
 base01	/Users/wizard/.zshrc	/^local base01="240"$/;"	v	language:Sh
@@ -476,8 +476,8 @@ bytes	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    local bytes=$(( inpu
 bz2	mantozshcomp.py	/^import bz2$/;"	i	language:Python
 c	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^c(){$/;"	f	language:Sh
 cargo_bin	rpiSoftwareUpdater.sh	/^cargo_bin="$HOME\/.cargo\/bin\/cargo"$/;"	v	language:Sh
-casestr	fzfPreviewOptsCommon.sh	/^casestr=$(cat<<EOF$/;"	v
-casestr	fzfPreviewOptsCommon2Pos.sh	/^casestr=$(cat<<EOF$/;"	v
+casestr	fzfPreviewOptsCommon.sh	/^casestr=$(cat<<EOF$/;"	v	language:Sh
+casestr	fzfPreviewOptsCommon2Pos.sh	/^casestr=$(cat<<EOF$/;"	v	language:Sh
 category	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^            category="$2"$/;"	v	language:Sh
 category	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^        category="programming"$/;"	v	language:Sh
 cd	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^cd(){$/;"	f	language:Sh
@@ -517,7 +517,7 @@ cmd	delete_dups.zsh	/^    cmd="$(echo $f | cut -c2-)"$/;"	v	language:Sh
 cmd	fzfMan.sh	/^cmd="$1"$/;"	v	language:Sh
 cmd	keybindingsToFZFVim.zsh	/^    cmd=nvim$/;"	v	language:Sh
 cmd	keybindingsToFZFVim.zsh	/^    cmd=vim$/;"	v	language:Sh
-cmdType	fzfEnv.sh	/^cmdType=\\$(grep -m1 -a " \\$line\\$" ${ZPWR_ENV}Key.txt | awk "{print \\\\\\$1}")$/;"	v
+cmdType	fzfEnv.sh	/^cmdType=\\$(grep -m1 -a " \\$line\\$" ${ZPWR_ENV}Key.txt | awk "{print \\\\\\$1}")$/;"	v	language:Sh
 cmdlet	/Users/wizard/.zshrc	/^            cmdlet="$(eval echo "${out#*=}")"$/;"	v	language:Sh
 cmds	grc.zsh	/^  cmds=($/;"	v	language:Sh
 codecs	mantozshcomp.py	/^import codecs$/;"	i	language:Python
@@ -679,9 +679,9 @@ executeTheFile	runner.sh	/^executeTheFile() {$/;"	f	language:Sh
 exists	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    exists(){$/;"	f	language:Sh
 exists	CPU_Stresser.sh	/^exists() {$/;"	f	language:Sh
 exists	clearList.sh	/^exists(){$/;"	f	language:Sh
-exists	fzfEnv.sh	/^    exists(){$/;"	f
-exists	fzfPreviewOptsCommon.sh	/^    exists(){$/;"	f
-exists	fzfPreviewOptsCommon2Pos.sh	/^    exists(){$/;"	f
+exists	fzfEnv.sh	/^    exists(){$/;"	f	language:Sh
+exists	fzfPreviewOptsCommon.sh	/^    exists(){$/;"	f	language:Sh
+exists	fzfPreviewOptsCommon2Pos.sh	/^    exists(){$/;"	f	language:Sh
 exists	manzshcompgen.zsh	/^exists(){$/;"	f	language:Sh
 exists	rpiSoftwareUpdater.sh	/^exists() {$/;"	f	language:Sh
 exists	tailZOU.sh	/^    exists(){$/;"	f	language:Sh
@@ -706,8 +706,8 @@ file	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    file="$HOME\/.config\
 file	/Users/wizard/.zshrc	/^        file="$HOME\/.viminfo"$/;"	v	language:Sh
 file	/Users/wizard/.zshrc	/^        file="$ZPWR_NVIMINFO"$/;"	v	language:Sh
 file	boiler_gen.py	/^    file = CodeFile(model_file, directory, model)$/;"	v	language:Python
-file	fzfEnv.sh	/^        file=\\$(echo \\$file | sed "s@[]\\\\\\[^\\$.*\/]@\\\\\\\\\\\\&@g")$/;"	v
-file	fzfEnv.sh	/^file=\\$(grep -m1 -a " \\$line\\$" ${ZPWR_ENV}Key.txt | awk "{print \\\\\\$2}")$/;"	v
+file	fzfEnv.sh	/^        file=\\$(echo \\$file | sed "s@[]\\\\\\[^\\$.*\/]@\\\\\\\\\\\\&@g")$/;"	v	language:Sh
+file	fzfEnv.sh	/^file=\\$(grep -m1 -a " \\$line\\$" ${ZPWR_ENV}Key.txt | awk "{print \\\\\\$2}")$/;"	v	language:Sh
 file	inotifyWatchLogAndEmailIfNAS.sh	/^file="$1"$/;"	v	language:Sh
 file	macOnly/splitReg.sh	/^file="$ZPWR_TEMPFILE"$/;"	v	language:Sh
 file	openAll.sh	/^    file="$(echo $file | tr '[:upper:]' '[:lower:]')"$/;"	v	language:Sh
@@ -854,9 +854,9 @@ isBinary	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^isBinary() {$/;"	f	la
 isGitDir	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^isGitDir(){$/;"	f	language:Sh
 isGitDirMessage	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^isGitDirMessage(){$/;"	f	language:Sh
 isZsh	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^isZsh(){$/;"	f	language:Sh
-isZsh	fzfEnv.sh	/^isZsh(){$/;"	f
-isZsh	fzfPreviewOptsCommon.sh	/^isZsh(){$/;"	f
-isZsh	fzfPreviewOptsCommon2Pos.sh	/^isZsh(){$/;"	f
+isZsh	fzfEnv.sh	/^isZsh(){$/;"	f	language:Sh
+isZsh	fzfPreviewOptsCommon.sh	/^isZsh(){$/;"	f	language:Sh
+isZsh	fzfPreviewOptsCommon2Pos.sh	/^isZsh(){$/;"	f	language:Sh
 isZsh	tailZOU.sh	/^isZsh(){$/;"	f	language:Sh
 is_my_type	mantozshcomp.py	/^    def is_my_type(self, manpage):$/;"	m	language:Python	class:ManParser
 is_my_type	mantozshcomp.py	/^    def is_my_type(self, manpage):$/;"	m	language:Python	class:Type1ManParser
@@ -913,8 +913,8 @@ lib_command	clearList.sh	/^        lib_command="ldd"$/;"	v	language:Sh
 lib_command	clearList.sh	/^        lib_command="otool -L"$/;"	v	language:Sh
 limitFlag	myWatchMaintainEscapes.sh	/^        limitFlag=true$/;"	v	language:Sh
 line	/Users/wizard/.zshrc	/^            line="$(print -r $aliases | perl -ne 'print $1 if m{\\Q'$mywords[1]'\\E=(.*)}')"$/;"	v	language:Sh
-line	fzfEnv.sh	/^line=\\$(echo \\$line| sed "s@[]\\\\\\[^\\$.*\/]@\\\\\\\\\\\\&@g")$/;"	v
-line	fzfEnv.sh	/^line={};$/;"	v
+line	fzfEnv.sh	/^line=\\$(echo \\$line| sed "s@[]\\\\\\[^\\$.*\/]@\\\\\\\\\\\\&@g")$/;"	v	language:Sh
+line	fzfEnv.sh	/^line={};$/;"	v	language:Sh
 line	fzfMan.sh	/^line=\\$(echo {} | perl -lane "do{\\\\\\$_=~s@^\\\\\\s+|\\\\\\s+\\\\\\$@@g;print}");$/;"	v	language:Sh
 line	gitRemoteRepoInformation.sh	/^                line="$(git remote -v 2>\/dev\/null | sed 1q)" && {$/;"	v	language:Sh
 lineContribCount	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^lineContribCount(){$/;"	f	language:Sh
@@ -1018,10 +1018,10 @@ newfile	createTextFile.sh	/^newfile="$1"$/;"	v	language:Sh
 newfile	macOnly/postscriptToPDFCreator.sh	/^    newfile=${file%.*}$/;"	v	language:Sh
 newtime	autoUpdater.sh	/^        newtime=$(date +"%s")$/;"	v	language:Sh
 nextdate	autoUpdater.sh	/^    nextdate=$(echo "$perlscript" | perl -MTime::Piece -MTime::Seconds)$/;"	v	language:Sh
-nmcmd	fzfPreviewOptsCommon.sh	/^    nmcmd="nm -D"$/;"	v
-nmcmd	fzfPreviewOptsCommon.sh	/^    nmcmd="nm"$/;"	v
-nmcmd	fzfPreviewOptsCommon2Pos.sh	/^    nmcmd="nm -D"$/;"	v
-nmcmd	fzfPreviewOptsCommon2Pos.sh	/^    nmcmd="nm"$/;"	v
+nmcmd	fzfPreviewOptsCommon.sh	/^    nmcmd="nm -D"$/;"	v	language:Sh
+nmcmd	fzfPreviewOptsCommon.sh	/^    nmcmd="nm"$/;"	v	language:Sh
+nmcmd	fzfPreviewOptsCommon2Pos.sh	/^    nmcmd="nm -D"$/;"	v	language:Sh
+nmcmd	fzfPreviewOptsCommon2Pos.sh	/^    nmcmd="nm"$/;"	v	language:Sh
 nn	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    nn(){$/;"	f	language:Sh
 noPonyBanner	/Users/wizard/.zshrc	/^noPonyBanner(){$/;"	f	language:Sh
 node_exe	macOnly/randomCow.sh	/^node_exe="\/usr\/local\/lib\/node_modules\/cowsay\/cli.js"$/;"	v	language:Sh
@@ -1070,8 +1070,8 @@ orange	/Users/wizard/.zshrc	/^local orange="166"$/;"	v	language:Sh
 orig	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    orig="$1"$/;"	v	language:Sh
 origin	gitgo.sh	/^    local origin="$(git remote -v | awk '{print $1}' | tail -1 | tr -d ' ')"$/;"	v	language:Sh
 os	boiler_gen.py	/^import os$/;"	i	language:Python
-os	fzfPreviewOptsCommon.sh	/^os="$(uname -s)"$/;"	v
-os	fzfPreviewOptsCommon2Pos.sh	/^os="$(uname -s)"$/;"	v
+os	fzfPreviewOptsCommon.sh	/^os="$(uname -s)"$/;"	v	language:Sh
+os	fzfPreviewOptsCommon2Pos.sh	/^os="$(uname -s)"$/;"	v	language:Sh
 os	mantozshcomp.py	/^    import subprocess, os$/;"	i	language:Python
 os	mantozshcomp.py	/^import os.path$/;"	i	language:Python
 ost	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^        ost="$(uname | tr A-Z a-z)_amd64"$/;"	v	language:Sh

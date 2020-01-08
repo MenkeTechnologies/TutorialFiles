@@ -179,12 +179,11 @@ NODE_PATH	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^export NODE_PATH="\/
 ORGIN_NAME	gitgo.sh	/^    local ORGIN_NAME="$(git remote -v | awk '{print $1}' | tail -1 | tr -d ' ')"$/;"	v	language:Sh
 Output	macOnly/figletRandomFont.sh	/^    Output="$(echo $TEXT_TO_DISPLAY | figlet -f $font)"$/;"	v	language:Sh
 PARSER_INFO	mantozshcomp.py	/^PARSER_INFO = {}$/;"	v	language:Python
-PATH	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^        export PATH="$HOME\/Library\/Android\/sdk\/tools:$HOME\/Library\/Android\/sdk\/tools\/bin:$HOME\/Library\/Android\/sdk\/platform-tools:\/Library\/Developer\/CommandLineTools\/usr\/bin:$PATH"$/;"	v	language:Sh
 PATH	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^        export PATH="$PATH:\/usr\/games"$/;"	v	language:Sh
-PATH	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^        export PATH="$ZPWR_SCRIPTS\/macOnly:$HOME\/.tokenScripts:$PATH:$HOME\/.platformio\/penv\/bin"$/;"	v	language:Sh
+PATH	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^        export PATH="$ZPWR_SCRIPTS\/macOnly:$PATH:$HOME\/Library\/Android\/sdk\/tools:$HOME\/Library\/Android\/sdk\/tools\/bin:$HOME\/Library\/Android\/sdk\/platform-tools:\/Library\/Developer\/CommandLineTools\/usr\/bin:$HOME\/.platformio\/penv\/bin"$/;"	v	language:Sh
 PATH	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    export PATH="$HOME\/.cargo\/bin:$PATH"$/;"	v	language:Sh
-PATH	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    export PATH="$PATH:$HOME\/go\/bin:\/usr\/local\/lib\/python2.7\/site-packages\/powerline\/scripts\/"$/;"	v	language:Sh
-PATH	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    export PATH="$PYEXECUTABLES:$ZPWR_SCRIPTS\/save-run:$HOME\/.local\/bin:$HOME\/perl5\/bin:$ZPWR_SCRIPTS:\/usr\/bin:\/bin:\/usr\/sbin:\/sbin:\/opt\/X11\/bin:\/usr\/local\/sbin:$PATH"$/;"	v	language:Sh
+PATH	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    export PATH="$PATH:$HOME\/go\/bin:\/usr\/local\/lib\/python2.7\/site-packages\/powerline\/scripts"$/;"	v	language:Sh
+PATH	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    export PATH="$PYEXECUTABLES:$ZPWR_SCRIPTS\/save-run:$HOME\/.local\/bin:$HOME\/perl5\/bin:$ZPWR_SCRIPTS:\/opt\/X11\/bin:\/usr\/local\/bin:\/usr\/local\/sbin:\/usr\/bin:\/usr\/sbin:\/bin:\/sbin:$PATH"$/;"	v	language:Sh
 PATH	/Users/wizard/.zshrc	/^    export PATH="$HOME\/.jenv\/shims:$PATH"$/;"	v	language:Sh
 PATH	macOnly/tmuxer.sh	/^PATH="\/usr\/local\/bin:$PATH"$/;"	v	language:Sh
 PERL5LIB	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^export PERL5LIB="$HOME\/perl5\/lib\/perl5"$/;"	v	language:Sh
@@ -1204,6 +1203,8 @@ re	help2comp.py	/^import re$/;"	i	language:Python
 re	mantozshcomp.py	/^import re$/;"	i	language:Python
 react_routine	boiler_gen.py	/^def react_routine(name):$/;"	f	language:Python
 realNum	powerTo.sh	/^realNum=$(tmux list-panes | wc -l)$/;"	v	language:Sh
+recachedCompsys	/Users/wizard/.zshrc	/^    recachedCompsys=true$/;"	v	language:Sh
+recachedCompsys	/Users/wizard/.zshrc	/^recachedCompsys=false$/;"	v	language:Sh
 recompile	/Users/wizard/.zshrc	/^recompile(){$/;"	f	language:Sh
 red	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    red=$(tput setaf 1)$/;"	v	language:Sh
 red	/Users/wizard/.zshrc	/^local red="160"$/;"	v	language:Sh
@@ -1217,8 +1218,6 @@ regenPowerlineLink	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^regenPowerl
 regenSearchEnv	/Users/wizard/.zshrc	/^regenSearchEnv(){$/;"	f	language:Sh
 regenTags	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^regenTags(){$/;"	f	language:Sh
 regenZshCompCache	/Users/wizard/.zshrc	/^regenZshCompCache(){$/;"	f	language:Sh
-regencp	/Users/wizard/.zshrc	/^    regencp=true$/;"	v	language:Sh
-regencp	/Users/wizard/.zshrc	/^regencp=false$/;"	v	language:Sh
 regex	/Users/wizard/.zshrc	/^        regex="^sudo $command .*\\$|^$command .*\\$"$/;"	v	language:Sh
 regex	macOnly/splitReg.sh	/^regex="$1"$/;"	v	language:Sh
 regex	splitReg.sh	/^regex="$1"$/;"	v	language:Sh

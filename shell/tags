@@ -186,6 +186,7 @@ PATH	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    export PATH="$PATH:$H
 PATH	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    export PATH="$PYEXECUTABLES:$ZPWR_SCRIPTS\/save-run:$HOME\/.local\/bin:$HOME\/perl5\/bin:$ZPWR_SCRIPTS:\/opt\/X11\/bin:\/usr\/local\/bin:\/usr\/local\/sbin:\/usr\/bin:\/usr\/sbin:\/bin:\/sbin:$PATH"$/;"	v	language:Sh
 PATH	/Users/wizard/.zshrc	/^    export PATH="$HOME\/.jenv\/shims:$PATH"$/;"	v	language:Sh
 PATH	macOnly/tmuxer.sh	/^PATH="\/usr\/local\/bin:$PATH"$/;"	v	language:Sh
+PATH	pingordie.sh	/^PATH="$PATH:\/sbin\/usr\/sbin"$/;"	v
 PERL5LIB	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^export PERL5LIB="$HOME\/perl5\/lib\/perl5"$/;"	v	language:Sh
 PERL_HOME	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^        export PERL_HOME="$HOMEBREW_OPT_HOME\/perl"$/;"	v	language:Sh
 PIP3_HOME	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^        export PIP3_HOME="\/usr\/local\/lib\/python3.7\/site-packages"$/;"	v	language:Sh
@@ -773,7 +774,7 @@ g_re_number	mantozshcomp.py	/^    g_re_number = re.compile(r"[+-]?\\d+")  # equi
 g_re_word	mantozshcomp.py	/^    g_re_word = re.compile(r"[a-zA-Z_]+")  # equivalent to the word() method$/;"	v	language:Python	class:Deroffer
 g_specs	mantozshcomp.py	/^    g_specs = {$/;"	v	language:Python	class:Deroffer
 g_specs_specletter	mantozshcomp.py	/^    g_specs_specletter = {$/;"	v	language:Python	class:Deroffer
-gateway_ip	pingordie.sh	/^gateway_ip='8.8.8.8'$/;"	v	language:Sh
+gateway_ip	pingordie.sh	/^gateway_ip='8.8.8.8'$/;"	v
 gateway_ip	pingordieBridge.sh	/^gateway_ip='8.8.8.8'$/;"	v	language:Sh
 gateway_ip	pingordieBridgeVPN.sh	/^gateway_ip='8.8.8.8'$/;"	v	language:Sh
 gcl	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^gcl() {$/;"	f	language:Sh
@@ -824,7 +825,7 @@ home	myWatchNoBlinkColorized.sh	/^    home=$(tput cup 0 0)$/;"	v	language:Sh
 home_dir	duplicateLineDeleter.sh	/^home_dir=$HOME$/;"	v	language:Sh
 home_dir	indenterAndDuplicateLineDeleter.sh	/^home_dir=$HOME$/;"	v	language:Sh
 host	macOnly/rsyncr.sh	/^host="r"$/;"	v	language:Sh
-host_status	pingordie.sh	/^    host_status=$(fping $gateway_ip)$/;"	v	language:Sh
+host_status	pingordie.sh	/^    host_status=$(fping $gateway_ip)$/;"	v
 host_status	pingordieBridge.sh	/^    host_status=$(fping $gateway_ip)$/;"	v	language:Sh
 host_status	pingordieBridgeVPN.sh	/^    host_status=$(fping $gateway_ip)$/;"	v	language:Sh
 hostname	updatePi.sh	/^    hostname="$(echo "$1" | awk -F: '{print $1}')"$/;"	v	language:Sh
@@ -1001,10 +1002,10 @@ needSudo	updater.sh	/^            needSudo=no$/;"	v	language:Sh
 needSudo	updater.sh	/^            needSudo=yes$/;"	v	language:Sh
 needSudo	updaterNoPip.sh	/^            needSudo=no$/;"	v	language:Sh
 needSudo	updaterNoPip.sh	/^            needSudo=yes$/;"	v	language:Sh
-network_check_threshold	pingordie.sh	/^network_check_threshold=5$/;"	v	language:Sh
+network_check_threshold	pingordie.sh	/^network_check_threshold=5$/;"	v
 network_check_threshold	pingordieBridge.sh	/^network_check_threshold=5$/;"	v	language:Sh
 network_check_threshold	pingordieBridgeVPN.sh	/^network_check_threshold=5$/;"	v	language:Sh
-network_check_tries	pingordie.sh	/^network_check_tries=0$/;"	v	language:Sh
+network_check_tries	pingordie.sh	/^network_check_tries=0$/;"	v
 network_check_tries	pingordieBridge.sh	/^network_check_tries=0$/;"	v	language:Sh
 network_check_tries	pingordieBridgeVPN.sh	/^network_check_tries=0$/;"	v	language:Sh
 newEmail	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    newEmail="$2"$/;"	v	language:Sh
@@ -1243,7 +1244,7 @@ restart	tailZOU.sh	/^    restart=$3$/;"	v	language:Sh
 restartZabbixAgent	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    restartZabbixAgent(){$/;"	f	language:Sh
 restart_br0	pingordieBridge.sh	/^restart_br0() {$/;"	f	language:Sh
 restart_br0	pingordieBridgeVPN.sh	/^restart_br0() {$/;"	f	language:Sh
-restart_wlan0	pingordie.sh	/^restart_wlan0() {$/;"	f	language:Sh
+restart_wlan0	pingordie.sh	/^restart_wlan0() {$/;"	f
 ret	/Users/wizard/.zshrc	/^                            ret=$?$/;"	v	language:Sh
 ret	/Users/wizard/.zshrc	/^                        ret=$?$/;"	v	language:Sh
 ret	/Users/wizard/.zshrc	/^            ret=0 || ret=1$/;"	v	language:Sh

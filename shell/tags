@@ -512,7 +512,7 @@ cmd	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    cmd="$1"$/;"	v	languag
 cmd	/Users/wizard/.zshrc	/^        cmd=${cmd#=}$/;"	v	language:Sh
 cmd	/Users/wizard/.zshrc	/^        cmd=${mywords[2]}$/;"	v	language:Sh
 cmd	/Users/wizard/.zshrc	/^    cmd=$words[1]$/;"	v	language:Sh
-cmd	delete_dups.zsh	/^    cmd="$(echo $f | cut -c2-)"$/;"	v	language:Sh
+cmd	delete_dups.zsh	/^    cmd="$(echo $f | cut -c2-)"$/;"	v
 cmd	fzfMan.sh	/^cmd="$1"$/;"	v	language:Sh
 cmd	keybindingsToFZFVim.zsh	/^    cmd=nvim$/;"	v	language:Sh
 cmd	keybindingsToFZFVim.zsh	/^    cmd=vim$/;"	v	language:Sh
@@ -1167,8 +1167,8 @@ prettyPrint	textmessage.sh	/^prettyPrint() {$/;"	f	language:Sh
 prettyPrint	updater.sh	/^prettyPrint() {$/;"	f	language:Sh
 prettyPrint	updaterNoPip.sh	/^prettyPrint() {$/;"	f	language:Sh
 primary	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^                    primary="$(echo "$noproto" | sed -E 's@^(.*)\\.([^.]+)\\.([^.]+)$@\\2.\\3@')"$/;"	v	language:Sh
-printD	banner.pl	/^sub printD {$/;"	s	language:Perl
-printDate	banner.pl	/^sub printDate {$/;"	s	language:Perl
+printD	banner.pl	/^sub printD {$/;"	s
+printDate	banner.pl	/^sub printDate {$/;"	s
 progress_pid	batchRename.sh	/^    progress_pid=$!$/;"	v	language:Sh
 progress_pid	openAll.sh	/^    progress_pid=$!$/;"	v	language:Sh
 progress_pid	picture_finder.sh	/^    progress_pid=$!$/;"	v	language:Sh

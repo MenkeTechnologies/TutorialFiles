@@ -186,7 +186,7 @@ PATH	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    export PATH="$PATH:$H
 PATH	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    export PATH="$PYEXECUTABLES:$ZPWR_SCRIPTS\/save-run:$HOME\/.local\/bin:$HOME\/perl5\/bin:$ZPWR_SCRIPTS:\/opt\/X11\/bin:\/usr\/local\/bin:\/usr\/local\/sbin:\/usr\/bin:\/usr\/sbin:\/bin:\/sbin:$PATH"$/;"	v	language:Sh
 PATH	/Users/wizard/.zshrc	/^    export PATH="$HOME\/.jenv\/shims:$PATH"$/;"	v	language:Sh
 PATH	macOnly/tmuxer.sh	/^PATH="\/usr\/local\/bin:$PATH"$/;"	v	language:Sh
-PATH	pingordie.sh	/^PATH="$PATH:\/sbin\/usr\/sbin"$/;"	v
+PATH	pingordie.sh	/^PATH="$PATH:\/sbin\/usr\/sbin"$/;"	v	language:Sh
 PERL5LIB	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^export PERL5LIB="$HOME\/perl5\/lib\/perl5"$/;"	v	language:Sh
 PERL_HOME	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^        export PERL_HOME="$HOMEBREW_OPT_HOME\/perl"$/;"	v	language:Sh
 PIP3_HOME	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^        export PIP3_HOME="\/usr\/local\/lib\/python3.7\/site-packages"$/;"	v	language:Sh
@@ -289,7 +289,7 @@ ZPWR_OS_TYPE	/Users/wizard/.zshrc	/^export ZPWR_OS_TYPE="$(uname -s | perl -e 'p
 ZPWR_OS_TYPE	crossOSCommands.sh	/^    export ZPWR_OS_TYPE="$(uname -s | perl -e 'print lc<>')"$/;"	v	language:Sh
 ZPWR_PARENT_PROCESS	/Users/wizard/.zshrc	/^ZPWR_PARENT_PROCESS="$(command ps -p $PPID | perl -lane '$"=" ";print "@F[3..$#F]" if m{^\\s*\\d+.*}')"$/;"	v	language:Sh
 ZPWR_PASTE_CMD	crossOSCommands.sh	/^export ZPWR_PASTE_CMD="$(getPasteCommand)"$/;"	v	language:Sh
-ZPWR_PROFILING	/Users/wizard/.zshrc	/^export ZPWR_PROFILING=false$/;"	v	language:Sh
+ZPWR_PROFILING	/Users/wizard/.zshrc	/^export ZPWR_PROFILING=alse$/;"	v	language:Sh
 ZPWR_PROMPT	/Users/wizard/.zshrc	/^export ZPWR_PROMPT=POWERLEVEL$/;"	v	language:Sh
 ZPWR_PROMPT_FILE	/Users/wizard/.zshrc	/^export ZPWR_PROMPT_FILE="$ZPWR_HIDDEN_DIR\/.powerlevel9kconfig.sh"$/;"	v	language:Sh
 ZPWR_RED	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^export ZPWR_RED="\\x1b[31m"$/;"	v	language:Sh
@@ -513,7 +513,7 @@ cmd	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    cmd="$1"$/;"	v	languag
 cmd	/Users/wizard/.zshrc	/^        cmd=${cmd#=}$/;"	v	language:Sh
 cmd	/Users/wizard/.zshrc	/^        cmd=${mywords[2]}$/;"	v	language:Sh
 cmd	/Users/wizard/.zshrc	/^    cmd=$words[1]$/;"	v	language:Sh
-cmd	delete_dups.zsh	/^    cmd="$(echo $f | cut -c2-)"$/;"	v
+cmd	delete_dups.zsh	/^    cmd="$(echo $f | cut -c2-)"$/;"	v	language:Sh
 cmd	fzfMan.sh	/^cmd="$1"$/;"	v	language:Sh
 cmd	keybindingsToFZFVim.zsh	/^    cmd=nvim$/;"	v	language:Sh
 cmd	keybindingsToFZFVim.zsh	/^    cmd=vim$/;"	v	language:Sh
@@ -774,7 +774,7 @@ g_re_number	mantozshcomp.py	/^    g_re_number = re.compile(r"[+-]?\\d+")  # equi
 g_re_word	mantozshcomp.py	/^    g_re_word = re.compile(r"[a-zA-Z_]+")  # equivalent to the word() method$/;"	v	language:Python	class:Deroffer
 g_specs	mantozshcomp.py	/^    g_specs = {$/;"	v	language:Python	class:Deroffer
 g_specs_specletter	mantozshcomp.py	/^    g_specs_specletter = {$/;"	v	language:Python	class:Deroffer
-gateway_ip	pingordie.sh	/^gateway_ip='8.8.8.8'$/;"	v
+gateway_ip	pingordie.sh	/^gateway_ip='8.8.8.8'$/;"	v	language:Sh
 gateway_ip	pingordieBridge.sh	/^gateway_ip='8.8.8.8'$/;"	v	language:Sh
 gateway_ip	pingordieBridgeVPN.sh	/^gateway_ip='8.8.8.8'$/;"	v	language:Sh
 gcl	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^gcl() {$/;"	f	language:Sh
@@ -825,7 +825,7 @@ home	myWatchNoBlinkColorized.sh	/^    home=$(tput cup 0 0)$/;"	v	language:Sh
 home_dir	duplicateLineDeleter.sh	/^home_dir=$HOME$/;"	v	language:Sh
 home_dir	indenterAndDuplicateLineDeleter.sh	/^home_dir=$HOME$/;"	v	language:Sh
 host	macOnly/rsyncr.sh	/^host="r"$/;"	v	language:Sh
-host_status	pingordie.sh	/^    host_status=$(fping $gateway_ip)$/;"	v
+host_status	pingordie.sh	/^    host_status=$(fping $gateway_ip)$/;"	v	language:Sh
 host_status	pingordieBridge.sh	/^    host_status=$(fping $gateway_ip)$/;"	v	language:Sh
 host_status	pingordieBridgeVPN.sh	/^    host_status=$(fping $gateway_ip)$/;"	v	language:Sh
 hostname	updatePi.sh	/^    hostname="$(echo "$1" | awk -F: '{print $1}')"$/;"	v	language:Sh
@@ -834,7 +834,7 @@ hostname	updaterNoPip.sh	/^    hostname="$(echo "$1" | awk -F: '{print $1}')"$/;
 hour	timeConverter.sh	/^    hour=$((hour - 12))$/;"	v	language:Sh
 hour	timeConverter.sh	/^hour=$(date | tr -s ' ' | cut -d ' ' -f4 | cut -d ':' -f1)$/;"	v	language:Sh
 humanReadable	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^humanReadable(){$/;"	f	language:Sh
-id	/Users/wizard/.zshrc	/^            id=$(echo "select id from $ZPWR_SCHEMA_NAME.$ZPWR_TABLE_NAME order by dateAdded" | mysql | perl -ne "print if \\$. == $num")$/;"	v	language:Sh
+id	/Users/wizard/.zshrc	/^            id=$(echo "select id from $ZPWR_SCHEMA_NAME.$ZPWR_TABLE_NAME order by dateAdded" | mysql | perl -ne "print if \\$. == quotemeta('$num')")$/;"	v	language:Sh
 info	about.sh	/^            info="$(git tag -l -n9 "$version" | perl -pe 's@[\\t ]+@ @')"$/;"	v	language:Sh
 initializeGitDirectory	gitgo.sh	/^initializeGitDirectory() {$/;"	f	language:Sh
 ino	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^ino(){$/;"	f	language:Sh
@@ -1002,10 +1002,10 @@ needSudo	updater.sh	/^            needSudo=no$/;"	v	language:Sh
 needSudo	updater.sh	/^            needSudo=yes$/;"	v	language:Sh
 needSudo	updaterNoPip.sh	/^            needSudo=no$/;"	v	language:Sh
 needSudo	updaterNoPip.sh	/^            needSudo=yes$/;"	v	language:Sh
-network_check_threshold	pingordie.sh	/^network_check_threshold=5$/;"	v
+network_check_threshold	pingordie.sh	/^network_check_threshold=5$/;"	v	language:Sh
 network_check_threshold	pingordieBridge.sh	/^network_check_threshold=5$/;"	v	language:Sh
 network_check_threshold	pingordieBridgeVPN.sh	/^network_check_threshold=5$/;"	v	language:Sh
-network_check_tries	pingordie.sh	/^network_check_tries=0$/;"	v
+network_check_tries	pingordie.sh	/^network_check_tries=0$/;"	v	language:Sh
 network_check_tries	pingordieBridge.sh	/^network_check_tries=0$/;"	v	language:Sh
 network_check_tries	pingordieBridgeVPN.sh	/^network_check_tries=0$/;"	v	language:Sh
 newEmail	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    newEmail="$2"$/;"	v	language:Sh
@@ -1168,8 +1168,8 @@ prettyPrint	textmessage.sh	/^prettyPrint() {$/;"	f	language:Sh
 prettyPrint	updater.sh	/^prettyPrint() {$/;"	f	language:Sh
 prettyPrint	updaterNoPip.sh	/^prettyPrint() {$/;"	f	language:Sh
 primary	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^                    primary="$(echo "$noproto" | sed -E 's@^(.*)\\.([^.]+)\\.([^.]+)$@\\2.\\3@')"$/;"	v	language:Sh
-printD	banner.pl	/^sub printD {$/;"	s
-printDate	banner.pl	/^sub printDate {$/;"	s
+printD	banner.pl	/^sub printD {$/;"	s	language:Perl
+printDate	banner.pl	/^sub printDate {$/;"	s	language:Perl
 progress_pid	batchRename.sh	/^    progress_pid=$!$/;"	v	language:Sh
 progress_pid	openAll.sh	/^    progress_pid=$!$/;"	v	language:Sh
 progress_pid	picture_finder.sh	/^    progress_pid=$!$/;"	v	language:Sh
@@ -1244,7 +1244,7 @@ restart	tailZOU.sh	/^    restart=$3$/;"	v	language:Sh
 restartZabbixAgent	/Users/wizard/.zpwr/.shell_aliases_functions.sh	/^    restartZabbixAgent(){$/;"	f	language:Sh
 restart_br0	pingordieBridge.sh	/^restart_br0() {$/;"	f	language:Sh
 restart_br0	pingordieBridgeVPN.sh	/^restart_br0() {$/;"	f	language:Sh
-restart_wlan0	pingordie.sh	/^restart_wlan0() {$/;"	f
+restart_wlan0	pingordie.sh	/^restart_wlan0() {$/;"	f	language:Sh
 ret	/Users/wizard/.zshrc	/^                            ret=$?$/;"	v	language:Sh
 ret	/Users/wizard/.zshrc	/^                        ret=$?$/;"	v	language:Sh
 ret	/Users/wizard/.zshrc	/^            ret=0 || ret=1$/;"	v	language:Sh

@@ -116,6 +116,7 @@ export ZPWR_OS_TYPE="$(uname -s | perl -e 'print lc<>')"
 export ZPWR="$HOME/.zpwr"
 export ZPWR_HIDDEN_DIR="$ZPWR/local"
 export ZPWR_LOCAL="$ZPWR/local"
+export ZPWR_INSTALL="$ZPWR/install"
 export ZPWR_TMUX="$ZPWR/.tmux"
 # the base dir for zpwr temp
 export ZPWR_HIDDEN_DIR_TEMP="$ZPWR_HIDDEN_DIR/.temp"
@@ -1866,9 +1867,9 @@ else
                 (raspbian)
                     test -d "$D" && builtin cd "$D"
                     if type ponysay 1>/dev/null 2>&1; then
-                        bash "$ZPWR_HIDDEN_DIR/motd.sh" | ponysay -W 120
+                        bash "$ZPWR_SCRIPTS/motd.sh" | ponysay -W 120
                     else
-                        bash "$ZPWR_HIDDEN_DIR/motd.sh"
+                        bash "$ZPWR_SCRIPTS/motd.sh"
                     fi
                     ;;
                 (ubuntu|debian|kali|linuxmint|parrot)
@@ -1893,7 +1894,7 @@ else
             case $distroName in
                 (raspbian)
                     test -d "$D" && builtin cd "$D"
-                    bash "$ZPWR_HIDDEN_DIR/motd.sh"
+                    bash "$ZPWR_SCRIPTS/motd.sh"
                     ;;
                 (ubuntu|debian|kali|linuxmint|parrot)
                     test -d "$D" && builtin cd "$D"

@@ -1806,9 +1806,11 @@ function globalAliasesInit(){
     if [[ -d "$ZPWR_INSTALL" ]]; then
         alias zi="cd $ZPWR_INSTALL"
     fi
+
     if [[ -d "$ZPWR_SCRIPTS" ]]; then
         alias zs="cd $ZPWR_SCRIPTS"
     fi
+
     if [[ -d "$ZPWR_LOCAL" ]]; then
         alias zl="cd $ZPWR_LOCAL"
     fi

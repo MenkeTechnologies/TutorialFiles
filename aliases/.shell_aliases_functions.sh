@@ -1568,16 +1568,24 @@ function backup(){
         "\e[4;1m$1\e[0m backed up to \e[4;1m$newfile\e[0m\n"
 }
 
+unalias gcl >/dev/null 2>&1
 function gcl() {
     if [[ -z "$1" ]]; then
         loggErr "need an arg"
         return 1
     fi
+    local git_name
+    local dir_name
 
     git_name="${1##*/}"
     dir_name=${git_name%.*}
     git clone -v --progress --recursive "$1"
-    cd "$dir_name"
+    if [[ -d "$dir_name" ]]; then
+        cd "$dir_name"
+    else
+        loggErr "$dir_name failed to clone"
+        return 1
+    fi
 }
 
 function ino(){

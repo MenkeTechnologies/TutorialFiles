@@ -117,7 +117,7 @@ export ZPWR_TEMPFILE_SQL="$ZPWR_HIDDEN_DIR_TEMP/.temp$$-2$USER.sql"
 #**************************************************************
 export ZPWR_TMUX_PREFIX=x
 export ZPWR_TMUX_REMOTE_PREFIX=b
-test -f "$ZPWR_LOCAL/.tokens.sh" && source "$ZPWR_LOCAL/.tokens.sh"
+test -f "$ZPWR_LOCAL/.tokens.sh" && source "$ZPWR_LOCAL/.tokens.sh" || touch "$ZPWR_LOCAL/.tokens.sh"
 #bash xtrace
 export PS4='>\e[1;4;39m${BASH_SOURCE}\e[37m\e[0;34m__${LINENO}\e[37m__\e[0;32m${FUNCNAME[0]}> \e[0m'
 #zsh xtrace
@@ -315,7 +315,7 @@ alias zrc="vim -S ~/.vim/sessions/zshrc.vim + ~/.zshrc"
 alias trc="vim -S ~/.vim/sessions/trc.vim ~/.tmux.conf"
 alias tok="vim $ZPWR_LOCAL/.tokens.sh"
 alias conf="vim $HOME/.zshrc $HOME/.tmux.conf $HOME/.vimrc $ZPWR/.shell_aliases_functions.sh $ZPWR_TMUX/*(.) $ZPWR/.powerlevel9kconfig.sh $ZPWR_LOCAL/.tokens.sh $ZPWR/.minvimrc"
-alias zpt="vim $ZPWR_TEST/*.{zsh,zunit}"
+alias zpt="vim $ZPWR_TEST/*.{zsh,zunit} $ZPWR/.travis.yml"
 #}}}***********************************************************
 alias deleteTab="sed '/^[\x20\x09]*$/d'"
 alias ba="bash"
@@ -2829,5 +2829,6 @@ function changeGitEmail(){
 #**************************************************************
 alias exa="$ZPWR_EXA_COMMAND"
 exists hexedit && alias he='hexedit -l 16'
+return 0
 #}}}***********************************************************
 

@@ -1361,7 +1361,13 @@ autocmd BufNewFile * exe 'normal! G' | startinsert!
 "{{{                    MARK:Ending
 "**************************************************************
 "load all pathogen plugins
-execute pathogen#infect()
+if filereadable(expand("~/.vim/autoload/pathogen.vim"))
+    runtime! autoload/pathogen.vim
+    if exists("g:loaded_pathogen")
+        silent! execute pathogen#infect()
+    endif
+endif
+
 syntax on
 filetype plugin indent on
 
@@ -1425,7 +1431,7 @@ set path+=~/Desktop
 set path+=~/.zpwr/scripts
 
 "default colorscheme
-colorscheme badwolf
+silent! colorscheme badwolf
 
 "personal common mispellings
 iabbrev tth the
@@ -1640,7 +1646,7 @@ if !exists('g:ycm_semantic_triggers')
 endif
 
 " enable vimtex completion options in YCM
-au VimEnter * let g:ycm_semantic_triggers.tex=g:vimtex#re#youcompleteme
+silent! au VimEnter * let g:ycm_semantic_triggers.tex=g:vimtex#re#youcompleteme
 
 "disable python2 for neovim
 let g:loaded_python_provider = 0

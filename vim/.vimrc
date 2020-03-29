@@ -133,7 +133,7 @@ set viminfo='1000,<50,s10,h
 set colorcolumn=80
 
 "gutter update time for vim-gitgutter, vim-boomarks and vim-markology plugins
-set updatetime=100
+set updatetime=150
 ""}}}***********************************************************
 
 "{{{                    MARK:Vundle
@@ -1084,8 +1084,13 @@ function! ExtractVariableVisual() range
         exe "normal! ".(l:line+1)."GO".l:name."=".l:wordUnderCursor
         exe "normal! `z"
 
-    elseif index(supportedTypes, exeFileType) < 0
-        echom "Unknown Filetype '".exeFileType. "'."
+    elseif index(supportedTypes, l:exeFileType) < 0
+        echom " => Unknown Filetype '".l:exeFileType. "'."
+        if l:exeFileType == ''
+            echom " => Unknown Filetype for file '".l:filename. "'."
+        else
+            echom " => Unknown Filetype '".l:exeFileType. "'."
+        endif
     endif
 endfunction
 
@@ -1129,8 +1134,12 @@ function! ExtractVariable()
         exe "normal! ".(l:line+1)."GO".l:name."=".l:wordUnderCursor
         exe "normal! `z"
 
-    elseif index(supportedTypes, exeFileType) < 0
-        echom "Unknown Filetype '".exeFileType. "'."
+    elseif index(supportedTypes, l:exeFileType) < 0
+        if l:exeFileType == ''
+            echom " => Unknown Filetype for file '".l:filename. "'."
+        else
+            echom " => Unknown Filetype '".l:exeFileType. "'."
+        endif
     endif
 
 
@@ -1177,8 +1186,12 @@ function! ExtractMethod() range
         '>
         exe "normal! o\<Esc>vi{>\<Esc>"
         exe "normal! o".l:name. ""
-    elseif index(supportedTypes, exeFileType) < 0
-        echom "Unknown Filetype '".exeFileType. "'."
+    elseif index(supportedTypes, l:exeFileType) < 0
+        if l:exeFileType == ''
+            echom " => Unknown Filetype for file '".l:filename. "'."
+        else
+            echom " => Unknown Filetype '".l:exeFileType. "'."
+        endif
     endif
 endfunction
 
@@ -1658,15 +1671,26 @@ let g:vimtex_compiler_progname = 'nvr'
 
 " Highlight all instances of word under cursor, when idle.
 " Type z/ to toggle highlighting on/off.
+function! GoToLastSearch(char)
+    call feedkeys(a:char."\<UP>\<CR>")
+endfunction
+
+nnoremap n :call GoToLastSearch('/')<CR>
+nnoremap N :call GoToLastSearch('?')<CR>
+
 nnoremap z/ :if AutoHighlightToggle()<Bar>set hls<Bar>endif<CR>
 function! AutoHighlightToggle()
   let @/ = ''
   if exists('#auto_highlight')
+    nunmap n
+    nunmap N
     autocmd! auto_highlight
     augroup! auto_highlight
     echom 'Highlight current word: off'
     return 0
   else
+    nnoremap n :call GoToLastSearch('/')<CR>
+    nnoremap N :call GoToLastSearch('?')<CR>
     augroup auto_highlight
       autocmd!
       autocmd CursorHold,CursorHoldI * let @/ = '\V\<'.escape(expand('<cword>'), '\').'\>'

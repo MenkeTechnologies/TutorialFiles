@@ -157,6 +157,9 @@ Plugin 'honza/vim-snippets'
 Plugin 'severin-lemaignan/vim-minimap'
 Plugin '907th/vim-auto-save'
 Plugin 'Valodim/vim-zsh-completion'
+Plugin 'prabirshrestha/async.vim'
+Plugin 'prabirshrestha/asyncomplete.vim'
+Plugin 'wellle/tmux-complete.vim'
 
 if has('nvim')
     Plugin 'vim-airline/vim-airline'
@@ -1079,10 +1082,10 @@ function! ExtractVariableVisual() range
         call s:commonEV('pl', l:regex, l:name, l:wordUnderCursor)
     elseif l:exeFileType == 'py'
         let l:line=GetFirstCodeLineHash()
-        exe "normal mz"
-        exe '%sno@'.l:regex.'@'.l:name."@g"
-        exe "normal! ".(l:line+1)."GO".l:name."=".l:wordUnderCursor
-        exe "normal! `z"
+        exe 'normal mz'
+        exe '%sno@'.l:regex.'@'.l:name.'@g'
+        exe 'normal! '.(l:line+1).'GO'.l:name.'='.l:wordUnderCursor
+        exe 'normal! `z'
 
     elseif index(supportedTypes, l:exeFileType) < 0
         echom " => Unknown Filetype '".l:exeFileType. "'."
@@ -1096,7 +1099,7 @@ endfunction
 
 function! ExtractVariable()
     let l:wordUnderCursor = expand("<cword>")
-    let l:name = inputdialog("Extract variable to replace __".wordUnderCursor."__:")
+    let l:name = inputdialog('Extract variable to replace __'.wordUnderCursor.'__:')
 
     if l:name== ''
        return 0
@@ -1113,26 +1116,26 @@ function! ExtractVariable()
 
     if l:exeFileType == 'sh' || l:exeFileType == 'zsh'
         let l:line=GetFirstCodeLineHash()
-        exe "normal mz"
-        exe '%s@\<'.l:regex.'\>@$'.l:name."@g"
-        exe "normal! ".(l:line+1)."GO".l:name."=".l:wordUnderCursor
-        exe "normal! V\<Esc>"
-        exe "normal! `z"
+        exe 'normal mz'
+        exe '%s@\<'.l:regex.'\>@$'.l:name.'@g'
+        exe 'normal! '.(l:line+1).'GO'.l:name.'='.l:wordUnderCursor
+        exe 'normal! V\<Esc>'
+        exe 'normal! `z'
 
     elseif l:exeFileType == 'pl'
         let l:line=GetFirstCodeLineHash()
-        exe "normal mz"
-        exe '%s@\<'.l:regex.'\>@$'.l:name."@g"
-        exe "normal! ".(l:line+1)."GOmy $".l:name."=".l:wordUnderCursor.";"
-        exe "normal! V\<Esc>"
-        exe "normal! `zzz"
+        exe 'normal mz'
+        exe '%s@\<'.l:regex.'\>@$'.l:name.'@g'
+        exe 'normal! '.(l:line+1).'GOmy $'.l:name.'='.l:wordUnderCursor.';'
+        exe 'normal! V\<Esc>'
+        exe 'normal! `zzz'
 
     elseif l:exeFileType == 'py'
         let l:line=GetFirstCodeLineHash()
-        exe "normal mz"
-        exe '%s@\<'.l:regex.'\>@'.l:name."@g"
-        exe "normal! ".(l:line+1)."GO".l:name."=".l:wordUnderCursor
-        exe "normal! `z"
+        exe 'normal mz'
+        exe '%s@\<'.l:regex.'\>@'.l:name.'@g'
+        exe 'normal! '.(l:line+1).'GO'.l:name.'='.l:wordUnderCursor
+        exe 'normal! `z'
 
     elseif index(supportedTypes, l:exeFileType) < 0
         if l:exeFileType == ''
@@ -1371,7 +1374,16 @@ autocmd BufNewFile *.zsh silent! exe '!templater.sh %:p' | e
 autocmd BufNewFile *.rb silent! exe '!templater.sh %:p' | e
 autocmd BufNewFile *.py silent! exe '!templater.sh %:p' | e
 autocmd BufNewFile *.pl silent! exe '!templater.sh %:p' | e
-autocmd BufNewFile * exe 'normal! G' | startinsert!
+
+function! SetHLSIns()
+"only for first bufenter, required to activate the highlight on hover
+    if !exists('g:hl_activated')
+        let g:hl_activated = 1
+        call feedkeys("\<ESC>:set hls\<CR>Gi")
+    endif
+endfunction
+
+autocmd BufNewFile * call SetHLSIns()
 
 "}}}***********************************************************
 
@@ -1695,7 +1707,7 @@ function! AutoHighlightToggle()
       autocmd!
       autocmd CursorHold,CursorHoldI * let @/ = '\V\<'.escape(expand('<cword>'), '\').'\>'
     augroup end
-    set hls
+    set hlsearch
     echo 'Highlight current word: ON'
     return 1
   endif
@@ -1707,7 +1719,28 @@ augroup auto_highlight
     autocmd CursorHold,CursorHoldI * let @/ = '\V\<'.escape(expand('<cword>'), '\').'\>'
 augroup end
 
+function! SetHLS()
 "only for first bufenter, required to activate the highlight on hover
-autocmd BufEnter * if !exists('g:hl_activated') | let g:hl_activated = 1 | call feedkeys(":silent! set hls\<CR>") | endif
+    if !exists('g:hl_activated')
+        let g:hl_activated = 1
+        call feedkeys(":set hlsearch\<CR>")
+    endif
+endfunction
+
+autocmd BufEnter * call SetHLS()
+
+let g:tmuxcomplete#asyncomplete_source_options = {
+            \ 'name':      'tmuxcomplete',
+            \ 'whitelist': ['*'],
+            \ 'config': {
+            \     'splitmode':      'words',
+            \     'filter_prefix':   1,
+            \     'show_incomplete': 1,
+            \     'sort_candidates': 0,
+            \     'scrollback':      0,
+            \     'truncate':        0
+            \     }
+            \ }
+let g:tmuxcomplete#trigger = 'omnifunc'
 
 "}}}***********************************************************

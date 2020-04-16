@@ -290,6 +290,8 @@ alias ca='cat -n'
 alias sa='sudo cat -n'
 alias ra='sudo rm -rf --'
 alias die='sudo kill -9 --'
+alias emacs='emacs -nw'
+alias em='emacs -nw'
 
 if exists docker; then
     alias dk=docker
@@ -1864,7 +1866,7 @@ function unlinkConf(){
     (
 
     local -a symFiles
-    symFiles=(.tmux.conf .ideavimrc .vimrc grc.zsh conf.gls conf.df conf.ifconfig conf.mount conf.whois .iftopcolors .inputrc .zshrc)
+    symFiles=(.tmux.conf .ideavimrc .vimrc grc.zsh conf.gls conf.df conf.ifconfig conf.mount conf.whois .iftopcolors .inputrc .zshrc .spacemacs)
 
     for file in ${symFiles[@]} ; do
         prettyPrint "REMOVING $file to $HOME"
@@ -1888,7 +1890,7 @@ function linkConf(){
     fi
 
     local -a symFiles
-    symFiles=(.tmux.conf .ideavimrc .vimrc grc.zsh conf.gls conf.df conf.ifconfig conf.mount conf.whois .iftopcolors .inputrc .zshrc)
+    symFiles=(.tmux.conf .ideavimrc .vimrc grc.zsh conf.gls conf.df conf.ifconfig conf.mount conf.whois .iftopcolors .inputrc .zshrc .spacemacs)
 
     for file in ${symFiles[@]} ; do
         prettyPrint "Installing $file to $HOME"

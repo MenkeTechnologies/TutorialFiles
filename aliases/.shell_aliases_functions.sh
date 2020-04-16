@@ -103,6 +103,7 @@ test -z "$ZPWR_LOG_MSG_COLOR" && export ZPWR_LOG_MSG_COLOR='\x1b[0;37;43m'
 test -z "$ZPWR_CD_AUTO_LS" && export ZPWR_CD_AUTO_LS=true
 test -z "$ZPWR_SCRIPTS" && export ZPWR_SCRIPTS="$ZPWR/scripts"
 test -z "$ZPWR_SCRIPTS_MAC" && export ZPWR_SCRIPTS_MAC="$ZPWR_SCRIPTS/macOnly"
+test -z "$ZPWR_EMACS" && export ZPWR_EMACS='command emacs -nw'
 export ZPWR_ALL_GIT_DIRS="$ZPWR_LOCAL/zpwrGitDirs.txt"
 export ZPWR_LOGFILE="$ZPWR_LOCAL/zpwrLog.txt"
 
@@ -123,6 +124,7 @@ export ZPWR_TEMPFILE2="$ZPWR_HIDDEN_DIR_TEMP/.temp$$-2$USER"
 export ZPWR_TEMPFILE3="$ZPWR_HIDDEN_DIR_TEMP/.temp$$-3$USER"
 export ZPWR_TEMPFILE4="$ZPWR_HIDDEN_DIR_TEMP/.temp$$-4$USER"
 export ZPWR_TEMPFILE_SQL="$ZPWR_HIDDEN_DIR_TEMP/.temp$$-2$USER.sql"
+export ZPWR_="$ZPWR_HIDDEN_DIR_TEMP/.temp$$-2$USER.sql"
 #}}}***********************************************************
 
 #{{{                    MARK:Env Vars
@@ -334,6 +336,8 @@ alias zrc="vim -S ~/.vim/sessions/zshrc.vim + ~/.zshrc"
 alias trc="vim -S ~/.vim/sessions/trc.vim ~/.tmux.conf"
 alias tok="builtin cd $ZPWR; vim $ZPWR_LOCAL/.tokens.sh;clearList;isGitDir && git diff HEAD"
 alias conf="builtin cd $ZPWR; vim $HOME/.zshrc $HOME/.tmux.conf $HOME/.vimrc $ZPWR/.shell_aliases_functions.sh $ZPWR_TMUX/*(.) $ZPWR/.powerlevel9kconfig.sh $ZPWR_LOCAL/.tokens.sh $ZPWR/.minvimrc;clearList;isGitDir && git diff HEAD"
+alias etok="builtin cd $ZPWR; ${=ZPWR_EMACS} $ZPWR_LOCAL/.tokens.sh;clearList;isGitDir && git diff HEAD"
+alias econf="builtin cd $ZPWR; ${=ZPWR_EMACS} $HOME/.zshrc $HOME/.tmux.conf $HOME/.vimrc $ZPWR/.shell_aliases_functions.sh $ZPWR_TMUX/*(.) $ZPWR/.powerlevel9kconfig.sh $ZPWR_LOCAL/.tokens.sh $ZPWR/.minvimrc;clearList;isGitDir && git diff HEAD"
 alias zpt="builtin cd $ZPWR_TEST; vim $ZPWR_TEST/*.{zsh,zunit} $ZPWR/.travis.yml;clearList;isGitDir && git diff HEAD"
 #}}}***********************************************************
 alias deleteTab="sed '/^[\x20\x09]*$/d'"
@@ -1875,6 +1879,13 @@ function unlinkConf(){
         rm -f $HOME/$file
     done
     rm -rf "$HOME/.vim/UltiSnips"
+
+    local snipDir="$HOME/.emacs.d/private/snippets"
+
+    if [[ -d "$snipDir" ]]; then
+       rm -rf "$snipDir"
+    fi
+
     )
 }
 
@@ -1902,6 +1913,14 @@ function linkConf(){
     prettyPrint "Installing UltiSnips to $HOME/.vim/UltiSnips"
     echo ln -sfn $ZPWR_INSTALL/UltiSnips "$HOME/.vim/UltiSnips"
     ln -sfn $ZPWR_INSTALL/UltiSnips "$HOME/.vim/UltiSnips"
+    local snipDir="$HOME/.emacs.d/private"
+
+    if [[ -d "$snipDir" ]]; then
+        prettyPrint "Installing yasnippets to $snipDir"
+        command rm -rf "$snipDir/snippets" 2>/dev/null
+        echo ln -sfn $ZPWR_INSTALL/emacs/snippets "$snipDir/snippets"
+        ln -sfn $ZPWR_INSTALL/emacs/snippets "$snipDir/snippets"
+    fi
     )
 }
 
@@ -2806,6 +2825,47 @@ function commits(){
     fi
 }
 
+function emacsEmacsConfig(){
+
+    builtin cd $ZPWR
+    ${=ZPWR_EMACS} \
+    "$ZPWR_INSTALL/.spacemacs" \
+    "$ZPWR_INSTALL/emacs/snippets/*-mode/*
+    clearList
+    isGitDir && git diff HEAD
+}
+
+function vimEmacsConfig(){
+
+    builtin cd $ZPWR
+    vim \
+    "$ZPWR_INSTALL/.spacemacs" \
+    "$ZPWR_INSTALL/emacs/snippets/*-mode/*
+    clearList
+    isGitDir && git diff HEAD
+}
+
+function emacsAll(){
+
+    builtin cd $ZPWR
+    ${=ZPWR_EMACS} \
+    "$ZPWR_INSTALL/"{.zshrc,.tmux.conf,grc.zsh,.vimrc,init.vim,.ideavimrc} \
+    "$ZPWR/"*.{sh,py,zsh,pl} \
+    "$ZPWR/"*.md \
+    "$ZPWR_LOCAL/"*.{sh,py,zsh,pl} \
+    "$ZPWR_TMUX/"*.{sh,py,zsh,pl} \
+    "$ZPWR_TMUX/tmux-"* \
+    "$ZPWR/"{.minvimrc,.mininit.vim} \
+    "$ZPWR_INSTALL/conf."* \
+    "$ZPWR_INSTALL/"*.sh \
+    "$ZPWR_INSTALL/"*.service \
+    "$ZPWR_INSTALL/UltiSnips/"*.snippets \
+    "$ZPWR_SCRIPTS/"*.{sh,py,zsh,pl} \
+    "$ZPWR_SCRIPTS_MAC/"*.{sh,py,zsh,pl}
+    clearList
+    isGitDir && git diff HEAD
+}
+
 function vimAll(){
 
     builtin cd $ZPWR
@@ -2825,6 +2885,18 @@ function vimAll(){
     "$ZPWR_SCRIPTS_MAC/"*.{sh,py,zsh,pl}
     clearList
     isGitDir && git diff HEAD
+}
+
+function emacsScripts(){
+
+    ${=ZPWR_EMACS} \
+    "$HOME/"{.zshrc,.tmux.conf,grc.zsh,.vimrc} \
+    "$ZPWR/"*.{sh,py,zsh,pl} \
+    "$ZPWR_LOCAL/"*.{sh,py,zsh,pl} \
+    "$ZPWR_TMUX/"*.{sh,py,zsh,pl} \
+    "$ZPWR_LOCAL/"*.{sh,py,zsh,pl} \
+    "$ZPWR_SCRIPTS/"*.{sh,py,zsh,pl} \
+    "$ZPWR_SCRIPTS_MAC/"*.{sh,py,zsh,pl}
 }
 
 function vimScripts(){

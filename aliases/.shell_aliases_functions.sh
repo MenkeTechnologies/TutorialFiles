@@ -335,7 +335,7 @@ alias brc="vim -S ~/.vim/sessions/aliases.vim + $ZPWR/.shell_aliases_functions.s
 alias zrc="vim -S ~/.vim/sessions/zshrc.vim + ~/.zshrc"
 alias trc="vim -S ~/.vim/sessions/trc.vim ~/.tmux.conf"
 alias tok="builtin cd $ZPWR; vim $ZPWR_LOCAL/.tokens.sh;clearList;isGitDir && git diff HEAD"
-alias conf="builtin cd $ZPWR; vim $HOME/.zshrc $HOME/.tmux.conf $HOME/.vimrc $ZPWR/.shell_aliases_functions.sh $ZPWR_TMUX/*(.) $ZPWR/.powerlevel9kconfig.sh $ZPWR_LOCAL/.tokens.sh $ZPWR/.minvimrc;clearList;isGitDir && git diff HEAD"
+alias conf="builtin cd $ZPWR; vim $ZPWR_INSTALL/.zshrc $ZPWR_INSTALL/.globalrc $ZPWR/.tmux.conf $ZPWR/.vimrc $ZPWR/.shell_aliases_functions.sh $ZPWR_TMUX/*(.) $ZPWR/.powerlevel9kconfig.sh $ZPWR_LOCAL/.tokens.sh $ZPWR/.minvimrc;clearList;isGitDir && git diff HEAD"
 alias etok="builtin cd $ZPWR; ${ZPWR_EMACS} $ZPWR_LOCAL/.tokens.sh;clearList;isGitDir && git diff HEAD"
 alias econf="builtin cd $ZPWR; ${ZPWR_EMACS} $HOME/.zshrc $HOME/.tmux.conf $HOME/.vimrc $ZPWR/.shell_aliases_functions.sh $ZPWR_TMUX/*(.) $ZPWR/.powerlevel9kconfig.sh $ZPWR_LOCAL/.tokens.sh $ZPWR/.minvimrc;clearList;isGitDir && git diff HEAD"
 alias zpt="builtin cd $ZPWR_TEST; vim $ZPWR_TEST/*.{zsh,zunit} $ZPWR/.travis.yml;clearList;isGitDir && git diff HEAD"
@@ -2667,22 +2667,42 @@ function clearCache(){
     } >> "$ZPWR_LOGFILE" 2>&1
 }
 
-function regenEmacsTags(){
+function regenGtagsType(){
 
-    prettyPrint "Regen GNU gtags to $HOME/GTAGS"
+    if [[ -z $1 ]]; then
+        loggErr "regenGtagsType <type>"
+        return 1
+    fi
+
+    local type=$1
+
+    prettyPrint "Regen GNU gtags to $HOME/GTAGS with $type parser"
     (
     builtin cd "$HOME"
     command rm GPATH GRTAGS GTAGS 2>/dev/null
-    for file in "$ZPWR_INSTALL/.zshrc" "$ZPWR/".*.sh "$ZPWR_SCRIPTS"/* "$ZPWR_SCRIPTS/macOnly/"*; do
+    for file in \
+        "$ZPWR_INSTALL/"* \
+        "$ZPWR/"* \
+        "$ZPWR_SCRIPTS"/* \
+        "$ZPWR_SCRIPTS/macOnly/"*; do
         if [[ -f "$file" ]]; then
             echo "$file"
         fi
-    done | gtags --accept-dotfiles --gtagslabel=pygments -f -
+    done | gtags --accept-dotfiles --gtagslabel=$type -f -
     )
 
 }
+function regenGtagsCtags(){
 
-function regenTags(){
+    regenGtagsType ctags
+
+}
+function regenGtagsPygments(){
+
+    regenGtagsType pygments
+}
+
+function regenCtags(){
 
     prettyPrint "Regen ctags to $ZPWR_SCRIPTS/tags and $HOME/tags"
     (
@@ -2884,7 +2904,7 @@ function emacsAll(){
 
     builtin cd $ZPWR
     ${=ZPWR_EMACS} \
-    "$ZPWR_INSTALL/"{.zshrc,.tmux.conf,grc.zsh,.vimrc,init.vim,.ideavimrc} \
+    "$ZPWR_INSTALL/"{.zshrc,.tmux.conf,grc.zsh,.vimrc,init.vim,.ideavimrc,.globalrc} \
     "$ZPWR/"*.{sh,py,zsh,pl} \
     "$ZPWR/"*.md \
     "$ZPWR_LOCAL/"*.{sh,py,zsh,pl} \
@@ -2905,7 +2925,7 @@ function vimAll(){
 
     builtin cd $ZPWR
     vim \
-    "$ZPWR_INSTALL/"{.zshrc,.tmux.conf,grc.zsh,.vimrc,init.vim,.ideavimrc} \
+    "$ZPWR_INSTALL/"{.zshrc,.tmux.conf,grc.zsh,.vimrc,init.vim,.ideavimrc,.globalrc} \
     "$ZPWR/"*.{sh,py,zsh,pl} \
     "$ZPWR/"*.md \
     "$ZPWR_LOCAL/"*.{sh,py,zsh,pl} \

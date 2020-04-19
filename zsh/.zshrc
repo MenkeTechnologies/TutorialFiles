@@ -1196,9 +1196,9 @@ function fzfEnv(){
     fi
 
     sel=$(cat "${ZPWR_ENV}Key.txt" | awk '{print $2}' |
-        eval "fzf -m --border $FZF_ENV_OPTS")
-    BUFFER="$BUFFER$sel"
-    CURSOR="$#BUFFER"
+        eval "fzf -m --border $FZF_ENV_OPTS" | perl -pe 's@\n@ @g')
+    BUFFER="$LBUFFER$sel$RBUFFER"
+    CURSOR=$(($#LBUFFER + $#sel))
 
     zle reset-prompt
 }

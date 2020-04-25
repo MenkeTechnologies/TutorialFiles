@@ -13,7 +13,7 @@ if echo "$out" | command grep -i -qs 'emacs.*bg-daemon'; then
 else
     loggConsolePrefix "starting emacs daemon"
     echo "$out" | command grep -s 'emacs.*bg-daemon'
-    command emacs -nw 2>> "$ZPWR_LOGFILE" 1>&2
+    command emacs -nw --daemon 2>> "$ZPWR_LOGFILE" 1>&2
 fi
 
 # if there is a frame

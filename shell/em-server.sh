@@ -17,7 +17,7 @@ else
 fi
 
 # if there is a frame
-if emacsclient -n -s instance1 -e "(if (> (length (frame-list)) 1) 't)" 2> /dev/null | command grep -sq t; then
+if emacsclient -n -e "(if (> (length (frame-list)) 1) 't)" 2> /dev/null | command grep -sq t; then
     #attach client
     loggConsolePrefix "attach frame"
     command emacsclient -nw "$@"

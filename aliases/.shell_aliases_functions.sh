@@ -3072,14 +3072,14 @@ function changeGitAuthorEmail(){
 function changeGitEmail(){
 
     if [[ -z "$3" ]]; then
-        loggErr "need three args <oldEmail> <newName> <newEmail>"
-        return 1
-    fi
-
     if ! isGitDir; then
         loggNotGit
         return 1
     fi
+        loggErr "need three args <oldEmail> <newName> <newEmail>"
+        return 1
+    fi
+
 
     git filter-branch --env-filter '
     OLD_EMAIL="'$1'"

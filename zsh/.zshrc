@@ -842,11 +842,11 @@ function fzfWordsearchVerb(){
 
 function emacsFzfWordsearchVerbEdit(){
 
-    fzfWordsearchVerbEdit "ZPWR_EMACS"
+    fzfWordsearchVerbEdit "$ZPWR_EMACS"
 }
 
 function emacsFzfWordsearchVerb(){
-    fzfWordsearchVerb "ZPWR_EMACS"
+    fzfWordsearchVerb "$ZPWR_EMACS"
 }
 
 function vimFzfWordsearchVerbEdit(){

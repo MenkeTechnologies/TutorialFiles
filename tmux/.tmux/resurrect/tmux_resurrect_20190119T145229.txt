@@ -1,4 +1,0 @@
-pane	0	1	:zsh	1	:*	0	:/Users/wizard	0	mailx	:mailx -f mbox
-pane	0	1	:zsh	1	:*	1	:/Users/wizard/Documents/shellScripts/customTerminalInstaller	1	zsh	:
-window	0	1	1	:*	8f57,318x85,0,0{159x85,0,0,0,158x85,160,0,1}
-state	0	

@@ -1,4 +1,0 @@
-pane	0	0	:zsh	1	:*	0	:/Users/wizard	0	zsh	:-zsh
-pane	0	0	:zsh	1	:*	1	:/Users/wizard	1	zsh	:
-window	0	0	1	:*	40e5,150x87,0,0[150x57,0,0,0,150x29,0,58,1]
-state	0	

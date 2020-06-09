@@ -10,3 +10,5 @@ https://www.youtube.com/channel/UCLOQFBXPrcVvO2Wb3wna8Ow
 
 ie. .zshrc is in the zsh folder and .tmux.conf in the tmux folder
 
+# One-line Installer
+## you can find a one-line installer for all the code in this repo @ [zpwr](https://github.com/MenkeTechnologies/zpwr)

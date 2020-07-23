@@ -74,7 +74,7 @@ fpath=(${(u)fpath})
 typeset -aU path
 path=(${(u)path})
 # FPATH should not be exported
-typset +x FPATH
+typeset +x FPATH
 #}}}***********************************************************
 
 #{{{                    MARK:ZPWR Exports

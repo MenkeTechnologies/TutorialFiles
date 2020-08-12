@@ -367,13 +367,14 @@ fi
 
 #{{{                    MARK:zdharma configs pre OMZ
 #**************************************************************
-zstyle ":plugin:zconvey" output_method "zsh"
+zstyle ":plugin:zconvey" output_method "feeder"
 zstyle ":plugin:zconvey" greeting "none"
 zstyle ":plugin:zconvey" ls_after_rename "1"
 zstyle ":plugin:zconvey" use_zsystem_flock "1"
 alias za=zc-all
 alias zls=zc-all
 alias zla=zc-logo-all
+alias zn=zc-bg-notify
 #}}}***********************************************************
 
 #{{{                    MARK:Sourcing OMZ and alias file

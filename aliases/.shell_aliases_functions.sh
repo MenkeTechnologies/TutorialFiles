@@ -18,7 +18,7 @@
 # https://github.com/MenkeTechnologies
 #
 
-#{{{                    MARK:Global Fxn
+#{{{                    MARK:Import env and global fn
 #**************************************************************
 
 if ! type -- "exists" >/dev/null 2>&1;then
@@ -29,6 +29,12 @@ if ! type -- "exists" >/dev/null 2>&1;then
         exit 1
     }
 fi
+
+source "$ZPWR_SCRIPTS/crossOSCommands.sh" || {
+    echo "where is $ZPWR_SCRIPTS/crossOSCommands.sh" >&2
+    return 1
+}
+
 
 if [[ ! -d "$ZPWR_HIDDEN_DIR_TEMP" ]]; then
     mkdir -p "$ZPWR_HIDDEN_DIR_TEMP"
@@ -65,12 +71,6 @@ export PS4='>\e[1;4;39m${BASH_SOURCE}\e[37m\e[0;34m__${LINENO}\e[37m__\e[0;32m${
 export NMON='mndckt'
 export CLICOLOR="YES"
 export LSCOLORS="ExFxBxDxCxegedabagacad"
-
-source "$ZPWR_SCRIPTS/crossOSCommands.sh" || {
-    echo "where is $ZPWR_SCRIPTS/crossOSCommands.sh" >&2
-    return 1
-}
-
 export FORKED_DIR="$HOME/forkedRepos"
 export D="$HOME/Desktop"
 export PYEXECUTABLES="$HOME/Documents/pythonScripts"

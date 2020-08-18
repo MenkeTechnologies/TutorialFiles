@@ -20,10 +20,15 @@
 
 #{{{                    MARK:Global Fxn
 #**************************************************************
-source "$ZPWR_SCRIPTS/lib.sh" || {
-    echo "where is $ZPWR_SCRIPTS/lib.sh" >&2
-    return 1
-}
+
+if ! type -- "exists" >/dev/null 2>&1;then
+    test -z "$ZPWR" && export ZPWR="$HOME/.zpwr"
+    test -z "$ZPWR_ENV_FILE" && export ZPWR_ENV_FILE="$ZPWR/.zpwr_env.sh"
+    source "$ZPWR_ENV_FILE" || {
+        echo "cannot access $ZPWR_ENV_FILE" >&2
+        exit 1
+    }
+fi
 
 if [[ ! -d "$ZPWR_HIDDEN_DIR_TEMP" ]]; then
     mkdir -p "$ZPWR_HIDDEN_DIR_TEMP"

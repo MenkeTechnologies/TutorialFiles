@@ -184,42 +184,47 @@ ZSH_DISABLE_COMPFIX=true
 
 #{{{                    MARK:OMZ plugins
 #**************************************************************
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
 
-plugins=(
-    fzf-tab
-    revolver
-    zunit
-    jhipster-oh-my-zsh-plugin
-    fasd-simple
-    gh_reveal
-    zsh-travis
-    zsh-z
-    zsh-expand
-    zsh-autopair
-    zsh-gem-completion
-    zsh-pip-description-completion
-    zsh-cpan-completion
-    zsh-nginx
-    zsh-more-completions
-    history-search-multi-word
-    forgit
-    zsh-completions
-    zsh-sed-sub
-    fast-syntax-highlighting
-    zsh-autosuggestions
-    history-substring-search
-    zsh-very-colorful-manuals
-    zsh-docker-aliases
-    zsh-git-acp
-    zconvey
-    zsh-unique-id
-    zzcomplete
-    zui
-    zbrowse
-    zsh-better-npm-completion
+ZPWR_GH_PLUGINS=(
+    MenkeTechnologies/fasd-simple
+    zdharma/fast-syntax-highlighting
+    wfxr/forgit
+    MenkeTechnologies/fzf
+    MenkeTechnologies/fzf-tab
+    MenkeTechnologies/gh_reveal
+    zdharma/history-search-multi-word
+    MenkeTechnologies/jhipster-oh-my-zsh-plugin
+    MenkeTechnologies/revolver
+    zdharma/zbrowse
+    zdharma/zconvey
+    hlissner/zsh-autopair
+    zsh-users/zsh-autosuggestions
+    MenkeTechnologies/zsh-better-npm-completion
+    zsh-users/zsh-completions
+    zsh-users/zsh-history-substring-search
+    MenkeTechnologies/zsh-cpan-completion
+    akarzim/zsh-docker-aliases
+    MenkeTechnologies/zsh-expand
+    MenkeTechnologies/zsh-gem-completion
+    MenkeTechnologies/zsh-git-acp
+    MenkeTechnologies/zsh-more-completions
+    MenkeTechnologies/zsh-nginx
+    MenkeTechnologies/zsh-pip-description-completion
+    MenkeTechnologies/zsh-sed-sub
+    zsh-users/zsh-syntax-highlighting
+    zdharma/zsh-tig-plugin
+    MenkeTechnologies/zsh-travis
+    zdharma/zsh-unique-id
+    MenkeTechnologies/zsh-very-colorful-manuals
+    MenkeTechnologies/zsh-xcode-completions
+    MenkeTechnologies/zsh-z
+    MenkeTechnologies/powerlevel9k
+    zdharma/zui
+    MenkeTechnologies/zunit
+    zdharma/zzcomplete
+)
+
+ZPWR_OMZ_PLUGINS=(
     ruby
     rake
     yarn
@@ -230,38 +235,60 @@ plugins=(
     perl
     git
     github
-    gradle
     ant
     mvn
-    scala
-    lein
-    spring
-    django
+     django
     pyenv
     python
     golang
     man
     nmap
     postgres
-    redis-cli
     colorize
     sudo
     rsync
     vundle
-    rust
-    rustup
-    cargo
     meteor
     gulp
     grunt
     glassfish
     tig
-    fd
     tmux
     magic-enter
 )
 
-source "$HOME/.oh-my-zsh/lib/key-bindings.zsh"
+ZPWR_OMZ_COMPS=(
+    gradle
+    scala
+    lein
+    spring
+    redis-cli
+    rust
+    cargo
+    rustup
+    fd
+)
+
+
+if exists docker; then
+    ZPWR_OMZ_COMPS+=(docker)
+    ZPWR_GH_PLUGINS+=(akarzim/zsh-docker-aliases)
+fi
+
+if exists docker-compose; then
+    ZPWR_OMZ_PLUGINS+=(docker-compose)
+fi
+
+exists kubectl && ZPWR_GH_PLUGINS+=(MenkeTechnologies/kubectl-aliases nnao45/zsh-kubectl-completion)
+
+exists subl && ZPWR_OMZ_PLUGINS+=(sublime)
+
+exists rails && ZPWR_OMZ_PLUGINS+=(rails)
+
+if [[ $ZPWR_LEARN != false ]]; then
+    ZPWR_GH_PLUGINS+=(MenkeTechnologies/zsh-learn)
+fi
+
 #}}}***********************************************************
 
 #{{{                    MARK:forgit https://github.com/wfxr/forgit
@@ -358,43 +385,6 @@ if [[ $ZPWR_DEBUG == true ]]; then
     echo "______pre fpath size '$#fpath'" and '$fpath'"'_____ = ""'$fpath'" >> $ZPWR_LOGFILE
 fi
 
-if exists docker; then
-    plugins+=(docker zsh-docker-aliases)
-fi
-
-if exists docker-compose; then
-    plugins+=(docker-compose)
-fi
-
-exists kubectl && plugins+=(kubectl-aliases zsh-kubectl-completion)
-
-exists subl && plugins+=(sublime)
-
-exists rails && plugins+=(rails)
-
-if [[ $ZPWR_LEARN != false ]]; then
-    plugins+=(zsh-learn)
-fi
-
-
-for plug in ${plugins[@]}; do
-    if [[ -d "$ZSH/custom/plugins/$plug" ]]; then
-        # null glob - no error
-        for dir in "$ZSH/custom/plugins/$plug/"*src(N); do
-            if [[ -d "$dir" ]]; then
-                if [[ -z ${fpath[(r)$dir]} ]];then
-                    if [[ $dir = *override* ]]; then
-                        fpath=($dir $fpath)
-                    else
-                        fpath=($fpath $dir)
-                    fi
-                    # echo "add $dir to $fpath" >> "$ZPWR_LOGFILE"
-                fi
-            fi
-        done
-    fi
-done
-
 # add ZPWR autoload dirs to fpath
 fpath=($ZPWR_AUTOLOAD_LINUX $ZPWR_AUTOLOAD_DARWIN $ZPWR_AUTOLOAD_SYSTEMCTL $ZPWR_AUTOLOAD_COMMON $ZPWR_COMPS $fpath)
 
@@ -448,8 +438,31 @@ if [[ $ZPWR_DEBUG == true ]]; then
 fi
 
 # source OMZ
-source $ZSH/oh-my-zsh.sh
+# source $ZSH/oh-my-zsh.sh
 
+source "$HOME/.zinit/bin/zinit.zsh"
+
+export ZSH_CUSTOM="$HOME/.zinit"
+
+for p in $ZPWR_GH_PLUGINS; do
+    zinit load $p
+done
+
+for p in $ZPWR_OMZ_COMPS; do
+    zinit ice svn for OMZ::plugins/$p pick=null
+done
+for p in $ZPWR_OMZ_PLUGINS; do
+    zinit ice svn for OMZ::plugins/$p pick=null
+    zinit snippet OMZ::plugins/$p 2>/dev/null
+done
+
+if [[ $ZSH_DISABLE_COMPFIX != true ]]; then
+  # Load only from secure directories
+  compinit -i -C -d "${ZSH_COMPDUMP}"
+else
+  # If the user wants it, load from all found directories
+  compinit -u -C -d "${ZSH_COMPDUMP}"
+fi
 
 if [[ $ZPWR_DEBUG == true ]]; then
     echo "\npost: $fpath" >> "$ZPWR_LOGFILE"
@@ -522,7 +535,14 @@ fi
 
 #{{{                    MARK:ZLE bindkey
 #**************************************************************
+expand-or-complete-with-dots() {
+    print -Pn "%F{red}…%f"
+    zle expand-or-complete
+    zle redisplay
+}
+
 autoload -Uz select-bracketed select-quoted bracketed-paste-magic
+zle -N expand-or-complete-with-dots
 zle -N select-bracketed
 zle -N select-quoted
 zle -N zle-keymap-select
@@ -569,15 +589,15 @@ zle -N alternateQuotes
 zle -N clipboard
 zle -N EOLorNextTabStop
 
+#vim mode for zle
+bindkey -v
+
 bindkey -M vicmd '^G' what-cursor-position
 bindkey -M viins '^G' what-cursor-position
 bindkey -M viins '^[^M' self-insert-unmeta
 bindkey -M viins '^P' EOLorNextTabStop
 bindkey -M vicmd '^P' EOLorNextTabStop
 bindkey -M vicmd G end-of-buffer-or-history
-
-#vim mode for zle
-bindkey -v
 
 bindkey -M viins "^?" interceptDelete
 bindkey -M viins '"' interceptSurround
@@ -740,6 +760,8 @@ bindkey '\eOQ' sub
 
 #F3 key
 bindkey '\eOR' getrcWidget
+stty stop undef
+stty start undef
 
 #determine if this terminal was started in IDE
 if [[ "$ZPWR_OS_TYPE" == darwin ]];then
@@ -767,9 +789,6 @@ bindkey -M viins '^A' beginning-of-line
 bindkey -M vicmd '^A' beginning-of-line
 bindkey -M viins '^E' end-of-line
 bindkey -M vicmd '^E' end-of-line
-
-# env var to show dots does not work with vim mode
-bindkey '^I' expand-or-complete-with-dots
 
 bindkey '^X^R' _read_comp
 bindkey '^X?' _complete_debug
@@ -887,6 +906,10 @@ if (( $version > 5.2 )); then
         done
     done
 fi
+
+bindkey -M vicmd '^I' expand-or-complete-with-dots
+bindkey -M viins '^I' expand-or-complete-with-dots
+
 #}}}***********************************************************
 
 #{{{                    MARK:ZLE hooks
@@ -1449,8 +1472,6 @@ exists zffw || alias zffw="$ZPWR_REPO_NAME fordir 'isGitDir && { gfa;git reset o
 exists zu8 || alias zu8='zpwr updateall'
 exists zua || alias zua='zpwr updateall'
 
-
-
 alias i='if [[ '$ZPWR_TABSTOP' ]];then
     '$ZPWR_TABSTOP'
 fi'
@@ -1508,56 +1529,56 @@ alias dry="git merge-tree \$(git merge-base FETCH_HEAD master$ZPWR_TABSTOP) mast
 alias gsc="git difftool -y -x 'printf \"\\x1b[1;4m\$REMOTE\\x1b[0m\\x0a\";sdiff --expand-tabs -w '\$COLUMNS $ZPWR_TABSTOP | stdinSdiffColorizer.pl 80"
 
 if [[ -d "$ZPWR_INSTALL" ]]; then
-    exists zi || alias zi="cd $ZPWR_INSTALL"
+    alias zi="cd $ZPWR_INSTALL"
 fi
 
 if [[ -d "$ZPWR_SCRIPTS" ]]; then
-    exists zs || alias zs="cd $ZPWR_SCRIPTS"
+    alias zs="cd $ZPWR_SCRIPTS"
 fi
 
 if [[ -d "$ZPWR_COMPS" ]]; then
-    exists zco || alias zco="cd $ZPWR_COMPS"
+    alias zco="cd $ZPWR_COMPS"
 fi
 
 if [[ -d "$ZPWR_AUTOLOAD_COMMON" ]]; then
-    exists zal || alias zal="cd $ZPWR_AUTOLOAD_COMMON"
+    alias zal="cd $ZPWR_AUTOLOAD_COMMON"
 fi
 
 if [[ -d "$ZPWR_SCRIPTS_MAC" ]]; then
-    exists zsm || alias zsm="cd $ZPWR_SCRIPTS_MAC"
+    alias zsm="cd $ZPWR_SCRIPTS_MAC"
 fi
 
 if [[ -d "$ZPWR" ]]; then
-    exists zh || alias zh="cd $ZPWR"
+    alias zh="cd $ZPWR"
 fi
 
 if [[ -d "$ZPWR_TMUX" ]]; then
-    exists ztm || alias ztm="cd $ZPWR_TMUX"
+    alias ztm="cd $ZPWR_TMUX"
 fi
 
 if [[ -d "$ZPWR_TMUX" ]]; then
-    exists zt || alias zt="cd $ZPWR_TEST"
+    alias zt="cd $ZPWR_TEST"
 fi
 
 if [[ -d "$ZPWR_TMUX_LOCAL" ]]; then
-    exists ztl || alias ztl="cd $ZPWR_TMUX_LOCAL"
+    alias ztl="cd $ZPWR_TMUX_LOCAL"
 fi
 
 if [[ -d "$ZPWR_HIDDEN_DIR_TEMP" ]]; then
-    exists zlt || alias zlt="cd $ZPWR_HIDDEN_DIR_TEMP"
+    alias zlt="cd $ZPWR_HIDDEN_DIR_TEMP"
 fi
 
 if [[ -d "$ZPWR_LOCAL/installer" ]]; then
-    exists zli || alias zli="cd $ZPWR_LOCAL/installer"
+    alias zli="cd $ZPWR_LOCAL/installer"
 fi
 
 if [[ -d "$ZPWR_LOCAL" ]]; then
-    exists zl || alias zl="cd $ZPWR_LOCAL"
-    exists zlr || alias zlr="cd $ZPWR_LOCAL/rcBackups"
+    alias zl="cd $ZPWR_LOCAL"
+    alias zlr="cd $ZPWR_LOCAL/rcBackups"
 fi
 
 if [[ -d "$ZSH/custom/plugins" ]]; then
-    exists zpl || alias zpl="cd $ZSH/custom/plugins"
+    alias zpl="cd $ZSH/custom/plugins"
 fi
 
 alias numcmd='print $#commands'
@@ -1887,13 +1908,12 @@ fi
 source "$ZPWR_RE_ENV_FILE" || {
     echo "where is $ZPWR_RE_ENV_FILE" >&2
 }
+test -s "$ZPWR_ZINIT_FZF/shell/completion.zsh" \
+    && source "$ZPWR_ZINIT_FZF/shell/completion.zsh"
 
-test -s "$ZPWR_PLUGIN_DIR/fzf/shell/completion.zsh" \
-    && source "$ZPWR_PLUGIN_DIR/fzf/shell/completion.zsh"
-
-export PATH="$ZPWR_PLUGIN_DIR/fzf/bin:$PATH"
-export MANPATH="$ZPWR_PLUGIN_DIR/fzf/man:$MANPATH"
-source "$ZPWR_PLUGIN_DIR/fzf/shell/key-bindings.zsh"
+export PATH="$ZPWR_ZINIT_FZF/bin:$PATH"
+export MANPATH="$ZPWR_ZINIT_FZF/fzf/man:$MANPATH"
+source "$ZPWR_ZINIT_FZF/shell/key-bindings.zsh"
 
 if [[ -d "$ZPWR_PLUGIN_DIR" ]]; then
     : ~ZPWR_PLUGIN_DIR

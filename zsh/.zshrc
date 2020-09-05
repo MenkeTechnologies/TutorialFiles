@@ -206,7 +206,6 @@ plugins=(
     zsh-more-completions
     history-search-multi-word
     forgit
-    fzf-zsh
     zsh-completions
     zsh-sed-sub
     fast-syntax-highlighting
@@ -519,6 +518,9 @@ zc-rename $ZPWR_CONVEY_NAME &>/dev/null
 if exists jenv;then
     export PATH="$HOME/.jenv/shims:$PATH"
 fi
+export PATH="$PATH:$ZPWR_PLUGIN_DIR/fzf/bin"
+export MANPATH="$MANPATH:$ZPWR_PLUGIN_DIR/fzf/man"
+source "$ZPWR_PLUGIN_DIR/fzf/shell/key-bindings.zsh"
 #}}}***********************************************************
 
 #{{{                    MARK:ZLE bindkey
@@ -933,7 +935,7 @@ function my-accept-line () {
     commandsThatModifyFiles=(unlink rm srm to md touch chown chmod rmdir mv cp chflags chgrp ln mkdir nz git\ reset git\ clone gcl dot_clean)
 
     for command in ${commandsThatModifyFiles[@]}; do
-        regex="^sudo $command .*\$|^$command .*\$"
+        regex="^sudo[ ]+[-]*[[:alpha:]]*[ ]*(env)?[ ]+$command .*\$|^$command .*\$"
         if [[ "$BUFFER" =~ $regex ]]; then
             ZPWR_WILL_CLEAR=true
         fi

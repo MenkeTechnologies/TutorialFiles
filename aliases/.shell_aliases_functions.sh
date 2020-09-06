@@ -75,8 +75,6 @@ function chooseNvimVim(){
 #**************************************************************
 export Z_DATA="$HOME/.z"
 export PS3=$'\e[1;34m-->>>> \e[0m'
-# bash xtrace prompt
-export PS4='>\e[1;4;39m${BASH_SOURCE}\e[37m\e[0;34m__${LINENO}\e[37m__\e[0;32m${FUNCNAME[0]}> \e[0m'
 # defaut layout config for nmon
 export NMON='mndckt'
 export CLICOLOR="YES"
@@ -109,7 +107,7 @@ if ! echo "$PATH" | command grep -isq $ZPWR_SCRIPTS; then
     export PATH="$PYEXECUTABLES:$ZPWR_SCRIPTS/save-run:$HOME/.local/bin:$HOME/perl5/bin:$ZPWR_SCRIPTS:/opt/X11/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:$PATH"
 
     if [[ "$ZPWR_OS_TYPE" == darwin ]]; then
-        export CPATH="/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include"
+        #export CPATH="/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include"
         export HOMEBREW_HOME_FORMULAE="/usr/local/Homebrew/Library/taps/homebrew/homebrew-core/formula"
         export PATH="$ZPWR_SCRIPTS_MAC:$PATH:$HOME/Library/Android/sdk/tools:$HOME/Library/Android/sdk/tools/bin:$HOME/Library/Android/sdk/platform-tools:/Library/Developer/CommandLineTools/usr/bin:$HOME/.platformio/penv/bin"
     else
@@ -242,6 +240,8 @@ exists spotify && {
 }
 
 if isZsh; then
+    # zsh xtrace prompt
+    export PROMPT4=$'\e[34m%x\t%0N\t%i\t%_\e[0m\t'
     alias 10='cd -10'
     alias 11='cd -11'
     alias 12='cd -12'
@@ -252,6 +252,9 @@ if isZsh; then
     alias 17='cd -17'
     alias 18='cd -18'
     alias 19='cd -19'
+else
+    # bash xtrace prompt
+    export PS4=$'>\e[1;4;39m${BASH_SOURCE}\e[37m\e[0;34m__${LINENO}\e[37m__\e[0;32m${FUNCNAME[0]}> \e[0m'
 fi
 
 #{{{                    MARK:ALIASES for editing config files
@@ -268,7 +271,7 @@ alias zpt="builtin cd $ZPWR_TEST; vim $ZPWR_TEST/*.{zsh,zunit} $ZPWR/.travis.yml
 #}}}***********************************************************
 
 alias deleteTab="sed '/^[\x20\x09]*$/d'"
-alias ba="bash"
+alias ba="PS4=$'>\e[1;4;39m\${BASH_SOURCE}\e[37m\e[0;34m__\${LINENO}\e[37m__\e[0;32m\${FUNCNAME[0]}> \e[0m' bash"
 alias upper="tr 'a-z' 'A-Z'"
 # over aliases
 if pwd | command grep -sq --color=always / 2>/dev/null; then

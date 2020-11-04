@@ -199,6 +199,7 @@ ZPWR_GH_PLUGINS=(
     MenkeTechnologies/zunit
     zdharma/zzcomplete
     #comps
+    https://github.com/chmouel/oh-my-zsh-openshift
     MenkeTechnologies/zsh-gem-completion
     MenkeTechnologies/zsh-cpan-completion
     MenkeTechnologies/zsh-pip-description-completion

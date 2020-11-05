@@ -35,6 +35,7 @@
     custom_env_bat
     custom_env_editor
     custom_env_term
+    vi_mode
     newline                 # \n
     context
     dir                     # current directory
@@ -55,7 +56,6 @@
   # last prompt line gets hidden if it would overlap with left prompt.
   typeset -g POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(
     # =========================[ Line #1 ]=========================
-    vi_mode
     command_execution_time  # duration of the last command
     dir_writable
     background_jobs         # presence of background jobs
@@ -110,12 +110,12 @@
     time                    # current time
     # =========================[ Line #2 ]=========================
     newline
+    wifi                  # wifi speed
     ip                    # ip address and bandwidth usage for a specified network interface
-    public_ip             # public IP address
+    #public_ip             # public IP address
     proxy                 # system-wide http/https/ftp proxy
     newline                 # \n
     battery               # internal battery
-    wifi                  # wifi speed
     custom_pid
     # example               # example user-defined segment (see prompt_example function below)
   )
@@ -359,6 +359,7 @@
 
   # Branch icon. Set this parameter to '\uF126 ' for the popular Powerline branch icon.
   typeset -g POWERLEVEL9K_VCS_BRANCH_ICON='\uF126 '
+  typeset -g POWERLEVEL9K_VCS_TAG_ICON='\uF02B '
 
   # Untracked files icon. It's really a question mark, your font isn't broken.
   # Change the value of this parameter to show a different icon.
@@ -384,7 +385,7 @@
 
     # Styling for different parts of Git status.
     local       meta='%7F' # white foreground
-    local      clean='%0F' # black foreground
+    local      clean='' # black foreground
     local   modified='%0F' # black foreground
     local  untracked='%0F' # black foreground
     local conflicted='%1F' # red foreground
@@ -394,9 +395,9 @@
     if [[ -n $VCS_STATUS_LOCAL_BRANCH ]]; then
       res+="${clean}${(g::)POWERLEVEL9K_VCS_BRANCH_ICON}"
       where=${(V)VCS_STATUS_LOCAL_BRANCH}
-    elif [[ -n $VCS_STATUS_TAG ]]; then
-      res+="${meta}#"
-      where=${(V)VCS_STATUS_TAG}
+    fi
+    if [[ -n $VCS_STATUS_TAG ]]; then
+        where+=" ${(g::)POWERLEVEL9K_VCS_TAG_ICON}${(V)VCS_STATUS_TAG}"
     fi
 
     # If local branch name or tag is at most 32 characters long, show it in full.
@@ -535,7 +536,7 @@
   # Custom icon.
   # typeset -g POWERLEVEL9K_COMMAND_EXECUTION_TIME_VISUAL_IDENTIFIER_EXPANSION='⭐'
   # Custom prefix.
-  typeset -g POWERLEVEL9K_COMMAND_EXECUTION_TIME_PREFIX='took '
+  typeset -g POWERLEVEL9K_COMMAND_EXECUTION_TIME_PREFIX=''
 
   #######################[ background_jobs: presence of background jobs ]#######################
   # Background jobs color.

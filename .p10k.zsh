@@ -34,8 +34,9 @@
     custom_env
     custom_env_bat
     custom_env_editor
+    newline                 # \n
     custom_env_term
-    vi_mode
+    ip                    # ip address and bandwidth usage for a specified network interface
     newline                 # \n
     context
     dir                     # current directory
@@ -56,7 +57,6 @@
   # last prompt line gets hidden if it would overlap with left prompt.
   typeset -g POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(
     # =========================[ Line #1 ]=========================
-    command_execution_time  # duration of the last command
     dir_writable
     background_jobs         # presence of background jobs
     direnv                  # direnv status (https://direnv.net/)
@@ -103,18 +103,20 @@
     load                  # CPU load
     disk_usage            # disk usage
     ram                   # free RAM
+    newline                 # \n
     swap                  # used swap
     todo                    # todo items (https://github.com/todotxt/todo.txt-cli)
     timewarrior             # timewarrior tracking status (https://timewarrior.net/)
     taskwarrior             # taskwarrior task count (https://taskwarrior.org/)
-    time                    # current time
+    wifi                  # wifi speed
     # =========================[ Line #2 ]=========================
     newline
-    wifi                  # wifi speed
-    ip                    # ip address and bandwidth usage for a specified network interface
+    vi_mode
+    time                    # current time
     #public_ip             # public IP address
     proxy                 # system-wide http/https/ftp proxy
     newline                 # \n
+    command_execution_time  # duration of the last command
     battery               # internal battery
     custom_pid
     # example               # example user-defined segment (see prompt_example function below)
@@ -1598,7 +1600,7 @@
   # typeset -g POWERLEVEL9K_TIME_FOREGROUND=0
   # typeset -g POWERLEVEL9K_TIME_BACKGROUND=7
   # Format for the current time: 09:51:02. See `man 3 strftime`.
-  typeset -g POWERLEVEL9K_TIME_FORMAT='at %D{%H:%M:%S}'
+  typeset -g POWERLEVEL9K_TIME_FORMAT='%D{%H:%M:%S}'
   # If set to true, time will update when you hit enter. This way prompts for the past
   # commands will contain the start times of their commands as opposed to the default
   # behavior where they contain the end times of their preceding commands.
@@ -1696,23 +1698,30 @@
     POWERLEVEL9K_DIR_HOME_SUBFOLDER_FOREGROUND="white"
     POWERLEVEL9K_DIR_DEFAULT_FOREGROUND="white"
     POWERLEVEL9K_CUSTOM_ENV='echo -e "$- $ARCHFLAGS"'
-    POWERLEVEL9K_CUSTOM_ENV_BACKGROUND="green"
-    POWERLEVEL9K_CUSTOM_ENV_FOREGROUND="black"
+    POWERLEVEL9K_CUSTOM_ENV_BACKGROUND="purple"
+    POWERLEVEL9K_CUSTOM_ENV_FOREGROUND="white"
     POWERLEVEL9K_CUSTOM_ENV_BAT='echo -e "$BAT_THEME"'
-    POWERLEVEL9K_CUSTOM_ENV_BAT_BACKGROUND="blue"
-    POWERLEVEL9K_CUSTOM_ENV_BAT_FOREGROUND="black"
+    POWERLEVEL9K_CUSTOM_ENV_BAT_BACKGROUND="163"
+    POWERLEVEL9K_CUSTOM_ENV_BAT_FOREGROUND="250"
     POWERLEVEL9K_CUSTOM_ENV_TERM='echo -e "$TERM"'
     POWERLEVEL9K_CUSTOM_ENV_TERM_BACKGROUND="green"
     POWERLEVEL9K_CUSTOM_ENV_TERM_FOREGROUND="black"
     POWERLEVEL9K_CUSTOM_ENV_EDITOR='echo -e "$EDITOR"'
     POWERLEVEL9K_CUSTOM_ENV_EDITOR_BACKGROUND="red"
-    POWERLEVEL9K_CUSTOM_ENV_EDITOR_FOREGROUND="black"
+    POWERLEVEL9K_CUSTOM_ENV_EDITOR_FOREGROUND="252"
     POWERLEVEL9K_CUSTOM_PID='echo -e "\uf258 $$ \uf258  `date +%D` \uf168"'
     POWERLEVEL9K_CUSTOM_PID_BACKGROUND="green"
     POWERLEVEL9K_CUSTOM_PID_FOREGROUND="black"
     POWERLEVEL9K_CUSTOM_TTY='echo -e "%K{blue}%F{white} \Uf136 `tty` \uf168 %f%k%F{blue}%f"'
     POWERLEVEL9K_CUSTOM_TTY_BACKGROUND="blue"
     POWERLEVEL9K_CUSTOM_TTY_FOREGROUND="white"
+
+    #first line connection
+    POWERLEVEL9K_MULTILINE_FIRST_PROMPT_GAP_CHAR='─'
+    POWERLEVEL9K_MULTILINE_FIRST_PROMPT_GAP_FOREGROUND='57'
+    #second to last line connection
+    POWERLEVEL9K_MULTILINE_NEWLINE_PROMPT_GAP_CHAR='─'
+    POWERLEVEL9K_MULTILINE_NEWLINE_PROMPT_GAP_FOREGROUND='57'
     milliamps(){
     amps="$(ioreg -rc AppleSmartBattery | grep CurrentCapacity | awk '{printf "%s mAh\n", $3}')"
     echo -e "$amps \uf168"

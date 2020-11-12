@@ -59,6 +59,8 @@ ZPWR_VERBS[emacsallserver]='emacsAllServer=emacs all zpwr files for :argdo'
 ZPWR_VERBS[emacsalledit]='emacsAllEdit=emacs edit 1 or more configs'
 ZPWR_VERBS[emacsautoload]='emacsAutoload=emacs all autoloads :argdo'
 ZPWR_VERBS[emacscd]='ce=emacs edit and cd to first dir'
+ZPWR_VERBS[emacsplugincount]='zpwrEmacsPluginCount=total number of emacs plugins in \$ZPWR'
+ZPWR_VERBS[emacspluginlist]='zpwrEmacsPluginList=total list of emacs plugins in \$ZPWR'
 ZPWR_VERBS[emacsrecent]='emacsRecent=emacs edit most recent vim files'
 ZPWR_VERBS[emacsrecentsudo]='sudoEmacsRecent=emacs edit most vim recent files'
 ZPWR_VERBS[emacszpwr]='emacsZpwr=emacs zpwr dir'
@@ -161,8 +163,6 @@ ZPWR_VERBS[install]='inst=run configure, make and make install'
 ZPWR_VERBS[kill]='killPSVerbAccept=kill from ps output'
 ZPWR_VERBS[killedit]='killPSVerbEdit=edit kill from ps output'
 ZPWR_VERBS[killmux]='tmux kill-server=kill tmux server'
-ZPWR_VERBS[learn]='savel=save learning to \$ZPWR_SCHEMA_NAME.\$ZPWR_TABLE_NAME'
-ZPWR_VERBS[learnsearch]='se=search for learning in \$ZPWR_SCHEMA_NAME.\$ZPWR_TABLE_NAME'
 ZPWR_VERBS[linecount]='zpwrLineCount=get line count of search term from command'
 ZPWR_VERBS[list]='listNoClear=list the files with no args'
 ZPWR_VERBS[loadjenv]='loadJenv=lazy load jenv, calls jenv $@'
@@ -332,9 +332,11 @@ if [[ -n "$verb" ]]; then
                 if alias $exp 1>/dev/null 2>&1;then
                     logg "Eval subcommand '$exp'"
                     eval "$exp"
+                    ret=$?
                 else
                     logg "Exec subcommand '$exp'"
                     eval "$exp " ${(q)@}
+                    ret=$?
                 fi
             done
             break
@@ -345,5 +347,7 @@ if [[ -n "$verb" ]]; then
         loggErr "Unknown subcommand: '$verb'"
         return 1
     fi
+
+    return $ret
 fi
 

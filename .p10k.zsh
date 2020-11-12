@@ -111,13 +111,13 @@
     wifi                  # wifi speed
     # =========================[ Line #2 ]=========================
     newline
-    vi_mode
+    battery               # internal battery
     time                    # current time
     #public_ip             # public IP address
     proxy                 # system-wide http/https/ftp proxy
     newline                 # \n
     command_execution_time  # duration of the last command
-    battery               # internal battery
+    vi_mode
     custom_pid
     # example               # example user-defined segment (see prompt_example function below)
   )
@@ -1716,12 +1716,13 @@
     POWERLEVEL9K_CUSTOM_TTY_BACKGROUND="blue"
     POWERLEVEL9K_CUSTOM_TTY_FOREGROUND="white"
 
+    local p9k_colo=4
     #first line connection
     POWERLEVEL9K_MULTILINE_FIRST_PROMPT_GAP_CHAR='─'
-    POWERLEVEL9K_MULTILINE_FIRST_PROMPT_GAP_FOREGROUND='57'
+    POWERLEVEL9K_MULTILINE_FIRST_PROMPT_GAP_FOREGROUND="$p9k_colo"
     #second to last line connection
     POWERLEVEL9K_MULTILINE_NEWLINE_PROMPT_GAP_CHAR='─'
-    POWERLEVEL9K_MULTILINE_NEWLINE_PROMPT_GAP_FOREGROUND='57'
+    POWERLEVEL9K_MULTILINE_NEWLINE_PROMPT_GAP_FOREGROUND="$p9k_colo"
     milliamps(){
     amps="$(ioreg -rc AppleSmartBattery | grep CurrentCapacity | awk '{printf "%s mAh\n", $3}')"
     echo -e "$amps \uf168"

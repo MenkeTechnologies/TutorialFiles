@@ -191,7 +191,6 @@ ZPWR_GH_PLUGINS=(
     MenkeTechnologies/revolver
     zdharma/zbrowse
     zsh-users/zsh-completions
-    MenkeTechnologies/zsh-docker-aliases
     MenkeTechnologies/zsh-git-acp
     MenkeTechnologies/zsh-sudo
     MenkeTechnologies/zsh-nginx
@@ -264,7 +263,9 @@ ZPWR_OMZ_COMPS=(
 
 if exists docker; then
     ZPWR_OMZ_COMPS+=(docker)
-    ZPWR_GH_PLUGINS+=(akarzim/zsh-docker-aliases)
+    ZPWR_GH_PLUGINS+=(
+    MenkeTechnologies/zsh-docker-aliases
+    )
 fi
 
 if exists docker-compose; then
@@ -413,7 +414,7 @@ zicompinit() {
 # late load prompt and call precmd fns first thing after prompt loads
 
 zinit ice lucid nocd nocompile wait'!' atinit'bindPowerline;bindPowerlineTmux;bindZpwrDirs' atload'_powerline_set_jobnum &> /dev/null;_powerline_set_main_keymap_name &> /dev/null;bindPreCmd; _p9k_precmd &> /dev/null'
-zinit load MenkeTechnologies/powerlevel10k
+zinit load MenkeTechnologies/zpwrp10k
 
 # late
 for p in $ZPWR_OMZ_COMPS; do

@@ -118,7 +118,7 @@ fi
 
 if [[ "$ZPWR_PLUGIN_MANAGER" == zinit ]]; then
     if [[ ! -d "$ZPWR_PLUGIN_MANAGER_HOME" ]]; then
-        prettyPrintBox "Installing zinit"
+        zpwrPrettyPrintBox "Installing zinit"
         mkdir "$ZPWR_PLUGIN_MANAGER_HOME"
         git clone https://github.com/zdharma/zinit.git "$ZPWR_PLUGIN_MANAGER_HOME/bin"
     fi
@@ -302,7 +302,7 @@ fi
 function zpwrTokenPre() {
     if test -f "$ZPWR_TOKEN_PRE"; then
         if ! source "$ZPWR_TOKEN_PRE"; then
-            loggErr "could not source ZPWR_TOKEN_PRE '$ZPWR_TOKEN_PRE'"
+            zpwrLoggErr "could not source ZPWR_TOKEN_PRE '$ZPWR_TOKEN_PRE'"
         fi
     else
         touch "$ZPWR_TOKEN_PRE"
@@ -349,7 +349,7 @@ fi
 fpath=($ZPWR_AUTOLOAD_SYSTEMCTL $ZPWR_AUTOLOAD_COMMON $ZPWR_AUTOLOAD_COMP_UTILS $ZPWR_COMPS $fpath)
 #}}}***********************************************************
 #
-#{{{                    MARK:autoload
+#{{{                    MARK:Autoload
 #**************************************************************
 autoload -z $ZPWR_AUTOLOAD_COMMON/*(.:t) $ZPWR_AUTOLOAD_COMP_UTILS/*(.:t)
 autoload -Uz zrecompile zm zargs compinit
@@ -375,9 +375,14 @@ else
     fpath=($ZPWR_AUTOLOAD_LINUX $fpath)
     autoload -z $ZPWR_AUTOLOAD_LINUX/*(.:t)
 fi
+
+if commandExists fzf; then
+    fpath=($ZPWR_AUTOLOAD_FZF $fpath)
+    autoload -z $ZPWR_AUTOLOAD_FZF/*(.:t)
+fi
 #}}}***********************************************************
 
-#{{{                    MARK:pre zinit
+#{{{                    MARK:Pre plugin manager
 #**************************************************************
 bindkey -v
 
@@ -389,7 +394,7 @@ function zpwrTokenPost() {
     # source .tokens.sh to override with user functions
     if test -f "$ZPWR_TOKEN_POST"; then
         if ! source "$ZPWR_TOKEN_POST"; then
-            loggErr "could not source ZPWR_TOKEN_POST '$ZPWR_TOKEN_POST'"
+            zpwrLoggErr "could not source ZPWR_TOKEN_POST '$ZPWR_TOKEN_POST'"
         fi
     else
         touch "$ZPWR_TOKEN_POST"
@@ -401,95 +406,110 @@ function zpwrTokenPost() {
 }
 #}}}***********************************************************
 
-#{{{                    MARK:ZINIT
+#{{{                    MARK:ZPWR_PLUGIN_MANAGER
 #**************************************************************
-source "$ZPWR_PLUGIN_MANAGER_HOME/bin/zinit.zsh"
-# tell zinit where compsy cache file is
-ZINIT[ZCOMPDUMP_PATH]="$ZSH_COMPDUMP"
+if [[ "$ZPWR_PLUGIN_MANAGER" == zinit ]]; then
+    source "$ZPWR_PLUGIN_MANAGER_HOME/bin/zinit.zsh"
+    # tell zinit where compsy cache file is
+    ZINIT[ZCOMPDUMP_PATH]="$ZSH_COMPDUMP"
 
-#override zicompinit
-zicompinit() {
-    compinit -u -d ${ZINIT[ZCOMPDUMP_PATH]:-${ZDOTDIR:-$HOME}/.zcompdump} "${(Q@)${(z@)ZINIT[COMPINIT_OPTS]}}" 2>/dev/null
-}
+    #override zicompinit
+    zicompinit() {
+        compinit -u -d ${ZINIT[ZCOMPDUMP_PATH]:-${ZDOTDIR:-$HOME}/.zcompdump} "${(Q@)${(z@)ZINIT[COMPINIT_OPTS]}}" 2>/dev/null
+    }
 
-# late load prompt and call precmd fns first thing after prompt loads
+    # late load prompt and call precmd fns first thing after prompt loads
 
-zinit ice lucid nocd nocompile wait'!' atinit'bindPowerline;bindPowerlineTmux;bindZpwrDirs' atload'_powerline_set_jobnum &> /dev/null;_powerline_set_main_keymap_name &> /dev/null;bindPreCmd; _p9k_precmd &> /dev/null'
-zinit load MenkeTechnologies/zpwrp10k
+    zinit ice lucid nocd nocompile wait'!' atinit'zpwrBindPowerline;zpwrBindPowerlineTmux;zpwrBindDirs' atload'_powerline_set_jobnum &> /dev/null;_powerline_set_main_keymap_name &> /dev/null;zpwrBindPreCmd; _p9k_precmd &> /dev/null'
+    zinit load MenkeTechnologies/zpwrp10k
 
-# late
-for p in $ZPWR_OMZ_COMPS; do
-    zinit ice svn lucid nocompile as'completion' pick'null' wait
-    zinit snippet OMZ::plugins/$p
-done
+    # late
+    for p in $ZPWR_OMZ_COMPS; do
+        zinit ice svn lucid nocompile as'completion' pick'null' wait
+        zinit snippet OMZ::plugins/$p
+    done
 
-for p in $ZPWR_OMZ_LIBS; do
-    zinit ice lucid nocompile wait atload='omzOverrides'
-    zinit snippet OMZ::lib/$p
-done
+    for p in $ZPWR_OMZ_LIBS; do
+        zinit ice lucid nocompile wait atload='zpwrOmzOverrides'
+        zinit snippet OMZ::lib/$p
+    done
 
-# late
-for p in $ZPWR_OMZ_PLUGINS; do
-    zinit ice svn lucid nocompile wait
-    zinit snippet OMZ::plugins/$p
-done
+    # late
+    for p in $ZPWR_OMZ_PLUGINS; do
+        zinit ice svn lucid nocompile wait
+        zinit snippet OMZ::plugins/$p
+    done
 
-# late GH plugins
-for p in $ZPWR_GH_PLUGINS; do
-    zinit ice lucid nocompile  wait
-    zinit load $p
-done
+    # late GH plugins
+    for p in $ZPWR_GH_PLUGINS; do
+        zinit ice lucid nocompile  wait
+        zinit load $p
+    done
 
-unset p
-
-
-zinit ice lucid nocompile wait atinit='bindOverrideOMZ;bindForGit'
-zinit load \
-    MenkeTechnologies/forgit
-
-zinit ice lucid nocompile wait atinit='bindZdharma' atload'bindZdharmaPost'
-zinit load \
-    zdharma/zconvey
-
-# late bind autopair keystrokes
-zinit ice lucid nocompile wait'0' atload='bindInterceptSurround'
-zinit load \
-    hlissner/zsh-autopair
-
-# override OMZ/plugin aliases with own aliases
-zinit ice lucid nocompile wait'0a' \
-atload'bindAliasesLate;createAliasCache;bindAliasesZshLate;bindOverrideZLE;'
-zinit load \
-    MenkeTechnologies/zsh-expand
+    unset p
 
 
-# late bind keystrokes, must come before syntax highlight
-zinit ice lucid nocompile wait'0b' atload'bindHistorySubstring'
-zinit load \
-    zsh-users/zsh-history-substring-search
+    zinit ice lucid nocompile wait atinit='zpwrBindOverrideOMZ;zpwrBindForGit'
+    zinit load \
+        MenkeTechnologies/forgit
+
+    zinit ice lucid nocompile wait atinit='zpwrBindZdharma' atload'zpwrBindZdharmaPost'
+    zinit load \
+        zdharma/zconvey
+
+    # late bind autopair keystrokes
+    zinit ice lucid nocompile wait'0' atload='zpwrBindInterceptSurround'
+    zinit load \
+        hlissner/zsh-autopair
+
+    # override OMZ/plugin aliases with own aliases
+    zinit ice lucid nocompile wait'0a' \
+    atload'zpwrBindAliasesLate;zpwrCreateAliasCache;zpwrBindAliasesZshLate;zpwrBindOverrideZLE;'
+    zinit load \
+        MenkeTechnologies/zsh-expand
 
 
-# late , must come before syntax highlight
-zinit ice lucid nocompile wait'0c' atload'_zsh_autosuggest_start;bindFZFLate;bindZpwrVerbs;bindZpwrZstyle'
-zinit load \
-    zsh-users/zsh-autosuggestions
+    # late bind keystrokes, must come before syntax highlight
+    zinit ice lucid nocompile wait'0b' atload'zpwrBindHistorySubstring'
+    zinit load \
+        zsh-users/zsh-history-substring-search
 
-# late , must be last to load
-# runs ZLE keybindings to override other late loaders
-# runs compinit
-zinit ice lucid nocompile wait'0d' atinit'bindPenultimate;bindFinal;zpwrTokenPost'
-zinit load \
-    zdharma/fast-syntax-highlighting
 
-# use fpath NOT symlinks into ~/.zinit/completions
-# to have more-completions be last resort and not overrride system completions
-zinit ice lucid nocompile wait'0e' nocompletions atload='zpwrDedupPaths'
-zinit load \
-    MenkeTechnologies/zsh-more-completions
+    # late , must come before syntax highlight
+    zinit ice lucid nocompile wait'0c' atload'_zsh_autosuggest_start;zpwrBindFZFLate;zpwrBindVerbs;zpwrBindZstyle'
+    zinit load \
+        zsh-users/zsh-autosuggestions
 
-zinit ice lucid nocompile nocd as'null' wait"$ZPWR_ZINIT_COMPINIT_DELAY" atinit'zicompinit; zicdreplay; bindOverrideOMZCompdefs'
-zinit light \
-    MenkeTechnologies/zsh-zinit-final
+    # late , must be last to load
+    # runs ZLE keybindings to override other late loaders
+    # runs compinit
+    zinit ice lucid nocompile wait'0d' atinit'zpwrBindPenultimate;zpwrBindFinal;zpwrTokenPost'
+    zinit load \
+        zdharma/fast-syntax-highlighting
+
+    # use fpath NOT symlinks into ~/.zinit/completions
+    # to have more-completions be last resort and not overrride system completions
+    zinit ice lucid nocompile wait'0e' nocompletions atload='zpwrDedupPaths'
+    zinit load \
+        MenkeTechnologies/zsh-more-completions
+
+    zinit ice lucid nocompile nocd as'null' wait"$ZPWR_ZINIT_COMPINIT_DELAY" atinit'zicompinit; zicdreplay;zpwrBindOverrideOMZCompdefs'
+    zinit light \
+        MenkeTechnologies/zsh-zinit-final
+elif [[ "$ZPWR_PLUGIN_MANAGER" == oh-my-zsh ]]; then
+
+    plugins+=(
+        ${ZPWR_OMZ_COMPS[@]}
+        ${ZPWR_OMZ_PLUGINS[@]}
+        ${ZPWR_GH_PLUGINS[@]}
+    )
+
+    source "$ZPWR_PLUGIN_MANAGER_HOME/oh-my-zsh.sh"
+
+else
+
+    zpwrLoggErr "Unsupported ZPWR_PLUGIN_MANAGER '$ZPWR_PLUGIN_MANAGER'!"
+fi
 
 if [[ $ZSH_DISABLE_COMPFIX != true ]]; then
   # Load only from secure directories
@@ -516,8 +536,8 @@ zpwrStaleZcompdump
 #if ! (( $+_comps[z] )); then
     #zpwrRetryZcompdump
 #else
-    #loggDebug "found '${_comps[z]}' for z so used cached '$ZSH_COMPDUMP'"
-    #loggDebug "_comps size: '$#_comps' fpath length: '$#fpath' path length: '$#path'"
+    #zpwrLoggDebug "found '${_comps[z]}' for z so used cached '$ZSH_COMPDUMP'"
+    #zpwrLoggDebug "_comps size: '$#_comps' fpath length: '$#fpath' path length: '$#path'"
 #fi
 
 # change history size in memory
@@ -528,12 +548,12 @@ export SAVEHIST="$HISTSIZE"
 
 #{{{                    MARK:Zpwr verbs
 #**************************************************************
-# late loaded in autoload/common/bindZpwrVerbs
+# late loaded in autoload/common/zpwrBindVerbs
 #}}}***********************************************************
 
 #{{{                    MARK:ZLE bindkey
 #**************************************************************
-# ZLE keybindings late loaded in autoload/common/bindOverrideZLE
+# ZLE keybindings late loaded in autoload/common/zpwrBindOverrideZLE
 # this is to override any late loaded plugins with keybindings
 #}}}***********************************************************
 
@@ -676,7 +696,7 @@ setopt no_flow_control
 
 #{{{                    MARK:FZF
 #**************************************************************
-# run in autoload/common/bindFZFLate
+# run in autoload/common/zpwrBindFZFLate
 #}}}***********************************************************
 
 #{{{                    MARK:Custom Compsys Functions
@@ -724,7 +744,7 @@ alias tm='tmux'
 
 endTimestamp=$EPOCHREALTIME
 startupTimeMs=$(printf "%.3f" $((endTimestamp - startTimestamp)))
-loggDebug "zsh startup took $startupTimeMs seconds"
+zpwrLoggDebug "zsh startup took $startupTimeMs seconds"
 
 ZPWR_VARS[startTimestamp]="$startTimestamp"
 ZPWR_VARS[endTimestamp]="$endTimestamp"

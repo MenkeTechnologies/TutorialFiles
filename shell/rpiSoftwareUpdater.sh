@@ -38,50 +38,50 @@ else
     unset zpwrBaseDir
 fi
 
-prettyPrint "Updating Tmux Plugins"
-gitRepoUpdater "$HOME/.tmux/plugins"
+zpwrPrettyPrint "Updating Tmux Plugins"
+zpwrGitRepoUpdater "$HOME/.tmux/plugins"
 
-prettyPrint "Updating Pathogen Plugins"
+zpwrPrettyPrint "Updating Pathogen Plugins"
 #update pathogen plugins
-gitRepoUpdater "$HOME/.vim/bundle"
+zpwrGitRepoUpdater "$HOME/.vim/bundle"
 
 if [[ $ZPWR_PLUGIN_MANAGER == oh-my-zsh ]]; then
-        prettyPrint "Updating OhMyZsh"
+        zpwrPrettyPrint "Updating OhMyZsh"
         builtin cd "$ZSH/tools" && bash "$ZSH/tools/upgrade.sh"
 
-        prettyPrint "Updating OhMyZsh Plugins"
-        gitRepoUpdater "$ZSH_CUSTOM/plugins"
+        zpwrPrettyPrint "Updating OhMyZsh Plugins"
+        zpwrGitRepoUpdater "$ZSH_CUSTOM/plugins"
 
-        prettyPrint "Updating OhMyZsh Themes"
-        gitRepoUpdater "$ZSH_CUSTOM/themes"
+        zpwrPrettyPrint "Updating OhMyZsh Themes"
+        zpwrGitRepoUpdater "$ZSH_CUSTOM/themes"
 elif [[ $ZPWR_PLUGIN_MANAGER == zinit ]]; then
-    prettyPrint "Updating Zinit"
-    gitRepoUpdater "$ZSH_CUSTOM/plugins"
+    zpwrPrettyPrint "Updating Zinit"
+    zpwrGitRepoUpdater "$ZSH_CUSTOM/plugins"
 fi
 
 cargo_bin="$HOME/.cargo/bin/cargo"
 commandExists "$cargo_bin" && {
-    prettyPrint "Updating cargo packages"
+    zpwrPrettyPrint "Updating cargo packages"
     "$cargo_bin" install cargo-update 2>/dev/null
     "$cargo_bin" install-update -a
 }
 rustup_bin="$HOME/.cargo/bin/rustup"
 commandExists "$rustup_bin" && {
-    prettyPrint "Updating rustup"
+    zpwrPrettyPrint "Updating rustup"
     "$rustup_bin" update
 }
 
-prettyPrint "Updating Vundle Plugins"
+zpwrPrettyPrint "Updating Vundle Plugins"
 #vim -c VundleUpdate -c quitall
 
-alternatingPrettyPrint "Updating Ruby ${ZPWR_DELIMITER_CHAR}Gems${ZPWR_DELIMITER_CHAR} for ${ZPWR_DELIMITER_CHAR}$(whoami)${ZPWR_DELIMITER_CHAR} on ${ZPWR_DELIMITER_CHAR}$(hostname)${ZPWR_DELIMITER_CHAR}"
+zpwrAlternatingPrettyPrint "Updating Ruby ${ZPWR_DELIMITER_CHAR}Gems${ZPWR_DELIMITER_CHAR} for ${ZPWR_DELIMITER_CHAR}$(whoami)${ZPWR_DELIMITER_CHAR} on ${ZPWR_DELIMITER_CHAR}$(hostname)${ZPWR_DELIMITER_CHAR}"
 sudo gem update
 
 commandExists npm && {
-    alternatingPrettyPrint "Updating ${ZPWR_DELIMITER_CHAR}NPM${ZPWR_DELIMITER_CHAR} packages for ${ZPWR_DELIMITER_CHAR}$(whoami)${ZPWR_DELIMITER_CHAR} on${ZPWR_DELIMITER_CHAR}$(hostname)${ZPWR_DELIMITER_CHAR}"
+    zpwrAlternatingPrettyPrint "Updating ${ZPWR_DELIMITER_CHAR}NPM${ZPWR_DELIMITER_CHAR} packages for ${ZPWR_DELIMITER_CHAR}$(whoami)${ZPWR_DELIMITER_CHAR} on${ZPWR_DELIMITER_CHAR}$(hostname)${ZPWR_DELIMITER_CHAR}"
     for package in $(npm -g outdated --parseable --depth=0 | cut -d: -f4); do
         sudo npm install -g "$package"
     done
-    alternatingPrettyPrint "Updating ${ZPWR_DELIMITER_CHAR}NPM${ZPWR_DELIMITER_CHAR} itself for ${ZPWR_DELIMITER_CHAR}$(whoami)${ZPWR_DELIMITER_CHAR} on ${ZPWR_DELIMITER_CHAR}$(hostname)${ZPWR_DELIMITER_CHAR}"
+    zpwrAlternatingPrettyPrint "Updating ${ZPWR_DELIMITER_CHAR}NPM${ZPWR_DELIMITER_CHAR} itself for ${ZPWR_DELIMITER_CHAR}$(whoami)${ZPWR_DELIMITER_CHAR} on ${ZPWR_DELIMITER_CHAR}$(hostname)${ZPWR_DELIMITER_CHAR}"
     sudo npm install -g npm
 }

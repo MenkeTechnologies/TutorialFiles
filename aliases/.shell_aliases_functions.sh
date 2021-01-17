@@ -51,7 +51,6 @@ export PS3=$'\e[1;34m-->>>> \e[0m'
 export NMON='mndckt'
 export CLICOLOR="YES"
 export LSCOLORS="ExFxBxDxCxegedabagacad"
-export FORKED_DIR="$HOME/forkedRepos"
 export D="$HOME/Desktop"
 export PYEXECUTABLES="$HOME/Documents/pythonScripts"
 export ZPWR_PYSCRIPTS="$HOME/PycharmProjects/fromShell"
@@ -68,6 +67,8 @@ export LESS="-M -N -R -K -F -X"
 
 if [[ -z "$TMUX" ]]; then
     export TERM="xterm-256color"
+else
+    export NCURSES_NO_UTF8_ACS=1
 fi
 #}}}***********************************************************
 

@@ -8,11 +8,12 @@
 ##### Notes: escape $ in comments for perl subs
 #}}}***********************************************************
 
-if [[ -z $ZPWR_VERBS ]]; then
+if ! (( $+ZPWR_VERBS )) || [[ ${parameters[ZPWR_VERBS]} != association ]]; then
+
     declare -Ag ZPWR_VERBS
 fi
 
-if [[ -z $ZPWR_VARS ]]; then
+if ! (( $+ZPWR_VARS )) || [[ ${parameters[ZPWR_VARS]} != association ]]; then
     declare -Ag ZPWR_VARS
 fi
 
@@ -61,6 +62,8 @@ ZPWR_VARS[VERB_0]="$0"
     ZPWR_VERBS[clearls]='zpwrClearList=clear and list the files with no args'
     ZPWR_VERBS[clearlist]='zpwrClearList=clear and list the files with no args'
     ZPWR_VERBS[clone]='gcl=clone and cd to arg'
+    ZPWR_VERBS[colortest]='zpwrColorTest=test colors'
+    ZPWR_VERBS[colortest256]='zpwr256ColorTest=test 256 colors'
     ZPWR_VERBS[zpwrCloneToForked]='zpwrCloneToForked=clone \$ZPWR_REPO_NAME to \$ZPWR_FORKED_DIR'
     ZPWR_VERBS[colorsdiff]='gsdc=colorized side diff'
     ZPWR_VERBS[color2]='color2=turn on stderr filter'
@@ -145,8 +148,8 @@ ZPWR_VARS[VERB_0]="$0"
     ZPWR_VERBS[gitemail]='zpwrChangeGitEmail=change email with git filter-brancch'
     ZPWR_VERBS[gitcemail]='zpwrChangeGitCommitterEmail=change committer email with git filter-brancch'
     ZPWR_VERBS[gitaemail]='zpwrChangeGitAuthorEmail=change author email with git filter-brancch'
-    ZPWR_VERBS[gitcommit]='gacpCommitAndPush=commit and push with arg message'
-    ZPWR_VERBS[gitcommitcount]='gacpCommitCount=count commits'
+    ZPWR_VERBS[gitcommit]='zsh-gacp-CommitAndPush=commit and push with arg message'
+    ZPWR_VERBS[gitcommitcount]='zsh-gacp-CommitCount=count commits'
     ZPWR_VERBS[gitcommits]='zpwrCommits=search git commits with fzf'
     ZPWR_VERBS[gitcontribcount]='zpwrContribCount=count of git contribs by author'
     ZPWR_VERBS[gitcontribcountdirs]='zpwrContribCountDirs=count of git contribs by author for list of dirs'
@@ -222,6 +225,7 @@ ZPWR_VARS[VERB_0]="$0"
     ZPWR_VERBS[opencommand]='zpwrGetOpenCommand=get the command to open with system'
     ZPWR_VERBS[pastecommand]='zpwrGetPasteCommand=get the command to paste with system'
     ZPWR_VERBS[pastebuffer]='zpwrPasteToBuffer=paste clipboard to BUFFER'
+    ZPWR_VERBS[pastestring]='zpwrPasteToStdout=paste clipboard to stdout'
     ZPWR_VERBS[pir]='pir=run command on all devices'
     ZPWR_VERBS[plugins]='zpl=cd to \$ZSH_CUSTOM/plugins'
     ZPWR_VERBS[poll]='zpwrPoll=poll git remote and run command'
@@ -260,6 +264,9 @@ ZPWR_VARS[VERB_0]="$0"
     ZPWR_VERBS[scripts]='zs=cd to scripts directory'
     ZPWR_VERBS[scripttopdf]='zpwrScriptToPDF=convert script to PDF'
     ZPWR_VERBS[search]='s=search google for args'
+    ZPWR_VERBS[startsend]='zpwrStartSend=dup some keys to pane'
+    ZPWR_VERBS[startsendfull]='zpwrStartSendFull=dup all keys to pane'
+    ZPWR_VERBS[stopsend]='zpwrStopSend=stop dup keys to pane'
     ZPWR_VERBS[subcommands]='zpwrVerbsNoZLE=run the subcommands for zpwr <tab>'
     ZPWR_VERBS[subcommandsedit]='zpwrVerbsEditNoZLE=edit the subcommands for zpwr <tab>'
     ZPWR_VERBS[subcommandsfzf]='zpwrVerbsFZF=fzf the subcommands for zpwr <tab>'

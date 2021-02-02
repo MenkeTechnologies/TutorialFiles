@@ -205,6 +205,7 @@ ZPWR_GH_PLUGINS=(
     zdharma/zui
     MenkeTechnologies/zunit
     zdharma/zzcomplete
+    marlonrichert/zsh-hist
     #comps
     MenkeTechnologies/zsh-gem-completion
     MenkeTechnologies/zsh-cargo-completion
@@ -409,7 +410,7 @@ function zpwrTokenPost() {
 if [[ "$ZPWR_PLUGIN_MANAGER" == zinit ]]; then
     builtin declare -A ZINIT
     ZINIT[ZCOMPDUMP_PATH]="$ZSH_COMPDUMP"
-    ZINIT[COMPINIT_OPTS]='-C'
+    ZINIT[COMPINIT_OPTS]='-C -u'
     builtin source "$ZPWR_PLUGIN_MANAGER_HOME/bin/zinit.zsh"
     # tell zinit where compsy cache file is
 
@@ -494,7 +495,7 @@ if [[ "$ZPWR_PLUGIN_MANAGER" == zinit ]]; then
     zinit load \
         MenkeTechnologies/zsh-more-completions
 
-    zinit ice lucid nocompile nocd as'null' wait"$ZPWR_ZINIT_COMPINIT_DELAYf" \
+    zinit ice lucid nocompile nocd as'null' wait"${ZPWR_ZINIT_COMPINIT_DELAY}f" \
         atinit'zicompinit; zicdreplay;zpwrBindOverrideOMZCompdefs'
     zinit light \
         MenkeTechnologies/zsh-zinit-final
@@ -553,7 +554,7 @@ zpwrStaleZcompdump
 # change history size in memory
 builtin export HISTSIZE=999999999
 # change history file size
-builtin export SAVEHIST="$HISTSIZE"
+builtin export SAVEHIST=99999999
 #}}}***********************************************************
 
 #{{{                    MARK:Zpwr verbs

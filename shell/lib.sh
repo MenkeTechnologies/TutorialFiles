@@ -11,24 +11,24 @@
 #**************************************************************
 function zpwrIsZsh(){
 
-    [[ $(command ps -o command= -p $$) =~ (^-?|/)zsh ]]
+    test -n $ZSH_VERSION
 }
 
 if zpwrIsZsh; then
 
-    if ! type -- zpwrExists>/dev/null 2>&1; then
+    if ! type -a -- zpwrExists>/dev/null 2>&1; then
 
         function zpwrExists(){
             #alternative is command -v
-            type -- "$1" &>/dev/null || return 1 &&
-            [[ $(type -- "$1" 2>/dev/null) != *"suffix alias"* ]]
+            type -a -- "$1" &>/dev/null || return 1 &&
+            [[ $(type -a -- "$1" 2>/dev/null) != *"suffix alias"* ]]
         }
     fi
 else
     function zpwrExists(){
 
         #alternative is command -v
-        type -- "$1" >/dev/null 2>&1
+        type -a -- "$1" >/dev/null 2>&1
     }
 fi
 

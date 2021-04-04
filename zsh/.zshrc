@@ -355,7 +355,7 @@ fpath=($ZPWR_AUTOLOAD_SYSTEMCTL $ZPWR_AUTOLOAD_COMMON $ZPWR_AUTOLOAD_COMP_UTILS 
 #{{{                    MARK:Autoload
 #**************************************************************
 builtin autoload -z $ZPWR_AUTOLOAD_COMMON/*(.:t) $ZPWR_AUTOLOAD_COMP_UTILS/*(.:t)
-builtin autoload -Uz zrecompile zm zargs compinit
+builtin autoload -Uz zrecompile zmv zargs compinit
 
 if [[ "$ZPWR_OS_TYPE" == "darwin" ]];then
     ZPWR_OMZ_PLUGINS+=( brew osx )
@@ -457,7 +457,7 @@ if [[ "$ZPWR_PLUGIN_MANAGER" == zinit ]]; then
 
     zinit ice lucid nocompile wait atinit='zpwrBindZdharma' atload'zpwrBindZdharmaPost'
     zinit load \
-        zdharma/zconvey
+        MenkeTechnologies/zconvey
 
     # late bind autopair keystrokes
     zinit ice lucid nocompile wait'0' atload='zpwrBindInterceptSurround'
@@ -470,37 +470,41 @@ if [[ "$ZPWR_PLUGIN_MANAGER" == zinit ]]; then
     zinit load \
         MenkeTechnologies/zsh-expand
 
+    if [[ $ZPWR_AUTO_COMPLETE == true ]]; then
+        zinit ice lucid nocompile wait"0b" atinit='zpwrBindOverrideAutoComplete'
+    zinit load \
+        MenkeTechnologies/zsh-autocomplete
+    fi
 
     # late bind keystrokes, must come before syntax highlight
-    zinit ice lucid nocompile wait'0b' atload'zpwrBindHistorySubstring'
+    zinit ice lucid nocompile wait'0c' atload'zpwrBindHistorySubstring'
     zinit load \
         zsh-users/zsh-history-substring-search
 
-
     # late , must come before syntax highlight
-    zinit ice lucid nocompile wait'0c' \
+    zinit ice lucid nocompile wait'0d' \
         atload'_zsh_autosuggest_start; zpwrBindFZFLate; zpwrBindVerbs; zpwrBindZstyle'
     zinit load \
         zsh-users/zsh-autosuggestions
 
     # late loaded, must be last to load
     # runs ZLE keybindings to override other late loaders
-    zinit ice lucid nocompile wait'0d' atinit'zpwrBindPenultimate; zpwrBindFinal; zpwrTokenPost'
+    zinit ice lucid nocompile wait'0e' atinit'zpwrBindPenultimate; zpwrBindFinal; zpwrTokenPost'
     zinit load \
         MenkeTechnologies/zsh-zinit-final
 
     # use fpath NOT symlinks into ~/.zinit/completions
     # to have more-completions be last resort and not overrride system completions
-    zinit ice lucid nocompile wait'0e' nocompletions
+    zinit ice lucid nocompile wait'0f' nocompletions
     zinit load \
         MenkeTechnologies/zsh-more-completions
 
-    zinit ice lucid nocompile nocd as'null' wait"${ZPWR_ZINIT_COMPINIT_DELAY}f" \
+    zinit ice lucid nocompile nocd as'null' wait"${ZPWR_ZINIT_COMPINIT_DELAY}g" \
         atinit'zicompinit; zicdreplay;zpwrBindOverrideOMZCompdefs'
     zinit light \
         MenkeTechnologies/zsh-zinit-final
 
-    zinit ice lucid nocompile wait"${ZPWR_ZINIT_COMPINIT_DELAY}g" nocompletions atload='zpwrDedupPaths'
+    zinit ice lucid nocompile wait"${ZPWR_ZINIT_COMPINIT_DELAY}h" nocompletions atload='zpwrDedupPaths;zpwrBindPreexecChpwd'
     zinit load \
         zdharma/fast-syntax-highlighting
 
@@ -710,15 +714,20 @@ builtin setopt no_flow_control
 
 #{{{                    MARK:Custom Compsys Functions
 #**************************************************************
-# list of completers to use
-builtin zstyle ':completion:*' completer _expand _ignored _megacomplete _approximate _correct
-#builtin zstyle ':completion:*:*:*:*:functions' ignored-patterns
+function zpwrBindMenu() {
+    # list of completers to use
 
-if [[ "$ZPWR_INTERACTIVE_MENU_SELECT" == true ]]; then
-   builtin zstyle ':completion:*:*:*:*:*' menu select=0 interactive
-else
-   builtin zstyle ':completion:*:*:*:*:*' menu select=0
-fi
+    builtin zstyle ':completion:*' completer _expand _ignored _megacomplete _approximate _correct
+    #builtin zstyle ':completion:*:*:*:*:functions' ignored-patterns
+
+    if [[ "$ZPWR_INTERACTIVE_MENU_SELECT" == true ]]; then
+    builtin zstyle ':completion:*:*:*:*:*' menu select=0 interactive
+    else
+    builtin zstyle ':completion:*:*:*:*:*' menu select=0
+    fi
+}
+
+zpwrBindMenu
 #}}}***********************************************************
 
 

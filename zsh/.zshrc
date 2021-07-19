@@ -131,7 +131,7 @@ fi
 #**************************************************************
 builtin export LC_ALL="en_US.UTF-8"
 # stop delay when entering normal mode
-builtin export KEYTIMEOUT=1
+builtin export KEYTIMEOUT="$ZPWR_KEYTIMEOUT"
 builtin export SHELL="$(which zsh)"
 # default vi-backward-delete-char does not delete paste insert point
 builtin export AUTOPAIR_BKSPC_WIDGET='.backward-delete-char'
@@ -185,7 +185,6 @@ ZSH_DISABLE_COMPFIX=true
 ZPWR_GH_PLUGINS=(
     MenkeTechnologies/zsh-z
     MenkeTechnologies/fasd-simple
-    MenkeTechnologies/fzf
     MenkeTechnologies/fzf-tab
     MenkeTechnologies/gh_reveal
     zdharma/history-search-multi-word
@@ -206,6 +205,7 @@ ZPWR_GH_PLUGINS=(
     MenkeTechnologies/zunit
     zdharma/zzcomplete
     marlonrichert/zsh-hist
+    MenkeTechnologies/fzf-zsh-plugin
     #comps
     MenkeTechnologies/zsh-gem-completion
     MenkeTechnologies/zsh-cargo-completion
@@ -297,7 +297,7 @@ fi
 zpwrCommandExists rails && ZPWR_OMZ_PLUGINS+=( rails )
 
 if [[ $ZPWR_LEARN != false ]]; then
-    ZPWR_GH_PLUGINS=( MenkeTechnologies/zsh-learn $ZPWR_GH_PLUGINS )
+    ZPWR_GH_PLUGINS=($ZPWR_GH_PLUGINS  MenkeTechnologies/zsh-learn )
 fi
 
 #}}}***********************************************************
@@ -445,15 +445,20 @@ if [[ "$ZPWR_PLUGIN_MANAGER" == zinit ]]; then
         zinit snippet OMZ::plugins/$p
     done
 
+
     # late GH plugins
     for p in $ZPWR_GH_PLUGINS; do
-        zinit ice lucid nocompile  wait
+        zinit ice lucid nocompile wait
         zinit load $p
     done
 
     builtin unset p
 
-    zinit ice as"program" pick"bin/git-fuzzy"
+    zinit ice as'program' lucid nocompile pick'bin/fzf' wait
+    zinit load MenkeTechnologies/fzf
+
+
+    zinit ice as'program' lucid pick'bin/git-fuzzy' wait
     zinit load bigH/git-fuzzy
 
 

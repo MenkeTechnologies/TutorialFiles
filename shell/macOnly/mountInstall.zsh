@@ -84,6 +84,11 @@ function vstInstall(){
         if ! echo "$f" | perl -ne 'exit 1 if '"$blackList"; then
             continue
         fi
+
+        if ! [[ -d "$f" ]]; then
+            continue
+        fi
+
         bold "---------- VST $f ----------"
         reg "sudo cp -R \"$f\" /Library/Audio/Plug-Ins/VST"
         sudo cp -R "$f" /Library/Audio/Plug-Ins/VST
@@ -95,6 +100,11 @@ function vstInstall(){
         if ! echo "$f" | perl -ne 'exit 1 if '"$blackList"; then
             continue
         fi
+
+        if ! [[ -d "$f" ]]; then
+            continue
+        fi
+
         bold "---------- VST3 $f ----------"
         reg "sudo cp -R \"$f\" /Library/Audio/Plug-Ins/VST3"
         sudo cp -R "$f" /Library/Audio/Plug-Ins/VST3
@@ -106,6 +116,11 @@ function vstInstall(){
         if ! echo "$f" | perl -ne 'exit 1 if '"$blackList"; then
             continue
         fi
+
+        if ! [[ -d "$f" ]]; then
+            continue
+        fi
+
         bold "---------- AU $f ----------"
         reg "sudo cp -R \"$f\" /Library/Audio/Plug-Ins/Components"
         sudo cp -R "$f" /Library/Audio/Plug-Ins/Components
@@ -155,6 +170,7 @@ function main() {
     }
 
         pkgInstall "$tempMount"
+        vstInstall "$tempMount"
 
         files=( "$tempMount"/*(N) )
 
@@ -178,11 +194,12 @@ if [[ -z "$1" ]]; then
     fail "usage: mountInstall.sh <dir>"
 fi
 
-base="${1:A}"
-shift
 
-banner "Starting VST/VST3/AU/DMG/PKG/MPKG Installer by MenkeTechnologies at $base..."
+for base in "${@}"; do
+    base="${base:A}"
+    banner "Starting VST/VST3/AU/DMG/PKG/MPKG Installer by MenkeTechnologies at $base..."
+    main
+done
 
-main "$@"
 
 clean

@@ -53,6 +53,7 @@ function zpwrForDirRarZipProcess() {
 
         if ! builtin cd -q "$dir"; then
             zpwrForDirRarZipErr "can not cd to $dir"
+            stack[$idx]=()
             continue
         else
             zpwrLogDebug "At $PWD"
@@ -78,25 +79,9 @@ function zpwrForDirRarZipProcess() {
     #set +x
 
 }
+function zpwrForDirZipRarRm() {
 
-function zpwrForDirZipRarMain() {
-
-    emulate -L zsh
-    local old dirs dir f files
-    setopt nullglob extendedglob
-
-    if [[ -n "$@" ]]; then
-        dirs=( ${@}(/) )
-    else
-        dirs=( ${~dirGlob} )
-    fi
-
-    old="$PWD"
-    for dir in "${dirs[@]}"; do
-        zpwrPrettyPrint "Processing $dir"
-        zpwrForDirRarZipProcess "$dir"
-    done
-    builtin cd -q "$old"
+    local files a f
 
     files=( ${(v)ZPWR_PROCESSED[@]} )
 
@@ -116,6 +101,35 @@ function zpwrForDirZipRarMain() {
             done
         fi
     fi
+}
+
+function zpwrForDirZipRarMain() {
+
+    emulate -L zsh
+    local old dirs dir
+    setopt nullglob extendedglob noshwordsplit
+
+    zpwrPrettyPrint "Gathering dirs..."
+    if [[ -n "$@" ]]; then
+        dirs=()
+        for dir; do
+            if [[ -d "$dir" ]]; then
+                dirs+=( ${dir:a} )
+            fi
+        done
+    else
+        dirs=( ${~dirGlob} )
+    fi
+
+    old="$PWD"
+    for dir in "${dirs[@]}"; do
+        zpwrPrettyPrint "Processing $dir"
+        zpwrForDirRarZipProcess "$dir"
+    done
+    builtin cd -q "$old"
+
+    zpwrForDirZipRarRm
+
 }
 
 dirGlob='*~@*~__MACOS*~*.vst(|3)~*.component~*.app~*.(|m)pkg(/:A)'

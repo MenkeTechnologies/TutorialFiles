@@ -121,10 +121,10 @@ if [[ ! -d "$ZPWR_LOCAL_TEMP" ]]; then
 fi
 
 if [[ "$ZPWR_PLUGIN_MANAGER" == zinit ]]; then
-    if [[ ! -d "$ZPWR_PLUGIN_MANAGER_HOME" ]]; then
+    if [[ ! -d "$ZPWR_PLUGIN_MANAGER_HOME/bin" ]]; then
         zpwrPrettyPrintBox "Installing zinit"
-        command mkdir "$ZPWR_PLUGIN_MANAGER_HOME"
-        command git clone https://github.com/zdharma/zinit.git "$ZPWR_PLUGIN_MANAGER_HOME/bin"
+        command mkdir -p "$ZPWR_PLUGIN_MANAGER_HOME/bin"
+        command git clone https://github.com/zdharma-continuum/zinit.git "$ZPWR_PLUGIN_MANAGER_HOME/bin"
     fi
 fi
 #}}}***********************************************************
@@ -189,23 +189,23 @@ ZPWR_GH_PLUGINS=(
     MenkeTechnologies/fasd-simple
     MenkeTechnologies/fzf-tab
     MenkeTechnologies/gh_reveal
-    zdharma/history-search-multi-word
+    zdharma-continuum/history-search-multi-word
     MenkeTechnologies/jhipster-oh-my-zsh-plugin
     MenkeTechnologies/revolver
-    zdharma/zbrowse
+    zdharma-continuum/zbrowse
     zsh-users/zsh-completions
     MenkeTechnologies/zsh-git-acp
     MenkeTechnologies/zsh-sudo
     MenkeTechnologies/zsh-nginx
     MenkeTechnologies/zsh-sed-sub
-    zdharma/zsh-tig-plugin
+    zdharma-continuum/zsh-tig-plugin
     MenkeTechnologies/zsh-travis
     MenkeTechnologies/zsh-git-repo-cache
-    zdharma/zsh-unique-id
+    zdharma-continuum/zsh-unique-id
     MenkeTechnologies/zsh-very-colorful-manuals
-    zdharma/zui
+    zdharma-continuum/zui
     MenkeTechnologies/zunit
-    zdharma/zzcomplete
+    zdharma-continuum//zzcomplete
     marlonrichert/zsh-hist
     MenkeTechnologies/fzf-zsh-plugin
     #comps
@@ -523,7 +523,7 @@ if [[ "$ZPWR_PLUGIN_MANAGER" == zinit ]]; then
 
     zinit ice lucid nocompile wait"${ZPWR_ZINIT_COMPINIT_DELAY}h" nocompletions atload='zpwrDedupPaths;zpwrBindPreexecChpwd'
     zinit load \
-        zdharma/fast-syntax-highlighting
+        zdharma-continuum/fast-syntax-highlighting
 
 elif [[ "$ZPWR_PLUGIN_MANAGER" == oh-my-zsh ]]; then
 
@@ -596,6 +596,9 @@ builtin zmodload -i zsh/complist
 
 # allow '' escape
 builtin setopt rc_quotes
+
+# allow **.c
+builtin setopt globstarshort
 
 # Allow comments even in interactive shells (especially for Muness)
 builtin setopt interactive_comments

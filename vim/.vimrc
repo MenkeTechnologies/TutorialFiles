@@ -169,6 +169,8 @@ endif
 " vimtex
 let g:tex_flavor = "latex"
 
+let g:autotagStartMethod='fork'
+
 " enable AutoSave on Vim startup
 let g:auto_save = 1
 " do not display the auto-save notification
@@ -1573,7 +1575,7 @@ if os == 'Darwin'
     map <ESC>[1;5C <C-Right>
     map <ESC>[1;5D <C-Left>
 elseif os == 'Linux'
-    let distro = substitute(system('grep "^ID=" /etc/os-release | cut -d= -f2 | tr -d \"'), '\n', '', '')
+    let distro = $ZPWR_DISTRO_NAME
 
     if distro == 'ubuntu'
         map <ESC>[A <C-Up>

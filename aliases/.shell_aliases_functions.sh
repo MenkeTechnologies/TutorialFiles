@@ -35,6 +35,11 @@ source "$ZPWR_SCRIPTS/crossOSCommands.sh" || {
     return 1
 }
 
+source "$ZPWR_SCRIPTS/crossOSExecute.sh" || {
+    echo "where is $ZPWR_SCRIPTS/crossOSExecute.sh" >&2
+    return 1
+}
+
 
 if [[ ! -d "$ZPWR_LOCAL_TEMP" ]]; then
     mkdir -p "$ZPWR_LOCAL_TEMP"
@@ -68,7 +73,67 @@ if [[ -z "$TMUX" ]]; then
 else
     export NCURSES_NO_UTF8_ACS=1
 fi
+
+if [[ "$ZPWR_OS_TYPE" == darwin ]]; then
+    #export CPATH="/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include"
+
+    if [[ -d "/opt/homebrew" ]]; then
+        export HOMEBREW_PREFIX='/opt/homebrew'
+        export HOMEBREW_HOME_FORMULAE="$HOMEBREW_PREFIX/Library/taps/homebrew/homebrew-core/formula"
+        export NODE_HOME="$HOMEBREW_PREFIX/lib/node_modules"
+        export NODE_PATH="$NODE_HOME:$YARN_HOME/global/node_modules"
+    else
+        export HOMEBREW_PREFIX='/usr/local'
+        export HOMEBREW_HOME_FORMULAE="$HOMEBREW_PREFIX/Homebrew/Library/taps/homebrew/homebrew-core/formula"
+    fi
+    export HOMEBREW_CELLAR="$HOMEBREW_PREFIX/Cellar"
+    export HOMEBREW_OPT_HOME="$HOMEBREW_PREFIX/opt"
+    export HOMEBREW_DBHOME="$HOMEBREW_PREFIX/var"
+    export HOMEBREW_DB_CONF="$HOMEBREW_PREFIX/etc"
+    export PIP3_HOME="$HOMEBREW_PREFIX/lib/$ZPWR_PYTHON/site-packages"
+    export GROOVY_LIB="$HOMEBREW_OPT_HOME/groovy"
+    export SCALA_HOME="$HOMEBREW_OPT_HOME/scala"
+    export PERL_HOME="$HOMEBREW_OPT_HOME/perl"
+    #eval `perl -I ~/perl5/lib/perl5 -Mlocal::lib`
+    export MANPATH=$HOME/perl5/man:$MANPATH
+    export MANPATH="$HOMEBREW_OPT_HOME/erlang/lib/erlang/man:$HOMEBREW_PREFIX/share/man:$MANPATH"
+    export TUTORIAL_FILES="$HOME/Documents/tutorialsRepo"
+
+    if [[ "$ZPWR_USE_NEOVIM" == true ]]; then
+        if zpwrExists nvim; then
+            export EDITOR='nvim'
+            export PSQL_EDITOR='nvim -c "setf sql"'
+        else
+            export EDITOR='vim'
+            export PSQL_EDITOR='vim -c "setf sql"'
+        fi
+    else
+        if zpwrExists mvim; then
+            export EDITOR='mvim -v'
+            export PSQL_EDITOR='mvim -v -c "setf sql"'
+        else
+            export EDITOR='vim'
+            export PSQL_EDITOR='vim -c "setf sql"'
+        fi
+    fi
+else
+    export PIP3_HOME="/usr/local/lib/$ZPWR_PYTHON/site-packages"
+    if [[ "$ZPWR_USE_NEOVIM" == true ]]; then
+        if zpwrExists nvim; then
+            export EDITOR='nvim'
+            export PSQL_EDITOR='nvim -c "setf sql"'
+        else
+            export EDITOR='vim'
+            export PSQL_EDITOR='vim -c "setf sql"'
+        fi
+    else
+        export EDITOR='vim'
+        export PSQL_EDITOR='vim -c "setf sql"'
+    fi
+fi
 #}}}***********************************************************
+
+#}}}
 
 #{{{                    MARK:PATH
 #**************************************************************
@@ -84,21 +149,8 @@ if ! echo "$PATH" | command grep -isq "$ZPWR_SCRIPTS"; then
 
         if [[ -d "/opt/homebrew" ]]; then
             export PATH="/opt/homebrew/bin:$PATH"
-            export HOMEBREW_PREFIX='/opt/homebrew'
-            export HOMEBREW_HOME_FORMULAE="$HOMEBREW_PREFIX/Library/taps/homebrew/homebrew-core/formula"
-            export NODE_HOME="$HOMEBREW_PREFIX/lib/node_modules"
-            export NODE_PATH="$NODE_HOME:$YARN_HOME/global/node_modules"
-        else
-            export HOMEBREW_PREFIX='/usr/local'
-            export HOMEBREW_HOME_FORMULAE="$HOMEBREW_PREFIX/Homebrew/Library/taps/homebrew/homebrew-core/formula"
         fi
-        export HOMEBREW_CELLAR="$HOMEBREW_PREFIX/Cellar"
-        export HOMEBREW_OPT_HOME="$HOMEBREW_PREFIX/opt"
-        export HOMEBREW_DBHOME="$HOMEBREW_PREFIX/var"
-        export HOMEBREW_DB_CONF="$HOMEBREW_PREFIX/etc"
-        export PIP3_HOME="$HOMEBREW_PREFIX/lib/$ZPWR_PYTHON/site-packages"
     else
-        export PIP3_HOME="/usr/local/lib/$ZPWR_PYTHON/site-packages"
         export PATH="$PATH:/usr/games"
     fi
 
@@ -106,50 +158,6 @@ if ! echo "$PATH" | command grep -isq "$ZPWR_SCRIPTS"; then
 
 #}}}***********************************************************
 
-#{{{                           MARK:HOMES
-#**********************************************************************
-    if [[ "$ZPWR_OS_TYPE" == darwin ]];then
-        export GROOVY_LIB="$HOMEBREW_OPT_HOME/groovy"
-        export SCALA_HOME="$HOMEBREW_OPT_HOME/scala"
-        export PERL_HOME="$HOMEBREW_OPT_HOME/perl"
-        #eval `perl -I ~/perl5/lib/perl5 -Mlocal::lib`
-        export MANPATH=$HOME/perl5/man:$MANPATH
-        export MANPATH="$HOMEBREW_OPT_HOME/erlang/lib/erlang/man:$HOMEBREW_PREFIX/share/man:$MANPATH"
-        export TUTORIAL_FILES="$HOME/Documents/tutorialsRepo"
-
-        if [[ "$ZPWR_USE_NEOVIM" == true ]]; then
-            if zpwrExists nvim; then
-                export EDITOR='nvim'
-                export PSQL_EDITOR='nvim -c "setf sql"'
-            else
-                export EDITOR='vim'
-                export PSQL_EDITOR='vim -c "setf sql"'
-            fi
-        else
-            if zpwrExists mvim; then
-                export EDITOR='mvim -v'
-                export PSQL_EDITOR='mvim -v -c "setf sql"'
-            else
-                export EDITOR='vim'
-                export PSQL_EDITOR='vim -c "setf sql"'
-            fi
-        fi
-    else
-        if [[ "$ZPWR_USE_NEOVIM" == true ]]; then
-            if zpwrExists nvim; then
-                export EDITOR='nvim'
-                export PSQL_EDITOR='nvim -c "setf sql"'
-            else
-                export EDITOR='vim'
-                export PSQL_EDITOR='vim -c "setf sql"'
-            fi
-        else
-            export EDITOR='vim'
-            export PSQL_EDITOR='vim -c "setf sql"'
-        fi
-    fi
-#**************************************************************
-#}}}
 
 #{{{                    MARK:Rust Config
 #**************************************************************

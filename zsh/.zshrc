@@ -115,6 +115,10 @@ function zpwrInitEnv() {
 }
 
 zpwrInitEnv
+#
+# You may need to manually set your language environment
+# has all aliases and functions common to bourne like shells
+builtin test -s "$ZPWR_ALIAS_FILE" && builtin source "$ZPWR_ALIAS_FILE"
 
 if [[ ! -d "$ZPWR_LOCAL_TEMP" ]]; then
     command mkdir -p "$ZPWR_LOCAL_TEMP"
@@ -124,7 +128,7 @@ if [[ "$ZPWR_PLUGIN_MANAGER" == zinit ]]; then
     if [[ ! -d "$ZPWR_PLUGIN_MANAGER_HOME/bin" ]]; then
         zpwrPrettyPrintBox "Installing zinit"
         command mkdir -p "$ZPWR_PLUGIN_MANAGER_HOME/bin"
-        command git clone https://github.com/zdharma-continuum/zinit.git "$ZPWR_PLUGIN_MANAGER_HOME/bin"
+        command git clone https://github.com/$ZPWR_ZDHARMA/zinit.git "$ZPWR_PLUGIN_MANAGER_HOME/bin"
     fi
 fi
 #}}}***********************************************************
@@ -189,23 +193,23 @@ ZPWR_GH_PLUGINS=(
     MenkeTechnologies/fasd-simple
     MenkeTechnologies/fzf-tab
     MenkeTechnologies/gh_reveal
-    zdharma-continuum/history-search-multi-word
+    $ZPWR_ZDHARMA/history-search-multi-word
     MenkeTechnologies/jhipster-oh-my-zsh-plugin
     MenkeTechnologies/revolver
-    zdharma-continuum/zbrowse
+    $ZPWR_ZDHARMA/zbrowse
     zsh-users/zsh-completions
     MenkeTechnologies/zsh-git-acp
     MenkeTechnologies/zsh-sudo
     MenkeTechnologies/zsh-nginx
     MenkeTechnologies/zsh-sed-sub
-    zdharma-continuum/zsh-tig-plugin
+    $ZPWR_ZDHARMA/zsh-tig-plugin
     MenkeTechnologies/zsh-travis
     MenkeTechnologies/zsh-git-repo-cache
-    zdharma-continuum/zsh-unique-id
+    $ZPWR_ZDHARMA/zsh-unique-id
     MenkeTechnologies/zsh-very-colorful-manuals
-    zdharma-continuum/zui
+    $ZPWR_ZDHARMA/zui
     MenkeTechnologies/zunit
-    zdharma-continuum//zzcomplete
+    $ZPWR_ZDHARMA/zzcomplete
     marlonrichert/zsh-hist
     MenkeTechnologies/fzf-zsh-plugin
     #comps
@@ -218,11 +222,10 @@ ZPWR_GH_PLUGINS=(
 )
 
 ZPWR_OMZ_PLUGINS=(
-    rustup
+    rust
     ruby
     rake
     yarn
-    ng
     coffee
     node
     npm
@@ -256,6 +259,7 @@ ZPWR_OMZ_LIBS=(
 )
 
 ZPWR_OMZ_COMPS=(
+    ng
     scala
     lein
     spring
@@ -290,10 +294,11 @@ zpwrCommandExists svn && ZPWR_OMZ_PLUGINS+=( svn )
 
 zpwrCommandExists adb && ZPWR_OMZ_COMPS+=( adb )
 
-if [[ $ZPWR_OS_TYPE == debian ]]; then
-    ZPWR_OMZ_PLUGINS+=( debian )
-elif [[ $ZPWR_OS_TYPE == ubuntu ]]; then
-    ZPWR_OMZ_PLUGINS+=( ubuntu )
+if [[ $ZPWR_OS_TYPE == linux ]]; then
+    zpwrOsDebVsUbuntu \
+        'ZPWR_OMZ_PLUGINS+=( debian )' \
+        'ZPWR_OMZ_PLUGINS+=( ubuntu )' \
+        'ZPWR_EXA_EXTENDED=false'
 elif [[ $ZPWR_OS_TYPE == darwin ]]; then
     ZPWR_OMZ_PLUGINS+=( xcode )
 fi
@@ -363,7 +368,7 @@ builtin autoload -z $ZPWR_AUTOLOAD_COMMON/*(.:t) $ZPWR_AUTOLOAD_COMP_UTILS/*(.:t
 builtin autoload -Uz zrecompile zmv zargs compinit
 
 if [[ "$ZPWR_OS_TYPE" == "darwin" ]];then
-    ZPWR_OMZ_PLUGINS+=( brew osx )
+    ZPWR_OMZ_PLUGINS+=( brew macos )
     ZPWR_OMZ_COMPS+=( pod )
 
     # add ZPWR autoload dirs to fpath
@@ -523,7 +528,7 @@ if [[ "$ZPWR_PLUGIN_MANAGER" == zinit ]]; then
 
     zinit ice lucid nocompile wait"${ZPWR_ZINIT_COMPINIT_DELAY}h" nocompletions atload='zpwrDedupPaths;zpwrBindPreexecChpwd'
     zinit load \
-        zdharma-continuum/fast-syntax-highlighting
+        $ZPWR_ZDHARMA/fast-syntax-highlighting
 
 elif [[ "$ZPWR_PLUGIN_MANAGER" == oh-my-zsh ]]; then
 
@@ -553,10 +558,6 @@ fi
 #if [[ $ZPWR_DEBUG == true ]]; then
     #echo "\npost: $fpath" >> "$ZPWR_LOGFILE"
 #fi
-#
-# You may need to manually set your language environment
-# has all aliases and functions common to bourne like shells
-builtin test -s "$ZPWR_ALIAS_FILE" && builtin source "$ZPWR_ALIAS_FILE"
 #}}}***********************************************************
 
 #{{{                    MARK:Override OMZ config

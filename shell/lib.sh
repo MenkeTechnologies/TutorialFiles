@@ -19,16 +19,32 @@ if zpwrIsZsh; then
     if ! type -a -- zpwrExists>/dev/null 2>&1; then
 
         function zpwrExists(){
+
+            if [[ -z "$1" ]]; then
+                zpwrLogConsoleErr "usage: zpwrExists <item...>"
+                return 1
+            fi
+            local i
             #alternative is command -v
-            type -a -- "$1" &>/dev/null || return 1 &&
-            [[ $(type -a -- "$1" 2>/dev/null) != *"suffix alias"* ]]
+            for i in "$@";do
+                type -a -- "$i" &>/dev/null || return 1 &&
+                [[ $(type -a -- "$i" 2>/dev/null) != *"suffix alias"* ]]
+            done
         }
     fi
 else
     function zpwrExists(){
 
+        if [[ -z "$1" ]]; then
+            zpwrLogConsoleErr "usage: zpwrExists <item...>"
+            return 1
+        fi
+        local i
+
         #alternative is command -v
-        type -a -- "$1" >/dev/null 2>&1
+        for i in "$@";do
+            type -a -- "$i" >/dev/null 2>&1
+        done
     }
 fi
 
@@ -46,7 +62,15 @@ function zpwrStdinExists(){
 
 function zpwrCommandExists(){
 
-    type -ap -- "$1" >/dev/null 2>&1
+    if [[ -z "$1" ]]; then
+        zpwrLogConsoleErr "usage: zpwrCommandExists <command...>"
+        return 1
+    fi
+    local cmd
+
+    for cmd in "$@"; do
+        type -ap -- "$cmd" >/dev/null 2>&1 || return 1
+    done
 }
 
 function zpwrBlocksToSize(){

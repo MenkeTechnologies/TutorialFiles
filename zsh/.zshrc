@@ -73,16 +73,11 @@ function zpwrDedupPaths() {
     # mess up OMZ fpath check if should remove zcompdump
     fpath=(${(u)fpath})
     path=(${(u)path})
-    manpath=(${(u)manpath})
+    manpath=(${(u)manpath} ':')
 }
 
-# duplicates slow down searching
-builtin declare -aU fpath
-builtin declare -aU path
-builtin declare -aU manpath
 # FPATH should not be exported
 builtin declare +x FPATH
-zpwrDedupPaths
 #}}}***********************************************************
 
 #{{{                    MARK:ZPWR source env file which sources lib
@@ -621,9 +616,6 @@ builtin setopt append_history
 
 # save timestamp of command and duration
 builtin setopt extended_history
-
-# Add comamnds as they are typed, don't wait until shell exit
-builtin setopt inc_append_history
 
 # when trimming history, lose oldest duplicates first
 builtin setopt hist_expire_dups_first

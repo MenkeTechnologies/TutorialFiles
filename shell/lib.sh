@@ -341,6 +341,10 @@ function zpwrGoInstallerOutputDir(){
 
     ret=0
 
+    if [[ ! -d "$ZPWR_INSTALLER_OUTPUT" ]]; then
+        command mkdir -p "$ZPWR_INSTALLER_OUTPUT"
+    fi
+
     builtin cd "$ZPWR_INSTALLER_OUTPUT" || ret=1
 
     if [[ "$(pwd)" != "$ZPWR_INSTALLER_OUTPUT" ]]; then
@@ -447,6 +451,8 @@ function zpwrInstallerUpdate(){
             brew install "$1"
         elif [[ $2 == debian ]];then
             sudo apt-get install -y "$1"
+        elif [[ $2 == alpine ]];then
+            sudo apk add "$1"
         elif [[ $2 == suse ]];then
             sudo zypper --non-interactive install "$1"
         elif [[ $2 == arch ]];then
@@ -469,6 +475,9 @@ function zpwrInstallerUpgrade(){
     elif [[ $1 == debian ]];then
         sudo apt-get update -y
         sudo apt-get upgrade -y
+    elif [[ $1 == alpine ]];then
+        sudo apk update
+        sudo apk upgrade
     elif [[ $1 == suse ]];then
         sudo zypper --non-interactive update
     elif [[ $1 == arch ]];then
@@ -489,6 +498,8 @@ function zpwrInstallerRefresh(){
     elif [[ $1 == debian ]];then
         sudo apt-get update -y
         sudo apt-get autoremove -y
+    elif [[ $1 == alpine ]];then
+        sudo apk update
     elif [[ $1 == suse ]];then
         sudo zypper refresh
     elif [[ $1 == arch ]];then

@@ -21,6 +21,8 @@ ZPWR_VARS[VERB_0]="$0"
 
 () {
     local k v verb cmd found ret exp
+    emulate -L zsh
+    setopt nullglob globdots extendedglob
 
 
     ZPWR_VERBS[about]='zpwrAbout=show $ZPWR_REPO_NAME banner'
@@ -234,9 +236,11 @@ ZPWR_VARS[VERB_0]="$0"
     ZPWR_VERBS[makedir]='jd=make a dir tree'
     ZPWR_VERBS[makefile]='j=make a dir tree with file at end'
     ZPWR_VERBS[man]='fm=fzf through man pages'
+    ZPWR_VERBS[modules]='zpwrModulesFZF=show zsh modules'
     ZPWR_VERBS[mygithub]='zpwrOpenmygh=open github profile'
     ZPWR_VERBS[open]='o=open with system'
     ZPWR_VERBS[opencommand]='zpwrGetOpenCommand=get the command to open with system'
+    ZPWR_VERBS[options]='zpwrOptionsFZF=show zsh options'
     ZPWR_VERBS[pastecommand]='zpwrGetPasteCommand=get the command to paste with system'
     ZPWR_VERBS[pastebuffer]='zpwrPasteToBuffer=paste clipboard to $BUFFER'
     ZPWR_VERBS[pastestring]='zpwrPasteToStdout=paste clipboard to stdout'
@@ -360,6 +364,7 @@ ZPWR_VARS[VERB_0]="$0"
     ZPWR_VERBS[z]='z=cd to z frecency ranked dir'
 
     if zpwrCommandExists systemctl; then
+        ZPWR_VERBS[restart]='restart=restart zpwr systemd service'
         ZPWR_VERBS[serviceup]='ssu=start and enable systemd service'
         ZPWR_VERBS[servicedown]='ssd=stop and disable systemd service'
     fi

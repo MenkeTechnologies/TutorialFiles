@@ -590,11 +590,23 @@ builtin export SAVEHIST=99999999
 # fish like menu select search
 builtin zmodload -i zsh/complist
 
+# l=*
+builtin setopt glob_assign
+
+# long format
+builtin setopt long_list_jobs
+
+# !!:s/*//
+builtin setopt histsubst_pattern
+
 # allow '' escape
 builtin setopt rc_quotes
 
 # allow **.c
 builtin setopt globstarshort
+
+# allow {abcd0-9} expansion
+builtin setopt braceccl
 
 # Allow comments even in interactive shells (especially for Muness)
 builtin setopt interactive_comments
@@ -690,6 +702,9 @@ builtin setopt numeric_glob_sort
 # global substitution is case insensitive
 builtin setopt nocaseglob
 
+# =cmd
+builtin setopt equals
+
 # filename completion after =
 builtin setopt magic_equal_subst
 
@@ -717,7 +732,7 @@ builtin setopt pathdirs
 builtin setopt list_packed
 
 # increase max size for directory stack
-builtin export DIRSTACKSIZE=20
+builtin export DIRSTACKSIZE=50
 
 # so we can bind ^S and ^Q
 builtin setopt no_flow_control

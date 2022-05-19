@@ -27,6 +27,7 @@ ZPWR_VARS[VERB_0]="$0"
 
     ZPWR_VERBS[about]='zpwrAbout=show $ZPWR_REPO_NAME banner'
     ZPWR_VERBS[a]='zpwrCleanRefreshCountsTestUpdate=banner, counts, clean, refresh zwc, test and update deps'
+    ZPWR_VERBS[alacritty]='zpwrAlacritty=edit $ZPWR_ALACRITTY_CFG'
     ZPWR_VERBS[all]='zpwrCleanRefreshCountsTestUpdate=banner, counts, clean, refresh zwc, test and update deps'
     ZPWR_VERBS[allsearch]='zpwrFzfAllKeybind=search all keybindings'
     ZPWR_VERBS[altprettyprint]='zpwrAlternatingPrettyPrint=pretty with alternating color'
@@ -80,6 +81,7 @@ ZPWR_VARS[VERB_0]="$0"
     ZPWR_VERBS[detach]='zpwrDetachall=detach from all tmux sessions'
     ZPWR_VERBS[digs]='digs=run series on networking commands on arg'
     ZPWR_VERBS[dirsearch]='zpwrFzfDirsearchVerb=cd to a sub dir'
+    ZPWR_VERBS[dfimage]='zpwrDfimage=cat Dockerfile from IMAGE_ID'
     ZPWR_VERBS[exercism]='zpwrOpenExercism=go to Exercism home page'
     ZPWR_VERBS[homeexercism]='cd $HOME/Exercism=cd to $HOME/Exercism'
     ZPWR_VERBS[exercismdownload]='zpwrExercismDownloadAll=download all for track'
@@ -305,6 +307,7 @@ ZPWR_VARS[VERB_0]="$0"
     ZPWR_VERBS[travisbranch]='trav-git-br=open current travis branches in browser'
     ZPWR_VERBS[travispr]='trav-git-pr=open current travis PRs in browser'
     ZPWR_VERBS[trc]='trc=tmux.conf vim session'
+    ZPWR_VERBS[tty]='print "$ZPWR_TTY"=print current tty'
     ZPWR_VERBS[uninstall]='zpwrUninstall=uninstall all zpwr configs'
     ZPWR_VERBS[uncompile]='zpwrUncompile=delete all cache comps'
     ZPWR_VERBS[update]='zpwrGetrc=update zpwr custom configs'

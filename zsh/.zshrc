@@ -77,7 +77,7 @@ function zpwrDedupPaths() {
 }
 
 # FPATH should not be exported
-builtin declare +x FPATH
+builtin typeset +x FPATH
 #}}}***********************************************************
 
 #{{{                    MARK:ZPWR source env file which sources lib
@@ -99,9 +99,9 @@ builtin export ZPWR_ENV_FILE="$ZPWR_ENV/.zpwr_env.sh"
 builtin export ZPWR_RE_ENV_FILE="$ZPWR_ENV/.zpwr_re_env.sh"
 
 # map to hold global data between scripts
-builtin declare -Ag ZPWR_VARS
+builtin typeset -Ag ZPWR_VARS
 # map to store each zpwr verb, key is the verbname, value is cmd=description
-builtin declare -Ag ZPWR_VERBS
+builtin typeset -Ag ZPWR_VERBS
 
 function zpwrInitEnv() {
     builtin source "$ZPWR_ENV_FILE" || {
@@ -111,7 +111,7 @@ function zpwrInitEnv() {
 }
 
 zpwrInitEnv
-#
+
 # You may need to manually set your language environment
 # has all aliases and functions common to bourne like shells
 builtin test -s "$ZPWR_ALIAS_FILE" && builtin source "$ZPWR_ALIAS_FILE"
@@ -421,7 +421,7 @@ function zpwrTokenPost() {
 #{{{                    MARK:ZPWR_PLUGIN_MANAGER
 #**************************************************************
 if [[ "$ZPWR_PLUGIN_MANAGER" == zinit ]]; then
-    builtin declare -A ZINIT
+    builtin typeset -A ZINIT
     ZINIT[ZCOMPDUMP_PATH]="$ZSH_COMPDUMP"
     ZINIT[COMPINIT_OPTS]='-C -u'
     builtin source "$ZPWR_PLUGIN_MANAGER_HOME/bin/zinit.zsh"
@@ -441,23 +441,23 @@ if [[ "$ZPWR_PLUGIN_MANAGER" == zinit ]]; then
     # late
     for p in $ZPWR_OMZ_COMPS; do
         zinit ice svn lucid nocompile as'completion' pick'null' wait
-        zinit snippet OMZ::plugins/$p
+        zinit snippet OMZP::$p
     done
 
     for p in $ZPWR_OMZ_LIBS; do
         zinit ice lucid nocompile wait atload='zpwrOmzOverrides'
-        zinit snippet OMZ::lib/$p
+        zinit snippet OMZL::$p
     done
 
     # late
     for p in $ZPWR_OMZ_PLUGINS; do
         zinit ice svn lucid nocompile wait
-        zinit snippet OMZ::plugins/$p
+        zinit snippet OMZP::$p
     done
 
     if zpwrCommandExists rails; then
         zinit ice svn lucid nocompile nocompletions wait
-        zinit snippet OMZ::plugins/rails
+        zinit snippet OMZP::rails
     fi
 
     # late GH plugins
@@ -674,10 +674,10 @@ builtin setopt auto_name_dirs
 builtin setopt complete_in_word
 
 # spelling correction for commands
-#builtin setopt correct
+builtin setopt nocorrect
 
 # spelling correction for arguments
-#builtin setopt correct_all
+builtin setopt nocorrect_all
 
 # Enable parameter expansion, command substitution, and arithmetic expansion in the prompt
 builtin setopt prompt_subst
@@ -748,21 +748,21 @@ builtin setopt no_flow_control
 
 #{{{                    MARK:FZF
 #**************************************************************
-# run in autoload/common/zpwrBindFZFLate
+# late loads in autoload/common/zpwrBindFZFLate
 #}}}***********************************************************
 
 #{{{                    MARK:Custom Compsys Functions
 #**************************************************************
 function zpwrBindMenu() {
-    # list of completers to use
 
+    # list of completers to use
     builtin zstyle ':completion:*' completer _expand _ignored _megacomplete _approximate _correct
     #builtin zstyle ':completion:*:*:*:*:functions' ignored-patterns
 
     if [[ "$ZPWR_INTERACTIVE_MENU_SELECT" == true ]]; then
-    builtin zstyle ':completion:*:*:*:*:*' menu select=0 interactive
+        builtin zstyle ':completion:*:*:*:*:*' menu select=0 interactive
     else
-    builtin zstyle ':completion:*:*:*:*:*' menu select=0
+        builtin zstyle ':completion:*:*:*:*:*' menu select=0
     fi
 }
 
@@ -772,7 +772,6 @@ zpwrBindMenu
 
 #{{{                    MARK:Initialize Login
 #**************************************************************
-# go to desktop if not root
 if [[ "$ZPWR_OS_TYPE" == darwin ]]; then
     zpwrDarwinBanner
 else
@@ -790,7 +789,7 @@ if [[ "$ZPWR_AUTO_ATTACH" == true ]]; then
 fi
 #}}}***********************************************************
 
-#{{{                    MARK:Early bind Immediate Usage
+#{{{                    MARK:Early bind some aliases for immediate Usage
 #**************************************************************
 builtin alias zp='zpwr'
 builtin alias tm='tmux'

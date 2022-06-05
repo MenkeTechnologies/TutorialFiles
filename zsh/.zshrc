@@ -121,10 +121,13 @@ if [[ ! -d "$ZPWR_LOCAL_TEMP" ]]; then
 fi
 
 if [[ "$ZPWR_PLUGIN_MANAGER" == zinit ]]; then
+    builtin typeset -A ZINIT
     if [[ ! -d "$ZPWR_PLUGIN_MANAGER_HOME/bin" ]]; then
         zpwrPrettyPrintBox "Installing zinit"
         command mkdir -p "$ZPWR_PLUGIN_MANAGER_HOME/bin"
         command git clone https://github.com/$ZPWR_ZDHARMA/zinit.git "$ZPWR_PLUGIN_MANAGER_HOME/bin"
+    else
+        ZINIT[OPTIMIZE_OUT_DISK_ACCESSES]=1
     fi
 fi
 #}}}***********************************************************
@@ -421,7 +424,6 @@ function zpwrTokenPost() {
 #{{{                    MARK:ZPWR_PLUGIN_MANAGER
 #**************************************************************
 if [[ "$ZPWR_PLUGIN_MANAGER" == zinit ]]; then
-    builtin typeset -A ZINIT
     ZINIT[ZCOMPDUMP_PATH]="$ZSH_COMPDUMP"
     ZINIT[COMPINIT_OPTS]='-C -u'
     builtin source "$ZPWR_PLUGIN_MANAGER_HOME/bin/zinit.zsh"
@@ -439,34 +441,36 @@ if [[ "$ZPWR_PLUGIN_MANAGER" == zinit ]]; then
     zinit load MenkeTechnologies/zpwrp10k
 
     # late
-    for p in $ZPWR_OMZ_COMPS; do
-        zinit ice svn lucid nocompile as'completion' pick'null' wait
-        zinit snippet OMZP::$p
-    done
+    () {
+        local p
 
-    for p in $ZPWR_OMZ_LIBS; do
-        zinit ice lucid nocompile wait atload='zpwrOmzOverrides'
-        zinit snippet OMZL::$p
-    done
+        for p in $ZPWR_OMZ_COMPS; do
+            zinit ice svn lucid nocompile as'completion' pick'null' wait
+            zinit snippet OMZP::$p
+        done
 
-    # late
-    for p in $ZPWR_OMZ_PLUGINS; do
-        zinit ice svn lucid nocompile wait
-        zinit snippet OMZP::$p
-    done
+        for p in $ZPWR_OMZ_LIBS; do
+            zinit ice lucid nocompile wait atload='zpwrOmzOverrides'
+            zinit snippet OMZL::$p
+        done
 
-    if zpwrCommandExists rails; then
-        zinit ice svn lucid nocompile nocompletions wait
-        zinit snippet OMZP::rails
-    fi
+        # late
+        for p in $ZPWR_OMZ_PLUGINS; do
+            zinit ice svn lucid nocompile wait
+            zinit snippet OMZP::$p
+        done
 
-    # late GH plugins
-    for p in $ZPWR_GH_PLUGINS; do
-        zinit ice lucid nocompile wait
-        zinit load $p
-    done
+        if zpwrCommandExists rails; then
+            zinit ice svn lucid nocompile nocompletions wait
+            zinit snippet OMZP::rails
+        fi
 
-    builtin unset p
+        # late GH plugins
+        for p in $ZPWR_GH_PLUGINS; do
+            zinit ice lucid nocompile wait
+            zinit load $p
+        done
+    }
 
     zinit ice as'program' lucid nocompile pick'bin/fzf' wait
     zinit load MenkeTechnologies/fzf

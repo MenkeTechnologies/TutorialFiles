@@ -1,5 +1,4 @@
-
-
+#!/usr/bin/env perl
 #{{{                    MARK:Header
 #**************************************************************
 #####   Author: JACOBMENKE
@@ -8,25 +7,35 @@
 #####   Notes: works recursively
 #}}}***********************************************************
 
+use strict;
+use warnings;
 use feature 'say';
 
 use Getopt::Long;
+
 my @files       = ();
 my $regex       = '\r';
 my $replacement = "";
+my $help        = 0;
 
-my $help = 0;
+sub usage {
+    select STDERR;
+    say "Use --regex or --replacement to specify strings.";
+    say
+"Usage: regexReplace.pl [-h|--help] [--regex=REGEX] [--replacement=STRING]";
+    say "    [-h|--help] show this message";
+    say "    [--regex] REGEX replace this REGEX";
+    say "    [--replacement] STRING replace regex with this STRING";
+    exit 1;
+}
+
 GetOptions(
-    'help|?'        => \$help,
+    'help|h'        => \$help,
     'regex=s'       => \$regex,
     'replacement=s' => \$replacement
 );
 
-if ( $help == 1 ) {
-    say STDERR "Use --regex or --replacement to specify strings.";
-    exit 1;
-}
-
+usage if $help;
 
 sub addToAry {
     if ( -d $_[0] ) {
@@ -54,7 +63,7 @@ sub addToAry {
 addToAry $_ for @ARGV;
 my $length = scalar @files;
 
-if ( $length > 0 ) {
+if ($length) {
 
     #open $less, "|-","less -MN" or die $!;
     #select $less;

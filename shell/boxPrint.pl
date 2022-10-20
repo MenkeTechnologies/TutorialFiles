@@ -10,20 +10,27 @@
 use strict;
 use warnings;
 use feature 'say';
+
 use POSIX;
-
 use Getopt::Long;
-my $full  = 0;
-my $help  = 0;
-my $width = 0;
-GetOptions( 'help|h' => \$help, 'full|f' => \$full );
 
-if ( $help == 1 ) {
-    say STDERR "Use --full or -f to center box across width of terminal";
+my $full  = 0;
+my $width = 0;
+my $help  = 0;
+
+sub usage {
+    select STDERR;
+    say "Usage: boxPrint.pl [-h|--help] [-f|--full]";
+    say "    [-h|--help] show this message";
+    say "    [-f|--full] center box across width of terminal";
     exit 1;
 }
 
-if ( $full == 0 ) {
+GetOptions( 'help|h' => \$help, 'full|f' => \$full ) or usage;
+
+usage if $help;
+
+if ($full) {
     $width = 80;
 }
 else {
@@ -51,13 +58,13 @@ my $boxesChar    = '/';
 my $spaceChar    = ' ';
 my $boxWidth     = 4;
 
-if ( scalar @ARGV > 0 ) {
+if (@ARGV) {
     $str .= "$_ " for @ARGV;
 }
 else {
     while (<STDIN>) {
-        chomp $_;
-        $~ = s@\s+@ @g;
+        chomp;
+        s@\s+@ @g;
         $str .= $_;
     }
 }
@@ -76,10 +83,6 @@ if ( $proposedTextLength > $maxTextLength ) {
     my $charactersPerLine = int( $inputStringLength / $lineCounter );
     my $numSideCharLength =
       int( int( $width - $charactersPerLine - $boxWidth ) / 2 );
-
-# say STDOUT '___________$lineCounter = ' . $lineCounter . '___________';
-# say STDOUT '___________$charactersPerLine = ' . $charactersPerLine . '___________';
-# say STDOUT '___________$numSideCharLength = ' . $numSideCharLength . '___________';
 
     print "$boxColor";
     say $boxesChar x $width;
@@ -106,7 +109,7 @@ if ( $proposedTextLength > $maxTextLength ) {
 else {
     my $side2len = $sideCharacterLength;
 
-    if ( $inputStringLength % 2 == 1 ) {
+    if ( $inputStringLength % 2 ) {
         --$side2len;
     }
 
@@ -120,7 +123,6 @@ else {
     print $spaceChar x $spacerLength;
     say $boxesChar x $side2len;
     say $boxesChar x $width;
-
 }
 
 print "$resetColor";

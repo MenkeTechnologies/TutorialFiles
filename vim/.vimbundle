@@ -1,13 +1,10 @@
-lrvick/Conque-Shell
-MenkeTechnologies/VimColorSchemes
-VundleVim/Vundle.vim
-ycm-core/YouCompleteMe
 mileszs/ack.vim
 w0rp/ale
 prabirshrestha/async.vim
 prabirshrestha/asyncomplete.vim
 vim-scripts/camelcasemotion
 sjl/clam.vim
+lrvick/Conque-Shell
 ctrlpvim/ctrlp.vim
 raimondi/delimitmate
 deoplete-plugins/deoplete-zsh
@@ -73,6 +70,9 @@ tpope/vim-surround
 tpope/vim-unimpaired
 wakatime/vim-wakatime
 Valodim/vim-zsh-completion
+MenkeTechnologies/VimColorSchemes
 lervag/vimtex
 benmills/vimux
+VundleVim/Vundle.vim
 gcmt/wildfire.vim
+ycm-core/YouCompleteMe

@@ -431,8 +431,8 @@ class Deroffer:
         # Note this returns false for empty strings (idx >= len(self.s))
         return self.s[idx:idx + 1].isspace()
 
-    def str_eq(offset, other, len):
-        return self.s[offset:offset + len] == other[:len]
+    def str_eq(self, offset, other, length):
+        return self.s[offset:offset + length] == other[:length]
 
     def prch(self, idx):
         # Note that this return False for the empty string (idx >= len(self.s))
@@ -452,7 +452,7 @@ class Deroffer:
             if c == "(" and self.prch(3) and self.prch(4):
                 self.skip_char(5)
                 return True
-            elif c == "[":
+            if c == "[":
                 self.skip_char(2)
                 while self.prch(0) and self.str_at(0) != "]":
                     self.skip_char()
@@ -489,15 +489,15 @@ class Deroffer:
             if self.s[3:5] == "dy":
                 self.skip_char(5)
                 return True
-            elif self.str_at(2) == "(" and self.prch(3) and self.prch(4):
+            if self.str_at(2) == "(" and self.prch(3) and self.prch(4):
                 self.skip_char(5)
                 return True
-            elif self.str_at(2) == "[" and self.prch(3):
+            if self.str_at(2) == "[" and self.prch(3):
                 self.skip_char(3)
                 while self.str_at(0) and self.str_at(0) != "]":
                     self.skip_char()
                 return True
-            elif self.prch(2):
+            if self.prch(2):
                 self.skip_char(3)
                 return True
         elif s0s1 == "\\*":
@@ -520,7 +520,7 @@ class Deroffer:
                 return False
 
             if reg in self.reg_table:
-                old_s = self.s
+                # old_s = self.s
                 self.s = self.reg_table[reg]
                 self.text_arg()
                 return True
@@ -546,12 +546,11 @@ class Deroffer:
                 self.condputs(Deroffer.g_specs[key])
             self.skip_char(4)
             return True
-        elif self.s.startswith("\\%"):
+        if self.s.startswith("\\%"):
             self.specletter = True
             self.skip_char(2)
             return True
-        else:
-            return False
+        return False
 
     def esc(self):
         # We require that the string start with backslash
@@ -615,28 +614,26 @@ class Deroffer:
         match = Deroffer.g_re_number.match(self.s)
         if not match:
             return False
-        else:
-            self.condputs(match.group(0))
-            self.skip_char(match.end())
-            return True
+        self.condputs(match.group(0))
+        self.skip_char(match.end())
+        return True
 
     def esc_char_backslash(self):
         # Like esc_char, but we know the string starts with a backslash
         c = self.s[1:2]
         if c == '"':
             return self.comment()
-        elif c == "f":
+        if c == "f":
             return self.font()
-        elif c == "s":
+        if c == "s":
             return self.size()
-        elif c in "hvwud":
+        if c in "hvwud":
             return self.numreq()
-        elif c in "n*":
+        if c in "n*":
             return self.var()
-        elif c == "(":
+        if c == "(":
             return self.spec()
-        else:
-            return self.esc()
+        return self.esc()
 
     def esc_char(self):
         if self.s[0:1] == "\\":
@@ -652,8 +649,7 @@ class Deroffer:
                         self.condputs(self.str_at(0))
                         self.skip_char()
             return True
-        else:
-            return False
+        return False
 
     def text_arg(self):
         # PCA: The deroff.c textArg() disallowed quotes at the start of an argument
@@ -1408,27 +1404,27 @@ def built_command(options, description, arg):
 
 
 def remove_groff_formatting(data):
-    data = data.replace("\\fI", "")
-    data = data.replace("\\fP", "")
-    data = data.replace("\\f1", "")
-    data = data.replace("\\fB", "")
-    data = data.replace("\\fR", "")
-    data = data.replace("\\e", "")
-    data = re.sub(".PD( \d+)", "", data)
-    data = data.replace(".BI", "")
-    data = data.replace(".BR", "")
-    data = data.replace("0.5i", "")
-    data = data.replace(".rb", "")
-    data = data.replace("\\^", "")
-    data = data.replace("{ ", "")
-    data = data.replace(" }", "")
-    data = data.replace("\ ", "")
-    data = data.replace("\-", "-")
-    data = data.replace("\&", "")
-    data = data.replace(".B", "")
-    data = data.replace("\-", "-")
-    data = data.replace(".I", "")
-    data = data.replace("\f", "")
+    data = data.replace(r"\\fI", "")
+    data = data.replace(r"\\fP", "")
+    data = data.replace(r"\\f1", "")
+    data = data.replace(r"\\fB", "")
+    data = data.replace(r"\\fR", "")
+    data = data.replace(r"\\e", "")
+    data = re.sub(r".PD( \d+)", "", data)
+    data = data.replace(r".BI", "")
+    data = data.replace(r".BR", "")
+    data = data.replace(r"0.5i", "")
+    data = data.replace(r".rb", "")
+    data = data.replace(r"\\^", "")
+    data = data.replace(r"{ ", "")
+    data = data.replace(r" }", "")
+    data = data.replace(r"\ ", "")
+    data = data.replace(r"\-", "-")
+    data = data.replace(r"\&", "")
+    data = data.replace(r".B", "")
+    data = data.replace(r"\-", "-")
+    data = data.replace(r".I", "")
+    data = data.replace(r"\f", "")
     return data
 
 
@@ -1439,9 +1435,9 @@ class ManParser(object):
     def parse_man_page(self, manpage):
         return False
 
-    def get_arg(self, optionName):
+    def get_arg(self, option_name):
         arg = ""
-        option_and_arg = optionName.replace("=", " ").split(" ")
+        option_and_arg = option_name.replace("=", " ").split(" ")
         if len(option_and_arg) == 2:
             arg_ = option_and_arg[1]
             if len(arg_) > 0 and arg_[0] != "-":
@@ -1459,35 +1455,35 @@ class ManParser(object):
 class Type1ManParser(ManParser):
     def is_my_type(self, manpage):
         #   print manpage
-        options_section_matched = compile_and_search('\.SH "OPTIONS"(.*?)',
+        options_section_matched = compile_and_search(r'\.SH "OPTIONS"(.*?)',
                                                      manpage)
 
-        if options_section_matched == None:
+        if options_section_matched is None:
             return False
         else:
             return True
 
     def parse_man_page(self, manpage):
-        options_section_regex = re.compile('\.SH "OPTIONS"(.*?)(\.SH|\Z)',
+        options_section_regex = re.compile(r'\.SH "OPTIONS"(.*?)(\.SH|\Z)',
                                            re.DOTALL)
         options_section_matched = re.search(options_section_regex, manpage)
 
         options_section = options_section_matched.group(0)
         #   print options_section
-        options_parts_regex = re.compile("\.PP(.*?)\.RE", re.DOTALL)
+        options_parts_regex = re.compile(r"\.PP(.*?)\.RE", re.DOTALL)
         options_matched = re.search(options_parts_regex, options_section)
         #   print options_matched
         add_diagnostic("Command is %r" % CMDNAME)
 
-        if options_matched == None:
+        if options_matched is None:
             add_diagnostic("Unable to find options")
             if self.fallback(options_section):
                 return True
-            elif self.fallback2(options_section):
+            if self.fallback2(options_section):
                 return True
             return False
 
-        while options_matched != None:
+        while options_matched is not None:
             data = options_matched.group(1)
             last_dotpp_index = data.rfind(".PP")
             if last_dotpp_index != -1:
@@ -1496,16 +1492,16 @@ class Type1ManParser(ManParser):
             data = remove_groff_formatting(data)
             data = data.split(".RS 4")
             if len(data) > 1:  # and len(data[1]) <= 300):
-                optionName = data[0].strip()
+                option_name = data[0].strip()
 
-                if optionName.find("-") == -1:
-                    add_diagnostic("%r doesn't contain '-' " % optionName)
+                if option_name.find("-") == -1:
+                    add_diagnostic("%r doesn't contain '-' " % option_name)
                 else:
-                    optionName = unquote_double_quotes(optionName)
-                    optionName = unquote_single_quotes(optionName)
-                    optionDescription = data[1].strip().replace("\n", " ")
-                    arg = self.get_arg(optionName)
-                    built_command(optionName, optionDescription, arg)
+                    option_name = unquote_double_quotes(option_name)
+                    option_name = unquote_single_quotes(option_name)
+                    option_description = data[1].strip().replace("\n", " ")
+                    arg = self.get_arg(option_name)
+                    built_command(option_name, option_description, arg)
 
             else:
                 add_diagnostic("Unable to split option from description")
@@ -1516,27 +1512,27 @@ class Type1ManParser(ManParser):
 
     def fallback(self, options_section):
         add_diagnostic("Trying fallback")
-        options_parts_regex = re.compile("\.TP( \d+)?(.*?)\.TP", re.DOTALL)
+        options_parts_regex = re.compile(r"\.TP( \d+)?(.*?)\.TP", re.DOTALL)
         options_matched = re.search(options_parts_regex, options_section)
-        if options_matched == None:
+        if options_matched is None:
             add_diagnostic("Still not found")
             return False
-        while options_matched != None:
+        while options_matched is not None:
             data = options_matched.group(2)
             data = remove_groff_formatting(data)
             data = data.strip()
             data = data.split("\n", 1)
             if len(data) > 1 and len(
                     data[1].strip()) > 0:  # and len(data[1])<400):
-                optionName = data[0].strip()
-                if optionName.find("-") == -1:
-                    add_diagnostic("%r doesn't contain '-'" % optionName)
+                option_name = data[0].strip()
+                if option_name.find("-") == -1:
+                    add_diagnostic("%r doesn't contain '-'" % option_name)
                 else:
-                    optionName = unquote_double_quotes(optionName)
-                    optionName = unquote_single_quotes(optionName)
-                    optionDescription = data[1].strip().replace("\n", " ")
-                    arg = self.get_arg(optionName)
-                    built_command(optionName, optionDescription, arg)
+                    option_name = unquote_double_quotes(option_name)
+                    option_name = unquote_single_quotes(option_name)
+                    option_description = data[1].strip().replace("\n", " ")
+                    arg = self.get_arg(option_name)
+                    built_command(option_name, option_description, arg)
             else:
                 add_diagnostic("Unable to split option from description")
                 return False
@@ -1547,16 +1543,16 @@ class Type1ManParser(ManParser):
 
     def fallback2(self, options_section):
         add_diagnostic("Trying last chance fallback")
-        ix_remover_regex = re.compile("\.IX.*")
-        trailing_num_regex = re.compile("\\d+$")
-        options_parts_regex = re.compile("\.IP (.*?)\.IP", re.DOTALL)
+        ix_remover_regex = re.compile(r"\.IX.*")
+        trailing_num_regex = re.compile(r"\\d+$")
+        options_parts_regex = re.compile(r"\.IP (.*?)\.IP", re.DOTALL)
 
         options_section = re.sub(ix_remover_regex, "", options_section)
         options_matched = re.search(options_parts_regex, options_section)
-        if options_matched == None:
+        if options_matched is None:
             add_diagnostic("Still (still!) not found")
             return False
-        while options_matched != None:
+        while options_matched is not None:
             data = options_matched.group(1)
 
             data = remove_groff_formatting(data)
@@ -1564,17 +1560,17 @@ class Type1ManParser(ManParser):
             data = data.split("\n", 1)
             if len(data) > 1 and len(
                     data[1].strip()) > 0:  # and len(data[1])<400):
-                optionName = re.sub(trailing_num_regex, "", data[0].strip())
+                option_name = re.sub(trailing_num_regex, "", data[0].strip())
 
-                if "-" not in optionName:
-                    add_diagnostic("%r doesn't contain '-'" % optionName)
+                if "-" not in option_name:
+                    add_diagnostic("%r doesn't contain '-'" % option_name)
                 else:
-                    optionName = optionName.strip()
-                    optionName = unquote_double_quotes(optionName)
-                    optionName = unquote_single_quotes(optionName)
-                    optionDescription = data[1].strip().replace("\n", " ")
-                    arg = self.get_arg(optionName)
-                    built_command(optionName, optionDescription, arg)
+                    option_name = option_name.strip()
+                    option_name = unquote_double_quotes(option_name)
+                    option_name = unquote_single_quotes(option_name)
+                    option_description = data[1].strip().replace("\n", " ")
+                    arg = self.get_arg(option_name)
+                    built_command(option_name, option_description, arg)
             else:
                 add_diagnostic("Unable to split option from description")
                 return False
@@ -1586,31 +1582,30 @@ class Type1ManParser(ManParser):
 
 class Type2ManParser(ManParser):
     def is_my_type(self, manpage):
-        options_section_matched = compile_and_search("\.SH OPTIONS(.*?)",
+        options_section_matched = compile_and_search(r"\.SH OPTIONS(.*?)",
                                                      manpage)
 
-        if options_section_matched == None:
+        if options_section_matched is None:
             return False
-        else:
-            return True
+        return True
 
     def parse_man_page(self, manpage):
-        options_section_regex = re.compile("\.SH OPTIONS(.*?)(\.SH|\Z)",
+        options_section_regex = re.compile(r"\.SH OPTIONS(.*?)(\.SH|\Z)",
                                            re.DOTALL)
         options_section_matched = re.search(options_section_regex, manpage)
 
         options_section = options_section_matched.group(1)
 
         options_parts_regex = re.compile(
-            "\.[I|T]P( \d+(\.\d)?i?)?(.*?)\.([I|T]P|UNINDENT)", re.DOTALL)
+            r"\.[I|T]P( \d+(\.\d)?i?)?(.*?)\.([I|T]P|UNINDENT)", re.DOTALL)
         options_matched = re.search(options_parts_regex, options_section)
         add_diagnostic("Command is %r" % CMDNAME)
 
-        if options_matched == None:
+        if options_matched is None:
             add_diagnostic("%r: Unable to find options" % self)
             return False
 
-        while options_matched != None:
+        while options_matched is not None:
             data = options_matched.group(3)
 
             data = remove_groff_formatting(data)
@@ -1620,15 +1615,15 @@ class Type2ManParser(ManParser):
             data = data.split("\n", 1)
             if len(data) > 1 and len(
                     data[1].strip()) > 0:  # and len(data[1])<400):
-                optionName = data[0].strip()
-                if "-" not in optionName:
-                    add_diagnostic("%r doesn't contain '-'" % optionName)
+                option_name = data[0].strip()
+                if "-" not in option_name:
+                    add_diagnostic("%r doesn't contain '-'" % option_name)
                 else:
-                    optionName = unquote_double_quotes(optionName)
-                    optionName = unquote_single_quotes(optionName)
-                    optionDescription = data[1].strip().replace("\n", " ")
-                    arg = self.get_arg(optionName)
-                    built_command(optionName, optionDescription, arg)
+                    option_name = unquote_double_quotes(option_name)
+                    option_name = unquote_single_quotes(option_name)
+                    option_description = data[1].strip().replace("\n", " ")
+                    arg = self.get_arg(option_name)
+                    built_command(option_name, option_description, arg)
             else:
                 add_diagnostic("Unable to split option from description")
 
@@ -1638,7 +1633,7 @@ class Type2ManParser(ManParser):
 
 class Type3ManParser(ManParser):
     def is_my_type(self, manpage):
-        options_section_matched = compile_and_search("\.SH DESCRIPTION(.*?)",
+        options_section_matched = compile_and_search(r"\.SH DESCRIPTION(.*?)",
                                                      manpage)
 
         if options_section_matched == None:
@@ -1647,12 +1642,12 @@ class Type3ManParser(ManParser):
             return True
 
     def parse_man_page(self, manpage):
-        options_section_regex = re.compile("\.SH DESCRIPTION(.*?)(\.SH|\Z)",
+        options_section_regex = re.compile(r"\.SH DESCRIPTION(.*?)(\.SH|\Z)",
                                            re.DOTALL)
         options_section_matched = re.search(options_section_regex, manpage)
 
         options_section = options_section_matched.group(1)
-        options_parts_regex = re.compile("\.TP(.*?)\.TP", re.DOTALL)
+        options_parts_regex = re.compile(r"\.TP(.*?)\.TP", re.DOTALL)
         options_matched = re.search(options_parts_regex, options_section)
         add_diagnostic("Command is %r" % CMDNAME)
 
@@ -1660,7 +1655,7 @@ class Type3ManParser(ManParser):
             add_diagnostic("Unable to find options section")
             return False
 
-        while options_matched != None:
+        while options_matched is not None:
             data = options_matched.group(1)
 
             data = remove_groff_formatting(data)
@@ -1668,15 +1663,15 @@ class Type3ManParser(ManParser):
             data = data.split("\n", 1)
 
             if len(data) > 1:  # and len(data[1])<400):
-                optionName = data[0].strip()
-                if optionName.find("-") == -1:
-                    add_diagnostic("%r doesn't contain '-'" % optionName)
+                option_name = data[0].strip()
+                if option_name.find("-") == -1:
+                    add_diagnostic("%r doesn't contain '-'" % option_name)
                 else:
-                    optionName = unquote_double_quotes(optionName)
-                    optionName = unquote_single_quotes(optionName)
-                    optionDescription = data[1].strip().replace("\n", " ")
-                    arg = self.get_arg(optionName)
-                    built_command(optionName, optionDescription, arg)
+                    option_name = unquote_double_quotes(option_name)
+                    option_name = unquote_single_quotes(option_name)
+                    option_description = data[1].strip().replace("\n", " ")
+                    arg = self.get_arg(option_name)
+                    built_command(option_name, option_description, arg)
 
             else:
                 add_diagnostic("Unable to split option from description")
@@ -1689,20 +1684,19 @@ class Type3ManParser(ManParser):
 class Type4ManParser(ManParser):
     def is_my_type(self, manpage):
         options_section_matched = compile_and_search(
-            "\.SH FUNCTION LETTERS(.*?)", manpage)
+            r"\.SH FUNCTION LETTERS(.*?)", manpage)
 
-        if options_section_matched == None:
+        if options_section_matched is None:
             return False
-        else:
-            return True
+        return True
 
     def parse_man_page(self, manpage):
         options_section_regex = re.compile(
-            "\.SH FUNCTION LETTERS(.*?)(\.SH|\Z)", re.DOTALL)
+            r"\.SH FUNCTION LETTERS(.*?)(\.SH|\Z)", re.DOTALL)
         options_section_matched = re.search(options_section_regex, manpage)
 
         options_section = options_section_matched.group(1)
-        options_parts_regex = re.compile("\.TP(.*?)\.TP", re.DOTALL)
+        options_parts_regex = re.compile(r"\.TP(.*?)\.TP", re.DOTALL)
         options_matched = re.search(options_parts_regex, options_section)
         add_diagnostic("Command is %r" % CMDNAME)
 
@@ -1718,15 +1712,15 @@ class Type4ManParser(ManParser):
             data = data.split("\n", 1)
 
             if len(data) > 1:  # and len(data[1])<400):
-                optionName = data[0].strip()
-                if optionName.find("-") == -1:
-                    add_diagnostic("%r doesn't contain '-' " % optionName)
+                option_name = data[0].strip()
+                if option_name.find("-") == -1:
+                    add_diagnostic("%r doesn't contain '-' " % option_name)
                 else:
-                    optionName = unquote_double_quotes(optionName)
-                    optionName = unquote_single_quotes(optionName)
-                    optionDescription = data[1].strip().replace("\n", " ")
-                    arg = self.get_arg(optionName)
-                    built_command(optionName, optionDescription, arg)
+                    option_name = unquote_double_quotes(option_name)
+                    option_name = unquote_single_quotes(option_name)
+                    option_description = data[1].strip().replace("\n", " ")
+                    arg = self.get_arg(option_name)
+                    built_command(option_name, option_description, arg)
 
             else:
                 add_diagnostic("Unable to split option from description")
@@ -1740,7 +1734,7 @@ class Type4ManParser(ManParser):
 
 class TypeDarwinManParser(ManParser):
     def is_my_type(self, manpage):
-        options_section_matched = compile_and_search("\.S[hH] DESCRIPTION",
+        options_section_matched = compile_and_search(r"\.S[hH] DESCRIPTION",
                                                      manpage)
         return options_section_matched != None
 
@@ -1749,7 +1743,7 @@ class TypeDarwinManParser(ManParser):
         if line.startswith("."):
             line = line[1:]
         # Skip leading groff crud
-        while re.match("[A-Z][a-z]\s", line):
+        while re.match(r"[A-Z][a-z]\s", line):
             line = line[3:]
 
         # If the line ends with a space and then a period or comma, then erase the space
@@ -1772,9 +1766,9 @@ class TypeDarwinManParser(ManParser):
 
     # Replace some groff escapes. There's a lot we don't bother to handle.
     def groff_replace_escapes(self, line):
-        line = line.replace(".Nm", CMDNAME)
-        line = line.replace("\\ ", " ")
-        line = line.replace("\& ", "")
+        line = line.replace(r".Nm", CMDNAME)
+        line = line.replace(r"\\ ", " ")
+        line = line.replace(r"\& ", "")
         return line
 
     def is_option(self, line):
@@ -1828,7 +1822,7 @@ class TypeDarwinManParser(ManParser):
             if name == "-":
                 # Skip double -- arguments
                 continue
-            elif len(name) > 1:
+            if len(name) > 1:
                 # Output the command
                 option = ("-" * dash_count) + name
                 arg = self.get_arg(option)
@@ -1946,7 +1940,7 @@ def cleanup_autogenerated_file(path):
 
 
 def parse_manpage_at_path(manpage_path, output_directory):
-    filename = os.path.basename(manpage_path)
+    # filename = os.path.basename(manpage_path)
 
     # Clear diagnostics
     global diagnostic_indent
@@ -2186,7 +2180,7 @@ def get_paths_from_man_locations():
             except OSError:  # Command does not exist, keep trying
                 continue
             break  # Command exists, use it.
-        manpath, err_data = proc.communicate()
+        manpath, _err_data = proc.communicate()
         parent_paths = manpath.decode().strip().split(":")
     if (not parent_paths) or (proc and proc.returncode > 0):
         # HACK: Use some fallbacks in case we can't get anything else.
@@ -2210,7 +2204,7 @@ def get_paths_from_man_locations():
             directory_path = os.path.join(parent_path, section)
             try:
                 names = os.listdir(directory_path)
-            except OSError as e:
+            except OSError as _e:
                 names = []
             names.sort()
             for name in names:

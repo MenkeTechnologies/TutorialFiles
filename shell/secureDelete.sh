@@ -66,7 +66,7 @@ function killCursor() {
 trap 'killCursor; echo; exit' INT
 
 if [[ -z "$1" ]]; then
-    echo "Usage: $(basename $0) filename"
+    echo "Usage: $(basename $0) FILENAME"
     exit $e_badargs
 fi
 
@@ -105,7 +105,7 @@ for i in "$@"; do
         dd if=/dev/zero of="$file" bs=$blocksize count=$flength
         # Fill with zeros.
         sync # Flush buffers yet again.
-        let "pass_count += 1"
+        (( ++pass_count ))
         echo
     done
 

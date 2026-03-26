@@ -53,27 +53,23 @@ if zpwrIsZsh; then
 
             zpwrPrettyPrint "Updating $cmd packages"
 
-            installDir=$(${=cmd} -m pip show "pip" | \perl -ne 'print $1 if /^Location: (.*)/')
+            installDir="$PIP3_HOME"
 
-            if [[ $forceSudo == true || ! -w "$installDir" ]]; then
-                needSudoBase=true
-            else
-                needSudoBase=false
-            fi
+            needSudoBase=false
 
             zpwrPrettyPrint "Outdated $packageManager list with sudo needed: $needSudoBase"
 
             if [[ "$needSudoBase" == true ]]; then
-                outdated=$(sudo -EH ${=cmd} -m pip list --outdated --format=columns | sed -n '3,$p' | awk '{print $1}')
+                outdated=$(sudo -EH ${=cmd} -m pip list --user --outdated --format=columns | sed -n '3,$p' | awk '{print $1}')
             else
-                outdated=$(${=cmd} -m pip list --outdated --format=columns | sed -n '3,$p' | awk '{print $1}')
+                outdated=$(${=cmd} -m pip list --user --outdated --format=columns | sed -n '3,$p' | awk '{print $1}')
             fi
 
             for package in "${(@f)outdated}"; do
 
                 zpwrValidatePipPackage "$package" || continue
 
-                installDir=$(${=cmd} -m pip show "$package" | \perl -ne 'print $1 if /^Location: (.*)/')"/$package"
+                installDir="$PIP3_HOME/$package"
 
                 if [[ $forceSudo == true || ! -w "$installDir" ]]; then
                     zpwrNeedSudo=true
@@ -84,9 +80,9 @@ if zpwrIsZsh; then
                 zpwrPrettyPrint "sudo needed: $zpwrNeedSudo for $package at $installDir"
 
                 if [[ "$zpwrNeedSudo" == true ]]; then
-                    sudo -EH ${=cmd} -m pip install --upgrade --ignore-installed -- "$package"
+                    sudo -EH ${=cmd} -m pip install --break-system-packages --user --upgrade --ignore-installed -- "$package"
                 else
-                    ${=cmd} -m pip install --upgrade --ignore-installed -- "$package"
+                    ${=cmd} -m pip install --break-system-packages --user --upgrade --ignore-installed -- "$package"
                 fi
 
             done
@@ -94,9 +90,9 @@ if zpwrIsZsh; then
             zpwrPrettyPrint "Updating $packageManager with sudo needed: $needSudoBase"
 
             if [[ "$needSudoBase" == true ]]; then
-                sudo -EH ${=cmd} -m pip install --upgrade pip setuptools wheel
+                sudo -EH ${=cmd} -m pip install --break-system-packages --user --upgrade pip setuptools wheel
             else
-                ${=cmd} -m pip install --upgrade pip setuptools wheel
+                ${=cmd} -m pip install --break-system-packages --user --upgrade pip setuptools wheel
             fi
 
         }
@@ -207,7 +203,7 @@ function zpwrEscapeRemove(){
 function zpwrPrettyPrintNoNewline(){
 
     if [[ -z "$1" ]]; then
-        zpwrLogConsoleErr "usage: zpwrPrettyPrintNoNewline <string>"
+        zpwrLogConsoleErr "usage: zpwrPrettyPrintNoNewline STRING"
         return 1
     fi
 
@@ -224,7 +220,7 @@ function zpwrIsBinary() {
 function zpwrLogColor(){
 
     if [[ -z $2 ]]; then
-        zpwrLogConsoleErr "usage: zpwrLogColor <lvl> <msg>"
+        zpwrLogConsoleErr "usage: zpwrLogColor LVL MSG"
         return 1
     fi
 
@@ -238,7 +234,7 @@ function zpwrLogColor(){
 function zpwrLogConsoleInfo(){
 
     if [[ -z "$1" ]]; then
-        zpwrLogConsoleErr "usage: zpwrLogConsoleInfo <msg>"
+        zpwrLogConsoleErr "usage: zpwrLogConsoleInfo MSG"
         return 1
     fi
     zpwrLogColor INFO "$*" >&1
@@ -247,7 +243,7 @@ function zpwrLogConsoleInfo(){
 function zpwrLogConsoleErr(){
 
     if [[ -z "$1" ]]; then
-        zpwrLogConsoleErr "usage: zpwrLogConsoleErr <msg>"
+        zpwrLogConsoleErr "usage: zpwrLogConsoleErr MSG"
         return 1
     fi
     zpwrLogColor ERROR "$*" >&2
@@ -256,7 +252,7 @@ function zpwrLogConsoleErr(){
 function zpwrLogConsoleDebug(){
 
     if [[ -z "$1" ]]; then
-        zpwrLogConsoleErr "usage: zpwrLogConsoleDebug <msg>"
+        zpwrLogConsoleErr "usage: zpwrLogConsoleDebug MSG"
         return 1
     fi
 
@@ -268,7 +264,7 @@ function zpwrLogConsoleDebug(){
 function zpwrLogConsoleTrace(){
 
     if [[ -z "$1" ]]; then
-        zpwrLogConsoleErr "usage: zpwrLogConsoleTrace <msg>"
+        zpwrLogConsoleErr "usage: zpwrLogConsoleTrace MSG"
         return 1
     fi
 
@@ -308,7 +304,7 @@ function zpwrLog(){
         elif [[ -p /dev/stdin ]]; then
             zpwrLogColor STDIN "$(cat)" >> "$ZPWR_LOGFILE"
         elif [[ -z "$2" ]]; then
-                zpwrLogConsoleErr "usage: zpwrLog <lvl> <msg>"
+                zpwrLogConsoleErr "usage: zpwrLog LVL MSG"
                 return 1
         fi
     else
@@ -328,7 +324,7 @@ function zpwrLog(){
             } >> "$ZPWR_LOGFILE"
         else
             if [[ -z "$1" ]]; then
-                zpwrLogConsoleErr "usage: zpwrLog <msg>"
+                zpwrLogConsoleErr "usage: zpwrLog MSG"
                 return 1
             fi
         fi
@@ -361,7 +357,7 @@ function zpwrLogTrace(){
 function zpwrNeedSudo(){
 
     if [[ -z "$1" ]]; then
-        zpwrLogConsoleErr "usage: zpwrNeedSudo <file>"
+        zpwrLogConsoleErr "usage: zpwrNeedSudo FILE"
         return 1
     fi
 
@@ -470,7 +466,7 @@ function zpwrInstallGitHubPluginsFromFile(){
     shift $((OPTIND-1))
 
     if [[ -z "$1" ]]; then
-        zpwrLogConsoleErr "usage: zpwrInstallGitHubPluginsFromFile <repo_file>"
+        zpwrLogConsoleErr "usage: zpwrInstallGitHubPluginsFromFile REPO_FILE"
         return 1
     fi
 
@@ -494,7 +490,7 @@ function zpwrInstallGitHubPluginsFromFile(){
 function zpwrOverwriteGitHubPlugin(){
 
     if [[ -z "$1" ]]; then
-        zpwrLogConsoleErr "usage: zpwrOverwriteGitHubPlugin <repo>"
+        zpwrLogConsoleErr "usage: zpwrOverwriteGitHubPlugin REPO"
         return 1
     fi
 
@@ -515,7 +511,7 @@ function zpwrOverwriteGitHubPlugin(){
 function zpwrInstallGitHubPlugin(){
 
     if [[ -z "$1" ]]; then
-        zpwrLogConsoleErr "usage: zpwrInstallGitHubPlugin <repo>"
+        zpwrLogConsoleErr "usage: zpwrInstallGitHubPlugin REPO"
         return 1
     fi
 
@@ -649,7 +645,7 @@ function zpwrPrettyPrint(){
         printf "%s " "$@"
         printf "\x1b[0m\n"
     else
-        zpwrLogConsoleErr "usage: zpwrPrettyPrint <msg>"
+        zpwrLogConsoleErr "usage: zpwrPrettyPrint MSG"
         return 1
     fi
 }

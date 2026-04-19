@@ -40,9 +40,9 @@ zpwrCommandExists rpm && rpm_cmd='{ rpm -qi $file; rpm -qlp $file; }' || rpm_cmd
 zpwrCommandExists dpkg && deb_cmd='{ dpkg -I $file; dpkg -c $file; }' || deb_cmd="stat"
 
 os="$(uname -s)"
-if echo "$os" | grep -iq darwin; then
+if [[ "$os" == [Dd]arwin* ]]; then
     nmcmd="nm"
-elif echo "$os" | grep -iq linux; then
+elif [[ "$os" == [Ll]inux* ]]; then
     nmcmd="nm -D"
 else
     nmcmd="nm"
@@ -106,5 +106,5 @@ cat<<EOF
             $casestr
         fi
     fi
-fi | perl -ne "if (\$lineNum .. \$lineNum){s@\\\x1b\\\[[0-9;]+m@@g;s@(.*)@\\\x1b[$ZPWR_MARKER_COLOR\\\$1\\\x1b[0m@;print} elsif (\$startNum .. eof) {print;}"
+fi | perlrs -ne "if (\$lineNum .. \$lineNum){s@\\\x1b\\\[[0-9;]+m@@g;s@(.*)@\\\x1b[$ZPWR_MARKER_COLOR\\\$1\\\x1b[0m@;print} elsif (\$startNum .. eof) {print;}"
 EOF

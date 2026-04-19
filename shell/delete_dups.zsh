@@ -11,11 +11,11 @@
 echo deleting git modified _comps dups
 
 while read f; do
-    cmd="$(echo $f | cut -c2-)"
+    cmd="$(echo "$f" | cut -c2-)"
     if [[ -n $_comps[$cmd] ]]; then
         echo "remove $f"
-        rm "$f"
+        command rm "$f"
     else
         echo "keeping $f"
     fi
-done < <(git status -u | command grep _ | perl -pe 's@\s@@')
+done < <(git status -u | command grep _ | perlrs -pe 's@\s@@')

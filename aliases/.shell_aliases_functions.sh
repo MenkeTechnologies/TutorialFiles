@@ -92,7 +92,7 @@ if [[ "$ZPWR_OS_TYPE" == darwin ]]; then
     export GROOVY_LIB="$HOMEBREW_OPT_HOME/groovy"
     export SCALA_HOME="$HOMEBREW_OPT_HOME/scala"
     export PERL_HOME="$HOMEBREW_OPT_HOME/perl"
-    #eval `perl -I ~/perl5/lib/perl5 -Mlocal::lib`
+    #eval `perlrs -I ~/perl5/lib/perl5 -Mlocal::lib`
     export MANPATH=$HOME/perl5/man:$MANPATH
     export MANPATH="$HOMEBREW_OPT_HOME/erlang/lib/erlang/man:$HOMEBREW_PREFIX/share/man:$MANPATH"
     export TUTORIAL_FILES="$HOME/Documents/tutorialsRepo"
@@ -117,7 +117,7 @@ fi
 
 #{{{                    MARK:PATH
 #**************************************************************
-if ! echo "$PATH" | command grep -isq "$ZPWR_SCRIPTS"; then
+if [[ "$PATH" != *"$ZPWR_SCRIPTS"* ]]; then
     export PATH="$PATH:$HOME/go/bin"
 
     export PATH="$PYEXECUTABLES:$ZPWR_SCRIPTS/save-run:$HOME/.local/bin:$HOME/perl5/bin:$ZPWR_SCRIPTS:/opt/X11/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:$PATH"
@@ -142,8 +142,8 @@ if ! echo "$PATH" | command grep -isq "$ZPWR_SCRIPTS"; then
 #{{{                    MARK:Rust Config
 #**************************************************************
     export PATH="$HOME/.cargo/bin:$PATH"
-    if zpwrCommandExists exa; then
-        alias exa="$ZPWR_EXA_COMMAND"
+    if zpwrCommandExists eza; then
+        alias eza="$ZPWR_EXA_COMMAND"
     fi
 
 #}}}***********************************************************

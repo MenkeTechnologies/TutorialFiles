@@ -199,7 +199,7 @@ function zpwrPerlRemoveSpaces(){
 
     for file;do
         printf "\x1b[38;5;129mRemoving from \x1b[38;5;57m${file}\x1b[38;5;46m"'!'"\n\x1b[0m"
-        perlrs -pi -e 's@\s+$@\n@g; s@\x09$@    @g;s@\x20@ @g; s@^s*\n$@@; s@(\S)[\x20]{2,}@$1\x20@' "$file"
+        ${ZPWR_PERL:-stryke} -pi -e 's@\s+$@\n@g; s@\x09$@    @g;s@\x20@ @g; s@^s*\n$@@; s@(\S)[\x20]{2,}@$1\x20@' "$file"
     done
 }
 
@@ -713,13 +713,20 @@ function zpwrPrettyPrintInstaller(){
         return 1
     fi
 
+    local pe
+    if type -p stryke &>/dev/null; then
+        pe=stryke
+    else
+        pe=perl
+    fi
+
     (( ++INSTALL_COUNTER ))
     printf "\x1b[32;1m"
-    perlrs -le "print '#'x80"
+    "$pe" -le "print '#'x80"
     printf "\x1b[34;4m"
     printf "%s>>> %s\n" "$INSTALL_COUNTER" "$1"
     printf "\x1b[0;32;1m"
-    perlrs -le "print '#'x80"
+    "$pe" -le "print '#'x80"
     printf "\x1b[0m"
     printf "\n"
 }
@@ -806,7 +813,7 @@ function zpwrTurnOnDebugging(){
 function zpwrAlternatingPrettyPrint(){
 
     if [[ -z $1 ]]; then
-        cat | perlrs -F"$ZPWR_DELIMITER_CHAR" -anE '
+        cat | ${ZPWR_PERL:-stryke} -F"$ZPWR_DELIMITER_CHAR" -anE '
         my $counter=0;
         for (@F){
             if ($counter % 2 == 0){
@@ -817,7 +824,7 @@ function zpwrAlternatingPrettyPrint(){
         ++$counter;
         };print "\x1b[0m"'
     else
-        perlrs -F"$ZPWR_DELIMITER_CHAR" -anE '
+        ${ZPWR_PERL:-stryke} -F"$ZPWR_DELIMITER_CHAR" -anE '
         my $counter=0;
         for (@F){
             if ($counter % 2 == 0){

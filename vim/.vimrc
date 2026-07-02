@@ -1517,6 +1517,7 @@ if $ZPWR_VIM_TEMPLATES == 'true'
         autocmd BufNewFile *.rb silent! exe '!templater.sh %:p' | e
         autocmd BufNewFile *.py silent! exe '!templater.sh %:p' | e
         autocmd BufNewFile *.pl silent! exe '!templater.sh %:p' | e
+        autocmd BufNewFile *.stk silent! exe '!templater.sh %:p' | e
     augroup end
 endif
 
@@ -1547,7 +1548,6 @@ filetype plugin indent on
 
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 
-" powerline-status pip package installs to different locations of different OS
 let os = substitute(system('uname'), '\n', '', '')
 
 if os == 'Darwin'
@@ -1676,7 +1676,6 @@ if ! has('nvim')
     set ballooneval
     set balloonevalterm
     set pastetoggle=<F9>
-    set runtimepath+=~/.tmux/powerline/bindings/vim/
     " visual mode automatically copies to system clipboard
     set clipboard=autoselect
     " visual selection automatically into system clipboard
@@ -1690,6 +1689,13 @@ let g:ale_perl_perlcritic_showrules = 1
 let g:ale_set_balloons = 1
 let g:ale_completion_enabled = 1
 let g:ale_fixers = {'ruby': ['rubocop'], 'sh': ['shfmt'], 'perl': ['perltidy'], 'python': ['yapf']}
+
+" stryke
+if executable('stryke') && filereadable(expand('~/.zpwr/install/stryke.vim'))
+  source ~/.zpwr/install/stryke.vim
+endif
+
+
 
 " less intrusive linting
 let g:ale_lint_on_text_changed = 'always'
@@ -1986,6 +1992,7 @@ endfunction
 "if has('nvim')
     "exe 'normal :UpdateRemotePlugins'
 "endif
+
 
 
 "}}}***********************************************************
